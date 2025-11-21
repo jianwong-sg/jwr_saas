@@ -1,0 +1,3945 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+						<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		{BEGIN styleCSSFiles}
+<link REL="stylesheet" href="{$stylepath}" type="text/css">
+{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel transactions add}</h2>
+		</div>					</div>
+			</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>{mlang_message VIEW}</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>{mlang_message EDIT}</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	 
+		<span data-itemtype="add_save" data-itemid="add_save1" {$item_add_save1} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-success   
+	" {$savebutton_attrs} >
+							Save & proceed to add Parties Involved			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list1" {$item_add_back_list1} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN reset_button}
+<span data-itemtype="add_reset" data-itemid="add_reset1" {$item_add_reset1} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							{mlang_message RESET}			</a>
+</span>
+{END reset_button}
+			{END firstAboveGridCell}	
+	</div>					</div>
+			</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c17}
+<td
+	{$cell_grid_c17}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c17" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ID_Tx_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="ID_Tx{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label4" {$item_edit_field_label4} data-pageid="{$pageid}" data-field="ID_Tx" data-fieldname="ID_Tx" {$required_attr_ID_Tx}>
+		<label class="r-edit-label control-label {$ID_Tx_label_class}" for="{$labelfor_ID_Tx}">
+			{BEGIN ID_Tx_label}
+				{$ID_Tx_forward_control}
+				{$label transactions ID_Tx }			{END ID_Tx_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END ID_Tx_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c17}
+			 
+																
+
+{BEGIN cellblock_grid_c18}
+<td
+	{$cell_grid_c18}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c18" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ID_Tx_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="ID_Tx{$id}" data-itemtype="edit_field" data-itemid="edit_field4" {$item_edit_field4} data-pageid="{$pageid}" data-page="transactions_add" data-field="ID_Tx" data-fieldname="ID_Tx" {$required_attr_ID_Tx}>
+		{$ID_Tx_editcontrol}	</div>
+{END ID_Tx_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c18}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c19}
+<td
+	{$cell_grid_c19}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c19" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c19}
+								</tr>
+	 
+	 
+														<tr {$row_grid_1} >
+										
+
+{BEGIN cellblock_grid_c4}
+<td
+	{$cell_grid_c4}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c4" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN status_status_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="status_status{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field47" {$item_integrated_edit_field47} data-pageid="{$pageid}" data-field="status_status" data-fieldname="status_status" {$required_attr_status_status}>
+		<label class="r-edit-label control-label {$status_status_label_class}" for="{$labelfor_status_status}">
+			{BEGIN status_status_label}
+				{$status_status_forward_control}
+				{$label transactions status_status }			{END status_status_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END status_status_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c4}
+			 
+																
+
+{BEGIN cellblock_grid_c2}
+<td
+	{$cell_grid_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN status_status_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="status_status{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="status_status" data-fieldname="status_status" {$required_attr_status_status}>
+		{$status_status_editcontrol}	</div>
+{END status_status_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c2}
+			 
+																
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN status_status_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="status_status{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field48" {$item_integrated_edit_field48} data-pageid="{$pageid}" data-field="status_status" data-fieldname="status_status" >
+		<div data-helpfor="status_status" {$tooltipAttr transactions status_status } >
+			<div class="text-muted">{$tooltip transactions status_status }</div>
+		</div>
+	</div>
+{END status_status_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
+								</tr>
+	 
+	 
+														<tr {$row_grid_2} >
+										
+
+{BEGIN cellblock_grid_c8}
+<td
+	{$cell_grid_c8}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c8" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN date_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="date{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field49" {$item_integrated_edit_field49} data-pageid="{$pageid}" data-field="date" data-fieldname="date" {$required_attr_date}>
+		<label class="r-edit-label control-label {$date_label_class}" for="{$labelfor_date}">
+			{BEGIN date_label}
+				{$date_forward_control}
+				{$label transactions date }			{END date_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END date_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c8}
+			 
+																
+
+{BEGIN cellblock_grid_c9}
+<td
+	{$cell_grid_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c9" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN date_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="date{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-page="transactions_add" data-field="date" data-fieldname="date" {$required_attr_date}>
+		{$date_editcontrol}	</div>
+{END date_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c9}
+			 
+																
+
+{BEGIN cellblock_grid_c10}
+<td
+	{$cell_grid_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c10" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN date_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="date{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field50" {$item_integrated_edit_field50} data-pageid="{$pageid}" data-field="date" data-fieldname="date" >
+		<div data-helpfor="date" {$tooltipAttr transactions date } >
+			<div class="text-muted">{$tooltip transactions date }</div>
+		</div>
+	</div>
+{END date_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c10}
+								</tr>
+	 
+	 
+														<tr {$row_grid_3} >
+										
+
+{BEGIN cellblock_grid_c5}
+<td
+	{$cell_grid_c5}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c5" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN category_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="category{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field51" {$item_integrated_edit_field51} data-pageid="{$pageid}" data-field="category" data-fieldname="category" {$required_attr_category}>
+		<label class="r-edit-label control-label {$category_label_class}" for="{$labelfor_category}">
+			{BEGIN category_label}
+				{$category_forward_control}
+				{$label transactions category }			{END category_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END category_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c5}
+			 
+																
+
+{BEGIN cellblock_grid_c6}
+<td
+	{$cell_grid_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN category_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="category{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-page="transactions_add" data-field="category" data-fieldname="category" {$required_attr_category}>
+		{$category_editcontrol}	</div>
+{END category_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c6}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c7}
+<td
+	{$cell_grid_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c7" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c7}
+								</tr>
+	 
+	 
+																</tbody></table>
+				 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="tx_info_section" {$item_tx_info_section} data-pageid="{$pageid}" data-page="transactions_add">
+		<div class="panel-heading" role="tab" {$section_section1_headattrs} 
+			data-toggle="collapse"  
+
+				href="#section1{$pageid}" aria-expanded="true" aria-controls="section1"
+
+		>
+		  <h4 class="panel-title">
+		  				<a role="button" >
+				Transaction Details			</a>
+					  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section1_xtrclass}" role="tabpanel"  {$section_section1_attrs}
+
+				id="section1{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section" id="form_section_{$pageid}" data-makeup="small" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		
+		data-v-width="5"
+	>
+	<tbody>
+										<tr {$row_section_0} >
+										
+
+{BEGIN cellblock_section_c10}
+<td
+	{$cell_section_c10}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c10" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN salesperson_name_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="salesperson_name{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field53" {$item_integrated_edit_field53} data-pageid="{$pageid}" data-field="salesperson_name" data-fieldname="salesperson_name" {$required_attr_salesperson_name}>
+		<label class="r-edit-label control-label {$salesperson_name_label_class}" for="{$labelfor_salesperson_name}">
+			{BEGIN salesperson_name_label}
+				{$salesperson_name_forward_control}
+				{$label transactions salesperson_name }			{END salesperson_name_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END salesperson_name_fieldblock}
+	
+								</td>
+			{END cellblock_section_c10}
+			 
+																
+
+{BEGIN cellblock_section_c11}
+<td
+	{$cell_section_c11}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c11" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN salesperson_name_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="salesperson_name{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-page="transactions_add" data-field="salesperson_name" data-fieldname="salesperson_name" {$required_attr_salesperson_name}>
+		{$salesperson_name_editcontrol}	</div>
+{END salesperson_name_fieldblock}
+	
+								</td>
+			{END cellblock_section_c11}
+			 
+																
+
+{BEGIN cellblock_section_c12}
+<td
+	{$cell_section_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c12" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN salesperson_name_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="salesperson_name{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field54" {$item_integrated_edit_field54} data-pageid="{$pageid}" data-field="salesperson_name" data-fieldname="salesperson_name" >
+		<div data-helpfor="salesperson_name" {$tooltipAttr transactions salesperson_name } >
+			<div class="text-muted">{$tooltip transactions salesperson_name }</div>
+		</div>
+	</div>
+{END salesperson_name_fieldblock}
+	
+								</td>
+			{END cellblock_section_c12}
+								</tr>
+	 
+	 
+														<tr {$row_section_1} >
+										
+
+{BEGIN cellblock_section_c19}
+<td
+	{$cell_section_c19}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c19" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN cea_reg_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="cea_reg{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label5" {$item_edit_field_label5} data-pageid="{$pageid}" data-field="cea_reg" data-fieldname="cea_reg" {$required_attr_cea_reg}>
+		<label class="r-edit-label control-label {$cea_reg_label_class}" for="{$labelfor_cea_reg}">
+			{BEGIN cea_reg_label}
+				{$cea_reg_forward_control}
+				{$label transactions cea_reg }			{END cea_reg_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END cea_reg_fieldblock}
+	
+								</td>
+			{END cellblock_section_c19}
+			 
+																
+
+{BEGIN cellblock_section_c20}
+<td
+	{$cell_section_c20}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c20" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN cea_reg_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="cea_reg{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-page="transactions_add" data-field="cea_reg" data-fieldname="cea_reg" {$required_attr_cea_reg}>
+		{$cea_reg_editcontrol}	</div>
+{END cea_reg_fieldblock}
+	
+								</td>
+			{END cellblock_section_c20}
+			 
+																
+
+{BEGIN cellblock_section_c21}
+<td
+	{$cell_section_c21}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c21" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN cea_reg_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="cea_reg{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip2" {$item_edit_field_tooltip2} data-pageid="{$pageid}" data-field="cea_reg" data-fieldname="cea_reg" >
+		<div data-helpfor="cea_reg" {$tooltipAttr transactions cea_reg } >
+			<div class="text-muted">{$tooltip transactions cea_reg }</div>
+		</div>
+	</div>
+{END cea_reg_fieldblock}
+	
+								</td>
+			{END cellblock_section_c21}
+								</tr>
+	 
+	 
+														<tr {$row_section_2} >
+										
+
+{BEGIN cellblock_section_c16}
+<td
+	{$cell_section_c16}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c16" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN salesperson_email_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="salesperson_email{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field57" {$item_integrated_edit_field57} data-pageid="{$pageid}" data-page="transactions_add" data-field="salesperson_email" data-fieldname="salesperson_email" {$required_attr_salesperson_email}>
+		<label class="r-edit-label control-label {$salesperson_email_label_class}" for="{$labelfor_salesperson_email}">
+			{BEGIN salesperson_email_label}
+				{$salesperson_email_forward_control}
+				{$label transactions salesperson_email }			{END salesperson_email_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END salesperson_email_fieldblock}
+	
+								</td>
+			{END cellblock_section_c16}
+			 
+																
+
+{BEGIN cellblock_section_c17}
+<td
+	{$cell_section_c17}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c17" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN salesperson_email_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="salesperson_email{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-page="transactions_add" data-field="salesperson_email" data-fieldname="salesperson_email" {$required_attr_salesperson_email}>
+		{$salesperson_email_editcontrol}	</div>
+{END salesperson_email_fieldblock}
+	
+								</td>
+			{END cellblock_section_c17}
+			 
+																
+
+{BEGIN cellblock_section_c18}
+<td
+	{$cell_section_c18}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c18" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN salesperson_email_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="salesperson_email{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field58" {$item_integrated_edit_field58} data-pageid="{$pageid}" data-page="transactions_add" data-field="salesperson_email" data-fieldname="salesperson_email" >
+		<div data-helpfor="salesperson_email" {$tooltipAttr transactions salesperson_email } >
+			<div class="text-muted">{$tooltip transactions salesperson_email }</div>
+		</div>
+	</div>
+{END salesperson_email_fieldblock}
+	
+								</td>
+			{END cellblock_section_c18}
+								</tr>
+	 
+	 
+														<tr {$row_section_3} >
+										
+
+{BEGIN cellblock_section_c25}
+<td
+	{$cell_section_c25}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c25" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN representing_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="representing{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field63" {$item_integrated_edit_field63} data-pageid="{$pageid}" data-field="representing" data-fieldname="representing" {$required_attr_representing}>
+		<label class="r-edit-label control-label {$representing_label_class}" for="{$labelfor_representing}">
+			{BEGIN representing_label}
+				{$representing_forward_control}
+				{$label transactions representing }			{END representing_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END representing_fieldblock}
+	
+								</td>
+			{END cellblock_section_c25}
+			 
+																
+
+{BEGIN cellblock_section_c26}
+<td
+	{$cell_section_c26}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c26" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN representing_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="representing{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-page="transactions_add" data-field="representing" data-fieldname="representing" {$required_attr_representing}>
+		{$representing_editcontrol}	</div>
+{END representing_fieldblock}
+	
+								</td>
+			{END cellblock_section_c26}
+			 
+																
+
+{BEGIN cellblock_section_c27}
+<td
+	{$cell_section_c27}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c27" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN representing_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="representing{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field64" {$item_integrated_edit_field64} data-pageid="{$pageid}" data-field="representing" data-fieldname="representing" >
+		<div data-helpfor="representing" {$tooltipAttr transactions representing } >
+			<div class="text-muted">{$tooltip transactions representing }</div>
+		</div>
+	</div>
+{END representing_fieldblock}
+	
+								</td>
+			{END cellblock_section_c27}
+								</tr>
+	 
+	 
+														<tr {$row_section_4} >
+										
+
+{BEGIN cellblock_section_c28}
+<td
+	{$cell_section_c28}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c28" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN marketing_rights_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="marketing_rights{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field65" {$item_integrated_edit_field65} data-pageid="{$pageid}" data-field="marketing_rights" data-fieldname="marketing_rights" {$required_attr_marketing_rights}>
+		<label class="r-edit-label control-label {$marketing_rights_label_class}" for="{$labelfor_marketing_rights}">
+			{BEGIN marketing_rights_label}
+				{$marketing_rights_forward_control}
+				{$label transactions marketing_rights }			{END marketing_rights_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END marketing_rights_fieldblock}
+	
+								</td>
+			{END cellblock_section_c28}
+			 
+																
+
+{BEGIN cellblock_section_c29}
+<td
+	{$cell_section_c29}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c29" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN marketing_rights_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="marketing_rights{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-page="transactions_add" data-field="marketing_rights" data-fieldname="marketing_rights" {$required_attr_marketing_rights}>
+		{$marketing_rights_editcontrol}	</div>
+{END marketing_rights_fieldblock}
+	
+								</td>
+			{END cellblock_section_c29}
+			 
+																
+
+{BEGIN cellblock_section_c30}
+<td
+	{$cell_section_c30}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c30" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN marketing_rights_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="marketing_rights{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field66" {$item_integrated_edit_field66} data-pageid="{$pageid}" data-field="marketing_rights" data-fieldname="marketing_rights" >
+		<div data-helpfor="marketing_rights" {$tooltipAttr transactions marketing_rights } >
+			<div class="text-muted">{$tooltip transactions marketing_rights }</div>
+		</div>
+	</div>
+{END marketing_rights_fieldblock}
+	
+								</td>
+			{END cellblock_section_c30}
+								</tr>
+	 
+	 
+														<tr {$row_section_5} >
+										
+
+{BEGIN cellblock_section_c34}
+<td
+	{$cell_section_c34}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c34" data-pageid="{$pageid}" data-page="transactions_add"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN form_number_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="form_number{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label2" {$item_edit_field_label2} data-pageid="{$pageid}" data-field="form_number" data-fieldname="form_number" {$required_attr_form_number}>
+		<label class="r-edit-label control-label {$form_number_label_class}" for="{$labelfor_form_number}">
+			{BEGIN form_number_label}
+				{$form_number_forward_control}
+				{$label transactions form_number }			{END form_number_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END form_number_fieldblock}
+	
+								</td>
+			{END cellblock_section_c34}
+			 
+																
+
+{BEGIN cellblock_section_c35}
+<td
+	{$cell_section_c35}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c35" data-pageid="{$pageid}" data-page="transactions_add"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN form_number_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="form_number{$id}" data-itemtype="edit_field" data-itemid="edit_field3" {$item_edit_field3} data-pageid="{$pageid}" data-field="form_number" data-fieldname="form_number" {$required_attr_form_number}>
+		{$form_number_editcontrol}	</div>
+{END form_number_fieldblock}
+	
+								</td>
+			{END cellblock_section_c35}
+			 
+		
+							
+
+{BEGIN cellblock_section_c36}
+<td
+	{$cell_section_c36}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c36" data-pageid="{$pageid}" data-page="transactions_add"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section_c36}
+								</tr>
+	 
+	 
+														<tr {$row_section_6} >
+										
+
+{BEGIN cellblock_section_c31}
+<td
+	{$cell_section_c31}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c31" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN currency_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="currency{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field67" {$item_integrated_edit_field67} data-pageid="{$pageid}" data-field="currency" data-fieldname="currency" {$required_attr_currency}>
+		<label class="r-edit-label control-label {$currency_label_class}" for="{$labelfor_currency}">
+			{BEGIN currency_label}
+				{$currency_forward_control}
+				{$label transactions currency }			{END currency_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END currency_fieldblock}
+	
+								</td>
+			{END cellblock_section_c31}
+			 
+																
+
+{BEGIN cellblock_section_c32}
+<td
+	{$cell_section_c32}
+	class=""
+	
+			
+			data-cellId="section_c32" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN currency_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="currency{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-page="transactions_add" data-field="currency" data-fieldname="currency" {$required_attr_currency}>
+		{$currency_editcontrol}	</div>
+{END currency_fieldblock}
+											{BEGIN agency_share_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="agency_share{$id}" data-itemtype="edit_field" data-itemid="edit_field2" {$item_edit_field2} data-pageid="{$pageid}" data-page="transactions_add" data-field="agency_share" data-fieldname="agency_share" {$required_attr_agency_share}>
+		{$agency_share_editcontrol}	</div>
+{END agency_share_fieldblock}
+	
+								</td>
+			{END cellblock_section_c32}
+			 
+																
+
+{BEGIN cellblock_section_c33}
+<td
+	{$cell_section_c33}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c33" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN currency_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="currency{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field68" {$item_integrated_edit_field68} data-pageid="{$pageid}" data-field="currency" data-fieldname="currency" >
+		<div data-helpfor="currency" {$tooltipAttr transactions currency } >
+			<div class="text-muted">{$tooltip transactions currency }</div>
+		</div>
+	</div>
+{END currency_fieldblock}
+	
+								</td>
+			{END cellblock_section_c33}
+								</tr>
+	 
+	 
+																</tbody></table>
+				 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="agency_info_section" {$item_agency_info_section} data-pageid="{$pageid}" data-page="transactions_add">
+		<div class="panel-heading" role="tab" {$section_section2_headattrs} 
+			data-toggle="collapse"  
+
+				href="#section2{$pageid}" aria-expanded="true" aria-controls="section2"
+
+		>
+		  <h4 class="panel-title">
+		  				<a role="button" >
+				Estate Agent Info			</a>
+					  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section2_xtrclass}" role="tabpanel"  {$section_section2_attrs}
+
+				id="section2{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section4_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section4" id="form_section4_{$pageid}" data-makeup="small" {$form_section4} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section4_0} >
+										
+
+{BEGIN cellblock_section4_c12}
+<td
+	{$cell_section4_c12}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section4_c12" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN agency_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="agency{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field59" {$item_integrated_edit_field59} data-pageid="{$pageid}" data-field="agency" data-fieldname="agency" {$required_attr_agency}>
+		<label class="r-edit-label control-label {$agency_label_class}" for="{$labelfor_agency}">
+			{BEGIN agency_label}
+				{$agency_forward_control}
+				{$label transactions agency }			{END agency_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END agency_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c12}
+			 
+																
+
+{BEGIN cellblock_section4_c13}
+<td
+	{$cell_section4_c13}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section4_c13" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN agency_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="agency{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-page="transactions_add" data-field="agency" data-fieldname="agency" {$required_attr_agency}>
+		{$agency_editcontrol}	</div>
+{END agency_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c13}
+			 
+																
+
+{BEGIN cellblock_section4_c14}
+<td
+	{$cell_section4_c14}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section4_c14" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN agency_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="agency{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field60" {$item_integrated_edit_field60} data-pageid="{$pageid}" data-field="agency" data-fieldname="agency" >
+		<div data-helpfor="agency" {$tooltipAttr transactions agency } >
+			<div class="text-muted">{$tooltip transactions agency }</div>
+		</div>
+	</div>
+{END agency_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c14}
+								</tr>
+	 
+	 
+														<tr {$row_section4_1} >
+										
+
+{BEGIN cellblock_section4_c15}
+<td
+	{$cell_section4_c15}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section4_c15" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN agency_cea_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="agency_cea{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label" {$item_edit_field_label} data-pageid="{$pageid}" data-field="agency_cea" data-fieldname="agency_cea" {$required_attr_agency_cea}>
+		<label class="r-edit-label control-label {$agency_cea_label_class}" for="{$labelfor_agency_cea}">
+			{BEGIN agency_cea_label}
+				{$agency_cea_forward_control}
+				{$label transactions agency_cea }			{END agency_cea_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END agency_cea_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c15}
+			 
+																
+
+{BEGIN cellblock_section4_c16}
+<td
+	{$cell_section4_c16}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section4_c16" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN agency_cea_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="agency_cea{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-page="transactions_add" data-field="agency_cea" data-fieldname="agency_cea" {$required_attr_agency_cea}>
+		{$agency_cea_editcontrol}	</div>
+{END agency_cea_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c16}
+			 
+																
+
+{BEGIN cellblock_section4_c17}
+<td
+	{$cell_section4_c17}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section4_c17" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN agency_cea_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="agency_cea{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip" {$item_edit_field_tooltip} data-pageid="{$pageid}" data-field="agency_cea" data-fieldname="agency_cea" >
+		<div data-helpfor="agency_cea" {$tooltipAttr transactions agency_cea } >
+			<div class="text-muted">{$tooltip transactions agency_cea }</div>
+		</div>
+	</div>
+{END agency_cea_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c17}
+								</tr>
+			</tbody></table>
+{END section4_block}
+		  </div>
+		</div>
+	</div>
+	
+				 
+	 
+												 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="rental_info_section" {$item_rental_info_section} data-pageid="{$pageid}" data-page="transactions_add">
+		<div class="panel-heading" role="tab" {$section_section3_headattrs} 
+			data-toggle="collapse"  
+
+				href="#section3{$pageid}" aria-expanded="true" aria-controls="section3"
+
+		>
+		  <h4 class="panel-title">
+		  				<a role="button" >
+				Tenancy Input			</a>
+					  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section3_xtrclass}" role="tabpanel"  {$section_section3_attrs}
+
+				id="section3{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section2_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section2" id="form_section2_{$pageid}" data-makeup="small" {$form_section2} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section2_0} >
+										
+
+{BEGIN cellblock_section2_c4}
+<td
+	{$cell_section2_c4}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c4" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN rental_price_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="rental_price{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field69" {$item_integrated_edit_field69} data-pageid="{$pageid}" data-field="rental_price" data-fieldname="rental_price" {$required_attr_rental_price}>
+		<label class="r-edit-label control-label {$rental_price_label_class}" for="{$labelfor_rental_price}">
+			{BEGIN rental_price_label}
+				{$rental_price_forward_control}
+				{$label transactions rental_price }			{END rental_price_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END rental_price_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c4}
+			 
+																
+
+{BEGIN cellblock_section2_c2}
+<td
+	{$cell_section2_c2}
+	class=""
+	
+			
+			data-cellId="section2_c2" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN rental_price_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="rental_price{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-page="transactions_add" data-field="rental_price" data-fieldname="rental_price" {$required_attr_rental_price}>
+		{$rental_price_editcontrol}	</div>
+{END rental_price_fieldblock}
+											{BEGIN rental_price_type_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="rental_price_type{$id}" data-itemtype="edit_field" data-itemid="edit_field" {$item_edit_field} data-pageid="{$pageid}" data-page="transactions_add" data-field="rental_price_type" data-fieldname="rental_price_type" {$required_attr_rental_price_type}>
+		{$rental_price_type_editcontrol}	</div>
+{END rental_price_type_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c2}
+								</tr>
+	 
+	 
+														<tr {$row_section2_1} >
+										
+
+{BEGIN cellblock_section2_c5}
+<td
+	{$cell_section2_c5}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c5" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN loi_date_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="loi_date{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field81" {$item_integrated_edit_field81} data-pageid="{$pageid}" data-field="loi_date" data-fieldname="loi_date" {$required_attr_loi_date}>
+		<label class="r-edit-label control-label {$loi_date_label_class}" for="{$labelfor_loi_date}">
+			{BEGIN loi_date_label}
+				{$loi_date_forward_control}
+				{$label transactions loi_date }			{END loi_date_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END loi_date_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c5}
+			 
+																
+
+{BEGIN cellblock_section2_c3}
+<td
+	{$cell_section2_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c3" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN loi_date_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="loi_date{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-page="transactions_add" data-field="loi_date" data-fieldname="loi_date" {$required_attr_loi_date}>
+		{$loi_date_editcontrol}	</div>
+{END loi_date_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c3}
+								</tr>
+	 
+	 
+														<tr {$row_section2_2} >
+										
+
+{BEGIN cellblock_section2_c13}
+<td
+	{$cell_section2_c13}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c13" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ta_date_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="ta_date{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field83" {$item_integrated_edit_field83} data-pageid="{$pageid}" data-field="ta_date" data-fieldname="ta_date" {$required_attr_ta_date}>
+		<label class="r-edit-label control-label {$ta_date_label_class}" for="{$labelfor_ta_date}">
+			{BEGIN ta_date_label}
+				{$ta_date_forward_control}
+				{$label transactions ta_date }			{END ta_date_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END ta_date_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c13}
+			 
+																
+
+{BEGIN cellblock_section2_c14}
+<td
+	{$cell_section2_c14}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c14" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN ta_date_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="ta_date{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-page="transactions_add" data-field="ta_date" data-fieldname="ta_date" {$required_attr_ta_date}>
+		{$ta_date_editcontrol}	</div>
+{END ta_date_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c14}
+								</tr>
+	 
+	 
+														<tr {$row_section2_3} >
+										
+
+{BEGIN cellblock_section2_c7}
+<td
+	{$cell_section2_c7}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c7" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN lease_start_date_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="lease_start_date{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field97" {$item_integrated_edit_field97} data-pageid="{$pageid}" data-field="lease_start_date" data-fieldname="lease_start_date" {$required_attr_lease_start_date}>
+		<label class="r-edit-label control-label {$lease_start_date_label_class}" for="{$labelfor_lease_start_date}">
+			{BEGIN lease_start_date_label}
+				{$lease_start_date_forward_control}
+				{$label transactions lease_start_date }			{END lease_start_date_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END lease_start_date_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c7}
+			 
+																
+
+{BEGIN cellblock_section2_c8}
+<td
+	{$cell_section2_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c8" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN lease_start_date_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="lease_start_date{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-page="transactions_add" data-field="lease_start_date" data-fieldname="lease_start_date" {$required_attr_lease_start_date}>
+		{$lease_start_date_editcontrol}	</div>
+{END lease_start_date_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c8}
+								</tr>
+	 
+	 
+														<tr {$row_section2_4} >
+										
+
+{BEGIN cellblock_section2_c19}
+<td
+	{$cell_section2_c19}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c19" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN lease_expiry_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="lease_expiry{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field99" {$item_integrated_edit_field99} data-pageid="{$pageid}" data-field="lease_expiry" data-fieldname="lease_expiry" {$required_attr_lease_expiry}>
+		<label class="r-edit-label control-label {$lease_expiry_label_class}" for="{$labelfor_lease_expiry}">
+			{BEGIN lease_expiry_label}
+				{$lease_expiry_forward_control}
+				{$label transactions lease_expiry }			{END lease_expiry_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END lease_expiry_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c19}
+			 
+																
+
+{BEGIN cellblock_section2_c20}
+<td
+	{$cell_section2_c20}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section2_c20" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN lease_expiry_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="lease_expiry{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-page="transactions_add" data-field="lease_expiry" data-fieldname="lease_expiry" {$required_attr_lease_expiry}>
+		{$lease_expiry_editcontrol}	</div>
+{END lease_expiry_fieldblock}
+											<span data-itemtype="text" data-itemid="text" {$item_text} data-pageid="{$pageid}" > 
+	<div id="leaseErrorMsg" style="display:none; color: #b91c1c; background-color: #fee2e2; border: 1px solid #fca5a5; padding: 10px; border-radius: 6px; margin-bottom: 10px;">
+</div></span>
+	
+								</td>
+			{END cellblock_section2_c20}
+								</tr>
+	 
+	 
+														<tr {$row_section2_5} >
+										
+
+{BEGIN cellblock_section2_c28}
+<td
+	{$cell_section2_c28}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c28" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN lease_duration_no_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="lease_duration_no{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field93" {$item_integrated_edit_field93} data-pageid="{$pageid}" data-field="lease_duration_no" data-fieldname="lease_duration_no" {$required_attr_lease_duration_no}>
+		<label class="r-edit-label control-label {$lease_duration_no_label_class}" for="{$labelfor_lease_duration_no}">
+			{BEGIN lease_duration_no_label}
+				{$lease_duration_no_forward_control}
+				{$label transactions lease_duration_no }			{END lease_duration_no_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END lease_duration_no_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c28}
+			 
+																
+
+{BEGIN cellblock_section2_c29}
+<td
+	{$cell_section2_c29}
+	class=""
+	
+			
+			data-cellId="section2_c29" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN lease_duration_no_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="lease_duration_no{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-page="transactions_add" data-field="lease_duration_no" data-fieldname="lease_duration_no" {$required_attr_lease_duration_no}>
+		{$lease_duration_no_editcontrol}	</div>
+{END lease_duration_no_fieldblock}
+											{BEGIN lease_duration_unit_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="lease_duration_unit{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-page="transactions_add" data-field="lease_duration_unit" data-fieldname="lease_duration_unit" {$required_attr_lease_duration_unit}>
+		{$lease_duration_unit_editcontrol}	</div>
+{END lease_duration_unit_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c29}
+								</tr>
+	 
+	 
+														<tr {$row_section2_6} >
+										
+
+{BEGIN cellblock_section2_c16}
+<td
+	{$cell_section2_c16}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c16" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN reminder_agent_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="reminder_agent{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field109" {$item_integrated_edit_field109} data-pageid="{$pageid}" data-field="reminder_agent" data-fieldname="reminder_agent" {$required_attr_reminder_agent}>
+		<label class="r-edit-label control-label {$reminder_agent_label_class}" for="{$labelfor_reminder_agent}">
+			{BEGIN reminder_agent_label}
+				{$reminder_agent_forward_control}
+				{$label transactions reminder_agent }			{END reminder_agent_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END reminder_agent_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c16}
+			 
+																
+
+{BEGIN cellblock_section2_c17}
+<td
+	{$cell_section2_c17}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section2_c17" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN reminder_agent_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="reminder_agent{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field31" {$item_integrated_edit_field31} data-pageid="{$pageid}" data-page="transactions_add" data-field="reminder_agent" data-fieldname="reminder_agent" data-before-same-field {$required_attr_reminder_agent}>
+		{$reminder_agent_editcontrol}	</div>
+{END reminder_agent_fieldblock}
+											{BEGIN reminder_agent_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="reminder_agent{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field110" {$item_integrated_edit_field110} data-pageid="{$pageid}" data-field="reminder_agent" data-fieldname="reminder_agent" >
+		<div data-helpfor="reminder_agent" {$tooltipAttr transactions reminder_agent } >
+			<div class="text-muted">{$tooltip transactions reminder_agent }</div>
+		</div>
+	</div>
+{END reminder_agent_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c17}
+								</tr>
+	 
+	 
+														<tr {$row_section2_7} >
+										
+
+{BEGIN cellblock_section2_c25}
+<td
+	{$cell_section2_c25}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c25" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN reminder_tenant_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="reminder_tenant{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field111" {$item_integrated_edit_field111} data-pageid="{$pageid}" data-field="reminder_tenant" data-fieldname="reminder_tenant" {$required_attr_reminder_tenant}>
+		<label class="r-edit-label control-label {$reminder_tenant_label_class}" for="{$labelfor_reminder_tenant}">
+			{BEGIN reminder_tenant_label}
+				{$reminder_tenant_forward_control}
+				{$label transactions reminder_tenant }			{END reminder_tenant_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END reminder_tenant_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c25}
+			 
+																
+
+{BEGIN cellblock_section2_c26}
+<td
+	{$cell_section2_c26}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section2_c26" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN reminder_tenant_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="reminder_tenant{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-page="transactions_add" data-field="reminder_tenant" data-fieldname="reminder_tenant" data-before-same-field {$required_attr_reminder_tenant}>
+		{$reminder_tenant_editcontrol}	</div>
+{END reminder_tenant_fieldblock}
+											{BEGIN reminder_tenant_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="reminder_tenant{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field112" {$item_integrated_edit_field112} data-pageid="{$pageid}" data-field="reminder_tenant" data-fieldname="reminder_tenant" >
+		<div data-helpfor="reminder_tenant" {$tooltipAttr transactions reminder_tenant } >
+			<div class="text-muted">{$tooltip transactions reminder_tenant }</div>
+		</div>
+	</div>
+{END reminder_tenant_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c26}
+								</tr>
+	 
+	 
+														<tr {$row_section2_8} >
+										
+
+{BEGIN cellblock_section2_c22}
+<td
+	{$cell_section2_c22}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c22" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN reminder_tenant_email_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="reminder_tenant_email{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field113" {$item_integrated_edit_field113} data-pageid="{$pageid}" data-field="reminder_tenant_email" data-fieldname="reminder_tenant_email" {$required_attr_reminder_tenant_email}>
+		<label class="r-edit-label control-label {$reminder_tenant_email_label_class}" for="{$labelfor_reminder_tenant_email}">
+			{BEGIN reminder_tenant_email_label}
+				{$reminder_tenant_email_forward_control}
+				{$label transactions reminder_tenant_email }			{END reminder_tenant_email_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END reminder_tenant_email_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c22}
+			 
+																
+
+{BEGIN cellblock_section2_c23}
+<td
+	{$cell_section2_c23}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section2_c23" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN reminder_tenant_email_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="reminder_tenant_email{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field33" {$item_integrated_edit_field33} data-pageid="{$pageid}" data-page="transactions_add" data-field="reminder_tenant_email" data-fieldname="reminder_tenant_email" data-before-same-field {$required_attr_reminder_tenant_email}>
+		{$reminder_tenant_email_editcontrol}	</div>
+{END reminder_tenant_email_fieldblock}
+											{BEGIN reminder_tenant_email_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="reminder_tenant_email{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field114" {$item_integrated_edit_field114} data-pageid="{$pageid}" data-field="reminder_tenant_email" data-fieldname="reminder_tenant_email" >
+		<div data-helpfor="reminder_tenant_email" {$tooltipAttr transactions reminder_tenant_email } >
+			<div class="text-muted">{$tooltip transactions reminder_tenant_email }</div>
+		</div>
+	</div>
+{END reminder_tenant_email_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c23}
+								</tr>
+			</tbody></table>
+{END section2_block}
+		  </div>
+		</div>
+	</div>
+	
+				 
+	 
+												 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="sale_info_section" {$item_sale_info_section} data-pageid="{$pageid}" data-page="transactions_add">
+		<div class="panel-heading" role="tab" {$section_section4_headattrs} 
+			data-toggle="collapse"  
+
+				href="#section4{$pageid}" aria-expanded="true" aria-controls="section4"
+
+		>
+		  <h4 class="panel-title">
+		  				<a role="button" >
+				Sale Input			</a>
+					  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section4_xtrclass}" role="tabpanel"  {$section_section4_attrs}
+
+				id="section4{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section3_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section3" id="form_section3_{$pageid}" data-makeup="small" {$form_section3} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section3_0} >
+										
+
+{BEGIN cellblock_section3_c4}
+<td
+	{$cell_section3_c4}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c4" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN sale_price_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="sale_price{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field75" {$item_integrated_edit_field75} data-pageid="{$pageid}" data-field="sale_price" data-fieldname="sale_price" {$required_attr_sale_price}>
+		<label class="r-edit-label control-label {$sale_price_label_class}" for="{$labelfor_sale_price}">
+			{BEGIN sale_price_label}
+				{$sale_price_forward_control}
+				{$label transactions sale_price }			{END sale_price_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END sale_price_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c4}
+			 
+																
+
+{BEGIN cellblock_section3_c2}
+<td
+	{$cell_section3_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN sale_price_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="sale_price{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-page="transactions_add" data-field="sale_price" data-fieldname="sale_price" {$required_attr_sale_price}>
+		{$sale_price_editcontrol}	</div>
+{END sale_price_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c2}
+			 
+																
+
+{BEGIN cellblock_section3_c}
+<td
+	{$cell_section3_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN sale_price_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="sale_price{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field70" {$item_integrated_edit_field70} data-pageid="{$pageid}" data-field="sale_price" data-fieldname="sale_price" >
+		<div data-helpfor="sale_price" {$tooltipAttr transactions sale_price } >
+			<div class="text-muted">{$tooltip transactions sale_price }</div>
+		</div>
+	</div>
+{END sale_price_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c}
+								</tr>
+	 
+	 
+														<tr {$row_section3_1} >
+										
+
+{BEGIN cellblock_section3_c17}
+<td
+	{$cell_section3_c17}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c17" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN valuation_price_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="valuation_price{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field77" {$item_integrated_edit_field77} data-pageid="{$pageid}" data-field="valuation_price" data-fieldname="valuation_price" {$required_attr_valuation_price}>
+		<label class="r-edit-label control-label {$valuation_price_label_class}" for="{$labelfor_valuation_price}">
+			{BEGIN valuation_price_label}
+				{$valuation_price_forward_control}
+				{$label transactions valuation_price }			{END valuation_price_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END valuation_price_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c17}
+			 
+																
+
+{BEGIN cellblock_section3_c18}
+<td
+	{$cell_section3_c18}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c18" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN valuation_price_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="valuation_price{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-page="transactions_add" data-field="valuation_price" data-fieldname="valuation_price" {$required_attr_valuation_price}>
+		{$valuation_price_editcontrol}	</div>
+{END valuation_price_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c18}
+			 
+																
+
+{BEGIN cellblock_section3_c19}
+<td
+	{$cell_section3_c19}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c19" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN valuation_price_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="valuation_price{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field78" {$item_integrated_edit_field78} data-pageid="{$pageid}" data-field="valuation_price" data-fieldname="valuation_price" >
+		<div data-helpfor="valuation_price" {$tooltipAttr transactions valuation_price } >
+			<div class="text-muted">{$tooltip transactions valuation_price }</div>
+		</div>
+	</div>
+{END valuation_price_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c19}
+								</tr>
+	 
+	 
+														<tr {$row_section3_2} >
+										
+
+{BEGIN cellblock_section3_c14}
+<td
+	{$cell_section3_c14}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c14" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN option_money_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="option_money{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field79" {$item_integrated_edit_field79} data-pageid="{$pageid}" data-field="option_money" data-fieldname="option_money" {$required_attr_option_money}>
+		<label class="r-edit-label control-label {$option_money_label_class}" for="{$labelfor_option_money}">
+			{BEGIN option_money_label}
+				{$option_money_forward_control}
+				{$label transactions option_money }			{END option_money_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END option_money_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c14}
+			 
+																
+
+{BEGIN cellblock_section3_c15}
+<td
+	{$cell_section3_c15}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c15" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN option_money_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="option_money{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-page="transactions_add" data-field="option_money" data-fieldname="option_money" {$required_attr_option_money}>
+		{$option_money_editcontrol}	</div>
+{END option_money_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c15}
+			 
+																
+
+{BEGIN cellblock_section3_c16}
+<td
+	{$cell_section3_c16}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c16" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN option_money_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="option_money{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field80" {$item_integrated_edit_field80} data-pageid="{$pageid}" data-field="option_money" data-fieldname="option_money" >
+		<div data-helpfor="option_money" {$tooltipAttr transactions option_money } >
+			<div class="text-muted">{$tooltip transactions option_money }</div>
+		</div>
+	</div>
+{END option_money_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c16}
+								</tr>
+	 
+	 
+														<tr {$row_section3_3} >
+										
+
+{BEGIN cellblock_section3_c11}
+<td
+	{$cell_section3_c11}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c11" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN otp_date_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="otp_date{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field85" {$item_integrated_edit_field85} data-pageid="{$pageid}" data-field="otp_date" data-fieldname="otp_date" {$required_attr_otp_date}>
+		<label class="r-edit-label control-label {$otp_date_label_class}" for="{$labelfor_otp_date}">
+			{BEGIN otp_date_label}
+				{$otp_date_forward_control}
+				{$label transactions otp_date }			{END otp_date_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END otp_date_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c11}
+			 
+																
+
+{BEGIN cellblock_section3_c12}
+<td
+	{$cell_section3_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c12" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN otp_date_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="otp_date{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-page="transactions_add" data-field="otp_date" data-fieldname="otp_date" {$required_attr_otp_date}>
+		{$otp_date_editcontrol}	</div>
+{END otp_date_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c12}
+			 
+																
+
+{BEGIN cellblock_section3_c13}
+<td
+	{$cell_section3_c13}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c13" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN otp_date_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="otp_date{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field86" {$item_integrated_edit_field86} data-pageid="{$pageid}" data-field="otp_date" data-fieldname="otp_date" >
+		<div data-helpfor="otp_date" {$tooltipAttr transactions otp_date } >
+			<div class="text-muted">{$tooltip transactions otp_date }</div>
+		</div>
+	</div>
+{END otp_date_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c13}
+								</tr>
+	 
+	 
+														<tr {$row_section3_4} >
+										
+
+{BEGIN cellblock_section3_c8}
+<td
+	{$cell_section3_c8}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c8" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN option_exercise_date_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="option_exercise_date{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field87" {$item_integrated_edit_field87} data-pageid="{$pageid}" data-field="option_exercise_date" data-fieldname="option_exercise_date" {$required_attr_option_exercise_date}>
+		<label class="r-edit-label control-label {$option_exercise_date_label_class}" for="{$labelfor_option_exercise_date}">
+			{BEGIN option_exercise_date_label}
+				{$option_exercise_date_forward_control}
+				{$label transactions option_exercise_date }			{END option_exercise_date_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END option_exercise_date_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c8}
+			 
+																
+
+{BEGIN cellblock_section3_c9}
+<td
+	{$cell_section3_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c9" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN option_exercise_date_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="option_exercise_date{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-page="transactions_add" data-field="option_exercise_date" data-fieldname="option_exercise_date" {$required_attr_option_exercise_date}>
+		{$option_exercise_date_editcontrol}	</div>
+{END option_exercise_date_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c9}
+			 
+																
+
+{BEGIN cellblock_section3_c10}
+<td
+	{$cell_section3_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c10" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN option_exercise_date_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="option_exercise_date{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field88" {$item_integrated_edit_field88} data-pageid="{$pageid}" data-field="option_exercise_date" data-fieldname="option_exercise_date" >
+		<div data-helpfor="option_exercise_date" {$tooltipAttr transactions option_exercise_date } >
+			<div class="text-muted">{$tooltip transactions option_exercise_date }</div>
+		</div>
+	</div>
+{END option_exercise_date_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c10}
+								</tr>
+	 
+	 
+														<tr {$row_section3_5} >
+										
+
+{BEGIN cellblock_section3_c5}
+<td
+	{$cell_section3_c5}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c5" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN est_completion_date_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="est_completion_date{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field89" {$item_integrated_edit_field89} data-pageid="{$pageid}" data-field="est_completion_date" data-fieldname="est_completion_date" {$required_attr_est_completion_date}>
+		<label class="r-edit-label control-label {$est_completion_date_label_class}" for="{$labelfor_est_completion_date}">
+			{BEGIN est_completion_date_label}
+				{$est_completion_date_forward_control}
+				{$label transactions est_completion_date }			{END est_completion_date_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END est_completion_date_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c5}
+			 
+																
+
+{BEGIN cellblock_section3_c6}
+<td
+	{$cell_section3_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN est_completion_date_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="est_completion_date{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-page="transactions_add" data-field="est_completion_date" data-fieldname="est_completion_date" {$required_attr_est_completion_date}>
+		{$est_completion_date_editcontrol}	</div>
+{END est_completion_date_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c6}
+			 
+																
+
+{BEGIN cellblock_section3_c7}
+<td
+	{$cell_section3_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c7" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN est_completion_date_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="est_completion_date{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field90" {$item_integrated_edit_field90} data-pageid="{$pageid}" data-field="est_completion_date" data-fieldname="est_completion_date" >
+		<div data-helpfor="est_completion_date" {$tooltipAttr transactions est_completion_date } >
+			<div class="text-muted">{$tooltip transactions est_completion_date }</div>
+		</div>
+	</div>
+{END est_completion_date_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c7}
+								</tr>
+	 
+	 
+														<tr {$row_section3_6} >
+										
+
+{BEGIN cellblock_section3_c26}
+<td
+	{$cell_section3_c26}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c26" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN sp_execution_date_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="sp_execution_date{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field91" {$item_integrated_edit_field91} data-pageid="{$pageid}" data-field="sp_execution_date" data-fieldname="sp_execution_date" {$required_attr_sp_execution_date}>
+		<label class="r-edit-label control-label {$sp_execution_date_label_class}" for="{$labelfor_sp_execution_date}">
+			{BEGIN sp_execution_date_label}
+				{$sp_execution_date_forward_control}
+				{$label transactions sp_execution_date }			{END sp_execution_date_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END sp_execution_date_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c26}
+			 
+																
+
+{BEGIN cellblock_section3_c27}
+<td
+	{$cell_section3_c27}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c27" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN sp_execution_date_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="sp_execution_date{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-page="transactions_add" data-field="sp_execution_date" data-fieldname="sp_execution_date" {$required_attr_sp_execution_date}>
+		{$sp_execution_date_editcontrol}	</div>
+{END sp_execution_date_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c27}
+			 
+																
+
+{BEGIN cellblock_section3_c28}
+<td
+	{$cell_section3_c28}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c28" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN sp_execution_date_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="sp_execution_date{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field92" {$item_integrated_edit_field92} data-pageid="{$pageid}" data-field="sp_execution_date" data-fieldname="sp_execution_date" >
+		<div data-helpfor="sp_execution_date" {$tooltipAttr transactions sp_execution_date } >
+			<div class="text-muted">{$tooltip transactions sp_execution_date }</div>
+		</div>
+	</div>
+{END sp_execution_date_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c28}
+								</tr>
+			</tbody></table>
+{END section3_block}
+		  </div>
+		</div>
+	</div>
+	
+				 
+	 
+												 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="jtc_lease_info_section" {$item_jtc_lease_info_section} data-pageid="{$pageid}" data-page="transactions_add">
+		<div class="panel-heading" role="tab" {$section_section5_headattrs} 
+			data-toggle="collapse"  
+
+				href="#section5{$pageid}" aria-expanded="true" aria-controls="section5"
+
+		>
+		  <h4 class="panel-title">
+		  				<a role="button" >
+				JTC Lease Info			</a>
+					  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section5_xtrclass}" role="tabpanel"  {$section_section5_attrs}
+
+				id="section5{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section5_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section5" id="form_section5_{$pageid}" data-makeup="small" {$form_section5} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section5_0} >
+										
+
+{BEGIN cellblock_section5_c10}
+<td
+	{$cell_section5_c10}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section5_c10" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN service_commencement_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="service_commencement{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field101" {$item_integrated_edit_field101} data-pageid="{$pageid}" data-field="service_commencement" data-fieldname="service_commencement" {$required_attr_service_commencement}>
+		<label class="r-edit-label control-label {$service_commencement_label_class}" for="{$labelfor_service_commencement}">
+			{BEGIN service_commencement_label}
+				{$service_commencement_forward_control}
+				{$label transactions service_commencement }			{END service_commencement_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END service_commencement_fieldblock}
+	
+								</td>
+			{END cellblock_section5_c10}
+			 
+																
+
+{BEGIN cellblock_section5_c11}
+<td
+	{$cell_section5_c11}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section5_c11" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN service_commencement_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="service_commencement{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-page="transactions_add" data-field="service_commencement" data-fieldname="service_commencement" {$required_attr_service_commencement}>
+		{$service_commencement_editcontrol}	</div>
+{END service_commencement_fieldblock}
+	
+								</td>
+			{END cellblock_section5_c11}
+			 
+																
+
+{BEGIN cellblock_section5_c12}
+<td
+	{$cell_section5_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section5_c12" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN service_commencement_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="service_commencement{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field102" {$item_integrated_edit_field102} data-pageid="{$pageid}" data-field="service_commencement" data-fieldname="service_commencement" >
+		<div data-helpfor="service_commencement" {$tooltipAttr transactions service_commencement } >
+			<div class="text-muted">{$tooltip transactions service_commencement }</div>
+		</div>
+	</div>
+{END service_commencement_fieldblock}
+	
+								</td>
+			{END cellblock_section5_c12}
+								</tr>
+	 
+	 
+														<tr {$row_section5_1} >
+										
+
+{BEGIN cellblock_section5_c4}
+<td
+	{$cell_section5_c4}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section5_c4" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN service_completion_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="service_completion{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field103" {$item_integrated_edit_field103} data-pageid="{$pageid}" data-field="service_completion" data-fieldname="service_completion" {$required_attr_service_completion}>
+		<label class="r-edit-label control-label {$service_completion_label_class}" for="{$labelfor_service_completion}">
+			{BEGIN service_completion_label}
+				{$service_completion_forward_control}
+				{$label transactions service_completion }			{END service_completion_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END service_completion_fieldblock}
+	
+								</td>
+			{END cellblock_section5_c4}
+			 
+																
+
+{BEGIN cellblock_section5_c2}
+<td
+	{$cell_section5_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section5_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN service_completion_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="service_completion{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-page="transactions_add" data-field="service_completion" data-fieldname="service_completion" {$required_attr_service_completion}>
+		{$service_completion_editcontrol}	</div>
+{END service_completion_fieldblock}
+	
+								</td>
+			{END cellblock_section5_c2}
+			 
+																
+
+{BEGIN cellblock_section5_c}
+<td
+	{$cell_section5_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section5_c" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN service_completion_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="service_completion{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field74" {$item_integrated_edit_field74} data-pageid="{$pageid}" data-field="service_completion" data-fieldname="service_completion" >
+		<div data-helpfor="service_completion" {$tooltipAttr transactions service_completion } >
+			<div class="text-muted">{$tooltip transactions service_completion }</div>
+		</div>
+	</div>
+{END service_completion_fieldblock}
+	
+								</td>
+			{END cellblock_section5_c}
+								</tr>
+	 
+	 
+														<tr {$row_section5_2} >
+										
+
+{BEGIN cellblock_section5_c7}
+<td
+	{$cell_section5_c7}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section5_c7" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN consultation_fee_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="consultation_fee{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field107" {$item_integrated_edit_field107} data-pageid="{$pageid}" data-field="consultation_fee" data-fieldname="consultation_fee" {$required_attr_consultation_fee}>
+		<label class="r-edit-label control-label {$consultation_fee_label_class}" for="{$labelfor_consultation_fee}">
+			{BEGIN consultation_fee_label}
+				{$consultation_fee_forward_control}
+				{$label transactions consultation_fee }			{END consultation_fee_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END consultation_fee_fieldblock}
+	
+								</td>
+			{END cellblock_section5_c7}
+			 
+																
+
+{BEGIN cellblock_section5_c8}
+<td
+	{$cell_section5_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section5_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN consultation_fee_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="consultation_fee{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-page="transactions_add" data-field="consultation_fee" data-fieldname="consultation_fee" {$required_attr_consultation_fee}>
+		{$consultation_fee_editcontrol}	</div>
+{END consultation_fee_fieldblock}
+	
+								</td>
+			{END cellblock_section5_c8}
+			 
+																
+
+{BEGIN cellblock_section5_c9}
+<td
+	{$cell_section5_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section5_c9" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN consultation_fee_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="consultation_fee{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field108" {$item_integrated_edit_field108} data-pageid="{$pageid}" data-field="consultation_fee" data-fieldname="consultation_fee" >
+		<div data-helpfor="consultation_fee" {$tooltipAttr transactions consultation_fee } >
+			<div class="text-muted">{$tooltip transactions consultation_fee }</div>
+		</div>
+	</div>
+{END consultation_fee_fieldblock}
+	
+								</td>
+			{END cellblock_section5_c9}
+								</tr>
+	 
+	 
+														<tr {$row_section5_3} >
+										
+
+{BEGIN cellblock_section5_c3}
+<td
+	{$cell_section5_c3}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section5_c3" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN result_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="result{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field105" {$item_integrated_edit_field105} data-pageid="{$pageid}" data-field="result" data-fieldname="result" {$required_attr_result}>
+		<label class="r-edit-label control-label {$result_label_class}" for="{$labelfor_result}">
+			{BEGIN result_label}
+				{$result_forward_control}
+				{$label transactions result }			{END result_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END result_fieldblock}
+	
+								</td>
+			{END cellblock_section5_c3}
+			 
+																
+
+{BEGIN cellblock_section5_c5}
+<td
+	{$cell_section5_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section5_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN result_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="result{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="result" data-fieldname="result" {$required_attr_result}>
+		{$result_editcontrol}	</div>
+{END result_fieldblock}
+	
+								</td>
+			{END cellblock_section5_c5}
+			 
+																
+
+{BEGIN cellblock_section5_c6}
+<td
+	{$cell_section5_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section5_c6" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN result_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="result{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field106" {$item_integrated_edit_field106} data-pageid="{$pageid}" data-field="result" data-fieldname="result" >
+		<div data-helpfor="result" {$tooltipAttr transactions result } >
+			<div class="text-muted">{$tooltip transactions result }</div>
+		</div>
+	</div>
+{END result_fieldblock}
+	
+								</td>
+			{END cellblock_section5_c6}
+								</tr>
+			</tbody></table>
+{END section5_block}
+		  </div>
+		</div>
+	</div>
+	
+				 
+	 
+												 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="room_rental_info_section" {$item_room_rental_info_section} data-pageid="{$pageid}" data-page="transactions_add">
+		<div class="panel-heading" role="tab" {$section_section6_headattrs} 
+			data-toggle="collapse"  
+
+				href="#section6{$pageid}" aria-expanded="true" aria-controls="section6"
+
+		>
+		  <h4 class="panel-title">
+		  				<a role="button" >
+				Room Descripton			</a>
+					  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section6_xtrclass}" role="tabpanel"  {$section_section6_attrs}
+
+				id="section6{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section6_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section6" id="form_section6_{$pageid}" data-makeup="small" {$form_section6} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="3"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section6_0} >
+										
+
+{BEGIN cellblock_section6_c1}
+<td
+	{$cell_section6_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section6_c1" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN rm_rental_rm_type_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="rm_rental_rm_type{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label1" {$item_edit_field_label1} data-pageid="{$pageid}" data-field="rm_rental_rm_type" data-fieldname="rm_rental_rm_type" {$required_attr_rm_rental_rm_type}>
+		<label class="r-edit-label control-label {$rm_rental_rm_type_label_class}" for="{$labelfor_rm_rental_rm_type}">
+			{BEGIN rm_rental_rm_type_label}
+				{$rm_rental_rm_type_forward_control}
+				{$label transactions rm_rental_rm_type }			{END rm_rental_rm_type_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END rm_rental_rm_type_fieldblock}
+	
+								</td>
+			{END cellblock_section6_c1}
+			 
+																
+
+{BEGIN cellblock_section6_c}
+<td
+	{$cell_section6_c}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section6_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN rm_rental_rm_type_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="rm_rental_rm_type{$id}" data-itemtype="edit_field" data-itemid="rm_rental_rm_type" {$item_rm_rental_rm_type} data-pageid="{$pageid}" data-page="transactions_add" data-field="rm_rental_rm_type" data-fieldname="rm_rental_rm_type" data-before-same-field {$required_attr_rm_rental_rm_type}>
+		{$rm_rental_rm_type_editcontrol}	</div>
+{END rm_rental_rm_type_fieldblock}
+											{BEGIN rm_rental_rm_type_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="rm_rental_rm_type{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip3" {$item_edit_field_tooltip3} data-pageid="{$pageid}" data-field="rm_rental_rm_type" data-fieldname="rm_rental_rm_type" >
+		<div data-helpfor="rm_rental_rm_type" {$tooltipAttr transactions rm_rental_rm_type } >
+			<div class="text-muted">{$tooltip transactions rm_rental_rm_type }</div>
+		</div>
+	</div>
+{END rm_rental_rm_type_fieldblock}
+	
+								</td>
+			{END cellblock_section6_c}
+			 
+																
+
+{BEGIN cellblock_section6_c2}
+<td
+	{$cell_section6_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section6_c2" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN rm_rental_rm_type_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="rm_rental_rm_type{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip1" {$item_edit_field_tooltip1} data-pageid="{$pageid}" data-field="rm_rental_rm_type" data-fieldname="rm_rental_rm_type" >
+		<div data-helpfor="rm_rental_rm_type" {$tooltipAttr transactions rm_rental_rm_type } >
+			<div class="text-muted">{$tooltip transactions rm_rental_rm_type }</div>
+		</div>
+	</div>
+{END rm_rental_rm_type_fieldblock}
+	
+								</td>
+			{END cellblock_section6_c2}
+								</tr>
+	 
+	 
+														<tr {$row_section6_1} >
+										
+
+{BEGIN cellblock_section6_c3}
+<td
+	{$cell_section6_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section6_c3" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN rm_builtup_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="rm_builtup{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label3" {$item_edit_field_label3} data-pageid="{$pageid}" data-field="rm_builtup" data-fieldname="rm_builtup" {$required_attr_rm_builtup}>
+		<label class="r-edit-label control-label {$rm_builtup_label_class}" for="{$labelfor_rm_builtup}">
+			{BEGIN rm_builtup_label}
+				{$rm_builtup_forward_control}
+				{$label transactions rm_builtup }			{END rm_builtup_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END rm_builtup_fieldblock}
+	
+								</td>
+			{END cellblock_section6_c3}
+			 
+																
+
+{BEGIN cellblock_section6_c4}
+<td
+	{$cell_section6_c4}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section6_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN rm_builtup_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="rm_builtup{$id}" data-itemtype="edit_field" data-itemid="rm_builtup" {$item_rm_builtup} data-pageid="{$pageid}" data-page="transactions_add" data-field="rm_builtup" data-fieldname="rm_builtup" {$required_attr_rm_builtup}>
+		{$rm_builtup_editcontrol}	</div>
+{END rm_builtup_fieldblock}
+											{BEGIN rm_builtup_unit_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="rm_builtup_unit{$id}" data-itemtype="edit_field" data-itemid="edit_field1" {$item_edit_field1} data-pageid="{$pageid}" data-page="transactions_add" data-field="rm_builtup_unit" data-fieldname="rm_builtup_unit" {$required_attr_rm_builtup_unit}>
+		{$rm_builtup_unit_editcontrol}	</div>
+{END rm_builtup_unit_fieldblock}
+	
+								</td>
+			{END cellblock_section6_c4}
+			 
+																
+
+{BEGIN cellblock_section6_c5}
+<td
+	{$cell_section6_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section6_c5" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN rm_builtup_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="rm_builtup{$id}" data-itemtype="edit_field_tooltip" data-itemid="edit_field_tooltip4" {$item_edit_field_tooltip4} data-pageid="{$pageid}" data-field="rm_builtup" data-fieldname="rm_builtup" >
+		<div data-helpfor="rm_builtup" {$tooltipAttr transactions rm_builtup } >
+			<div class="text-muted">{$tooltip transactions rm_builtup }</div>
+		</div>
+	</div>
+{END rm_builtup_fieldblock}
+	
+								</td>
+			{END cellblock_section6_c5}
+								</tr>
+			</tbody></table>
+{END section6_block}
+		  </div>
+		</div>
+	</div>
+	
+				{END section_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="prop_info_section" {$item_prop_info_section} data-pageid="{$pageid}" data-page="transactions_add">
+		<div class="panel-heading" role="tab" {$section_section7_headattrs} 
+			data-toggle="collapse"  
+
+				href="#section7{$pageid}" aria-expanded="true" aria-controls="section7"
+
+		>
+		  <h4 class="panel-title">
+		  				<a role="button" >
+				Property Info			</a>
+					  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section7_xtrclass}" role="tabpanel"  {$section_section7_attrs}
+
+				id="section7{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="left"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="small" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		
+		data-v-width="5"
+	>
+	<tbody>
+										<tr {$row_section1_0} >
+										
+
+{BEGIN cellblock_section1_c4}
+<td
+	{$cell_section1_c4}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c4" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN prop_address_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="prop_address{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field71" {$item_integrated_edit_field71} data-pageid="{$pageid}" data-field="prop_address" data-fieldname="prop_address" {$required_attr_prop_address}>
+		<label class="r-edit-label control-label {$prop_address_label_class}" for="{$labelfor_prop_address}">
+			{BEGIN prop_address_label}
+				{$prop_address_forward_control}
+				{$label transactions prop_address }			{END prop_address_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END prop_address_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c4}
+			 
+																
+
+{BEGIN cellblock_section1_c2}
+<td
+	{$cell_section1_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c2" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN prop_address_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="prop_address{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field34" {$item_integrated_edit_field34} data-pageid="{$pageid}" data-page="transactions_add" data-field="prop_address" data-fieldname="prop_address" {$required_attr_prop_address}>
+		{$prop_address_editcontrol}	</div>
+{END prop_address_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c2}
+			 
+																
+
+{BEGIN cellblock_section1_c}
+<td
+	{$cell_section1_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN prop_address_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="prop_address{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field72" {$item_integrated_edit_field72} data-pageid="{$pageid}" data-field="prop_address" data-fieldname="prop_address" >
+		<div data-helpfor="prop_address" {$tooltipAttr transactions prop_address } >
+			<div class="text-muted">{$tooltip transactions prop_address }</div>
+		</div>
+	</div>
+{END prop_address_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c}
+								</tr>
+	 
+	 
+														<tr {$row_section1_1} >
+										
+
+{BEGIN cellblock_section1_c5}
+<td
+	{$cell_section1_c5}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c5" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN prop_type_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="prop_type{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field95" {$item_integrated_edit_field95} data-pageid="{$pageid}" data-field="prop_type" data-fieldname="prop_type" {$required_attr_prop_type}>
+		<label class="r-edit-label control-label {$prop_type_label_class}" for="{$labelfor_prop_type}">
+			{BEGIN prop_type_label}
+				{$prop_type_forward_control}
+				{$label transactions prop_type }			{END prop_type_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END prop_type_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c5}
+			 
+																
+
+{BEGIN cellblock_section1_c3}
+<td
+	{$cell_section1_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c3" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN prop_type_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="prop_type{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field35" {$item_integrated_edit_field35} data-pageid="{$pageid}" data-page="transactions_add" data-field="prop_type" data-fieldname="prop_type" {$required_attr_prop_type}>
+		{$prop_type_editcontrol}	</div>
+{END prop_type_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c3}
+			 
+																
+
+{BEGIN cellblock_section1_c6}
+<td
+	{$cell_section1_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c6" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN prop_type_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="prop_type{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field96" {$item_integrated_edit_field96} data-pageid="{$pageid}" data-field="prop_type" data-fieldname="prop_type" >
+		<div data-helpfor="prop_type" {$tooltipAttr transactions prop_type } >
+			<div class="text-muted">{$tooltip transactions prop_type }</div>
+		</div>
+	</div>
+{END prop_type_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c6}
+								</tr>
+	 
+	 
+														<tr {$row_section1_2} >
+										
+
+{BEGIN cellblock_section1_c7}
+<td
+	{$cell_section1_c7}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c7" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN Prop_kind_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="Prop_kind{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field115" {$item_integrated_edit_field115} data-pageid="{$pageid}" data-field="Prop_kind" data-fieldname="Prop_kind" {$required_attr_Prop_kind}>
+		<label class="r-edit-label control-label {$Prop_kind_label_class}" for="{$labelfor_Prop_kind}">
+			{BEGIN Prop_kind_label}
+				{$Prop_kind_forward_control}
+				{$label transactions Prop_kind }			{END Prop_kind_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END Prop_kind_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c7}
+			 
+																
+
+{BEGIN cellblock_section1_c8}
+<td
+	{$cell_section1_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c8" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN Prop_kind_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="Prop_kind{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field36" {$item_integrated_edit_field36} data-pageid="{$pageid}" data-page="transactions_add" data-field="Prop_kind" data-fieldname="Prop_kind" {$required_attr_Prop_kind}>
+		{$Prop_kind_editcontrol}	</div>
+{END Prop_kind_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c8}
+			 
+																
+
+{BEGIN cellblock_section1_c9}
+<td
+	{$cell_section1_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c9" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN Prop_kind_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="Prop_kind{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field116" {$item_integrated_edit_field116} data-pageid="{$pageid}" data-field="Prop_kind" data-fieldname="Prop_kind" >
+		<div data-helpfor="Prop_kind" {$tooltipAttr transactions Prop_kind } >
+			<div class="text-muted">{$tooltip transactions Prop_kind }</div>
+		</div>
+	</div>
+{END Prop_kind_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c9}
+								</tr>
+	 
+	 
+														<tr {$row_section1_3} >
+										
+
+{BEGIN cellblock_section1_c10}
+<td
+	{$cell_section1_c10}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c10" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN prop_name_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="prop_name{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field117" {$item_integrated_edit_field117} data-pageid="{$pageid}" data-field="prop_name" data-fieldname="prop_name" {$required_attr_prop_name}>
+		<label class="r-edit-label control-label {$prop_name_label_class}" for="{$labelfor_prop_name}">
+			{BEGIN prop_name_label}
+				{$prop_name_forward_control}
+				{$label transactions prop_name }			{END prop_name_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END prop_name_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c10}
+			 
+																
+
+{BEGIN cellblock_section1_c11}
+<td
+	{$cell_section1_c11}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c11" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN prop_name_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="prop_name{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field37" {$item_integrated_edit_field37} data-pageid="{$pageid}" data-page="transactions_add" data-field="prop_name" data-fieldname="prop_name" {$required_attr_prop_name}>
+		{$prop_name_editcontrol}	</div>
+{END prop_name_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c11}
+			 
+																
+
+{BEGIN cellblock_section1_c12}
+<td
+	{$cell_section1_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c12" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN prop_name_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="prop_name{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field118" {$item_integrated_edit_field118} data-pageid="{$pageid}" data-field="prop_name" data-fieldname="prop_name" >
+		<div data-helpfor="prop_name" {$tooltipAttr transactions prop_name } >
+			<div class="text-muted">{$tooltip transactions prop_name }</div>
+		</div>
+	</div>
+{END prop_name_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c12}
+								</tr>
+	 
+	 
+														<tr {$row_section1_4} >
+										
+
+{BEGIN cellblock_section1_c13}
+<td
+	{$cell_section1_c13}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c13" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN land_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="land{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field119" {$item_integrated_edit_field119} data-pageid="{$pageid}" data-field="land" data-fieldname="land" {$required_attr_land}>
+		<label class="r-edit-label control-label {$land_label_class}" for="{$labelfor_land}">
+			{BEGIN land_label}
+				{$land_forward_control}
+				{$label transactions land }			{END land_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END land_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c13}
+			 
+																
+
+{BEGIN cellblock_section1_c14}
+<td
+	{$cell_section1_c14}
+	class=""
+	
+			
+			data-cellId="section1_c14" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN land_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="land{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field38" {$item_integrated_edit_field38} data-pageid="{$pageid}" data-page="transactions_add" data-field="land" data-fieldname="land" {$required_attr_land}>
+		{$land_editcontrol}	</div>
+{END land_fieldblock}
+											{BEGIN land_unit_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="land_unit{$id}" data-itemtype="edit_field" data-itemid="land_unit" {$item_land_unit} data-pageid="{$pageid}" data-page="transactions_add" data-field="land_unit" data-fieldname="land_unit" {$required_attr_land_unit}>
+		{$land_unit_editcontrol}	</div>
+{END land_unit_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c14}
+			 
+																
+
+{BEGIN cellblock_section1_c15}
+<td
+	{$cell_section1_c15}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c15" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN land_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="land{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field120" {$item_integrated_edit_field120} data-pageid="{$pageid}" data-field="land" data-fieldname="land" >
+		<div data-helpfor="land" {$tooltipAttr transactions land } >
+			<div class="text-muted">{$tooltip transactions land }</div>
+		</div>
+	</div>
+{END land_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c15}
+								</tr>
+	 
+	 
+														<tr {$row_section1_5} >
+										
+
+{BEGIN cellblock_section1_c19}
+<td
+	{$cell_section1_c19}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c19" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN built_up_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="built_up{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field123" {$item_integrated_edit_field123} data-pageid="{$pageid}" data-field="built_up" data-fieldname="built_up" {$required_attr_built_up}>
+		<label class="r-edit-label control-label {$built_up_label_class}" for="{$labelfor_built_up}">
+			{BEGIN built_up_label}
+				{$built_up_forward_control}
+				{$label transactions built_up }			{END built_up_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END built_up_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c19}
+			 
+																
+
+{BEGIN cellblock_section1_c20}
+<td
+	{$cell_section1_c20}
+	class=""
+	
+			
+			data-cellId="section1_c20" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN built_up_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="built_up{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field40" {$item_integrated_edit_field40} data-pageid="{$pageid}" data-page="transactions_add" data-field="built_up" data-fieldname="built_up" {$required_attr_built_up}>
+		{$built_up_editcontrol}	</div>
+{END built_up_fieldblock}
+											{BEGIN built_up_unit_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="built_up_unit{$id}" data-itemtype="edit_field" data-itemid="builtup_unit" {$item_builtup_unit} data-pageid="{$pageid}" data-page="transactions_add" data-field="built_up_unit" data-fieldname="built_up_unit" {$required_attr_built_up_unit}>
+		{$built_up_unit_editcontrol}	</div>
+{END built_up_unit_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c20}
+			 
+																
+
+{BEGIN cellblock_section1_c21}
+<td
+	{$cell_section1_c21}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c21" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN built_up_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="built_up{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field124" {$item_integrated_edit_field124} data-pageid="{$pageid}" data-field="built_up" data-fieldname="built_up" >
+		<div data-helpfor="built_up" {$tooltipAttr transactions built_up } >
+			<div class="text-muted">{$tooltip transactions built_up }</div>
+		</div>
+	</div>
+{END built_up_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c21}
+								</tr>
+	 
+	 
+														<tr {$row_section1_6} >
+										
+
+{BEGIN cellblock_section1_c25}
+<td
+	{$cell_section1_c25}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c25" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN no_bedrooms_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="no_bedrooms{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field127" {$item_integrated_edit_field127} data-pageid="{$pageid}" data-field="no_bedrooms" data-fieldname="no_bedrooms" {$required_attr_no_bedrooms}>
+		<label class="r-edit-label control-label {$no_bedrooms_label_class}" for="{$labelfor_no_bedrooms}">
+			{BEGIN no_bedrooms_label}
+				{$no_bedrooms_forward_control}
+				{$label transactions no_bedrooms }			{END no_bedrooms_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END no_bedrooms_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c25}
+			 
+																
+
+{BEGIN cellblock_section1_c26}
+<td
+	{$cell_section1_c26}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c26" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN no_bedrooms_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="no_bedrooms{$id}" data-itemtype="edit_field" data-itemid="no_bedrooms" {$item_no_bedrooms} data-pageid="{$pageid}" data-page="transactions_add" data-field="no_bedrooms" data-fieldname="no_bedrooms" {$required_attr_no_bedrooms}>
+		{$no_bedrooms_editcontrol}	</div>
+{END no_bedrooms_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c26}
+			 
+																
+
+{BEGIN cellblock_section1_c27}
+<td
+	{$cell_section1_c27}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c27" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN no_bedrooms_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="no_bedrooms{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field128" {$item_integrated_edit_field128} data-pageid="{$pageid}" data-field="no_bedrooms" data-fieldname="no_bedrooms" >
+		<div data-helpfor="no_bedrooms" {$tooltipAttr transactions no_bedrooms } >
+			<div class="text-muted">{$tooltip transactions no_bedrooms }</div>
+		</div>
+	</div>
+{END no_bedrooms_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c27}
+								</tr>
+	 
+	 
+														<tr {$row_section1_7} >
+										
+
+{BEGIN cellblock_section1_c28}
+<td
+	{$cell_section1_c28}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c28" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN no_bathrooms_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="no_bathrooms{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field129" {$item_integrated_edit_field129} data-pageid="{$pageid}" data-field="no_bathrooms" data-fieldname="no_bathrooms" {$required_attr_no_bathrooms}>
+		<label class="r-edit-label control-label {$no_bathrooms_label_class}" for="{$labelfor_no_bathrooms}">
+			{BEGIN no_bathrooms_label}
+				{$no_bathrooms_forward_control}
+				{$label transactions no_bathrooms }			{END no_bathrooms_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END no_bathrooms_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c28}
+			 
+																
+
+{BEGIN cellblock_section1_c29}
+<td
+	{$cell_section1_c29}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c29" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN no_bathrooms_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="no_bathrooms{$id}" data-itemtype="edit_field" data-itemid="no_bathrooms" {$item_no_bathrooms} data-pageid="{$pageid}" data-page="transactions_add" data-field="no_bathrooms" data-fieldname="no_bathrooms" {$required_attr_no_bathrooms}>
+		{$no_bathrooms_editcontrol}	</div>
+{END no_bathrooms_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c29}
+			 
+																
+
+{BEGIN cellblock_section1_c30}
+<td
+	{$cell_section1_c30}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c30" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN no_bathrooms_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="no_bathrooms{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field130" {$item_integrated_edit_field130} data-pageid="{$pageid}" data-field="no_bathrooms" data-fieldname="no_bathrooms" >
+		<div data-helpfor="no_bathrooms" {$tooltipAttr transactions no_bathrooms } >
+			<div class="text-muted">{$tooltip transactions no_bathrooms }</div>
+		</div>
+	</div>
+{END no_bathrooms_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c30}
+								</tr>
+	 
+	 
+														<tr {$row_section1_8} >
+										
+
+{BEGIN cellblock_section1_c31}
+<td
+	{$cell_section1_c31}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c31" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN condition_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="condition{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field131" {$item_integrated_edit_field131} data-pageid="{$pageid}" data-field="condition" data-fieldname="condition" {$required_attr_condition}>
+		<label class="r-edit-label control-label {$condition_label_class}" for="{$labelfor_condition}">
+			{BEGIN condition_label}
+				{$condition_forward_control}
+				{$label transactions condition }			{END condition_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END condition_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c31}
+			 
+																
+
+{BEGIN cellblock_section1_c32}
+<td
+	{$cell_section1_c32}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c32" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN condition_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="condition{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field44" {$item_integrated_edit_field44} data-pageid="{$pageid}" data-page="transactions_add" data-field="condition" data-fieldname="condition" {$required_attr_condition}>
+		{$condition_editcontrol}	</div>
+{END condition_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c32}
+			 
+																
+
+{BEGIN cellblock_section1_c33}
+<td
+	{$cell_section1_c33}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c33" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN condition_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="condition{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field132" {$item_integrated_edit_field132} data-pageid="{$pageid}" data-field="condition" data-fieldname="condition" >
+		<div data-helpfor="condition" {$tooltipAttr transactions condition } >
+			<div class="text-muted">{$tooltip transactions condition }</div>
+		</div>
+	</div>
+{END condition_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c33}
+								</tr>
+	 
+	 
+														<tr {$row_section1_9} >
+										
+
+{BEGIN cellblock_section1_c34}
+<td
+	{$cell_section1_c34}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c34" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN tenure_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="tenure{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field133" {$item_integrated_edit_field133} data-pageid="{$pageid}" data-field="tenure" data-fieldname="tenure" {$required_attr_tenure}>
+		<label class="r-edit-label control-label {$tenure_label_class}" for="{$labelfor_tenure}">
+			{BEGIN tenure_label}
+				{$tenure_forward_control}
+				{$label transactions tenure }			{END tenure_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END tenure_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c34}
+			 
+																
+
+{BEGIN cellblock_section1_c35}
+<td
+	{$cell_section1_c35}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c35" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN tenure_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="tenure{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field45" {$item_integrated_edit_field45} data-pageid="{$pageid}" data-page="transactions_add" data-field="tenure" data-fieldname="tenure" {$required_attr_tenure}>
+		{$tenure_editcontrol}	</div>
+{END tenure_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c35}
+			 
+																
+
+{BEGIN cellblock_section1_c36}
+<td
+	{$cell_section1_c36}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c36" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN tenure_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="tenure{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field134" {$item_integrated_edit_field134} data-pageid="{$pageid}" data-field="tenure" data-fieldname="tenure" >
+		<div data-helpfor="tenure" {$tooltipAttr transactions tenure } >
+			<div class="text-muted">{$tooltip transactions tenure }</div>
+		</div>
+	</div>
+{END tenure_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c36}
+								</tr>
+	 
+	 
+														<tr {$row_section1_10} >
+										
+
+{BEGIN cellblock_section1_c37}
+<td
+	{$cell_section1_c37}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c37" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN TOP_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="TOP{$id}" data-itemtype="edit_field_label" data-itemid="integrated_edit_field135" {$item_integrated_edit_field135} data-pageid="{$pageid}" data-field="TOP" data-fieldname="TOP" {$required_attr_TOP}>
+		<label class="r-edit-label control-label {$TOP_label_class}" for="{$labelfor_TOP}">
+			{BEGIN TOP_label}
+				{$TOP_forward_control}
+				{$label transactions TOP }			{END TOP_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END TOP_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c37}
+			 
+																
+
+{BEGIN cellblock_section1_c38}
+<td
+	{$cell_section1_c38}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c38" data-pageid="{$pageid}"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN TOP_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="TOP{$id}" data-itemtype="edit_field" data-itemid="integrated_edit_field46" {$item_integrated_edit_field46} data-pageid="{$pageid}" data-page="transactions_add" data-field="TOP" data-fieldname="TOP" {$required_attr_TOP}>
+		{$TOP_editcontrol}	</div>
+{END TOP_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c38}
+			 
+																
+
+{BEGIN cellblock_section1_c39}
+<td
+	{$cell_section1_c39}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c39" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN TOP_fieldblock}
+	<div class="r-edit-tooltip" data-signal-error-for="TOP{$id}" data-itemtype="edit_field_tooltip" data-itemid="integrated_edit_field136" {$item_integrated_edit_field136} data-pageid="{$pageid}" data-field="TOP" data-fieldname="TOP" >
+		<div data-helpfor="TOP" {$tooltipAttr transactions TOP } >
+			<div class="text-muted">{$tooltip transactions TOP }</div>
+		</div>
+	</div>
+{END TOP_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c39}
+								</tr>
+	 
+	 
+														<tr {$row_section1_11} >
+										
+
+{BEGIN cellblock_section1_c40}
+<td
+	{$cell_section1_c40}
+	class="r-align-right r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c40" data-pageid="{$pageid}" data-page="transactions_add"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN prop_id_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="prop_id{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label6" {$item_edit_field_label6} data-pageid="{$pageid}" data-field="prop_id" data-fieldname="prop_id" {$required_attr_prop_id}>
+		<label class="r-edit-label control-label {$prop_id_label_class}" for="{$labelfor_prop_id}">
+			{BEGIN prop_id_label}
+				{$prop_id_forward_control}
+				{$label transactions prop_id }			{END prop_id_label}
+			<span class="icon-required"></span>
+		</label>
+	</div>
+{END prop_id_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c40}
+			 
+																
+
+{BEGIN cellblock_section1_c41}
+<td
+	{$cell_section1_c41}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c41" data-pageid="{$pageid}" data-page="transactions_add"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN prop_id_fieldblock}
+	<div class="r-edit-field" data-signal-error-for="prop_id{$id}" data-itemtype="edit_field" data-itemid="edit_field5" {$item_edit_field5} data-pageid="{$pageid}" data-field="prop_id" data-fieldname="prop_id" {$required_attr_prop_id}>
+		{$prop_id_editcontrol}	</div>
+{END prop_id_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c41}
+			 
+		
+							
+
+{BEGIN cellblock_section1_c42}
+<td
+	{$cell_section1_c42}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c42" data-pageid="{$pageid}" data-page="transactions_add"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section1_c42}
+								</tr>
+			</tbody></table>
+{END section1_block}
+		  </div>
+		</div>
+	</div>
+											<table 
+	data-body-align="left"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_4} >
+										
+
+{BEGIN cellblock_grid_c1}
+<td
+	{$cell_grid_c1}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+	ocolspan="3"		data-cellId="grid_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet" {$item_snippet} data-pageid="{$pageid}" >
+{$event 192420}
+</span>	
+								</td>
+			{END cellblock_grid_c1}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+	ocolspan="3"		data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	
+">
+		 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-success   
+	" {$savebutton_attrs} >
+							Save & proceed to add Parties Involved			</a>
+</span>
+	 
+		{BEGIN reset_button}
+<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							{mlang_message RESET}			</a>
+</span>
+{END reset_button}
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+		</div>					</div>
+			</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

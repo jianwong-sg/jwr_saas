@@ -1,0 +1,365 @@
+span[data-itemtype="simple_search"][data-itemid="simple_search"].form-group {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+.col-md-4.text-right.bs-view-label{
+    font-weight:normal !important;
+}
+
+.r-view-field {
+    font-weight:normal !important;
+}
+
+.bs-view-label {
+font-weight:normal;
+}
+
+.control-label, .r-view-label {
+padding-right:5px !important;
+font-weight:normal !important;
+}
+
+.modal-header ui-draggable-handle {
+    display:none !important;
+}
+
+.form-text {
+font-style:italic;
+color:#03c04a;
+font-size:14px;
+font-family:arial;
+font-weight:normal;
+}
+
+.form-text-bold {
+font-style:normal;
+color:#03c04a;
+font-size:14px;
+}
+
+.read {
+pointer-events:none;
+}
+
+/* The sidebar menu */
+div.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 180px; /* Set the width of the sidebar */
+  position: fixed !important; /* Fixed Sidebar (stay in place on scroll) */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #ffffff !important; /* light violet */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-left:8px;
+	margin-top:62px !important;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #808080 !important;
+  display: block;
+  display: flex;
+  align-items:center;
+  padding-left:2px;
+  
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #000000 !important;
+	font-weight:600;
+}
+
+
+.comm, .percentage, .co_broke, .ownership {
+pointer-events:none;
+}
+
+.form-name {
+padding:3px 15px;
+border-collapse:collapse;
+border:1px solid grey;
+border-radius:5px;
+text-align:center;
+margin-left:auto;
+margin-right:auto;
+margin-top:10px;
+width:550px;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 110px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 14px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: #b7b7b7;
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+#return-to-top-form {
+position: fixed;
+bottom: 110px;
+right: 20px;
+background: rgb(0, 0, 0);
+background: rgba(0, 0, 0, 0.7);
+width: 50px;
+height: 50px;
+display: block;
+text-decoration: none;
+-webkit-border-radius: 35px;
+-moz-border-radius: 35px;
+border-radius: 35px;
+-webkit-transition: all 0.3s linear;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+
+#return-to-top-form i {
+color: #fff;
+margin: 0;
+position: relative;
+right: 15px;
+top: 13px;
+font-size: 19px;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-ms-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+#return-to-top-form:hover {
+background: #b7b7b7;
+}
+
+#return-to-top-form:hover i {
+color: #fff;
+top: 5px;
+}
+
+.box1 {
+display: inline-block;
+width: 20px;
+height: 50px;
+}
+
+.bs-navform.bs-navform.bs-navform {
+height: 110px;
+}
+
+/* Style page content */
+.main {
+  margin-left: 180px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+.right-space {
+width:35px;
+display:flex;
+justify-content:center;
+}
+
+.noshow {
+display: none;
+}
+
+.input-border {
+border: 1px solid grey;
+outline: 0;
+}
+
+.table-1 {
+font-family:tahoma;
+font-size:1.025em; 
+}
+
+@media print{    
+[data-itemid=doc_upload_section] {
+    display:none !important;
+}
+
+#return-to-top{
+    display:none;
+}
+
+.clearfix {
+margin-top:-10px !important;
+}
+
+div.r-view-field {
+padding-left:3px !important;
+padding-right:0 !important;
+overflow-wrap: break-word !important; 
+}
+
+.pg-line {
+display:none !important;
+}
+
+.btn, .btn-sm, #return-to-top-form,
+#bottombuttons, #top-buttons1, a[href]:after{
+display: none !important;
+}
+
+.bs-details-tx, .container-tx {
+page-break-inside:avoid;
+display:block;
+}
+/*
+table {
+display:block;
+page-break-after:auto;
+}
+
+tr {
+page-break-inside:avoid;
+page-break-after:auto;
+}
+*/
+body {
+padding: 0 !important;
+overflow: hidden !important;
+display: block;
+margin: 0 30px; 
+font-family:times new roman !important;
+font-size:15px !important;
+}
+
+#form_above-grid_1 {
+display:none !important;
+}
+
+#editPageButton1 {
+display:none !important;
+}
+
+.btn-link, .glyphicon, .glyphicon-search {
+display:none !important;
+}
+
+#party_involved, #comm{
+page-break-before:auto;
+}
+
+hr {
+display:none !important;
+}
+
+}
+/*end media print*/
+
+hr{
+height: 1px;
+background-color: #ccc;
+border: none;
+}
+
+#buttons-container1{
+padding-top: 8px;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 50px;
+z-index: 101;
+background-color: #f2f2f2;
+}
+
+#top-buttons1{
+width: 100%;
+margin: 5px auto;
+}
+
+#top-buttons1 div {
+display: inline-block;
+}
+
+#top-buttons1 .rnr-button {
+margin: 0px 5px;
+}
+
+#page-wrap { 
+width: 800px; 
+margin: 0 auto; 
+}
+
+.bs-details-tx {
+max-width: 800px; 
+overflow: hidden;
+}
+
+.container-tx {
+max-width: 800px;
+overflow: hidden;
+}
+
+.inline {
+display:flex;
+align-items:center;
+}
+
+.tx-font14 {
+font-size:1em;
+}
+
+.heading1 {
+font-size:1.025em;
+font-weight:bold;
+padding-left:48px;
+margin-bottom:-15px;
+}
+
+.flex-container-col {
+width:auto;
+height:auto;
+display:flex;
+flex-wrap:wrap;
+}
+
+.wrapword {
+word-wrap: break-word;
+}

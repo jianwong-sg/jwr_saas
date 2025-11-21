@@ -1,0 +1,388 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+						<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		{BEGIN styleCSSFiles}
+<link REL="stylesheet" href="{$stylepath}" type="text/css">
+{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel rental_main_properties search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_rental_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_rental}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id_rental{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id_rental" data-fieldname="id_rental" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_rental}">
+		{$label rental_main_properties id_rental }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_rental}
+	</div>
+	<div class="r-search-field">
+		{$id_rental_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_rental_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_rental_fieldblock}
+											
+{BEGIN owner_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_owner}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="owner{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="owner" data-fieldname="owner" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_owner}">
+		{$label rental_main_properties owner }	</label>
+	<div class="r-search-option">
+		{$searchtype_owner}
+	</div>
+	<div class="r-search-field">
+		{$owner_editcontrol}	</div>
+	<div class="r-search-field">
+		{$owner_editcontrol1}
+	</div>
+	
+</div>
+
+{END owner_fieldblock}
+											
+{BEGIN tenant_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tenant}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="tenant{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="tenant" data-fieldname="tenant" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tenant}">
+		{$label rental_main_properties tenant }	</label>
+	<div class="r-search-option">
+		{$searchtype_tenant}
+	</div>
+	<div class="r-search-field">
+		{$tenant_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tenant_editcontrol1}
+	</div>
+	
+</div>
+
+{END tenant_fieldblock}
+											
+{BEGIN title_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_title}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="title{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="title" data-fieldname="title" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_title}">
+		{$label rental_main_properties title }	</label>
+	<div class="r-search-option">
+		{$searchtype_title}
+	</div>
+	<div class="r-search-field">
+		{$title_editcontrol}	</div>
+	<div class="r-search-field">
+		{$title_editcontrol1}
+	</div>
+	
+</div>
+
+{END title_fieldblock}
+											
+{BEGIN prop_address_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_prop_address}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="prop_address{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="prop_address" data-fieldname="prop_address" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_prop_address}">
+		{$label rental_main_properties prop_address }	</label>
+	<div class="r-search-option">
+		{$searchtype_prop_address}
+	</div>
+	<div class="r-search-field">
+		{$prop_address_editcontrol}	</div>
+	<div class="r-search-field">
+		{$prop_address_editcontrol1}
+	</div>
+	
+</div>
+
+{END prop_address_fieldblock}
+											
+{BEGIN types_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_types}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="types{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="types" data-fieldname="types" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_types}">
+		{$label rental_main_properties types }	</label>
+	<div class="r-search-option">
+		{$searchtype_types}
+	</div>
+	<div class="r-search-field">
+		{$types_editcontrol}	</div>
+	<div class="r-search-field">
+		{$types_editcontrol1}
+	</div>
+	
+</div>
+
+{END types_fieldblock}
+											
+{BEGIN kind_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_kind}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="kind{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="kind" data-fieldname="kind" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_kind}">
+		{$label rental_main_properties kind }	</label>
+	<div class="r-search-option">
+		{$searchtype_kind}
+	</div>
+	<div class="r-search-field">
+		{$kind_editcontrol}	</div>
+	<div class="r-search-field">
+		{$kind_editcontrol1}
+	</div>
+	
+</div>
+
+{END kind_fieldblock}
+											
+{BEGIN hdb_town_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hdb_town}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="hdb_town{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="hdb_town" data-fieldname="hdb_town" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_hdb_town}">
+		{$label rental_main_properties hdb_town }	</label>
+	<div class="r-search-option">
+		{$searchtype_hdb_town}
+	</div>
+	<div class="r-search-field">
+		{$hdb_town_editcontrol}	</div>
+	<div class="r-search-field">
+		{$hdb_town_editcontrol1}
+	</div>
+	
+</div>
+
+{END hdb_town_fieldblock}
+											
+{BEGIN hdb_scheme_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_hdb_scheme}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="hdb_scheme{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="hdb_scheme" data-fieldname="hdb_scheme" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_hdb_scheme}">
+		{$label rental_main_properties hdb_scheme }	</label>
+	<div class="r-search-option">
+		{$searchtype_hdb_scheme}
+	</div>
+	<div class="r-search-field">
+		{$hdb_scheme_editcontrol}	</div>
+	<div class="r-search-field">
+		{$hdb_scheme_editcontrol1}
+	</div>
+	
+</div>
+
+{END hdb_scheme_fieldblock}
+											
+{BEGIN tenure_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tenure}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="tenure{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="tenure" data-fieldname="tenure" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_tenure}">
+		{$label rental_main_properties tenure }	</label>
+	<div class="r-search-option">
+		{$searchtype_tenure}
+	</div>
+	<div class="r-search-field">
+		{$tenure_editcontrol}	</div>
+	<div class="r-search-field">
+		{$tenure_editcontrol1}
+	</div>
+	
+</div>
+
+{END tenure_fieldblock}
+											
+{BEGIN agent_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_agent}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="agent{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="agent" data-fieldname="agent" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_agent}">
+		{$label rental_main_properties agent }	</label>
+	<div class="r-search-option">
+		{$searchtype_agent}
+	</div>
+	<div class="r-search-field">
+		{$agent_editcontrol}	</div>
+	<div class="r-search-field">
+		{$agent_editcontrol1}
+	</div>
+	
+</div>
+
+{END agent_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							{mlang_message SEARCH}			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							{mlang_message RESET}			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

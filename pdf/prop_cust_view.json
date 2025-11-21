@@ -1,0 +1,469 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel prop_cust view}","hidden":"{$item_hide_view_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+					colSpan: 2,
+		
+			
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+				{BEGIN row_grid_0}
+				[
+																{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel prop_cust name }","bold":true}," ",{$name_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust owner_type }","bold":true}," ",{$owner_type_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field1}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust ownership_kind }","bold":true}," ",{$ownership_kind_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field2}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust nric }","bold":true}," ",{$nric_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field7}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust id_type }","bold":true}," ",{$id_type_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field8}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust address }","bold":true}," ",{$address_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field9}"},
+				
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section',
+			widths: ['*'],
+			body: [
+				[{text: 'Individual', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section_0}
+									"*", 
+								{END col_section_0}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section_0}
+				[
+																{BEGIN cellblock_section_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel prop_cust nationality }","bold":true}," ",{$nationality_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field3}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust gender }","bold":true}," ",{$gender_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field4}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust dob }","bold":true}," ",{$dob_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field5}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust occupation }","bold":true}," ",{$occupation_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field6}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust mobile }","bold":true}," ",{$mobile_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field10}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust tel }","bold":true}," ",{$tel_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field11}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust email }","bold":true}," ",{$email_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field12}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c3}
+											],
+				{END row_section_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section1',
+			widths: ['*'],
+			body: [
+				[{text: 'Entity', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section1_0}
+									"*", 
+								{END col_section1_0}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section1_0}
+				[
+																{BEGIN cellblock_section1_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel prop_cust country_incorporation }","bold":true}," ",{$country_incorporation_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field13}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust reg_date }","bold":true}," ",{$reg_date_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field14}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust trade }","bold":true}," ",{$trade_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field15}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust office_tel }","bold":true}," ",{$office_tel_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field16}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust biz_email }","bold":true}," ",{$biz_email_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field17}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust contact_person }","bold":true}," ",{$contact_person_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field18}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust contact_person_id }","bold":true}," ",{$contact_person_id_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field19}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust destination }","bold":true}," ",{$destination_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field20}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust contact_person_cell }","bold":true}," ",{$contact_person_cell_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field21}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust contact_email }","bold":true}," ",{$contact_email_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field22}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust remarks }","bold":true}," ",{$remarks_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field23}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c1}
+											],
+				{END row_section1_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust purchased_at }","bold":true}," ",{$purchased_at_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field24}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust purchase_date }","bold":true}," ",{$purchase_date_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field25}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust sold_at }","bold":true}," ",{$sold_at_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field26}"},
+				
+				
+			{"text":[{"text":"{$jslabel prop_cust sold_date }","bold":true}," ",{$sold_date_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field27}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_view_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_view_close}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+																							{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_prev}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_next}"},
+				
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+			]
+};
+
+pdfFonts = {$pdfFonts};
+  

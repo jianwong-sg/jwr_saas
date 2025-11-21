@@ -1,0 +1,1026 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+						<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		{BEGIN styleCSSFiles}
+<link REL="stylesheet" href="{$stylepath}" type="text/css">
+{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel cdd_checklist1 view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c1}
+<td
+	{$cell_grid_c1}
+	class=" r-ori-vert"
+	
+			
+	ocolspan="2"		data-cellId="grid_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				{BEGIN id_cddlist_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-page="cdd_checklist1_view" data-field="id_cddlist" data-fieldname="id_cddlist" data-before-same-field>{BEGIN id_cddlist_label}
+		{$id_cddlist_forward_control}
+		{$label cdd_checklist1 id_cddlist }{END id_cddlist_label}
+	</label>
+{END id_cddlist_fieldblock}
+											{BEGIN id_cddlist_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-page="cdd_checklist1_view" data-field="id_cddlist" data-fieldname="id_cddlist" >
+		{$id_cddlist_value}	</div>
+{END id_cddlist_fieldblock}
+											{BEGIN representing_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field39" {$item_integrated_edit_field39} data-pageid="{$pageid}" data-page="cdd_checklist1_view" data-field="representing" data-fieldname="representing" data-before-same-field>{BEGIN representing_label}
+		{$representing_forward_control}
+		{$label cdd_checklist1 representing }{END representing_label}
+	</label>
+{END representing_fieldblock}
+											{BEGIN representing_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field37" {$item_integrated_edit_field37} data-pageid="{$pageid}" data-page="cdd_checklist1_view" data-field="representing" data-fieldname="representing" >
+		{$representing_value}	</div>
+{END representing_fieldblock}
+											{BEGIN cdd_checklist_customer_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field33" {$item_integrated_edit_field33} data-pageid="{$pageid}" data-field="cdd_checklist_customer" data-fieldname="cdd_checklist_customer" data-before-same-field>{BEGIN cdd_checklist_customer_label}
+		{$cdd_checklist_customer_forward_control}
+		{$label cdd_checklist1 cdd_checklist_customer }{END cdd_checklist_customer_label}
+	</label>
+{END cdd_checklist_customer_fieldblock}
+											{BEGIN cdd_checklist_customer_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-page="cdd_checklist1_view" data-field="cdd_checklist_customer" data-fieldname="cdd_checklist_customer" >
+		{$cdd_checklist_customer_value}	</div>
+{END cdd_checklist_customer_fieldblock}
+											{BEGIN checked_by_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field36" {$item_integrated_edit_field36} data-pageid="{$pageid}" data-field="checked_by" data-fieldname="checked_by" data-before-same-field>{BEGIN checked_by_label}
+		{$checked_by_forward_control}
+		{$label cdd_checklist1 checked_by }{END checked_by_label}
+	</label>
+{END checked_by_fieldblock}
+											{BEGIN checked_by_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-page="cdd_checklist1_view" data-field="checked_by" data-fieldname="checked_by" >
+		{$checked_by_value}	</div>
+{END checked_by_fieldblock}
+											{BEGIN checked_date_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field44" {$item_integrated_edit_field44} data-pageid="{$pageid}" data-field="checked_date" data-fieldname="checked_date" data-before-same-field>{BEGIN checked_date_label}
+		{$checked_date_forward_control}
+		{$label cdd_checklist1 checked_date }{END checked_date_label}
+	</label>
+{END checked_date_fieldblock}
+											{BEGIN checked_date_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field35" {$item_integrated_edit_field35} data-pageid="{$pageid}" data-page="cdd_checklist1_view" data-field="checked_date" data-fieldname="checked_date" >
+		{$checked_date_value}	</div>
+{END checked_date_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c1}
+								</tr>
+	 
+	 
+														<tr {$row_grid_1} >
+										
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text" {$item_text} data-pageid="{$pageid}" data-page="cdd_checklist1_view" > 
+	1</span>
+	
+								</td>
+			{END cellblock_grid_c}
+			 
+																
+
+{BEGIN cellblock_grid_c38}
+<td
+	{$cell_grid_c38}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c38" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet3" {$item_snippet3} data-pageid="{$pageid}" >
+{$event 192215}
+</span>											<span data-itemtype="snippet" data-itemid="snippet4" {$item_snippet4} data-pageid="{$pageid}" >
+{$event 192386}
+</span>											{BEGIN list14_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="list14" data-fieldname="list14" >
+		{$list14_value}	</div>
+{END list14_fieldblock}
+											{BEGIN remark14_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="edit_field_label" {$item_edit_field_label} data-pageid="{$pageid}" data-field="remark14" data-fieldname="remark14" data-before-same-field>{BEGIN remark14_label}
+		{$remark14_forward_control}
+		{$label cdd_checklist1 remark14 }{END remark14_label}
+	</label>
+{END remark14_fieldblock}
+											{BEGIN remark14_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field31" {$item_integrated_edit_field31} data-pageid="{$pageid}" data-page="cdd_checklist1_view" data-field="remark14" data-fieldname="remark14" >
+		{$remark14_value}	</div>
+{END remark14_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c38}
+								</tr>
+	 
+	 
+														<tr {$row_grid_2} >
+										
+
+{BEGIN cellblock_grid_c39}
+<td
+	{$cell_grid_c39}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c39" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text1" {$item_text1} data-pageid="{$pageid}" data-page="cdd_checklist1_view" > 
+	2</span>
+	
+								</td>
+			{END cellblock_grid_c39}
+			 
+																
+
+{BEGIN cellblock_grid_c40}
+<td
+	{$cell_grid_c40}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c40" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet" {$item_snippet} data-pageid="{$pageid}" data-page="cdd_checklist1_view" >
+{$event 192223}
+</span>											<span data-itemtype="snippet" data-itemid="snippet1" {$item_snippet1} data-pageid="{$pageid}" >
+{$event 192395}
+</span>											{BEGIN list01_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-page="cdd_checklist1_view" data-field="list01" data-fieldname="list01" >
+		{$list01_value}	</div>
+{END list01_fieldblock}
+											{BEGIN remark01_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field48" {$item_integrated_edit_field48} data-pageid="{$pageid}" data-field="remark01" data-fieldname="remark01" data-before-same-field>{BEGIN remark01_label}
+		{$remark01_forward_control}
+		{$label cdd_checklist1 remark01 }{END remark01_label}
+	</label>
+{END remark01_fieldblock}
+											{BEGIN remark01_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-page="cdd_checklist1_view" data-field="remark01" data-fieldname="remark01" >
+		{$remark01_value}	</div>
+{END remark01_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c40}
+								</tr>
+	 
+	 
+														<tr {$row_grid_3} >
+										
+
+{BEGIN cellblock_grid_c42}
+<td
+	{$cell_grid_c42}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c42" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text2" {$item_text2} data-pageid="{$pageid}" data-page="cdd_checklist1_view" > 
+	3</span>
+	
+								</td>
+			{END cellblock_grid_c42}
+			 
+																
+
+{BEGIN cellblock_grid_c41}
+<td
+	{$cell_grid_c41}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c41" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet2" {$item_snippet2} data-pageid="{$pageid}" data-page="cdd_checklist1_view" >
+{$event 192221}
+</span>											<span data-itemtype="snippet" data-itemid="snippet5" {$item_snippet5} data-pageid="{$pageid}" >
+{$event 192396}
+</span>											{BEGIN list02_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="list02" data-fieldname="list02" >
+		{$list02_value}	</div>
+{END list02_fieldblock}
+											{BEGIN remark02_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="edit_field_label1" {$item_edit_field_label1} data-pageid="{$pageid}" data-field="remark02" data-fieldname="remark02" data-before-same-field>{BEGIN remark02_label}
+		{$remark02_forward_control}
+		{$label cdd_checklist1 remark02 }{END remark02_label}
+	</label>
+{END remark02_fieldblock}
+											{BEGIN remark02_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-page="cdd_checklist1_view" data-field="remark02" data-fieldname="remark02" >
+		{$remark02_value}	</div>
+{END remark02_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c41}
+								</tr>
+	 
+	 
+														<tr {$row_grid_4} >
+										
+
+{BEGIN cellblock_grid_c43}
+<td
+	{$cell_grid_c43}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c43" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text3" {$item_text3} data-pageid="{$pageid}" data-page="cdd_checklist1_view" > 
+	4</span>
+	
+								</td>
+			{END cellblock_grid_c43}
+			 
+																
+
+{BEGIN cellblock_grid_c44}
+<td
+	{$cell_grid_c44}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c44" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet6" {$item_snippet6} data-pageid="{$pageid}" data-page="cdd_checklist1_view" >
+{$event 192228}
+</span>											{BEGIN list03_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="list03" data-fieldname="list03" >
+		{$list03_value}	</div>
+{END list03_fieldblock}
+											{BEGIN remark03_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field56" {$item_integrated_edit_field56} data-pageid="{$pageid}" data-field="remark03" data-fieldname="remark03" data-before-same-field>{BEGIN remark03_label}
+		{$remark03_forward_control}
+		{$label cdd_checklist1 remark03 }{END remark03_label}
+	</label>
+{END remark03_fieldblock}
+											{BEGIN remark03_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="remark03" data-fieldname="remark03" >
+		{$remark03_value}	</div>
+{END remark03_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c44}
+								</tr>
+	 
+	 
+														<tr {$row_grid_5} >
+										
+
+{BEGIN cellblock_grid_c45}
+<td
+	{$cell_grid_c45}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c45" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text4" {$item_text4} data-pageid="{$pageid}" data-page="cdd_checklist1_view" > 
+	5</span>
+	
+								</td>
+			{END cellblock_grid_c45}
+			 
+																
+
+{BEGIN cellblock_grid_c46}
+<td
+	{$cell_grid_c46}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c46" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet7" {$item_snippet7} data-pageid="{$pageid}" data-page="cdd_checklist1_view" >
+{$event 192226}
+</span>	
+								</td>
+			{END cellblock_grid_c46}
+								</tr>
+	 
+	 
+														<tr {$row_grid_6} >
+										
+
+{BEGIN cellblock_grid_c48}
+<td
+	{$cell_grid_c48}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c48" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text5" {$item_text5} data-pageid="{$pageid}" data-page="cdd_checklist1_view" > 
+	a)</span>
+	
+								</td>
+			{END cellblock_grid_c48}
+			 
+																
+
+{BEGIN cellblock_grid_c47}
+<td
+	{$cell_grid_c47}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c47" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet8" {$item_snippet8} data-pageid="{$pageid}" >
+{$event 192250}
+</span>											{BEGIN list04_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="list04" data-fieldname="list04" >
+		{$list04_value}	</div>
+{END list04_fieldblock}
+											{BEGIN remark04_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field60" {$item_integrated_edit_field60} data-pageid="{$pageid}" data-field="remark04" data-fieldname="remark04" data-before-same-field>{BEGIN remark04_label}
+		{$remark04_forward_control}
+		{$label cdd_checklist1 remark04 }{END remark04_label}
+	</label>
+{END remark04_fieldblock}
+											{BEGIN remark04_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="remark04" data-fieldname="remark04" >
+		{$remark04_value}	</div>
+{END remark04_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c47}
+								</tr>
+	 
+	 
+														<tr {$row_grid_7} >
+										
+
+{BEGIN cellblock_grid_c49}
+<td
+	{$cell_grid_c49}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c49" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text6" {$item_text6} data-pageid="{$pageid}" data-page="cdd_checklist1_view" > 
+	b)</span>
+	
+								</td>
+			{END cellblock_grid_c49}
+			 
+																
+
+{BEGIN cellblock_grid_c50}
+<td
+	{$cell_grid_c50}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c50" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet9" {$item_snippet9} data-pageid="{$pageid}" data-page="cdd_checklist1_view" >
+{$event 192475}
+</span>											{BEGIN list05_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="list05" data-fieldname="list05" >
+		{$list05_value}	</div>
+{END list05_fieldblock}
+											{BEGIN remark05_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field64" {$item_integrated_edit_field64} data-pageid="{$pageid}" data-field="remark05" data-fieldname="remark05" data-before-same-field>{BEGIN remark05_label}
+		{$remark05_forward_control}
+		{$label cdd_checklist1 remark05 }{END remark05_label}
+	</label>
+{END remark05_fieldblock}
+											{BEGIN remark05_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="remark05" data-fieldname="remark05" >
+		{$remark05_value}	</div>
+{END remark05_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c50}
+								</tr>
+	 
+	 
+														<tr {$row_grid_8} >
+										
+
+{BEGIN cellblock_grid_c51}
+<td
+	{$cell_grid_c51}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c51" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text7" {$item_text7} data-pageid="{$pageid}" data-page="cdd_checklist1_view" > 
+	c)</span>
+	
+								</td>
+			{END cellblock_grid_c51}
+			 
+																
+
+{BEGIN cellblock_grid_c52}
+<td
+	{$cell_grid_c52}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c52" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet10" {$item_snippet10} data-pageid="{$pageid}" data-page="cdd_checklist1_view" >
+{$event 192510}
+</span>											{BEGIN list06_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="list06" data-fieldname="list06" >
+		{$list06_value}	</div>
+{END list06_fieldblock}
+											{BEGIN remark06_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field68" {$item_integrated_edit_field68} data-pageid="{$pageid}" data-field="remark06" data-fieldname="remark06" data-before-same-field>{BEGIN remark06_label}
+		{$remark06_forward_control}
+		{$label cdd_checklist1 remark06 }{END remark06_label}
+	</label>
+{END remark06_fieldblock}
+											{BEGIN remark06_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="remark06" data-fieldname="remark06" >
+		{$remark06_value}	</div>
+{END remark06_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c52}
+								</tr>
+	 
+	 
+														<tr {$row_grid_9} >
+										
+
+{BEGIN cellblock_grid_c54}
+<td
+	{$cell_grid_c54}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c54" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text8" {$item_text8} data-pageid="{$pageid}" data-page="cdd_checklist1_view" > 
+	d)</span>
+	
+								</td>
+			{END cellblock_grid_c54}
+			 
+																
+
+{BEGIN cellblock_grid_c53}
+<td
+	{$cell_grid_c53}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c53" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet11" {$item_snippet11} data-pageid="{$pageid}" data-page="cdd_checklist1_view" >
+{$event 192320}
+</span>											{BEGIN list07_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="list07" data-fieldname="list07" >
+		{$list07_value}	</div>
+{END list07_fieldblock}
+											{BEGIN remark07_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field72" {$item_integrated_edit_field72} data-pageid="{$pageid}" data-field="remark07" data-fieldname="remark07" data-before-same-field>{BEGIN remark07_label}
+		{$remark07_forward_control}
+		{$label cdd_checklist1 remark07 }{END remark07_label}
+	</label>
+{END remark07_fieldblock}
+											{BEGIN remark07_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="remark07" data-fieldname="remark07" >
+		{$remark07_value}	</div>
+{END remark07_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c53}
+								</tr>
+	 
+	 
+														<tr {$row_grid_10} >
+										
+
+{BEGIN cellblock_grid_c55}
+<td
+	{$cell_grid_c55}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c55" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text9" {$item_text9} data-pageid="{$pageid}" data-page="cdd_checklist1_view" > 
+	e)</span>
+	
+								</td>
+			{END cellblock_grid_c55}
+			 
+																
+
+{BEGIN cellblock_grid_c56}
+<td
+	{$cell_grid_c56}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c56" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet12" {$item_snippet12} data-pageid="{$pageid}" data-page="cdd_checklist1_view" >
+{$event 192252}
+</span>											{BEGIN list08_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="list08" data-fieldname="list08" >
+		{$list08_value}	</div>
+{END list08_fieldblock}
+											{BEGIN remark08_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field76" {$item_integrated_edit_field76} data-pageid="{$pageid}" data-field="remark08" data-fieldname="remark08" data-before-same-field>{BEGIN remark08_label}
+		{$remark08_forward_control}
+		{$label cdd_checklist1 remark08 }{END remark08_label}
+	</label>
+{END remark08_fieldblock}
+											{BEGIN remark08_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="remark08" data-fieldname="remark08" >
+		{$remark08_value}	</div>
+{END remark08_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c56}
+								</tr>
+	 
+	 
+														<tr {$row_grid_11} >
+										
+
+{BEGIN cellblock_grid_c58}
+<td
+	{$cell_grid_c58}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c58" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text10" {$item_text10} data-pageid="{$pageid}" data-page="cdd_checklist1_view" > 
+	f)</span>
+	
+								</td>
+			{END cellblock_grid_c58}
+			 
+																
+
+{BEGIN cellblock_grid_c57}
+<td
+	{$cell_grid_c57}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c57" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet13" {$item_snippet13} data-pageid="{$pageid}" data-page="cdd_checklist1_view" >
+{$event 192485}
+</span>											{BEGIN list09_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="list09" data-fieldname="list09" >
+		{$list09_value}	</div>
+{END list09_fieldblock}
+											{BEGIN remark09_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="edit_field_label2" {$item_edit_field_label2} data-pageid="{$pageid}" data-field="remark09" data-fieldname="remark09" data-before-same-field>{BEGIN remark09_label}
+		{$remark09_forward_control}
+		{$label cdd_checklist1 remark09 }{END remark09_label}
+	</label>
+{END remark09_fieldblock}
+											{BEGIN remark09_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="remark09" data-fieldname="remark09" >
+		{$remark09_value}	</div>
+{END remark09_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c57}
+								</tr>
+	 
+	 
+														<tr {$row_grid_12} >
+										
+
+{BEGIN cellblock_grid_c59}
+<td
+	{$cell_grid_c59}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c59" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text11" {$item_text11} data-pageid="{$pageid}" data-page="cdd_checklist1_view" > 
+	g)</span>
+	
+								</td>
+			{END cellblock_grid_c59}
+			 
+																
+
+{BEGIN cellblock_grid_c60}
+<td
+	{$cell_grid_c60}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c60" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet14" {$item_snippet14} data-pageid="{$pageid}" data-page="cdd_checklist1_view" >
+{$event 192502}
+</span>											{BEGIN list10_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="list10" data-fieldname="list10" >
+		{$list10_value}	</div>
+{END list10_fieldblock}
+											{BEGIN remark10_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field84" {$item_integrated_edit_field84} data-pageid="{$pageid}" data-field="remark10" data-fieldname="remark10" data-before-same-field>{BEGIN remark10_label}
+		{$remark10_forward_control}
+		{$label cdd_checklist1 remark10 }{END remark10_label}
+	</label>
+{END remark10_fieldblock}
+											{BEGIN remark10_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="remark10" data-fieldname="remark10" >
+		{$remark10_value}	</div>
+{END remark10_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c60}
+								</tr>
+	 
+	 
+														<tr {$row_grid_13} >
+										
+
+{BEGIN cellblock_grid_c62}
+<td
+	{$cell_grid_c62}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c62" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text12" {$item_text12} data-pageid="{$pageid}" data-page="cdd_checklist1_view" > 
+	h)</span>
+	
+								</td>
+			{END cellblock_grid_c62}
+			 
+																
+
+{BEGIN cellblock_grid_c61}
+<td
+	{$cell_grid_c61}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c61" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet15" {$item_snippet15} data-pageid="{$pageid}" data-page="cdd_checklist1_view" >
+{$event 192328}
+</span>											{BEGIN list11_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="list11" data-fieldname="list11" >
+		{$list11_value}	</div>
+{END list11_fieldblock}
+											{BEGIN remark11_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field88" {$item_integrated_edit_field88} data-pageid="{$pageid}" data-field="remark11" data-fieldname="remark11" data-before-same-field>{BEGIN remark11_label}
+		{$remark11_forward_control}
+		{$label cdd_checklist1 remark11 }{END remark11_label}
+	</label>
+{END remark11_fieldblock}
+											{BEGIN remark11_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="remark11" data-fieldname="remark11" >
+		{$remark11_value}	</div>
+{END remark11_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c61}
+								</tr>
+	 
+	 
+														<tr {$row_grid_14} >
+										
+
+{BEGIN cellblock_grid_c64}
+<td
+	{$cell_grid_c64}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c64" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text13" {$item_text13} data-pageid="{$pageid}" data-page="cdd_checklist1_view" > 
+	i)</span>
+	
+								</td>
+			{END cellblock_grid_c64}
+			 
+																
+
+{BEGIN cellblock_grid_c63}
+<td
+	{$cell_grid_c63}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c63" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet16" {$item_snippet16} data-pageid="{$pageid}" data-page="cdd_checklist1_view" >
+{$event 192262}
+</span>											{BEGIN list12_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="list12" data-fieldname="list12" >
+		{$list12_value}	</div>
+{END list12_fieldblock}
+											{BEGIN remark12_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field92" {$item_integrated_edit_field92} data-pageid="{$pageid}" data-field="remark12" data-fieldname="remark12" data-before-same-field>{BEGIN remark12_label}
+		{$remark12_forward_control}
+		{$label cdd_checklist1 remark12 }{END remark12_label}
+	</label>
+{END remark12_fieldblock}
+											{BEGIN remark12_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="remark12" data-fieldname="remark12" >
+		{$remark12_value}	</div>
+{END remark12_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c63}
+								</tr>
+	 
+	 
+														<tr {$row_grid_15} >
+										
+
+{BEGIN cellblock_grid_c65}
+<td
+	{$cell_grid_c65}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c65" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text14" {$item_text14} data-pageid="{$pageid}" data-page="cdd_checklist1_view" > 
+	j)</span>
+	
+								</td>
+			{END cellblock_grid_c65}
+			 
+																
+
+{BEGIN cellblock_grid_c66}
+<td
+	{$cell_grid_c66}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c66" data-pageid="{$pageid}" data-page="cdd_checklist1_view"
+		data-v-cell="3"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet17" {$item_snippet17} data-pageid="{$pageid}" data-page="cdd_checklist1_view" >
+{$event 192461}
+</span>											{BEGIN list13_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="list13" data-fieldname="list13" >
+		{$list13_value}	</div>
+{END list13_fieldblock}
+											{BEGIN remark13_fieldblock}
+	<label class="control-label r-view-label" data-itemtype="edit_field_label" data-itemid="integrated_edit_field96" {$item_integrated_edit_field96} data-pageid="{$pageid}" data-field="remark13" data-fieldname="remark13" data-before-same-field>{BEGIN remark13_label}
+		{$remark13_forward_control}
+		{$label cdd_checklist1 remark13 }{END remark13_label}
+	</label>
+{END remark13_fieldblock}
+											{BEGIN remark13_fieldblock}
+	<div class="r-view-field" data-itemtype="edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="remark13" data-fieldname="remark13" >
+		{$remark13_value}	</div>
+{END remark13_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c66}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							{mlang_message CLOSE_WINDOW}			</a>
+</span>
+{END close_button}
+	 
+		<span data-itemtype="snippet" data-itemid="snippet18" {$item_snippet18} data-pageid="{$pageid}" >
+{$event 192313}
+</span>	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

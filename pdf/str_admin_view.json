@@ -1,0 +1,5699 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel str_admin view}","hidden":"{$item_hide_view_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+					colSpan: 2,
+		
+			
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+												{BEGIN col_grid_1}
+						"*", 
+							{END col_grid_1}
+												{BEGIN col_grid_2}
+						"*", 
+							{END col_grid_2}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+								{BEGIN row_grid_1}
+						
+			"%",
+						{END row_grid_1}
+			 
+								{BEGIN row_grid_2}
+						
+			"%",
+						{END row_grid_2}
+			 
+								{BEGIN row_grid_3}
+						
+			"%",
+						{END row_grid_3}
+			 
+								{BEGIN row_grid_4}
+						
+			"%",
+						{END row_grid_4}
+			 
+								{BEGIN row_grid_5}
+						
+			"%",
+						{END row_grid_5}
+			 
+								{BEGIN row_grid_6}
+						
+			"%",
+						{END row_grid_6}
+			 
+								{BEGIN row_grid_7}
+						
+			"%",
+						{END row_grid_7}
+			 
+								{BEGIN row_grid_8}
+						
+			"%",
+						{END row_grid_8}
+			 
+								{BEGIN row_grid_9}
+						
+			"%",
+						{END row_grid_9}
+			 
+								{BEGIN row_grid_10}
+						
+			"%",
+						{END row_grid_10}
+			 
+								{BEGIN row_grid_11}
+						
+			"%",
+						{END row_grid_11}
+			 
+								{BEGIN row_grid_12}
+						
+			"%",
+						{END row_grid_12}
+			 
+								{BEGIN row_grid_13}
+						
+			"%",
+						{END row_grid_13}
+			 
+								{BEGIN row_grid_14}
+						
+			"%",
+						{END row_grid_14}
+			 
+				],
+	
+		body: [
+				
+				{BEGIN row_grid_0}
+				[
+																{BEGIN cellblock_grid_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'id_tx',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin id_tx }","hidden":"{$item_hide_integrated_edit_field52}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_grid_c4}
+																							{BEGIN cellblock_grid_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'id_tx',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$id_tx_pdfvalue},"hidden":"{$item_hide_integrated_edit_field}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c2}
+																							{BEGIN cellblock_grid_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'id_tx',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$id_tx_pdfvalue},"hidden":"{$item_hide_integrated_edit_field53}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c}
+											],
+				{END row_grid_0}
+						{BEGIN row_grid_1}
+				[
+																{BEGIN cellblock_grid_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			fieldName: 'party_id',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin party_id }","hidden":"{$item_hide_integrated_edit_field54}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_grid_c5}
+																							{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			fieldName: 'party_id',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$party_id_pdfvalue},"hidden":"{$item_hide_integrated_edit_field1}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c3}
+																							{BEGIN cellblock_grid_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			fieldName: 'party_id',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$party_id_pdfvalue},"hidden":"{$item_hide_integrated_edit_field55}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c6}
+											],
+				{END row_grid_1}
+						{BEGIN row_grid_2}
+				[
+																{BEGIN cellblock_grid_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			fieldName: 'represnting',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin represnting }","hidden":"{$item_hide_integrated_edit_field56}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_grid_c7}
+																							{BEGIN cellblock_grid_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			fieldName: 'represnting',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$represnting_pdfvalue},"hidden":"{$item_hide_integrated_edit_field2}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c8}
+																							{BEGIN cellblock_grid_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			fieldName: 'represnting',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$represnting_pdfvalue},"hidden":"{$item_hide_integrated_edit_field57}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c9}
+											],
+				{END row_grid_2}
+						{BEGIN row_grid_3}
+				[
+																{BEGIN cellblock_grid_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			fieldName: 'filing_date',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin filing_date }","hidden":"{$item_hide_integrated_edit_field58}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_grid_c10}
+																							{BEGIN cellblock_grid_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			fieldName: 'filing_date',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$filing_date_pdfvalue},"hidden":"{$item_hide_integrated_edit_field3}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c11}
+																							{BEGIN cellblock_grid_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			fieldName: 'filing_date',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$filing_date_pdfvalue},"hidden":"{$item_hide_integrated_edit_field59}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c12}
+											],
+				{END row_grid_3}
+						{BEGIN row_grid_4}
+				[
+																{BEGIN cellblock_grid_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c1}
+			colSpan: {$colspan_grid_c1},
+			{END colspan_grid_c1}
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section',
+			widths: ['*'],
+			body: [
+				[{text: 'Reporting Estate Agency (EA) Firm', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section_0}
+									"*", 
+								{END col_section_0}
+															{BEGIN col_section_1}
+									"*", 
+								{END col_section_1}
+															{BEGIN col_section_2}
+									"*", 
+								{END col_section_2}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section_0}
+				[
+																{BEGIN cellblock_section_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'ea_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin ea_name }","hidden":"{$item_hide_integrated_edit_field62}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section_c4}
+																							{BEGIN cellblock_section_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'ea_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$ea_name_pdfvalue},"hidden":"{$item_hide_integrated_edit_field4}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c2}
+																							{BEGIN cellblock_section_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'ea_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$ea_name_pdfvalue},"hidden":"{$item_hide_integrated_edit_field63}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c}
+											],
+				{END row_section_0}
+						{BEGIN row_section_1}
+				[
+																{BEGIN cellblock_section_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			fieldName: 'ea_address',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin ea_address }","hidden":"{$item_hide_integrated_edit_field64}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section_c5}
+																							{BEGIN cellblock_section_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			fieldName: 'ea_address',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$ea_address_pdfvalue},"hidden":"{$item_hide_integrated_edit_field5}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c3}
+																							{BEGIN cellblock_section_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			fieldName: 'ea_address',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$ea_address_pdfvalue},"hidden":"{$item_hide_integrated_edit_field65}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c6}
+											],
+				{END row_section_1}
+						{BEGIN row_section_2}
+				[
+																{BEGIN cellblock_section_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			fieldName: 'ea_contact',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin ea_contact }","hidden":"{$item_hide_integrated_edit_field66}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section_c7}
+																							{BEGIN cellblock_section_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			fieldName: 'ea_contact',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$ea_contact_pdfvalue},"hidden":"{$item_hide_integrated_edit_field6}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c8}
+																							{BEGIN cellblock_section_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			fieldName: 'ea_contact',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$ea_contact_pdfvalue},"hidden":"{$item_hide_integrated_edit_field67}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c9}
+											],
+				{END row_section_2}
+						{BEGIN row_section_3}
+				[
+																{BEGIN cellblock_section_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			fieldName: 'ea_email',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin ea_email }","hidden":"{$item_hide_integrated_edit_field68}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section_c10}
+																							{BEGIN cellblock_section_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			fieldName: 'ea_email',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$ea_email_pdfvalue},"hidden":"{$item_hide_integrated_edit_field7}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c11}
+																							{BEGIN cellblock_section_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			fieldName: 'ea_email',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$ea_email_pdfvalue},"hidden":"{$item_hide_integrated_edit_field69}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c12}
+											],
+				{END row_section_3}
+						{BEGIN row_section_4}
+				[
+																{BEGIN cellblock_section_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			fieldName: 'relationship_with_subject',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin relationship_with_subject }","hidden":"{$item_hide_integrated_edit_field70}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section_c13}
+																							{BEGIN cellblock_section_c14}
+{
+	cellId: 'c14',
+	col:0,
+	row:0,
+			fieldName: 'relationship_with_subject',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$relationship_with_subject_pdfvalue},"hidden":"{$item_hide_integrated_edit_field8}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c14}
+																							{BEGIN cellblock_section_c15}
+{
+	cellId: 'c15',
+	col:0,
+	row:0,
+			fieldName: 'relationship_with_subject',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$relationship_with_subject_pdfvalue},"hidden":"{$item_hide_integrated_edit_field71}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section_c15}
+											],
+				{END row_section_4}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c1}
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c1',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_4}
+						{BEGIN row_grid_5}
+				[
+																{BEGIN cellblock_grid_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c13}
+			colSpan: {$colspan_grid_c13},
+			{END colspan_grid_c13}
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section1',
+			widths: ['*'],
+			body: [
+				[{text: 'Reporting Officer', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section1_0}
+									"*", 
+								{END col_section1_0}
+															{BEGIN col_section1_1}
+									"*", 
+								{END col_section1_1}
+															{BEGIN col_section1_2}
+									"*", 
+								{END col_section1_2}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section1_0}
+				[
+																{BEGIN cellblock_section1_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'officer_name1',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin officer_name1 }","hidden":"{$item_hide_integrated_edit_field72}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section1_c4}
+																							{BEGIN cellblock_section1_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'officer_name1',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$officer_name1_pdfvalue},"hidden":"{$item_hide_integrated_edit_field9}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c2}
+																							{BEGIN cellblock_section1_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'officer_name1',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$officer_name1_pdfvalue},"hidden":"{$item_hide_integrated_edit_field73}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c}
+											],
+				{END row_section1_0}
+						{BEGIN row_section1_1}
+				[
+																{BEGIN cellblock_section1_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			fieldName: 'designation1',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin designation1 }","hidden":"{$item_hide_integrated_edit_field74}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section1_c5}
+																							{BEGIN cellblock_section1_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			fieldName: 'designation1',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$designation1_pdfvalue},"hidden":"{$item_hide_integrated_edit_field10}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c3}
+																							{BEGIN cellblock_section1_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			fieldName: 'designation1',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$designation1_pdfvalue},"hidden":"{$item_hide_integrated_edit_field75}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c6}
+											],
+				{END row_section1_1}
+						{BEGIN row_section1_2}
+				[
+																{BEGIN cellblock_section1_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			fieldName: 'report_ref',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin report_ref }","hidden":"{$item_hide_integrated_edit_field76}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section1_c7}
+																							{BEGIN cellblock_section1_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			fieldName: 'report_ref',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$report_ref_pdfvalue},"hidden":"{$item_hide_integrated_edit_field11}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c8}
+																							{BEGIN cellblock_section1_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			fieldName: 'report_ref',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$report_ref_pdfvalue},"hidden":"{$item_hide_integrated_edit_field77}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c9}
+											],
+				{END row_section1_2}
+						{BEGIN row_section1_3}
+				[
+																{BEGIN cellblock_section1_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			fieldName: 'officer_name2',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin officer_name2 }","hidden":"{$item_hide_integrated_edit_field78}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section1_c10}
+																							{BEGIN cellblock_section1_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			fieldName: 'officer_name2',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$officer_name2_pdfvalue},"hidden":"{$item_hide_integrated_edit_field12}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c11}
+																							{BEGIN cellblock_section1_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			fieldName: 'officer_name2',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$officer_name2_pdfvalue},"hidden":"{$item_hide_integrated_edit_field79}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c12}
+											],
+				{END row_section1_3}
+						{BEGIN row_section1_4}
+				[
+																{BEGIN cellblock_section1_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			fieldName: 'designation2',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin designation2 }","hidden":"{$item_hide_integrated_edit_field80}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section1_c13}
+																							{BEGIN cellblock_section1_c14}
+{
+	cellId: 'c14',
+	col:0,
+	row:0,
+			fieldName: 'designation2',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$designation2_pdfvalue},"hidden":"{$item_hide_integrated_edit_field13}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c14}
+																							{BEGIN cellblock_section1_c15}
+{
+	cellId: 'c15',
+	col:0,
+	row:0,
+			fieldName: 'designation2',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$designation2_pdfvalue},"hidden":"{$item_hide_integrated_edit_field81}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section1_c15}
+											],
+				{END row_section1_4}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c13}
+																		{ 
+				cellId: 'c13',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c13',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_5}
+						{BEGIN row_grid_6}
+				[
+																{BEGIN cellblock_grid_c14}
+{
+	cellId: 'c14',
+	col:0,
+	row:0,
+			fieldName: 'customer_type',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin customer_type }","hidden":"{$item_hide_integrated_edit_field60}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_grid_c14}
+																							{BEGIN cellblock_grid_c15}
+{
+	cellId: 'c15',
+	col:0,
+	row:0,
+			fieldName: 'customer_type',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$customer_type_pdfvalue},"hidden":"{$item_hide_integrated_edit_field14}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c15}
+																							{BEGIN cellblock_grid_c16}
+{
+	cellId: 'c16',
+	col:0,
+	row:0,
+			fieldName: 'customer_type',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$customer_type_pdfvalue},"hidden":"{$item_hide_integrated_edit_field61}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c16}
+											],
+				{END row_grid_6}
+						{BEGIN row_grid_7}
+				[
+																{BEGIN cellblock_grid_c17}
+{
+	cellId: 'c17',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c17}
+			colSpan: {$colspan_grid_c17},
+			{END colspan_grid_c17}
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section2',
+			widths: ['*'],
+			body: [
+				[{text: 'Client\'s Entity Information', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section2_0}
+									"*", 
+								{END col_section2_0}
+															{BEGIN col_section2_1}
+									"*", 
+								{END col_section2_1}
+															{BEGIN col_section2_2}
+									"*", 
+								{END col_section2_2}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section2_0}
+				[
+																{BEGIN cellblock_section2_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'entity_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin entity_name }","hidden":"{$item_hide_integrated_edit_field82}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section2_c4}
+																							{BEGIN cellblock_section2_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'entity_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$entity_name_pdfvalue},"hidden":"{$item_hide_integrated_edit_field15}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c2}
+																							{BEGIN cellblock_section2_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'entity_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$entity_name_pdfvalue},"hidden":"{$item_hide_integrated_edit_field83}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c}
+											],
+				{END row_section2_0}
+						{BEGIN row_section2_1}
+				[
+																{BEGIN cellblock_section2_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			fieldName: 'country_reg',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin country_reg }","hidden":"{$item_hide_integrated_edit_field84}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section2_c5}
+																							{BEGIN cellblock_section2_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			fieldName: 'country_reg',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$country_reg_pdfvalue},"hidden":"{$item_hide_integrated_edit_field16}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c3}
+																							{BEGIN cellblock_section2_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			fieldName: 'country_reg',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$country_reg_pdfvalue},"hidden":"{$item_hide_integrated_edit_field85}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c6}
+											],
+				{END row_section2_1}
+						{BEGIN row_section2_2}
+				[
+																{BEGIN cellblock_section2_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			fieldName: 'reg_no',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin reg_no }","hidden":"{$item_hide_integrated_edit_field86}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section2_c7}
+																							{BEGIN cellblock_section2_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			fieldName: 'reg_no',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$reg_no_pdfvalue},"hidden":"{$item_hide_integrated_edit_field17}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c8}
+																							{BEGIN cellblock_section2_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			fieldName: 'reg_no',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$reg_no_pdfvalue},"hidden":"{$item_hide_integrated_edit_field87}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c9}
+											],
+				{END row_section2_2}
+						{BEGIN row_section2_3}
+				[
+																{BEGIN cellblock_section2_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			fieldName: 'reg_date',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin reg_date }","hidden":"{$item_hide_integrated_edit_field88}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section2_c10}
+																							{BEGIN cellblock_section2_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			fieldName: 'reg_date',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$reg_date_pdfvalue},"hidden":"{$item_hide_integrated_edit_field18}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c11}
+																							{BEGIN cellblock_section2_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			fieldName: 'reg_date',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$reg_date_pdfvalue},"hidden":"{$item_hide_integrated_edit_field89}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c12}
+											],
+				{END row_section2_3}
+						{BEGIN row_section2_4}
+				[
+																{BEGIN cellblock_section2_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			fieldName: 'entity_address',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin entity_address }","hidden":"{$item_hide_integrated_edit_field90}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section2_c13}
+																							{BEGIN cellblock_section2_c14}
+{
+	cellId: 'c14',
+	col:0,
+	row:0,
+			fieldName: 'entity_address',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$entity_address_pdfvalue},"hidden":"{$item_hide_integrated_edit_field19}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c14}
+																							{BEGIN cellblock_section2_c15}
+{
+	cellId: 'c15',
+	col:0,
+	row:0,
+			fieldName: 'entity_address',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$entity_address_pdfvalue},"hidden":"{$item_hide_integrated_edit_field91}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c15}
+											],
+				{END row_section2_4}
+						{BEGIN row_section2_5}
+				[
+																{BEGIN cellblock_section2_c16}
+{
+	cellId: 'c16',
+	col:0,
+	row:0,
+			fieldName: 'entity_foreign_address',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin entity_foreign_address }","hidden":"{$item_hide_integrated_edit_field92}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section2_c16}
+																							{BEGIN cellblock_section2_c17}
+{
+	cellId: 'c17',
+	col:0,
+	row:0,
+			fieldName: 'entity_foreign_address',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$entity_foreign_address_pdfvalue},"hidden":"{$item_hide_integrated_edit_field20}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c17}
+																							{BEGIN cellblock_section2_c18}
+{
+	cellId: 'c18',
+	col:0,
+	row:0,
+			fieldName: 'entity_foreign_address',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$entity_foreign_address_pdfvalue},"hidden":"{$item_hide_integrated_edit_field93}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c18}
+											],
+				{END row_section2_5}
+						{BEGIN row_section2_6}
+				[
+																{BEGIN cellblock_section2_c19}
+{
+	cellId: 'c19',
+	col:0,
+	row:0,
+			fieldName: 'entity_contact',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin entity_contact }","hidden":"{$item_hide_integrated_edit_field94}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section2_c19}
+																							{BEGIN cellblock_section2_c20}
+{
+	cellId: 'c20',
+	col:0,
+	row:0,
+			fieldName: 'entity_contact',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$entity_contact_pdfvalue},"hidden":"{$item_hide_integrated_edit_field21}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c20}
+																							{BEGIN cellblock_section2_c21}
+{
+	cellId: 'c21',
+	col:0,
+	row:0,
+			fieldName: 'entity_contact',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$entity_contact_pdfvalue},"hidden":"{$item_hide_integrated_edit_field95}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c21}
+											],
+				{END row_section2_6}
+						{BEGIN row_section2_7}
+				[
+																{BEGIN cellblock_section2_c22}
+{
+	cellId: 'c22',
+	col:0,
+	row:0,
+			fieldName: 'entity_director_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin entity_director_name }","hidden":"{$item_hide_integrated_edit_field96}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section2_c22}
+																							{BEGIN cellblock_section2_c23}
+{
+	cellId: 'c23',
+	col:0,
+	row:0,
+			fieldName: 'entity_director_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$entity_director_name_pdfvalue},"hidden":"{$item_hide_integrated_edit_field22}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c23}
+																							{BEGIN cellblock_section2_c24}
+{
+	cellId: 'c24',
+	col:0,
+	row:0,
+			fieldName: 'entity_director_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$entity_director_name_pdfvalue},"hidden":"{$item_hide_integrated_edit_field97}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c24}
+											],
+				{END row_section2_7}
+						{BEGIN row_section2_8}
+				[
+																{BEGIN cellblock_section2_c25}
+{
+	cellId: 'c25',
+	col:0,
+	row:0,
+			fieldName: 'biz_activity',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin biz_activity }","hidden":"{$item_hide_integrated_edit_field98}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section2_c25}
+																							{BEGIN cellblock_section2_c26}
+{
+	cellId: 'c26',
+	col:0,
+	row:0,
+			fieldName: 'biz_activity',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$biz_activity_pdfvalue},"hidden":"{$item_hide_integrated_edit_field23}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c26}
+																							{BEGIN cellblock_section2_c27}
+{
+	cellId: 'c27',
+	col:0,
+	row:0,
+			fieldName: 'biz_activity',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$biz_activity_pdfvalue},"hidden":"{$item_hide_integrated_edit_field99}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c27}
+											],
+				{END row_section2_8}
+						{BEGIN row_section2_9}
+				[
+																{BEGIN cellblock_section2_c28}
+{
+	cellId: 'c28',
+	col:0,
+	row:0,
+			fieldName: 'bo_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin bo_name }","hidden":"{$item_hide_integrated_edit_field100}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section2_c28}
+																							{BEGIN cellblock_section2_c29}
+{
+	cellId: 'c29',
+	col:0,
+	row:0,
+			fieldName: 'bo_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$bo_name_pdfvalue},"hidden":"{$item_hide_integrated_edit_field24}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c29}
+																							{BEGIN cellblock_section2_c30}
+{
+	cellId: 'c30',
+	col:0,
+	row:0,
+			fieldName: 'bo_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$bo_name_pdfvalue},"hidden":"{$item_hide_integrated_edit_field101}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section2_c30}
+											],
+				{END row_section2_9}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c17}
+																		{ 
+				cellId: 'c17',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c17',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_7}
+						{BEGIN row_grid_8}
+				[
+																{BEGIN cellblock_grid_c18}
+{
+	cellId: 'c18',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c18}
+			colSpan: {$colspan_grid_c18},
+			{END colspan_grid_c18}
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section3',
+			widths: ['*'],
+			body: [
+				[{text: 'Customer\'s Particulars', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section3_0}
+									"*", 
+								{END col_section3_0}
+															{BEGIN col_section3_1}
+									"*", 
+								{END col_section3_1}
+															{BEGIN col_section3_2}
+									"*", 
+								{END col_section3_2}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section3_0}
+				[
+																{BEGIN cellblock_section3_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'indi_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin indi_name }","hidden":"{$item_hide_integrated_edit_field102}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section3_c4}
+																							{BEGIN cellblock_section3_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'indi_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_name_pdfvalue},"hidden":"{$item_hide_integrated_edit_field25}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c2}
+																							{BEGIN cellblock_section3_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'indi_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_name_pdfvalue},"hidden":"{$item_hide_integrated_edit_field103}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c}
+											],
+				{END row_section3_0}
+						{BEGIN row_section3_1}
+				[
+																{BEGIN cellblock_section3_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			fieldName: 'indi_id',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin indi_id }","hidden":"{$item_hide_integrated_edit_field104}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section3_c5}
+																							{BEGIN cellblock_section3_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			fieldName: 'indi_id',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_id_pdfvalue},"hidden":"{$item_hide_integrated_edit_field26}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c3}
+																							{BEGIN cellblock_section3_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			fieldName: 'indi_id',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_id_pdfvalue},"hidden":"{$item_hide_integrated_edit_field105}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c6}
+											],
+				{END row_section3_1}
+						{BEGIN row_section3_2}
+				[
+																{BEGIN cellblock_section3_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			fieldName: 'indi_dob',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin indi_dob }","hidden":"{$item_hide_integrated_edit_field106}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section3_c7}
+																							{BEGIN cellblock_section3_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			fieldName: 'indi_dob',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_dob_pdfvalue},"hidden":"{$item_hide_integrated_edit_field27}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c8}
+																							{BEGIN cellblock_section3_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			fieldName: 'indi_dob',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_dob_pdfvalue},"hidden":"{$item_hide_integrated_edit_field107}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c9}
+											],
+				{END row_section3_2}
+						{BEGIN row_section3_3}
+				[
+																{BEGIN cellblock_section3_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			fieldName: 'indi_nationalty',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin indi_nationalty }","hidden":"{$item_hide_integrated_edit_field108}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section3_c10}
+																							{BEGIN cellblock_section3_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			fieldName: 'indi_nationalty',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_nationalty_pdfvalue},"hidden":"{$item_hide_integrated_edit_field28}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c11}
+																							{BEGIN cellblock_section3_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			fieldName: 'indi_nationalty',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_nationalty_pdfvalue},"hidden":"{$item_hide_integrated_edit_field109}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c12}
+											],
+				{END row_section3_3}
+						{BEGIN row_section3_4}
+				[
+																{BEGIN cellblock_section3_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			fieldName: 'indi_address',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin indi_address }","hidden":"{$item_hide_integrated_edit_field110}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section3_c13}
+																							{BEGIN cellblock_section3_c14}
+{
+	cellId: 'c14',
+	col:0,
+	row:0,
+			fieldName: 'indi_address',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_address_pdfvalue},"hidden":"{$item_hide_integrated_edit_field29}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c14}
+																							{BEGIN cellblock_section3_c15}
+{
+	cellId: 'c15',
+	col:0,
+	row:0,
+			fieldName: 'indi_address',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_address_pdfvalue},"hidden":"{$item_hide_integrated_edit_field111}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c15}
+											],
+				{END row_section3_4}
+						{BEGIN row_section3_5}
+				[
+																{BEGIN cellblock_section3_c16}
+{
+	cellId: 'c16',
+	col:0,
+	row:0,
+			fieldName: 'indi_address_foreign',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin indi_address_foreign }","hidden":"{$item_hide_integrated_edit_field112}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section3_c16}
+																							{BEGIN cellblock_section3_c17}
+{
+	cellId: 'c17',
+	col:0,
+	row:0,
+			fieldName: 'indi_address_foreign',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_address_foreign_pdfvalue},"hidden":"{$item_hide_integrated_edit_field30}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c17}
+																							{BEGIN cellblock_section3_c18}
+{
+	cellId: 'c18',
+	col:0,
+	row:0,
+			fieldName: 'indi_address_foreign',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_address_foreign_pdfvalue},"hidden":"{$item_hide_integrated_edit_field113}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c18}
+											],
+				{END row_section3_5}
+						{BEGIN row_section3_6}
+				[
+																{BEGIN cellblock_section3_c19}
+{
+	cellId: 'c19',
+	col:0,
+	row:0,
+			fieldName: 'indi_contact',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin indi_contact }","hidden":"{$item_hide_integrated_edit_field114}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section3_c19}
+																							{BEGIN cellblock_section3_c20}
+{
+	cellId: 'c20',
+	col:0,
+	row:0,
+			fieldName: 'indi_contact',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_contact_pdfvalue},"hidden":"{$item_hide_integrated_edit_field31}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c20}
+																							{BEGIN cellblock_section3_c21}
+{
+	cellId: 'c21',
+	col:0,
+	row:0,
+			fieldName: 'indi_contact',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_contact_pdfvalue},"hidden":"{$item_hide_integrated_edit_field115}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c21}
+											],
+				{END row_section3_6}
+						{BEGIN row_section3_7}
+				[
+																{BEGIN cellblock_section3_c22}
+{
+	cellId: 'c22',
+	col:0,
+	row:0,
+			fieldName: 'indi_occupation',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin indi_occupation }","hidden":"{$item_hide_integrated_edit_field116}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section3_c22}
+																							{BEGIN cellblock_section3_c23}
+{
+	cellId: 'c23',
+	col:0,
+	row:0,
+			fieldName: 'indi_occupation',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_occupation_pdfvalue},"hidden":"{$item_hide_integrated_edit_field32}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c23}
+																							{BEGIN cellblock_section3_c24}
+{
+	cellId: 'c24',
+	col:0,
+	row:0,
+			fieldName: 'indi_occupation',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_occupation_pdfvalue},"hidden":"{$item_hide_integrated_edit_field117}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c24}
+											],
+				{END row_section3_7}
+						{BEGIN row_section3_8}
+				[
+																{BEGIN cellblock_section3_c25}
+{
+	cellId: 'c25',
+	col:0,
+	row:0,
+			fieldName: 'indi_employer',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin indi_employer }","hidden":"{$item_hide_integrated_edit_field118}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section3_c25}
+																							{BEGIN cellblock_section3_c26}
+{
+	cellId: 'c26',
+	col:0,
+	row:0,
+			fieldName: 'indi_employer',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_employer_pdfvalue},"hidden":"{$item_hide_integrated_edit_field33}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c26}
+																							{BEGIN cellblock_section3_c27}
+{
+	cellId: 'c27',
+	col:0,
+	row:0,
+			fieldName: 'indi_employer',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_employer_pdfvalue},"hidden":"{$item_hide_integrated_edit_field119}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c27}
+											],
+				{END row_section3_8}
+						{BEGIN row_section3_9}
+				[
+																{BEGIN cellblock_section3_c28}
+{
+	cellId: 'c28',
+	col:0,
+	row:0,
+			fieldName: 'indi_bank_details',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin indi_bank_details }","hidden":"{$item_hide_integrated_edit_field120}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section3_c28}
+																							{BEGIN cellblock_section3_c29}
+{
+	cellId: 'c29',
+	col:0,
+	row:0,
+			fieldName: 'indi_bank_details',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_bank_details_pdfvalue},"hidden":"{$item_hide_integrated_edit_field34}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c29}
+																							{BEGIN cellblock_section3_c30}
+{
+	cellId: 'c30',
+	col:0,
+	row:0,
+			fieldName: 'indi_bank_details',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_bank_details_pdfvalue},"hidden":"{$item_hide_integrated_edit_field121}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c30}
+											],
+				{END row_section3_9}
+						{BEGIN row_section3_10}
+				[
+																{BEGIN cellblock_section3_c31}
+{
+	cellId: 'c31',
+	col:0,
+	row:0,
+			fieldName: 'indi_bo_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin indi_bo_name }","hidden":"{$item_hide_integrated_edit_field122}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section3_c31}
+																							{BEGIN cellblock_section3_c32}
+{
+	cellId: 'c32',
+	col:0,
+	row:0,
+			fieldName: 'indi_bo_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_bo_name_pdfvalue},"hidden":"{$item_hide_integrated_edit_field35}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c32}
+																							{BEGIN cellblock_section3_c33}
+{
+	cellId: 'c33',
+	col:0,
+	row:0,
+			fieldName: 'indi_bo_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$indi_bo_name_pdfvalue},"hidden":"{$item_hide_integrated_edit_field123}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section3_c33}
+											],
+				{END row_section3_10}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c18}
+																		{ 
+				cellId: 'c18',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c18',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_8}
+						{BEGIN row_grid_9}
+				[
+																{BEGIN cellblock_grid_c19}
+{
+	cellId: 'c19',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c19}
+			colSpan: {$colspan_grid_c19},
+			{END colspan_grid_c19}
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section4',
+			widths: ['*'],
+			body: [
+				[{text: 'Details of Property', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section4_0}
+									"*", 
+								{END col_section4_0}
+															{BEGIN col_section4_1}
+									"*", 
+								{END col_section4_1}
+															{BEGIN col_section4_2}
+									"*", 
+								{END col_section4_2}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section4_0}
+				[
+																{BEGIN cellblock_section4_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'prop_address',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin prop_address }","hidden":"{$item_hide_integrated_edit_field124}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section4_c4}
+																							{BEGIN cellblock_section4_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'prop_address',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$prop_address_pdfvalue},"hidden":"{$item_hide_integrated_edit_field36}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c2}
+																							{BEGIN cellblock_section4_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'prop_address',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$prop_address_pdfvalue},"hidden":"{$item_hide_integrated_edit_field125}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c}
+											],
+				{END row_section4_0}
+						{BEGIN row_section4_1}
+				[
+																{BEGIN cellblock_section4_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			fieldName: 'prop_tenure',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin prop_tenure }","hidden":"{$item_hide_integrated_edit_field126}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section4_c5}
+																							{BEGIN cellblock_section4_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			fieldName: 'prop_tenure',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$prop_tenure_pdfvalue},"hidden":"{$item_hide_integrated_edit_field37}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c3}
+																							{BEGIN cellblock_section4_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			fieldName: 'prop_tenure',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$prop_tenure_pdfvalue},"hidden":"{$item_hide_integrated_edit_field127}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c6}
+											],
+				{END row_section4_1}
+						{BEGIN row_section4_2}
+				[
+																{BEGIN cellblock_section4_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			fieldName: 'prop_type',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin prop_type }","hidden":"{$item_hide_integrated_edit_field128}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section4_c7}
+																							{BEGIN cellblock_section4_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			fieldName: 'prop_type',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$prop_type_pdfvalue},"hidden":"{$item_hide_integrated_edit_field38}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c8}
+																							{BEGIN cellblock_section4_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			fieldName: 'prop_type',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$prop_type_pdfvalue},"hidden":"{$item_hide_integrated_edit_field129}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c9}
+											],
+				{END row_section4_2}
+						{BEGIN row_section4_3}
+				[
+																{BEGIN cellblock_section4_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			fieldName: 'transact_type',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin transact_type }","hidden":"{$item_hide_integrated_edit_field130}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section4_c10}
+																							{BEGIN cellblock_section4_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			fieldName: 'transact_type',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$transact_type_pdfvalue},"hidden":"{$item_hide_integrated_edit_field39}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c11}
+																							{BEGIN cellblock_section4_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			fieldName: 'transact_type',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$transact_type_pdfvalue},"hidden":"{$item_hide_integrated_edit_field131}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c12}
+											],
+				{END row_section4_3}
+						{BEGIN row_section4_4}
+				[
+																{BEGIN cellblock_section4_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			fieldName: 'transact_price',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin transact_price }","hidden":"{$item_hide_integrated_edit_field132}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section4_c13}
+																							{BEGIN cellblock_section4_c14}
+{
+	cellId: 'c14',
+	col:0,
+	row:0,
+			fieldName: 'transact_price',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$transact_price_pdfvalue},"hidden":"{$item_hide_integrated_edit_field40}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c14}
+																							{BEGIN cellblock_section4_c15}
+{
+	cellId: 'c15',
+	col:0,
+	row:0,
+			fieldName: 'transact_price',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$transact_price_pdfvalue},"hidden":"{$item_hide_integrated_edit_field133}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c15}
+											],
+				{END row_section4_4}
+						{BEGIN row_section4_5}
+				[
+																{BEGIN cellblock_section4_c16}
+{
+	cellId: 'c16',
+	col:0,
+	row:0,
+			fieldName: 'valuation',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin valuation }","hidden":"{$item_hide_integrated_edit_field134}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section4_c16}
+																							{BEGIN cellblock_section4_c17}
+{
+	cellId: 'c17',
+	col:0,
+	row:0,
+			fieldName: 'valuation',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$valuation_pdfvalue},"hidden":"{$item_hide_integrated_edit_field41}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c17}
+																							{BEGIN cellblock_section4_c18}
+{
+	cellId: 'c18',
+	col:0,
+	row:0,
+			fieldName: 'valuation',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$valuation_pdfvalue},"hidden":"{$item_hide_integrated_edit_field135}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c18}
+											],
+				{END row_section4_5}
+						{BEGIN row_section4_6}
+				[
+																{BEGIN cellblock_section4_c19}
+{
+	cellId: 'c19',
+	col:0,
+	row:0,
+			fieldName: 'lease_period',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin lease_period }","hidden":"{$item_hide_integrated_edit_field136}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section4_c19}
+																							{BEGIN cellblock_section4_c20}
+{
+	cellId: 'c20',
+	col:0,
+	row:0,
+			fieldName: 'lease_period',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$lease_period_pdfvalue},"hidden":"{$item_hide_integrated_edit_field42}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c20}
+																							{BEGIN cellblock_section4_c21}
+{
+	cellId: 'c21',
+	col:0,
+	row:0,
+			fieldName: 'lease_period',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$lease_period_pdfvalue},"hidden":"{$item_hide_integrated_edit_field137}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c21}
+											],
+				{END row_section4_6}
+						{BEGIN row_section4_7}
+				[
+																{BEGIN cellblock_section4_c22}
+{
+	cellId: 'c22',
+	col:0,
+	row:0,
+			fieldName: 'deposit',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin deposit }","hidden":"{$item_hide_integrated_edit_field138}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section4_c22}
+																							{BEGIN cellblock_section4_c23}
+{
+	cellId: 'c23',
+	col:0,
+	row:0,
+			fieldName: 'deposit',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$deposit_pdfvalue},"hidden":"{$item_hide_integrated_edit_field43}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c23}
+																							{BEGIN cellblock_section4_c24}
+{
+	cellId: 'c24',
+	col:0,
+	row:0,
+			fieldName: 'deposit',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$deposit_pdfvalue},"hidden":"{$item_hide_integrated_edit_field139}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c24}
+											],
+				{END row_section4_7}
+						{BEGIN row_section4_8}
+				[
+																{BEGIN cellblock_section4_c25}
+{
+	cellId: 'c25',
+	col:0,
+	row:0,
+			fieldName: 'salesperson_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin salesperson_name }","hidden":"{$item_hide_integrated_edit_field140}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section4_c25}
+																							{BEGIN cellblock_section4_c26}
+{
+	cellId: 'c26',
+	col:0,
+	row:0,
+			fieldName: 'salesperson_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$salesperson_name_pdfvalue},"hidden":"{$item_hide_integrated_edit_field44}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c26}
+																							{BEGIN cellblock_section4_c27}
+{
+	cellId: 'c27',
+	col:0,
+	row:0,
+			fieldName: 'salesperson_name',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$salesperson_name_pdfvalue},"hidden":"{$item_hide_integrated_edit_field141}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c27}
+											],
+				{END row_section4_8}
+						{BEGIN row_section4_9}
+				[
+																{BEGIN cellblock_section4_c28}
+{
+	cellId: 'c28',
+	col:0,
+	row:0,
+			fieldName: 'salesperson_nric',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin salesperson_nric }","hidden":"{$item_hide_integrated_edit_field142}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section4_c28}
+																							{BEGIN cellblock_section4_c29}
+{
+	cellId: 'c29',
+	col:0,
+	row:0,
+			fieldName: 'salesperson_nric',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$salesperson_nric_pdfvalue},"hidden":"{$item_hide_integrated_edit_field45}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c29}
+																							{BEGIN cellblock_section4_c30}
+{
+	cellId: 'c30',
+	col:0,
+	row:0,
+			fieldName: 'salesperson_nric',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$salesperson_nric_pdfvalue},"hidden":"{$item_hide_integrated_edit_field143}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section4_c30}
+											],
+				{END row_section4_9}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c19}
+																		{ 
+				cellId: 'c19',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c19',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_9}
+						{BEGIN row_grid_10}
+				[
+																{BEGIN cellblock_grid_c20}
+{
+	cellId: 'c20',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c20}
+			colSpan: {$colspan_grid_c20},
+			{END colspan_grid_c20}
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section5',
+			widths: ['*'],
+			body: [
+				[{text: 'Suspicious Transaction(s)', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section5_0}
+									"*", 
+								{END col_section5_0}
+															{BEGIN col_section5_1}
+									"*", 
+								{END col_section5_1}
+															{BEGIN col_section5_2}
+									"*", 
+								{END col_section5_2}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section5_0}
+				[
+																{BEGIN cellblock_section5_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'suspicious_amount',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin suspicious_amount }","hidden":"{$item_hide_integrated_edit_field144}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section5_c4}
+																							{BEGIN cellblock_section5_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'suspicious_amount',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$suspicious_amount_pdfvalue},"hidden":"{$item_hide_integrated_edit_field46}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section5_c2}
+																							{BEGIN cellblock_section5_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'suspicious_amount',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$suspicious_amount_pdfvalue},"hidden":"{$item_hide_integrated_edit_field145}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section5_c}
+											],
+				{END row_section5_0}
+						{BEGIN row_section5_1}
+				[
+																{BEGIN cellblock_section5_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			fieldName: 'suspicious_date',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin suspicious_date }","hidden":"{$item_hide_integrated_edit_field146}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section5_c5}
+																							{BEGIN cellblock_section5_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			fieldName: 'suspicious_date',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$suspicious_date_pdfvalue},"hidden":"{$item_hide_integrated_edit_field47}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section5_c3}
+																							{BEGIN cellblock_section5_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			fieldName: 'suspicious_date',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$suspicious_date_pdfvalue},"hidden":"{$item_hide_integrated_edit_field147}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section5_c6}
+											],
+				{END row_section5_1}
+						{BEGIN row_section5_2}
+				[
+																{BEGIN cellblock_section5_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			fieldName: 'description',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin description }","hidden":"{$item_hide_integrated_edit_field148}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section5_c7}
+																							{BEGIN cellblock_section5_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			fieldName: 'description',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$description_pdfvalue},"hidden":"{$item_hide_integrated_edit_field48}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section5_c8}
+																							{BEGIN cellblock_section5_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			fieldName: 'description',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$description_pdfvalue},"hidden":"{$item_hide_integrated_edit_field149}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section5_c9}
+											],
+				{END row_section5_2}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c20}
+																		{ 
+				cellId: 'c20',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c20',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_10}
+						{BEGIN row_grid_11}
+				[
+																{BEGIN cellblock_grid_c21}
+{
+	cellId: 'c21',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c21}
+			colSpan: {$colspan_grid_c21},
+			{END colspan_grid_c21}
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section6',
+			widths: ['*'],
+			body: [
+				[{text: 'Reason (s) for Suspicion', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section6_0}
+									"*", 
+								{END col_section6_0}
+															{BEGIN col_section6_1}
+									"*", 
+								{END col_section6_1}
+															{BEGIN col_section6_2}
+									"*", 
+								{END col_section6_2}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section6_0}
+				[
+																{BEGIN cellblock_section6_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'reason_suspicion',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin reason_suspicion }","hidden":"{$item_hide_integrated_edit_field150}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section6_c4}
+																							{BEGIN cellblock_section6_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'reason_suspicion',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$reason_suspicion_pdfvalue},"hidden":"{$item_hide_integrated_edit_field49}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section6_c2}
+																							{BEGIN cellblock_section6_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'reason_suspicion',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$reason_suspicion_pdfvalue},"hidden":"{$item_hide_integrated_edit_field151}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section6_c}
+											],
+				{END row_section6_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c21}
+																		{ 
+				cellId: 'c21',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c21',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_11}
+						{BEGIN row_grid_12}
+				[
+																{BEGIN cellblock_grid_c22}
+{
+	cellId: 'c22',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c22}
+			colSpan: {$colspan_grid_c22},
+			{END colspan_grid_c22}
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section7',
+			widths: ['*'],
+			body: [
+				[{text: 'Other Relevation Information', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section7_0}
+									"*", 
+								{END col_section7_0}
+															{BEGIN col_section7_1}
+									"*", 
+								{END col_section7_1}
+															{BEGIN col_section7_2}
+									"*", 
+								{END col_section7_2}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section7_0}
+				[
+																{BEGIN cellblock_section7_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'other_info',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin other_info }","hidden":"{$item_hide_integrated_edit_field152}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section7_c4}
+																							{BEGIN cellblock_section7_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'other_info',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$other_info_pdfvalue},"hidden":"{$item_hide_integrated_edit_field50}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section7_c2}
+																							{BEGIN cellblock_section7_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'other_info',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$other_info_pdfvalue},"hidden":"{$item_hide_integrated_edit_field153}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section7_c}
+											],
+				{END row_section7_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c22}
+																		{ 
+				cellId: 'c22',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c22',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_12}
+						{BEGIN row_grid_13}
+				[
+																{BEGIN cellblock_grid_c23}
+{
+	cellId: 'c23',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c23}
+			colSpan: {$colspan_grid_c23},
+			{END colspan_grid_c23}
+		
+		
+	
+			
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section8',
+			widths: ['*'],
+			body: [
+				[{text: 'List of Documents', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+															{BEGIN col_section8_0}
+									"*", 
+								{END col_section8_0}
+															{BEGIN col_section8_1}
+									"*", 
+								{END col_section8_1}
+															{BEGIN col_section8_2}
+									"*", 
+								{END col_section8_2}
+							 						
+						],
+						body: [
+								
+				{BEGIN row_section8_0}
+				[
+																{BEGIN cellblock_section8_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			fieldName: 'docs_attach',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin docs_attach }","hidden":"{$item_hide_integrated_edit_field154}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_section8_c4}
+																							{BEGIN cellblock_section8_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			fieldName: 'docs_attach',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$docs_attach_pdfvalue},"hidden":"{$item_hide_integrated_edit_field51}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section8_c2}
+																							{BEGIN cellblock_section8_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'docs_attach',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$docs_attach_pdfvalue},"hidden":"{$item_hide_integrated_edit_field155}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_section8_c}
+											],
+				{END row_section8_0}
+		
+						]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c23}
+																		{ 
+				cellId: 'c23',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c23',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_13}
+						{BEGIN row_grid_14}
+				[
+																{BEGIN cellblock_grid_c24}
+{
+	cellId: 'c24',
+	col:0,
+	row:0,
+			fieldName: 'lease_period_unit',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel str_admin lease_period_unit }","hidden":"{$item_hide_edit_field_label}","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+{END cellblock_grid_c24}
+																							{BEGIN cellblock_grid_c25}
+{
+	cellId: 'c25',
+	col:0,
+	row:0,
+			fieldName: 'lease_period_unit',
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c25}
+			colSpan: {$colspan_grid_c25},
+			{END colspan_grid_c25}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$lease_period_unit_pdfvalue},"hidden":"{$item_hide_edit_field}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c25}
+																		{ 
+				cellId: 'c25',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_14}
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_view_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_view_close}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+																							{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_prev}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_next}"},
+				
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+			]
+};
+
+pdfFonts = {$pdfFonts};
+  

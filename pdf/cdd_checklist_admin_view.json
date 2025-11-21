@@ -1,0 +1,1478 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel cdd_checklist_admin view}","hidden":"{$item_hide_view_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+					colSpan: 2,
+		
+			
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"5%", 
+							{END col_grid_0}
+												{BEGIN col_grid_1}
+						"95%", 
+							{END col_grid_1}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+								{BEGIN row_grid_1}
+						
+			"%",
+						{END row_grid_1}
+			 
+								{BEGIN row_grid_2}
+						
+			"%",
+						{END row_grid_2}
+			 
+								{BEGIN row_grid_3}
+						
+			"%",
+						{END row_grid_3}
+			 
+								{BEGIN row_grid_4}
+						
+			"%",
+						{END row_grid_4}
+			 
+								{BEGIN row_grid_5}
+						
+			"%",
+						{END row_grid_5}
+			 
+								{BEGIN row_grid_6}
+						
+			"%",
+						{END row_grid_6}
+			 
+								{BEGIN row_grid_7}
+						
+			"%",
+						{END row_grid_7}
+			 
+								{BEGIN row_grid_8}
+						
+			"%",
+						{END row_grid_8}
+			 
+								{BEGIN row_grid_9}
+						
+			"%",
+						{END row_grid_9}
+			 
+								{BEGIN row_grid_10}
+						
+			"%",
+						{END row_grid_10}
+			 
+								{BEGIN row_grid_11}
+						
+			"%",
+						{END row_grid_11}
+			 
+								{BEGIN row_grid_12}
+						
+			"%",
+						{END row_grid_12}
+			 
+								{BEGIN row_grid_13}
+						
+			"%",
+						{END row_grid_13}
+			 
+								{BEGIN row_grid_14}
+						
+			"%",
+						{END row_grid_14}
+			 
+								{BEGIN row_grid_15}
+						
+			"%",
+						{END row_grid_15}
+			 
+				],
+	
+		body: [
+				
+				{BEGIN row_grid_0}
+				[
+																{BEGIN cellblock_grid_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			fieldName: 'id_cddlist',
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c1}
+			colSpan: {$colspan_grid_c1},
+			{END colspan_grid_c1}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"{$jslabel cdd_checklist_admin id_cddlist }","hidden":"{$item_hide_integrated_edit_field}","bold":true},
+				
+				
+			{"text":{$id_cddlist_pdfvalue},"hidden":"{$item_hide_integrated_edit_field3}"},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin representing }","hidden":"{$item_hide_integrated_edit_field39}","bold":true},
+				
+				
+			{"text":{$representing_pdfvalue},"hidden":"{$item_hide_integrated_edit_field37}"},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin cdd_checklist_customer }","hidden":"{$item_hide_integrated_edit_field33}","bold":true},
+				
+				
+			{"text":{$cdd_checklist_customer_pdfvalue},"hidden":"{$item_hide_integrated_edit_field2}"},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin cdd_checklist_customer_nric }","hidden":"{$item_hide_integrated_edit_field41}","bold":true},
+				
+				
+			{"text":{$cdd_checklist_customer_nric_pdfvalue},"hidden":"{$item_hide_integrated_edit_field38}"},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin checked_by }","hidden":"{$item_hide_integrated_edit_field36}","bold":true},
+				
+				
+			{"text":{$checked_by_pdfvalue},"hidden":"{$item_hide_integrated_edit_field1}"},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin checked_date }","hidden":"{$item_hide_integrated_edit_field44}","bold":true},
+				
+				
+			{"text":{$checked_date_pdfvalue},"hidden":"{$item_hide_integrated_edit_field35}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c1}
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_0}
+						{BEGIN row_grid_1}
+				[
+																{BEGIN cellblock_grid_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"1","hidden":"{$item_hide_text}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c}
+																							{BEGIN cellblock_grid_c38}
+{
+	cellId: 'c38',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 8, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192215}","hidden":"{$item_hide_snippet3}","isHtml":true},
+				
+				
+			{"text":"{$event 192386}","hidden":"{$item_hide_snippet4}","isHtml":true},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field30}","stack":[{"text":"{$jslabel cdd_checklist_admin list14 }","bold":true},{"text":{$list14_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin remark14 }","hidden":"{$item_hide_edit_field_label}","bold":true},
+				
+				
+			{"text":{$remark14_pdfvalue},"hidden":"{$item_hide_integrated_edit_field31}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c38}
+											],
+				{END row_grid_1}
+						{BEGIN row_grid_2}
+				[
+																{BEGIN cellblock_grid_c39}
+{
+	cellId: 'c39',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"2","hidden":"{$item_hide_text1}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c39}
+																							{BEGIN cellblock_grid_c40}
+{
+	cellId: 'c40',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 8, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192223}","hidden":"{$item_hide_snippet}","isHtml":true},
+				
+				
+			{"text":"{$event 192395}","hidden":"{$item_hide_snippet1}","isHtml":true},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel cdd_checklist_admin list01 }","bold":true},{"text":{$list01_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin remark01 }","hidden":"{$item_hide_integrated_edit_field48}","bold":true},
+				
+				
+			{"text":{$remark01_pdfvalue},"hidden":"{$item_hide_integrated_edit_field5}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c40}
+											],
+				{END row_grid_2}
+						{BEGIN row_grid_3}
+				[
+																{BEGIN cellblock_grid_c42}
+{
+	cellId: 'c42',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"3","hidden":"{$item_hide_text2}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c42}
+																							{BEGIN cellblock_grid_c41}
+{
+	cellId: 'c41',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 8, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192221}","hidden":"{$item_hide_snippet2}","isHtml":true},
+				
+				
+			{"text":"{$event 192396}","hidden":"{$item_hide_snippet5}","isHtml":true},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel cdd_checklist_admin list02 }","bold":true},{"text":{$list02_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin remark02 }","hidden":"{$item_hide_edit_field_label1}","bold":true},
+				
+				
+			{"text":{$remark02_pdfvalue},"hidden":"{$item_hide_integrated_edit_field7}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c41}
+											],
+				{END row_grid_3}
+						{BEGIN row_grid_4}
+				[
+																{BEGIN cellblock_grid_c43}
+{
+	cellId: 'c43',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"4","hidden":"{$item_hide_text3}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c43}
+																							{BEGIN cellblock_grid_c44}
+{
+	cellId: 'c44',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 8, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192228}","hidden":"{$item_hide_snippet6}","isHtml":true},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel cdd_checklist_admin list03 }","bold":true},{"text":{$list03_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin remark03 }","hidden":"{$item_hide_integrated_edit_field56}","bold":true},
+				
+				
+			{"text":{$remark03_pdfvalue},"hidden":"{$item_hide_integrated_edit_field9}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c44}
+											],
+				{END row_grid_4}
+						{BEGIN row_grid_5}
+				[
+																{BEGIN cellblock_grid_c45}
+{
+	cellId: 'c45',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"5","hidden":"{$item_hide_text4}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c45}
+																							{BEGIN cellblock_grid_c46}
+{
+	cellId: 'c46',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 8, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192226}","hidden":"{$item_hide_snippet7}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c46}
+											],
+				{END row_grid_5}
+						{BEGIN row_grid_6}
+				[
+																{BEGIN cellblock_grid_c48}
+{
+	cellId: 'c48',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"a)","hidden":"{$item_hide_text5}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c48}
+																							{BEGIN cellblock_grid_c47}
+{
+	cellId: 'c47',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 8, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192250}","hidden":"{$item_hide_snippet8}","isHtml":true},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field10}","stack":[{"text":"{$jslabel cdd_checklist_admin list04 }","bold":true},{"text":{$list04_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin remark04 }","hidden":"{$item_hide_integrated_edit_field60}","bold":true},
+				
+				
+			{"text":{$remark04_pdfvalue},"hidden":"{$item_hide_integrated_edit_field11}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c47}
+											],
+				{END row_grid_6}
+						{BEGIN row_grid_7}
+				[
+																{BEGIN cellblock_grid_c49}
+{
+	cellId: 'c49',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"b)","hidden":"{$item_hide_text6}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c49}
+																							{BEGIN cellblock_grid_c50}
+{
+	cellId: 'c50',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 8, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192475}","hidden":"{$item_hide_snippet9}","isHtml":true},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel cdd_checklist_admin list05 }","bold":true},{"text":{$list05_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin remark05 }","hidden":"{$item_hide_integrated_edit_field64}","bold":true},
+				
+				
+			{"text":{$remark05_pdfvalue},"hidden":"{$item_hide_integrated_edit_field13}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c50}
+											],
+				{END row_grid_7}
+						{BEGIN row_grid_8}
+				[
+																{BEGIN cellblock_grid_c51}
+{
+	cellId: 'c51',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"c)","hidden":"{$item_hide_text7}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c51}
+																							{BEGIN cellblock_grid_c52}
+{
+	cellId: 'c52',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 8, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192510}","hidden":"{$item_hide_snippet10}","isHtml":true},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field14}","stack":[{"text":"{$jslabel cdd_checklist_admin list06 }","bold":true},{"text":{$list06_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin remark06 }","hidden":"{$item_hide_integrated_edit_field68}","bold":true},
+				
+				
+			{"text":{$remark06_pdfvalue},"hidden":"{$item_hide_integrated_edit_field15}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c52}
+											],
+				{END row_grid_8}
+						{BEGIN row_grid_9}
+				[
+																{BEGIN cellblock_grid_c54}
+{
+	cellId: 'c54',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"d)","hidden":"{$item_hide_text8}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c54}
+																							{BEGIN cellblock_grid_c53}
+{
+	cellId: 'c53',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 8, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192320}","hidden":"{$item_hide_snippet11}","isHtml":true},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field16}","stack":[{"text":"{$jslabel cdd_checklist_admin list07 }","bold":true},{"text":{$list07_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin remark07 }","hidden":"{$item_hide_integrated_edit_field72}","bold":true},
+				
+				
+			{"text":{$remark07_pdfvalue},"hidden":"{$item_hide_integrated_edit_field17}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c53}
+											],
+				{END row_grid_9}
+						{BEGIN row_grid_10}
+				[
+																{BEGIN cellblock_grid_c55}
+{
+	cellId: 'c55',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"e)","hidden":"{$item_hide_text9}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c55}
+																							{BEGIN cellblock_grid_c56}
+{
+	cellId: 'c56',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 8, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192252}","hidden":"{$item_hide_snippet12}","isHtml":true},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field18}","stack":[{"text":"{$jslabel cdd_checklist_admin list08 }","bold":true},{"text":{$list08_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin remark08 }","hidden":"{$item_hide_integrated_edit_field76}","bold":true},
+				
+				
+			{"text":{$remark08_pdfvalue},"hidden":"{$item_hide_integrated_edit_field19}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c56}
+											],
+				{END row_grid_10}
+						{BEGIN row_grid_11}
+				[
+																{BEGIN cellblock_grid_c58}
+{
+	cellId: 'c58',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"f)","hidden":"{$item_hide_text10}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c58}
+																							{BEGIN cellblock_grid_c57}
+{
+	cellId: 'c57',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 8, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192485}","hidden":"{$item_hide_snippet13}","isHtml":true},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field20}","stack":[{"text":"{$jslabel cdd_checklist_admin list09 }","bold":true},{"text":{$list09_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin remark09 }","hidden":"{$item_hide_edit_field_label2}","bold":true},
+				
+				
+			{"text":{$remark09_pdfvalue},"hidden":"{$item_hide_integrated_edit_field21}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c57}
+											],
+				{END row_grid_11}
+						{BEGIN row_grid_12}
+				[
+																{BEGIN cellblock_grid_c59}
+{
+	cellId: 'c59',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"g)","hidden":"{$item_hide_text11}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c59}
+																							{BEGIN cellblock_grid_c60}
+{
+	cellId: 'c60',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 8, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192502}","hidden":"{$item_hide_snippet14}","isHtml":true},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field22}","stack":[{"text":"{$jslabel cdd_checklist_admin list10 }","bold":true},{"text":{$list10_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin remark10 }","hidden":"{$item_hide_integrated_edit_field84}","bold":true},
+				
+				
+			{"text":{$remark10_pdfvalue},"hidden":"{$item_hide_integrated_edit_field23}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c60}
+											],
+				{END row_grid_12}
+						{BEGIN row_grid_13}
+				[
+																{BEGIN cellblock_grid_c62}
+{
+	cellId: 'c62',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"h)","hidden":"{$item_hide_text12}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c62}
+																							{BEGIN cellblock_grid_c61}
+{
+	cellId: 'c61',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 8, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192328}","hidden":"{$item_hide_snippet15}","isHtml":true},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field24}","stack":[{"text":"{$jslabel cdd_checklist_admin list11 }","bold":true},{"text":{$list11_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin remark11 }","hidden":"{$item_hide_integrated_edit_field88}","bold":true},
+				
+				
+			{"text":{$remark11_pdfvalue},"hidden":"{$item_hide_integrated_edit_field25}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c61}
+											],
+				{END row_grid_13}
+						{BEGIN row_grid_14}
+				[
+																{BEGIN cellblock_grid_c64}
+{
+	cellId: 'c64',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"i)","hidden":"{$item_hide_text13}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c64}
+																							{BEGIN cellblock_grid_c63}
+{
+	cellId: 'c63',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 8, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192262}","hidden":"{$item_hide_snippet16}","isHtml":true},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field26}","stack":[{"text":"{$jslabel cdd_checklist_admin list12 }","bold":true},{"text":{$list12_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin remark12 }","hidden":"{$item_hide_integrated_edit_field92}","bold":true},
+				
+				
+			{"text":{$remark12_pdfvalue},"hidden":"{$item_hide_integrated_edit_field27}"},
+				
+		  ],
+  "border": [false,false,false,true],
+      	"borderColor":  ["gray","gray","gray","#b7b7b7"],
+            "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c63}
+											],
+				{END row_grid_14}
+						{BEGIN row_grid_15}
+				[
+																{BEGIN cellblock_grid_c65}
+{
+	cellId: 'c65',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"j)","hidden":"{$item_hide_text14}","isHtml":true},
+				
+		  ],
+  "border": [false,false,false,false],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c65}
+																							{BEGIN cellblock_grid_c66}
+{
+	cellId: 'c66',
+	col:0,
+	row:0,
+			fieldName: 'representing',
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 8, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192461}","hidden":"{$item_hide_snippet17}","isHtml":true},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field28}","stack":[{"text":"{$jslabel cdd_checklist_admin list13 }","bold":true},{"text":{$list13_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"text":"{$jslabel cdd_checklist_admin remark13 }","hidden":"{$item_hide_integrated_edit_field96}","bold":true},
+				
+				
+			{"text":{$remark13_pdfvalue},"hidden":"{$item_hide_integrated_edit_field29}"},
+				
+		  ],
+  "border": [false,false,false,false],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c66}
+											],
+				{END row_grid_15}
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_view_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_view_close}"},
+				
+				
+			{"text":"{$event 192313}","hidden":"{$item_hide_snippet18}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+																							{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+			]
+};
+
+pdfFonts = {$pdfFonts};
+  

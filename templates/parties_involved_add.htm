@@ -1,0 +1,1107 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+						<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		{BEGIN styleCSSFiles}
+<link REL="stylesheet" href="{$stylepath}" type="text/css">
+{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel parties_involved add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>{mlang_message VIEW}</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>{mlang_message EDIT}</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN category_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_category}  r-vertical-field" 
+	data-signal-error-for="category{$id}" {$required_attr_category}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="category" data-fieldname="category" >
+
+	<label class="r-edit-label control-label {$category_label_class}" for="{$labelfor_category}">
+		{BEGIN category_label}
+			{$category_forward_control}
+			{$label parties_involved category }			{END category_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$category_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="category" {$tooltipAttr parties_involved category } >
+		<div class="text-muted" >
+		{$tooltip parties_involved category }		</div>
+	</div>
+	</div>
+
+
+{END category_fieldblock}
+											
+{BEGIN name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_name}  r-vertical-field" 
+	data-signal-error-for="name{$id}" {$required_attr_name}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="name" data-fieldname="name" >
+
+	<label class="r-edit-label control-label {$name_label_class}" for="{$labelfor_name}">
+		{BEGIN name_label}
+			{$name_forward_control}
+			{$label parties_involved name }			{END name_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$name_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="name" {$tooltipAttr parties_involved name } >
+		<div class="text-muted" >
+		{$tooltip parties_involved name }		</div>
+	</div>
+	</div>
+
+
+{END name_fieldblock}
+											
+{BEGIN salutation_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_salutation}  r-vertical-field" 
+	data-signal-error-for="salutation{$id}" {$required_attr_salutation}
+	data-itemtype="integrated_edit_field" data-itemid="salutation" {$item_salutation} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="salutation" data-fieldname="salutation" >
+
+	<label class="r-edit-label control-label {$salutation_label_class}" for="{$labelfor_salutation}">
+		{BEGIN salutation_label}
+			{$salutation_forward_control}
+			{$label parties_involved salutation }			{END salutation_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$salutation_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="salutation" {$tooltipAttr parties_involved salutation } >
+		<div class="text-muted" >
+		{$tooltip parties_involved salutation }		</div>
+	</div>
+	</div>
+
+
+{END salutation_fieldblock}
+											
+{BEGIN nric_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nric}  r-vertical-field" 
+	data-signal-error-for="nric{$id}" {$required_attr_nric}
+	data-itemtype="integrated_edit_field" data-itemid="nric" {$item_nric} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="nric" data-fieldname="nric" >
+
+	<label class="r-edit-label control-label {$nric_label_class}" for="{$labelfor_nric}">
+		{BEGIN nric_label}
+			{$nric_forward_control}
+			{$label parties_involved nric }			{END nric_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$nric_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="nric" {$tooltipAttr parties_involved nric } >
+		<div class="text-muted" >
+		{$tooltip parties_involved nric }		</div>
+	</div>
+	</div>
+
+
+{END nric_fieldblock}
+											
+{BEGIN id_type_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_type}  r-vertical-field" 
+	data-signal-error-for="id_type{$id}" {$required_attr_id_type}
+	data-itemtype="integrated_edit_field" data-itemid="id_type" {$item_id_type} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="id_type" data-fieldname="id_type" >
+
+	<label class="r-edit-label control-label {$id_type_label_class}" for="{$labelfor_id_type}">
+		{BEGIN id_type_label}
+			{$id_type_forward_control}
+			{$label parties_involved id_type }			{END id_type_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$id_type_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="id_type" {$tooltipAttr parties_involved id_type } >
+		<div class="text-muted" >
+		{$tooltip parties_involved id_type }		</div>
+	</div>
+	</div>
+
+
+{END id_type_fieldblock}
+											
+{BEGIN mobile_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mobile}  r-vertical-field" 
+	data-signal-error-for="mobile{$id}" {$required_attr_mobile}
+	data-itemtype="integrated_edit_field" data-itemid="mobile" {$item_mobile} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="mobile" data-fieldname="mobile" >
+
+	<label class="r-edit-label control-label {$mobile_label_class}" for="{$labelfor_mobile}">
+		{BEGIN mobile_label}
+			{$mobile_forward_control}
+			{$label parties_involved mobile }			{END mobile_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mobile_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="mobile" {$tooltipAttr parties_involved mobile } >
+		<div class="text-muted" >
+		{$tooltip parties_involved mobile }		</div>
+	</div>
+	</div>
+
+
+{END mobile_fieldblock}
+											
+{BEGIN email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email}  r-vertical-field" 
+	data-signal-error-for="email{$id}" {$required_attr_email}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="email" data-fieldname="email" >
+
+	<label class="r-edit-label control-label {$email_label_class}" for="{$labelfor_email}">
+		{BEGIN email_label}
+			{$email_forward_control}
+			{$label parties_involved email }			{END email_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$email_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="email" {$tooltipAttr parties_involved email } >
+		<div class="text-muted" >
+		{$tooltip parties_involved email }		</div>
+	</div>
+	</div>
+
+
+{END email_fieldblock}
+											
+{BEGIN tel_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tel}  r-vertical-field" 
+	data-signal-error-for="tel{$id}" {$required_attr_tel}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="tel" data-fieldname="tel" >
+
+	<label class="r-edit-label control-label {$tel_label_class}" for="{$labelfor_tel}">
+		{BEGIN tel_label}
+			{$tel_forward_control}
+			{$label parties_involved tel }			{END tel_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$tel_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="tel" {$tooltipAttr parties_involved tel } >
+		<div class="text-muted" >
+		{$tooltip parties_involved tel }		</div>
+	</div>
+	</div>
+
+
+{END tel_fieldblock}
+											
+{BEGIN tel_type_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tel_type}  r-vertical-field" 
+	data-signal-error-for="tel_type{$id}" {$required_attr_tel_type}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="tel_type" data-fieldname="tel_type" >
+
+	<label class="r-edit-label control-label {$tel_type_label_class}" for="{$labelfor_tel_type}">
+		{BEGIN tel_type_label}
+			{$tel_type_forward_control}
+			{$label parties_involved tel_type }			{END tel_type_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$tel_type_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="tel_type" {$tooltipAttr parties_involved tel_type } >
+		<div class="text-muted" >
+		{$tooltip parties_involved tel_type }		</div>
+	</div>
+	</div>
+
+
+{END tel_type_fieldblock}
+											
+{BEGIN last_updated_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_last_updated}  r-vertical-field" 
+	data-signal-error-for="last_updated{$id}" {$required_attr_last_updated}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="last_updated" data-fieldname="last_updated" >
+
+	<label class="r-edit-label control-label {$last_updated_label_class}" for="{$labelfor_last_updated}">
+		{BEGIN last_updated_label}
+			{$last_updated_forward_control}
+			{$label parties_involved last_updated }			{END last_updated_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$last_updated_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="last_updated" {$tooltipAttr parties_involved last_updated } >
+		<div class="text-muted" >
+		{$tooltip parties_involved last_updated }		</div>
+	</div>
+	</div>
+
+
+{END last_updated_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+			 
+																
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cus_type_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cus_type}  r-vertical-field" 
+	data-signal-error-for="cus_type{$id}" {$required_attr_cus_type}
+	data-itemtype="integrated_edit_field" data-itemid="cus_type" {$item_cus_type} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="cus_type" data-fieldname="cus_type" >
+
+	<label class="r-edit-label control-label {$cus_type_label_class}" for="{$labelfor_cus_type}">
+		{BEGIN cus_type_label}
+			{$cus_type_forward_control}
+			{$label parties_involved cus_type }			{END cus_type_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cus_type_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="cus_type" {$tooltipAttr parties_involved cus_type } >
+		<div class="text-muted" >
+		{$tooltip parties_involved cus_type }		</div>
+	</div>
+	</div>
+
+
+{END cus_type_fieldblock}
+											
+{BEGIN role_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_role}  r-vertical-field" 
+	data-signal-error-for="role{$id}" {$required_attr_role}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="role" data-fieldname="role" >
+
+	<label class="r-edit-label control-label {$role_label_class}" for="{$labelfor_role}">
+		{BEGIN role_label}
+			{$role_forward_control}
+			{$label parties_involved role }			{END role_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$role_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="role" {$tooltipAttr parties_involved role } >
+		<div class="text-muted" >
+		{$tooltip parties_involved role }		</div>
+	</div>
+	</div>
+
+
+{END role_fieldblock}
+											
+{BEGIN address_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_address}  r-vertical-field" 
+	data-signal-error-for="address{$id}" {$required_attr_address}
+	data-itemtype="integrated_edit_field" data-itemid="address" {$item_address} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="address" data-fieldname="address" >
+
+	<label class="r-edit-label control-label {$address_label_class}" for="{$labelfor_address}">
+		{BEGIN address_label}
+			{$address_forward_control}
+			{$label parties_involved address }			{END address_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$address_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="address" {$tooltipAttr parties_involved address } >
+		<div class="text-muted" >
+		{$tooltip parties_involved address }		</div>
+	</div>
+	</div>
+
+
+{END address_fieldblock}
+											
+{BEGIN billing_postal_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_billing_postal}  r-vertical-field" 
+	data-signal-error-for="billing_postal{$id}" {$required_attr_billing_postal}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="billing_postal" data-fieldname="billing_postal" data-before-same-field >
+
+	<label class="r-edit-label control-label {$billing_postal_label_class}" for="{$labelfor_billing_postal}">
+		{BEGIN billing_postal_label}
+			{$billing_postal_forward_control}
+			{$label parties_involved billing_postal }			{END billing_postal_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$billing_postal_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="billing_postal" {$tooltipAttr parties_involved billing_postal } >
+		<div class="text-muted" >
+		{$tooltip parties_involved billing_postal }		</div>
+	</div>
+	</div>
+
+
+{END billing_postal_fieldblock}
+											<span data-itemtype="custom_button" data-itemid="custom_button" {$item_custom_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="Find_Address3" data-event="192476" href="javascript:void(0)" typeid="ib" >
+					<span class=""></span>
+							Find Address			</a>
+</span>
+											
+{BEGIN billing_address_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_billing_address}  r-vertical-field" 
+	data-signal-error-for="billing_address{$id}" {$required_attr_billing_address}
+	data-itemtype="integrated_edit_field" data-itemid="billing_address" {$item_billing_address} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="billing_address" data-fieldname="billing_address" >
+
+	<label class="r-edit-label control-label {$billing_address_label_class}" for="{$labelfor_billing_address}">
+		{BEGIN billing_address_label}
+			{$billing_address_forward_control}
+			{$label parties_involved billing_address }			{END billing_address_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$billing_address_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="billing_address" {$tooltipAttr parties_involved billing_address } >
+		<div class="text-muted" >
+		{$tooltip parties_involved billing_address }		</div>
+	</div>
+	</div>
+
+
+{END billing_address_fieldblock}
+											<span data-itemtype="text" data-itemid="text" {$item_text} data-pageid="{$pageid}" > 
+	<DIV><INPUT id="check" type="checkbox">&nbsp;<EM>Check this box if Billing Address same as Mailing Address.</EM></DIV></span>
+											
+{BEGIN remarks_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remarks}  r-vertical-field" 
+	data-signal-error-for="remarks{$id}" {$required_attr_remarks}
+	data-itemtype="integrated_edit_field" data-itemid="remarks" {$item_remarks} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="remarks" data-fieldname="remarks" >
+
+	<label class="r-edit-label control-label {$remarks_label_class}" for="{$labelfor_remarks}">
+		{BEGIN remarks_label}
+			{$remarks_forward_control}
+			{$label parties_involved remarks }			{END remarks_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$remarks_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="remarks" {$tooltipAttr parties_involved remarks } >
+		<div class="text-muted" >
+		{$tooltip parties_involved remarks }		</div>
+	</div>
+	</div>
+
+
+{END remarks_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
+								</tr>
+	 
+	 
+																</tbody></table>
+				 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="entity_section" {$item_entity_section} data-pageid="{$pageid}" data-page="parties_involved_add">
+		<div class="panel-heading" role="tab" {$section_section1_headattrs} 
+			data-toggle="collapse"  
+
+				href="#section1{$pageid}" aria-expanded="true" aria-controls="section1"
+
+		>
+		  <h4 class="panel-title">
+		  				<a role="button" >
+				Entity Info			</a>
+					  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section1_xtrclass}" role="tabpanel"  {$section_section1_attrs}
+
+				id="section1{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section" id="form_section_{$pageid}" data-makeup="small" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section_0} >
+										
+
+{BEGIN cellblock_section_c1}
+<td
+	{$cell_section_c1}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN registration_no_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_registration_no}  r-vertical-field" 
+	data-signal-error-for="registration_no{$id}" {$required_attr_registration_no}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="registration_no" data-fieldname="registration_no" >
+
+	<label class="r-edit-label control-label {$registration_no_label_class}" for="{$labelfor_registration_no}">
+		{BEGIN registration_no_label}
+			{$registration_no_forward_control}
+			{$label parties_involved registration_no }			{END registration_no_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$registration_no_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="registration_no" {$tooltipAttr parties_involved registration_no } >
+		<div class="text-muted" >
+		{$tooltip parties_involved registration_no }		</div>
+	</div>
+	</div>
+
+
+{END registration_no_fieldblock}
+											
+{BEGIN reg_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reg_date}  r-vertical-field" 
+	data-signal-error-for="reg_date{$id}" {$required_attr_reg_date}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field31" {$item_integrated_edit_field31} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="reg_date" data-fieldname="reg_date" >
+
+	<label class="r-edit-label control-label {$reg_date_label_class}" for="{$labelfor_reg_date}">
+		{BEGIN reg_date_label}
+			{$reg_date_forward_control}
+			{$label parties_involved reg_date }			{END reg_date_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$reg_date_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="reg_date" {$tooltipAttr parties_involved reg_date } >
+		<div class="text-muted" >
+		{$tooltip parties_involved reg_date }		</div>
+	</div>
+	</div>
+
+
+{END reg_date_fieldblock}
+											
+{BEGIN country_incorporation_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_country_incorporation}  r-vertical-field" 
+	data-signal-error-for="country_incorporation{$id}" {$required_attr_country_incorporation}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="country_incorporation" data-fieldname="country_incorporation" >
+
+	<label class="r-edit-label control-label {$country_incorporation_label_class}" for="{$labelfor_country_incorporation}">
+		{BEGIN country_incorporation_label}
+			{$country_incorporation_forward_control}
+			{$label parties_involved country_incorporation }			{END country_incorporation_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$country_incorporation_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="country_incorporation" {$tooltipAttr parties_involved country_incorporation } >
+		<div class="text-muted" >
+		{$tooltip parties_involved country_incorporation }		</div>
+	</div>
+	</div>
+
+
+{END country_incorporation_fieldblock}
+											
+{BEGIN trade_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_trade}  r-vertical-field" 
+	data-signal-error-for="trade{$id}" {$required_attr_trade}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="trade" data-fieldname="trade" >
+
+	<label class="r-edit-label control-label {$trade_label_class}" for="{$labelfor_trade}">
+		{BEGIN trade_label}
+			{$trade_forward_control}
+			{$label parties_involved trade }			{END trade_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$trade_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="trade" {$tooltipAttr parties_involved trade } >
+		<div class="text-muted" >
+		{$tooltip parties_involved trade }		</div>
+	</div>
+	</div>
+
+
+{END trade_fieldblock}
+											
+{BEGIN office_tel_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_office_tel}  r-vertical-field" 
+	data-signal-error-for="office_tel{$id}" {$required_attr_office_tel}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="office_tel" data-fieldname="office_tel" >
+
+	<label class="r-edit-label control-label {$office_tel_label_class}" for="{$labelfor_office_tel}">
+		{BEGIN office_tel_label}
+			{$office_tel_forward_control}
+			{$label parties_involved office_tel }			{END office_tel_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$office_tel_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="office_tel" {$tooltipAttr parties_involved office_tel } >
+		<div class="text-muted" >
+		{$tooltip parties_involved office_tel }		</div>
+	</div>
+	</div>
+
+
+{END office_tel_fieldblock}
+											
+{BEGIN biz_email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_biz_email}  r-vertical-field" 
+	data-signal-error-for="biz_email{$id}" {$required_attr_biz_email}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="biz_email" data-fieldname="biz_email" >
+
+	<label class="r-edit-label control-label {$biz_email_label_class}" for="{$labelfor_biz_email}">
+		{BEGIN biz_email_label}
+			{$biz_email_forward_control}
+			{$label parties_involved biz_email }			{END biz_email_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$biz_email_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="biz_email" {$tooltipAttr parties_involved biz_email } >
+		<div class="text-muted" >
+		{$tooltip parties_involved biz_email }		</div>
+	</div>
+	</div>
+
+
+{END biz_email_fieldblock}
+	
+								</td>
+			{END cellblock_section_c1}
+			 
+																
+
+{BEGIN cellblock_section_c}
+<td
+	{$cell_section_c}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contact_person_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contact_person}  r-vertical-field" 
+	data-signal-error-for="contact_person{$id}" {$required_attr_contact_person}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="contact_person" data-fieldname="contact_person" >
+
+	<label class="r-edit-label control-label {$contact_person_label_class}" for="{$labelfor_contact_person}">
+		{BEGIN contact_person_label}
+			{$contact_person_forward_control}
+			{$label parties_involved contact_person }			{END contact_person_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contact_person_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="contact_person" {$tooltipAttr parties_involved contact_person } >
+		<div class="text-muted" >
+		{$tooltip parties_involved contact_person }		</div>
+	</div>
+	</div>
+
+
+{END contact_person_fieldblock}
+											
+{BEGIN contact_person_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contact_person_id}  r-vertical-field" 
+	data-signal-error-for="contact_person_id{$id}" {$required_attr_contact_person_id}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="contact_person_id" data-fieldname="contact_person_id" >
+
+	<label class="r-edit-label control-label {$contact_person_id_label_class}" for="{$labelfor_contact_person_id}">
+		{BEGIN contact_person_id_label}
+			{$contact_person_id_forward_control}
+			{$label parties_involved contact_person_id }			{END contact_person_id_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contact_person_id_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="contact_person_id" {$tooltipAttr parties_involved contact_person_id } >
+		<div class="text-muted" >
+		{$tooltip parties_involved contact_person_id }		</div>
+	</div>
+	</div>
+
+
+{END contact_person_id_fieldblock}
+											
+{BEGIN contact_person_cell_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contact_person_cell}  r-vertical-field" 
+	data-signal-error-for="contact_person_cell{$id}" {$required_attr_contact_person_cell}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="contact_person_cell" data-fieldname="contact_person_cell" >
+
+	<label class="r-edit-label control-label {$contact_person_cell_label_class}" for="{$labelfor_contact_person_cell}">
+		{BEGIN contact_person_cell_label}
+			{$contact_person_cell_forward_control}
+			{$label parties_involved contact_person_cell }			{END contact_person_cell_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contact_person_cell_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="contact_person_cell" {$tooltipAttr parties_involved contact_person_cell } >
+		<div class="text-muted" >
+		{$tooltip parties_involved contact_person_cell }		</div>
+	</div>
+	</div>
+
+
+{END contact_person_cell_fieldblock}
+											
+{BEGIN contact_email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contact_email}  r-vertical-field" 
+	data-signal-error-for="contact_email{$id}" {$required_attr_contact_email}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="contact_email" data-fieldname="contact_email" >
+
+	<label class="r-edit-label control-label {$contact_email_label_class}" for="{$labelfor_contact_email}">
+		{BEGIN contact_email_label}
+			{$contact_email_forward_control}
+			{$label parties_involved contact_email }			{END contact_email_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contact_email_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="contact_email" {$tooltipAttr parties_involved contact_email } >
+		<div class="text-muted" >
+		{$tooltip parties_involved contact_email }		</div>
+	</div>
+	</div>
+
+
+{END contact_email_fieldblock}
+											
+{BEGIN destination_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_destination}  r-vertical-field" 
+	data-signal-error-for="destination{$id}" {$required_attr_destination}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-page="parties_involved_add" data-field="destination" data-fieldname="destination" >
+
+	<label class="r-edit-label control-label {$destination_label_class}" for="{$labelfor_destination}">
+		{BEGIN destination_label}
+			{$destination_forward_control}
+			{$label parties_involved destination }			{END destination_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$destination_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="destination" {$tooltipAttr parties_involved destination } >
+		<div class="text-muted" >
+		{$tooltip parties_involved destination }		</div>
+	</div>
+	</div>
+
+
+{END destination_fieldblock}
+	
+								</td>
+			{END cellblock_section_c}
+								</tr>
+			</tbody></table>
+{END section_block}
+		  </div>
+		</div>
+	</div>
+	
+				 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_2} >
+										
+
+{BEGIN cellblock_grid_c5}
+<td
+	{$cell_grid_c5}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c5" data-pageid="{$pageid}" data-page="parties_involved_add"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN tx_address_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tx_address}  r-vertical-field" 
+	data-signal-error-for="tx_address{$id}" {$required_attr_tx_address}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="tx_address" data-fieldname="tx_address" >
+
+	<label class="r-edit-label control-label {$tx_address_label_class}" for="{$labelfor_tx_address}">
+		{BEGIN tx_address_label}
+			{$tx_address_forward_control}
+			{$label parties_involved tx_address }			{END tx_address_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$tx_address_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="tx_address" {$tooltipAttr parties_involved tx_address } >
+		<div class="text-muted" >
+		{$tooltip parties_involved tx_address }		</div>
+	</div>
+	</div>
+
+
+{END tx_address_fieldblock}
+											
+{BEGIN representing_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_representing}  r-vertical-field" 
+	data-signal-error-for="representing{$id}" {$required_attr_representing}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="representing" data-fieldname="representing" >
+
+	<label class="r-edit-label control-label {$representing_label_class}" for="{$labelfor_representing}">
+		{BEGIN representing_label}
+			{$representing_forward_control}
+			{$label parties_involved representing }			{END representing_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$representing_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="representing" {$tooltipAttr parties_involved representing } >
+		<div class="text-muted" >
+		{$tooltip parties_involved representing }		</div>
+	</div>
+	</div>
+
+
+{END representing_fieldblock}
+											
+{BEGIN tx_no_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tx_no}  r-vertical-field" 
+	data-signal-error-for="tx_no{$id}" {$required_attr_tx_no}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="tx_no" data-fieldname="tx_no" >
+
+	<label class="r-edit-label control-label {$tx_no_label_class}" for="{$labelfor_tx_no}">
+		{BEGIN tx_no_label}
+			{$tx_no_forward_control}
+			{$label parties_involved tx_no }			{END tx_no_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$tx_no_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="tx_no" {$tooltipAttr parties_involved tx_no } >
+		<div class="text-muted" >
+		{$tooltip parties_involved tx_no }		</div>
+	</div>
+	</div>
+
+
+{END tx_no_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c5}
+			 
+																
+
+{BEGIN cellblock_grid_c6}
+<td
+	{$cell_grid_c6}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c6" data-pageid="{$pageid}" data-page="parties_involved_add"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_tx_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_tx}  r-vertical-field" 
+	data-signal-error-for="id_tx{$id}" {$required_attr_id_tx}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="id_tx" data-fieldname="id_tx" >
+
+	<label class="r-edit-label control-label {$id_tx_label_class}" for="{$labelfor_id_tx}">
+		{BEGIN id_tx_label}
+			{$id_tx_forward_control}
+			{$label parties_involved id_tx }			{END id_tx_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$id_tx_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="id_tx" {$tooltipAttr parties_involved id_tx } >
+		<div class="text-muted" >
+		{$tooltip parties_involved id_tx }		</div>
+	</div>
+	</div>
+
+
+{END id_tx_fieldblock}
+											
+{BEGIN marketing_rights_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_marketing_rights}  r-vertical-field" 
+	data-signal-error-for="marketing_rights{$id}" {$required_attr_marketing_rights}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="marketing_rights" data-fieldname="marketing_rights" >
+
+	<label class="r-edit-label control-label {$marketing_rights_label_class}" for="{$labelfor_marketing_rights}">
+		{BEGIN marketing_rights_label}
+			{$marketing_rights_forward_control}
+			{$label parties_involved marketing_rights }			{END marketing_rights_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$marketing_rights_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="marketing_rights" {$tooltipAttr parties_involved marketing_rights } >
+		<div class="text-muted" >
+		{$tooltip parties_involved marketing_rights }		</div>
+	</div>
+	</div>
+
+
+{END marketing_rights_fieldblock}
+											
+{BEGIN custid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_custid}  r-vertical-field" 
+	data-signal-error-for="custid{$id}" {$required_attr_custid}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="custid" data-fieldname="custid" >
+
+	<label class="r-edit-label control-label {$custid_label_class}" for="{$labelfor_custid}">
+		{BEGIN custid_label}
+			{$custid_forward_control}
+			{$label parties_involved custid }			{END custid_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$custid_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="custid" {$tooltipAttr parties_involved custid } >
+		<div class="text-muted" >
+		{$tooltip parties_involved custid }		</div>
+	</div>
+	</div>
+
+
+{END custid_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c6}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							{mlang_message SAVE}			</a>
+</span>
+	 
+		{BEGIN reset_button}
+<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							{mlang_message RESET}			</a>
+</span>
+{END reset_button}
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

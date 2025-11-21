@@ -1,0 +1,368 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel transaction_party_involved view}","hidden":"{$item_hide_view_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+					colSpan: 2,
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_view_back_list1}"},
+				
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+				{BEGIN row_grid_0}
+				[
+																{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved category }","bold":true}," ",{$category_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field2}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved salesperson_name }","bold":true}," ",{$salesperson_name_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field33}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved cea_reg }","bold":true}," ",{$cea_reg_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field3}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved representing }","bold":true}," ",{$representing_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field7}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved sale_price }","bold":true}," ",{$sale_price_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field13}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved valuation_price }","bold":true}," ",{$valuation_price_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field14}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved agency }","bold":true}," ",{$agency_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field5}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved prop_type }","bold":true}," ",{$prop_type_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field35}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved Prop_kind }","bold":true}," ",{$Prop_kind_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field36}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved prop_address }","bold":true}," ",{$prop_address_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field34}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved transacted_price }","bold":true}," ",{$transacted_price_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field51}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved salesperson_name }","bold":true}," ",{$salesperson_name_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field70}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved office_tel }","bold":true}," ",{$office_tel_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field1}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved cus_type }","bold":true}," ",{$cus_type_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field4}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved trade }","bold":true}," ",{$trade_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field6}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved contact_person }","bold":true}," ",{$contact_person_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field8}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved destination }","bold":true}," ",{$destination_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field9}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved contact_email }","bold":true}," ",{$contact_email_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field12}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved biz_email }","bold":true}," ",{$biz_email_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field15}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved contact_person_cell }","bold":true}," ",{$contact_person_cell_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field16}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved contact_person_id }","bold":true}," ",{$contact_person_id_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field17}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved country_incorporation }","bold":true}," ",{$country_incorporation_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field18}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved role }","bold":true}," ",{$role_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field19}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved reg_date }","bold":true}," ",{$reg_date_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field21}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved id }","bold":true}," ",{$id_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field22}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved rental_price }","bold":true}," ",{$rental_price_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field23}"},
+				
+				
+			{"text":"<head><SCRIPT src=\"common.js\" type=\"text/javascript\">\n    </SCRIPT></head>","hidden":"{$item_hide_text24}","isHtml":true},
+				
+				
+			{"text":"<!-- Return to Top -->\n      <a href=\"javascript:\" id=\"return-to-top\">\n        <I class=\"icon-chevron-up\">\n        </i>\n      </a>\n      <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->\n      <link href=\"//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css\" rel=\"stylesheet\">","hidden":"{$item_hide_text15}","isHtml":true},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved mobile }","bold":true}," ",{$mobile_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved name }","bold":true}," ",{$name_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field10}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved address }","bold":true}," ",{$address_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field11}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved nric }","bold":true}," ",{$nric_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field20}"},
+				
+				
+			{"text":[{"text":"{$jslabel transaction_party_involved custid }","bold":true}," ",{$custid_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field24}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_view_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_view_close}"},
+				
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+																							{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'right',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+			]
+};
+
+pdfFonts = {$pdfFonts};
+  

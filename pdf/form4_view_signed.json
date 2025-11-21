@@ -1,0 +1,9994 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'center',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+					colSpan: 2,
+		
+			
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"5%", 
+							{END col_grid_0}
+												{BEGIN col_grid_1}
+						"32.5%", 
+							{END col_grid_1}
+												{BEGIN col_grid_2}
+						"32.5%", 
+							{END col_grid_2}
+												{BEGIN col_grid_3}
+						"23.75%", 
+							{END col_grid_3}
+												{BEGIN col_grid_4}
+						"23.75%", 
+							{END col_grid_4}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+								{BEGIN row_grid_1}
+						
+			"%",
+						{END row_grid_1}
+			 
+								{BEGIN row_grid_2}
+						
+			"%",
+						{END row_grid_2}
+			 
+								{BEGIN row_grid_3}
+						
+			"%",
+						{END row_grid_3}
+			 
+								{BEGIN row_grid_4}
+						
+			"%",
+						{END row_grid_4}
+			 
+								{BEGIN row_grid_5}
+						
+			"%",
+						{END row_grid_5}
+			 
+								{BEGIN row_grid_6}
+						
+			"%",
+						{END row_grid_6}
+			 
+								{BEGIN row_grid_7}
+						
+			"%",
+						{END row_grid_7}
+			 
+								{BEGIN row_grid_8}
+						
+			"%",
+						{END row_grid_8}
+			 
+								{BEGIN row_grid_9}
+						
+			"%",
+						{END row_grid_9}
+			 
+								{BEGIN row_grid_10}
+						
+			"%",
+						{END row_grid_10}
+			 
+								{BEGIN row_grid_11}
+						
+			"%",
+						{END row_grid_11}
+			 
+								{BEGIN row_grid_12}
+						
+			"%",
+						{END row_grid_12}
+			 
+								{BEGIN row_grid_13}
+						
+			"%",
+						{END row_grid_13}
+			 
+								{BEGIN row_grid_14}
+						
+			"%",
+						{END row_grid_14}
+			 
+								{BEGIN row_grid_15}
+						
+			"%",
+						{END row_grid_15}
+			 
+								{BEGIN row_grid_16}
+						
+			"%",
+						{END row_grid_16}
+			 
+								{BEGIN row_grid_17}
+						
+			"%",
+						{END row_grid_17}
+			 
+								{BEGIN row_grid_18}
+						
+			"%",
+						{END row_grid_18}
+			 
+								{BEGIN row_grid_19}
+						
+			"%",
+						{END row_grid_19}
+			 
+								{BEGIN row_grid_20}
+						
+			"%",
+						{END row_grid_20}
+			 
+								{BEGIN row_grid_21}
+						
+			"%",
+						{END row_grid_21}
+			 
+								{BEGIN row_grid_22}
+						
+			"%",
+						{END row_grid_22}
+			 
+								{BEGIN row_grid_23}
+						
+			"%",
+						{END row_grid_23}
+			 
+								{BEGIN row_grid_24}
+						
+			"%",
+						{END row_grid_24}
+			 
+								{BEGIN row_grid_25}
+						
+			"%",
+						{END row_grid_25}
+			 
+								{BEGIN row_grid_26}
+						
+			"%",
+						{END row_grid_26}
+			 
+								{BEGIN row_grid_27}
+						
+			"%",
+						{END row_grid_27}
+			 
+								{BEGIN row_grid_28}
+						
+			"%",
+						{END row_grid_28}
+			 
+								{BEGIN row_grid_29}
+						
+			"%",
+						{END row_grid_29}
+			 
+								{BEGIN row_grid_30}
+						
+			"%",
+						{END row_grid_30}
+			 
+								{BEGIN row_grid_31}
+						
+			"%",
+						{END row_grid_31}
+			 
+								{BEGIN row_grid_32}
+						
+			"%",
+						{END row_grid_32}
+			 
+								{BEGIN row_grid_33}
+						
+			"%",
+						{END row_grid_33}
+			 
+								{BEGIN row_grid_34}
+						
+			"%",
+						{END row_grid_34}
+			 
+								{BEGIN row_grid_35}
+						
+			"%",
+						{END row_grid_35}
+			 
+								{BEGIN row_grid_36}
+						
+			"%",
+						{END row_grid_36}
+			 
+								{BEGIN row_grid_37}
+						
+			"%",
+						{END row_grid_37}
+			 
+								{BEGIN row_grid_38}
+						
+			"%",
+						{END row_grid_38}
+			 
+								{BEGIN row_grid_39}
+						
+			"%",
+						{END row_grid_39}
+			 
+								{BEGIN row_grid_40}
+						
+			"%",
+						{END row_grid_40}
+			 
+								{BEGIN row_grid_41}
+						
+			"%",
+						{END row_grid_41}
+			 
+								{BEGIN row_grid_42}
+						
+			50,
+						{END row_grid_42}
+			 
+								{BEGIN row_grid_43}
+						
+			"%",
+						{END row_grid_43}
+			 
+								{BEGIN row_grid_44}
+						
+			"%",
+						{END row_grid_44}
+			 
+								{BEGIN row_grid_45}
+						
+			"%",
+						{END row_grid_45}
+			 
+								{BEGIN row_grid_46}
+						
+			"%",
+						{END row_grid_46}
+			 
+								{BEGIN row_grid_47}
+						
+			"%",
+						{END row_grid_47}
+			 
+								{BEGIN row_grid_48}
+						
+			"%",
+						{END row_grid_48}
+			 
+								{BEGIN row_grid_49}
+						
+			"%",
+						{END row_grid_49}
+			 
+								{BEGIN row_grid_50}
+						
+			"%",
+						{END row_grid_50}
+			 
+								{BEGIN row_grid_51}
+						
+			"%",
+						{END row_grid_51}
+			 
+								{BEGIN row_grid_52}
+						
+			"%",
+						{END row_grid_52}
+			 
+								{BEGIN row_grid_53}
+						
+			"%",
+						{END row_grid_53}
+			 
+								{BEGIN row_grid_54}
+						
+			"%",
+						{END row_grid_54}
+			 
+								{BEGIN row_grid_55}
+						
+			"%",
+						{END row_grid_55}
+			 
+								{BEGIN row_grid_56}
+						
+			"%",
+						{END row_grid_56}
+			 
+								{BEGIN row_grid_57}
+						
+			"%",
+						{END row_grid_57}
+			 
+								{BEGIN row_grid_58}
+						
+			"%",
+						{END row_grid_58}
+			 
+								{BEGIN row_grid_59}
+						
+			"%",
+						{END row_grid_59}
+			 
+								{BEGIN row_grid_60}
+						
+			"%",
+						{END row_grid_60}
+			 
+								{BEGIN row_grid_61}
+						
+			"%",
+						{END row_grid_61}
+			 
+								{BEGIN row_grid_62}
+						
+			260,
+						{END row_grid_62}
+			 
+								{BEGIN row_grid_63}
+						
+			"%",
+						{END row_grid_63}
+			 
+								{BEGIN row_grid_64}
+						
+			"%",
+						{END row_grid_64}
+			 
+								{BEGIN row_grid_65}
+						
+			"%",
+						{END row_grid_65}
+			 
+								{BEGIN row_grid_66}
+						
+			"%",
+						{END row_grid_66}
+			 
+								{BEGIN row_grid_67}
+						
+			55,
+						{END row_grid_67}
+			 
+								{BEGIN row_grid_68}
+						
+			"%",
+						{END row_grid_68}
+			 
+								{BEGIN row_grid_69}
+						
+			"%",
+						{END row_grid_69}
+			 
+								{BEGIN row_grid_70}
+						
+			55,
+						{END row_grid_70}
+			 
+								{BEGIN row_grid_71}
+						
+			"%",
+						{END row_grid_71}
+			 
+								{BEGIN row_grid_72}
+						
+			"%",
+						{END row_grid_72}
+			 
+								{BEGIN row_grid_73}
+						
+			55,
+						{END row_grid_73}
+			 
+								{BEGIN row_grid_74}
+						
+			"%",
+						{END row_grid_74}
+			 
+								{BEGIN row_grid_75}
+						
+			"%",
+						{END row_grid_75}
+			 
+								{BEGIN row_grid_76}
+						
+			55,
+						{END row_grid_76}
+			 
+								{BEGIN row_grid_77}
+						
+			"%",
+						{END row_grid_77}
+			 
+								{BEGIN row_grid_78}
+						
+			"%",
+						{END row_grid_78}
+			 
+								{BEGIN row_grid_79}
+						
+			"%",
+						{END row_grid_79}
+			 
+								{BEGIN row_grid_80}
+						
+			"%",
+						{END row_grid_80}
+			 
+								{BEGIN row_grid_81}
+						
+			"%",
+						{END row_grid_81}
+			 
+								{BEGIN row_grid_82}
+						
+			"%",
+						{END row_grid_82}
+			 
+								{BEGIN row_grid_83}
+						
+			"%",
+						{END row_grid_83}
+			 
+								{BEGIN row_grid_84}
+						
+			"%",
+						{END row_grid_84}
+			 
+								{BEGIN row_grid_85}
+						
+			"%",
+						{END row_grid_85}
+			 
+								{BEGIN row_grid_86}
+						
+			"%",
+						{END row_grid_86}
+			 
+								{BEGIN row_grid_87}
+						
+			"%",
+						{END row_grid_87}
+			 
+								{BEGIN row_grid_88}
+						
+			"%",
+						{END row_grid_88}
+			 
+								{BEGIN row_grid_89}
+						
+			"%",
+						{END row_grid_89}
+			 
+								{BEGIN row_grid_90}
+						
+			"%",
+						{END row_grid_90}
+			 
+								{BEGIN row_grid_91}
+						
+			"%",
+						{END row_grid_91}
+			 
+								{BEGIN row_grid_92}
+						
+			"%",
+						{END row_grid_92}
+			 
+								{BEGIN row_grid_93}
+						
+			"%",
+						{END row_grid_93}
+			 
+								{BEGIN row_grid_94}
+						
+			"%",
+						{END row_grid_94}
+			 
+								{BEGIN row_grid_95}
+						
+			"%",
+						{END row_grid_95}
+			 
+								{BEGIN row_grid_96}
+						
+			"%",
+						{END row_grid_96}
+			 
+								{BEGIN row_grid_97}
+						
+			"%",
+						{END row_grid_97}
+			 
+								{BEGIN row_grid_98}
+						
+			"%",
+						{END row_grid_98}
+			 
+								{BEGIN row_grid_99}
+						
+			"%",
+						{END row_grid_99}
+			 
+								{BEGIN row_grid_100}
+						
+			"%",
+						{END row_grid_100}
+			 
+								{BEGIN row_grid_101}
+						
+			"%",
+						{END row_grid_101}
+			 
+								{BEGIN row_grid_102}
+						
+			"%",
+						{END row_grid_102}
+			 
+								{BEGIN row_grid_103}
+						
+			"%",
+						{END row_grid_103}
+			 
+								{BEGIN row_grid_104}
+						
+			"%",
+						{END row_grid_104}
+			 
+								{BEGIN row_grid_105}
+						
+			"%",
+						{END row_grid_105}
+			 
+								{BEGIN row_grid_106}
+						
+			"%",
+						{END row_grid_106}
+			 
+								{BEGIN row_grid_107}
+						
+			"%",
+						{END row_grid_107}
+			 
+								{BEGIN row_grid_108}
+						
+			"%",
+						{END row_grid_108}
+			 
+								{BEGIN row_grid_109}
+						
+			"%",
+						{END row_grid_109}
+			 
+								{BEGIN row_grid_110}
+						
+			"%",
+						{END row_grid_110}
+			 
+								{BEGIN row_grid_111}
+						
+			"%",
+						{END row_grid_111}
+			 
+				],
+	
+		body: [
+				
+				{BEGIN row_grid_0}
+				[
+																{BEGIN cellblock_grid_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c}
+			colSpan: {$colspan_grid_c},
+			{END colspan_grid_c}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"ESTATE AGENCY AGREEMENT FOR","hidden":"{$item_hide_text99}","fontSize":18,"bold":true,"isHtml":true},
+				
+				
+			{"text":"THE LEASE OF RESIDENTIAL PROPERTY","hidden":"{$item_hide_text107}","fontSize":18,"bold":true,"isHtml":true},
+				
+				
+			{"text":"BY A TENANT","hidden":"{$item_hide_text108}","fontSize":18,"bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'center',
+     
+      
+      },
+
+{END cellblock_grid_c}
+																		{ 
+				cellId: 'c',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_0}
+						{BEGIN row_grid_1}
+				[
+																{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c3}
+			colSpan: {$colspan_grid_c3},
+			{END colspan_grid_c3}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify;margin:0'>&emsp;&emsp;This form is prescribed by the Council for Estate Agencies (‘‘<b>CEA</b>’’) under the Estate Agents Act 2010 for use when an estate agent is authorised or engaged by a prospective tenant to introduce a landlord of residential property<sup>(2)</sup> in Singapore.</p>","hidden":"{$item_hide_text7}","isHtml":true},
+				
+				
+			{"text":"<p style='text-align:justify;margin:0'>&emsp;&emsp;<u><i>Note:</i></u>&emsp;Where a number in brackets (e.g.<sup>(1)</sup>) appears in this Agreement, please read the explanatory note that bears the corresponding number in Schedule 1 to this Agreement. Where any space provided below is insufficient, the relevant particulars shall be written on a separate sheet and attached to this Agreement.</p>","hidden":"{$item_hide_text8}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c3}
+																		{ 
+				cellId: 'c3',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c3',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c3',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c3',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_1}
+						{BEGIN row_grid_2}
+				[
+																{BEGIN cellblock_grid_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"1.","hidden":"{$item_hide_text}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c2}
+																							{BEGIN cellblock_grid_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c5}
+			colSpan: {$colspan_grid_c5},
+			{END colspan_grid_c5}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"Parties to Agreement","hidden":"{$item_hide_text86}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c5}
+																		{ 
+				cellId: 'c5',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c5',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c5',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_2}
+						{BEGIN row_grid_3}
+				[
+																{BEGIN cellblock_grid_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c10}
+																							{BEGIN cellblock_grid_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c8}
+			colSpan: {$colspan_grid_c8},
+			{END colspan_grid_c8}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 date_agreement }","hidden":"{$item_hide_edit_field_label1}","bold":true},
+				
+				
+			{"text":{$date_agreement_pdfvalue},"hidden":"{$item_hide_integrated_edit_field}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c8}
+																		{ 
+				cellId: 'c8',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c8',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c8',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_3}
+						{BEGIN row_grid_4}
+				[
+																{BEGIN cellblock_grid_c14}
+{
+	cellId: 'c14',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c14}
+																							{BEGIN cellblock_grid_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c12}
+			colSpan: {$colspan_grid_c12},
+			{END colspan_grid_c12}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 tenant1 }","hidden":"{$item_hide_edit_field_label5}","bold":true},
+				
+				
+			{"text":{$tenant1_pdfvalue},"hidden":"{$item_hide_tenant1}","decoration":"underline"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c12}
+																		{ 
+				cellId: 'c12',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c45}
+{
+	cellId: 'c45',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c45}
+			colSpan: {$colspan_grid_c45},
+			{END colspan_grid_c45}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 tenant1_id }","hidden":"{$item_hide_edit_field_label6}","bold":true},
+				
+				
+			{"text":{$tenant1_id_pdfvalue},"hidden":"{$item_hide_tenant1_id}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c45}
+																		{ 
+				cellId: 'c45',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_4}
+						{BEGIN row_grid_5}
+				[
+																{BEGIN cellblock_grid_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c13}
+																							{BEGIN cellblock_grid_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c11}
+			colSpan: {$colspan_grid_c11},
+			{END colspan_grid_c11}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 tenant1_address }","hidden":"{$item_hide_edit_field_label4}","bold":true},
+				
+				
+			{"text":{$tenant1_address_pdfvalue},"hidden":"{$item_hide_tenant1_address}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c11}
+																		{ 
+				cellId: 'c11',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c11',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c11',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_5}
+						{BEGIN row_grid_6}
+				[
+																{BEGIN cellblock_grid_c15}
+{
+	cellId: 'c15',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c15}
+																							{BEGIN cellblock_grid_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c9}
+			colSpan: {$colspan_grid_c9},
+			{END colspan_grid_c9}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 tenant2 }","hidden":"{$item_hide_edit_field_label7}","bold":true},
+				
+				
+			{"text":{$tenant2_pdfvalue},"hidden":"{$item_hide_tenant2}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c9}
+																		{ 
+				cellId: 'c9',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c47}
+{
+	cellId: 'c47',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c47}
+			colSpan: {$colspan_grid_c47},
+			{END colspan_grid_c47}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 tenant2_id }","hidden":"{$item_hide_edit_field_label8}","bold":true},
+				
+				
+			{"text":{$tenant2_id_pdfvalue},"hidden":"{$item_hide_tenant2_id}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c47}
+																		{ 
+				cellId: 'c47',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_6}
+						{BEGIN row_grid_7}
+				[
+																{BEGIN cellblock_grid_c26}
+{
+	cellId: 'c26',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c26}
+																							{BEGIN cellblock_grid_c24}
+{
+	cellId: 'c24',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c24}
+			colSpan: {$colspan_grid_c24},
+			{END colspan_grid_c24}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 tenant2_address }","hidden":"{$item_hide_edit_field_label9}","bold":true},
+				
+				
+			{"text":{$tenant2_address_pdfvalue},"hidden":"{$item_hide_tenant2_address}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c24}
+																		{ 
+				cellId: 'c24',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c24',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c24',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_7}
+						{BEGIN row_grid_8}
+				[
+																{BEGIN cellblock_grid_c25}
+{
+	cellId: 'c25',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c25}
+																							{BEGIN cellblock_grid_c17}
+{
+	cellId: 'c17',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c17}
+			colSpan: {$colspan_grid_c17},
+			{END colspan_grid_c17}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 tenant3 }","hidden":"{$item_hide_edit_field_label10}","bold":true},
+				
+				
+			{"text":{$tenant3_pdfvalue},"hidden":"{$item_hide_tenant3}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c17}
+																		{ 
+				cellId: 'c17',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c48}
+{
+	cellId: 'c48',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c48}
+			colSpan: {$colspan_grid_c48},
+			{END colspan_grid_c48}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 tenant3_id }","hidden":"{$item_hide_edit_field_label11}","bold":true},
+				
+				
+			{"text":{$tenant3_id_pdfvalue},"hidden":"{$item_hide_tenant3_id}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c48}
+																		{ 
+				cellId: 'c48',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_8}
+						{BEGIN row_grid_9}
+				[
+																{BEGIN cellblock_grid_c27}
+{
+	cellId: 'c27',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c27}
+																							{BEGIN cellblock_grid_c16}
+{
+	cellId: 'c16',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c16}
+			colSpan: {$colspan_grid_c16},
+			{END colspan_grid_c16}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 tenant3_address }","hidden":"{$item_hide_edit_field_label12}","bold":true},
+				
+				
+			{"text":{$tenant3_address_pdfvalue},"hidden":"{$item_hide_tenant3_address}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c16}
+																		{ 
+				cellId: 'c16',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c16',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c16',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_9}
+						{BEGIN row_grid_10}
+				[
+																{BEGIN cellblock_grid_c32}
+{
+	cellId: 'c32',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c32}
+																							{BEGIN cellblock_grid_c34}
+{
+	cellId: 'c34',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c34}
+			colSpan: {$colspan_grid_c34},
+			{END colspan_grid_c34}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 tenant4 }","hidden":"{$item_hide_edit_field_label16}","bold":true},
+				
+				
+			{"text":{$tenant4_pdfvalue},"hidden":"{$item_hide_tenant4}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c34}
+																		{ 
+				cellId: 'c34',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c49}
+{
+	cellId: 'c49',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c49}
+			colSpan: {$colspan_grid_c49},
+			{END colspan_grid_c49}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 tenant4_id }","hidden":"{$item_hide_edit_field_label17}","bold":true},
+				
+				
+			{"text":{$tenant4_id_pdfvalue},"hidden":"{$item_hide_tenant4_id}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c49}
+																		{ 
+				cellId: 'c49',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_10}
+						{BEGIN row_grid_11}
+				[
+																{BEGIN cellblock_grid_c29}
+{
+	cellId: 'c29',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c29}
+																							{BEGIN cellblock_grid_c33}
+{
+	cellId: 'c33',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c33}
+			colSpan: {$colspan_grid_c33},
+			{END colspan_grid_c33}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 tenant4_address }","hidden":"{$item_hide_edit_field_label18}","bold":true},
+				
+				
+			{"text":{$tenant4_address_pdfvalue},"hidden":"{$item_hide_tenant4_address}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c33}
+																		{ 
+				cellId: 'c33',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c33',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c33',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_11}
+						{BEGIN row_grid_12}
+				[
+																{BEGIN cellblock_grid_c22}
+{
+	cellId: 'c22',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c22}
+																							{BEGIN cellblock_grid_c20}
+{
+	cellId: 'c20',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c20}
+			colSpan: {$colspan_grid_c20},
+			{END colspan_grid_c20}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 estateagent }","hidden":"{$item_hide_edit_field_label13}","bold":true},
+				
+				
+			{"text":{$estateagent_pdfvalue},"hidden":"{$item_hide_integrated_edit_field5}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c20}
+																		{ 
+				cellId: 'c20',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c52}
+{
+	cellId: 'c52',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c52}
+			colSpan: {$colspan_grid_c52},
+			{END colspan_grid_c52}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 estateagent_cea }","hidden":"{$item_hide_edit_field_label14}","bold":true},
+				
+				
+			{"text":{$estateagent_cea_pdfvalue},"hidden":"{$item_hide_integrated_edit_field6}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c52}
+																		{ 
+				cellId: 'c52',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_12}
+						{BEGIN row_grid_13}
+				[
+																{BEGIN cellblock_grid_c46}
+{
+	cellId: 'c46',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c46}
+																							{BEGIN cellblock_grid_c31}
+{
+	cellId: 'c31',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c31}
+			colSpan: {$colspan_grid_c31},
+			{END colspan_grid_c31}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 estateagent_address }","hidden":"{$item_hide_edit_field_label15}","bold":true},
+				
+				
+			{"text":{$estateagent_address_pdfvalue},"hidden":"{$item_hide_integrated_edit_field26}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c31}
+																		{ 
+				cellId: 'c31',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c31',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c31',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_13}
+						{BEGIN row_grid_14}
+				[
+																{BEGIN cellblock_grid_c21}
+{
+	cellId: 'c21',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"2.","hidden":"{$item_hide_text1}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c21}
+																							{BEGIN cellblock_grid_c19}
+{
+	cellId: 'c19',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c19}
+			colSpan: {$colspan_grid_c19},
+			{END colspan_grid_c19}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"Appointment of Estate Agent by Tenant","hidden":"{$item_hide_text87}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c19}
+																		{ 
+				cellId: 'c19',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c19',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c19',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_14}
+						{BEGIN row_grid_15}
+				[
+																{BEGIN cellblock_grid_c42}
+{
+	cellId: 'c42',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c42}
+																							{BEGIN cellblock_grid_c43}
+{
+	cellId: 'c43',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c43}
+			colSpan: {$colspan_grid_c43},
+			{END colspan_grid_c43}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>The above tenant(s) (collectively called ‘‘Tenant’’) hereby authorises and engages the Estate Agent subject to and in accordance with the terms of this Agreement, to introduce to him a Landlord <sup>(6)</sup> of the following Property on an <b>exclusive</b> basis <sup>(7)(8)</sup>: </p>","hidden":"{$item_hide_text101}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c43}
+																		{ 
+				cellId: 'c43',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c43',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c43',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_15}
+						{BEGIN row_grid_16}
+				[
+																{BEGIN cellblock_grid_c40}
+{
+	cellId: 'c40',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c40}
+																							{BEGIN cellblock_grid_c41}
+{
+	cellId: 'c41',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c41}
+			colSpan: {$colspan_grid_c41},
+			{END colspan_grid_c41}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 0, 0, 50 ],
+		
+	
+			"text": [
+		
+				
+			{"text":{$property_address_pdfvalue},"hidden":"{$item_hide_integrated_edit_field7}","decoration":"underline","bold":false},
+				
+				
+			{"text":"(\"Property\")","hidden":"{$item_hide_text15}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c41}
+																		{ 
+				cellId: 'c41',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c41',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c41',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_16}
+						{BEGIN row_grid_17}
+				[
+																{BEGIN cellblock_grid_c28}
+{
+	cellId: 'c28',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c28}
+			colSpan: {$colspan_grid_c28},
+			{END colspan_grid_c28}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field46}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant1 }","bold":true},{"text":{$sign_tenant1_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field47}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant2 }","bold":true},{"text":{$sign_tenant2_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field49}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant3 }","bold":true},{"text":{$sign_tenant3_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field50}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant4 }","bold":true},{"text":{$sign_tenant4_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c28}
+																		{ 
+				cellId: 'c28',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c28',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c28',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c28',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_17}
+						{BEGIN row_grid_18}
+				[
+																{BEGIN cellblock_grid_c35}
+{
+	cellId: 'c35',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c35}
+																							{BEGIN cellblock_grid_c37}
+{
+	cellId: 'c37',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c37}
+																							{BEGIN cellblock_grid_c38}
+{
+	cellId: 'c38',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c38}
+																							{BEGIN cellblock_grid_c36}
+{
+	cellId: 'c36',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c36}
+																							{BEGIN cellblock_grid_c39}
+{
+	cellId: 'c39',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c39}
+											],
+				{END row_grid_18}
+						{BEGIN row_grid_19}
+				[
+																{BEGIN cellblock_grid_c86}
+{
+	cellId: 'c86',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c86}
+			colSpan: {$colspan_grid_c86},
+			{END colspan_grid_c86}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192526}","hidden":"{$item_hide_snippet}","isHtml":true},
+				
+				
+			{"text":"Page 1","pageBreak":"after","hidden":"{$item_hide_text93}","fontSize":14,"isHtml":true},
+				
+				
+			{"text":"{$event 192429}","hidden":"{$item_hide_snippet41}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'center',
+     
+      
+      },
+
+{END cellblock_grid_c86}
+																		{ 
+				cellId: 'c86',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c86',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c86',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c86',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_19}
+						{BEGIN row_grid_20}
+				[
+																{BEGIN cellblock_grid_c79}
+{
+	cellId: 'c79',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 20, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"3.","hidden":"{$item_hide_text2}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c79}
+																							{BEGIN cellblock_grid_c82}
+{
+	cellId: 'c82',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c82}
+			colSpan: {$colspan_grid_c82},
+			{END colspan_grid_c82}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 20, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"Scope of Agency and Duties of Estate Agent","hidden":"{$item_hide_text103}","bold":true,"isHtml":true},
+				
+				
+			{"text":"{$event 192543}","hidden":"{$item_hide_snippet1}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c82}
+																		{ 
+				cellId: 'c82',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c82',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c82',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_20}
+						{BEGIN row_grid_21}
+				[
+																{BEGIN cellblock_grid_c84}
+{
+	cellId: 'c84',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"4.","hidden":"{$item_hide_text3}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c84}
+																							{BEGIN cellblock_grid_c91}
+{
+	cellId: 'c91',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c91}
+			colSpan: {$colspan_grid_c91},
+			{END colspan_grid_c91}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"Commission","hidden":"{$item_hide_text4}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c91}
+																		{ 
+				cellId: 'c91',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c91',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c91',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_21}
+						{BEGIN row_grid_22}
+				[
+																{BEGIN cellblock_grid_c88}
+{
+	cellId: 'c88',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(a)","hidden":"{$item_hide_text5}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c88}
+																							{BEGIN cellblock_grid_c89}
+{
+	cellId: 'c89',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c89}
+			colSpan: {$colspan_grid_c89},
+			{END colspan_grid_c89}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"<p style=\"text-align:jusity\">If the Tenant enters into a binding lease <SUP>(8)</SUP> of the Property with a Landlord introduced by the Estate Agent for <span style=\"display:inline-block; text-decoration:underline;\">{$lease_tenure_value}</span> <sup>(9)</sup> the Tenant shall pay the Estate Agent commission of S$<span style=\"display:inline-block; text-decoration:underline\">{$comm_value}</span>&nbsp;/&nbsp;<span style=\"display:inline-block; text-decoration:underline\">{$percentage_value}</span> <SUP>(1)(9)</SUP> rent.</p>","hidden":"{$item_hide_text110}","isHtml":true},
+				
+				
+			{"text":[{"text":"{$jslabel form4 comm }","bold":true}," ",{$comm_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field31}"},
+				
+				
+			{"text":[{"text":"{$jslabel form4 percentage }","bold":true}," ",{$percentage_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field1}"},
+				
+				
+			{"text":[{"text":"{$jslabel form4 lease_tenure }","bold":true}," ",{$lease_tenure_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field19}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c89}
+																		{ 
+				cellId: 'c89',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c89',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c89',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_22}
+						{BEGIN row_grid_23}
+				[
+																{BEGIN cellblock_grid_c96}
+{
+	cellId: 'c96',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c96}
+																							{BEGIN cellblock_grid_c95}
+{
+	cellId: 'c95',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c95}
+			colSpan: {$colspan_grid_c95},
+			{END colspan_grid_c95}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 100, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":{$sign1_pdfvalue},"hidden":"{$item_hide_integrated_edit_field28}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c95}
+																		{ 
+				cellId: 'c95',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c95',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c95',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_23}
+						{BEGIN row_grid_24}
+				[
+																{BEGIN cellblock_grid_c87}
+{
+	cellId: 'c87',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c87}
+																							{BEGIN cellblock_grid_c90}
+{
+	cellId: 'c90',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c90}
+			colSpan: {$colspan_grid_c90},
+			{END colspan_grid_c90}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$event 192370}","hidden":"{$item_hide_form1_gstpayable}","isHtml":true},
+				
+				
+			{"text":{$GST_pdfvalue},"hidden":"{$item_hide_integrated_edit_field33}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c90}
+																		{ 
+				cellId: 'c90',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c90',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c90',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_24}
+						{BEGIN row_grid_25}
+				[
+																{BEGIN cellblock_grid_c108}
+{
+	cellId: 'c108',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c108}
+																							{BEGIN cellblock_grid_c112}
+{
+	cellId: 'c112',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c112}
+			colSpan: {$colspan_grid_c112},
+			{END colspan_grid_c112}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$event 192468}","hidden":"{$item_hide_form1_gstyes}","isHtml":true},
+				
+				
+			{"text":{$gst_include_pdfvalue},"hidden":"{$item_hide_gst_include}","decoration":"underline","bold":false},
+				
+				
+			{"text":"{$event 192361}","hidden":"{$item_hide_sup1}","isHtml":true},
+				
+				
+			{"text":[{"text":"{$jslabel form4 sign2 }","bold":true}," ",{$sign2_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field32}"},
+				
+				
+			{"text":"-","hidden":"{$item_hide_dash}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c112}
+																		{ 
+				cellId: 'c112',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c112',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c112',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_25}
+						{BEGIN row_grid_26}
+				[
+																{BEGIN cellblock_grid_c99}
+{
+	cellId: 'c99',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c99}
+																							{BEGIN cellblock_grid_c100}
+{
+	cellId: 'c100',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c100}
+			colSpan: {$colspan_grid_c100},
+			{END colspan_grid_c100}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192478}","hidden":"{$item_hide_snippet2}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c100}
+																		{ 
+				cellId: 'c100',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c100',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c100',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_26}
+						{BEGIN row_grid_27}
+				[
+																{BEGIN cellblock_grid_c97}
+{
+	cellId: 'c97',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c97}
+																							{BEGIN cellblock_grid_c98}
+{
+	cellId: 'c98',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c98}
+			colSpan: {$colspan_grid_c98},
+			{END colspan_grid_c98}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":[{"text":"{$jslabel form4 landlord1 }","bold":true}," ",{$landlord1_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field2}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c98}
+																		{ 
+				cellId: 'c98',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c98',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c98',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_27}
+						{BEGIN row_grid_28}
+				[
+																{BEGIN cellblock_grid_c115}
+{
+	cellId: 'c115',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c115}
+																							{BEGIN cellblock_grid_c114}
+{
+	cellId: 'c114',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c114}
+			colSpan: {$colspan_grid_c114},
+			{END colspan_grid_c114}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":[{"text":"{$jslabel form4 landlord1_address }","bold":true}," ",{$landlord1_address_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field40}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c114}
+																		{ 
+				cellId: 'c114',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c114',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c114',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_28}
+						{BEGIN row_grid_29}
+				[
+																{BEGIN cellblock_grid_c116}
+{
+	cellId: 'c116',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c116}
+																							{BEGIN cellblock_grid_c113}
+{
+	cellId: 'c113',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c113}
+			colSpan: {$colspan_grid_c113},
+			{END colspan_grid_c113}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":[{"text":"{$jslabel form4 date_ta }","bold":true}," ",{$date_ta_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field10}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c113}
+																		{ 
+				cellId: 'c113',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c113',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c113',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_29}
+						{BEGIN row_grid_30}
+				[
+																{BEGIN cellblock_grid_c77}
+{
+	cellId: 'c77',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c77}
+																							{BEGIN cellblock_grid_c80}
+{
+	cellId: 'c80',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c80}
+			colSpan: {$colspan_grid_c80},
+			{END colspan_grid_c80}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"Scope of Agency and Duties of Estate Agent","hidden":"{$item_hide_text88}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c80}
+																		{ 
+				cellId: 'c80',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c80',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c80',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_30}
+						{BEGIN row_grid_31}
+				[
+																{BEGIN cellblock_grid_c117}
+{
+	cellId: 'c117',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(b)","hidden":"{$item_hide_text9}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c117}
+																							{BEGIN cellblock_grid_c118}
+{
+	cellId: 'c118',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c118}
+			colSpan: {$colspan_grid_c118},
+			{END colspan_grid_c118}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192335}","hidden":"{$item_hide_snippet4}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c118}
+																		{ 
+				cellId: 'c118',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c118',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c118',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_31}
+						{BEGIN row_grid_32}
+				[
+																{BEGIN cellblock_grid_c111}
+{
+	cellId: 'c111',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(c)","hidden":"{$item_hide_text10}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c111}
+																							{BEGIN cellblock_grid_c93}
+{
+	cellId: 'c93',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c93}
+			colSpan: {$colspan_grid_c93},
+			{END colspan_grid_c93}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$event 192330}","hidden":"{$item_hide_snippet9}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c93}
+																		{ 
+				cellId: 'c93',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c93',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c93',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_32}
+						{BEGIN row_grid_33}
+				[
+																{BEGIN cellblock_grid_c120}
+{
+	cellId: 'c120',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c120}
+																							{BEGIN cellblock_grid_c121}
+{
+	cellId: 'c121',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c121}
+			colSpan: {$colspan_grid_c121},
+			{END colspan_grid_c121}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 250, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":{$sign3_pdfvalue},"hidden":"{$item_hide_integrated_edit_field35}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c121}
+																		{ 
+				cellId: 'c121',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c121',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c121',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_33}
+						{BEGIN row_grid_34}
+				[
+																{BEGIN cellblock_grid_c119}
+{
+	cellId: 'c119',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(d)","hidden":"{$item_hide_text114}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c119}
+																							{BEGIN cellblock_grid_c122}
+{
+	cellId: 'c122',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c122}
+			colSpan: {$colspan_grid_c122},
+			{END colspan_grid_c122}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"<p style=\"text-align:justify\">On <span style=\"display:inline-block; text-decoration:underline\">{$renewal_term_value}</span> <sup>(10)</sup> renewal of the lease, the Tenant <span style=\"display:inline-block; text-decoration:underline\">{$renewal_agree_value}</span> <sup>(1)</sup> be liable to pay further commission to the Estate Agent. If further Commission is payable upon renewal, such commission shall amount to S$ <span style=\"display:inline-block; text-decoration:underline\">{$renewal_comm_value}</span> / <span style=\"display:inline-block; text-decoration:underline\">{$renewal_percent_value}</span> <sup>(1)</sup> rent for <span style=\"display:inline-block; text-decoration:underline\">{$lease_tenure2_value}</span><sup>(9)</sup>.</p>","hidden":"{$item_hide_text61}","isHtml":true},
+				
+				
+			{"text":[{"text":"{$jslabel form4 renewal_agree }","bold":true}," ",{$renewal_agree_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field21}"},
+				
+				
+			{"text":[{"text":"{$jslabel form4 renewal_comm }","bold":true}," ",{$renewal_comm_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field23}"},
+				
+				
+			{"text":[{"text":"{$jslabel form4 renewal_percent }","bold":true}," ",{$renewal_percent_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field24}"},
+				
+				
+			{"text":[{"text":"{$jslabel form4 renewal_term }","bold":true}," ",{$renewal_term_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field20}"},
+				
+				
+			{"text":[{"text":"{$jslabel form4 lease_tenure2 }","bold":true}," ",{$lease_tenure2_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field25}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c122}
+																		{ 
+				cellId: 'c122',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c122',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c122',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_34}
+						{BEGIN row_grid_35}
+				[
+																{BEGIN cellblock_grid_c110}
+{
+	cellId: 'c110',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c110}
+																							{BEGIN cellblock_grid_c92}
+{
+	cellId: 'c92',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c92}
+			colSpan: {$colspan_grid_c92},
+			{END colspan_grid_c92}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 50, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_sign4}","stack":[{"text":"{$jslabel form4 sign4 }","bold":true},{"text":{$sign4_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c92}
+																		{ 
+				cellId: 'c92',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c92',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c92',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_35}
+						{BEGIN row_grid_36}
+				[
+																{BEGIN cellblock_grid_c130}
+{
+	cellId: 'c130',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c130}
+			colSpan: {$colspan_grid_c130},
+			{END colspan_grid_c130}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 100, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field36}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant1 }","bold":true},{"text":{$sign_tenant1_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field43}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant2 }","bold":true},{"text":{$sign_tenant2_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field44}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant3 }","bold":true},{"text":{$sign_tenant3_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field34}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant4 }","bold":true},{"text":{$sign_tenant4_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c130}
+																		{ 
+				cellId: 'c130',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c130',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c130',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c130',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_36}
+						{BEGIN row_grid_37}
+				[
+																{BEGIN cellblock_grid_c139}
+{
+	cellId: 'c139',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c139}
+			colSpan: {$colspan_grid_c139},
+			{END colspan_grid_c139}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192526}","hidden":"{$item_hide_snippet3}","isHtml":true},
+				
+				
+			{"text":"Page 2","pageBreak":"after","hidden":"{$item_hide_text94}","fontSize":14,"isHtml":true},
+				
+				
+			{"text":"{$event 192429}","hidden":"{$item_hide_snippet42}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'center',
+     
+      
+      },
+
+{END cellblock_grid_c139}
+																		{ 
+				cellId: 'c139',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c139',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c139',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c139',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_37}
+						{BEGIN row_grid_38}
+				[
+																{BEGIN cellblock_grid_c197}
+{
+	cellId: 'c197',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 20, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"5.","hidden":"{$item_hide_text11}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c197}
+																							{BEGIN cellblock_grid_c187}
+{
+	cellId: 'c187',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c187}
+			colSpan: {$colspan_grid_c187},
+			{END colspan_grid_c187}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 20, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"text":"Disclosure Requirements ","hidden":"{$item_hide_text12}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c187}
+																		{ 
+				cellId: 'c187',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c187',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c187',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_38}
+						{BEGIN row_grid_39}
+				[
+																{BEGIN cellblock_grid_c208}
+{
+	cellId: 'c208',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c208}
+																							{BEGIN cellblock_grid_c210}
+{
+	cellId: 'c210',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c210}
+			colSpan: {$colspan_grid_c210},
+			{END colspan_grid_c210}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 200, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":{$sign5_pdfvalue},"hidden":"{$item_hide_integrated_edit_field37}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c210}
+																		{ 
+				cellId: 'c210',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c210',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c210',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_39}
+						{BEGIN row_grid_40}
+				[
+																{BEGIN cellblock_grid_c199}
+{
+	cellId: 'c199',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(a)","hidden":"{$item_hide_text13}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c199}
+																							{BEGIN cellblock_grid_c194}
+{
+	cellId: 'c194',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c194}
+			colSpan: {$colspan_grid_c194},
+			{END colspan_grid_c194}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>The Estate Agent or Salesperson <span style=\"display:inline-block; text-decoration:underline;\">{$conflict_value}</span> <sup>(1)(11) </SUP> a conflict or potential conflict of interest in acting for the Tenant. If the Estate Agent or Salesperson has a conflict or potential conflict of interest, the details are as follows:</p>","hidden":"{$item_hide_text14}","isHtml":true},
+				
+				
+			{"text":[{"text":"{$jslabel form4 conflict }","bold":true}," ",{$conflict_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field29}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c194}
+																		{ 
+				cellId: 'c194',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c194',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c194',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_40}
+						{BEGIN row_grid_41}
+				[
+																{BEGIN cellblock_grid_c203}
+{
+	cellId: 'c203',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c203}
+																							{BEGIN cellblock_grid_c198}
+{
+	cellId: 'c198',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c198}
+			colSpan: {$colspan_grid_c198},
+			{END colspan_grid_c198}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":{$conflict_description_pdfvalue},"hidden":"{$item_hide_integrated_edit_field30}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c198}
+																		{ 
+				cellId: 'c198',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c198',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c198',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_41}
+						{BEGIN row_grid_42}
+				[
+																{BEGIN cellblock_grid_c195}
+{
+	cellId: 'c195',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(b)","hidden":"{$item_hide_text111}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c195}
+																							{BEGIN cellblock_grid_c186}
+{
+	cellId: 'c186',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c186}
+			colSpan: {$colspan_grid_c186},
+			{END colspan_grid_c186}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"<p style='text-align:justify'>If the Estate Agent or Salesperson has declared that there is no conflict or potential conflict of interest but a conflict or potential conflict of interest only arises (or he becomes aware of the conflict or potential conflict of interest) after the execution of this Agreement, the conflict or potential conflict of interest must be immediately disclosed in writing to the Tenant. Upon such disclosure, the Estate Agent and Salesperson may continue to act for the Tenant only if the Tenant, being fully informed, consents in writing to the Estate Agent and Salesperson continuing to act for him.</p>","hidden":"{$item_hide_text17}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c186}
+																		{ 
+				cellId: 'c186',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c186',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c186',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_42}
+						{BEGIN row_grid_43}
+				[
+																{BEGIN cellblock_grid_c212}
+{
+	cellId: 'c212',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"6.","hidden":"{$item_hide_text18}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c212}
+																							{BEGIN cellblock_grid_c185}
+{
+	cellId: 'c185',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c185}
+			colSpan: {$colspan_grid_c185},
+			{END colspan_grid_c185}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"Co-broking","hidden":"{$item_hide_text19}","bold":true,"isHtml":true},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field38}","stack":[{"text":"{$jslabel form4 sign6 }","bold":true},{"text":{$sign6_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c185}
+																		{ 
+				cellId: 'c185',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c185',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c185',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_43}
+						{BEGIN row_grid_44}
+				[
+																{BEGIN cellblock_grid_c145}
+{
+	cellId: 'c145',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(a)","hidden":"{$item_hide_text20}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c145}
+																							{BEGIN cellblock_grid_c143}
+{
+	cellId: 'c143',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c143}
+			colSpan: {$colspan_grid_c143},
+			{END colspan_grid_c143}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>The Tenant * <span style=\"display:inline-block; text-decoration:underline\">{$co_broke_value}</span><SUP> (1) </SUP> the Estate Agent to co-operate or co-broke with another Estate Agent to secure Landlords for the Property.</p>","hidden":"{$item_hide_text21}","isHtml":true},
+				
+				
+			{"text":[{"text":"{$jslabel form4 co_broke }","bold":true}," ",{$co_broke_pdfvalue}],"hidden":"{$item_hide_integrated_edit_field39}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c143}
+																		{ 
+				cellId: 'c143',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c143',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c143',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_44}
+						{BEGIN row_grid_45}
+				[
+																{BEGIN cellblock_grid_c147}
+{
+	cellId: 'c147',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(b)","hidden":"{$item_hide_text16}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c147}
+																							{BEGIN cellblock_grid_c142}
+{
+	cellId: 'c142',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c142}
+			colSpan: {$colspan_grid_c142},
+			{END colspan_grid_c142}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>If co-broking is allowed, the commission may be shared between the Estate Agent and a co-broking agent in such amounts as may be agreed between them but the Tenant is not liable to pay any commission to the co-broking agent.</p>","hidden":"{$item_hide_text23}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c142}
+																		{ 
+				cellId: 'c142',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c142',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c142',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_45}
+						{BEGIN row_grid_46}
+				[
+																{BEGIN cellblock_grid_c153}
+{
+	cellId: 'c153',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"7.","hidden":"{$item_hide_text27}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c153}
+																							{BEGIN cellblock_grid_c152}
+{
+	cellId: 'c152',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c152}
+			colSpan: {$colspan_grid_c152},
+			{END colspan_grid_c152}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"Schedule and notes","hidden":"{$item_hide_text89}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c152}
+																		{ 
+				cellId: 'c152',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c152',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c152',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_46}
+						{BEGIN row_grid_47}
+				[
+																{BEGIN cellblock_grid_c158}
+{
+	cellId: 'c158',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c158}
+			colSpan: {$colspan_grid_c158},
+			{END colspan_grid_c158}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"The Schedules and Notes to or in this Agreement form part of this Agreement.","hidden":"{$item_hide_text85}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c158}
+																		{ 
+				cellId: 'c158',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c158',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c158',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c158',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_47}
+						{BEGIN row_grid_48}
+				[
+																{BEGIN cellblock_grid_c160}
+{
+	cellId: 'c160',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"8.","hidden":"{$item_hide_text30}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c160}
+																							{BEGIN cellblock_grid_c155}
+{
+	cellId: 'c155',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c155}
+			colSpan: {$colspan_grid_c155},
+			{END colspan_grid_c155}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"Applicable Law and Dispute Resolution","hidden":"{$item_hide_text90}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c155}
+																		{ 
+				cellId: 'c155',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c155',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c155',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_48}
+						{BEGIN row_grid_49}
+				[
+																{BEGIN cellblock_grid_c166}
+{
+	cellId: 'c166',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(a)","hidden":"{$item_hide_text32}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c166}
+																							{BEGIN cellblock_grid_c161}
+{
+	cellId: 'c161',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c161}
+			colSpan: {$colspan_grid_c161},
+			{END colspan_grid_c161}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"This Agreement shall be governed by the laws of Singapore.","hidden":"{$item_hide_text117}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c161}
+																		{ 
+				cellId: 'c161',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c161',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c161',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_49}
+						{BEGIN row_grid_50}
+				[
+																{BEGIN cellblock_grid_c171}
+{
+	cellId: 'c171',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(b)","hidden":"{$item_hide_text22}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c171}
+																							{BEGIN cellblock_grid_c169}
+{
+	cellId: 'c169',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c169}
+			colSpan: {$colspan_grid_c169},
+			{END colspan_grid_c169}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>Any dispute between the Tenant and the Estate Agent arising out of or in connection with\nthis Agreement (including any question regarding its existence, validity or termination) shall first be resolved in the following manner:</p>","hidden":"{$item_hide_text115}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c169}
+																		{ 
+				cellId: 'c169',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c169',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c169',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_50}
+						{BEGIN row_grid_51}
+				[
+																{BEGIN cellblock_grid_c174}
+{
+	cellId: 'c174',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c174}
+																							{BEGIN cellblock_grid_c170}
+{
+	cellId: 'c170',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c170}
+			colSpan: {$colspan_grid_c170},
+			{END colspan_grid_c170}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"Mediation First","hidden":"{$item_hide_text84}","decoration":"underline","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c170}
+																		{ 
+				cellId: 'c170',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c170',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c170',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_51}
+						{BEGIN row_grid_52}
+				[
+																{BEGIN cellblock_grid_c172}
+{
+	cellId: 'c172',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 0, 0, 30 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"(i)","hidden":"{$item_hide_text37}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c172}
+																							{BEGIN cellblock_grid_c189}
+{
+	cellId: 'c189',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c189}
+			colSpan: {$colspan_grid_c189},
+			{END colspan_grid_c189}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 0, 0, 50 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>The parties shall proceed to mediation under the mediation scheme prescribed by the <b>CEA</b> unless the Tenant elects in writing not to mediate.</p>","hidden":"{$item_hide_text25}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c189}
+																		{ 
+				cellId: 'c189',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c189',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c189',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_52}
+						{BEGIN row_grid_53}
+				[
+																{BEGIN cellblock_grid_c196}
+{
+	cellId: 'c196',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c196}
+			colSpan: {$colspan_grid_c196},
+			{END colspan_grid_c196}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field55}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant1 }","bold":true},{"text":{$sign_tenant1_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field56}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant2 }","bold":true},{"text":{$sign_tenant2_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field57}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant3 }","bold":true},{"text":{$sign_tenant3_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field58}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant4 }","bold":true},{"text":{$sign_tenant4_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c196}
+																		{ 
+				cellId: 'c196',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c196',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c196',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c196',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_53}
+						{BEGIN row_grid_54}
+				[
+																{BEGIN cellblock_grid_c176}
+{
+	cellId: 'c176',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c176}
+			colSpan: {$colspan_grid_c176},
+			{END colspan_grid_c176}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192526}","hidden":"{$item_hide_snippet5}","isHtml":true},
+				
+				
+			{"text":"Page 3","pageBreak":"after","hidden":"{$item_hide_text95}","fontSize":14,"isHtml":true},
+				
+				
+			{"text":"{$event 192429}","hidden":"{$item_hide_snippet43}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'center',
+     
+      
+      },
+
+{END cellblock_grid_c176}
+																		{ 
+				cellId: 'c176',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c176',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c176',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c176',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_54}
+						{BEGIN row_grid_55}
+				[
+																{BEGIN cellblock_grid_c178}
+{
+	cellId: 'c178',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 20, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"(ii)","hidden":"{$item_hide_text31}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c178}
+																							{BEGIN cellblock_grid_c173}
+{
+	cellId: 'c173',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c173}
+			colSpan: {$colspan_grid_c173},
+			{END colspan_grid_c173}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 20, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>The Estate Agent may ask the Tenant in writing whether he elects to mediate or not. If the Tenant does not reply or make any election within three weeks of receipt of such enquiry, he shall be deemed to have elected in writing not to proceed to mediation.</p>","hidden":"{$item_hide_text26}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c173}
+																		{ 
+				cellId: 'c173',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c173',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c173',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_55}
+						{BEGIN row_grid_56}
+				[
+																{BEGIN cellblock_grid_c219}
+{
+	cellId: 'c219',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c219}
+																							{BEGIN cellblock_grid_c175}
+{
+	cellId: 'c175',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c175}
+			colSpan: {$colspan_grid_c175},
+			{END colspan_grid_c175}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"Arbitration","hidden":"{$item_hide_text91}","decoration":"underline","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c175}
+																		{ 
+				cellId: 'c175',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c175',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c175',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_56}
+						{BEGIN row_grid_57}
+				[
+																{BEGIN cellblock_grid_c211}
+{
+	cellId: 'c211',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(iii)","hidden":"{$item_hide_text33}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c211}
+																							{BEGIN cellblock_grid_c177}
+{
+	cellId: 'c177',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c177}
+			colSpan: {$colspan_grid_c177},
+			{END colspan_grid_c177}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>If the dispute remains outstanding (i.e. the Tenant has elected not to mediate or the dispute is not resolved by mediation), the dispute shall be referred to and finally resolved by arbitration in Singapore under the arbitration scheme prescribed by the <b>CEA</b>, in accordance with such rules as may be prescribed, unless the Tenant elects in writing not to arbitrate.</p>","hidden":"{$item_hide_text28}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c177}
+																		{ 
+				cellId: 'c177',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c177',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c177',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_57}
+						{BEGIN row_grid_58}
+				[
+																{BEGIN cellblock_grid_c183}
+{
+	cellId: 'c183',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(iv)","hidden":"{$item_hide_text35}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c183}
+																							{BEGIN cellblock_grid_c181}
+{
+	cellId: 'c181',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c181}
+			colSpan: {$colspan_grid_c181},
+			{END colspan_grid_c181}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>The Estate Agent may ask the Tenant in writing whether he elects to resolve the dispute by arbitration or not. If the Tenant does not reply or expressly make any election within three weeks of receipt of such enquiry, he shall be deemed to have elected in writing not to resolve the dispute by arbitration and neither party shall be bound to proceed to arbitration.</p>","hidden":"{$item_hide_text29}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c181}
+																		{ 
+				cellId: 'c181',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c181',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c181',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_58}
+						{BEGIN row_grid_59}
+				[
+																{BEGIN cellblock_grid_c182}
+{
+	cellId: 'c182',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"9.","hidden":"{$item_hide_text116}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c182}
+																							{BEGIN cellblock_grid_c180}
+{
+	cellId: 'c180',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c180}
+			colSpan: {$colspan_grid_c180},
+			{END colspan_grid_c180}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"Additional Terms","hidden":"{$item_hide_text92}","bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c180}
+																		{ 
+				cellId: 'c180',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c180',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c180',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_59}
+						{BEGIN row_grid_60}
+				[
+																{BEGIN cellblock_grid_c204}
+{
+	cellId: 'c204',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c204}
+																							{BEGIN cellblock_grid_c205}
+{
+	cellId: 'c205',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c205}
+			colSpan: {$colspan_grid_c205},
+			{END colspan_grid_c205}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'><i><u>Note:</u></i> The printed terms prescribed in this form of Agreement cannot be deleted or varied. If the parties wish at any time to agree to or add on any other terms, they must be in writing, dated, inserted as Additional Terms below and initialed by the parties. If the space below is insufficient, the Additional Terms are to be written/printed in black ink on a separate sheet of paper which must be <strong>pink</strong> in color and in a font <strong>not smaller</strong> than the font of the above terms.</p>","hidden":"{$item_hide_text39}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c205}
+																		{ 
+				cellId: 'c205',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c205',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c205',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_60}
+						{BEGIN row_grid_61}
+				[
+																{BEGIN cellblock_grid_c190}
+{
+	cellId: 'c190',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c190}
+																							{BEGIN cellblock_grid_c192}
+{
+	cellId: 'c192',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c192}
+			colSpan: {$colspan_grid_c192},
+			{END colspan_grid_c192}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>The Additional Terms cannot conflict with, vary or otherwise limit the prescribed terms <sup>(12)</sup> of this Agreement.</p>","hidden":"{$item_hide_text62}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c192}
+																		{ 
+				cellId: 'c192',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c192',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c192',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_61}
+						{BEGIN row_grid_62}
+				[
+																{BEGIN cellblock_grid_c184}
+{
+	cellId: 'c184',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c184}
+																							{BEGIN cellblock_grid_c188}
+{
+	cellId: 'c188',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c188}
+			colSpan: {$colspan_grid_c188},
+			{END colspan_grid_c188}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":{$additional_term_pdfvalue},"hidden":"{$item_hide_integrated_edit_field41}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c188}
+																		{ 
+				cellId: 'c188',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c188',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c188',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_62}
+						{BEGIN row_grid_63}
+				[
+																{BEGIN cellblock_grid_c298}
+{
+	cellId: 'c298',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c298}
+			colSpan: {$colspan_grid_c298},
+			{END colspan_grid_c298}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field59}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant1 }","bold":true},{"text":{$sign_tenant1_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field60}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant2 }","bold":true},{"text":{$sign_tenant2_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field61}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant3 }","bold":true},{"text":{$sign_tenant3_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field62}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant4 }","bold":true},{"text":{$sign_tenant4_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c298}
+																		{ 
+				cellId: 'c298',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c298',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c298',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c298',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_63}
+						{BEGIN row_grid_64}
+				[
+																{BEGIN cellblock_grid_c202}
+{
+	cellId: 'c202',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c202}
+			colSpan: {$colspan_grid_c202},
+			{END colspan_grid_c202}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192526}","hidden":"{$item_hide_snippet67}","isHtml":true},
+				
+				
+			{"text":"Page 4","pageBreak":"after","hidden":"{$item_hide_text97}","fontSize":14,"isHtml":true},
+				
+				
+			{"text":"{$event 192429}","hidden":"{$item_hide_snippet44}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'center',
+     
+      
+      },
+
+{END cellblock_grid_c202}
+																		{ 
+				cellId: 'c202',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c202',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c202',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c202',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_64}
+						{BEGIN row_grid_65}
+				[
+																{BEGIN cellblock_grid_c201}
+{
+	cellId: 'c201',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c201}
+			colSpan: {$colspan_grid_c201},
+			{END colspan_grid_c201}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 20, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"Signed by the Tenant(s) and the Estate Agent","hidden":"{$item_hide_text63}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c201}
+																		{ 
+				cellId: 'c201',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c201',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c201',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c201',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_65}
+						{BEGIN row_grid_66}
+				[
+																{BEGIN cellblock_grid_c200}
+{
+	cellId: 'c200',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c200}
+			colSpan: {$colspan_grid_c200},
+			{END colspan_grid_c200}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192291}","hidden":"{$item_hide_snippet27}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c200}
+																		{ 
+				cellId: 'c200',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c200',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c200',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c200',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_66}
+						{BEGIN row_grid_67}
+				[
+																{BEGIN cellblock_grid_c225}
+{
+	cellId: 'c225',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c225}
+			colSpan: {$colspan_grid_c225},
+			{END colspan_grid_c225}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field22}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant1 }","bold":true},{"text":{$sign_tenant1_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c225}
+																		{ 
+				cellId: 'c225',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c225',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c226}
+{
+	cellId: 'c226',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c226}
+			colSpan: {$colspan_grid_c226},
+			{END colspan_grid_c226}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field3}","bold":false,"stack":[{"text":"{$jslabel form4 sign_interpreter1 }","bold":true},{"text":{$sign_interpreter1_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c226}
+																		{ 
+				cellId: 'c226',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_67}
+						{BEGIN row_grid_68}
+				[
+																{BEGIN cellblock_grid_c261}
+{
+	cellId: 'c261',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c261}
+			colSpan: {$colspan_grid_c261},
+			{END colspan_grid_c261}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 interpret1 }","hidden":"{$item_hide_edit_field_label24}","bold":true},
+				
+				
+			{"text":{$interpret1_pdfvalue},"hidden":"{$item_hide_interpret1}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c261}
+																		{ 
+				cellId: 'c261',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c261',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c239}
+{
+	cellId: 'c239',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c239}
+			colSpan: {$colspan_grid_c239},
+			{END colspan_grid_c239}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$event 192348}","hidden":"{$item_hide_snippet57}","fontSize":14,"isHtml":true},
+				
+				
+			{"text":{$interpreterID1_pdfvalue},"hidden":"{$item_hide_interpreterid1}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c239}
+																		{ 
+				cellId: 'c239',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_68}
+						{BEGIN row_grid_69}
+				[
+																{BEGIN cellblock_grid_c256}
+{
+	cellId: 'c256',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c256}
+			colSpan: {$colspan_grid_c256},
+			{END colspan_grid_c256}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 sign_date1 }","hidden":"{$item_hide_edit_field_label23}","bold":false},
+				
+				
+			{"text":{$sign_date1_pdfvalue},"hidden":"{$item_hide_integrated_edit_field15}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c256}
+																		{ 
+				cellId: 'c256',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c256',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c238}
+{
+	cellId: 'c238',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c238}
+			colSpan: {$colspan_grid_c238},
+			{END colspan_grid_c238}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 interpretdate1 }","hidden":"{$item_hide_edit_field_label28}","bold":false},
+				
+				
+			{"text":{$interpretdate1_pdfvalue},"hidden":"{$item_hide_integrated_edit_field11}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c238}
+																		{ 
+				cellId: 'c238',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_69}
+						{BEGIN row_grid_70}
+				[
+																{BEGIN cellblock_grid_c257}
+{
+	cellId: 'c257',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c257}
+			colSpan: {$colspan_grid_c257},
+			{END colspan_grid_c257}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field27}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant2 }","bold":true},{"text":{$sign_tenant2_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c257}
+																		{ 
+				cellId: 'c257',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c257',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c241}
+{
+	cellId: 'c241',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c241}
+			colSpan: {$colspan_grid_c241},
+			{END colspan_grid_c241}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field4}","bold":false,"stack":[{"text":"{$jslabel form4 sign_interpreter2 }","bold":true},{"text":{$sign_interpreter2_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c241}
+																		{ 
+				cellId: 'c241',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_70}
+						{BEGIN row_grid_71}
+				[
+																{BEGIN cellblock_grid_c254}
+{
+	cellId: 'c254',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c254}
+			colSpan: {$colspan_grid_c254},
+			{END colspan_grid_c254}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 interpret2 }","hidden":"{$item_hide_edit_field_label22}","bold":true},
+				
+				
+			{"text":{$interpret2_pdfvalue},"hidden":"{$item_hide_interpret2}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c254}
+																		{ 
+				cellId: 'c254',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c254',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c237}
+{
+	cellId: 'c237',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c237}
+			colSpan: {$colspan_grid_c237},
+			{END colspan_grid_c237}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$event 192348}","hidden":"{$item_hide_snippet58}","fontSize":14,"isHtml":true},
+				
+				
+			{"text":{$interpreterID2_pdfvalue},"hidden":"{$item_hide_interpreterid2}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c237}
+																		{ 
+				cellId: 'c237',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_71}
+						{BEGIN row_grid_72}
+				[
+																{BEGIN cellblock_grid_c259}
+{
+	cellId: 'c259',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c259}
+			colSpan: {$colspan_grid_c259},
+			{END colspan_grid_c259}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 sign_date2 }","hidden":"{$item_hide_edit_field_label21}","bold":false},
+				
+				
+			{"text":{$sign_date2_pdfvalue},"hidden":"{$item_hide_integrated_edit_field16}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c259}
+																		{ 
+				cellId: 'c259',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c259',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c243}
+{
+	cellId: 'c243',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c243}
+			colSpan: {$colspan_grid_c243},
+			{END colspan_grid_c243}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 interpretdate2 }","hidden":"{$item_hide_edit_field_label27}","bold":false},
+				
+				
+			{"text":{$interpretdate2_pdfvalue},"hidden":"{$item_hide_integrated_edit_field12}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c243}
+																		{ 
+				cellId: 'c243',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_72}
+						{BEGIN row_grid_73}
+				[
+																{BEGIN cellblock_grid_c258}
+{
+	cellId: 'c258',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c258}
+			colSpan: {$colspan_grid_c258},
+			{END colspan_grid_c258}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_sign_tenant3}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant3 }","bold":true},{"text":{$sign_tenant3_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c258}
+																		{ 
+				cellId: 'c258',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c258',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c242}
+{
+	cellId: 'c242',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c242}
+			colSpan: {$colspan_grid_c242},
+			{END colspan_grid_c242}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field8}","bold":false,"stack":[{"text":"{$jslabel form4 sign_interpreter3 }","bold":true},{"text":{$sign_interpreter3_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c242}
+																		{ 
+				cellId: 'c242',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_73}
+						{BEGIN row_grid_74}
+				[
+																{BEGIN cellblock_grid_c260}
+{
+	cellId: 'c260',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c260}
+			colSpan: {$colspan_grid_c260},
+			{END colspan_grid_c260}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 interpret3 }","hidden":"{$item_hide_edit_field_label20}","bold":true},
+				
+				
+			{"text":{$interpret3_pdfvalue},"hidden":"{$item_hide_interpret3}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c260}
+																		{ 
+				cellId: 'c260',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c260',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c244}
+{
+	cellId: 'c244',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c244}
+			colSpan: {$colspan_grid_c244},
+			{END colspan_grid_c244}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$event 192348}","hidden":"{$item_hide_snippet59}","fontSize":14,"isHtml":true},
+				
+				
+			{"text":{$interpreterID3_pdfvalue},"hidden":"{$item_hide_interpreterid3}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c244}
+																		{ 
+				cellId: 'c244',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_74}
+						{BEGIN row_grid_75}
+				[
+																{BEGIN cellblock_grid_c297}
+{
+	cellId: 'c297',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c297}
+			colSpan: {$colspan_grid_c297},
+			{END colspan_grid_c297}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 sign_date3 }","hidden":"{$item_hide_edit_field_label2}","bold":false},
+				
+				
+			{"text":{$sign_date3_pdfvalue},"hidden":"{$item_hide_integrated_edit_field17}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c297}
+																		{ 
+				cellId: 'c297',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c297',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c359}
+{
+	cellId: 'c359',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c359}
+			colSpan: {$colspan_grid_c359},
+			{END colspan_grid_c359}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 interpretdate3 }","hidden":"{$item_hide_edit_field_label25}","bold":false},
+				
+				
+			{"text":{$interpretdate3_pdfvalue},"hidden":"{$item_hide_integrated_edit_field13}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c359}
+																		{ 
+				cellId: 'c359',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_75}
+						{BEGIN row_grid_76}
+				[
+																{BEGIN cellblock_grid_c275}
+{
+	cellId: 'c275',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c275}
+			colSpan: {$colspan_grid_c275},
+			{END colspan_grid_c275}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field45}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant4 }","bold":true},{"text":{$sign_tenant4_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c275}
+																		{ 
+				cellId: 'c275',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c275',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c356}
+{
+	cellId: 'c356',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c356}
+			colSpan: {$colspan_grid_c356},
+			{END colspan_grid_c356}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field9}","bold":false,"stack":[{"text":"{$jslabel form4 sign_interpreter4 }","bold":true},{"text":{$sign_interpreter4_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c356}
+																		{ 
+				cellId: 'c356',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_76}
+						{BEGIN row_grid_77}
+				[
+																{BEGIN cellblock_grid_c303}
+{
+	cellId: 'c303',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c303}
+			colSpan: {$colspan_grid_c303},
+			{END colspan_grid_c303}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 interpret4 }","hidden":"{$item_hide_edit_field_label19}","bold":true},
+				
+				
+			{"text":{$interpret4_pdfvalue},"hidden":"{$item_hide_interpret4}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c303}
+																		{ 
+				cellId: 'c303',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c303',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c360}
+{
+	cellId: 'c360',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c360}
+			colSpan: {$colspan_grid_c360},
+			{END colspan_grid_c360}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$event 192348}","hidden":"{$item_hide_snippet60}","fontSize":14,"isHtml":true},
+				
+				
+			{"text":{$interpreterID4_pdfvalue},"hidden":"{$item_hide_interpreterid4}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c360}
+																		{ 
+				cellId: 'c360',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_77}
+						{BEGIN row_grid_78}
+				[
+																{BEGIN cellblock_grid_c304}
+{
+	cellId: 'c304',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c304}
+			colSpan: {$colspan_grid_c304},
+			{END colspan_grid_c304}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 sign_date4 }","hidden":"{$item_hide_edit_field_label3}","bold":false},
+				
+				
+			{"text":{$sign_date4_pdfvalue},"hidden":"{$item_hide_integrated_edit_field18}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c304}
+																		{ 
+				cellId: 'c304',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c304',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c362}
+{
+	cellId: 'c362',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c362}
+			colSpan: {$colspan_grid_c362},
+			{END colspan_grid_c362}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel form4 interpretdate4 }","hidden":"{$item_hide_edit_field_label26}","bold":false},
+				
+				
+			{"text":{$interpretdate4_pdfvalue},"hidden":"{$item_hide_integrated_edit_field14}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c362}
+																		{ 
+				cellId: 'c362',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_78}
+						{BEGIN row_grid_79}
+				[
+																{BEGIN cellblock_grid_c214}
+{
+	cellId: 'c214',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c214}
+			colSpan: {$colspan_grid_c214},
+			{END colspan_grid_c214}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$event 192517}","hidden":"{$item_hide_snippet48}","isHtml":true},
+				
+				
+			{"text":{$agency_or_salesperson_pdfvalue},"hidden":"{$item_hide_integrated_edit_field48}","decoration":"underline","bold":false},
+				
+				
+			{"text":"<sup>(1)(13)</sup>","hidden":"{$item_hide_text96}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c214}
+																		{ 
+				cellId: 'c214',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c214',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c214',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c214',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_79}
+						{BEGIN row_grid_80}
+				[
+																{BEGIN cellblock_grid_c209}
+{
+	cellId: 'c209',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c209}
+			colSpan: {$colspan_grid_c209},
+			{END colspan_grid_c209}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":[{"text":"{$jslabel form4 salesperson }","bold":true}," ",{$salesperson_pdfvalue}],"hidden":"{$item_hide_salesperson}","bold":false},
+				
+				
+			{"text":[{"text":"{$jslabel form4 estateagent2 }","bold":true}," ",{$estateagent2_pdfvalue}],"hidden":"{$item_hide_estateagent2}","decoration":"underline","bold":false},
+				
+				
+			{"text":[{"text":"{$jslabel form4 salesperson_ic }","bold":true}," ",{$salesperson_ic_pdfvalue}],"hidden":"{$item_hide_salesperson_ic}","decoration":"underline","bold":false},
+				
+				
+			{"text":[{"text":"{$jslabel form4 salesperson_address }","bold":true}," ",{$salesperson_address_pdfvalue}],"hidden":"{$item_hide_salesperson_address}","decoration":"underline","bold":false},
+				
+				
+			{"text":[{"text":"{$jslabel form4 estateagent_address2 }","bold":true}," ",{$estateagent_address2_pdfvalue}],"hidden":"{$item_hide_estateagent_address2}","bold":false},
+				
+				
+			{"text":[{"text":"{$jslabel form4 salesperson_cea }","bold":true}," ",{$salesperson_cea_pdfvalue}],"hidden":"{$item_hide_salesperson_cea}","decoration":"underline","bold":false},
+				
+				
+			{"text":[{"text":"{$jslabel form4 estateagent_cea2 }","bold":true}," ",{$estateagent_cea2_pdfvalue}],"hidden":"{$item_hide_estateagent_cea2}","decoration":"underline","bold":false},
+				
+				
+			{"text":[{"text":"{$jslabel form4 salesperson_contact }","bold":true}," ",{$salesperson_contact_pdfvalue}],"hidden":"{$item_hide_salesperson_contact}","decoration":"underline","bold":false},
+				
+				
+			{"text":[{"text":"{$jslabel form4 estateagent_tel }","bold":true}," ",{$estateagent_tel_pdfvalue}],"hidden":"{$item_hide_estateagent_tel}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c209}
+																		{ 
+				cellId: 'c209',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c209',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+																			{BEGIN cellblock_grid_c374}
+{
+	cellId: 'c374',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c374}
+			colSpan: {$colspan_grid_c374},
+			{END colspan_grid_c374}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_sign_agent}","bold":false,"stack":[{"text":"{$jslabel form4 sign_agent }","bold":true},{"text":{$sign_agent_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"text":"{$jslabel form4 date_sign }","hidden":"{$item_hide_edit_field_label}","bold":false},
+				
+				
+			{"text":{$date_sign_pdfvalue},"hidden":"{$item_hide_date_sign}","decoration":"underline","bold":false},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c374}
+																		{ 
+				cellId: 'c374',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_80}
+						{BEGIN row_grid_81}
+				[
+																{BEGIN cellblock_grid_c373}
+{
+	cellId: 'c373',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c373}
+			colSpan: {$colspan_grid_c373},
+			{END colspan_grid_c373}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 0, 0, 50 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192211}","hidden":"{$item_hide_snippet7}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c373}
+																		{ 
+				cellId: 'c373',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c373',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c373',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c373',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_81}
+						{BEGIN row_grid_82}
+				[
+																{BEGIN cellblock_grid_c371}
+{
+	cellId: 'c371',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c371}
+			colSpan: {$colspan_grid_c371},
+			{END colspan_grid_c371}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192526}","hidden":"{$item_hide_snippet6}","isHtml":true},
+				
+				
+			{"text":"Page 5","pageBreak":"after","hidden":"{$item_hide_text104}","fontSize":14,"isHtml":true},
+				
+				
+			{"text":"{$event 192429}","hidden":"{$item_hide_snippet45}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'center',
+     
+      
+      },
+
+{END cellblock_grid_c371}
+																		{ 
+				cellId: 'c371',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c371',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c371',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c371',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_82}
+						{BEGIN row_grid_83}
+				[
+																{BEGIN cellblock_grid_c325}
+{
+	cellId: 'c325',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c325}
+			colSpan: {$colspan_grid_c325},
+			{END colspan_grid_c325}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 20, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192482}","hidden":"{$item_hide_snippet10}","fontSize":16,"bold":true,"isHtml":true},
+				
+				
+			{"text":"{$event 192494}","hidden":"{$item_hide_snippet50}","fontSize":16,"bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'center',
+     
+      
+      },
+
+{END cellblock_grid_c325}
+																		{ 
+				cellId: 'c325',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c325',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c325',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c325',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_83}
+						{BEGIN row_grid_84}
+				[
+																{BEGIN cellblock_grid_c255}
+{
+	cellId: 'c255',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(1)","hidden":"{$item_hide_text38}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c255}
+																							{BEGIN cellblock_grid_c247}
+{
+	cellId: 'c247',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c247}
+			colSpan: {$colspan_grid_c247},
+			{END colspan_grid_c247}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 5, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"* means delete if not applicable. <b>All</b> deletions must be initialed by the Tenant at the time they made.","hidden":"{$item_hide_text83}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c247}
+																		{ 
+				cellId: 'c247',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c247',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c247',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_84}
+						{BEGIN row_grid_85}
+				[
+																{BEGIN cellblock_grid_c248}
+{
+	cellId: 'c248',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(2)","hidden":"{$item_hide_text40}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c248}
+																							{BEGIN cellblock_grid_c240}
+{
+	cellId: 'c240',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c240}
+			colSpan: {$colspan_grid_c240},
+			{END colspan_grid_c240}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 5, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>This form of agreement is only applicable if all or part of the property to be leased comprises residential property in Singapore.</p>","hidden":"{$item_hide_text64}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c240}
+																		{ 
+				cellId: 'c240',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c240',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c240',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_85}
+						{BEGIN row_grid_86}
+				[
+																{BEGIN cellblock_grid_c270}
+{
+	cellId: 'c270',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(3)","hidden":"{$item_hide_text41}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c270}
+																							{BEGIN cellblock_grid_c218}
+{
+	cellId: 'c218',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c218}
+			colSpan: {$colspan_grid_c218},
+			{END colspan_grid_c218}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 5, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>If there is no <b>NRIC</b> No., please write another number such as <b>FIN</b>, passport or company incorporation/registration No., as the case may be.</p>","hidden":"{$item_hide_text6}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c218}
+																		{ 
+				cellId: 'c218',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c218',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c218',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_86}
+						{BEGIN row_grid_87}
+				[
+																{BEGIN cellblock_grid_c279}
+{
+	cellId: 'c279',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(4)","hidden":"{$item_hide_text42}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c279}
+																							{BEGIN cellblock_grid_c277}
+{
+	cellId: 'c277',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c277}
+			colSpan: {$colspan_grid_c277},
+			{END colspan_grid_c277}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 5, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"To insert full name of the Estate Agent.","hidden":"{$item_hide_text82}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c277}
+																		{ 
+				cellId: 'c277',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c277',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c277',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_87}
+						{BEGIN row_grid_88}
+				[
+																{BEGIN cellblock_grid_c278}
+{
+	cellId: 'c278',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(5)","hidden":"{$item_hide_text43}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c278}
+																							{BEGIN cellblock_grid_c276}
+{
+	cellId: 'c276',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c276}
+			colSpan: {$colspan_grid_c276},
+			{END colspan_grid_c276}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 5, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"<p style=\"text-align:justify\">The Estate Agent is not an exclusive agent and the Tenant may also lease property himself or through another agent.</p>","hidden":"{$item_hide_text24}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c276}
+																		{ 
+				cellId: 'c276',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c276',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c276',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_88}
+						{BEGIN row_grid_89}
+				[
+																{BEGIN cellblock_grid_c280}
+{
+	cellId: 'c280',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(6)","hidden":"{$item_hide_text44}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c280}
+																							{BEGIN cellblock_grid_c274}
+{
+	cellId: 'c274',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c274}
+			colSpan: {$colspan_grid_c274},
+			{END colspan_grid_c274}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 5, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"Landlord includes a potential Landlord.","hidden":"{$item_hide_text66}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c274}
+																		{ 
+				cellId: 'c274',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c274',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c274',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_89}
+						{BEGIN row_grid_90}
+				[
+																{BEGIN cellblock_grid_c285}
+{
+	cellId: 'c285',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(7)","hidden":"{$item_hide_text45}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c285}
+																							{BEGIN cellblock_grid_c283}
+{
+	cellId: 'c283',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c283}
+			colSpan: {$colspan_grid_c283},
+			{END colspan_grid_c283}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 5, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>To state description of Property to be leased e.g. type, locality and rental range. If there is more than one Property, the relevant descriptions may be recorded on a separate sheet and attached to this Agreement. Alternatively, a separate agreement may be used for each Property.</p>","hidden":"{$item_hide_text67}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c283}
+																		{ 
+				cellId: 'c283',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c283',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c283',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_90}
+						{BEGIN row_grid_91}
+				[
+																{BEGIN cellblock_grid_c284}
+{
+	cellId: 'c284',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(8)","hidden":"{$item_hide_text46}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c284}
+																							{BEGIN cellblock_grid_c282}
+{
+	cellId: 'c282',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c282}
+			colSpan: {$colspan_grid_c282},
+			{END colspan_grid_c282}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 5, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"A lease includes a sublease and an agreement for lease or sublease, under whatever name.","hidden":"{$item_hide_text68}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c282}
+																		{ 
+				cellId: 'c282',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c282',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c282',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_91}
+						{BEGIN row_grid_92}
+				[
+																{BEGIN cellblock_grid_c286}
+{
+	cellId: 'c286',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(9)","hidden":"{$item_hide_text47}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c286}
+																							{BEGIN cellblock_grid_c281}
+{
+	cellId: 'c281',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c281}
+			colSpan: {$colspan_grid_c281},
+			{END colspan_grid_c281}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 5, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>The relevant period or number of months should be stated. The amount or rate of commission is negotiable between the Tenant and the Estate Agent. In the case of renewal of lease, whether further commission is payable and, if so, how much are also matters that are subject to negotiation.</p>","hidden":"{$item_hide_text69}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c281}
+																		{ 
+				cellId: 'c281',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c281',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c281',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_92}
+						{BEGIN row_grid_93}
+				[
+																{BEGIN cellblock_grid_c291}
+{
+	cellId: 'c291',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(10)","hidden":"{$item_hide_text48}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c291}
+																							{BEGIN cellblock_grid_c289}
+{
+	cellId: 'c289',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c289}
+			colSpan: {$colspan_grid_c289},
+			{END colspan_grid_c289}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 5, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"To state which renewal e.g. 1st, 2nd or 3rd, etc.","hidden":"{$item_hide_text34}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c289}
+																		{ 
+				cellId: 'c289',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c289',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c289',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_93}
+						{BEGIN row_grid_94}
+				[
+																{BEGIN cellblock_grid_c290}
+{
+	cellId: 'c290',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(11)","hidden":"{$item_hide_text49}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c290}
+																							{BEGIN cellblock_grid_c288}
+{
+	cellId: 'c288',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c288}
+			colSpan: {$colspan_grid_c288},
+			{END colspan_grid_c288}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 5, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>The Code of Ethics and Professional Client Care prescribes the Estate Agent’s and Salesperson’s duty to disclose and avoid any potential or actual conflict of interest.</p>","hidden":"{$item_hide_text71}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c288}
+																		{ 
+				cellId: 'c288',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c288',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c288',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_94}
+						{BEGIN row_grid_95}
+				[
+																{BEGIN cellblock_grid_c292}
+{
+	cellId: 'c292',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(12)","hidden":"{$item_hide_text50}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c292}
+																							{BEGIN cellblock_grid_c287}
+{
+	cellId: 'c287',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c287}
+			colSpan: {$colspan_grid_c287},
+			{END colspan_grid_c287}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 5, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>Where the parties have made any choice above, they may subsequently vary such choice in writing but such variation must be dated and initialed by the parties. The parties may also vary the non-prescribed Additional Terms but such variation must be in writing, dated and initialed by the parties.</p>","hidden":"{$item_hide_text73}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c287}
+																		{ 
+				cellId: 'c287',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c287',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c287',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_95}
+						{BEGIN row_grid_96}
+				[
+																{BEGIN cellblock_grid_c295}
+{
+	cellId: 'c295',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(13)","hidden":"{$item_hide_text72}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c295}
+																							{BEGIN cellblock_grid_c294}
+{
+	cellId: 'c294',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c294}
+			colSpan: {$colspan_grid_c294},
+			{END colspan_grid_c294}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 5, 0, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>If there is a Salesperson representing the Estate Agent in the proposed lease of the Property, the Salesperson shall sign and fill in his particulars. Otherwise, if the Estate Agent acting in the proposed lease of the Property is a natural person, he shall sign and fill in his particulars. If there is more than one such Salesperson or Estate Agent who is a natural person acting in the proposed lease of the Property, their name(s) and particular(s) shall also be written, if necessary, on a separate sheet and attached to this Agreement.</p>","hidden":"{$item_hide_text74}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c294}
+																		{ 
+				cellId: 'c294',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c294',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c294',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_96}
+						{BEGIN row_grid_97}
+				[
+																{BEGIN cellblock_grid_c326}
+{
+	cellId: 'c326',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c326}
+			colSpan: {$colspan_grid_c326},
+			{END colspan_grid_c326}
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field63}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant1 }","bold":true},{"text":{$sign_tenant1_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field64}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant2 }","bold":true},{"text":{$sign_tenant2_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field65}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant3 }","bold":true},{"text":{$sign_tenant3_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field66}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant4 }","bold":true},{"text":{$sign_tenant4_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c326}
+																		{ 
+				cellId: 'c326',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c326',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c326',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c326',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_97}
+						{BEGIN row_grid_98}
+				[
+																{BEGIN cellblock_grid_c305}
+{
+	cellId: 'c305',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c305}
+			colSpan: {$colspan_grid_c305},
+			{END colspan_grid_c305}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192526}","hidden":"{$item_hide_snippet8}","isHtml":true},
+				
+				
+			{"text":"Page 6","pageBreak":"after","hidden":"{$item_hide_text105}","fontSize":14,"isHtml":true},
+				
+				
+			{"text":"{$event 192429}","hidden":"{$item_hide_snippet46}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'center',
+     
+      
+      },
+
+{END cellblock_grid_c305}
+																		{ 
+				cellId: 'c305',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c305',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c305',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c305',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_98}
+						{BEGIN row_grid_99}
+				[
+																{BEGIN cellblock_grid_c323}
+{
+	cellId: 'c323',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c323}
+			colSpan: {$colspan_grid_c323},
+			{END colspan_grid_c323}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 20, 0, 0 ],
+		
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192511}","hidden":"{$item_hide_snippet63}","fontSize":16,"bold":true,"isHtml":true},
+				
+				
+			{"text":"{$event 192281}","hidden":"{$item_hide_snippet64}","fontSize":16,"bold":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'center',
+     
+      
+      },
+
+{END cellblock_grid_c323}
+																		{ 
+				cellId: 'c323',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c323',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c323',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c323',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_99}
+						{BEGIN row_grid_100}
+				[
+																{BEGIN cellblock_grid_c300}
+{
+	cellId: 'c300',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c300}
+			colSpan: {$colspan_grid_c300},
+			{END colspan_grid_c300}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192234}","hidden":"{$item_hide_snippet65}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c300}
+																		{ 
+				cellId: 'c300',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c300',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c300',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c300',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_100}
+						{BEGIN row_grid_101}
+				[
+																{BEGIN cellblock_grid_c309}
+{
+	cellId: 'c309',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(a)","hidden":"{$item_hide_text51}","italics":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c309}
+																							{BEGIN cellblock_grid_c307}
+{
+	cellId: 'c307',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c307}
+			colSpan: {$colspan_grid_c307},
+			{END colspan_grid_c307}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>provide reasonable assistance and advice to the Tenant throughout the process of lease of the Property.</p>","hidden":"{$item_hide_text75}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c307}
+																		{ 
+				cellId: 'c307',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c307',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c307',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_101}
+						{BEGIN row_grid_102}
+				[
+																{BEGIN cellblock_grid_c308}
+{
+	cellId: 'c308',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(b)","hidden":"{$item_hide_text52}","italics":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c308}
+																							{BEGIN cellblock_grid_c306}
+{
+	cellId: 'c306',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c306}
+			colSpan: {$colspan_grid_c306},
+			{END colspan_grid_c306}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>represent the Tenant in negotiations with any prospective Landlord in accordance with his instructions.</p>","hidden":"{$item_hide_text76}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c306}
+																		{ 
+				cellId: 'c306',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c306',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c306',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_102}
+						{BEGIN row_grid_103}
+				[
+																{BEGIN cellblock_grid_c310}
+{
+	cellId: 'c310',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(c)","hidden":"{$item_hide_text53}","italics":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c310}
+																							{BEGIN cellblock_grid_c302}
+{
+	cellId: 'c302',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c302}
+			colSpan: {$colspan_grid_c302},
+			{END colspan_grid_c302}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>promptly forward to the Tenant all offers, proposals or expressions of interest from potential Landlords or their agents.</p>","hidden":"{$item_hide_text77}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c302}
+																		{ 
+				cellId: 'c302',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c302',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c302',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_103}
+						{BEGIN row_grid_104}
+				[
+																{BEGIN cellblock_grid_c315}
+{
+	cellId: 'c315',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(d)","hidden":"{$item_hide_text54}","italics":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c315}
+																							{BEGIN cellblock_grid_c313}
+{
+	cellId: 'c313',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c313}
+			colSpan: {$colspan_grid_c313},
+			{END colspan_grid_c313}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>advance the Tenant’s interest unaffected by any interest of the Estate Agent, Salesperson or any other person.</p>","hidden":"{$item_hide_text78}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c313}
+																		{ 
+				cellId: 'c313',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c313',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c313',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_104}
+						{BEGIN row_grid_105}
+				[
+																{BEGIN cellblock_grid_c314}
+{
+	cellId: 'c314',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(e)","hidden":"{$item_hide_text55}","italics":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c314}
+																							{BEGIN cellblock_grid_c312}
+{
+	cellId: 'c312',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c312}
+			colSpan: {$colspan_grid_c312},
+			{END colspan_grid_c312}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>assist the Tenant to enter into a binding lease with the Landlord and reasonably explain to the Tenant all relevant forms and documents. However, if the Estate Agent is in doubt on any matter, he shall state his doubt and advise the Tenant to seek advice from appropriate professionals.</p>","hidden":"{$item_hide_text79}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c312}
+																		{ 
+				cellId: 'c312',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c312',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c312',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_105}
+						{BEGIN row_grid_106}
+				[
+																{BEGIN cellblock_grid_c316}
+{
+	cellId: 'c316',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(f)","hidden":"{$item_hide_text56}","italics":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c316}
+																							{BEGIN cellblock_grid_c311}
+{
+	cellId: 'c311',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c311}
+			colSpan: {$colspan_grid_c311},
+			{END colspan_grid_c311}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>comply with all reasonable instructions and requests of the Tenant in relation to the transaction.</p>","hidden":"{$item_hide_text80}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c311}
+																		{ 
+				cellId: 'c311',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c311',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c311',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_106}
+						{BEGIN row_grid_107}
+				[
+																{BEGIN cellblock_grid_c319}
+{
+	cellId: 'c319',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c319}
+			colSpan: {$colspan_grid_c319},
+			{END colspan_grid_c319}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192388}","hidden":"{$item_hide_snippet72}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c319}
+																		{ 
+				cellId: 'c319',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c319',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c319',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c319',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_107}
+						{BEGIN row_grid_108}
+				[
+																{BEGIN cellblock_grid_c320}
+{
+	cellId: 'c320',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(g)","hidden":"{$item_hide_text57}","italics":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c320}
+																							{BEGIN cellblock_grid_c318}
+{
+	cellId: 'c318',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c318}
+			colSpan: {$colspan_grid_c318},
+			{END colspan_grid_c318}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"advise the Tenant on the eligibility of the Tenant to lease the HDB flat.","hidden":"{$item_hide_text59}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c318}
+																		{ 
+				cellId: 'c318',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c318',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c318',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_108}
+						{BEGIN row_grid_109}
+				[
+																{BEGIN cellblock_grid_c321}
+{
+	cellId: 'c321',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"(h)","hidden":"{$item_hide_text100}","italics":true,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c321}
+																							{BEGIN cellblock_grid_c327}
+{
+	cellId: 'c327',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c327}
+			colSpan: {$colspan_grid_c327},
+			{END colspan_grid_c327}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"<p style='text-align:justify'>assist the Tenant of the <b>HDB</b> flat to submit such forms, documents and/or information as may be required by <b>HDB</b>.</p>","hidden":"{$item_hide_text81}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c327}
+																		{ 
+				cellId: 'c327',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c327',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c327',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_109}
+						{BEGIN row_grid_110}
+				[
+																{BEGIN cellblock_grid_c349}
+{
+	cellId: 'c349',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c349}
+			colSpan: {$colspan_grid_c349},
+			{END colspan_grid_c349}
+		
+		
+	
+			// [left, top, right, bottom]
+	margin: [ 0, 50, 0, 0 ],
+		
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field51}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant1 }","bold":true},{"text":{$sign_tenant1_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field52}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant2 }","bold":true},{"text":{$sign_tenant2_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field53}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant3 }","bold":true},{"text":{$sign_tenant3_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field54}","bold":false,"stack":[{"text":"{$jslabel form4 sign_tenant4 }","bold":true},{"text":{$sign_tenant4_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_c349}
+																		{ 
+				cellId: 'c349',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c349',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c349',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c349',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_110}
+						{BEGIN row_grid_111}
+				[
+																{BEGIN cellblock_grid_c324}
+{
+	cellId: 'c324',
+	col:0,
+	row:0,
+			
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c324}
+			colSpan: {$colspan_grid_c324},
+			{END colspan_grid_c324}
+		
+		
+	
+			
+	
+			"stack": [
+		
+				
+			{"text":"{$event 192526}","hidden":"{$item_hide_snippet11}","isHtml":true},
+				
+				
+			{"text":"Page 7","hidden":"{$item_hide_text106}","fontSize":14,"isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'center',
+     
+      
+      },
+
+{END cellblock_grid_c324}
+																		{ 
+				cellId: 'c324',
+				row:  0,
+				col:  1,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c324',
+				row:  0,
+				col:  2,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c324',
+				row:  0,
+				col:  3,
+				text: '',
+				compensateColspan: true
+			},
+														{ 
+				cellId: 'c324',
+				row:  0,
+				col:  4,
+				text: '',
+				compensateColspan: true
+			},
+							],
+				{END row_grid_111}
+		
+		]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+				[
+																{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			
+		
+	//	static colspan/rowspan
+		
+			
+			
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_view_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_view_close}"},
+				
+				
+			{"text":""},
+				
+				
+			{"text":""},
+				
+				
+			{"text":""},
+				
+				
+			{"text":"{$event 192313}","hidden":"{$item_hide_snippet12}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+              "alignment": 'center',
+     
+      
+      },
+
+											],
+		
+		]
+	}
+}
+,
+			]
+};
+
+pdfFonts = {$pdfFonts};
+  

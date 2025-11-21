@@ -1,0 +1,71 @@
+[data-cellid="section7_c"][data-page="transactions_lcsc_view"][data-cellid="section7_c"][data-page="transactions_lcsc_view"][data-cellid="section7_c"][data-page="transactions_lcsc_view"] {
+  width: 30%;
+}
+[data-page="transactions_lcsc_view"][data-itemid="mag_fee_label"] {
+  font-weight: bold;
+  padding-left: 10px;
+}
+[data-page="transactions_lcsc_view"][data-itemid="page_image_ash8f23hr"] {
+  width: 400px;
+}
+
+/* Put  your custom CSS code here */
+
+/* Put  your custom CSS code here */
+
+/* Put  your custom CSS code here */
+
+
+
+/* Put  your custom CSS code here */
+
+
+/* Put  your custom CSS code here */
+
+[data-page="transactions_lcsc_view"][data-itemid="view_header"]{
+    display:none !important;
+}
+/* Put  your custom CSS code here */
+
+[data-page="transactions_lcsc_view"][data-itemid="view_back_list"] {
+  display:none !important;
+}
+
+/* Put  your custom CSS code here */
+
+[data-page="transactions_lcsc_view"][data-itemid="view_back_list1"] {
+  display:none !important;
+}
+
+/* Put  your custom CSS code here */
+
+
+
+
+
+/* Put  your custom CSS code here */
+
+
+
+
+
+/* Put  your custom CSS code here */
+
+
+
+
+
+/* Put  your custom CSS code here */
+
+/*
+[data-page="transactions_lcsc_view"][data-itemid="mag_fee_label"]{
+    padding:0 !important;
+    margin-left:10px !important;
+}
+*/
+/* Put  your custom CSS code here */
+
+[data-page="transactions_lcsc_view"][data-itemid="edit_field"] {
+  display:none;
+}
+

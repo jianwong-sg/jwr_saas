@@ -1,0 +1,388 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+						<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		{BEGIN styleCSSFiles}
+<link REL="stylesheet" href="{$stylepath}" type="text/css">
+{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-edit" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel rental_main_detail_occupier edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END message_back_button}
+{BEGIN message_view_page_button}
+		<a class="btn btn-sm btn-default" href="" {$view_page_button_attrs}>{mlang_message VIEW}</a>
+{END message_view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN updatedate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_updatedate}  r-vertical-field" 
+	data-signal-error-for="updatedate{$id}" {$required_attr_updatedate}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="updatedate" data-fieldname="updatedate" >
+
+	<label class="r-edit-label control-label {$updatedate_label_class}" for="{$labelfor_updatedate}">
+		{BEGIN updatedate_label}
+			{$updatedate_forward_control}
+			{$label rental_main_detail_occupier updatedate }			{END updatedate_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$updatedate_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="updatedate" {$tooltipAttr rental_main_detail_occupier updatedate } >
+		<div class="text-muted" >
+		{$tooltip rental_main_detail_occupier updatedate }		</div>
+	</div>
+	</div>
+
+
+{END updatedate_fieldblock}
+											
+{BEGIN occupier_relationship_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_occupier_relationship}  r-vertical-field" 
+	data-signal-error-for="occupier_relationship{$id}" {$required_attr_occupier_relationship}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="occupier_relationship" data-fieldname="occupier_relationship" >
+
+	<label class="r-edit-label control-label {$occupier_relationship_label_class}" for="{$labelfor_occupier_relationship}">
+		{BEGIN occupier_relationship_label}
+			{$occupier_relationship_forward_control}
+			{$label rental_main_detail_occupier occupier_relationship }			{END occupier_relationship_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$occupier_relationship_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="occupier_relationship" {$tooltipAttr rental_main_detail_occupier occupier_relationship } >
+		<div class="text-muted" >
+		{$tooltip rental_main_detail_occupier occupier_relationship }		</div>
+	</div>
+	</div>
+
+
+{END occupier_relationship_fieldblock}
+											
+{BEGIN occupier_nationality_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_occupier_nationality}  r-vertical-field" 
+	data-signal-error-for="occupier_nationality{$id}" {$required_attr_occupier_nationality}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="occupier_nationality" data-fieldname="occupier_nationality" >
+
+	<label class="r-edit-label control-label {$occupier_nationality_label_class}" for="{$labelfor_occupier_nationality}">
+		{BEGIN occupier_nationality_label}
+			{$occupier_nationality_forward_control}
+			{$label rental_main_detail_occupier occupier_nationality }			{END occupier_nationality_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$occupier_nationality_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="occupier_nationality" {$tooltipAttr rental_main_detail_occupier occupier_nationality } >
+		<div class="text-muted" >
+		{$tooltip rental_main_detail_occupier occupier_nationality }		</div>
+	</div>
+	</div>
+
+
+{END occupier_nationality_fieldblock}
+											
+{BEGIN occupier_gender_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_occupier_gender}  r-vertical-field" 
+	data-signal-error-for="occupier_gender{$id}" {$required_attr_occupier_gender}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="occupier_gender" data-fieldname="occupier_gender" >
+
+	<label class="r-edit-label control-label {$occupier_gender_label_class}" for="{$labelfor_occupier_gender}">
+		{BEGIN occupier_gender_label}
+			{$occupier_gender_forward_control}
+			{$label rental_main_detail_occupier occupier_gender }			{END occupier_gender_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$occupier_gender_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="occupier_gender" {$tooltipAttr rental_main_detail_occupier occupier_gender } >
+		<div class="text-muted" >
+		{$tooltip rental_main_detail_occupier occupier_gender }		</div>
+	</div>
+	</div>
+
+
+{END occupier_gender_fieldblock}
+											
+{BEGIN occupier_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_occupier_id}  r-vertical-field" 
+	data-signal-error-for="occupier_id{$id}" {$required_attr_occupier_id}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="occupier_id" data-fieldname="occupier_id" >
+
+	<label class="r-edit-label control-label {$occupier_id_label_class}" for="{$labelfor_occupier_id}">
+		{BEGIN occupier_id_label}
+			{$occupier_id_forward_control}
+			{$label rental_main_detail_occupier occupier_id }			{END occupier_id_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$occupier_id_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="occupier_id" {$tooltipAttr rental_main_detail_occupier occupier_id } >
+		<div class="text-muted" >
+		{$tooltip rental_main_detail_occupier occupier_id }		</div>
+	</div>
+	</div>
+
+
+{END occupier_id_fieldblock}
+											
+{BEGIN occupier_name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_occupier_name}  r-vertical-field" 
+	data-signal-error-for="occupier_name{$id}" {$required_attr_occupier_name}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="occupier_name" data-fieldname="occupier_name" >
+
+	<label class="r-edit-label control-label {$occupier_name_label_class}" for="{$labelfor_occupier_name}">
+		{BEGIN occupier_name_label}
+			{$occupier_name_forward_control}
+			{$label rental_main_detail_occupier occupier_name }			{END occupier_name_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$occupier_name_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="occupier_name" {$tooltipAttr rental_main_detail_occupier occupier_name } >
+		<div class="text-muted" >
+		{$tooltip rental_main_detail_occupier occupier_name }		</div>
+	</div>
+	</div>
+
+
+{END occupier_name_fieldblock}
+											
+{BEGIN occupier_occupation_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_occupier_occupation}  r-vertical-field" 
+	data-signal-error-for="occupier_occupation{$id}" {$required_attr_occupier_occupation}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="occupier_occupation" data-fieldname="occupier_occupation" >
+
+	<label class="r-edit-label control-label {$occupier_occupation_label_class}" for="{$labelfor_occupier_occupation}">
+		{BEGIN occupier_occupation_label}
+			{$occupier_occupation_forward_control}
+			{$label rental_main_detail_occupier occupier_occupation }			{END occupier_occupation_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$occupier_occupation_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="occupier_occupation" {$tooltipAttr rental_main_detail_occupier occupier_occupation } >
+		<div class="text-muted" >
+		{$tooltip rental_main_detail_occupier occupier_occupation }		</div>
+	</div>
+	</div>
+
+
+{END occupier_occupation_fieldblock}
+											
+{BEGIN file_upload_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_file_upload}  r-vertical-field" 
+	data-signal-error-for="file_upload{$id}" {$required_attr_file_upload}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="file_upload" data-fieldname="file_upload" >
+
+	<label class="r-edit-label control-label {$file_upload_label_class}" for="{$labelfor_file_upload}">
+		{BEGIN file_upload_label}
+			{$file_upload_forward_control}
+			{$label rental_main_detail_occupier file_upload }			{END file_upload_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$file_upload_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="file_upload" {$tooltipAttr rental_main_detail_occupier file_upload } >
+		<div class="text-muted" >
+		{$tooltip rental_main_detail_occupier file_upload }		</div>
+	</div>
+	</div>
+
+
+{END file_upload_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							{mlang_message SAVE}			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							{mlang_message CANCEL}			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right			col-md-6
+	">
+	 
+		{BEGIN prev_button}
+<span data-itemtype="prev" data-itemid="prev" {$item_prev} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	{$prevbutton_class}" {$prevbutton_attrs} >
+					<span class="glyphicon glyphicon-menu-left"></span>
+										</a>
+</span>
+{END prev_button}
+	 
+		{BEGIN next_button}
+<span data-itemtype="next" data-itemid="next" {$item_next} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	{$nextbutton_class}" {$nextbutton_attrs} >
+					<span class="glyphicon glyphicon-menu-right"></span>
+										</a>
+</span>
+{END next_button}
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN reset_button}
+	<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		{mlang_message RESET}		
+		</a>
+	</li>
+{END reset_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

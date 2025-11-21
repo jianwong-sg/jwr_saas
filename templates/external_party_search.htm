@@ -1,0 +1,542 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+						<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		{BEGIN styleCSSFiles}
+<link REL="stylesheet" href="{$stylepath}" type="text/css">
+{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel external_party search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN comm_tp_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_comm_tp}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="comm_tp{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="comm_tp" data-fieldname="comm_tp" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_comm_tp}">
+		{$label external_party comm_tp }	</label>
+	<div class="r-search-option">
+		{$searchtype_comm_tp}
+	</div>
+	<div class="r-search-field">
+		{$comm_tp_editcontrol}	</div>
+	<div class="r-search-field">
+		{$comm_tp_editcontrol1}
+	</div>
+	
+</div>
+
+{END comm_tp_fieldblock}
+											
+{BEGIN comm_percent_tp_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_comm_percent_tp}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="comm_percent_tp{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="comm_percent_tp" data-fieldname="comm_percent_tp" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_comm_percent_tp}">
+		{$label external_party comm_percent_tp }	</label>
+	<div class="r-search-option">
+		{$searchtype_comm_percent_tp}
+	</div>
+	<div class="r-search-field">
+		{$comm_percent_tp_editcontrol}	</div>
+	<div class="r-search-field">
+		{$comm_percent_tp_editcontrol1}
+	</div>
+	
+</div>
+
+{END comm_percent_tp_fieldblock}
+											
+{BEGIN gross_tp_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_gross_tp}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="gross_tp{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="gross_tp" data-fieldname="gross_tp" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_gross_tp}">
+		{$label external_party gross_tp }	</label>
+	<div class="r-search-option">
+		{$searchtype_gross_tp}
+	</div>
+	<div class="r-search-field">
+		{$gross_tp_editcontrol}	</div>
+	<div class="r-search-field">
+		{$gross_tp_editcontrol1}
+	</div>
+	
+</div>
+
+{END gross_tp_fieldblock}
+											
+{BEGIN name_ext_party_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_name_ext_party}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="name_ext_party{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="name_ext_party" data-fieldname="name_ext_party" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_name_ext_party}">
+		{$label external_party name_ext_party }	</label>
+	<div class="r-search-option">
+		{$searchtype_name_ext_party}
+	</div>
+	<div class="r-search-field">
+		{$name_ext_party_editcontrol}	</div>
+	<div class="r-search-field">
+		{$name_ext_party_editcontrol1}
+	</div>
+	
+</div>
+
+{END name_ext_party_fieldblock}
+											
+{BEGIN category_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_category}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="category{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="category" data-fieldname="category" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_category}">
+		{$label external_party category }	</label>
+	<div class="r-search-option">
+		{$searchtype_category}
+	</div>
+	<div class="r-search-field">
+		{$category_editcontrol}	</div>
+	<div class="r-search-field">
+		{$category_editcontrol1}
+	</div>
+	
+</div>
+
+{END category_fieldblock}
+											
+{BEGIN identification_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_identification}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="identification{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="identification" data-fieldname="identification" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_identification}">
+		{$label external_party identification }	</label>
+	<div class="r-search-option">
+		{$searchtype_identification}
+	</div>
+	<div class="r-search-field">
+		{$identification_editcontrol}	</div>
+	<div class="r-search-field">
+		{$identification_editcontrol1}
+	</div>
+	
+</div>
+
+{END identification_fieldblock}
+											
+{BEGIN mobile_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mobile}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="mobile{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="mobile" data-fieldname="mobile" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_mobile}">
+		{$label external_party mobile }	</label>
+	<div class="r-search-option">
+		{$searchtype_mobile}
+	</div>
+	<div class="r-search-field">
+		{$mobile_editcontrol}	</div>
+	<div class="r-search-field">
+		{$mobile_editcontrol1}
+	</div>
+	
+</div>
+
+{END mobile_fieldblock}
+											
+{BEGIN email_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="email{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="email" data-fieldname="email" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_email}">
+		{$label external_party email }	</label>
+	<div class="r-search-option">
+		{$searchtype_email}
+	</div>
+	<div class="r-search-field">
+		{$email_editcontrol}	</div>
+	<div class="r-search-field">
+		{$email_editcontrol1}
+	</div>
+	
+</div>
+
+{END email_fieldblock}
+											
+{BEGIN address_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_address}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="address{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="address" data-fieldname="address" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_address}">
+		{$label external_party address }	</label>
+	<div class="r-search-option">
+		{$searchtype_address}
+	</div>
+	<div class="r-search-field">
+		{$address_editcontrol}	</div>
+	<div class="r-search-field">
+		{$address_editcontrol1}
+	</div>
+	
+</div>
+
+{END address_fieldblock}
+											
+{BEGIN postal_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_postal}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="postal{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="postal" data-fieldname="postal" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_postal}">
+		{$label external_party postal }	</label>
+	<div class="r-search-option">
+		{$searchtype_postal}
+	</div>
+	<div class="r-search-field">
+		{$postal_editcontrol}	</div>
+	<div class="r-search-field">
+		{$postal_editcontrol1}
+	</div>
+	
+</div>
+
+{END postal_fieldblock}
+											
+{BEGIN prop_address_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_prop_address}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="prop_address{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="prop_address" data-fieldname="prop_address" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_prop_address}">
+		{$label external_party prop_address }	</label>
+	<div class="r-search-option">
+		{$searchtype_prop_address}
+	</div>
+	<div class="r-search-field">
+		{$prop_address_editcontrol}	</div>
+	<div class="r-search-field">
+		{$prop_address_editcontrol1}
+	</div>
+	
+</div>
+
+{END prop_address_fieldblock}
+											
+{BEGIN id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="id" data-fieldname="id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id}">
+		{$label external_party id }	</label>
+	<div class="r-search-option">
+		{$searchtype_id}
+	</div>
+	<div class="r-search-field">
+		{$id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_fieldblock}
+											
+{BEGIN prop_postal_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_prop_postal}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="prop_postal{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="prop_postal" data-fieldname="prop_postal" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_prop_postal}">
+		{$label external_party prop_postal }	</label>
+	<div class="r-search-option">
+		{$searchtype_prop_postal}
+	</div>
+	<div class="r-search-field">
+		{$prop_postal_editcontrol}	</div>
+	<div class="r-search-field">
+		{$prop_postal_editcontrol1}
+	</div>
+	
+</div>
+
+{END prop_postal_fieldblock}
+											
+{BEGIN id_extparty_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_extparty}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id_extparty{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="id_extparty" data-fieldname="id_extparty" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_extparty}">
+		{$label external_party id_extparty }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_extparty}
+	</div>
+	<div class="r-search-field">
+		{$id_extparty_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_extparty_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_extparty_fieldblock}
+											
+{BEGIN role_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_role}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="role{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="role" data-fieldname="role" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_role}">
+		{$label external_party role }	</label>
+	<div class="r-search-option">
+		{$searchtype_role}
+	</div>
+	<div class="r-search-field">
+		{$role_editcontrol}	</div>
+	<div class="r-search-field">
+		{$role_editcontrol1}
+	</div>
+	
+</div>
+
+{END role_fieldblock}
+											
+{BEGIN gst_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_gst}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="gst{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="gst" data-fieldname="gst" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_gst}">
+		{$label external_party gst }	</label>
+	<div class="r-search-option">
+		{$searchtype_gst}
+	</div>
+	<div class="r-search-field">
+		{$gst_editcontrol}	</div>
+	<div class="r-search-field">
+		{$gst_editcontrol1}
+	</div>
+	
+</div>
+
+{END gst_fieldblock}
+											
+{BEGIN gst_include_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_gst_include}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="gst_include{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="gst_include" data-fieldname="gst_include" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_gst_include}">
+		{$label external_party gst_include }	</label>
+	<div class="r-search-option">
+		{$searchtype_gst_include}
+	</div>
+	<div class="r-search-field">
+		{$gst_include_editcontrol}	</div>
+	<div class="r-search-field">
+		{$gst_include_editcontrol1}
+	</div>
+	
+</div>
+
+{END gst_include_fieldblock}
+											
+{BEGIN username_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_username}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="username{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="username" data-fieldname="username" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_username}">
+		{$label external_party username }	</label>
+	<div class="r-search-option">
+		{$searchtype_username}
+	</div>
+	<div class="r-search-field">
+		{$username_editcontrol}	</div>
+	<div class="r-search-field">
+		{$username_editcontrol1}
+	</div>
+	
+</div>
+
+{END username_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							{mlang_message SEARCH}			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							{mlang_message RESET}			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,577 @@
+<div class="panel panel-primary">
+		<div class="panel-heading">
+						{BEGIN top_block}
+<div class="panel-title r-panel-top row" data-location="top" id="form_top_{$pageid}" data-makeup="panel-only" {$form_top} data-pageid="{$pageid}" >		
+	 
+		 
+			<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h3 class="panel-title" data-itemtype="masterprint_header" data-itemid="masterprint_header" {$item_masterprint_header} data-pageid="{$pageid}" >{$pagetitlelabel properties masterprint}</h3>
+		</div>			</div>		
+{END top_block}
+			</div>
+		<div class="panel-body">
+							{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="panel-only" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+				{END firstAboveGridCell}	
+	</div>					</div>
+			</div>		
+{END above-grid_block}
+								
+{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}<div data-vcolumns=1 class="r-fluid r-grid-vertical bs-grid-vertical" data-location="grid" id="form_grid_{$pageid}" data-makeup="panel-only" {$form_grid} data-pageid="{$pageid}" >
+{BEGIN grid_row}
+	{BEGIN grid_record}
+	{BEGIN grid_vrecord}
+	<div class="r-record-body {$rowclass}" {$rowattrs} {$rowstyle} data-record-id="{$recId}">
+		<div class="panel panel-default" {$recordattrs}>
+											{BEGIN grid_recordheader}
+			<div class="panel-heading">
+					
+	
+				<table data-width="2" class="header-table">
+				 
+										<tr>
+						 
+							<td 
+	class=" r-ori-vert			"
+	colspan="2"		 
+	data-cellId="grid_cell_top" data-pageid="{$pageid}" data-record-id="{$recId}">
+</td>
+											</tr>
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+													</table>
+
+					</div>
+		{END grid_recordheader}
+									
+			<div class="panel-body">					
+					
+	
+				<table data-width="2" >
+				 
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$prop_name_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN prop_name_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="prop_name" data-fieldname="prop_name" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label properties prop_name }</span>
+			</span>
+	</span>
+{END prop_name_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$prop_name_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN prop_name_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="prop_name" data-fieldname="prop_name" data-default-width >
+{$prop_name_value}
+</span>
+{END prop_name_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$prop_address_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label1" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN prop_address_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="prop_address" data-fieldname="prop_address" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label properties prop_address }</span>
+			</span>
+	</span>
+{END prop_address_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$prop_address_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN prop_address_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="prop_address" data-fieldname="prop_address" data-default-width >
+{$prop_address_value}
+</span>
+{END prop_address_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$types_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label2" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN types_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="types" data-fieldname="types" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label properties types }</span>
+			</span>
+	</span>
+{END types_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$types_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN types_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="types" data-fieldname="types" data-default-width >
+{$types_value}
+</span>
+{END types_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$kind_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label3" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN kind_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kind" data-fieldname="kind" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label properties kind }</span>
+			</span>
+	</span>
+{END kind_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$kind_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN kind_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="kind" data-fieldname="kind" data-default-width >
+{$kind_value}
+</span>
+{END kind_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$tenure_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label4" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN tenure_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tenure" data-fieldname="tenure" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label properties tenure }</span>
+			</span>
+	</span>
+{END tenure_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$tenure_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN tenure_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tenure" data-fieldname="tenure" data-default-width >
+{$tenure_value}
+</span>
+{END tenure_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$year_built_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label5" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN year_built_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="year_built" data-fieldname="year_built" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label properties year_built }</span>
+			</span>
+	</span>
+{END year_built_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$year_built_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN year_built_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="year_built" data-fieldname="year_built" data-default-width >
+{$year_built_value}
+</span>
+{END year_built_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$TOP_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label6" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN TOP_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="TOP" data-fieldname="TOP" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label properties TOP }</span>
+			</span>
+	</span>
+{END TOP_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$TOP_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN TOP_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="TOP" data-fieldname="TOP" data-default-width >
+{$TOP_value}
+</span>
+{END TOP_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$land_size_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label7" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN land_size_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="land_size" data-fieldname="land_size" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label properties land_size }</span>
+			</span>
+	</span>
+{END land_size_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$land_size_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN land_size_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="land_size" data-fieldname="land_size" data-default-width >
+{$land_size_value}
+</span>
+{END land_size_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$builtup_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label8" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN builtup_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="builtup" data-fieldname="builtup" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label properties builtup }</span>
+			</span>
+	</span>
+{END builtup_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$builtup_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN builtup_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="builtup" data-fieldname="builtup" data-default-width >
+{$builtup_value}
+</span>
+{END builtup_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$land_size_unit_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label9" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN land_size_unit_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="land_size_unit" data-fieldname="land_size_unit" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label properties land_size_unit }</span>
+			</span>
+	</span>
+{END land_size_unit_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$land_size_unit_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN land_size_unit_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="land_size_unit" data-fieldname="land_size_unit" data-default-width >
+{$land_size_unit_value}
+</span>
+{END land_size_unit_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$prop_postal_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label10" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN prop_postal_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="prop_postal" data-fieldname="prop_postal" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label properties prop_postal }</span>
+			</span>
+	</span>
+{END prop_postal_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$prop_postal_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN prop_postal_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="prop_postal" data-fieldname="prop_postal" data-default-width >
+{$prop_postal_value}
+</span>
+{END prop_postal_fieldcolumn}</td>
+											</tr>
+									 
+										<tr>
+						 
+							<td 
+	class="r-align-right r-ori-vert				{$builtup_unit_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_label11" data-pageid="{$pageid}" data-record-id="{$recId}" data-label-col>
+ 
+{BEGIN builtup_unit_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="builtup_unit" data-fieldname="builtup_unit" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label properties builtup_unit }</span>
+			</span>
+	</span>
+{END builtup_unit_fieldheadercolumn}
+
+</td>
+						 
+							<td 
+	class=" r-ori-vert				{$builtup_unit_class}
+			"
+			 
+		data-field=""
+	 
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-value-col>
+ 
+{BEGIN builtup_unit_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="builtup_unit" data-fieldname="builtup_unit" data-default-width >
+{$builtup_unit_value}
+</span>
+{END builtup_unit_fieldcolumn}</td>
+											</tr>
+									 
+													</table>
+
+				
+			</div>				
+									
+		</div>
+</div>
+		
+
+ 
+			{END grid_vrecord}
+	{END grid_record}
+{END grid_row}
+</div>
+{END grid_block}
+								</div>
+</div>

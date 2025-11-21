@@ -1,0 +1,333 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+						<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		{BEGIN styleCSSFiles}
+<link REL="stylesheet" href="{$stylepath}" type="text/css">
+{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel cobroke_internal_comm add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>{mlang_message VIEW}</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>{mlang_message EDIT}</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN category_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_category}  r-vertical-field" 
+	data-signal-error-for="category{$id}" {$required_attr_category}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="category" data-fieldname="category" >
+
+	<label class="r-edit-label control-label {$category_label_class}" for="{$labelfor_category}">
+		{BEGIN category_label}
+			{$category_forward_control}
+			{$label cobroke_internal_comm category }			{END category_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$category_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="category" {$tooltipAttr cobroke_internal_comm category } >
+		<div class="text-muted" >
+		{$tooltip cobroke_internal_comm category }		</div>
+	</div>
+	</div>
+
+
+{END category_fieldblock}
+											
+{BEGIN prop_address_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_prop_address}  r-vertical-field" 
+	data-signal-error-for="prop_address{$id}" {$required_attr_prop_address}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="prop_address" data-fieldname="prop_address" >
+
+	<label class="r-edit-label control-label {$prop_address_label_class}" for="{$labelfor_prop_address}">
+		{BEGIN prop_address_label}
+			{$prop_address_forward_control}
+			{$label cobroke_internal_comm prop_address }			{END prop_address_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$prop_address_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="prop_address" {$tooltipAttr cobroke_internal_comm prop_address } >
+		<div class="text-muted" >
+		{$tooltip cobroke_internal_comm prop_address }		</div>
+	</div>
+	</div>
+
+
+{END prop_address_fieldblock}
+											
+{BEGIN name_cobroke_int_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_name_cobroke_int}  r-vertical-field" 
+	data-signal-error-for="name_cobroke_int{$id}" {$required_attr_name_cobroke_int}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="name_cobroke_int" data-fieldname="name_cobroke_int" >
+
+	<label class="r-edit-label control-label {$name_cobroke_int_label_class}" for="{$labelfor_name_cobroke_int}">
+		{BEGIN name_cobroke_int_label}
+			{$name_cobroke_int_forward_control}
+			{$label cobroke_internal_comm name_cobroke_int }			{END name_cobroke_int_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$name_cobroke_int_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="name_cobroke_int" {$tooltipAttr cobroke_internal_comm name_cobroke_int } >
+		<div class="text-muted" >
+		{$tooltip cobroke_internal_comm name_cobroke_int }		</div>
+	</div>
+	</div>
+
+
+{END name_cobroke_int_fieldblock}
+											
+{BEGIN reg_no_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_reg_no}  r-vertical-field" 
+	data-signal-error-for="reg_no{$id}" {$required_attr_reg_no}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="reg_no" data-fieldname="reg_no" >
+
+	<label class="r-edit-label control-label {$reg_no_label_class}" for="{$labelfor_reg_no}">
+		{BEGIN reg_no_label}
+			{$reg_no_forward_control}
+			{$label cobroke_internal_comm reg_no }			{END reg_no_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$reg_no_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="reg_no" {$tooltipAttr cobroke_internal_comm reg_no } >
+		<div class="text-muted" >
+		{$tooltip cobroke_internal_comm reg_no }		</div>
+	</div>
+	</div>
+
+
+{END reg_no_fieldblock}
+											
+{BEGIN representing_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_representing}  r-vertical-field" 
+	data-signal-error-for="representing{$id}" {$required_attr_representing}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="representing" data-fieldname="representing" >
+
+	<label class="r-edit-label control-label {$representing_label_class}" for="{$labelfor_representing}">
+		{BEGIN representing_label}
+			{$representing_forward_control}
+			{$label cobroke_internal_comm representing }			{END representing_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$representing_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="representing" {$tooltipAttr cobroke_internal_comm representing } >
+		<div class="text-muted" >
+		{$tooltip cobroke_internal_comm representing }		</div>
+	</div>
+	</div>
+
+
+{END representing_fieldblock}
+											
+{BEGIN mobil_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mobil}  r-vertical-field" 
+	data-signal-error-for="mobil{$id}" {$required_attr_mobil}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="mobil" data-fieldname="mobil" >
+
+	<label class="r-edit-label control-label {$mobil_label_class}" for="{$labelfor_mobil}">
+		{BEGIN mobil_label}
+			{$mobil_forward_control}
+			{$label cobroke_internal_comm mobil }			{END mobil_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mobil_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="mobil" {$tooltipAttr cobroke_internal_comm mobil } >
+		<div class="text-muted" >
+		{$tooltip cobroke_internal_comm mobil }		</div>
+	</div>
+	</div>
+
+
+{END mobil_fieldblock}
+											
+{BEGIN email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email}  r-vertical-field" 
+	data-signal-error-for="email{$id}" {$required_attr_email}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="email" data-fieldname="email" >
+
+	<label class="r-edit-label control-label {$email_label_class}" for="{$labelfor_email}">
+		{BEGIN email_label}
+			{$email_forward_control}
+			{$label cobroke_internal_comm email }			{END email_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$email_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="email" {$tooltipAttr cobroke_internal_comm email } >
+		<div class="text-muted" >
+		{$tooltip cobroke_internal_comm email }		</div>
+	</div>
+	</div>
+
+
+{END email_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							{mlang_message SAVE}			</a>
+</span>
+	 
+		{BEGIN reset_button}
+<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							{mlang_message RESET}			</a>
+</span>
+{END reset_button}
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

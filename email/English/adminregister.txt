@@ -1,0 +1,7 @@
+Notification on user signup to EAT SAAS
+
+User registered at %url%
+
+Email: %email_value%
+Username: %username_value%
+Full Name: %full_name_value%

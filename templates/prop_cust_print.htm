@@ -1,0 +1,1877 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+						<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		{BEGIN styleCSSFiles}
+<link REL="stylesheet" href="{$stylepath}" type="text/css">
+{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-print" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel prop_cust print}</h2>
+	 
+		{BEGIN printtabheader}
+<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
+{$printtabheader_text}
+</span>
+{END printtabheader}
+		</div>					</div>
+			 
+				<div class="row">
+			 
+				<div 
+	data-cellId="top_c4" data-pageid="{$pageid}"	{$cell_top_c4}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+			</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" >
+	{$print_pages_labelprint_pages}
+</span>	 
+		{BEGIN inline_cancel}
+<span data-itemtype="grid_inline_cancel" data-itemid="grid_inline_cancel" {$item_grid_inline_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="{mlang_message CANCEL}" class="btn-link   
+	 glyphicon glyphicon-remove" {$inlinerevertlink_attrs} title="{mlang_message CANCEL}" >		
+				
+								</a>
+</span>
+{END inline_cancel}
+	 
+		{BEGIN inlineadd_link}
+<span data-itemtype="inline_add" data-itemid="inline_add" {$item_inline_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$inlineaddlink_attrs} >
+							{mlang_message INLINE_ADD}			</a>
+</span>
+{END inlineadd_link}
+			{END firstAboveGridCell}	
+	</div>					</div>
+			</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}<div  data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" >
+{BEGIN grid_row}
+	<div class="r-grid-columns {$rowclass}" {$rowattrs} {$rowstyle}>
+	{BEGIN grid_record}
+		{BEGIN grid_vrecord}
+		<div class="panel panel-default" {$recordattrs}>
+									
+			{BEGIN grid_recordheader}
+			<div class="panel-heading">
+						
+				<table data-location="grid" class="header-table">
+					<tbody>
+				 
+												
+						<tr >
+						 
+							{BEGIN cellblock_grid_cell_top}
+	<th
+	
+	{$cell_grid_cell_top}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_top" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</th>
+	{END cellblock_grid_cell_top}
+												</tr>
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+									 
+											
+					</tbody>
+				</table>
+
+					</div>
+		{END grid_recordheader}
+												
+			<div class="panel-body">					
+						
+				<table data-location="grid" class="bs-fieldsgrid table">
+					<tbody>
+				 
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label}
+	<td
+	
+	{$cell_grid_cell_label}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$name_class}	"
+
+			data-field="name"
+	
+	data-cellId="grid_cell_label" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN name_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="name" data-fieldname="name" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust name }</span>
+			</span>
+	</span>
+{END name_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label}
+						 
+							{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$name_class}	"
+
+			data-field="name"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN name_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="name" data-fieldname="name" data-default-width >
+{$name_value}
+</span>
+{END name_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+						 
+							{BEGIN cellblock_grid_cell_label1}
+	<td
+	
+	{$cell_grid_cell_label1}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$nationality_class}	"
+
+			data-field="nationality"
+	
+	data-cellId="grid_cell_label1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nationality_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nationality" data-fieldname="nationality" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust nationality }</span>
+			</span>
+	</span>
+{END nationality_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label1}
+						 
+							{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$nationality_class}	"
+
+			data-field="nationality"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nationality_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nationality" data-fieldname="nationality" data-default-width >
+{$nationality_value}
+</span>
+{END nationality_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+						 
+							{BEGIN cellblock_grid_cell_label2}
+	<td
+	
+	{$cell_grid_cell_label2}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$country_incorporation_class}	"
+
+			data-field="country_incorporation"
+	
+	data-cellId="grid_cell_label2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN country_incorporation_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field43" {$item_simple_grid_field43} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="country_incorporation" data-fieldname="country_incorporation" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust country_incorporation }</span>
+			</span>
+	</span>
+{END country_incorporation_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label2}
+						 
+							{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$country_incorporation_class}	"
+
+			data-field="country_incorporation"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN country_incorporation_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="country_incorporation" data-fieldname="country_incorporation" data-default-width >
+{$country_incorporation_value}
+</span>
+{END country_incorporation_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label3}
+	<td
+	
+	{$cell_grid_cell_label3}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$owner_type_class}	"
+
+			data-field="owner_type"
+	
+	data-cellId="grid_cell_label3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN owner_type_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="owner_type" data-fieldname="owner_type" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust owner_type }</span>
+			</span>
+	</span>
+{END owner_type_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label3}
+						 
+							{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$owner_type_class}	"
+
+			data-field="owner_type"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN owner_type_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="owner_type" data-fieldname="owner_type" data-default-width >
+{$owner_type_value}
+</span>
+{END owner_type_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+						 
+							{BEGIN cellblock_grid_cell_label4}
+	<td
+	
+	{$cell_grid_cell_label4}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$gender_class}	"
+
+			data-field="gender"
+	
+	data-cellId="grid_cell_label4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN gender_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="gender" data-fieldname="gender" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust gender }</span>
+			</span>
+	</span>
+{END gender_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label4}
+						 
+							{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$gender_class}	"
+
+			data-field="gender"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN gender_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="gender" data-fieldname="gender" data-default-width >
+{$gender_value}
+</span>
+{END gender_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+						 
+							{BEGIN cellblock_grid_cell_label5}
+	<td
+	
+	{$cell_grid_cell_label5}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$reg_date_class}	"
+
+			data-field="reg_date"
+	
+	data-cellId="grid_cell_label5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN reg_date_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="reg_date" data-fieldname="reg_date" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust reg_date }</span>
+			</span>
+	</span>
+{END reg_date_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label5}
+						 
+							{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$reg_date_class}	"
+
+			data-field="reg_date"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN reg_date_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="reg_date" data-fieldname="reg_date" data-default-width >
+{$reg_date_value}
+</span>
+{END reg_date_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label6}
+	<td
+	
+	{$cell_grid_cell_label6}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$ownership_kind_class}	"
+
+			data-field="ownership_kind"
+	
+	data-cellId="grid_cell_label6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ownership_kind_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ownership_kind" data-fieldname="ownership_kind" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust ownership_kind }</span>
+			</span>
+	</span>
+{END ownership_kind_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label6}
+						 
+							{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$ownership_kind_class}	"
+
+			data-field="ownership_kind"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN ownership_kind_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="ownership_kind" data-fieldname="ownership_kind" data-default-width >
+{$ownership_kind_value}
+</span>
+{END ownership_kind_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+						 
+							{BEGIN cellblock_grid_cell_label7}
+	<td
+	
+	{$cell_grid_cell_label7}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$dob_class}	"
+
+			data-field="dob"
+	
+	data-cellId="grid_cell_label7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dob_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dob" data-fieldname="dob" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust dob }</span>
+			</span>
+	</span>
+{END dob_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label7}
+						 
+							{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$dob_class}	"
+
+			data-field="dob"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dob_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dob" data-fieldname="dob" data-default-width >
+{$dob_value}
+</span>
+{END dob_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+						 
+							{BEGIN cellblock_grid_cell_label8}
+	<td
+	
+	{$cell_grid_cell_label8}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$trade_class}	"
+
+			data-field="trade"
+	
+	data-cellId="grid_cell_label8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN trade_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="trade" data-fieldname="trade" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust trade }</span>
+			</span>
+	</span>
+{END trade_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label8}
+						 
+							{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$trade_class}	"
+
+			data-field="trade"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN trade_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="trade" data-fieldname="trade" data-default-width >
+{$trade_value}
+</span>
+{END trade_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label9}
+	<td
+	
+	{$cell_grid_cell_label9}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$nric_class}	"
+
+			data-field="nric"
+	
+	data-cellId="grid_cell_label9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nric_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field37" {$item_simple_grid_field37} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nric" data-fieldname="nric" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust nric }</span>
+			</span>
+	</span>
+{END nric_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label9}
+						 
+							{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$nric_class}	"
+
+			data-field="nric"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nric_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nric" data-fieldname="nric" data-default-width >
+{$nric_value}
+</span>
+{END nric_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+						 
+							{BEGIN cellblock_grid_cell_label10}
+	<td
+	
+	{$cell_grid_cell_label10}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$occupation_class}	"
+
+			data-field="occupation"
+	
+	data-cellId="grid_cell_label10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN occupation_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="occupation" data-fieldname="occupation" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust occupation }</span>
+			</span>
+	</span>
+{END occupation_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label10}
+						 
+							{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$occupation_class}	"
+
+			data-field="occupation"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN occupation_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="occupation" data-fieldname="occupation" data-default-width >
+{$occupation_value}
+</span>
+{END occupation_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+						 
+							{BEGIN cellblock_grid_cell_label11}
+	<td
+	
+	{$cell_grid_cell_label11}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$office_tel_class}	"
+
+			data-field="office_tel"
+	
+	data-cellId="grid_cell_label11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN office_tel_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="office_tel" data-fieldname="office_tel" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust office_tel }</span>
+			</span>
+	</span>
+{END office_tel_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label11}
+						 
+							{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$office_tel_class}	"
+
+			data-field="office_tel"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN office_tel_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="office_tel" data-fieldname="office_tel" data-default-width >
+{$office_tel_value}
+</span>
+{END office_tel_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label12}
+	<td
+	
+	{$cell_grid_cell_label12}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$id_type_class}	"
+
+			data-field="id_type"
+	
+	data-cellId="grid_cell_label12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_type_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field38" {$item_simple_grid_field38} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_type" data-fieldname="id_type" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust id_type }</span>
+			</span>
+	</span>
+{END id_type_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label12}
+						 
+							{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$id_type_class}	"
+
+			data-field="id_type"
+	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_type_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_type" data-fieldname="id_type" data-default-width >
+{$id_type_value}
+</span>
+{END id_type_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field12}
+						 
+							{BEGIN cellblock_grid_cell_label13}
+	<td
+	
+	{$cell_grid_cell_label13}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$mobile_class}	"
+
+			data-field="mobile"
+	
+	data-cellId="grid_cell_label13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN mobile_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field40" {$item_simple_grid_field40} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mobile" data-fieldname="mobile" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust mobile }</span>
+			</span>
+	</span>
+{END mobile_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label13}
+						 
+							{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$mobile_class}	"
+
+			data-field="mobile"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN mobile_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="mobile" data-fieldname="mobile" data-default-width >
+{$mobile_value}
+</span>
+{END mobile_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+						 
+							{BEGIN cellblock_grid_cell_label14}
+	<td
+	
+	{$cell_grid_cell_label14}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$biz_email_class}	"
+
+			data-field="biz_email"
+	
+	data-cellId="grid_cell_label14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN biz_email_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="biz_email" data-fieldname="biz_email" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust biz_email }</span>
+			</span>
+	</span>
+{END biz_email_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label14}
+						 
+							{BEGIN cellblock_grid_cell_field14}
+	<td
+	
+	{$cell_grid_cell_field14}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$biz_email_class}	"
+
+			data-field="biz_email"
+	
+	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN biz_email_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="biz_email" data-fieldname="biz_email" data-default-width >
+{$biz_email_value}
+</span>
+{END biz_email_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field14}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label15}
+	<td
+	
+	{$cell_grid_cell_label15}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$address_class}	"
+
+			data-field="address"
+	
+	data-cellId="grid_cell_label15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN address_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field39" {$item_simple_grid_field39} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="address" data-fieldname="address" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust address }</span>
+			</span>
+	</span>
+{END address_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label15}
+						 
+							{BEGIN cellblock_grid_cell_field15}
+	<td
+	
+	{$cell_grid_cell_field15}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$address_class}	"
+
+			data-field="address"
+	
+	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN address_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="address" data-fieldname="address" data-default-width >
+{$address_value}
+</span>
+{END address_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field15}
+						 
+							{BEGIN cellblock_grid_cell_label16}
+	<td
+	
+	{$cell_grid_cell_label16}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$tel_class}	"
+
+			data-field="tel"
+	
+	data-cellId="grid_cell_label16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tel_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tel" data-fieldname="tel" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust tel }</span>
+			</span>
+	</span>
+{END tel_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label16}
+						 
+							{BEGIN cellblock_grid_cell_field16}
+	<td
+	
+	{$cell_grid_cell_field16}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$tel_class}	"
+
+			data-field="tel"
+	
+	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN tel_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="tel" data-fieldname="tel" data-default-width >
+{$tel_value}
+</span>
+{END tel_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field16}
+						 
+							{BEGIN cellblock_grid_cell_label17}
+	<td
+	
+	{$cell_grid_cell_label17}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$contact_person_class}	"
+
+			data-field="contact_person"
+	
+	data-cellId="grid_cell_label17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contact_person_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field48" {$item_simple_grid_field48} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contact_person" data-fieldname="contact_person" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust contact_person }</span>
+			</span>
+	</span>
+{END contact_person_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label17}
+						 
+							{BEGIN cellblock_grid_cell_field17}
+	<td
+	
+	{$cell_grid_cell_field17}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contact_person_class}	"
+
+			data-field="contact_person"
+	
+	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contact_person_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contact_person" data-fieldname="contact_person" data-default-width >
+{$contact_person_value}
+</span>
+{END contact_person_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field17}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label18}
+	<td
+	
+	{$cell_grid_cell_label18}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$purchased_at_class}	"
+
+			data-field="purchased_at"
+	
+	data-cellId="grid_cell_label18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN purchased_at_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="purchased_at" data-fieldname="purchased_at" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust purchased_at }</span>
+			</span>
+	</span>
+{END purchased_at_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label18}
+						 
+							{BEGIN cellblock_grid_cell_field18}
+	<td
+	
+	{$cell_grid_cell_field18}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$purchased_at_class}	"
+
+			data-field="purchased_at"
+	
+	data-cellId="grid_cell_field18" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN purchased_at_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="purchased_at" data-fieldname="purchased_at" data-default-width >
+{$purchased_at_value}
+</span>
+{END purchased_at_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field18}
+						 
+							{BEGIN cellblock_grid_cell_label19}
+	<td
+	
+	{$cell_grid_cell_label19}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$email_class}	"
+
+			data-field="email"
+	
+	data-cellId="grid_cell_label19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN email_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="email" data-fieldname="email" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust email }</span>
+			</span>
+	</span>
+{END email_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label19}
+						 
+							{BEGIN cellblock_grid_cell_field19}
+	<td
+	
+	{$cell_grid_cell_field19}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$email_class}	"
+
+			data-field="email"
+	
+	data-cellId="grid_cell_field19" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN email_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="email" data-fieldname="email" data-default-width >
+{$email_value}
+</span>
+{END email_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field19}
+						 
+							{BEGIN cellblock_grid_cell_label20}
+	<td
+	
+	{$cell_grid_cell_label20}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$contact_person_id_class}	"
+
+			data-field="contact_person_id"
+	
+	data-cellId="grid_cell_label20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contact_person_id_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field49" {$item_simple_grid_field49} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contact_person_id" data-fieldname="contact_person_id" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust contact_person_id }</span>
+			</span>
+	</span>
+{END contact_person_id_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label20}
+						 
+							{BEGIN cellblock_grid_cell_field20}
+	<td
+	
+	{$cell_grid_cell_field20}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contact_person_id_class}	"
+
+			data-field="contact_person_id"
+	
+	data-cellId="grid_cell_field20" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contact_person_id_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contact_person_id" data-fieldname="contact_person_id" data-default-width >
+{$contact_person_id_value}
+</span>
+{END contact_person_id_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field20}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label21}
+	<td
+	
+	{$cell_grid_cell_label21}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$purchase_date_class}	"
+
+			data-field="purchase_date"
+	
+	data-cellId="grid_cell_label21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN purchase_date_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="purchase_date" data-fieldname="purchase_date" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust purchase_date }</span>
+			</span>
+	</span>
+{END purchase_date_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label21}
+						 
+							{BEGIN cellblock_grid_cell_field21}
+	<td
+	
+	{$cell_grid_cell_field21}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$purchase_date_class}	"
+
+			data-field="purchase_date"
+	
+	data-cellId="grid_cell_field21" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN purchase_date_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="purchase_date" data-fieldname="purchase_date" data-default-width >
+{$purchase_date_value}
+</span>
+{END purchase_date_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field21}
+						 
+							{BEGIN cellblock_grid_cell_label22}
+	<td
+	
+	{$cell_grid_cell_label22}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label22}
+						 
+							{BEGIN cellblock_grid_cell_field22}
+	<td
+	
+	{$cell_grid_cell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field22}
+						 
+							{BEGIN cellblock_grid_cell_label23}
+	<td
+	
+	{$cell_grid_cell_label23}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$destination_class}	"
+
+			data-field="destination"
+	
+	data-cellId="grid_cell_label23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN destination_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="destination" data-fieldname="destination" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust destination }</span>
+			</span>
+	</span>
+{END destination_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label23}
+						 
+							{BEGIN cellblock_grid_cell_field23}
+	<td
+	
+	{$cell_grid_cell_field23}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$destination_class}	"
+
+			data-field="destination"
+	
+	data-cellId="grid_cell_field23" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN destination_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="destination" data-fieldname="destination" data-default-width >
+{$destination_value}
+</span>
+{END destination_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field23}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label24}
+	<td
+	
+	{$cell_grid_cell_label24}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$sold_at_class}	"
+
+			data-field="sold_at"
+	
+	data-cellId="grid_cell_label24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sold_at_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field54" {$item_simple_grid_field54} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sold_at" data-fieldname="sold_at" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust sold_at }</span>
+			</span>
+	</span>
+{END sold_at_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label24}
+						 
+							{BEGIN cellblock_grid_cell_field24}
+	<td
+	
+	{$cell_grid_cell_field24}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sold_at_class}	"
+
+			data-field="sold_at"
+	
+	data-cellId="grid_cell_field24" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sold_at_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sold_at" data-fieldname="sold_at" data-default-width >
+{$sold_at_value}
+</span>
+{END sold_at_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field24}
+						 
+							{BEGIN cellblock_grid_cell_label25}
+	<td
+	
+	{$cell_grid_cell_label25}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label25}
+						 
+							{BEGIN cellblock_grid_cell_field25}
+	<td
+	
+	{$cell_grid_cell_field25}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field25" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field25}
+						 
+							{BEGIN cellblock_grid_cell_label26}
+	<td
+	
+	{$cell_grid_cell_label26}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$contact_person_cell_class}	"
+
+			data-field="contact_person_cell"
+	
+	data-cellId="grid_cell_label26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contact_person_cell_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field51" {$item_simple_grid_field51} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contact_person_cell" data-fieldname="contact_person_cell" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust contact_person_cell }</span>
+			</span>
+	</span>
+{END contact_person_cell_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label26}
+						 
+							{BEGIN cellblock_grid_cell_field26}
+	<td
+	
+	{$cell_grid_cell_field26}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contact_person_cell_class}	"
+
+			data-field="contact_person_cell"
+	
+	data-cellId="grid_cell_field26" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contact_person_cell_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contact_person_cell" data-fieldname="contact_person_cell" data-default-width >
+{$contact_person_cell_value}
+</span>
+{END contact_person_cell_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field26}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label27}
+	<td
+	
+	{$cell_grid_cell_label27}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$sold_date_class}	"
+
+			data-field="sold_date"
+	
+	data-cellId="grid_cell_label27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sold_date_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field55" {$item_simple_grid_field55} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sold_date" data-fieldname="sold_date" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust sold_date }</span>
+			</span>
+	</span>
+{END sold_date_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label27}
+						 
+							{BEGIN cellblock_grid_cell_field27}
+	<td
+	
+	{$cell_grid_cell_field27}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$sold_date_class}	"
+
+			data-field="sold_date"
+	
+	data-cellId="grid_cell_field27" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sold_date_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sold_date" data-fieldname="sold_date" data-default-width >
+{$sold_date_value}
+</span>
+{END sold_date_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field27}
+						 
+							{BEGIN cellblock_grid_cell_label28}
+	<td
+	
+	{$cell_grid_cell_label28}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label28}
+						 
+							{BEGIN cellblock_grid_cell_field28}
+	<td
+	
+	{$cell_grid_cell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field28}
+						 
+							{BEGIN cellblock_grid_cell_label29}
+	<td
+	
+	{$cell_grid_cell_label29}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$contact_email_class}	"
+
+			data-field="contact_email"
+	
+	data-cellId="grid_cell_label29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contact_email_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field52" {$item_simple_grid_field52} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contact_email" data-fieldname="contact_email" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust contact_email }</span>
+			</span>
+	</span>
+{END contact_email_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label29}
+						 
+							{BEGIN cellblock_grid_cell_field29}
+	<td
+	
+	{$cell_grid_cell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$contact_email_class}	"
+
+			data-field="contact_email"
+	
+	data-cellId="grid_cell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN contact_email_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contact_email" data-fieldname="contact_email" data-default-width >
+{$contact_email_value}
+</span>
+{END contact_email_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field29}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label30}
+	<td
+	
+	{$cell_grid_cell_label30}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label30}
+						 
+							{BEGIN cellblock_grid_cell_label31}
+	<td
+	
+	{$cell_grid_cell_label31}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label31}
+						 
+							{BEGIN cellblock_grid_cell_label32}
+	<td
+	
+	{$cell_grid_cell_label32}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label32}
+						 
+							{BEGIN cellblock_grid_cell_label33}
+	<td
+	
+	{$cell_grid_cell_label33}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label33" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label33}
+						 
+							{BEGIN cellblock_grid_cell_label34}
+	<td
+	
+	{$cell_grid_cell_label34}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert		 {$remarks_class}	"
+
+			data-field="remarks"
+	
+	data-cellId="grid_cell_label34" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN remarks_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field53" {$item_simple_grid_field53} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="remarks" data-fieldname="remarks" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label prop_cust remarks }</span>
+			</span>
+	</span>
+{END remarks_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label34}
+						 
+							{BEGIN cellblock_grid_cell_label35}
+	<td
+	
+	{$cell_grid_cell_label35}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$remarks_class}	"
+
+			data-field="remarks"
+	
+	data-cellId="grid_cell_label35" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN remarks_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="remarks" data-fieldname="remarks" data-default-width >
+{$remarks_value}
+</span>
+{END remarks_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_label35}
+												</tr>
+									 
+											
+					</tbody>
+				</table>
+
+				
+			</div>				
+									
+		</div>
+		{END grid_vrecord}
+	{END grid_record}
+	</div>
+
+<div style="clear: both;"></div>
+ 
+	{BEGIN grid_record}
+			{END grid_record}
+
+
+{END grid_row}
+</div>			
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+				<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+			</div>					</div>
+			</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,656 @@
+<?php
+global $runnerDbTableInfo;
+$runnerDbTableInfo['str'] = array(
+	'type' => 0,
+	'foreignKeys' => array( 
+		 
+	),
+	'fields' => array( 
+		array(
+			'name' => 'id',
+			'type' => 3,
+			'size' => 0,
+			'scale' => 0,
+			'typeName' => 'int',
+			'nullable' => false,
+			'autoinc' => true,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'ea_name',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'ea_address',
+			'type' => 200,
+			'size' => 200,
+			'scale' => 0,
+			'typeName' => 'varchar(200)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'ea_contact',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'ea_email',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'relationship_with_subject',
+			'type' => 200,
+			'size' => 300,
+			'scale' => 0,
+			'typeName' => 'varchar(300)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'officer_name1',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'designation1',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'report_ref',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'officer_name2',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'designation2',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'entity_name',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'country_reg',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'reg_no',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'reg_date',
+			'type' => 7,
+			'size' => 0,
+			'scale' => 0,
+			'typeName' => 'date',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'entity_address',
+			'type' => 200,
+			'size' => 200,
+			'scale' => 0,
+			'typeName' => 'varchar(200)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'entity_foreign_address',
+			'type' => 200,
+			'size' => 200,
+			'scale' => 0,
+			'typeName' => 'varchar(200)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'entity_contact',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'entity_director_name',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'biz_activity',
+			'type' => 200,
+			'size' => 200,
+			'scale' => 0,
+			'typeName' => 'varchar(200)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'bo_name',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'indi_name',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'indi_id',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'indi_dob',
+			'type' => 7,
+			'size' => 0,
+			'scale' => 0,
+			'typeName' => 'date',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'indi_nationalty',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'indi_address',
+			'type' => 200,
+			'size' => 200,
+			'scale' => 0,
+			'typeName' => 'varchar(200)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'indi_address_foreign',
+			'type' => 200,
+			'size' => 200,
+			'scale' => 0,
+			'typeName' => 'varchar(200)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'indi_contact',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'indi_occupation',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'indi_employer',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'indi_bank_details',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'indi_bo_name',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'prop_address',
+			'type' => 200,
+			'size' => 200,
+			'scale' => 0,
+			'typeName' => 'varchar(200)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'prop_tenure',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'prop_type',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'transact_type',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'transact_price',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'valuation',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'lease_period',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'deposit',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'salesperson_name',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'salesperson_nric',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'suspicious_amount',
+			'type' => 200,
+			'size' => 15,
+			'scale' => 0,
+			'typeName' => 'varchar(15)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'suspicious_date',
+			'type' => 7,
+			'size' => 0,
+			'scale' => 0,
+			'typeName' => 'date',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'description',
+			'type' => 200,
+			'size' => 500,
+			'scale' => 0,
+			'typeName' => 'varchar(500)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'reason_suspicion',
+			'type' => 200,
+			'size' => 500,
+			'scale' => 0,
+			'typeName' => 'varchar(500)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'other_info',
+			'type' => 200,
+			'size' => 500,
+			'scale' => 0,
+			'typeName' => 'varchar(500)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'docs_attach',
+			'type' => 201,
+			'size' => 0,
+			'scale' => 0,
+			'typeName' => 'mediumtext',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'id_tx',
+			'type' => 3,
+			'size' => 0,
+			'scale' => 0,
+			'typeName' => 'int',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'ea_postal',
+			'type' => 200,
+			'size' => 10,
+			'scale' => 0,
+			'typeName' => 'varchar(10)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'entity_postal',
+			'type' => 200,
+			'size' => 10,
+			'scale' => 0,
+			'typeName' => 'varchar(10)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'indi_postal',
+			'type' => 200,
+			'size' => 10,
+			'scale' => 0,
+			'typeName' => 'varchar(10)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'prop_postal',
+			'type' => 200,
+			'size' => 10,
+			'scale' => 0,
+			'typeName' => 'varchar(10)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'customer_type',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'filing_date',
+			'type' => 7,
+			'size' => 0,
+			'scale' => 0,
+			'typeName' => 'date',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'represnting',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'party_id',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		),
+		array(
+			'name' => 'lease_period_unit',
+			'type' => 200,
+			'size' => 50,
+			'scale' => 0,
+			'typeName' => 'varchar(50)',
+			'nullable' => true,
+			'autoinc' => false,
+			'defaultValueSQL' => null,
+			'defaultValue' => '' 
+		) 
+	),
+	'primaryKeys' => array( 
+		'id' 
+	),
+	'uniqueFields' => array( 
+		 
+	),
+	'name' => 'str' 
+);
+?>

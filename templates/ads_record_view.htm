@@ -1,0 +1,340 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+						<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		{BEGIN styleCSSFiles}
+<link REL="stylesheet" href="{$stylepath}" type="text/css">
+{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel ads_record view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN docuserid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_docuserid}  r-vertical-field" 
+	data-signal-error-for="docuserid{$id}" {$required_attr_docuserid}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="docuserid" data-fieldname="docuserid" >
+
+	<label class="r-edit-label control-label {$docuserid_label_class}" for="{$labelfor_docuserid}">
+		{BEGIN docuserid_label}
+			{$docuserid_forward_control}
+			{$label ads_record docuserid }			{END docuserid_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$docuserid_value}	</div>
+	</div>
+
+
+{END docuserid_fieldblock}
+											
+{BEGIN From_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_From_date}  r-vertical-field" 
+	data-signal-error-for="From_date{$id}" {$required_attr_From_date}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="From_date" data-fieldname="From_date" >
+
+	<label class="r-edit-label control-label {$From_date_label_class}" for="{$labelfor_From_date}">
+		{BEGIN From_date_label}
+			{$From_date_forward_control}
+			{$label ads_record From_date }			{END From_date_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$From_date_value}	</div>
+	</div>
+
+
+{END From_date_fieldblock}
+											
+{BEGIN To_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_To_date}  r-vertical-field" 
+	data-signal-error-for="To_date{$id}" {$required_attr_To_date}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="To_date" data-fieldname="To_date" >
+
+	<label class="r-edit-label control-label {$To_date_label_class}" for="{$labelfor_To_date}">
+		{BEGIN To_date_label}
+			{$To_date_forward_control}
+			{$label ads_record To_date }			{END To_date_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$To_date_value}	</div>
+	</div>
+
+
+{END To_date_fieldblock}
+											
+{BEGIN Amount_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Amount}  r-vertical-field" 
+	data-signal-error-for="Amount{$id}" {$required_attr_Amount}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="Amount" data-fieldname="Amount" >
+
+	<label class="r-edit-label control-label {$Amount_label_class}" for="{$labelfor_Amount}">
+		{BEGIN Amount_label}
+			{$Amount_forward_control}
+			{$label ads_record Amount }			{END Amount_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$Amount_value}	</div>
+	</div>
+
+
+{END Amount_fieldblock}
+											
+{BEGIN By_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_By}  r-vertical-field" 
+	data-signal-error-for="By{$id}" {$required_attr_By}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="By" data-fieldname="By" >
+
+	<label class="r-edit-label control-label {$By_label_class}" for="{$labelfor_By}">
+		{BEGIN By_label}
+			{$By_forward_control}
+			{$label ads_record By }			{END By_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$By_value}	</div>
+	</div>
+
+
+{END By_fieldblock}
+											
+{BEGIN full_name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_full_name}  r-vertical-field" 
+	data-signal-error-for="full_name{$id}" {$required_attr_full_name}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="full_name" data-fieldname="full_name" >
+
+	<label class="r-edit-label control-label {$full_name_label_class}" for="{$labelfor_full_name}">
+		{BEGIN full_name_label}
+			{$full_name_forward_control}
+			{$label ads_record full_name }			{END full_name_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$full_name_value}	</div>
+	</div>
+
+
+{END full_name_fieldblock}
+											
+{BEGIN Paid_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Paid_date}  r-vertical-field" 
+	data-signal-error-for="Paid_date{$id}" {$required_attr_Paid_date}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="Paid_date" data-fieldname="Paid_date" >
+
+	<label class="r-edit-label control-label {$Paid_date_label_class}" for="{$labelfor_Paid_date}">
+		{BEGIN Paid_date_label}
+			{$Paid_date_forward_control}
+			{$label ads_record Paid_date }			{END Paid_date_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$Paid_date_value}	</div>
+	</div>
+
+
+{END Paid_date_fieldblock}
+											
+{BEGIN Paid_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Paid}  r-vertical-field" 
+	data-signal-error-for="Paid{$id}" {$required_attr_Paid}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="Paid" data-fieldname="Paid" >
+
+	<label class="r-edit-label control-label {$Paid_label_class}" for="{$labelfor_Paid}">
+		{BEGIN Paid_label}
+			{$Paid_forward_control}
+			{$label ads_record Paid }			{END Paid_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$Paid_value}	</div>
+	</div>
+
+
+{END Paid_fieldblock}
+											
+{BEGIN Remarks_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Remarks}  r-vertical-field" 
+	data-signal-error-for="Remarks{$id}" {$required_attr_Remarks}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="Remarks" data-fieldname="Remarks" >
+
+	<label class="r-edit-label control-label {$Remarks_label_class}" for="{$labelfor_Remarks}">
+		{BEGIN Remarks_label}
+			{$Remarks_forward_control}
+			{$label ads_record Remarks }			{END Remarks_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$Remarks_value}	</div>
+	</div>
+
+
+{END Remarks_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							{mlang_message CLOSE_WINDOW}			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right			col-md-6
+	">
+	 
+		{BEGIN prev_button}
+<span data-itemtype="prev" data-itemid="prev" {$item_prev} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	{$prevbutton_class}" {$prevbutton_attrs} >
+					<span class="glyphicon glyphicon-menu-left"></span>
+										</a>
+</span>
+{END prev_button}
+	 
+		{BEGIN next_button}
+<span data-itemtype="next" data-itemid="next" {$item_next} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	{$nextbutton_class}" {$nextbutton_attrs} >
+					<span class="glyphicon glyphicon-menu-right"></span>
+										</a>
+</span>
+{END next_button}
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

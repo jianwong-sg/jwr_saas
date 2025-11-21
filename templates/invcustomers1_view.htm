@@ -1,0 +1,1048 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+						<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		{BEGIN styleCSSFiles}
+<link REL="stylesheet" href="{$stylepath}" type="text/css">
+{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel invcustomers1 view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="snippet" data-itemid="snippet" {$item_snippet} data-pageid="{$pageid}" >
+{$event 192537}
+</span>											
+{BEGIN date_added_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_added}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="date_added{$id}" {$required_attr_date_added}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="date_added" data-fieldname="date_added" >
+
+	<label class="r-edit-label control-label {$date_added_label_class}" for="{$labelfor_date_added}">
+		{BEGIN date_added_label}
+			{$date_added_forward_control}
+			{$label invcustomers1 date_added }			{END date_added_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$date_added_value}	</div>
+	</div>
+
+
+{END date_added_fieldblock}
+											
+{BEGIN last_updated_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_last_updated}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="last_updated{$id}" {$required_attr_last_updated}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="last_updated" data-fieldname="last_updated" >
+
+	<label class="r-edit-label control-label {$last_updated_label_class}" for="{$labelfor_last_updated}">
+		{BEGIN last_updated_label}
+			{$last_updated_forward_control}
+			{$label invcustomers1 last_updated }			{END last_updated_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$last_updated_value}	</div>
+	</div>
+
+
+{END last_updated_fieldblock}
+											
+{BEGIN cus_type_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cus_type}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="cus_type{$id}" {$required_attr_cus_type}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="cus_type" data-fieldname="cus_type" >
+
+	<label class="r-edit-label control-label {$cus_type_label_class}" for="{$labelfor_cus_type}">
+		{BEGIN cus_type_label}
+			{$cus_type_forward_control}
+			{$label invcustomers1 cus_type }			{END cus_type_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cus_type_value}	</div>
+	</div>
+
+
+{END cus_type_fieldblock}
+										</td>
+			{END cellblock_grid_c3}
+										</tr>
+										</tbody></table>
+				 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="contact_info_section" {$item_contact_info_section} data-pageid="{$pageid}" data-page="invcustomers1_view">
+		<div class="panel-heading" role="tab" {$section_section1_headattrs} 
+			data-toggle="collapse"  
+
+				href="#section1{$pageid}" aria-expanded="true" aria-controls="section1"
+
+		>
+		  <h4 class="panel-title">
+		  				<a role="button" >
+				Contact Info			</a>
+					  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section1_xtrclass}" role="tabpanel"  {$section_section1_attrs}
+
+				id="section1{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section" id="form_section_{$pageid}" data-makeup="small" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section_0} >
+										
+
+{BEGIN cellblock_section_c3}
+<td
+	{$cell_section_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_name}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="name{$id}" {$required_attr_name}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="name" data-fieldname="name" >
+
+	<label class="r-edit-label control-label {$name_label_class}" for="{$labelfor_name}">
+		{BEGIN name_label}
+			{$name_forward_control}
+			{$label invcustomers1 name }			{END name_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$name_value}	</div>
+	</div>
+
+
+{END name_fieldblock}
+											
+{BEGIN salutation_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_salutation}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="salutation{$id}" {$required_attr_salutation}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field38" {$item_integrated_edit_field38} data-pageid="{$pageid}" data-field="salutation" data-fieldname="salutation" >
+
+	<label class="r-edit-label control-label {$salutation_label_class}" for="{$labelfor_salutation}">
+		{BEGIN salutation_label}
+			{$salutation_forward_control}
+			{$label invcustomers1 salutation }			{END salutation_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$salutation_value}	</div>
+	</div>
+
+
+{END salutation_fieldblock}
+											
+{BEGIN nationality_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nationality}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="nationality{$id}" {$required_attr_nationality}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field31" {$item_integrated_edit_field31} data-pageid="{$pageid}" data-field="nationality" data-fieldname="nationality" >
+
+	<label class="r-edit-label control-label {$nationality_label_class}" for="{$labelfor_nationality}">
+		{BEGIN nationality_label}
+			{$nationality_forward_control}
+			{$label invcustomers1 nationality }			{END nationality_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$nationality_value}	</div>
+	</div>
+
+
+{END nationality_fieldblock}
+											
+{BEGIN race_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_race}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="race{$id}" {$required_attr_race}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field47" {$item_integrated_edit_field47} data-pageid="{$pageid}" data-field="race" data-fieldname="race" >
+
+	<label class="r-edit-label control-label {$race_label_class}" for="{$labelfor_race}">
+		{BEGIN race_label}
+			{$race_forward_control}
+			{$label invcustomers1 race }			{END race_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$race_value}	</div>
+	</div>
+
+
+{END race_fieldblock}
+											
+{BEGIN gender_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_gender}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="gender{$id}" {$required_attr_gender}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="gender" data-fieldname="gender" >
+
+	<label class="r-edit-label control-label {$gender_label_class}" for="{$labelfor_gender}">
+		{BEGIN gender_label}
+			{$gender_forward_control}
+			{$label invcustomers1 gender }			{END gender_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$gender_value}	</div>
+	</div>
+
+
+{END gender_fieldblock}
+											
+{BEGIN nric_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nric}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="nric{$id}" {$required_attr_nric}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="nric" data-fieldname="nric" >
+
+	<label class="r-edit-label control-label {$nric_label_class}" for="{$labelfor_nric}">
+		{BEGIN nric_label}
+			{$nric_forward_control}
+			{$label invcustomers1 nric }			{END nric_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$nric_value}	</div>
+	</div>
+
+
+{END nric_fieldblock}
+											
+{BEGIN id_type_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_type}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="id_type{$id}" {$required_attr_id_type}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="id_type" data-fieldname="id_type" >
+
+	<label class="r-edit-label control-label {$id_type_label_class}" for="{$labelfor_id_type}">
+		{BEGIN id_type_label}
+			{$id_type_forward_control}
+			{$label invcustomers1 id_type }			{END id_type_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$id_type_value}	</div>
+	</div>
+
+
+{END id_type_fieldblock}
+											
+{BEGIN date_of_birth_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_date_of_birth}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="date_of_birth{$id}" {$required_attr_date_of_birth}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-field="date_of_birth" data-fieldname="date_of_birth" >
+
+	<label class="r-edit-label control-label {$date_of_birth_label_class}" for="{$labelfor_date_of_birth}">
+		{BEGIN date_of_birth_label}
+			{$date_of_birth_forward_control}
+			{$label invcustomers1 date_of_birth }			{END date_of_birth_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$date_of_birth_value}	</div>
+	</div>
+
+
+{END date_of_birth_fieldblock}
+											
+{BEGIN occupation_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_occupation}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="occupation{$id}" {$required_attr_occupation}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field33" {$item_integrated_edit_field33} data-pageid="{$pageid}" data-field="occupation" data-fieldname="occupation" >
+
+	<label class="r-edit-label control-label {$occupation_label_class}" for="{$labelfor_occupation}">
+		{BEGIN occupation_label}
+			{$occupation_forward_control}
+			{$label invcustomers1 occupation }			{END occupation_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$occupation_value}	</div>
+	</div>
+
+
+{END occupation_fieldblock}
+											
+{BEGIN address_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_address}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="address{$id}" {$required_attr_address}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="address" data-fieldname="address" >
+
+	<label class="r-edit-label control-label {$address_label_class}" for="{$labelfor_address}">
+		{BEGIN address_label}
+			{$address_forward_control}
+			{$label invcustomers1 address }			{END address_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$address_value}	</div>
+	</div>
+
+
+{END address_fieldblock}
+											
+{BEGIN mobile_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mobile}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="mobile{$id}" {$required_attr_mobile}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="mobile" data-fieldname="mobile" >
+
+	<label class="r-edit-label control-label {$mobile_label_class}" for="{$labelfor_mobile}">
+		{BEGIN mobile_label}
+			{$mobile_forward_control}
+			{$label invcustomers1 mobile }			{END mobile_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$mobile_value}	</div>
+	</div>
+
+
+{END mobile_fieldblock}
+											
+{BEGIN email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="email{$id}" {$required_attr_email}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="email" data-fieldname="email" >
+
+	<label class="r-edit-label control-label {$email_label_class}" for="{$labelfor_email}">
+		{BEGIN email_label}
+			{$email_forward_control}
+			{$label invcustomers1 email }			{END email_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$email_value}	</div>
+	</div>
+
+
+{END email_fieldblock}
+											
+{BEGIN email_type_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email_type}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="email_type{$id}" {$required_attr_email_type}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field49" {$item_integrated_edit_field49} data-pageid="{$pageid}" data-field="email_type" data-fieldname="email_type" >
+
+	<label class="r-edit-label control-label {$email_type_label_class}" for="{$labelfor_email_type}">
+		{BEGIN email_type_label}
+			{$email_type_forward_control}
+			{$label invcustomers1 email_type }			{END email_type_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$email_type_value}	</div>
+	</div>
+
+
+{END email_type_fieldblock}
+											
+{BEGIN doc_upload_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_doc_upload}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="doc_upload{$id}" {$required_attr_doc_upload}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="doc_upload" data-fieldname="doc_upload" >
+
+	<label class="r-edit-label control-label {$doc_upload_label_class}" for="{$labelfor_doc_upload}">
+		{BEGIN doc_upload_label}
+			{$doc_upload_forward_control}
+			{$label invcustomers1 doc_upload }			{END doc_upload_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$doc_upload_value}	</div>
+	</div>
+
+
+{END doc_upload_fieldblock}
+	
+								</td>
+			{END cellblock_section_c3}
+								</tr>
+			</tbody></table>
+{END section_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="other_info_section" {$item_other_info_section} data-pageid="{$pageid}" data-page="invcustomers1_view">
+		<div class="panel-heading" role="tab" {$section_section2_headattrs} 
+			data-toggle="collapse"  
+
+				href="#section2{$pageid}" aria-expanded="true" aria-controls="section2"
+
+		>
+		  <h4 class="panel-title">
+		  				<a role="button" >
+				Other Info			</a>
+					  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section2_xtrclass}" role="tabpanel"  {$section_section2_attrs}
+
+				id="section2{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="small" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section1_0} >
+										
+
+{BEGIN cellblock_section1_c3}
+<td
+	{$cell_section1_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section1_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN tel_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tel}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="tel{$id}" {$required_attr_tel}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="tel" data-fieldname="tel" >
+
+	<label class="r-edit-label control-label {$tel_label_class}" for="{$labelfor_tel}">
+		{BEGIN tel_label}
+			{$tel_forward_control}
+			{$label invcustomers1 tel }			{END tel_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$tel_value}	</div>
+	</div>
+
+
+{END tel_fieldblock}
+											
+{BEGIN tel_type_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_tel_type}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="tel_type{$id}" {$required_attr_tel_type}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field48" {$item_integrated_edit_field48} data-pageid="{$pageid}" data-field="tel_type" data-fieldname="tel_type" >
+
+	<label class="r-edit-label control-label {$tel_type_label_class}" for="{$labelfor_tel_type}">
+		{BEGIN tel_type_label}
+			{$tel_type_forward_control}
+			{$label invcustomers1 tel_type }			{END tel_type_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$tel_type_value}	</div>
+	</div>
+
+
+{END tel_type_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c3}
+								</tr>
+			</tbody></table>
+{END section1_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="entity_info_section" {$item_entity_info_section} data-pageid="{$pageid}" data-page="invcustomers1_view">
+		<div class="panel-heading" role="tab" {$section_section3_headattrs} 
+			data-toggle="collapse"  
+
+				href="#section3{$pageid}" aria-expanded="true" aria-controls="section3"
+
+		>
+		  <h4 class="panel-title">
+		  				<a role="button" >
+				Entity Info			</a>
+					  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section3_xtrclass}" role="tabpanel"  {$section_section3_attrs}
+
+				id="section3{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section2_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section2" id="form_section2_{$pageid}" data-makeup="small" {$form_section2} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section2_0} >
+										
+
+{BEGIN cellblock_section2_c3}
+<td
+	{$cell_section2_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section2_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN registration_no_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_registration_no}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="registration_no{$id}" {$required_attr_registration_no}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="registration_no" data-fieldname="registration_no" >
+
+	<label class="r-edit-label control-label {$registration_no_label_class}" for="{$labelfor_registration_no}">
+		{BEGIN registration_no_label}
+			{$registration_no_forward_control}
+			{$label invcustomers1 registration_no }			{END registration_no_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$registration_no_value}	</div>
+	</div>
+
+
+{END registration_no_fieldblock}
+											
+{BEGIN registration_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_registration_date}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="registration_date{$id}" {$required_attr_registration_date}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field21" {$item_integrated_edit_field21} data-pageid="{$pageid}" data-field="registration_date" data-fieldname="registration_date" >
+
+	<label class="r-edit-label control-label {$registration_date_label_class}" for="{$labelfor_registration_date}">
+		{BEGIN registration_date_label}
+			{$registration_date_forward_control}
+			{$label invcustomers1 registration_date }			{END registration_date_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$registration_date_value}	</div>
+	</div>
+
+
+{END registration_date_fieldblock}
+											
+{BEGIN country_incorporation_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_country_incorporation}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="country_incorporation{$id}" {$required_attr_country_incorporation}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="country_incorporation" data-fieldname="country_incorporation" >
+
+	<label class="r-edit-label control-label {$country_incorporation_label_class}" for="{$labelfor_country_incorporation}">
+		{BEGIN country_incorporation_label}
+			{$country_incorporation_forward_control}
+			{$label invcustomers1 country_incorporation }			{END country_incorporation_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$country_incorporation_value}	</div>
+	</div>
+
+
+{END country_incorporation_fieldblock}
+											
+{BEGIN trade_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_trade}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="trade{$id}" {$required_attr_trade}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="trade" data-fieldname="trade" >
+
+	<label class="r-edit-label control-label {$trade_label_class}" for="{$labelfor_trade}">
+		{BEGIN trade_label}
+			{$trade_forward_control}
+			{$label invcustomers1 trade }			{END trade_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$trade_value}	</div>
+	</div>
+
+
+{END trade_fieldblock}
+											
+{BEGIN office_tel_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_office_tel}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="office_tel{$id}" {$required_attr_office_tel}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="office_tel" data-fieldname="office_tel" >
+
+	<label class="r-edit-label control-label {$office_tel_label_class}" for="{$labelfor_office_tel}">
+		{BEGIN office_tel_label}
+			{$office_tel_forward_control}
+			{$label invcustomers1 office_tel }			{END office_tel_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$office_tel_value}	</div>
+	</div>
+
+
+{END office_tel_fieldblock}
+											
+{BEGIN biz_email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_biz_email}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="biz_email{$id}" {$required_attr_biz_email}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="biz_email" data-fieldname="biz_email" >
+
+	<label class="r-edit-label control-label {$biz_email_label_class}" for="{$labelfor_biz_email}">
+		{BEGIN biz_email_label}
+			{$biz_email_forward_control}
+			{$label invcustomers1 biz_email }			{END biz_email_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$biz_email_value}	</div>
+	</div>
+
+
+{END biz_email_fieldblock}
+											
+{BEGIN contact_person_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contact_person}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="contact_person{$id}" {$required_attr_contact_person}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="contact_person" data-fieldname="contact_person" >
+
+	<label class="r-edit-label control-label {$contact_person_label_class}" for="{$labelfor_contact_person}">
+		{BEGIN contact_person_label}
+			{$contact_person_forward_control}
+			{$label invcustomers1 contact_person }			{END contact_person_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contact_person_value}	</div>
+	</div>
+
+
+{END contact_person_fieldblock}
+											
+{BEGIN destination_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_destination}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="destination{$id}" {$required_attr_destination}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="destination" data-fieldname="destination" >
+
+	<label class="r-edit-label control-label {$destination_label_class}" for="{$labelfor_destination}">
+		{BEGIN destination_label}
+			{$destination_forward_control}
+			{$label invcustomers1 destination }			{END destination_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$destination_value}	</div>
+	</div>
+
+
+{END destination_fieldblock}
+											
+{BEGIN contact_person_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contact_person_id}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="contact_person_id{$id}" {$required_attr_contact_person_id}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field37" {$item_integrated_edit_field37} data-pageid="{$pageid}" data-field="contact_person_id" data-fieldname="contact_person_id" >
+
+	<label class="r-edit-label control-label {$contact_person_id_label_class}" for="{$labelfor_contact_person_id}">
+		{BEGIN contact_person_id_label}
+			{$contact_person_id_forward_control}
+			{$label invcustomers1 contact_person_id }			{END contact_person_id_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contact_person_id_value}	</div>
+	</div>
+
+
+{END contact_person_id_fieldblock}
+											
+{BEGIN contact_person_contact_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contact_person_contact}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="contact_person_contact{$id}" {$required_attr_contact_person_contact}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field36" {$item_integrated_edit_field36} data-pageid="{$pageid}" data-field="contact_person_contact" data-fieldname="contact_person_contact" >
+
+	<label class="r-edit-label control-label {$contact_person_contact_label_class}" for="{$labelfor_contact_person_contact}">
+		{BEGIN contact_person_contact_label}
+			{$contact_person_contact_forward_control}
+			{$label invcustomers1 contact_person_contact }			{END contact_person_contact_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contact_person_contact_value}	</div>
+	</div>
+
+
+{END contact_person_contact_fieldblock}
+											
+{BEGIN contact_email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contact_email}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="contact_email{$id}" {$required_attr_contact_email}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="contact_email" data-fieldname="contact_email" >
+
+	<label class="r-edit-label control-label {$contact_email_label_class}" for="{$labelfor_contact_email}">
+		{BEGIN contact_email_label}
+			{$contact_email_forward_control}
+			{$label invcustomers1 contact_email }			{END contact_email_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$contact_email_value}	</div>
+	</div>
+
+
+{END contact_email_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c3}
+								</tr>
+			</tbody></table>
+{END section2_block}
+		  </div>
+		</div>
+	</div>
+											 
+	<div class="panel panel-default form-section" data-itemtype="section" data-itemid="agency_info_section" {$item_agency_info_section} data-pageid="{$pageid}" data-page="invcustomers1_view">
+		<div class="panel-heading" role="tab" {$section_section4_headattrs} 
+			data-toggle="collapse"  
+
+				href="#section4{$pageid}" aria-expanded="true" aria-controls="section4"
+
+		>
+		  <h4 class="panel-title">
+		  				<a role="button" >
+				Agency Info			</a>
+					  </h4>
+		</div>
+		<div  class="panel-collapse collapse in {$section_section4_xtrclass}" role="tabpanel"  {$section_section4_attrs}
+
+				id="section4{$pageid}" 
+		>
+		  <div class="panel-body">
+			{BEGIN section3_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section3" id="form_section3_{$pageid}" data-makeup="small" {$form_section3} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_section3_0} >
+										
+
+{BEGIN cellblock_section3_c3}
+<td
+	{$cell_section3_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="section3_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN agency_name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_agency_name}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="agency_name{$id}" {$required_attr_agency_name}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="agency_name" data-fieldname="agency_name" >
+
+	<label class="r-edit-label control-label {$agency_name_label_class}" for="{$labelfor_agency_name}">
+		{BEGIN agency_name_label}
+			{$agency_name_forward_control}
+			{$label invcustomers1 agency_name }			{END agency_name_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$agency_name_value}	</div>
+	</div>
+
+
+{END agency_name_fieldblock}
+											
+{BEGIN license_no_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_license_no}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="license_no{$id}" {$required_attr_license_no}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="license_no" data-fieldname="license_no" >
+
+	<label class="r-edit-label control-label {$license_no_label_class}" for="{$labelfor_license_no}">
+		{BEGIN license_no_label}
+			{$license_no_forward_control}
+			{$label invcustomers1 license_no }			{END license_no_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$license_no_value}	</div>
+	</div>
+
+
+{END license_no_fieldblock}
+											
+{BEGIN agency_address_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_agency_address}  r-horizontal-field form-horizontal" 
+	data-signal-error-for="agency_address{$id}" {$required_attr_agency_address}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="agency_address" data-fieldname="agency_address" >
+
+	<label class="r-edit-label control-label {$agency_address_label_class}" for="{$labelfor_agency_address}">
+		{BEGIN agency_address_label}
+			{$agency_address_forward_control}
+			{$label invcustomers1 agency_address }			{END agency_address_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$agency_address_value}	</div>
+	</div>
+
+
+{END agency_address_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c3}
+								</tr>
+			</tbody></table>
+{END section3_block}
+		  </div>
+		</div>
+	</div>
+	
+				{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							{mlang_message CLOSE_WINDOW}			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="invcustomers1_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		{mlang_message EDIT}		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

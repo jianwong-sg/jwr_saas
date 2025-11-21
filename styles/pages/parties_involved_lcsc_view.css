@@ -1,0 +1,16 @@
+[data-page="parties_involved_lcsc_view"][data-itemid="page_image_ash8f23hr"] {
+  width: 400px;
+}
+
+/* Put  your custom CSS code here */
+
+[data-cellid="grid_c5"][data-page="parties_involved_lcsc_view"][data-cellid="grid_c5"][data-page="parties_involved_lcsc_view"][data-cellid="grid_c5"][data-page="parties_involved_lcsc_view"] {
+  display:none !important;
+}
+
+/* Put  your custom CSS code here */
+
+[data-cellid="grid_c6"][data-page="parties_involved_lcsc_view"][data-cellid="grid_c6"][data-page="parties_involved_lcsc_view"][data-cellid="grid_c6"][data-page="parties_involved_lcsc_view"] {
+  display:none !important;
+}
+

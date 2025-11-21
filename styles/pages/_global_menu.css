@@ -1,0 +1,37 @@
+[data-page="_global_menu"][data-itemid="welcome_item2"] > .bs-welcome-header {
+  background-color: #FFAD5B;
+}
+[data-page="_global_menu"][data-itemid="commissions_group"] {
+  background-color: transparent;
+}
+[data-page="_global_menu"][data-itemid="transactions_item"] > .bs-welcome-header {
+  background-color: #3CB371;
+}
+[data-page="_global_menu"][data-itemid="properties_item"] > .bs-welcome-header {
+  background-color: #D2B48C;
+}
+[data-page="_global_menu"][data-itemid="welcome_item"] > .bs-welcome-header {
+  background-color: #E8926F;
+}
+[data-page="_global_menu"][data-itemid="welcome_item7"] > .bs-welcome-header {
+  background-color: #2F4F4F;
+}
+[data-page="_global_menu"][data-itemid="welcome_item3"] > .bs-welcome-header {
+  background-color: #9ACD32;
+}
+[data-page="_global_menu"][data-itemid="welcome_item4"] > .bs-welcome-header {
+  background-color: #E67349;
+}
+[data-page="_global_menu"][data-itemid="welcome_item5"] > .bs-welcome-header {
+  background-color: #BC8F8F;
+}
+[data-page="_global_menu"][data-itemid="page_image_ash8f23hr"] {
+  width: 400px;
+}
+
+/* Put  your custom CSS code here */
+/*
+[data-page="_global_menu"][data-itemid="commissions_group"] {
+  border: 1px solid blue;
+}
+*/

@@ -1,0 +1,445 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+						<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		{BEGIN styleCSSFiles}
+<link REL="stylesheet" href="{$stylepath}" type="text/css">
+{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel cpd_trainings_user add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>{mlang_message VIEW}</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>{mlang_message EDIT}</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN period_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_period}  r-vertical-field" 
+	data-signal-error-for="period{$id}" {$required_attr_period}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="period" data-fieldname="period" >
+
+	<label class="r-edit-label control-label {$period_label_class}" for="{$labelfor_period}">
+		{BEGIN period_label}
+			{$period_forward_control}
+			{$label cpd_trainings_user period }			{END period_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$period_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="period" {$tooltipAttr cpd_trainings_user period } >
+		<div class="text-muted" >
+		{$tooltip cpd_trainings_user period }		</div>
+	</div>
+	</div>
+
+
+{END period_fieldblock}
+											
+{BEGIN name_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_name}  r-vertical-field" 
+	data-signal-error-for="name{$id}" {$required_attr_name}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="name" data-fieldname="name" >
+
+	<label class="r-edit-label control-label {$name_label_class}" for="{$labelfor_name}">
+		{BEGIN name_label}
+			{$name_forward_control}
+			{$label cpd_trainings_user name }			{END name_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$name_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="name" {$tooltipAttr cpd_trainings_user name } >
+		<div class="text-muted" >
+		{$tooltip cpd_trainings_user name }		</div>
+	</div>
+	</div>
+
+
+{END name_fieldblock}
+											
+{BEGIN cea_reg_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cea_reg}  r-vertical-field" 
+	data-signal-error-for="cea_reg{$id}" {$required_attr_cea_reg}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="cea_reg" data-fieldname="cea_reg" >
+
+	<label class="r-edit-label control-label {$cea_reg_label_class}" for="{$labelfor_cea_reg}">
+		{BEGIN cea_reg_label}
+			{$cea_reg_forward_control}
+			{$label cpd_trainings_user cea_reg }			{END cea_reg_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cea_reg_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="cea_reg" {$tooltipAttr cpd_trainings_user cea_reg } >
+		<div class="text-muted" >
+		{$tooltip cpd_trainings_user cea_reg }		</div>
+	</div>
+	</div>
+
+
+{END cea_reg_fieldblock}
+											
+{BEGIN provider_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_provider}  r-vertical-field" 
+	data-signal-error-for="provider{$id}" {$required_attr_provider}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="provider" data-fieldname="provider" >
+
+	<label class="r-edit-label control-label {$provider_label_class}" for="{$labelfor_provider}">
+		{BEGIN provider_label}
+			{$provider_forward_control}
+			{$label cpd_trainings_user provider }			{END provider_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$provider_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="provider" {$tooltipAttr cpd_trainings_user provider } >
+		<div class="text-muted" >
+		{$tooltip cpd_trainings_user provider }		</div>
+	</div>
+	</div>
+
+
+{END provider_fieldblock}
+											
+{BEGIN activity_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_activity}  r-vertical-field" 
+	data-signal-error-for="activity{$id}" {$required_attr_activity}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="activity" data-fieldname="activity" >
+
+	<label class="r-edit-label control-label {$activity_label_class}" for="{$labelfor_activity}">
+		{BEGIN activity_label}
+			{$activity_forward_control}
+			{$label cpd_trainings_user activity }			{END activity_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$activity_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="activity" {$tooltipAttr cpd_trainings_user activity } >
+		<div class="text-muted" >
+		{$tooltip cpd_trainings_user activity }		</div>
+	</div>
+	</div>
+
+
+{END activity_fieldblock}
+											
+{BEGIN cpd_type_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cpd_type}  r-vertical-field" 
+	data-signal-error-for="cpd_type{$id}" {$required_attr_cpd_type}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="cpd_type" data-fieldname="cpd_type" >
+
+	<label class="r-edit-label control-label {$cpd_type_label_class}" for="{$labelfor_cpd_type}">
+		{BEGIN cpd_type_label}
+			{$cpd_type_forward_control}
+			{$label cpd_trainings_user cpd_type }			{END cpd_type_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cpd_type_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="cpd_type" {$tooltipAttr cpd_trainings_user cpd_type } >
+		<div class="text-muted" >
+		{$tooltip cpd_trainings_user cpd_type }		</div>
+	</div>
+	</div>
+
+
+{END cpd_type_fieldblock}
+											
+{BEGIN cpd_hour_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cpd_hour}  r-vertical-field" 
+	data-signal-error-for="cpd_hour{$id}" {$required_attr_cpd_hour}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="cpd_hour" data-fieldname="cpd_hour" >
+
+	<label class="r-edit-label control-label {$cpd_hour_label_class}" for="{$labelfor_cpd_hour}">
+		{BEGIN cpd_hour_label}
+			{$cpd_hour_forward_control}
+			{$label cpd_trainings_user cpd_hour }			{END cpd_hour_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cpd_hour_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="cpd_hour" {$tooltipAttr cpd_trainings_user cpd_hour } >
+		<div class="text-muted" >
+		{$tooltip cpd_trainings_user cpd_hour }		</div>
+	</div>
+	</div>
+
+
+{END cpd_hour_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+			 
+																
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN startdate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_startdate}  r-vertical-field" 
+	data-signal-error-for="startdate{$id}" {$required_attr_startdate}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="startdate" data-fieldname="startdate" >
+
+	<label class="r-edit-label control-label {$startdate_label_class}" for="{$labelfor_startdate}">
+		{BEGIN startdate_label}
+			{$startdate_forward_control}
+			{$label cpd_trainings_user startdate }			{END startdate_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$startdate_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="startdate" {$tooltipAttr cpd_trainings_user startdate } >
+		<div class="text-muted" >
+		{$tooltip cpd_trainings_user startdate }		</div>
+	</div>
+	</div>
+
+
+{END startdate_fieldblock}
+											
+{BEGIN enddate_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_enddate}  r-vertical-field" 
+	data-signal-error-for="enddate{$id}" {$required_attr_enddate}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="enddate" data-fieldname="enddate" >
+
+	<label class="r-edit-label control-label {$enddate_label_class}" for="{$labelfor_enddate}">
+		{BEGIN enddate_label}
+			{$enddate_forward_control}
+			{$label cpd_trainings_user enddate }			{END enddate_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$enddate_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="enddate" {$tooltipAttr cpd_trainings_user enddate } >
+		<div class="text-muted" >
+		{$tooltip cpd_trainings_user enddate }		</div>
+	</div>
+	</div>
+
+
+{END enddate_fieldblock}
+											
+{BEGIN cost_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cost}  r-vertical-field" 
+	data-signal-error-for="cost{$id}" {$required_attr_cost}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="cost" data-fieldname="cost" >
+
+	<label class="r-edit-label control-label {$cost_label_class}" for="{$labelfor_cost}">
+		{BEGIN cost_label}
+			{$cost_forward_control}
+			{$label cpd_trainings_user cost }			{END cost_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cost_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="cost" {$tooltipAttr cpd_trainings_user cost } >
+		<div class="text-muted" >
+		{$tooltip cpd_trainings_user cost }		</div>
+	</div>
+	</div>
+
+
+{END cost_fieldblock}
+											
+{BEGIN doc_upload_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_doc_upload}  r-vertical-field" 
+	data-signal-error-for="doc_upload{$id}" {$required_attr_doc_upload}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="doc_upload" data-fieldname="doc_upload" >
+
+	<label class="r-edit-label control-label {$doc_upload_label_class}" for="{$labelfor_doc_upload}">
+		{BEGIN doc_upload_label}
+			{$doc_upload_forward_control}
+			{$label cpd_trainings_user doc_upload }			{END doc_upload_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$doc_upload_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="doc_upload" {$tooltipAttr cpd_trainings_user doc_upload } >
+		<div class="text-muted" >
+		{$tooltip cpd_trainings_user doc_upload }		</div>
+	</div>
+	</div>
+
+
+{END doc_upload_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							{mlang_message SAVE}			</a>
+</span>
+	 
+		{BEGIN reset_button}
+<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							{mlang_message RESET}			</a>
+</span>
+{END reset_button}
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

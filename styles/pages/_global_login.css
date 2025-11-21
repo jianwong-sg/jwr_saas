@@ -1,0 +1,21 @@
+[data-page="_global_login"][data-itemid="login_welcome"] {
+  font-size: 14px;
+}
+[data-page="_global_login"][data-itemid="page_image_ash8f23hr"] {
+  width: 400px;
+}
+
+/* Put  your custom CSS code here */
+
+[data-page="_global_login"][data-itemid="guest_login"] {
+  display:none !important;
+}
+/* Put  your custom CSS code here */
+
+[data-page="_global_login"][data-itemid="page_image_ash8f23hr"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+

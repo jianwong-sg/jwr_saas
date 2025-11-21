@@ -1,0 +1,1026 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+						<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		{BEGIN styleCSSFiles}
+<link REL="stylesheet" href="{$stylepath}" type="text/css">
+{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-search" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel cdd_checklist_admin search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="id" data-fieldname="id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id}">
+		{$label cdd_checklist_admin id }	</label>
+	<div class="r-search-option">
+		{$searchtype_id}
+	</div>
+	<div class="r-search-field">
+		{$id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_fieldblock}
+											
+{BEGIN cdd_checklist_customer_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cdd_checklist_customer}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cdd_checklist_customer{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="cdd_checklist_customer" data-fieldname="cdd_checklist_customer" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cdd_checklist_customer}">
+		{$label cdd_checklist_admin cdd_checklist_customer }	</label>
+	<div class="r-search-option">
+		{$searchtype_cdd_checklist_customer}
+	</div>
+	<div class="r-search-field">
+		{$cdd_checklist_customer_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cdd_checklist_customer_editcontrol1}
+	</div>
+	
+</div>
+
+{END cdd_checklist_customer_fieldblock}
+											
+{BEGIN id_cddlist_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_cddlist}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="id_cddlist{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="id_cddlist" data-fieldname="id_cddlist" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_cddlist}">
+		{$label cdd_checklist_admin id_cddlist }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_cddlist}
+	</div>
+	<div class="r-search-field">
+		{$id_cddlist_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_cddlist_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_cddlist_fieldblock}
+											
+{BEGIN list01_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_list01}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="list01{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="list01" data-fieldname="list01" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_list01}">
+		{$label cdd_checklist_admin list01 }	</label>
+	<div class="r-search-option">
+		{$searchtype_list01}
+	</div>
+	<div class="r-search-field">
+		{$list01_editcontrol}	</div>
+	<div class="r-search-field">
+		{$list01_editcontrol1}
+	</div>
+	
+</div>
+
+{END list01_fieldblock}
+											
+{BEGIN remark01_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remark01}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="remark01{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="remark01" data-fieldname="remark01" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_remark01}">
+		{$label cdd_checklist_admin remark01 }	</label>
+	<div class="r-search-option">
+		{$searchtype_remark01}
+	</div>
+	<div class="r-search-field">
+		{$remark01_editcontrol}	</div>
+	<div class="r-search-field">
+		{$remark01_editcontrol1}
+	</div>
+	
+</div>
+
+{END remark01_fieldblock}
+											
+{BEGIN list02_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_list02}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="list02{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="list02" data-fieldname="list02" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_list02}">
+		{$label cdd_checklist_admin list02 }	</label>
+	<div class="r-search-option">
+		{$searchtype_list02}
+	</div>
+	<div class="r-search-field">
+		{$list02_editcontrol}	</div>
+	<div class="r-search-field">
+		{$list02_editcontrol1}
+	</div>
+	
+</div>
+
+{END list02_fieldblock}
+											
+{BEGIN remark02_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remark02}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="remark02{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="remark02" data-fieldname="remark02" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_remark02}">
+		{$label cdd_checklist_admin remark02 }	</label>
+	<div class="r-search-option">
+		{$searchtype_remark02}
+	</div>
+	<div class="r-search-field">
+		{$remark02_editcontrol}	</div>
+	<div class="r-search-field">
+		{$remark02_editcontrol1}
+	</div>
+	
+</div>
+
+{END remark02_fieldblock}
+											
+{BEGIN list03_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_list03}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="list03{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="list03" data-fieldname="list03" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_list03}">
+		{$label cdd_checklist_admin list03 }	</label>
+	<div class="r-search-option">
+		{$searchtype_list03}
+	</div>
+	<div class="r-search-field">
+		{$list03_editcontrol}	</div>
+	<div class="r-search-field">
+		{$list03_editcontrol1}
+	</div>
+	
+</div>
+
+{END list03_fieldblock}
+											
+{BEGIN remark03_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remark03}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="remark03{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="remark03" data-fieldname="remark03" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_remark03}">
+		{$label cdd_checklist_admin remark03 }	</label>
+	<div class="r-search-option">
+		{$searchtype_remark03}
+	</div>
+	<div class="r-search-field">
+		{$remark03_editcontrol}	</div>
+	<div class="r-search-field">
+		{$remark03_editcontrol1}
+	</div>
+	
+</div>
+
+{END remark03_fieldblock}
+											
+{BEGIN list04_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_list04}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="list04{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="list04" data-fieldname="list04" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_list04}">
+		{$label cdd_checklist_admin list04 }	</label>
+	<div class="r-search-option">
+		{$searchtype_list04}
+	</div>
+	<div class="r-search-field">
+		{$list04_editcontrol}	</div>
+	<div class="r-search-field">
+		{$list04_editcontrol1}
+	</div>
+	
+</div>
+
+{END list04_fieldblock}
+											
+{BEGIN remark04_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remark04}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="remark04{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field10" {$item_integrated_search_field10} data-pageid="{$pageid}" data-field="remark04" data-fieldname="remark04" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_remark04}">
+		{$label cdd_checklist_admin remark04 }	</label>
+	<div class="r-search-option">
+		{$searchtype_remark04}
+	</div>
+	<div class="r-search-field">
+		{$remark04_editcontrol}	</div>
+	<div class="r-search-field">
+		{$remark04_editcontrol1}
+	</div>
+	
+</div>
+
+{END remark04_fieldblock}
+											
+{BEGIN list05_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_list05}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="list05{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field11" {$item_integrated_search_field11} data-pageid="{$pageid}" data-field="list05" data-fieldname="list05" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_list05}">
+		{$label cdd_checklist_admin list05 }	</label>
+	<div class="r-search-option">
+		{$searchtype_list05}
+	</div>
+	<div class="r-search-field">
+		{$list05_editcontrol}	</div>
+	<div class="r-search-field">
+		{$list05_editcontrol1}
+	</div>
+	
+</div>
+
+{END list05_fieldblock}
+											
+{BEGIN remark05_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remark05}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="remark05{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field12" {$item_integrated_search_field12} data-pageid="{$pageid}" data-field="remark05" data-fieldname="remark05" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_remark05}">
+		{$label cdd_checklist_admin remark05 }	</label>
+	<div class="r-search-option">
+		{$searchtype_remark05}
+	</div>
+	<div class="r-search-field">
+		{$remark05_editcontrol}	</div>
+	<div class="r-search-field">
+		{$remark05_editcontrol1}
+	</div>
+	
+</div>
+
+{END remark05_fieldblock}
+											
+{BEGIN list06_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_list06}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="list06{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field13" {$item_integrated_search_field13} data-pageid="{$pageid}" data-field="list06" data-fieldname="list06" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_list06}">
+		{$label cdd_checklist_admin list06 }	</label>
+	<div class="r-search-option">
+		{$searchtype_list06}
+	</div>
+	<div class="r-search-field">
+		{$list06_editcontrol}	</div>
+	<div class="r-search-field">
+		{$list06_editcontrol1}
+	</div>
+	
+</div>
+
+{END list06_fieldblock}
+											
+{BEGIN remark06_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remark06}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="remark06{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field14" {$item_integrated_search_field14} data-pageid="{$pageid}" data-field="remark06" data-fieldname="remark06" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_remark06}">
+		{$label cdd_checklist_admin remark06 }	</label>
+	<div class="r-search-option">
+		{$searchtype_remark06}
+	</div>
+	<div class="r-search-field">
+		{$remark06_editcontrol}	</div>
+	<div class="r-search-field">
+		{$remark06_editcontrol1}
+	</div>
+	
+</div>
+
+{END remark06_fieldblock}
+											
+{BEGIN list07_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_list07}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="list07{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field15" {$item_integrated_search_field15} data-pageid="{$pageid}" data-field="list07" data-fieldname="list07" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_list07}">
+		{$label cdd_checklist_admin list07 }	</label>
+	<div class="r-search-option">
+		{$searchtype_list07}
+	</div>
+	<div class="r-search-field">
+		{$list07_editcontrol}	</div>
+	<div class="r-search-field">
+		{$list07_editcontrol1}
+	</div>
+	
+</div>
+
+{END list07_fieldblock}
+											
+{BEGIN remark07_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remark07}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="remark07{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field16" {$item_integrated_search_field16} data-pageid="{$pageid}" data-field="remark07" data-fieldname="remark07" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_remark07}">
+		{$label cdd_checklist_admin remark07 }	</label>
+	<div class="r-search-option">
+		{$searchtype_remark07}
+	</div>
+	<div class="r-search-field">
+		{$remark07_editcontrol}	</div>
+	<div class="r-search-field">
+		{$remark07_editcontrol1}
+	</div>
+	
+</div>
+
+{END remark07_fieldblock}
+											
+{BEGIN list08_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_list08}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="list08{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field17" {$item_integrated_search_field17} data-pageid="{$pageid}" data-field="list08" data-fieldname="list08" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_list08}">
+		{$label cdd_checklist_admin list08 }	</label>
+	<div class="r-search-option">
+		{$searchtype_list08}
+	</div>
+	<div class="r-search-field">
+		{$list08_editcontrol}	</div>
+	<div class="r-search-field">
+		{$list08_editcontrol1}
+	</div>
+	
+</div>
+
+{END list08_fieldblock}
+											
+{BEGIN remark08_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remark08}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="remark08{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field18" {$item_integrated_search_field18} data-pageid="{$pageid}" data-field="remark08" data-fieldname="remark08" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_remark08}">
+		{$label cdd_checklist_admin remark08 }	</label>
+	<div class="r-search-option">
+		{$searchtype_remark08}
+	</div>
+	<div class="r-search-field">
+		{$remark08_editcontrol}	</div>
+	<div class="r-search-field">
+		{$remark08_editcontrol1}
+	</div>
+	
+</div>
+
+{END remark08_fieldblock}
+											
+{BEGIN list09_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_list09}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="list09{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field19" {$item_integrated_search_field19} data-pageid="{$pageid}" data-field="list09" data-fieldname="list09" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_list09}">
+		{$label cdd_checklist_admin list09 }	</label>
+	<div class="r-search-option">
+		{$searchtype_list09}
+	</div>
+	<div class="r-search-field">
+		{$list09_editcontrol}	</div>
+	<div class="r-search-field">
+		{$list09_editcontrol1}
+	</div>
+	
+</div>
+
+{END list09_fieldblock}
+											
+{BEGIN remark09_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remark09}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="remark09{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field20" {$item_integrated_search_field20} data-pageid="{$pageid}" data-field="remark09" data-fieldname="remark09" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_remark09}">
+		{$label cdd_checklist_admin remark09 }	</label>
+	<div class="r-search-option">
+		{$searchtype_remark09}
+	</div>
+	<div class="r-search-field">
+		{$remark09_editcontrol}	</div>
+	<div class="r-search-field">
+		{$remark09_editcontrol1}
+	</div>
+	
+</div>
+
+{END remark09_fieldblock}
+											
+{BEGIN list10_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_list10}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="list10{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field21" {$item_integrated_search_field21} data-pageid="{$pageid}" data-field="list10" data-fieldname="list10" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_list10}">
+		{$label cdd_checklist_admin list10 }	</label>
+	<div class="r-search-option">
+		{$searchtype_list10}
+	</div>
+	<div class="r-search-field">
+		{$list10_editcontrol}	</div>
+	<div class="r-search-field">
+		{$list10_editcontrol1}
+	</div>
+	
+</div>
+
+{END list10_fieldblock}
+											
+{BEGIN remark10_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remark10}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="remark10{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field22" {$item_integrated_search_field22} data-pageid="{$pageid}" data-field="remark10" data-fieldname="remark10" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_remark10}">
+		{$label cdd_checklist_admin remark10 }	</label>
+	<div class="r-search-option">
+		{$searchtype_remark10}
+	</div>
+	<div class="r-search-field">
+		{$remark10_editcontrol}	</div>
+	<div class="r-search-field">
+		{$remark10_editcontrol1}
+	</div>
+	
+</div>
+
+{END remark10_fieldblock}
+											
+{BEGIN list11_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_list11}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="list11{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field23" {$item_integrated_search_field23} data-pageid="{$pageid}" data-field="list11" data-fieldname="list11" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_list11}">
+		{$label cdd_checklist_admin list11 }	</label>
+	<div class="r-search-option">
+		{$searchtype_list11}
+	</div>
+	<div class="r-search-field">
+		{$list11_editcontrol}	</div>
+	<div class="r-search-field">
+		{$list11_editcontrol1}
+	</div>
+	
+</div>
+
+{END list11_fieldblock}
+											
+{BEGIN remark11_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remark11}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="remark11{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field24" {$item_integrated_search_field24} data-pageid="{$pageid}" data-field="remark11" data-fieldname="remark11" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_remark11}">
+		{$label cdd_checklist_admin remark11 }	</label>
+	<div class="r-search-option">
+		{$searchtype_remark11}
+	</div>
+	<div class="r-search-field">
+		{$remark11_editcontrol}	</div>
+	<div class="r-search-field">
+		{$remark11_editcontrol1}
+	</div>
+	
+</div>
+
+{END remark11_fieldblock}
+											
+{BEGIN list12_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_list12}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="list12{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field25" {$item_integrated_search_field25} data-pageid="{$pageid}" data-field="list12" data-fieldname="list12" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_list12}">
+		{$label cdd_checklist_admin list12 }	</label>
+	<div class="r-search-option">
+		{$searchtype_list12}
+	</div>
+	<div class="r-search-field">
+		{$list12_editcontrol}	</div>
+	<div class="r-search-field">
+		{$list12_editcontrol1}
+	</div>
+	
+</div>
+
+{END list12_fieldblock}
+											
+{BEGIN remark12_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remark12}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="remark12{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field26" {$item_integrated_search_field26} data-pageid="{$pageid}" data-field="remark12" data-fieldname="remark12" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_remark12}">
+		{$label cdd_checklist_admin remark12 }	</label>
+	<div class="r-search-option">
+		{$searchtype_remark12}
+	</div>
+	<div class="r-search-field">
+		{$remark12_editcontrol}	</div>
+	<div class="r-search-field">
+		{$remark12_editcontrol1}
+	</div>
+	
+</div>
+
+{END remark12_fieldblock}
+											
+{BEGIN list13_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_list13}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="list13{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field27" {$item_integrated_search_field27} data-pageid="{$pageid}" data-field="list13" data-fieldname="list13" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_list13}">
+		{$label cdd_checklist_admin list13 }	</label>
+	<div class="r-search-option">
+		{$searchtype_list13}
+	</div>
+	<div class="r-search-field">
+		{$list13_editcontrol}	</div>
+	<div class="r-search-field">
+		{$list13_editcontrol1}
+	</div>
+	
+</div>
+
+{END list13_fieldblock}
+											
+{BEGIN remark13_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remark13}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="remark13{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field28" {$item_integrated_search_field28} data-pageid="{$pageid}" data-field="remark13" data-fieldname="remark13" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_remark13}">
+		{$label cdd_checklist_admin remark13 }	</label>
+	<div class="r-search-option">
+		{$searchtype_remark13}
+	</div>
+	<div class="r-search-field">
+		{$remark13_editcontrol}	</div>
+	<div class="r-search-field">
+		{$remark13_editcontrol1}
+	</div>
+	
+</div>
+
+{END remark13_fieldblock}
+											
+{BEGIN list14_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_list14}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="list14{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field29" {$item_integrated_search_field29} data-pageid="{$pageid}" data-field="list14" data-fieldname="list14" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_list14}">
+		{$label cdd_checklist_admin list14 }	</label>
+	<div class="r-search-option">
+		{$searchtype_list14}
+	</div>
+	<div class="r-search-field">
+		{$list14_editcontrol}	</div>
+	<div class="r-search-field">
+		{$list14_editcontrol1}
+	</div>
+	
+</div>
+
+{END list14_fieldblock}
+											
+{BEGIN remark14_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_remark14}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="remark14{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field30" {$item_integrated_search_field30} data-pageid="{$pageid}" data-field="remark14" data-fieldname="remark14" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_remark14}">
+		{$label cdd_checklist_admin remark14 }	</label>
+	<div class="r-search-option">
+		{$searchtype_remark14}
+	</div>
+	<div class="r-search-field">
+		{$remark14_editcontrol}	</div>
+	<div class="r-search-field">
+		{$remark14_editcontrol1}
+	</div>
+	
+</div>
+
+{END remark14_fieldblock}
+											
+{BEGIN results_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_results}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="results{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field31" {$item_integrated_search_field31} data-pageid="{$pageid}" data-field="results" data-fieldname="results" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_results}">
+		{$label cdd_checklist_admin results }	</label>
+	<div class="r-search-option">
+		{$searchtype_results}
+	</div>
+	<div class="r-search-field">
+		{$results_editcontrol}	</div>
+	<div class="r-search-field">
+		{$results_editcontrol1}
+	</div>
+	
+</div>
+
+{END results_fieldblock}
+											
+{BEGIN results2_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_results2}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="results2{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field32" {$item_integrated_search_field32} data-pageid="{$pageid}" data-field="results2" data-fieldname="results2" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_results2}">
+		{$label cdd_checklist_admin results2 }	</label>
+	<div class="r-search-option">
+		{$searchtype_results2}
+	</div>
+	<div class="r-search-field">
+		{$results2_editcontrol}	</div>
+	<div class="r-search-field">
+		{$results2_editcontrol1}
+	</div>
+	
+</div>
+
+{END results2_fieldblock}
+											
+{BEGIN results3_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_results3}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="results3{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field33" {$item_integrated_search_field33} data-pageid="{$pageid}" data-field="results3" data-fieldname="results3" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_results3}">
+		{$label cdd_checklist_admin results3 }	</label>
+	<div class="r-search-option">
+		{$searchtype_results3}
+	</div>
+	<div class="r-search-field">
+		{$results3_editcontrol}	</div>
+	<div class="r-search-field">
+		{$results3_editcontrol1}
+	</div>
+	
+</div>
+
+{END results3_fieldblock}
+											
+{BEGIN checked_date_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_checked_date}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="checked_date{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field34" {$item_integrated_search_field34} data-pageid="{$pageid}" data-field="checked_date" data-fieldname="checked_date" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_checked_date}">
+		{$label cdd_checklist_admin checked_date }	</label>
+	<div class="r-search-option">
+		{$searchtype_checked_date}
+	</div>
+	<div class="r-search-field">
+		{$checked_date_editcontrol}	</div>
+	<div class="r-search-field">
+		{$checked_date_editcontrol1}
+	</div>
+	
+</div>
+
+{END checked_date_fieldblock}
+											
+{BEGIN checked_by_cea_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_checked_by_cea}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="checked_by_cea{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field35" {$item_integrated_search_field35} data-pageid="{$pageid}" data-field="checked_by_cea" data-fieldname="checked_by_cea" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_checked_by_cea}">
+		{$label cdd_checklist_admin checked_by_cea }	</label>
+	<div class="r-search-option">
+		{$searchtype_checked_by_cea}
+	</div>
+	<div class="r-search-field">
+		{$checked_by_cea_editcontrol}	</div>
+	<div class="r-search-field">
+		{$checked_by_cea_editcontrol1}
+	</div>
+	
+</div>
+
+{END checked_by_cea_fieldblock}
+											
+{BEGIN representing_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_representing}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="representing{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field36" {$item_integrated_search_field36} data-pageid="{$pageid}" data-field="representing" data-fieldname="representing" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_representing}">
+		{$label cdd_checklist_admin representing }	</label>
+	<div class="r-search-option">
+		{$searchtype_representing}
+	</div>
+	<div class="r-search-field">
+		{$representing_editcontrol}	</div>
+	<div class="r-search-field">
+		{$representing_editcontrol1}
+	</div>
+	
+</div>
+
+{END representing_fieldblock}
+											
+{BEGIN cdd_checklist_customer_nric_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cdd_checklist_customer_nric}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cdd_checklist_customer_nric{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field37" {$item_integrated_search_field37} data-pageid="{$pageid}" data-field="cdd_checklist_customer_nric" data-fieldname="cdd_checklist_customer_nric" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cdd_checklist_customer_nric}">
+		{$label cdd_checklist_admin cdd_checklist_customer_nric }	</label>
+	<div class="r-search-option">
+		{$searchtype_cdd_checklist_customer_nric}
+	</div>
+	<div class="r-search-field">
+		{$cdd_checklist_customer_nric_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cdd_checklist_customer_nric_editcontrol1}
+	</div>
+	
+</div>
+
+{END cdd_checklist_customer_nric_fieldblock}
+											
+{BEGIN checked_by_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_checked_by}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="checked_by{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field38" {$item_integrated_search_field38} data-pageid="{$pageid}" data-field="checked_by" data-fieldname="checked_by" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_checked_by}">
+		{$label cdd_checklist_admin checked_by }	</label>
+	<div class="r-search-option">
+		{$searchtype_checked_by}
+	</div>
+	<div class="r-search-field">
+		{$checked_by_editcontrol}	</div>
+	<div class="r-search-field">
+		{$checked_by_editcontrol1}
+	</div>
+	
+</div>
+
+{END checked_by_fieldblock}
+											
+{BEGIN cdd_checklist_custype_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cdd_checklist_custype}  r-horizontal-field form-horizontal" 	
+	data-signal-error-for="cdd_checklist_custype{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field39" {$item_integrated_search_field39} data-pageid="{$pageid}" data-field="cdd_checklist_custype" data-fieldname="cdd_checklist_custype" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cdd_checklist_custype}">
+		{$label cdd_checklist_admin cdd_checklist_custype }	</label>
+	<div class="r-search-option">
+		{$searchtype_cdd_checklist_custype}
+	</div>
+	<div class="r-search-field">
+		{$cdd_checklist_custype_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cdd_checklist_custype_editcontrol1}
+	</div>
+	
+</div>
+
+{END cdd_checklist_custype_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} data-page=undefined >
+							{mlang_message SEARCH}			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							{mlang_message RESET}			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
