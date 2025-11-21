@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Print_button",
+	"beforeJsCode": "set_cookie('invoicePrint', 'print');\ndelete_cookie('invoiceSend');\ndelete_cookie('invoicePdf');\n$(\"a[id^=saveButton]\").click();\nreturn false;"
+}

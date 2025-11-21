@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Save_as_Draft",
+	"beforeJsCode": "var ctrl = Runner.getControl(pageid, 'status'); \nctrl.setValue(\"0\"); \n$(\"#saveButton1\").trigger('click');\nctrl.setValue(\"1\");\nreturn false;"
+}

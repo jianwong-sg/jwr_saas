@@ -1,0 +1,4 @@
+{
+	"name": "If the dispute remains outstanding Seller",
+	"serverCode": "// Put your code here.\necho \"<p style='text-align:justify'>If the dispute remains \n      outstanding (i.e. the Seller has elected not to mediate or the dispute is \n      not resolved by mediation), the dispute shall be referred to and finally \n      resolved by arbitration in Singapore under the arbitration scheme \n      prescribed by the CEA, in accordance with such rules as may be prescribed, \n      unless the Seller elects in writing not to arbitrate.</p>\n      \";"
+}

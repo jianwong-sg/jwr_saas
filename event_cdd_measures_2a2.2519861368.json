@@ -1,0 +1,4 @@
+{
+	"name": "cdd_measures_2a2",
+	"serverCode": "// Put your code here.\necho \"* If there \n      is a partial name match, salesperson should find out whether the \n      nationality and age range of the client match the information provided in \n      the UN Sanction Lists. If there is a nationality and age range match, \n      answer “Yes” to this question.\n      \";"
+}

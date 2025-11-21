@@ -1,0 +1,4 @@
+{
+	"name": "header1",
+	"serverCode": "echo '<div class=\"alert alert-info\" style=\"text-align:center;background-color:#fffefb;margin-bottom:0px;padding: 5px;\">\nUse <b>admin/admin</b> to login\n</div>';"
+}

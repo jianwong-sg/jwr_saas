@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Add_folder1",
+	"beforeJsCode": "// Put your code here.\n\n // Uncomment the following line to prevent execution of \"Server\" and \"Client After\" events.\n // return false;"
+}

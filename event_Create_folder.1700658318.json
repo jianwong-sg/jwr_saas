@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Create_folder",
+	"beforeJsCode": "Runner.docManager.createFolder();"
+}

@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Re_post_selected31",
+	"serverCode": "if($params['selected'])\n{\n$result[\"selected\"] = $params['selected'];\n$c=0;\nforeach($result[\"selected\"] as $v)\n{\n$sql = \"UPDATE `listings` SET `status`='1' WHERE `listingid`='\".$v.\"'\";\nCustomQuery($sql);\n/////\n$sql_a = \"select date_posted from `listings` WHERE `listingid`='\".$v.\"'\";\n$rs=CustomQuery($sql_a);\n$row=db_fetch_array($rs);\n\n\n$sql_b = \"UPDATE `listings` SET `date_posted`='\".date(\"Y-m-d H:i:s\",strtotime(\"+7 hour\")).\"' WHERE\n`date_posted`='\".$row[\"date_posted\"].\"'\";\n\nCustomQuery($sql_b);\n\n$c++;\n}\n$result[\"c\"] =$c;\n}",
+	"beforeJsCode": "var atLeastOneIsChecked = $('input[name=\"selection[]\"]:checked').length > 0;\nif(atLeastOneIsChecked)\n{\nvar selected = new Array();\n\n$('input[name=\"selection[]\"]:checked').each(function()\n{\nselected.push($(this).val());\n});\nparams['selected'] = selected;\n}\nelse\n{\nalert('Please select listing to Re-post')\n}",
+	"afterJsCode": "if(result[\"c\"])\n{\nvar message = result[\"c\"] + \" Listing(s) Re-posted.\";\nalert(message);\nlocalStorage[\"posStorage\"] = $(window).scrollTop(); location.reload(true);\n}"
+}

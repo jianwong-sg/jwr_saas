@@ -1,0 +1,2237 @@
+{
+	"sql": "SELECT\nid,\nid_detail,\noccupier_name,\noccupier_id,\noccupier_occupation,\nfile_upload,\noccupier_relationship,\noccupier_nationality,\noccupier_gender,\nupdatedate\nFROM rental_main_detail_occupier",
+	"connId": "Tables",
+	"originalTable": "rental_main_detail_occupier",
+	"name": "rental_main_detail_occupier",
+	"shortTableName": "rental_main_detail_occupier",
+	"caseSensitiveSearch": "",
+	"tableOwnerIdField": "id",
+	"usersOwnerIdField": "active",
+	"pageSizeSelectorRecords": [
+		"10",
+		"20",
+		"30",
+		"50",
+		"100",
+		"500",
+		"-1"
+	],
+	"pageSizeSelectorGroups": [
+		"1",
+		"3",
+		"5",
+		"10",
+		"50",
+		"100",
+		"-1"
+	],
+	"keyFields": [
+		"id"
+	],
+	"masterTables": [
+		{
+			"table": 1652199774,
+			"detailsKeys": [
+				"id_detail"
+			],
+			"masterKeys": [
+				"id"
+			]
+		}
+	],
+	"detailsBadgeColor": "cd5c5c",
+	"fields": [
+		{
+			"name": "id",
+			"sqlExpression": "id",
+			"strField": "id",
+			"type": 3,
+			"autoinc": true,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"validateAs": "Number",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Id"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "rental_main_detail_occupier"
+		},
+		{
+			"name": "id_detail",
+			"sqlExpression": "id_detail",
+			"strField": "id_detail",
+			"type": 3,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Number",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Id Detail"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "rental_main_detail_occupier"
+		},
+		{
+			"name": "occupier_name",
+			"sqlExpression": "occupier_name",
+			"strField": "occupier_name",
+			"type": 201,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "name",
+					"lookupDisplayField": "name",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "occupier_id",
+							"lookupField": "nric"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Occupier Name"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "rental_main_detail_occupier"
+		},
+		{
+			"name": "occupier_id",
+			"sqlExpression": "occupier_id",
+			"strField": "occupier_id",
+			"type": 200,
+			"separateEditViewFormats": true,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				},
+				{
+					"pageType": "list",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				},
+				{
+					"pageType": "print",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"required": true,
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "nric",
+					"lookupDisplayField": "nric",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				},
+				{
+					"format": "Lookup wizard",
+					"pageType": "register",
+					"required": true,
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "nric",
+					"lookupDisplayField": "nric",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				},
+				{
+					"format": "Lookup wizard",
+					"pageType": "add",
+					"required": true,
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "nric",
+					"lookupDisplayField": "nric",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupAutofillFields": [
+						{
+							"masterField": "invcust_id",
+							"lookupField": "id"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				},
+				{
+					"format": "Lookup wizard",
+					"pageType": "search",
+					"required": true,
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "nric",
+					"lookupDisplayField": "nric",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "ID #"
+			},
+			"tooltip": {
+				"English": "NRIC/FIN/Passport #"
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "rental_main_detail_occupier"
+		},
+		{
+			"name": "occupier_occupation",
+			"sqlExpression": "occupier_occupation",
+			"strField": "occupier_occupation",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "occupation",
+					"lookupDisplayField": "occupation",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "occupier_id",
+							"lookupField": "nric"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Occupation"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "rental_main_detail_occupier"
+		},
+		{
+			"name": "file_upload",
+			"sqlExpression": "file_upload",
+			"strField": "file_upload",
+			"type": 201,
+			"viewFormats": [
+				{
+					"format": "Document Download",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"imageShowThumbnail": true,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Document upload",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileResize": true,
+					"fileCreateThumbnail": true,
+					"fileThumbnailSize": 150,
+					"fileSizeLimit": 5000,
+					"fileTypes": [
+						"doc",
+						"docx",
+						"jpeg",
+						"jpg",
+						"pdf",
+						"png",
+						"txt"
+					],
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"deleteFile": true,
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "ID Upload"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "rental_main_detail_occupier"
+		},
+		{
+			"name": "occupier_relationship",
+			"sqlExpression": "occupier_relationship",
+			"strField": "occupier_relationship",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxSize": 150,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"Spouse",
+						"Partner",
+						"Sibling",
+						"Son",
+						"Daughter",
+						"Relative",
+						"Parent",
+						"Friend",
+						"Un Related"
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Relationship To Tenant"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "rental_main_detail_occupier"
+		},
+		{
+			"name": "occupier_nationality",
+			"sqlExpression": "occupier_nationality",
+			"strField": "occupier_nationality",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 150,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "nationality",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "nationality",
+					"lookupDisplayField": "nationality",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Nationality"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "rental_main_detail_occupier"
+		},
+		{
+			"name": "occupier_gender",
+			"sqlExpression": "occupier_gender",
+			"strField": "occupier_gender",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"Male",
+						"Female"
+					],
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "gender",
+					"lookupDisplayField": "gender",
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "occupier_id",
+							"lookupField": "nric"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Gender"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "rental_main_detail_occupier"
+		},
+		{
+			"name": "updatedate",
+			"sqlExpression": "updatedate",
+			"strField": "updatedate",
+			"type": 7,
+			"separateEditViewFormats": true,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				},
+				{
+					"format": "Short Date",
+					"pageType": "list",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				},
+				{
+					"format": "Short Date",
+					"pageType": "print",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"defaultValue": "now()",
+					"autoUpdateValue": "now()",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				},
+				{
+					"format": "Readonly",
+					"pageType": "register",
+					"defaultValue": "now()",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				},
+				{
+					"format": "Readonly",
+					"pageType": "add",
+					"defaultValue": "now()",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				},
+				{
+					"format": "Readonly",
+					"pageType": "search",
+					"defaultValue": "now()",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Last Updated"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "rental_main_detail_occupier"
+		}
+	],
+	"warnLeavingEdit": true,
+	"afterEditAction": 0,
+	"afterEditDetails": 153,
+	"afterAddAction": 3,
+	"afterAddDetail": 153,
+	"eventHandlers": [
+		{
+			"eventId": "EVENT_BEFOREADD",
+			"pageType": "add",
+			"code": "$values[\"occupier_name\"]=strtoupper($values[\"occupier_name\"]);\n$values[\"occupier_id\"]=strtoupper($values[\"occupier_id\"]);\n$values[\"occupier_occupation\"]=strtoupper($values[\"occupier_occupation\"]);\n$values[\"occupier_relationship\"]=strtoupper($values[\"occupier_relationship\"]);\n$values[\"occupier_nationality\"]=strtoupper($values[\"occupier_nationality\"]);\n$values[\"occupier_gender\"]=strtoupper($values[\"occupier_gender\"]);\n//Insert or update record in invcustomers\nglobal $conn;\n$strSQLExists = \"SELECT * FROM invcustomers WHERE nric='\".strtoupper($values[\"occupier_id\"]).\"'\";\n$rsExists = db_query($strSQLExists,$conn);\n$data=db_fetch_array($rsExists); \nif($data)\n{ \n// if record exists do something \n$sql = \"Update invcustomers SET \nname='\".strtoupper($values['occupier_name']).\"',\noccupation='\".strtoupper($values['occupier_occupation']).\"',\nrelationship='\".strtoupper($values['occupier_relationship']).\"',\nnationality='\".strtoupper($values['occupier_nationality']).\"',\ngender='\".strtoupper($values['occupier_gender']).\"',\ndoc_upload='\".$values['file_upload'].\"',\nupdatedate='\".$values['updatedate'].\"'\nWHERE nric='\".$values['occupier_id'].\"'\";\nCustomQuery($sql);\n} \nelse \n{ \n// if dont exist do something else \n$sql = \"INSERT INTO invcustomers (name, nric, occupation, relationship,\nnationality, gender, doc_upload, updatedate) values (\n'\".strtoupper($values[\"occupier_name\"]).\"',\n'\".strtoupper($values[\"occupier_id\"]).\"',\n'\".strtoupper($values[\"occupier_occupation\"]).\"',\n'\".strtoupper($values[\"occupier_relationship\"]).\"',\n'\".strtoupper($values[\"occupier_nationality\"]).\"',\n'\".strtoupper($values[\"occupier_gender\"]).\"',\n'\".$values[\"file_upload\"].\"',\n'\".$values[\"updatedate\"].\"'\n)\";\nCustomQuery($sql);\n} \n\nreturn true;"
+		},
+		{
+			"eventId": "EVENT_BEFOREEDIT",
+			"pageType": "edit",
+			"code": "$values[\"occupier_name\"]=strtoupper($values[\"occupier_name\"]);\n$values[\"occupier_id\"]=strtoupper($values[\"occupier_id\"]);\n$values[\"occupier_occupation\"]=strtoupper($values[\"occupier_occupation\"]);\n$values[\"occupier_relationship\"]=strtoupper($values[\"occupier_relationship\"]);\n$values[\"occupier_nationality\"]=strtoupper($values[\"occupier_nationality\"]);\n$values[\"occupier_gender\"]=strtoupper($values[\"occupier_gender\"]);\n//Insert or update record in invcustomers\nglobal $conn;\n$strSQLExists = \"SELECT * FROM invcustomers WHERE nric='\".strtoupper($values[\"occupier_id\"]).\"'\";\n$rsExists = db_query($strSQLExists,$conn);\n$data=db_fetch_array($rsExists); \nif($data)\n{ \n// if record exists do something \n$sql = \"Update invcustomers SET \nname='\".strtoupper($values['occupier_name']).\"',\noccupation='\".strtoupper($values['occupier_occupation']).\"',\nrelationship='\".strtoupper($values['occupier_relationship']).\"',\nnationality='\".strtoupper($values['occupier_nationality']).\"',\ngender='\".strtoupper($values['occupier_gender']).\"',\ndoc_upload='\".$values['file_upload'].\"',\nupdatedate='\".$values['updatedate'].\"'\nWHERE nric='\".$values['occupier_id'].\"'\";\nCustomQuery($sql);\n} \nelse \n{ \n// if dont exist do something else \n$sql = \"INSERT INTO invcustomers (name, nric, occupation, relationship,\nnationality, gender, doc_upload, updatedate) values (\n'\".strtoupper($values[\"occupier_name\"]).\"',\n'\".strtoupper($values[\"occupier_id\"]).\"',\n'\".strtoupper($values[\"occupier_occupation\"]).\"',\n'\".strtoupper($values[\"occupier_relationship\"]).\"',\n'\".strtoupper($values[\"occupier_nationality\"]).\"',\n'\".strtoupper($values[\"occupier_gender\"]).\"',\n'\".$values[\"file_upload\"].\"',\n'\".$values[\"updatedate\"].\"'\n)\";\nCustomQuery($sql);\n} \n\nreturn true;"
+		}
+	],
+	"sortByFields": {
+		"sortOrder": []
+	},
+	"pages": [
+		{
+			"id": "add",
+			"type": "add",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "add-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "add-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_save",
+								"add_reset",
+								"add_back_list",
+								"add_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "add-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field1",
+								"integrated_edit_field2",
+								"integrated_edit_field3",
+								"integrated_edit_field4",
+								"integrated_edit_field5",
+								"integrated_edit_field6",
+								"integrated_edit_field7"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"add_header": {
+					"type": "add_header"
+				},
+				"add_back_list": {
+					"type": "add_back_list"
+				},
+				"add_cancel": {
+					"type": "add_cancel"
+				},
+				"add_message": {
+					"type": "add_message"
+				},
+				"add_save": {
+					"type": "add_save"
+				},
+				"add_reset": {
+					"type": "add_reset"
+				},
+				"integrated_edit_field": {
+					"field": "updatedate",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field1": {
+					"field": "occupier_relationship",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field2": {
+					"field": "occupier_nationality",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field3": {
+					"field": "occupier_gender",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "occupier_id",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "occupier_name",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field6": {
+					"field": "occupier_occupation",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field7": {
+					"field": "file_upload",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "edit",
+			"type": "edit",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "edit-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "edit-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_save",
+								"edit_back_list",
+								"edit_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"prev",
+								"next",
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "edit-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field1",
+								"integrated_edit_field2",
+								"integrated_edit_field3",
+								"integrated_edit_field4",
+								"integrated_edit_field5",
+								"integrated_edit_field6",
+								"integrated_edit_field7"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"edit_header": {
+					"type": "edit_header"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"edit_reset"
+					]
+				},
+				"edit_reset": {
+					"type": "edit_reset"
+				},
+				"edit_message": {
+					"type": "edit_message"
+				},
+				"edit_save": {
+					"type": "edit_save"
+				},
+				"edit_back_list": {
+					"type": "edit_back_list"
+				},
+				"edit_close": {
+					"type": "edit_close"
+				},
+				"next": {
+					"type": "next"
+				},
+				"prev": {
+					"type": "prev"
+				},
+				"integrated_edit_field": {
+					"field": "updatedate",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"updateOnEdit": true
+				},
+				"integrated_edit_field1": {
+					"field": "occupier_relationship",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"updateOnEdit": true
+				},
+				"integrated_edit_field2": {
+					"field": "occupier_nationality",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"updateOnEdit": true
+				},
+				"integrated_edit_field3": {
+					"field": "occupier_gender",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"updateOnEdit": true
+				},
+				"integrated_edit_field4": {
+					"field": "occupier_id",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"updateOnEdit": true
+				},
+				"integrated_edit_field5": {
+					"field": "occupier_name",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"updateOnEdit": true
+				},
+				"integrated_edit_field6": {
+					"field": "occupier_occupation",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"updateOnEdit": true
+				},
+				"integrated_edit_field7": {
+					"field": "file_upload",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"updateOnEdit": true
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "export",
+			"type": "export",
+			"layoutId": "first",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "export-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "export-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_field",
+								"export_field1",
+								"export_field2",
+								"export_field3",
+								"export_field4",
+								"export_field5",
+								"export_field6",
+								"export_field7",
+								"export_field8",
+								"export_field9"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "export-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"export_export",
+								"export_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"export_header": {
+					"type": "export_header"
+				},
+				"export_export": {
+					"type": "export_export"
+				},
+				"export_cancel": {
+					"type": "export_cancel"
+				},
+				"export_field": {
+					"field": "id",
+					"type": "export_field"
+				},
+				"export_field1": {
+					"field": "id_detail",
+					"type": "export_field"
+				},
+				"export_field2": {
+					"field": "occupier_name",
+					"type": "export_field"
+				},
+				"export_field3": {
+					"field": "occupier_id",
+					"type": "export_field"
+				},
+				"export_field4": {
+					"field": "occupier_occupation",
+					"type": "export_field"
+				},
+				"export_field5": {
+					"field": "file_upload",
+					"type": "export_field"
+				},
+				"export_field6": {
+					"field": "occupier_relationship",
+					"type": "export_field"
+				},
+				"export_field7": {
+					"field": "occupier_nationality",
+					"type": "export_field"
+				},
+				"export_field8": {
+					"field": "occupier_gender",
+					"type": "export_field"
+				},
+				"export_field9": {
+					"field": "updatedate",
+					"type": "export_field"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"exportFormat": 2,
+			"exportDelimiter": ",",
+			"exportSelectDelimiter": false,
+			"exportSelectFields": false
+		},
+		{
+			"id": "import",
+			"type": "import",
+			"layoutId": "first",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "import-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "import-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_field",
+								"import_field1",
+								"import_field2",
+								"import_field3",
+								"import_field4",
+								"import_field5",
+								"import_field6",
+								"import_field7",
+								"import_field8",
+								"import_field9"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"import_header": {
+					"type": "import_header"
+				},
+				"import_field": {
+					"field": "id",
+					"type": "import_field"
+				},
+				"import_field1": {
+					"field": "id_detail",
+					"type": "import_field"
+				},
+				"import_field2": {
+					"field": "occupier_name",
+					"type": "import_field"
+				},
+				"import_field3": {
+					"field": "occupier_id",
+					"type": "import_field"
+				},
+				"import_field4": {
+					"field": "occupier_occupation",
+					"type": "import_field"
+				},
+				"import_field5": {
+					"field": "file_upload",
+					"type": "import_field"
+				},
+				"import_field6": {
+					"field": "occupier_relationship",
+					"type": "import_field"
+				},
+				"import_field7": {
+					"field": "occupier_nationality",
+					"type": "import_field"
+				},
+				"import_field8": {
+					"field": "occupier_gender",
+					"type": "import_field"
+				},
+				"import_field9": {
+					"field": "updatedate",
+					"type": "import_field"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "topbar",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								},
+								{
+									"cell": "c4"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add",
+								"delete"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"details_found",
+								"page_size",
+								"print_panel"
+							]
+						},
+						"c3": {
+							"model": "c3",
+							"items": []
+						},
+						"c4": {
+							"model": "c4",
+							"items": [
+								"sort_dropdown"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "topbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"logo",
+								"menu"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search",
+								"list_options",
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "list-vbar",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"breadcrumb"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-columns-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5"
+							]
+						},
+						"c2": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field6",
+								"simple_grid_field7"
+							]
+						}
+					},
+					"deferredItems": [
+						"grid_checkbox",
+						"grid_checkbox_head",
+						"grid_edit"
+					],
+					"buildType": 2,
+					"columnCount": 3
+				}
+			},
+			"items": {
+				"page_size": {
+					"type": "page_size"
+				},
+				"details_found": {
+					"type": "details_found"
+				},
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search"
+				},
+				"pagination": {
+					"type": "pagination"
+				},
+				"grid_checkbox": {
+					"type": "grid_checkbox"
+				},
+				"grid_checkbox_head": {
+					"type": "grid_checkbox_head"
+				},
+				"search_panel": {
+					"type": "search_panel",
+					"items": [
+						"search_panel_field3",
+						"search_panel_field2"
+					],
+					"_flexiblePanel": true
+				},
+				"list_options": {
+					"type": "list_options",
+					"items": [
+						"export_selected",
+						"delete_selected",
+						"-1",
+						"advsearch_link",
+						"-",
+						"show_search_panel",
+						"hide_search_panel",
+						"-2",
+						"export",
+						"-3",
+						"import"
+					]
+				},
+				"show_search_panel": {
+					"type": "show_search_panel"
+				},
+				"hide_search_panel": {
+					"type": "hide_search_panel"
+				},
+				"search_panel_field2": {
+					"field": "occupier_name",
+					"type": "search_panel_field",
+					"alwaysOnPanel": false,
+					"required": false
+				},
+				"search_panel_field3": {
+					"field": "occupier_id",
+					"type": "search_panel_field",
+					"alwaysOnPanel": false,
+					"required": false
+				},
+				"print_panel": {
+					"type": "print_panel",
+					"items": [
+						"print_scope",
+						"print_records",
+						"print_button"
+					]
+				},
+				"print_scope": {
+					"type": "print_scope"
+				},
+				"print_button": {
+					"type": "print_button"
+				},
+				"print_records": {
+					"type": "print_records"
+				},
+				"add": {
+					"type": "add",
+					"popup": false
+				},
+				"grid_edit": {
+					"type": "grid_edit",
+					"popup": false
+				},
+				"delete": {
+					"type": "delete"
+				},
+				"delete_selected": {
+					"type": "delete_selected"
+				},
+				"-": {
+					"type": "-"
+				},
+				"sort_dropdown": {
+					"type": "sort_dropdown"
+				},
+				"advsearch_link": {
+					"type": "advsearch_link"
+				},
+				"-1": {
+					"type": "-"
+				},
+				"simple_grid_field": {
+					"field": "occupier_relationship",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field1": {
+					"field": "occupier_nationality",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field2": {
+					"field": "occupier_gender",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field3": {
+					"field": "updatedate",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field4": {
+					"field": "occupier_id",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field5": {
+					"field": "occupier_name",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field6": {
+					"field": "occupier_occupation",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field7": {
+					"field": "file_upload",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"changepassword_link"
+					]
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": false
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"export": {
+					"type": "export"
+				},
+				"-2": {
+					"type": "-"
+				},
+				"export_selected": {
+					"type": "export_selected"
+				},
+				"import": {
+					"type": "import"
+				},
+				"-3": {
+					"type": "-"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				}
+			},
+			"spreadsheetGrid": false,
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "print",
+			"type": "print",
+			"layoutId": "basic",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "print-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"print_pages"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "print-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "print-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"print_header",
+								"print_subheader"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-columns-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7"
+							]
+						}
+					},
+					"deferredItems": [],
+					"buildType": 2,
+					"columnCount": 2
+				}
+			},
+			"items": {
+				"print_header": {
+					"type": "print_header"
+				},
+				"print_subheader": {
+					"type": "print_subheader"
+				},
+				"print_pages": {
+					"type": "print_pages"
+				},
+				"simple_grid_field": {
+					"field": "occupier_relationship",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "occupier_nationality",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "occupier_gender",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "updatedate",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "occupier_id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "occupier_name",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "occupier_occupation",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "file_upload",
+					"type": "simple_grid_field"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "search",
+			"type": "search",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "search-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "search-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_search",
+								"search_reset",
+								"search_back_list",
+								"search_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "search-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-search",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_search_field",
+								"integrated_search_field1",
+								"integrated_search_field2",
+								"integrated_search_field3",
+								"integrated_search_field4",
+								"integrated_search_field5",
+								"integrated_search_field6",
+								"integrated_search_field7",
+								"integrated_search_field8",
+								"integrated_search_field9"
+							]
+						}
+					},
+					"deferredItems": [],
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"search_header": {
+					"type": "search_header"
+				},
+				"search_reset": {
+					"type": "search_reset"
+				},
+				"search_back_list": {
+					"type": "search_back_list"
+				},
+				"search_search": {
+					"type": "search_search"
+				},
+				"search_cancel": {
+					"type": "search_cancel"
+				},
+				"integrated_search_field": {
+					"field": "id",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field1": {
+					"field": "id_detail",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field2": {
+					"field": "occupier_relationship",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field3": {
+					"field": "occupier_nationality",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field4": {
+					"field": "occupier_gender",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field5": {
+					"field": "updatedate",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field6": {
+					"field": "occupier_id",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field7": {
+					"field": "occupier_name",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field8": {
+					"field": "occupier_occupation",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field9": {
+					"field": "file_upload",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"English": "Occupier Detail"
+	}
+}

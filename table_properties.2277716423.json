@@ -1,0 +1,5914 @@
+{
+	"orderInfo": [
+		{
+			"index": 3,
+			"field": "prop_address",
+			"expr": "prop_address",
+			"asc": true
+		}
+	],
+	"sql": "SELECT\nid,\nprop_name,\nprop_address,\nprop_postal,\nland_size,\nbuiltup,\ntenure,\nyear_built,\n`TOP`,\ndocuserid,\ntypes,\nkind,\nhdb_town,\nhdb_scheme,\ncusid,\nagentid,\nphotos,\nland_size_unit,\nbuiltup_unit\nFROM properties\nORDER BY prop_address",
+	"connId": "Tables",
+	"originalTable": "properties",
+	"name": "properties",
+	"shortTableName": "properties",
+	"dbType": 0,
+	"hideFilterUntilSearch": true,
+	"caseSensitiveSearch": "",
+	"tableOwnerIdField": "agentid",
+	"usersOwnerIdField": "username",
+	"advancedSecurityType": 1,
+	"clickActions": {
+		"row": {
+			"action": "open",
+			"codeData": {
+				"snippet": null
+			},
+			"gridData": {
+				"action": "checkbox",
+				"table": "prop_cust",
+				"tableGid": 479413511
+			},
+			"openData": {
+				"how": "popup",
+				"page": "view",
+				"table": "prop_cust",
+				"url": "",
+				"tableGid": 479413511
+			}
+		},
+		"fields": {
+			"TOP": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"agent": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"builtup": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"builtup_unit": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"cusid": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"docuserid": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"hdb_scheme": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"hdb_town": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"id": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"kind": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"land_size": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"land_size_unit": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"photos": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"prop_address": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"prop_name": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"prop_postal": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"tenure": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"types": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"year_built": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			}
+		}
+	},
+	"hideEmptyFieldsOnView": true,
+	"pageSizeSelectorRecords": [
+		"10",
+		"20",
+		"30",
+		"50",
+		"100",
+		"500",
+		"-1"
+	],
+	"pageSizeSelectorGroups": [
+		"1",
+		"3",
+		"5",
+		"10",
+		"50",
+		"100",
+		"-1"
+	],
+	"chartSettings": {
+		"chartRefreshTime": 300,
+		"accumulationAppearance": 1
+	},
+	"keyFields": [
+		"id"
+	],
+	"detailsBadgeColor": "D2B48C",
+	"detailsTables": [
+		479413511
+	],
+	"fields": [
+		{
+			"name": "id",
+			"sqlExpression": "id",
+			"index": 1,
+			"strField": "id",
+			"googleLikeSearch": false,
+			"type": 3,
+			"autoinc": true,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"required": true,
+					"validateAs": "Number",
+					"textHTML5Input": "1",
+					"lookupTableConnection": "Tables",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"allSearchOptionsSelected": true,
+			"label": {
+				"English": "ID"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "prop_name",
+			"sqlExpression": "prop_name",
+			"index": 2,
+			"strField": "prop_name",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupTable": "prop_data",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "prop_name",
+					"lookupDisplayField": "prop_name",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "prop_address",
+							"lookupField": "prop_address"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Name of Development"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": "E.g The Jade"
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "prop_address",
+			"sqlExpression": "prop_address",
+			"index": 3,
+			"strField": "prop_address",
+			"type": 201,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"denyDuplicate": true,
+					"denyDuplicateMessage": {
+						"text": "This address already in record",
+						"type": 0
+					},
+					"textboxSize": 300,
+					"textHTML5Input": "0",
+					"lookupFreeInput": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Address"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "prop_postal",
+			"sqlExpression": "prop_postal",
+			"index": 4,
+			"strField": "prop_postal",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"denyDuplicateMessage": {
+						"text": "Address of this postal code already exists",
+						"type": 0
+					},
+					"textboxSize": 100,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupTable": "prop_data",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "prop_postal",
+					"lookupDisplayField": "prop_postal",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "prop_address",
+							"lookupField": "prop_address"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Postal Code"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "land_size",
+			"sqlExpression": "land_size",
+			"index": 5,
+			"strField": "land_size",
+			"googleLikeSearch": false,
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Number",
+					"textboxSize": 60,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupTableConnection": "Tables",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"allSearchOptionsSelected": true,
+			"label": {
+				"English": "Land"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "builtup",
+			"sqlExpression": "builtup",
+			"index": 6,
+			"strField": "builtup",
+			"googleLikeSearch": false,
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Number",
+					"textboxSize": 60,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupTableConnection": "Tables",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"allSearchOptionsSelected": true,
+			"label": {
+				"English": "Builtup"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "tenure",
+			"sqlExpression": "tenure",
+			"index": 7,
+			"strField": "tenure",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxSize": 150,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"FreeHold",
+						"20-yrs LeaseHold",
+						"30-yrs LeaseHold",
+						"60-yrs LeaseHold",
+						"99-yrs LeaseHold",
+						"999-yrs LeaseHold",
+						"9999-yrs LeaseHold"
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"searchOptions": [
+				"Contains",
+				"Equals",
+				"Starts with",
+				"Empty",
+				"NOT Contains",
+				"NOT Equals",
+				"NOT Starts with",
+				"NOT Empty"
+			],
+			"label": {
+				"English": "Tenure"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "year_built",
+			"sqlExpression": "year_built",
+			"index": 8,
+			"strField": "year_built",
+			"googleLikeSearch": false,
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Number",
+					"textboxSize": 50,
+					"textboxMaxLenth": 4,
+					"textHTML5Input": "0",
+					"lookupTableConnection": "Tables",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 2,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"allSearchOptionsSelected": true,
+			"label": {
+				"English": "Year Built"
+			},
+			"tooltip": {
+				"English": "E.g 2014"
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "TOP",
+			"sqlExpression": "`TOP`",
+			"index": 9,
+			"strField": "TOP",
+			"googleLikeSearch": false,
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"textboxSize": 50,
+					"textboxMaxLenth": 7,
+					"textHTML5Input": "0",
+					"lookupTableConnection": "Tables",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 2,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"allSearchOptionsSelected": true,
+			"label": {
+				"English": "TOP"
+			},
+			"tooltip": {
+				"English": "E.g 08/2014"
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "docuserid",
+			"sqlExpression": "docuserid",
+			"index": 10,
+			"strField": "docuserid",
+			"googleLikeSearch": false,
+			"type": 3,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"validateAs": "Number",
+					"textHTML5Input": "1",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"allSearchOptionsSelected": true,
+			"label": {
+				"English": "ID User"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "types",
+			"sqlExpression": "types",
+			"index": 11,
+			"strField": "types",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "prop_type",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "property_type",
+					"lookupDisplayField": "property_type",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"searchOptions": [
+				"Contains",
+				"Equals",
+				"Starts with",
+				"Empty",
+				"NOT Contains",
+				"NOT Equals",
+				"NOT Starts with",
+				"NOT Empty"
+			],
+			"label": {
+				"English": "Property Type"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "kind",
+			"sqlExpression": "kind",
+			"index": 12,
+			"strField": "kind",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "prop_kind",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "property_kind",
+					"lookupDisplayField": "property_kind",
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "types",
+							"lookupField": "property_type"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"searchOptions": [
+				"Contains",
+				"Equals",
+				"Starts with",
+				"Empty",
+				"NOT Contains",
+				"NOT Equals",
+				"NOT Starts with",
+				"NOT Empty"
+			],
+			"label": {
+				"English": "Property Kind"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "hdb_town",
+			"sqlExpression": "hdb_town",
+			"index": 13,
+			"strField": "hdb_town",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "hdb_towns",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "towns",
+					"lookupDisplayField": "towns",
+					"lookupOrderBy": "towns",
+					"lookupAllowAdd": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"searchOptions": [
+				"Contains",
+				"Equals",
+				"Starts with",
+				"Empty",
+				"NOT Contains",
+				"NOT Equals",
+				"NOT Starts with",
+				"NOT Empty"
+			],
+			"label": {
+				"English": "HDB Town"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "hdb_scheme",
+			"sqlExpression": "hdb_scheme",
+			"index": 14,
+			"strField": "hdb_scheme",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 80,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "hdb_scheme",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "hdb_scheme",
+					"lookupDisplayField": "hdb_scheme",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"searchOptions": [
+				"Contains",
+				"Equals",
+				"Starts with",
+				"Empty",
+				"NOT Contains",
+				"NOT Equals",
+				"NOT Starts with",
+				"NOT Empty"
+			],
+			"label": {
+				"English": "HDB Scheme"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "cusid",
+			"sqlExpression": "cusid",
+			"index": 15,
+			"strField": "cusid",
+			"googleLikeSearch": false,
+			"type": 3,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"validateAs": "Number",
+					"textHTML5Input": "1",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Cus ID"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "agentid",
+			"sqlExpression": "agentid",
+			"index": 16,
+			"strField": "agentid",
+			"type": 201,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"defaultValue": "$_SESSION[\"UserID\"]",
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "agentid",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Agent CEA"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "photos",
+			"sqlExpression": "photos",
+			"index": 17,
+			"strField": "photos",
+			"googleLikeSearch": false,
+			"type": 201,
+			"viewFormats": [
+				{
+					"format": "File-based Image",
+					"imageWidth": 300,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"imageShowThumbnail": true,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Document upload",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileResize": true,
+					"fileCreateThumbnail": true,
+					"fileThumbnailSize": 150,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"uploadFolder": "photos",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Prop Images"
+			},
+			"tooltip": {
+				"English": "Images of property"
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "land_size_unit",
+			"sqlExpression": "land_size_unit",
+			"index": 18,
+			"strField": "land_size_unit",
+			"googleLikeSearch": false,
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"defaultValue": "\"Sqf\"",
+					"textboxSize": 60,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"Sqf",
+						"Sqm"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Sqf/Sqm"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		},
+		{
+			"name": "builtup_unit",
+			"sqlExpression": "builtup_unit",
+			"index": 19,
+			"strField": "builtup_unit",
+			"googleLikeSearch": false,
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"defaultValue": "\"Sqf\"",
+					"textboxSize": 60,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"Sqf",
+						"Sqm"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Sqf/Sqm"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "properties"
+		}
+	],
+	"afterEditAction": 0,
+	"afterEditDetails": 149,
+	"afterAddAction": 0,
+	"afterAddDetail": 149,
+	"eventHandlers": [
+		{
+			"eventId": "EVENT_JS_ONLOAD",
+			"pageType": "add",
+			"code": "//hide controls on page load\npageObj.hideField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.hideField(\"prop_name\");\npageObj.hideField(\"prop_address\");\npageObj.hideField(\"prop_postal\");\n\npageObj.hideField(\"land_size\");\n//pageObj.hideField(\"land_size_unit\");\npageObj.hideField(\"builtup\");\n//pageObj.hideField(\"builtup_unit\");\npageObj.hideField(\"tenure\");\npageObj.hideField(\"year_built\");\npageObj.hideField(\"TOP\");\npageObj.hideField(\"agent\");\npageObj.hideField(\"photos\");\n\npageObj.toggleItem(\"land_size_unit\", false ); \npageObj.toggleItem(\"builtup_unit\", false ); \npageObj.toggleItem(\"find_address_btn\", false ); \n\nvar ctrlType = Runner.getControl(pageid, 'types');\nvar ctrlKind = Runner.getControl(pageid, 'kind');\nvar ctrlHDBscheme = Runner.getControl(pageid, 'hdb_scheme');\nvar ctrlHDBtown = Runner.getControl(pageid, 'hdb_town');\nvar ctrlPropAddress = Runner.getControl(pageid, 'prop_address');\nvar ctrlPropName = Runner.getControl(pageid, 'prop_name');\nvar ctrlPropPostal = Runner.getControl(pageid, 'prop_postal');\n\nvar ctrlBuiltup = Runner.getControl(pageid, 'builtup');\nvar ctrlTenure = Runner.getControl(pageid, 'tenure');\nvar ctrlYrBuilt = Runner.getControl(pageid, 'year_built');\nvar ctrlTOP = Runner.getControl(pageid, 'TOP');\nvar ctrlLandsize = Runner.getControl(pageid, 'land_size');\n\nvar ctrlType = Runner.getControl(pageid, 'types');\nctrlType.on('change', function(e) {\nif (this.getValue() == 'HDB APARTMENT') {\npageObj.toggleItem(\"find_address_btn\", true ); \npageObj.showField(\"kind\");\npageObj.showField(\"hdb_town\");\npageObj.showField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.hideField(\"land_size\");\n//pageObj.hideField(\"land_size_unit\");\npageObj.toggleItem(\"land_size_unit\", false ); \npageObj.showField(\"builtup\");\n//pageObj.showField(\"builtup_unit\");\npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\nctrlHDBscheme.setValue('');\nctrlHDBtown.setValue('');\nctrlPropAddress.setValue('');\nctrlPropName.setValue('');\nctrlPropPostal.setValue('');\n\nctrlBuiltup.setValue('');\nctrlTenure.setValue('');\nctrlYrBuilt.setValue('');\nctrlTOP.setValue('');\nctrlLandsize.setValue('');\n}\n\nif (this.getValue() == 'APARTMENT / CONDO'){\npageObj.toggleItem(\"find_address_btn\", true );\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.hideField(\"land_size\");\n//pageObj.hideField(\"land_size_unit\");\npageObj.toggleItem(\"land_size_unit\", false ); \npageObj.showField(\"builtup\");\n//pageObj.showField(\"builtup_unit\");\npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\nctrlHDBscheme.setValue('');\nctrlHDBtown.setValue('');\nctrlPropAddress.setValue('');\nctrlPropName.setValue('');\nctrlPropPostal.setValue('');\n\nctrlBuiltup.setValue('');\nctrlTenure.setValue('');\nctrlYrBuilt.setValue('');\nctrlTOP.setValue('');\nctrlLandsize.setValue('');\n}\n\nif (this.getValue() == 'LAND'){\npageObj.toggleItem(\"find_address_btn\", true );\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.hideField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.showField(\"land_size\");\n//pageObj.showField(\"land_size_unit\");\npageObj.toggleItem(\"land_size_unit\", true ); \npageObj.hideField(\"builtup\");\n//pageObj.hideField(\"builtup_unit\");\npageObj.toggleItem(\"builtup_unit\", false ); \npageObj.showField(\"tenure\");\npageObj.hideField(\"year_built\");\npageObj.hideField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\nctrlHDBscheme.setValue('');\nctrlHDBtown.setValue('');\nctrlPropAddress.setValue('');\nctrlPropName.setValue('');\nctrlPropPostal.setValue('');\n\nctrlBuiltup.setValue('');\nctrlTenure.setValue('');\nctrlYrBuilt.setValue('');\nctrlTOP.setValue('');\nctrlLandsize.setValue('');\n}\n\nif (this.getValue() == 'LANDED HOUSE'){\npageObj.toggleItem(\"find_address_btn\", true );\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.showField(\"land_size\");\n//pageObj.showField(\"land_size_unit\");\npageObj.toggleItem(\"land_size_unit\", true ); \npageObj.showField(\"builtup\");\n//pageObj.showField(\"builtup_unit\");\npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\nctrlHDBscheme.setValue('');\nctrlHDBtown.setValue('');\nctrlPropAddress.setValue('');\nctrlPropName.setValue('');\nctrlPropPostal.setValue('');\n\nctrlLandsize.setValue('');\nctrlBuiltup.setValue('');\nctrlTenure.setValue('');\nctrlYrBuilt.setValue('');\nctrlTOP.setValue('');\nctrlLandsize.setValue('');\n}\n\nif (this.getValue() == 'RETAIL'){\npageObj.toggleItem(\"find_address_btn\", true );\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.hideField(\"land_size\");\n//pageObj.hideField(\"land_size_unit\");\npageObj.toggleItem(\"land_size_unit\", false ); \npageObj.showField(\"builtup\");\n//pageObj.showField(\"builtup_unit\");\npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\nctrlHDBscheme.setValue('');\nctrlHDBtown.setValue('');\nctrlPropAddress.setValue('');\nctrlPropName.setValue('');\nctrlPropPostal.setValue('');\n\nctrlBuiltup.setValue('');\nctrlTenure.setValue('');\nctrlYrBuilt.setValue('');\nctrlTOP.setValue('');\nctrlLandsize.setValue('');\n} \n\nif (this.getValue() == 'OFFICE'){\npageObj.toggleItem(\"find_address_btn\", true );\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.hideField(\"land_size\");\n//pageObj.hideField(\"land_size_unit\");\npageObj.toggleItem(\"land_size_unit\", false ); \npageObj.showField(\"builtup\");\n//pageObj.showField(\"builtup_unit\");\npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\nctrlHDBscheme.setValue('');\nctrlHDBtown.setValue('');\nctrlPropAddress.setValue('');\nctrlPropName.setValue('');\nctrlPropPostal.setValue('');\n\nctrlBuiltup.setValue('');\nctrlTenure.setValue('');\nctrlYrBuilt.setValue('');\nctrlTOP.setValue('');\nctrlLandsize.setValue('');\n}\n\nif (this.getValue() == 'INDUSTRIAL'){\npageObj.toggleItem(\"find_address_btn\", true );\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.showField(\"land_size\");\n//pageObj.showField(\"land_size_unit\");\npageObj.toggleItem(\"land_size_unit\", true ); \npageObj.showField(\"builtup\");\n//pageObj.showField(\"builtup_unit\");\npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\nctrlHDBscheme.setValue('');\nctrlHDBtown.setValue('');\nctrlPropAddress.setValue('');\nctrlPropPostal.setValue('');\n\nctrlBuiltup.setValue('');\nctrlTenure.setValue('');\nctrlYrBuilt.setValue('');\nctrlTOP.setValue('');\nctrlLandsize.setValue('');\n}\n\nif (this.getValue() == 'ROOM'){\npageObj.toggleItem(\"find_address_btn\", true );\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.hideField(\"land_size\");\n//pageObj.showField(\"land_size_unit\");\npageObj.toggleItem(\"land_size_unit\", false ); \npageObj.showField(\"builtup\");\n//pageObj.hideField(\"builtup_unit\");\npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.hideField(\"tenure\");\npageObj.hideField(\"year_built\");\npageObj.hideField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.hideField(\"photos\");\n//ctrlHDBscheme.setValue('');\n//ctrlHDBtown.setValue('');\nctrlPropAddress.setValue('');\n//ctrlPropName.setValue('');\nctrlPropPostal.setValue('');\n\nctrlBuiltup.setValue('');\n//ctrlTenure.setValue('');\n//ctrlYrBuilt.setValue('');\n//ctrlTOP.setValue('');\n//ctrlLandsize.setValue('');\n}\n\n});"
+		},
+		{
+			"eventId": "EVENT_JS_ONLOAD",
+			"pageType": "edit",
+			"code": "var ctrlType = Runner.getControl(pageid, 'types');\nvar ctrlKind = Runner.getControl(pageid, 'kind');\nvar ctrlHDBscheme = Runner.getControl(pageid, 'hdb_scheme');\nvar ctrlHDBtown = Runner.getControl(pageid, 'hdb_town');\nvar ctrlPropAddress = Runner.getControl(pageid, 'prop_address');\nvar ctrlPropName = Runner.getControl(pageid, 'prop_name');\nvar ctrlPropPostal = Runner.getControl(pageid, 'prop_postal');\n\nvar ctrlBuiltup = Runner.getControl(pageid, 'builtup');\nvar ctrlTenure = Runner.getControl(pageid, 'tenure');\nvar ctrlYrBuilt = Runner.getControl(pageid, 'year_built');\nvar ctrlTOP = Runner.getControl(pageid, 'TOP');\nvar ctrlLandsize = Runner.getControl(pageid, 'land_size');\n\nif(ctrlType.getValue()=='HDB APARTMENT')\n{\npageObj.showField(\"kind\");\npageObj.showField(\"hdb_town\");\npageObj.showField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.toggleItem(\"land_size_unit\", false ); \npageObj.toggleItem(\"builtup_unit\", true ); \n\npageObj.hideField(\"land_size\");\npageObj.showField(\"builtup\");\npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\n} \nif (ctrlType.getValue()== 'APARTMENT / CONDO')\n{\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.toggleItem(\"land_size_unit\", false ); \npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.hideField(\"land_size\");\npageObj.showField(\"builtup\");\npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\n}\t\nif (ctrlType.getValue()== 'LAND')\n{\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.hideField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.toggleItem(\"land_size_unit\", true ); \npageObj.toggleItem(\"builtup_unit\", false ); \npageObj.showField(\"land_size\");\npageObj.hideField(\"builtup\");\npageObj.showField(\"tenure\");\npageObj.hideField(\"year_built\");\npageObj.hideField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\n}\t\nif (ctrlType.getValue()== 'LANDED HOUSE')\n{\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.toggleItem(\"land_size_unit\", true ); \npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.showField(\"land_size\");\npageObj.showField(\"builtup\");\npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\n}\nif (ctrlType.getValue()== 'RETAIL')\n{\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.toggleItem(\"land_size_unit\", false ); \npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.hideField(\"land_size\");\npageObj.showField(\"builtup\");\npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\n}\nif (ctrlType.getValue()== 'OFFICE')\n{\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.toggleItem(\"land_size_unit\", false ); \npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.hideField(\"land_size\");\npageObj.showField(\"builtup\");\npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\n}\t\nif (ctrlType.getValue()== 'INDUSTRIAL')\n{\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.toggleItem(\"land_size_unit\", true ); \npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.showField(\"land_size\");\npageObj.showField(\"builtup\");\npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\n}\t\nif (ctrlType.getValue()== 'ROOM')\n{\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.toggleItem(\"land_size_unit\", false ); \npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.hideField(\"land_size\");\npageObj.showField(\"builtup\");\npageObj.hideField(\"tenure\");\npageObj.hideField(\"year_built\");\npageObj.hideField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.hideField(\"photos\");\n}\t\n\nctrlType.on('change', function(e) {\nif (this.getValue() == 'HDB APARTMENT') {\npageObj.showField(\"kind\");\npageObj.showField(\"hdb_town\");\npageObj.showField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.toggleItem(\"land_size_unit\", false ); \npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.hideField(\"land_size\");\npageObj.showField(\"builtup\");\npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\nctrlHDBscheme.setValue('');\nctrlHDBtown.setValue('');\nctrlPropAddress.setValue('');\nctrlPropName.setValue('');\nctrlPropPostal.setValue('');\n\nctrlBuiltup.setValue('');\nctrlTenure.setValue('');\nctrlYrBuilt.setValue('');\nctrlTOP.setValue('');\nctrlLandsize.setValue('');\n} \n\nif (this.getValue() == 'APARTMENT / CONDO'){\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.toggleItem(\"land_size_unit\", false ); \npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.hideField(\"land_size\");\npageObj.showField(\"builtup\");\npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\nctrlHDBscheme.setValue('');\nctrlHDBtown.setValue('');\nctrlPropAddress.setValue('');\nctrlPropName.setValue('');\nctrlPropPostal.setValue('');\n\nctrlBuiltup.setValue('');\nctrlTenure.setValue('');\nctrlYrBuilt.setValue('');\nctrlTOP.setValue('');\nctrlLandsize.setValue('');\n}\n\nif (this.getValue() == 'LAND'){\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.hideField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.toggleItem(\"land_size_unit\", true ); \npageObj.toggleItem(\"builtup_unit\", false ); \npageObj.showField(\"land_size\");\npageObj.hideField(\"builtup\");\npageObj.showField(\"tenure\");\npageObj.hideField(\"year_built\");\npageObj.hideField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\nctrlHDBscheme.setValue('');\nctrlHDBtown.setValue('');\nctrlPropAddress.setValue('');\nctrlPropName.setValue('');\nctrlPropPostal.setValue('');\n\nctrlBuiltup.setValue('');\nctrlTenure.setValue('');\nctrlYrBuilt.setValue('');\nctrlTOP.setValue('');\nctrlLandsize.setValue('');\n}\n\nif (this.getValue() == 'LANDED HOUSE'){\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.toggleItem(\"land_size_unit\", true ); \npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.showField(\"land_size\");\npageObj.showField(\"builtup\");\npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\nctrlHDBscheme.setValue('');\nctrlHDBtown.setValue('');\nctrlPropAddress.setValue('');\nctrlPropName.setValue('');\nctrlPropPostal.setValue('');\n\nctrlBuiltup.setValue('');\nctrlTenure.setValue('');\nctrlYrBuilt.setValue('');\nctrlTOP.setValue('');\nctrlLandsize.setValue('');\n}\n\t\nif (this.getValue() == 'RETAIL'){\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.toggleItem(\"land_size_unit\", false ); \npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.hideField(\"land_size\");\npageObj.showField(\"builtup\");\npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\nctrlHDBscheme.setValue('');\nctrlHDBtown.setValue('');\nctrlPropAddress.setValue('');\nctrlPropName.setValue('');\nctrlPropPostal.setValue('');\n\nctrlBuiltup.setValue('');\nctrlTenure.setValue('');\nctrlYrBuilt.setValue('');\nctrlTOP.setValue('');\nctrlLandsize.setValue('');\n} \n\t\nif (this.getValue() == 'OFFICE'){\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.toggleItem(\"land_size_unit\", false ); \npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.hideField(\"land_size\");\npageObj.showField(\"builtup\");\npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\nctrlHDBscheme.setValue('');\nctrlHDBtown.setValue('');\nctrlPropAddress.setValue('');\nctrlPropName.setValue('');\nctrlPropPostal.setValue('');\n\nctrlBuiltup.setValue('');\nctrlTenure.setValue('');\nctrlYrBuilt.setValue('');\nctrlTOP.setValue('');\nctrlLandsize.setValue('');\n}\n\t\nif (this.getValue() == 'INDUSTRIAL'){\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.toggleItem(\"land_size_unit\", true ); \npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.showField(\"land_size\");\npageObj.showField(\"builtup\");\npageObj.showField(\"tenure\");\npageObj.showField(\"year_built\");\npageObj.showField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.showField(\"photos\");\nctrlHDBscheme.setValue('');\nctrlHDBtown.setValue('');\nctrlPropAddress.setValue('');\n//ctrlPropName.setValue('');\nctrlPropPostal.setValue('');\n\nctrlBuiltup.setValue('');\nctrlTenure.setValue('');\nctrlYrBuilt.setValue('');\nctrlTOP.setValue('');\nctrlLandsize.setValue('');\n}\n\nif (this.getValue() == 'ROOM'){\npageObj.toggleItem(\"find_address_btn\", true );\npageObj.showField(\"kind\");\npageObj.hideField(\"hdb_town\");\npageObj.hideField(\"hdb_scheme\");\npageObj.showField(\"prop_name\");\npageObj.showField(\"prop_address\");\npageObj.showField(\"prop_postal\");\n\npageObj.hideField(\"land_size\");\n//pageObj.showField(\"land_size_unit\");\npageObj.toggleItem(\"land_size_unit\", false ); \npageObj.showField(\"builtup\");\n//pageObj.hideField(\"builtup_unit\");\npageObj.toggleItem(\"builtup_unit\", true ); \npageObj.hideField(\"tenure\");\npageObj.hideField(\"year_built\");\npageObj.hideField(\"TOP\");\npageObj.showField(\"agent\");\npageObj.hideField(\"photos\");\n//ctrlHDBscheme.setValue('');\n//ctrlHDBtown.setValue('');\nctrlPropAddress.setValue('');\n//ctrlPropName.setValue('');\nctrlPropPostal.setValue('');\n\nctrlBuiltup.setValue('');\n//ctrlTenure.setValue('');\n//ctrlYrBuilt.setValue('');\n//ctrlTOP.setValue('');\n//ctrlLandsize.setValue('');\n}\n\n});"
+		},
+		{
+			"eventId": "EVENT_BEFOREADD",
+			"pageType": "add",
+			"code": "$values[\"prop_address\"]=strtoupper($values[\"prop_address\"]);\n$values[\"prop_name\"]=strtoupper($values[\"prop_name\"]);\n\n//empty unwanted fields value\nif($values['types']==\"HDB APARTMENT\")\n{\nCustomQuery(\"UPDATE properties SET land_size='',land_size_unit='' WHERE id='\".$values[\"id\"].\"'\");\n}\n\nif($values['types']==\"APARTMENT / CONDO\")\n{\nCustomQuery(\"UPDATE properties SET land_size='',land_size_unit='',hdb_town='',hdb_scheme='' \nWHERE id='\".$values[\"id\"].\"'\");\n}\n\nif($values['types']==\"LAND\")\n{\nCustomQuery(\"UPDATE properties SET hdb_town='',hdb_scheme='',prop_name='',builtup='',\nbuiltup_unit='',year_built='',TOP='' WHERE id='\".$values[\"id\"].\"'\");\n}\n\nif($values['types']==\"LANDED HOUSE\")\n{\nCustomQuery(\"UPDATE properties SET hdb_town='',hdb_scheme='',prop_name='' \nWHERE id='\".$values[\"id\"].\"'\");\n}\n\nif($values['types']==\"RETAIL\")\n{\nCustomQuery(\"UPDATE properties SET hdb_town='',hdb_scheme='',land_size='',land_size_unit='' \nWHERE id='\".$values[\"id\"].\"'\");\n}\n\nif($values['types']==\"OFFICE\")\n{\nCustomQuery(\"UPDATE properties SET hdb_town='',hdb_scheme='',land_size='',land_size_unit='' \nWHERE id='\".$values[\"id\"].\"'\");\n}\n\nif($values['types']==\"INDUSTRIAL\")\n{\nCustomQuery(\"UPDATE properties SET hdb_town='',hdb_scheme='',prop_name='' \nWHERE id='\".$values[\"id\"].\"'\");\n}\n\nreturn true;"
+		},
+		{
+			"eventId": "EVENT_BEFOREEDIT",
+			"pageType": "edit",
+			"code": "$values[\"prop_address\"]=strtoupper($values[\"prop_address\"]);\n$values[\"prop_name\"]=strtoupper($values[\"prop_name\"]);\n\n//empty unwanted fields value\nif($values['types']==\"HDB APARTMENT\")\n{\nCustomQuery(\"UPDATE properties SET land_size='',land_size_unit='' WHERE id='\".$values[\"id\"].\"'\");\n}\n\nif($values['types']==\"APARTMENT / CONDO\")\n{\nCustomQuery(\"UPDATE properties SET land_size='',land_size_unit='',hdb_town='',hdb_scheme='' \nWHERE id='\".$values[\"id\"].\"'\");\n}\n\nif($values['types']==\"LAND\")\n{\nCustomQuery(\"UPDATE properties SET hdb_town='',hdb_scheme='',prop_name='',builtup='',\nbuiltup_unit='',year_built='',TOP='' WHERE id='\".$values[\"id\"].\"'\");\n}\n\nif($values['types']==\"LANDED HOUSE\")\n{\nCustomQuery(\"UPDATE properties SET hdb_town='',hdb_scheme='',prop_name='' \nWHERE id='\".$values[\"id\"].\"'\");\n}\n\nif($values['types']==\"RETAIL\")\n{\nCustomQuery(\"UPDATE properties SET hdb_town='',hdb_scheme='',land_size='',land_size_unit='' \nWHERE id='\".$values[\"id\"].\"'\");\n}\n\nif($values['types']==\"OFFICE\")\n{\nCustomQuery(\"UPDATE properties SET hdb_town='',hdb_scheme='',land_size='',land_size_unit='' \nWHERE id='\".$values[\"id\"].\"'\");\n}\n\nif($values['types']==\"INDUSTRIAL\")\n{\nCustomQuery(\"UPDATE properties SET hdb_town='',hdb_scheme='',prop_name='' WHERE id='\".$values[\"id\"].\"'\");\n}\n\nreturn true;"
+		},
+		{
+			"eventId": "EVENT_BEFORESHOW_VIEW",
+			"pageType": "view",
+			"code": "if ($values[\"types\"]==\"HDB APARTMENT\")\n{\n$xt->assign(\"land_size\",false);\n$pageObject->hideItem(\"land_size_unit\");\n\n}\n\nif ($values[\"types\"]==\"APARTMENT / CONDO\")\n{\n$xt->assign(\"land_size\",false);\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n$pageObject->hideItem(\"land_size_unit\"); \n\n}\n\nif ($values[\"types\"]==\"LAND\")\n{\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n$xt->assign(\"prop_name\",false);\n$xt->assign(\"builtup\",false);\n$xt->assign(\"year_built\",false);\n$xt->assign(\"TOP\",false);\n$pageObject->hideItem(\"builtup_unit\");\n}\n\nif ($values[\"types\"]==\"LANDED HOUSE\")\n{\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n}\n\nif ($values[\"types\"]==\"RETAIL\")\n{\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n$xt->assign(\"land_size\",false);\n$pageObject->hideItem(\"land_size_unit\");\n\n}\n\nif ($values[\"types\"]==\"OFFICE\")\n{\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n$xt->assign(\"land_size\",false);\n$pageObject->hideItem(\"land_size_unit\");\n \n}\n\nif ($values[\"types\"]==\"INDUSTRIAL\")\n{\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n\n}\n\nif ($values[\"types\"]==\"ROOM\")\n{\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n$xt->assign(\"prop_name\",false);\n//$xt->assign(\"builtup\",false);\n$xt->assign(\"year_built\",false);\n$xt->assign(\"TOP\",false);\n$xt->assign(\"photos\",false);\n//$pageObject->hideItem(\"builtup_unit\");\n}\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
+		},
+		{
+			"eventId": "EVENT_BEFORESHOW_PRINT",
+			"pageType": "print",
+			"code": "if ($values[\"types\"]==\"HDB APARTMENT\")\n{\n$xt->assign(\"land_size\",false);\n}\n\nif ($values[\"types\"]==\"APARTMENT / CONDO\")\n{\n$xt->assign(\"land_size\",false);\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n}\n\nif ($values[\"types\"]==\"LAND\")\n{\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n$xt->assign(\"prop_name\",false);\n$xt->assign(\"builtup\",false);\n$xt->assign(\"year_built\",false);\n$xt->assign(\"TOP\",false);\n}\n\nif ($values[\"types\"]==\"LANDED HOUSE\")\n{\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n}\n\nif ($values[\"types\"]==\"RETAIL\")\n{\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n$xt->assign(\"land_size\",false);\n}\n\nif ($values[\"types\"]==\"OFFICE\")\n{\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n$xt->assign(\"land_size\",false);\n}\n\nif ($values[\"types\"]==\"INDUSTRIAL\")\n{\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n\n}\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
+		}
+	],
+	"sortByFields": {
+		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_address",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "land_size",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "builtup",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tenure",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "year_built",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "TOP",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docuserid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "types",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "kind",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "hdb_town",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "hdb_scheme",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cusid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agentid",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "floor_plan",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "photos",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "land_size_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "builtup_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_rental",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "title",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "owner",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tenant",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "properties"
+	},
+	"pages": [
+		{
+			"id": "add",
+			"type": "add",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "add-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "add-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_save",
+								"add_reset",
+								"add_back_list",
+								"add_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "add-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c4"
+								},
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c5"
+								},
+								{
+									"cell": "c3"
+								},
+								{
+									"cell": "c6"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c7"
+								},
+								{
+									"cell": "c8"
+								},
+								{
+									"cell": "c9"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c10"
+								},
+								{
+									"cell": "c11"
+								},
+								{
+									"cell": "c12"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c13"
+								},
+								{
+									"cell": "c14"
+								},
+								{
+									"cell": "c15"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c16"
+								},
+								{
+									"cell": "c17"
+								},
+								{
+									"cell": "c18"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c19"
+								},
+								{
+									"cell": "c20"
+								},
+								{
+									"cell": "c21"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c22"
+								},
+								{
+									"cell": "c23"
+								},
+								{
+									"cell": "c24"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c28"
+								},
+								{
+									"cell": "c29"
+								},
+								{
+									"cell": "c30"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c34"
+								},
+								{
+									"cell": "c35"
+								},
+								{
+									"cell": "c36"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c37"
+								},
+								{
+									"cell": "c38"
+								},
+								{
+									"cell": "c39"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c40"
+								},
+								{
+									"cell": "c41"
+								},
+								{
+									"cell": "c42"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c46"
+								},
+								{
+									"cell": "c47"
+								},
+								{
+									"cell": "c48"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c25"
+								},
+								{
+									"cell": "c26"
+								},
+								{
+									"cell": "c27"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c31"
+								},
+								{
+									"cell": "c32"
+								},
+								{
+									"cell": "c33"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c43"
+								},
+								{
+									"cell": "c44"
+								},
+								{
+									"cell": "c45"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c4": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field14"
+							],
+							"field": "types"
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field"
+							],
+							"field": "types"
+						},
+						"c": {
+							"model": "c2",
+							"items": []
+						},
+						"c5": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field16"
+							],
+							"field": "kind"
+						},
+						"c3": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field1"
+							],
+							"field": "kind"
+						},
+						"c6": {
+							"model": "c2",
+							"items": []
+						},
+						"c7": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field18"
+							],
+							"field": "hdb_town"
+						},
+						"c8": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field2"
+							],
+							"field": "hdb_town"
+						},
+						"c9": {
+							"model": "c2",
+							"items": []
+						},
+						"c10": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field20"
+							],
+							"field": "hdb_scheme"
+						},
+						"c11": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field3"
+							],
+							"field": "hdb_scheme"
+						},
+						"c12": {
+							"model": "c2",
+							"items": []
+						},
+						"c13": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field22"
+							],
+							"field": "prop_address"
+						},
+						"c14": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field4"
+							],
+							"field": "prop_address"
+						},
+						"c15": {
+							"model": "c2",
+							"items": []
+						},
+						"c16": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field24"
+							],
+							"field": "prop_postal"
+						},
+						"c17": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field5",
+								"find_address_btn"
+							],
+							"field": "prop_postal"
+						},
+						"c18": {
+							"model": "c2",
+							"items": []
+						},
+						"c19": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field26"
+							],
+							"field": "prop_name"
+						},
+						"c20": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field6"
+							],
+							"field": "prop_name"
+						},
+						"c21": {
+							"model": "c2",
+							"items": []
+						},
+						"c22": {
+							"model": "c4",
+							"items": [
+								"edit_field_label"
+							],
+							"field": "land_size"
+						},
+						"c23": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field7",
+								"land_size_unit"
+							],
+							"field": "land_size"
+						},
+						"c24": {
+							"model": "c2",
+							"items": []
+						},
+						"c28": {
+							"model": "c4",
+							"items": [
+								"edit_field_label1"
+							],
+							"field": "builtup"
+						},
+						"c29": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field9",
+								"builtup_unit"
+							],
+							"field": "builtup"
+						},
+						"c30": {
+							"model": "c2",
+							"items": []
+						},
+						"c34": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field28"
+							],
+							"field": "tenure"
+						},
+						"c35": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field11"
+							],
+							"field": "tenure"
+						},
+						"c36": {
+							"model": "c2",
+							"items": []
+						},
+						"c37": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field30"
+							],
+							"field": "year_built"
+						},
+						"c38": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field12",
+								"integrated_edit_field31"
+							],
+							"field": "year_built",
+							"orientation": "vertical"
+						},
+						"c39": {
+							"model": "c2",
+							"items": [],
+							"field": "year_built"
+						},
+						"c40": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field32"
+							],
+							"field": "TOP"
+						},
+						"c41": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field13",
+								"integrated_edit_field33"
+							],
+							"field": "TOP",
+							"orientation": "vertical"
+						},
+						"c42": {
+							"model": "c2",
+							"items": [],
+							"field": "TOP"
+						},
+						"c46": {
+							"model": "c4",
+							"items": [
+								"edit_field_label5"
+							],
+							"field": "photos"
+						},
+						"c47": {
+							"model": "c2",
+							"items": [
+								"edit_field3"
+							],
+							"field": "photos"
+						},
+						"c48": {
+							"model": "c2",
+							"items": []
+						},
+						"c25": {
+							"model": "c4",
+							"items": [
+								"edit_field_label2"
+							],
+							"field": "docuserid",
+							"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+						},
+						"c26": {
+							"model": "c2",
+							"items": [
+								"edit_field"
+							],
+							"field": "docuserid",
+							"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+						},
+						"c27": {
+							"model": "c2",
+							"items": [],
+							"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+						},
+						"c31": {
+							"model": "c4",
+							"items": [
+								"edit_field_label3"
+							],
+							"field": "agentid",
+							"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+						},
+						"c32": {
+							"model": "c2",
+							"items": [
+								"edit_field1"
+							],
+							"field": "agentid",
+							"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+						},
+						"c33": {
+							"model": "c2",
+							"items": [],
+							"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+						},
+						"c43": {
+							"model": "c4",
+							"items": [
+								"edit_field_label4"
+							],
+							"field": "cusid",
+							"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+						},
+						"c44": {
+							"model": "c2",
+							"items": [
+								"edit_field2"
+							],
+							"field": "cusid",
+							"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+						},
+						"c45": {
+							"model": "c2",
+							"items": [
+								"edit_field_tooltip"
+							],
+							"field": "cusid",
+							"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				}
+			},
+			"items": {
+				"add_header": {
+					"type": "add_header"
+				},
+				"add_back_list": {
+					"type": "add_back_list"
+				},
+				"add_cancel": {
+					"type": "add_cancel"
+				},
+				"add_message": {
+					"type": "add_message"
+				},
+				"add_save": {
+					"type": "add_save"
+				},
+				"add_reset": {
+					"type": "add_reset"
+				},
+				"integrated_edit_field": {
+					"field": "types",
+					"type": "edit_field",
+					"width": "300px"
+				},
+				"integrated_edit_field1": {
+					"field": "kind",
+					"type": "edit_field",
+					"width": "300px"
+				},
+				"integrated_edit_field2": {
+					"field": "hdb_town",
+					"type": "edit_field",
+					"width": "300px"
+				},
+				"integrated_edit_field3": {
+					"field": "hdb_scheme",
+					"type": "edit_field",
+					"width": "300px"
+				},
+				"integrated_edit_field4": {
+					"field": "prop_address",
+					"type": "edit_field",
+					"width": "450px"
+				},
+				"integrated_edit_field5": {
+					"field": "prop_postal",
+					"type": "edit_field",
+					"width": "150px"
+				},
+				"integrated_edit_field6": {
+					"field": "prop_name",
+					"type": "edit_field",
+					"width": "300px"
+				},
+				"integrated_edit_field7": {
+					"field": "land_size",
+					"type": "edit_field",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  width:150px !important;\n}\n"
+				},
+				"integrated_edit_field9": {
+					"field": "builtup",
+					"type": "edit_field",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  width:150px !important;\n}\n"
+				},
+				"integrated_edit_field11": {
+					"field": "tenure",
+					"type": "edit_field",
+					"width": "200px"
+				},
+				"integrated_edit_field12": {
+					"field": "year_built",
+					"type": "edit_field",
+					"width": "200px"
+				},
+				"integrated_edit_field13": {
+					"field": "TOP",
+					"type": "edit_field",
+					"width": "200px"
+				},
+				"edit_field_label": {
+					"type": "edit_field_label",
+					"field": "land_size"
+				},
+				"edit_field_label1": {
+					"type": "edit_field_label",
+					"field": "builtup"
+				},
+				"integrated_edit_field14": {
+					"type": "edit_field_label",
+					"field": "types"
+				},
+				"integrated_edit_field16": {
+					"type": "edit_field_label",
+					"field": "kind"
+				},
+				"integrated_edit_field18": {
+					"type": "edit_field_label",
+					"field": "hdb_town"
+				},
+				"integrated_edit_field20": {
+					"type": "edit_field_label",
+					"field": "hdb_scheme"
+				},
+				"integrated_edit_field22": {
+					"type": "edit_field_label",
+					"field": "prop_address"
+				},
+				"integrated_edit_field24": {
+					"type": "edit_field_label",
+					"field": "prop_postal"
+				},
+				"integrated_edit_field26": {
+					"type": "edit_field_label",
+					"field": "prop_name"
+				},
+				"integrated_edit_field28": {
+					"type": "edit_field_label",
+					"field": "tenure"
+				},
+				"integrated_edit_field30": {
+					"type": "edit_field_label",
+					"field": "year_built"
+				},
+				"integrated_edit_field31": {
+					"type": "edit_field_tooltip",
+					"field": "year_built"
+				},
+				"integrated_edit_field32": {
+					"type": "edit_field_label",
+					"field": "TOP"
+				},
+				"integrated_edit_field33": {
+					"type": "edit_field_tooltip",
+					"field": "TOP"
+				},
+				"edit_field3": {
+					"field": "photos",
+					"type": "edit_field"
+				},
+				"edit_field_label5": {
+					"type": "edit_field_label",
+					"field": "photos"
+				},
+				"builtup_unit": {
+					"field": "builtup_unit",
+					"type": "edit_field",
+					"width": "120px"
+				},
+				"land_size_unit": {
+					"field": "land_size_unit",
+					"type": "edit_field",
+					"width": "120px"
+				},
+				"find_address_btn": {
+					"eventId": "Find_Address_prop",
+					"label": {
+						"text": "Find Address",
+						"type": 0
+					},
+					"type": "custom_button",
+					"eventGid": 1923553134,
+					"icon": {
+						"style": 0
+					}
+				},
+				"edit_field": {
+					"field": "docuserid",
+					"type": "edit_field"
+				},
+				"edit_field_label2": {
+					"type": "edit_field_label",
+					"field": "docuserid"
+				},
+				"edit_field1": {
+					"field": "agentid",
+					"type": "edit_field"
+				},
+				"edit_field_label3": {
+					"type": "edit_field_label",
+					"field": "agentid"
+				},
+				"edit_field2": {
+					"field": "cusid",
+					"type": "edit_field"
+				},
+				"edit_field_label4": {
+					"type": "edit_field_label",
+					"field": "cusid"
+				},
+				"edit_field_tooltip": {
+					"type": "edit_field_tooltip",
+					"field": "cusid"
+				}
+			},
+			"version": 14,
+			"pageAlign": "left",
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {
+				"English": "Property, Add new"
+			}
+		},
+		{
+			"id": "edit",
+			"type": "edit",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "edit-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "edit-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_save",
+								"edit_back_list",
+								"edit_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"prev",
+								"next",
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "edit-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c4"
+								},
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c5"
+								},
+								{
+									"cell": "c3"
+								},
+								{
+									"cell": "c6"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c7"
+								},
+								{
+									"cell": "c8"
+								},
+								{
+									"cell": "c9"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c10"
+								},
+								{
+									"cell": "c11"
+								},
+								{
+									"cell": "c12"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c13"
+								},
+								{
+									"cell": "c14"
+								},
+								{
+									"cell": "c15"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c16"
+								},
+								{
+									"cell": "c17"
+								},
+								{
+									"cell": "c18"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c19"
+								},
+								{
+									"cell": "c20"
+								},
+								{
+									"cell": "c21"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c22"
+								},
+								{
+									"cell": "c23"
+								},
+								{
+									"cell": "c24"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c28"
+								},
+								{
+									"cell": "c29"
+								},
+								{
+									"cell": "c30"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c34"
+								},
+								{
+									"cell": "c35"
+								},
+								{
+									"cell": "c36"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c37"
+								},
+								{
+									"cell": "c38"
+								},
+								{
+									"cell": "c39"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c40"
+								},
+								{
+									"cell": "c41"
+								},
+								{
+									"cell": "c42"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c25"
+								},
+								{
+									"cell": "c26"
+								},
+								{
+									"cell": "c27"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c4": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field14"
+							],
+							"field": "types"
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field"
+							],
+							"field": "types"
+						},
+						"c": {
+							"model": "c2",
+							"items": []
+						},
+						"c5": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field16"
+							],
+							"field": "kind"
+						},
+						"c3": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field1"
+							],
+							"field": "kind"
+						},
+						"c6": {
+							"model": "c2",
+							"items": []
+						},
+						"c7": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field18"
+							],
+							"field": "hdb_town"
+						},
+						"c8": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field2"
+							],
+							"field": "hdb_town"
+						},
+						"c9": {
+							"model": "c2",
+							"items": []
+						},
+						"c10": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field20"
+							],
+							"field": "hdb_scheme"
+						},
+						"c11": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field3"
+							],
+							"field": "hdb_scheme"
+						},
+						"c12": {
+							"model": "c2",
+							"items": []
+						},
+						"c13": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field22"
+							],
+							"field": "prop_address"
+						},
+						"c14": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field4"
+							],
+							"field": "prop_address"
+						},
+						"c15": {
+							"model": "c2",
+							"items": []
+						},
+						"c16": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field24"
+							],
+							"field": "prop_postal"
+						},
+						"c17": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field5",
+								"custom_button1"
+							],
+							"field": "prop_postal"
+						},
+						"c18": {
+							"model": "c2",
+							"items": []
+						},
+						"c19": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field26"
+							],
+							"field": "prop_name"
+						},
+						"c20": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field6"
+							],
+							"field": "prop_name"
+						},
+						"c21": {
+							"model": "c2",
+							"items": []
+						},
+						"c22": {
+							"model": "c4",
+							"items": [
+								"edit_field_label"
+							],
+							"field": "land_size"
+						},
+						"c23": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field7",
+								"land_size_unit"
+							],
+							"field": "land_size"
+						},
+						"c24": {
+							"model": "c2",
+							"items": []
+						},
+						"c28": {
+							"model": "c4",
+							"items": [
+								"edit_field_label1"
+							],
+							"field": "builtup"
+						},
+						"c29": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field9",
+								"builtup_unit"
+							],
+							"field": "builtup"
+						},
+						"c30": {
+							"model": "c2",
+							"items": []
+						},
+						"c34": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field28"
+							],
+							"field": "tenure"
+						},
+						"c35": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field11"
+							],
+							"field": "tenure"
+						},
+						"c36": {
+							"model": "c2",
+							"items": []
+						},
+						"c37": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field30"
+							],
+							"field": "year_built"
+						},
+						"c38": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field12",
+								"integrated_edit_field31"
+							],
+							"field": "year_built",
+							"orientation": "vertical"
+						},
+						"c39": {
+							"model": "c2",
+							"items": [],
+							"field": "year_built"
+						},
+						"c40": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field32"
+							],
+							"field": "TOP"
+						},
+						"c41": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field13",
+								"integrated_edit_field33"
+							],
+							"field": "TOP",
+							"orientation": "vertical"
+						},
+						"c42": {
+							"model": "c2",
+							"items": [],
+							"field": "TOP"
+						},
+						"c25": {
+							"model": "c4",
+							"items": [
+								"edit_field_label2"
+							]
+						},
+						"c26": {
+							"model": "c2",
+							"items": [
+								"edit_field"
+							],
+							"field": "photos"
+						},
+						"c27": {
+							"model": "c2",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				}
+			},
+			"items": {
+				"edit_header": {
+					"type": "edit_header"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"edit_reset",
+						"edit_view"
+					]
+				},
+				"edit_reset": {
+					"type": "edit_reset"
+				},
+				"edit_message": {
+					"type": "edit_message"
+				},
+				"edit_save": {
+					"type": "edit_save"
+				},
+				"edit_back_list": {
+					"type": "edit_back_list"
+				},
+				"edit_close": {
+					"type": "edit_close"
+				},
+				"edit_view": {
+					"type": "edit_view"
+				},
+				"next": {
+					"type": "next"
+				},
+				"prev": {
+					"type": "prev"
+				},
+				"integrated_edit_field": {
+					"field": "types",
+					"type": "edit_field",
+					"width": "300px",
+					"updateOnEdit": false
+				},
+				"integrated_edit_field1": {
+					"field": "kind",
+					"type": "edit_field",
+					"width": "300px",
+					"updateOnEdit": false
+				},
+				"integrated_edit_field2": {
+					"field": "hdb_town",
+					"type": "edit_field",
+					"width": "300px"
+				},
+				"integrated_edit_field3": {
+					"field": "hdb_scheme",
+					"type": "edit_field",
+					"width": "300px"
+				},
+				"integrated_edit_field4": {
+					"field": "prop_address",
+					"type": "edit_field",
+					"width": "450px"
+				},
+				"integrated_edit_field5": {
+					"field": "prop_postal",
+					"type": "edit_field",
+					"width": "150px"
+				},
+				"integrated_edit_field6": {
+					"field": "prop_name",
+					"type": "edit_field",
+					"width": "300px"
+				},
+				"integrated_edit_field7": {
+					"field": "land_size",
+					"type": "edit_field",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  width:150px !important;\n}\n"
+				},
+				"integrated_edit_field9": {
+					"field": "builtup",
+					"type": "edit_field",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  width:150px !important;\n}\n"
+				},
+				"integrated_edit_field11": {
+					"field": "tenure",
+					"type": "edit_field",
+					"updateOnEdit": false,
+					"width": "200px"
+				},
+				"integrated_edit_field12": {
+					"field": "year_built",
+					"type": "edit_field",
+					"width": "200px"
+				},
+				"integrated_edit_field13": {
+					"field": "TOP",
+					"type": "edit_field",
+					"width": "200px"
+				},
+				"edit_field_label": {
+					"type": "edit_field_label",
+					"field": "land_size"
+				},
+				"custom_button1": {
+					"eventId": "Find_Address_prop",
+					"label": {
+						"type": 0,
+						"text": "Find Address"
+					},
+					"type": "custom_button",
+					"eventGid": 1923553134,
+					"icon": {
+						"style": 0
+					}
+				},
+				"edit_field_label1": {
+					"type": "edit_field_label",
+					"field": "builtup"
+				},
+				"integrated_edit_field14": {
+					"type": "edit_field_label",
+					"field": "types"
+				},
+				"integrated_edit_field16": {
+					"type": "edit_field_label",
+					"field": "kind"
+				},
+				"integrated_edit_field18": {
+					"type": "edit_field_label",
+					"field": "hdb_town"
+				},
+				"integrated_edit_field20": {
+					"type": "edit_field_label",
+					"field": "hdb_scheme"
+				},
+				"integrated_edit_field22": {
+					"type": "edit_field_label",
+					"field": "prop_address"
+				},
+				"integrated_edit_field24": {
+					"type": "edit_field_label",
+					"field": "prop_postal"
+				},
+				"integrated_edit_field26": {
+					"type": "edit_field_label",
+					"field": "prop_name"
+				},
+				"integrated_edit_field28": {
+					"type": "edit_field_label",
+					"field": "tenure"
+				},
+				"integrated_edit_field30": {
+					"type": "edit_field_label",
+					"field": "year_built"
+				},
+				"integrated_edit_field31": {
+					"type": "edit_field_tooltip",
+					"field": "year_built"
+				},
+				"integrated_edit_field32": {
+					"type": "edit_field_label",
+					"field": "TOP"
+				},
+				"integrated_edit_field33": {
+					"type": "edit_field_tooltip",
+					"field": "TOP"
+				},
+				"edit_field": {
+					"field": "photos",
+					"type": "edit_field"
+				},
+				"edit_field_label2": {
+					"type": "edit_field_label",
+					"field": "photos"
+				},
+				"land_size_unit": {
+					"field": "land_size_unit",
+					"type": "edit_field",
+					"width": "120px"
+				},
+				"builtup_unit": {
+					"field": "builtup_unit",
+					"type": "edit_field",
+					"width": "120px"
+				}
+			},
+			"version": 14,
+			"pageAlign": "left",
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {
+				"English": "Property, Edit [{%id}]"
+			}
+		},
+		{
+			"id": "export",
+			"type": "export",
+			"layoutId": "first",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "export-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "export-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_field",
+								"export_field1",
+								"export_field2",
+								"export_field3",
+								"export_field4",
+								"export_field5",
+								"export_field6",
+								"export_field7",
+								"export_field8",
+								"export_field9",
+								"export_field10",
+								"export_field11",
+								"export_field12",
+								"export_field13",
+								"export_field14",
+								"export_field15",
+								"export_field16",
+								"export_field17",
+								"export_field18"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "export-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"export_export",
+								"export_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"export_header": {
+					"type": "export_header"
+				},
+				"export_export": {
+					"type": "export_export"
+				},
+				"export_cancel": {
+					"type": "export_cancel"
+				},
+				"export_field": {
+					"field": "types",
+					"type": "export_field"
+				},
+				"export_field1": {
+					"field": "kind",
+					"type": "export_field"
+				},
+				"export_field2": {
+					"field": "hdb_town",
+					"type": "export_field"
+				},
+				"export_field3": {
+					"field": "hdb_scheme",
+					"type": "export_field"
+				},
+				"export_field4": {
+					"field": "prop_name",
+					"type": "export_field"
+				},
+				"export_field5": {
+					"field": "prop_address",
+					"type": "export_field"
+				},
+				"export_field6": {
+					"field": "land_size",
+					"type": "export_field"
+				},
+				"export_field7": {
+					"field": "land_size_unit",
+					"type": "export_field"
+				},
+				"export_field8": {
+					"field": "builtup",
+					"type": "export_field"
+				},
+				"export_field9": {
+					"field": "builtup_unit",
+					"type": "export_field"
+				},
+				"export_field10": {
+					"field": "tenure",
+					"type": "export_field"
+				},
+				"export_field11": {
+					"field": "year_built",
+					"type": "export_field"
+				},
+				"export_field12": {
+					"field": "TOP",
+					"type": "export_field"
+				},
+				"export_field13": {
+					"field": "photos",
+					"type": "export_field"
+				},
+				"export_field14": {
+					"field": "id",
+					"type": "export_field"
+				},
+				"export_field15": {
+					"field": "prop_postal",
+					"type": "export_field"
+				},
+				"export_field16": {
+					"field": "docuserid",
+					"type": "export_field"
+				},
+				"export_field17": {
+					"field": "cusid",
+					"type": "export_field"
+				},
+				"export_field18": {
+					"field": "agentid",
+					"type": "export_field"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"exportFormat": 2,
+			"exportDelimiter": ",",
+			"exportSelectDelimiter": true,
+			"exportSelectFields": true
+		},
+		{
+			"id": "import",
+			"type": "import",
+			"layoutId": "first",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "import-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "import-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_field",
+								"import_field1",
+								"import_field2",
+								"import_field3",
+								"import_field4",
+								"import_field5",
+								"import_field6",
+								"import_field7",
+								"import_field8",
+								"import_field9",
+								"import_field10",
+								"import_field11",
+								"import_field12",
+								"import_field13",
+								"import_field14",
+								"import_field15",
+								"import_field16",
+								"import_field17",
+								"import_field18"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"import_header": {
+					"type": "import_header"
+				},
+				"import_field": {
+					"field": "prop_name",
+					"type": "import_field"
+				},
+				"import_field1": {
+					"field": "prop_address",
+					"type": "import_field"
+				},
+				"import_field2": {
+					"field": "land_size",
+					"type": "import_field"
+				},
+				"import_field3": {
+					"field": "builtup",
+					"type": "import_field"
+				},
+				"import_field4": {
+					"field": "tenure",
+					"type": "import_field"
+				},
+				"import_field5": {
+					"field": "year_built",
+					"type": "import_field"
+				},
+				"import_field6": {
+					"field": "TOP",
+					"type": "import_field"
+				},
+				"import_field7": {
+					"field": "types",
+					"type": "import_field"
+				},
+				"import_field8": {
+					"field": "kind",
+					"type": "import_field"
+				},
+				"import_field9": {
+					"field": "hdb_town",
+					"type": "import_field"
+				},
+				"import_field10": {
+					"field": "hdb_scheme",
+					"type": "import_field"
+				},
+				"import_field11": {
+					"field": "land_size_unit",
+					"type": "import_field"
+				},
+				"import_field12": {
+					"field": "builtup_unit",
+					"type": "import_field"
+				},
+				"import_field13": {
+					"field": "photos",
+					"type": "import_field"
+				},
+				"import_field14": {
+					"field": "id",
+					"type": "import_field"
+				},
+				"import_field15": {
+					"field": "prop_postal",
+					"type": "import_field"
+				},
+				"import_field16": {
+					"field": "docuserid",
+					"type": "import_field"
+				},
+				"import_field17": {
+					"field": "cusid",
+					"type": "import_field"
+				},
+				"import_field18": {
+					"field": "agentid",
+					"type": "import_field"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "topbar",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add",
+								"delete"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"details_found",
+								"page_size",
+								"print_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "topbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"logo",
+								"menu"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search",
+								"list_options",
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "list-vbar",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"breadcrumb"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "horizontal-grid",
+					"grid": [
+						{
+							"section": "head",
+							"cells": [
+								{
+									"cell": "headcell_icons"
+								},
+								{
+									"cell": "headcell_checkbox"
+								},
+								{
+									"cell": "headcell_details"
+								},
+								{
+									"cell": "headcell_field"
+								},
+								{
+									"cell": "headcell_field1"
+								},
+								{
+									"cell": "headcell_field2"
+								},
+								{
+									"cell": "headcell_field3"
+								},
+								{
+									"cell": "headcell_field4"
+								}
+							]
+						},
+						{
+							"section": "body",
+							"cells": [
+								{
+									"cell": "cell_icons"
+								},
+								{
+									"cell": "cell_checkbox"
+								},
+								{
+									"cell": "cell_details"
+								},
+								{
+									"cell": "cell_field"
+								},
+								{
+									"cell": "cell_field1"
+								},
+								{
+									"cell": "cell_field2"
+								},
+								{
+									"cell": "cell_field3"
+								},
+								{
+									"cell": "cell_field4"
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_dpreview",
+									"colspan": 8
+								}
+							],
+							"section": "body"
+						},
+						{
+							"section": "foot",
+							"cells": [
+								{
+									"cell": "footcell_icons"
+								},
+								{
+									"cell": "footcell_checkbox"
+								},
+								{
+									"cell": "footcell_details"
+								},
+								{
+									"cell": "footcell_field"
+								},
+								{
+									"cell": "footcell_field1"
+								},
+								{
+									"cell": "footcell_field2"
+								},
+								{
+									"cell": "footcell_field3"
+								},
+								{
+									"cell": "footcell_field4"
+								}
+							]
+						}
+					],
+					"cells": {
+						"headcell_field": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field5"
+							],
+							"field": "id",
+							"columnName": "field"
+						},
+						"cell_field": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field"
+							],
+							"field": "id",
+							"columnName": "field"
+						},
+						"footcell_field": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "id",
+							"columnName": "field"
+						},
+						"headcell_field1": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field6"
+							],
+							"field": "types",
+							"columnName": "field"
+						},
+						"cell_field1": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field1"
+							],
+							"field": "types",
+							"columnName": "field"
+						},
+						"footcell_field1": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "types",
+							"columnName": "field"
+						},
+						"headcell_field2": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field7"
+							],
+							"field": "prop_address",
+							"columnName": "field"
+						},
+						"cell_field2": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field2"
+							],
+							"field": "prop_address",
+							"columnName": "field"
+						},
+						"footcell_field2": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "prop_address",
+							"columnName": "field"
+						},
+						"headcell_field3": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field8"
+							],
+							"field": "prop_name",
+							"columnName": "field"
+						},
+						"cell_field3": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field3"
+							],
+							"field": "prop_name",
+							"columnName": "field"
+						},
+						"footcell_field3": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "prop_name",
+							"columnName": "field"
+						},
+						"headcell_field4": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field9"
+							],
+							"field": "tenure",
+							"columnName": "field"
+						},
+						"cell_field4": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field4"
+							],
+							"field": "tenure",
+							"columnName": "field"
+						},
+						"footcell_field4": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "tenure",
+							"columnName": "field"
+						},
+						"headcell_checkbox": {
+							"model": "headcell_checkbox",
+							"items": [
+								"grid_checkbox_head"
+							],
+							"columnName": "checkbox",
+							"field": ""
+						},
+						"cell_checkbox": {
+							"model": "cell_checkbox",
+							"items": [
+								"grid_checkbox"
+							],
+							"columnName": "checkbox",
+							"field": ""
+						},
+						"footcell_checkbox": {
+							"model": "footcell_checkbox",
+							"items": [],
+							"columnName": "checkbox",
+							"field": ""
+						},
+						"headcell_icons": {
+							"model": "headcell_icons",
+							"items": [],
+							"columnName": "list-icons",
+							"field": ""
+						},
+						"cell_icons": {
+							"model": "cell_icons",
+							"items": [
+								"grid_edit",
+								"grid_view"
+							],
+							"columnName": "list-icons",
+							"field": ""
+						},
+						"footcell_icons": {
+							"model": "footcell_icons",
+							"items": [],
+							"columnName": "list-icons",
+							"field": ""
+						},
+						"headcell_details": {
+							"model": "headcell_details",
+							"items": [],
+							"columnName": "details",
+							"field": ""
+						},
+						"cell_details": {
+							"model": "cell_details",
+							"items": [
+								"grid_alldetails_link",
+								"grid_details_link"
+							],
+							"columnName": "details",
+							"field": ""
+						},
+						"footcell_details": {
+							"model": "footcell_details",
+							"items": [],
+							"columnName": "details",
+							"field": ""
+						},
+						"cell_dpreview": {
+							"model": "cell_dpreview",
+							"items": [
+								"details_preview1"
+							],
+							"columnName": "field",
+							"field": "tenure"
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"page_size": {
+					"type": "page_size"
+				},
+				"details_found": {
+					"type": "details_found"
+				},
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search"
+				},
+				"pagination": {
+					"type": "pagination"
+				},
+				"grid_checkbox": {
+					"type": "grid_checkbox"
+				},
+				"grid_checkbox_head": {
+					"type": "grid_checkbox_head"
+				},
+				"list_options": {
+					"type": "list_options",
+					"items": [
+						"export_selected",
+						"delete_selected",
+						"-3",
+						"advsearch_link",
+						"-1",
+						"export",
+						"-2",
+						"import"
+					]
+				},
+				"grid_view": {
+					"type": "grid_view",
+					"popup": false,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+				},
+				"print_panel": {
+					"type": "print_panel",
+					"items": [
+						"print_scope",
+						"print_details",
+						"print_records",
+						"print_button"
+					]
+				},
+				"print_scope": {
+					"type": "print_scope"
+				},
+				"print_button": {
+					"type": "print_button"
+				},
+				"print_records": {
+					"type": "print_records"
+				},
+				"add": {
+					"type": "add",
+					"popup": false
+				},
+				"grid_edit": {
+					"type": "grid_edit",
+					"popup": false
+				},
+				"export": {
+					"type": "export"
+				},
+				"-": {
+					"type": "-"
+				},
+				"export_selected": {
+					"type": "export_selected"
+				},
+				"-1": {
+					"type": "-"
+				},
+				"import": {
+					"type": "import"
+				},
+				"-2": {
+					"type": "-"
+				},
+				"delete": {
+					"type": "delete"
+				},
+				"delete_selected": {
+					"type": "delete_selected"
+				},
+				"print_details": {
+					"type": "print_details",
+					"tables": {
+						"479413511": true
+					}
+				},
+				"advsearch_link": {
+					"type": "advsearch_link"
+				},
+				"-3": {
+					"type": "-"
+				},
+				"simple_grid_field": {
+					"field": "id",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field1": {
+					"field": "types",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field2": {
+					"field": "prop_address",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field3": {
+					"field": "prop_name",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field4": {
+					"field": "tenure",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"changepassword_link"
+					]
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": false
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"simple_grid_field5": {
+					"type": "grid_field_label",
+					"field": "id"
+				},
+				"simple_grid_field6": {
+					"type": "grid_field_label",
+					"field": "types"
+				},
+				"simple_grid_field7": {
+					"type": "grid_field_label",
+					"field": "prop_address"
+				},
+				"simple_grid_field8": {
+					"type": "grid_field_label",
+					"field": "prop_name"
+				},
+				"simple_grid_field9": {
+					"type": "grid_field_label",
+					"field": "tenure"
+				},
+				"grid_alldetails_link": {
+					"type": "grid_alldetails_link"
+				},
+				"details_preview1": {
+					"type": "details_preview",
+					"table": 479413511,
+					"items": [],
+					"popup": false,
+					"hideEmptyPreview": false,
+					"proceedLink": false,
+					"pageId": "list"
+				},
+				"grid_details_link": {
+					"type": "grid_details_link",
+					"table": 479413511,
+					"badge": true,
+					"showCount": true,
+					"hideIfNone": false
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				}
+			},
+			"spreadsheetGrid": false,
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "masterlist",
+			"type": "masterlist",
+			"layoutId": "masterlist",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "empty-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "empty-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "masterlist-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"back_master",
+								"masterlist_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field8",
+								"simple_grid_field9",
+								"simple_grid_field10",
+								"simple_grid_field11"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"masterlist_header": {
+					"type": "masterlist_header"
+				},
+				"back_master": {
+					"type": "back_master"
+				},
+				"simple_grid_field": {
+					"field": "prop_name",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "prop_address",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "types",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "kind",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "tenure",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "year_built",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "TOP",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "land_size",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "builtup",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "land_size_unit",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "prop_postal",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field11": {
+					"field": "builtup_unit",
+					"type": "simple_grid_field"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {
+				"English": "Property [{%id}]"
+			}
+		},
+		{
+			"id": "masterprint",
+			"type": "masterprint",
+			"layoutId": "masterprint",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "empty-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "empty-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "masterlist-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"masterprint_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-vertical-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field8",
+								"simple_grid_field9",
+								"simple_grid_field10",
+								"simple_grid_field11"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"masterprint_header": {
+					"type": "masterprint_header"
+				},
+				"simple_grid_field": {
+					"field": "prop_name",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "prop_address",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "types",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "kind",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "tenure",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "year_built",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "TOP",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "land_size",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "builtup",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "land_size_unit",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "prop_postal",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field11": {
+					"field": "builtup_unit",
+					"type": "simple_grid_field"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {
+				"English": "Property [{%id}]"
+			}
+		},
+		{
+			"id": "print",
+			"type": "print",
+			"layoutId": "basic",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "print-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"print_pages"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "print-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "print-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"print_header",
+								"print_subheader"
+							]
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"print_pdf"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "vertical-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "cell_top",
+									"colspan": 2
+								}
+							],
+							"section": "head"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_label"
+								},
+								{
+									"cell": "cell_field"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_label1"
+								},
+								{
+									"cell": "cell_field1"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_label2"
+								},
+								{
+									"cell": "cell_field2"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_label3"
+								},
+								{
+									"cell": "cell_field3"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_label4"
+								},
+								{
+									"cell": "cell_field4"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_label5"
+								},
+								{
+									"cell": "cell_field5"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_label6"
+								},
+								{
+									"cell": "cell_field6"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_label7"
+								},
+								{
+									"cell": "cell_field7"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_label8"
+								},
+								{
+									"cell": "cell_field8"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_label9"
+								},
+								{
+									"cell": "cell_field9"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_label10"
+								},
+								{
+									"cell": "cell_field10"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_label11"
+								},
+								{
+									"cell": "cell_field11"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_label12"
+								},
+								{
+									"cell": "cell_field12"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_label13"
+								},
+								{
+									"cell": "cell_field13"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_label14"
+								},
+								{
+									"cell": "cell_field14"
+								}
+							],
+							"section": "body"
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_dpreview",
+									"colspan": 2
+								}
+							],
+							"section": "foot"
+						}
+					],
+					"cells": {
+						"cell_top": {
+							"model": "cell_top",
+							"items": []
+						},
+						"cell_dpreview": {
+							"model": "cell_dpreview",
+							"items": [
+								"details_preview"
+							]
+						},
+						"cell_label": {
+							"model": "cell_label",
+							"items": [
+								"simple_grid_field14"
+							],
+							"field": "prop_name"
+						},
+						"cell_field": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field"
+							],
+							"field": "prop_name"
+						},
+						"cell_label1": {
+							"model": "cell_label",
+							"items": [
+								"simple_grid_field15"
+							],
+							"field": "prop_address"
+						},
+						"cell_field1": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field1"
+							],
+							"field": "prop_address"
+						},
+						"cell_label2": {
+							"model": "cell_label",
+							"items": [
+								"simple_grid_field16"
+							],
+							"field": "types"
+						},
+						"cell_field2": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field2"
+							],
+							"field": "types"
+						},
+						"cell_label3": {
+							"model": "cell_label",
+							"items": [
+								"simple_grid_field17"
+							],
+							"field": "kind"
+						},
+						"cell_field3": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field3"
+							],
+							"field": "kind"
+						},
+						"cell_label4": {
+							"model": "cell_label",
+							"items": [
+								"simple_grid_field18"
+							],
+							"field": "hdb_town"
+						},
+						"cell_field4": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field4"
+							],
+							"field": "hdb_town"
+						},
+						"cell_label5": {
+							"model": "cell_label",
+							"items": [
+								"simple_grid_field19"
+							],
+							"field": "hdb_scheme"
+						},
+						"cell_field5": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field5"
+							],
+							"field": "hdb_scheme"
+						},
+						"cell_label6": {
+							"model": "cell_label",
+							"items": [
+								"simple_grid_field20"
+							],
+							"field": "land_size"
+						},
+						"cell_field6": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field6"
+							],
+							"field": "land_size"
+						},
+						"cell_label7": {
+							"model": "cell_label",
+							"items": [
+								"simple_grid_field21"
+							],
+							"field": "builtup"
+						},
+						"cell_field7": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field7"
+							],
+							"field": "builtup"
+						},
+						"cell_label8": {
+							"model": "cell_label",
+							"items": [
+								"simple_grid_field22"
+							],
+							"field": "tenure"
+						},
+						"cell_field8": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field8"
+							],
+							"field": "tenure"
+						},
+						"cell_label9": {
+							"model": "cell_label",
+							"items": [
+								"simple_grid_field23"
+							],
+							"field": "year_built"
+						},
+						"cell_field9": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field9"
+							],
+							"field": "year_built"
+						},
+						"cell_label10": {
+							"model": "cell_label",
+							"items": [
+								"simple_grid_field24"
+							],
+							"field": "TOP"
+						},
+						"cell_field10": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field10"
+							],
+							"field": "TOP"
+						},
+						"cell_label11": {
+							"model": "cell_label",
+							"items": [
+								"simple_grid_field25"
+							],
+							"field": "land_size_unit"
+						},
+						"cell_field11": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field11"
+							],
+							"field": "land_size_unit"
+						},
+						"cell_label12": {
+							"model": "cell_label",
+							"items": [
+								"simple_grid_field26"
+							],
+							"field": "builtup_unit"
+						},
+						"cell_field12": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field12"
+							],
+							"field": "builtup_unit"
+						},
+						"cell_label13": {
+							"model": "cell_label",
+							"items": [
+								"simple_grid_field27"
+							],
+							"field": "photos"
+						},
+						"cell_field13": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field13"
+							],
+							"field": "photos"
+						},
+						"cell_label14": {
+							"model": "cell_label",
+							"items": []
+						},
+						"cell_field14": {
+							"model": "cell_field",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"print_header": {
+					"type": "print_header"
+				},
+				"print_subheader": {
+					"type": "print_subheader"
+				},
+				"print_pages": {
+					"type": "print_pages"
+				},
+				"print_pdf": {
+					"type": "print_pdf",
+					"targetPages": [],
+					"splitModes": [],
+					"scopes": []
+				},
+				"simple_grid_field": {
+					"field": "prop_name",
+					"type": "grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "prop_address",
+					"type": "grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "types",
+					"type": "grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "kind",
+					"type": "grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "hdb_town",
+					"type": "grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "hdb_scheme",
+					"type": "grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "land_size",
+					"type": "grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "builtup",
+					"type": "grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "tenure",
+					"type": "grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "year_built",
+					"type": "grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "TOP",
+					"type": "grid_field"
+				},
+				"simple_grid_field11": {
+					"field": "land_size_unit",
+					"type": "grid_field"
+				},
+				"simple_grid_field12": {
+					"field": "builtup_unit",
+					"type": "grid_field"
+				},
+				"simple_grid_field13": {
+					"field": "photos",
+					"type": "grid_field"
+				},
+				"simple_grid_field14": {
+					"type": "grid_field_label",
+					"field": "prop_name"
+				},
+				"simple_grid_field15": {
+					"type": "grid_field_label",
+					"field": "prop_address"
+				},
+				"simple_grid_field16": {
+					"type": "grid_field_label",
+					"field": "types"
+				},
+				"simple_grid_field17": {
+					"type": "grid_field_label",
+					"field": "kind"
+				},
+				"simple_grid_field18": {
+					"type": "grid_field_label",
+					"field": "hdb_town"
+				},
+				"simple_grid_field19": {
+					"type": "grid_field_label",
+					"field": "hdb_scheme"
+				},
+				"simple_grid_field20": {
+					"type": "grid_field_label",
+					"field": "land_size"
+				},
+				"simple_grid_field21": {
+					"type": "grid_field_label",
+					"field": "builtup"
+				},
+				"simple_grid_field22": {
+					"type": "grid_field_label",
+					"field": "tenure"
+				},
+				"simple_grid_field23": {
+					"type": "grid_field_label",
+					"field": "year_built"
+				},
+				"simple_grid_field24": {
+					"type": "grid_field_label",
+					"field": "TOP"
+				},
+				"simple_grid_field25": {
+					"type": "grid_field_label",
+					"field": "land_size_unit"
+				},
+				"simple_grid_field26": {
+					"type": "grid_field_label",
+					"field": "builtup_unit"
+				},
+				"simple_grid_field27": {
+					"type": "grid_field_label",
+					"field": "photos"
+				},
+				"details_preview": {
+					"type": "details_preview",
+					"table": 479413511,
+					"items": [],
+					"popup": false,
+					"pageId": "print"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "search",
+			"type": "search",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "search-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "search-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_search",
+								"search_reset",
+								"search_back_list",
+								"search_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "search-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-search",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_search_field",
+								"integrated_search_field1",
+								"integrated_search_field2",
+								"integrated_search_field3",
+								"integrated_search_field4",
+								"integrated_search_field5",
+								"integrated_search_field6",
+								"integrated_search_field7",
+								"integrated_search_field8"
+							]
+						}
+					},
+					"deferredItems": [],
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"search_header": {
+					"type": "search_header"
+				},
+				"search_reset": {
+					"type": "search_reset"
+				},
+				"search_back_list": {
+					"type": "search_back_list"
+				},
+				"search_search": {
+					"type": "search_search"
+				},
+				"search_cancel": {
+					"type": "search_cancel"
+				},
+				"integrated_search_field": {
+					"field": "types",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field1": {
+					"field": "kind",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field2": {
+					"field": "hdb_town",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field3": {
+					"field": "hdb_scheme",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field4": {
+					"field": "prop_name",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field5": {
+					"field": "prop_address",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field6": {
+					"field": "prop_postal",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field7": {
+					"field": "tenure",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field8": {
+					"field": "agentid",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "view",
+			"type": "view",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "view-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "view-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_back_list",
+								"view_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"prev",
+								"next",
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "view-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c19"
+								},
+								{
+									"cell": "c20"
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "c4"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c5"
+								},
+								{
+									"cell": "c6"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c7"
+								},
+								{
+									"cell": "c8"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c9"
+								},
+								{
+									"cell": "c10"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c11"
+								},
+								{
+									"cell": "c12"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c13"
+								},
+								{
+									"cell": "c14"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c17"
+								},
+								{
+									"cell": "c18"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c21"
+								},
+								{
+									"cell": "c22"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c23"
+								},
+								{
+									"cell": "c24"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c25"
+								},
+								{
+									"cell": "c26"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c29"
+								},
+								{
+									"cell": "c30"
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c4": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field13"
+							],
+							"field": "types"
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field"
+							],
+							"field": "types"
+						},
+						"c": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field14"
+							],
+							"field": "kind"
+						},
+						"c3": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field1"
+							],
+							"field": "kind"
+						},
+						"c5": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field15"
+							],
+							"field": "hdb_town"
+						},
+						"c6": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field2"
+							],
+							"field": "hdb_town"
+						},
+						"c7": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field16"
+							],
+							"field": "hdb_scheme"
+						},
+						"c8": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field3"
+							],
+							"field": "hdb_scheme"
+						},
+						"c9": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field17"
+							],
+							"field": "prop_address"
+						},
+						"c10": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field4"
+							],
+							"field": "prop_address"
+						},
+						"c11": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field18"
+							],
+							"field": "prop_name"
+						},
+						"c12": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field5"
+							],
+							"field": "prop_name"
+						},
+						"c13": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field19"
+							],
+							"field": "land_size"
+						},
+						"c14": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field6",
+								"land_size_unit"
+							],
+							"field": "land_size"
+						},
+						"c17": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field20"
+							],
+							"field": "builtup"
+						},
+						"c18": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field8",
+								"builtup_unit"
+							],
+							"field": "builtup"
+						},
+						"c21": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field22"
+							],
+							"field": "tenure"
+						},
+						"c22": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field10"
+							],
+							"field": "tenure"
+						},
+						"c23": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field23"
+							],
+							"field": "year_built"
+						},
+						"c24": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field11"
+							],
+							"field": "year_built"
+						},
+						"c25": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field24"
+							],
+							"field": "TOP"
+						},
+						"c26": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field12"
+							],
+							"field": "TOP"
+						},
+						"c29": {
+							"model": "c4",
+							"items": [
+								"edit_field_label"
+							],
+							"field": "TOP"
+						},
+						"c30": {
+							"model": "c2",
+							"items": [
+								"edit_field"
+							],
+							"field": "TOP"
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"details_preview"
+							],
+							"field": null
+						},
+						"c19": {
+							"model": "c4",
+							"items": [
+								"edit_field_label1"
+							],
+							"field": "types"
+						},
+						"c20": {
+							"model": "c2",
+							"items": [
+								"edit_field1"
+							],
+							"field": "types"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				}
+			},
+			"items": {
+				"view_header": {
+					"type": "view_header"
+				},
+				"view_back_list": {
+					"type": "view_back_list"
+				},
+				"view_close": {
+					"type": "view_close"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"view_edit",
+						"view_pdf"
+					]
+				},
+				"view_edit": {
+					"type": "view_edit"
+				},
+				"view_pdf": {
+					"type": "view_pdf",
+					"targetPages": [],
+					"splitModes": [],
+					"scopes": []
+				},
+				"next": {
+					"type": "next"
+				},
+				"prev": {
+					"type": "prev"
+				},
+				"integrated_edit_field": {
+					"field": "types",
+					"type": "edit_field"
+				},
+				"integrated_edit_field1": {
+					"field": "kind",
+					"type": "edit_field"
+				},
+				"integrated_edit_field2": {
+					"field": "hdb_town",
+					"type": "edit_field"
+				},
+				"integrated_edit_field3": {
+					"field": "hdb_scheme",
+					"type": "edit_field"
+				},
+				"integrated_edit_field4": {
+					"field": "prop_address",
+					"type": "edit_field"
+				},
+				"integrated_edit_field5": {
+					"field": "prop_name",
+					"type": "edit_field"
+				},
+				"integrated_edit_field6": {
+					"field": "land_size",
+					"type": "edit_field"
+				},
+				"integrated_edit_field8": {
+					"field": "builtup",
+					"type": "edit_field"
+				},
+				"integrated_edit_field10": {
+					"field": "tenure",
+					"type": "edit_field"
+				},
+				"integrated_edit_field11": {
+					"field": "year_built",
+					"type": "edit_field"
+				},
+				"integrated_edit_field12": {
+					"field": "TOP",
+					"type": "edit_field"
+				},
+				"integrated_edit_field13": {
+					"type": "edit_field_label",
+					"field": "types"
+				},
+				"integrated_edit_field14": {
+					"type": "edit_field_label",
+					"field": "kind"
+				},
+				"integrated_edit_field15": {
+					"type": "edit_field_label",
+					"field": "hdb_town"
+				},
+				"integrated_edit_field16": {
+					"type": "edit_field_label",
+					"field": "hdb_scheme"
+				},
+				"integrated_edit_field17": {
+					"type": "edit_field_label",
+					"field": "prop_address"
+				},
+				"integrated_edit_field18": {
+					"type": "edit_field_label",
+					"field": "prop_name"
+				},
+				"integrated_edit_field19": {
+					"type": "edit_field_label",
+					"field": "land_size"
+				},
+				"integrated_edit_field20": {
+					"type": "edit_field_label",
+					"field": "builtup"
+				},
+				"integrated_edit_field22": {
+					"type": "edit_field_label",
+					"field": "tenure"
+				},
+				"integrated_edit_field23": {
+					"type": "edit_field_label",
+					"field": "year_built"
+				},
+				"integrated_edit_field24": {
+					"type": "edit_field_label",
+					"field": "TOP"
+				},
+				"edit_field": {
+					"field": "photos",
+					"type": "edit_field"
+				},
+				"edit_field_label": {
+					"type": "edit_field_label",
+					"field": "photos"
+				},
+				"details_preview": {
+					"type": "details_preview",
+					"table": 479413511,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"land_size_unit": {
+					"field": "land_size_unit",
+					"type": "edit_field"
+				},
+				"builtup_unit": {
+					"field": "builtup_unit",
+					"type": "edit_field"
+				},
+				"edit_field1": {
+					"field": "agentid",
+					"type": "edit_field"
+				},
+				"edit_field_label1": {
+					"type": "edit_field_label",
+					"field": "agentid"
+				}
+			},
+			"version": 14,
+			"pageAlign": "left",
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"English": "Properties"
+	}
+}

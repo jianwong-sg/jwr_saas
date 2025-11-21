@@ -1,0 +1,6 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Download",
+	"serverCode": "unset($_SESSION[\"zipfiles\"]);\n$_SESSION[\"zipfiles\"]=array();\nwhile ($record = $button->getNextSelectedRecord()) {\n\t$_SESSION[\"zipfiles\"][]=array(\"file_type\"=>$record[\"file_type\"], \"file\"=>$record[\"file\"], \"id\"=>$record[\"id\"], \"name\"=>$record[\"name\"]);\n}",
+	"afterJsCode": "var n = $(\"input[name^='selection']:checked\").length;\n$('[name=\"selection[]\"]').prop('checked', false);\n$(\"#chooseAll_\"+pageid).prop(\"checked\",false);\nRunner.docManager.toggleButtonEnabledState(\"delete\", false);\nRunner.docManager.toggleButtonEnabledState(\"Download\", false);\nif (n>0) {\n\tlocation.href='getzip.php';\n}"
+}

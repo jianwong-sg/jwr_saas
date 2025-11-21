@@ -1,0 +1,4 @@
+{
+	"name": "hidden_subtotal",
+	"serverCode": "// Put your code here.\necho \"<DIV class='hidden-subtotal' style='display:none'></DIV>\";"
+}

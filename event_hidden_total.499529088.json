@@ -1,0 +1,4 @@
+{
+	"name": "hidden_total",
+	"serverCode": "echo \"<DIV class='hidden-total' style='display:none'></DIV>\";"
+}

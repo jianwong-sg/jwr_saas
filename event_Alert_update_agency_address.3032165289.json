@@ -1,0 +1,4 @@
+{
+	"name": "Alert_update_agency_address",
+	"serverCode": "if ($_SESSION[\"agency_address_alert\"]) {\necho \"Your profile is incomplete! Go to My Profile in Settings to update it.\";\n$_SESSION[\"agency_address_alert\"]=false;\n}"
+}

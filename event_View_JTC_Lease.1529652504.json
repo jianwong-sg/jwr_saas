@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "View_JTC_Lease",
+	"beforeJsCode": "location.href = \"transactions_jtc_lease_list.php\";"
+}

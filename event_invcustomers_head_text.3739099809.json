@@ -1,0 +1,4 @@
+{
+	"name": "invcustomers_head_text",
+	"serverCode": "// Put your code here.\necho '<div style=\"color:orange;font-size:18px;text-align:justify;\">On prevention of Money Laundering (AML) and countering the Financing of Terrorism (CFT), as part of Customer Due Diligence (CDD) measures, Salesperson shall check and keep in record the particulars and profile of client \nand all parties involved. Record of which shall as accurate and up to date as possible. This information of client is confidential.</div>';"
+}

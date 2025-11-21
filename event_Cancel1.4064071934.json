@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Cancel1",
+	"beforeJsCode": "location.href=\"transactions_list.php?#\";"
+}

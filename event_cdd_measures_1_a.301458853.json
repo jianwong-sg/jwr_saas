@@ -1,0 +1,4 @@
+{
+	"name": "cdd_measures_1.a",
+	"serverCode": "// Put your code here.\necho \"Do you suspect that the client is not the BO* of this property transaction?\";"
+}

@@ -1,0 +1,4 @@
+{
+	"name": "P7 advise seller on eligibility to sell",
+	"serverCode": "// Put your code here.\necho \"advise the Seller on the eligibility of the Seller to sell his HDB flat.\";"
+}

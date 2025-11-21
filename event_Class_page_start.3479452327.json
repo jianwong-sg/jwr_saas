@@ -1,0 +1,4 @@
+{
+	"name": "Class page start",
+	"serverCode": "// Put your code here.\necho '<div class=\"page\">';"
+}

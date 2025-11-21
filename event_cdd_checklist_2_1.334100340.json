@@ -1,0 +1,4 @@
+{
+	"name": "cdd_checklist_2.1",
+	"serverCode": "// Put your code here.\necho \"Is the client a foreigner* purchasing a property for this property transaction?\";"
+}

@@ -1,0 +1,4 @@
+{
+	"name": "P7 comply with all reasonable instructions",
+	"serverCode": "// Put your code here.\necho \"<p style='text-align:justify'>comply with all \n      reasonable instructions and requests of the Seller in relation to the \n      transaction.</p>\";"
+}

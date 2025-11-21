@@ -1,0 +1,4 @@
+{
+	"name": "P7 represent seller in negotiation",
+	"serverCode": "// Put your code here.\necho \"<p style='text-align:justify'>represent the \n      Seller in negotiations with any prospective Buyer in accordance with his \n      instructions.</p>\";"
+}

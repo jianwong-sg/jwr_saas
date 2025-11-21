@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "View_Sales",
+	"beforeJsCode": "location.href = \"transactions_sale_list.php\";"
+}

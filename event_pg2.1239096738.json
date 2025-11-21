@@ -1,0 +1,4 @@
+{
+	"name": "pg2",
+	"serverCode": "// Put your code here.\necho '<div class=\"pg-break\" >Page 2</div>';"
+}

@@ -1,0 +1,4 @@
+{
+	"name": "Tx list pg description",
+	"serverCode": "// Put your code here.\necho \"<span style='font-size:110%;'><i>To view Transaction details, mouse over the Transaction and click on it.\n</i></span>\";"
+}

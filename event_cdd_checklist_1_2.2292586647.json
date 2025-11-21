@@ -1,0 +1,4 @@
+{
+	"name": "cdd_checklist_1.2",
+	"serverCode": "// Put your code here.\necho '<div style=\"color:red;\">The customer’s particulars obtained and your encounters with your client will \n      help you assess if there is suspicion of money laundering (ML) or \n      terrorist financing (TF) activity.</div>';"
+}

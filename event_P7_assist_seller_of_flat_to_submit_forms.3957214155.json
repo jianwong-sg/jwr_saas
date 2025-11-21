@@ -1,0 +1,4 @@
+{
+	"name": "P7 assist seller of flat to submit forms",
+	"serverCode": "// Put your code here.\necho \"<p style='text-align:justify'>assist the Seller of the HDB flat to submit such forms, documents and/or \n      information as may be required by HDB to process the application for sale.</p>\";"
+}

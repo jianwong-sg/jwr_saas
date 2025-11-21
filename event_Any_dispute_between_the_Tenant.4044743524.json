@@ -1,0 +1,4 @@
+{
+	"name": "Any dispute between the Tenant",
+	"serverCode": "// Put your code here.\necho \"<p style='text-align:justify'>Any dispute between the Tenant and the Estate Agent arising out of or in \nconnection with this Agreement (including any question regarding its existence, \nvalidity or termination) shall first be resolved in the following manner:</p>\";"
+}

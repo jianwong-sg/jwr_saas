@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "view_signed_form5",
+	"beforeJsCode": "window.open('form5_view.php?page=view_signed&{$editlink}', '_blank');"
+}

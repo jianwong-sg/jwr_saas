@@ -1,0 +1,4 @@
+{
+	"name": "cdd_checklist_1.1",
+	"serverCode": "// Put your code here.\necho \"Are you able to complete the <b>Customer's Particulars Form</b>? It is mandatory to do so. If it is not done, please state the reasons in the Remarks column.\";"
+}

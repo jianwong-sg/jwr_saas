@@ -1,0 +1,4 @@
+{
+	"name": "cdd_measures_6a2",
+	"serverCode": "// Put your code here.\necho \"If your \n      answer is “Yes” to the above question, please indicate the findings in the \n      “Remarks” column.\";"
+}

@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Clear_sign_seller1",
+	"serverCode": "global $dal;\n$record = $button->getCurrentRecord();\n$tblForms = $dal->Table(\"forms\");\n$tblForms -> Param[\"id\"]=$record[\"id\"];\n$tblForms -> Value[\"sign_seller1\"]=NULL;\n$tblForms->Update();",
+	"beforeJsCode": "var signedpad = document.getElementById(\"value_sign_seller1_1\");\nif (signedpad !== null){\n$(\"#value_sign_seller1_1\").remove();\n}",
+	"afterJsCode": "localStorage[\"posStorage\"] = $(window).scrollTop();\nlocation.reload();"
+}

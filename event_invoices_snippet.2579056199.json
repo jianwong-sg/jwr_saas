@@ -1,0 +1,4 @@
+{
+	"name": "invoices_snippet",
+	"serverCode": "echo GetCustomLabel(\"terms_label\");"
+}

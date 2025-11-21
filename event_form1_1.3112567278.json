@@ -1,0 +1,4 @@
+{
+	"name": "form1.1",
+	"serverCode": "// Put your code here.\necho \"<p style='text-align:justify'>&emsp;&emsp;This \n      form is prescribed by the Council for Estate Agencies (‘‘CEA’’) under the \n      Estate Agents Act 2010 for use when an estate agent is authorised or \n      engaged by a prospective seller to introduce a buyer of residential \n      property <SUP>(2)</SUP>in Singapore.</p>\n      \";"
+}

@@ -1,0 +1,4 @@
+{
+	"name": "P7 advance the seller interest",
+	"serverCode": "// Put your code here.\necho \"<p style='text-align:justify'>advance the \n      Seller’s interest unaffected by any interest of the Estate Agent, \n      Salesperson or any other person.</p>\";"
+}

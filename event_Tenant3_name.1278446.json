@@ -1,0 +1,4 @@
+{
+	"name": "Tenant3 name",
+	"serverCode": "// Put your code here.\necho \"Tenant(3) Name:\";"
+}

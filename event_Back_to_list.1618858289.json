@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Back_to_list",
+	"beforeJsCode": "location.href = document.referrer;\nreturn false;"
+}

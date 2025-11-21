@@ -1,0 +1,4 @@
+{
+	"name": "Account_for_payment_view",
+	"serverCode": "echo \"<span style='padding-left:5px;'><b>\".GetCustomLabel(\"user_account_for_payment\").\":</b></span>\";"
+}

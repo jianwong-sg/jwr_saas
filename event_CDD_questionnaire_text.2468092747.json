@@ -1,0 +1,4 @@
+{
+	"name": "CDD questionnaire text",
+	"serverCode": "// Put your code here.\necho \"<span style='font-size:18px;' class='form-text-grey'>If there are multiple clients that you want to include in the check, holding on to the Ctrl key while selecting the Client's name.</span>\";"
+}

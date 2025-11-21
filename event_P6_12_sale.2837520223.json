@@ -1,0 +1,4 @@
+{
+	"name": "P6.12 sale",
+	"serverCode": "// Put your code here.\necho \"<p style='text-align:justify'>If there is a Salesperson representing the Estate Agent in the proposed sale \n      of the Property, the Salesperson shall sign and fill in his particulars. \n      Otherwise, if the Estate Agent acting in the proposed sale of the Property \n      is a natural person, he shall sign and fill in his particulars. If there \n      is more than one such Salesperson or Estate Agent who is a natural person \n      acting in the proposed sale of the Property, their name(s) and \n      particular(s) shall also be written, if necessary, on a separate sheet and \n      attached to this Agreement.</p>\";"
+}

@@ -1,0 +1,4 @@
+{
+	"name": "invoicedetails_import_link",
+	"serverCode": "echo \"<a class='btn btn-primary import_details' href='\".GetTableLink(\"invoicedetails\",\"import\").\"'>\".GetCustomLabel(\"import_details\").\"</a>\";"
+}

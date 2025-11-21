@@ -1,0 +1,4 @@
+{
+	"name": "cdd_measures_2b2",
+	"serverCode": "// Put your code here.\necho \"If your \n      answer is “Yes” to the above question, please proceed to lodge an STR and \n      cease dealing with the client or BO.\";"
+}

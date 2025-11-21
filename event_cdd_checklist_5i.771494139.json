@@ -1,0 +1,4 @@
+{
+	"name": "cdd_checklist_5i",
+	"serverCode": "// Put your code here.\necho \"Client's known business activity and purpose does not match the property transaction, e.g. the client is a non-profit organisation but the property is purchased for investment and the client intends to take a large loan.\";"
+}

@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "View_Rental",
+	"beforeJsCode": "location.href = \"transactions_prop_mng_list.php\";"
+}

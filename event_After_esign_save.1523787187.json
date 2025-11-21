@@ -1,0 +1,4 @@
+{
+	"name": "After esign save",
+	"serverCode": "// Put your code here.\necho \"<script>$(document).on('afterSave')||this.on('afterClose'), function() {\nlocation.reload();\n});</script>\";"
+}

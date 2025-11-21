@@ -1,0 +1,4 @@
+{
+	"name": "Go to top",
+	"serverCode": "// Put your code here.\necho '<button onclick=\"topFunction()\" id=\"myBtn\" title=\"Go to top\">Top</button>';"
+}

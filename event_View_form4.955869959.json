@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "View_form4",
+	"beforeJsCode": "window.open('form4_view.php?page=view_print&{$editlink}', '_blank');"
+}

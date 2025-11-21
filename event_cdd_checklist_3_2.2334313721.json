@@ -1,0 +1,4 @@
+{
+	"name": "cdd_checklist_3.2",
+	"serverCode": "// Put your code here.\necho '<div style=\"color:red;\">* Physical \n      cash exclude cheques and cashier orders.</div> \n      ';"
+}

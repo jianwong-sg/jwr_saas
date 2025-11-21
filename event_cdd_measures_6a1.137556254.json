@@ -1,0 +1,4 @@
+{
+	"name": "cdd_measures_6a1",
+	"serverCode": "// Put your code here.\necho \"If the property transaction is of higher risk, have you conducted enhanced CDD measures by asking the following information from the client or BO, i.e. occupation, source of funds/wealth and purpose of the transaction.\";"
+}

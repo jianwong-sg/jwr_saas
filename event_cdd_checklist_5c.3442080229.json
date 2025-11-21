@@ -1,0 +1,4 @@
+{
+	"name": "cdd_checklist_5c",
+	"serverCode": "// Put your code here.\necho \"Client attempts to hide the identity of the true client or requests that the transaction be structured to hide the identity of the true client.\";"
+}

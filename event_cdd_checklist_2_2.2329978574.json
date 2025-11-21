@@ -1,0 +1,4 @@
+{
+	"name": "cdd_checklist_2.2",
+	"serverCode": "// Put your code here.\necho '<div style=\"color:red;\">* Foreigner \n      includes Singapore Permanent Residents.</div> \n      ';"
+}

@@ -1,0 +1,4 @@
+{
+	"name": "The Estate agent may ask seller",
+	"serverCode": "// Put your code here.\necho \"<p style='text-align:justify'>The Estate Agent may ask the Seller in writing whether he elects to mediate or not. If the Seller does not reply or make any election within three weeks of receipt of such enquiry, he shall be deemed to have elected in writing not to proceed to mediation.</p>\n      \";"
+}

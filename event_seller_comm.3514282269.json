@@ -1,0 +1,4 @@
+{
+	"name": "seller comm",
+	"serverCode": "// Put your code here.\n\necho \"the Seller shall pay the Estate  Agent commission of S$\";\nglobal $values;\necho $values[\"comm\"];\necho \"/ at the rate of\";\nglobal $values;\necho $values[\"percentage\"];"
+}

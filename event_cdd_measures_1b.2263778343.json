@@ -1,0 +1,4 @@
+{
+	"name": "cdd_measures_1b",
+	"serverCode": "// Put your code here.\necho \"If the client is not the BO, are you able to verify the identify of the BO?\";"
+}

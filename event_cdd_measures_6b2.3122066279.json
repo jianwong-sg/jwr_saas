@@ -1,0 +1,4 @@
+{
+	"name": "cdd_measures_6b2",
+	"serverCode": "// Put your code here.\necho \"If your \n      answer is “Yes” to the above question, please indicate the decision of \n      your estate agent in the “Remarks” column.\";"
+}

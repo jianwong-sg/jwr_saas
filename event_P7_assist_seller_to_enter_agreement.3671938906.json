@@ -1,0 +1,4 @@
+{
+	"name": "P7 assist seller to enter agreement",
+	"serverCode": "// Put your code here.\necho \"assist \n      the Seller to enter into a binding agreement for sale and purchase with \n      the Buyer and reasonably explain to the Seller all relevant forms and \n      documents. However, if the Estate Agent is in doubt on any matter, he \n      shall state his doubt and advise the Seller to seek advice from \n      appropriate professionals.\";"
+}

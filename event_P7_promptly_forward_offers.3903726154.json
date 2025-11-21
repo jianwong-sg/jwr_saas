@@ -1,0 +1,4 @@
+{
+	"name": "P7 promptly forward offers",
+	"serverCode": "// Put your code here.\necho \"<p style='text-align:justify'>promptly \n      forward to the Seller all offers, proposals or expressions of interest \n      from potential Buyers or their agents.</p> \n      \";"
+}

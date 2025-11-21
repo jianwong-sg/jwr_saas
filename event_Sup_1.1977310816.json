@@ -1,0 +1,4 @@
+{
+	"name": "Sup 1",
+	"serverCode": "// Put your code here.\necho \"<sup>(1)</sup>&nbsp;\";"
+}

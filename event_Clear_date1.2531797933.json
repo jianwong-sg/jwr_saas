@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Clear_date1",
+	"serverCode": "global $dal;\n$record = $button->getCurrentRecord();\n$tblForms = $dal->Table(\"forms\");\n$tblForms -> Param[\"id\"]=$record[\"id\"];\n$tblForms -> Value[\"sign_date1\"]=NULL;\n$tblForms->Update();",
+	"beforeJsCode": "// Put your code here.\ndocument.getElementById(\"value_sign_date1_1\").textContent=\"\";",
+	"afterJsCode": "location.reload();"
+}

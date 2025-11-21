@@ -1,0 +1,6281 @@
+{
+	"orderInfo": [
+		{
+			"index": 1,
+			"field": "id",
+			"expr": "id",
+			"asc": false
+		}
+	],
+	"sql": "SELECT\n\tid,\n\tcategory,\n\tprop_type,\n\tProp_kind,\n\trental_price,\n\tsalesperson_name,\n\tprop_name,\n\tprop_address,\n\tdocuserid,\n\tcea_reg,\n\tprop_postal,\n\tcobroke_comm,\n\tagency_fee,\n\tcommission,\n\tsale_price,\n\trepresenting,\n\tmarketing_rights,\n\tcurrency,\n\tloi_date,\n\tta_date,\n\tlease_start_date,\n\tlease_duration_no,\n\tlease_duration_unit,\n\tlease_expiry,\n\tvaluation_price,\n\toption_money,\n\totp_date,\n\toption_exercise_date,\n\test_completion_date,\n\tsp_execution_date,\n\t`TOP`,\n\tbuilt_up,\n\tland,\n\ttenure,\n\t`condition`,\n\tno_bedrooms,\n\tno_bathrooms,\n\tbuilt_up_unit,\n\tland_unit,\n\trental_price_type,\n\ttransacted_price,\n\tcdd_result,\n\tsls_cust,\n\tsls_result,\n\tpps_cust,\n\tpps_result,\n\tcomm_unit,\n\tcomm_amt,\n\tgst_payable,\n\tgst_inclusive,\n\tcomm_earned,\n\tgst,\n\tcomm_gross,\n\tcomm_earned_agency,\n\tgst_agency,\n\tcomm_gross_agency,\n\tcomm_earned_salesperson,\n\tcomm_earned_percent_salesperson,\n\tcomm_percent,\n\tstatus,\n\tdatesubmit,\n\tdatereject,\n\tdateapprove,\n\tstatus_status,\n\t`date`,\n\tsalesperson_nric,\n\tcdd_check_result,\n\tstr_filing_date,\n\tremarks,\n\tsalesperson_email\nFROM\n\ttransactions\nORDER BY\n\tid DESC\n",
+	"type": 1,
+	"connId": "Tables",
+	"originalTable": "transactions",
+	"name": "my_comm_admin",
+	"shortTableName": "my_comm_admin",
+	"dbType": 0,
+	"hideFilterUntilSearch": true,
+	"caseSensitiveSearch": "",
+	"tableOwnerIdField": "cea_reg",
+	"usersOwnerIdField": "active",
+	"listAjax": true,
+	"clickActions": {
+		"row": {
+			"codeData": {
+				"snippet": null
+			},
+			"gridData": {
+				"action": "checkbox",
+				"table": "parties_involved",
+				"tableGid": 1012154352
+			},
+			"openData": {
+				"how": "goto",
+				"page": "edit",
+				"table": "parties_involved",
+				"url": "",
+				"tableGid": 1012154352
+			}
+		},
+		"fields": {
+			"Prop_kind": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"TOP": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"Unit_no": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"agency_fee": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"built_up": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"built_up_unit": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"category": {
+				"action": "open",
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {
+					"action": "checkbox",
+					"table": "parties_involved",
+					"tableGid": 1012154352
+				},
+				"openData": {
+					"how": "goto",
+					"page": "edit",
+					"table": "parties_involved",
+					"url": "",
+					"tableGid": 1012154352
+				}
+			},
+			"cdd_result": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"cea_reg": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"cobroke_comm": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_amt": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_earned": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_earned_agency": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_earned_percent_salesperson": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_earned_salesperson": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_gross": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_gross_agency": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_percent": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_unit": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"commission": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"condition": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"currency": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"docuserid": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"est_completion_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"gst": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"gst_agency": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"gst_inclusive": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"gst_payable": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"id": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"land": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"land_unit": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"lease_duration_no": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"lease_duration_unit": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"lease_expiry": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"lease_start_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"loi_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"marketing_rights": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"no_bathrooms": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"no_bedrooms": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"option_exercise_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"option_money": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"otp_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"pps_cust": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"pps_result": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"prop_address": {
+				"action": "open",
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {
+					"action": "checkbox",
+					"table": "parties_involved",
+					"tableGid": 1012154352
+				},
+				"openData": {
+					"how": "goto",
+					"page": "edit",
+					"table": "parties_involved",
+					"url": "",
+					"tableGid": 1012154352
+				}
+			},
+			"prop_name": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"prop_postal": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"prop_type": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"rental_price": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"rental_price_type": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"representing": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"sale_price": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"salesperson_name": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"sls_cust": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"sls_result": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"sp_execution_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"ta_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"tenure": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"transacted_price": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"valuation_price": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			}
+		}
+	},
+	"hideEmptyFieldsOnView": true,
+	"pageSizeSelectorRecords": [
+		"10",
+		"20",
+		"30",
+		"50",
+		"100",
+		"500",
+		"-1"
+	],
+	"pageSizeSelectorGroups": [
+		"1",
+		"3",
+		"5",
+		"10",
+		"50",
+		"100",
+		"-1"
+	],
+	"chartSettings": {
+		"accumulationAppearance": 1
+	},
+	"keyFields": [
+		"id"
+	],
+	"detailsBadgeColor": "7B68EE",
+	"fields": [
+		{
+			"name": "id",
+			"sqlExpression": "id",
+			"index": 1,
+			"strField": "id",
+			"type": 3,
+			"autoinc": true,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"validateAs": "Number",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "1",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"allSearchOptionsSelected": true,
+			"label": {
+				"English": "Txn ID"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "category",
+			"sqlExpression": "category",
+			"index": 2,
+			"strField": "category",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupValues": [
+						"Sale",
+						"Rental",
+						"Assignment"
+					],
+					"lookupTable": "transact_type",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "tx_type",
+					"lookupDisplayField": "tx_type",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"searchOptions": [
+				"Contains",
+				"Equals",
+				"Starts with",
+				"Empty",
+				"NOT Contains",
+				"NOT Equals",
+				"NOT Starts with",
+				"NOT Empty"
+			],
+			"label": {
+				"English": "Txn Type"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "prop_type",
+			"sqlExpression": "prop_type",
+			"index": 3,
+			"strField": "prop_type",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "types",
+					"lookupDisplayField": "types",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "prop_address",
+							"lookupField": "prop_address"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"searchOptions": [
+				"Contains",
+				"Equals",
+				"Starts with",
+				"Empty",
+				"NOT Contains",
+				"NOT Equals",
+				"NOT Starts with",
+				"NOT Empty"
+			],
+			"label": {
+				"English": "Property Type"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "Prop_kind",
+			"sqlExpression": "Prop_kind",
+			"index": 4,
+			"strField": "Prop_kind",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "kind",
+					"lookupDisplayField": "kind",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "prop_address",
+							"lookupField": "prop_address"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"searchOptions": [
+				"Contains",
+				"Equals",
+				"Starts with",
+				"Empty",
+				"NOT Contains",
+				"NOT Equals",
+				"NOT Starts with",
+				"NOT Empty"
+			],
+			"label": {
+				"English": "Prop Kind"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "rental_price",
+			"sqlExpression": "rental_price",
+			"index": 5,
+			"strField": "rental_price",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"validateAs": "Currency",
+					"textboxSize": 80,
+					"textboxMaxLenth": 20,
+					"textHTML5Input": "1",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Rental Price"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "salesperson_name",
+			"sqlExpression": "salesperson_name",
+			"index": 6,
+			"strField": "salesperson_name",
+			"type": 200,
+			"separateEditViewFormats": true,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				},
+				{
+					"pageType": "list",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				},
+				{
+					"pageType": "print",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				},
+				{
+					"pageType": "export",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"required": true,
+					"defaultValue": "$_SESSION[\"full_name\"]",
+					"autoUpdateValue": "$_SESSION[\"full_name\"]",
+					"textboxSize": 120,
+					"textboxMaxLenth": 30,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				},
+				{
+					"format": "Readonly",
+					"pageType": "register",
+					"required": true,
+					"defaultValue": "$_SESSION[\"full_name\"]",
+					"textboxSize": 120,
+					"textboxMaxLenth": 30,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				},
+				{
+					"format": "Readonly",
+					"pageType": "add",
+					"required": true,
+					"defaultValue": "$_SESSION[\"full_name\"]",
+					"textboxSize": 120,
+					"textboxMaxLenth": 30,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				},
+				{
+					"format": "Readonly",
+					"pageType": "search",
+					"required": true,
+					"defaultValue": "$_SESSION[\"full_name\"]",
+					"textboxSize": 120,
+					"textboxMaxLenth": 30,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Salesperson"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "prop_name",
+			"sqlExpression": "prop_name",
+			"index": 7,
+			"strField": "prop_name",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "prop_name",
+					"lookupDisplayField": "prop_name",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "prop_address",
+							"lookupField": "prop_address"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Property Name"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "prop_address",
+			"sqlExpression": "prop_address",
+			"index": 8,
+			"strField": "prop_address",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "prop_address",
+					"lookupDisplayField": "prop_address",
+					"lookupAllowAdd": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Address"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "docuserid",
+			"sqlExpression": "docuserid",
+			"index": 9,
+			"strField": "docuserid",
+			"type": 3,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"validateAs": "Number",
+					"textboxSize": 30,
+					"textHTML5Input": "1",
+					"lookupLinkField": "id",
+					"lookupDisplayField": "id",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "By",
+							"lookupField": "full_name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"allSearchOptionsSelected": true,
+			"label": {
+				"English": "ID"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "cea_reg",
+			"sqlExpression": "cea_reg",
+			"index": 10,
+			"strField": "cea_reg",
+			"type": 201,
+			"separateEditViewFormats": true,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				},
+				{
+					"pageType": "list",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				},
+				{
+					"pageType": "print",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				},
+				{
+					"pageType": "export",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"required": true,
+					"defaultValue": "$_SESSION[\"cea_reg\"]",
+					"autoUpdateValue": "$_SESSION[\"cea_reg\"]",
+					"textboxSize": 100,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupLinkField": "cea_reg",
+					"lookupDisplayField": "cea_reg",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "By",
+							"lookupField": "full_name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				},
+				{
+					"format": "Readonly",
+					"pageType": "register",
+					"required": true,
+					"defaultValue": "$_SESSION[\"cea_reg\"]",
+					"textboxSize": 100,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupLinkField": "cea_reg",
+					"lookupDisplayField": "cea_reg",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "By",
+							"lookupField": "full_name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				},
+				{
+					"format": "Readonly",
+					"pageType": "add",
+					"required": true,
+					"defaultValue": "$_SESSION[\"cea_reg\"]",
+					"textboxSize": 100,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupLinkField": "cea_reg",
+					"lookupDisplayField": "cea_reg",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "By",
+							"lookupField": "full_name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				},
+				{
+					"format": "Readonly",
+					"pageType": "search",
+					"required": true,
+					"defaultValue": "$_SESSION[\"cea_reg\"]",
+					"textboxSize": 100,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupLinkField": "cea_reg",
+					"lookupDisplayField": "cea_reg",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "By",
+							"lookupField": "full_name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"allSearchOptionsSelected": true,
+			"label": {
+				"English": "CEA Reg"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "prop_postal",
+			"sqlExpression": "prop_postal",
+			"index": 11,
+			"strField": "prop_postal",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 60,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "prop_postal",
+					"lookupDisplayField": "prop_postal",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "prop_address",
+							"lookupField": "prop_address"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Postal"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "cobroke_comm",
+			"sqlExpression": "cobroke_comm",
+			"index": 12,
+			"strField": "cobroke_comm",
+			"type": 200,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Number",
+					"textboxSize": 80,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Comm To Co-broke Agent"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "agency_fee",
+			"sqlExpression": "agency_fee",
+			"index": 13,
+			"strField": "agency_fee",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"validateAs": "Number",
+					"textboxSize": 80,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Agency Fee"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "commission",
+			"sqlExpression": "commission",
+			"index": 14,
+			"strField": "commission",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"validateAs": "Number",
+					"textboxSize": 80,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Comm To Salesperson"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "sale_price",
+			"sqlExpression": "sale_price",
+			"index": 15,
+			"strField": "sale_price",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"validateAs": "Currency",
+					"textboxSize": 80,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Sale Price"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "representing",
+			"sqlExpression": "representing",
+			"index": 16,
+			"strField": "representing",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupValues": [
+						"Landlord",
+						"Tenant",
+						"Buyer"
+					],
+					"lookupTable": "represent_type",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "type",
+					"lookupDisplayField": "type",
+					"lookupHorizontal": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "category",
+							"lookupField": "categories"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Representing"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "marketing_rights",
+			"sqlExpression": "marketing_rights",
+			"index": 17,
+			"strField": "marketing_rights",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 100,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"Exclusive",
+						"Non-Exclusive"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Marketing Rights"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "currency",
+			"sqlExpression": "currency",
+			"index": 18,
+			"strField": "currency",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"defaultValue": "\"SGD\"",
+					"textboxSize": 50,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "dollars",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "currency",
+					"lookupDisplayField": "currency",
+					"lookupAllowAdd": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Currency"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "loi_date",
+			"sqlExpression": "loi_date",
+			"index": 19,
+			"strField": "loi_date",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 11,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "LOI Date"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "ta_date",
+			"sqlExpression": "ta_date",
+			"index": 20,
+			"strField": "ta_date",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 11,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "TA Date"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "lease_start_date",
+			"sqlExpression": "lease_start_date",
+			"index": 21,
+			"strField": "lease_start_date",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"textboxSize": 100,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 11,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Lease Commencement"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "lease_duration_no",
+			"sqlExpression": "lease_duration_no",
+			"index": 22,
+			"strField": "lease_duration_no",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Number",
+					"textboxSize": 50,
+					"textboxMaxLenth": 5,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Lease Duration"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "lease_duration_unit",
+			"sqlExpression": "lease_duration_unit",
+			"index": 23,
+			"strField": "lease_duration_unit",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 100,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"Months",
+						"Years"
+					],
+					"lookupControlType": 3,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Mth / Yr"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "lease_expiry",
+			"sqlExpression": "lease_expiry",
+			"index": 24,
+			"strField": "lease_expiry",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"textboxSize": 100,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 11,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Lease Expiry"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "valuation_price",
+			"sqlExpression": "valuation_price",
+			"index": 25,
+			"strField": "valuation_price",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Currency",
+					"textboxSize": 80,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Valuation"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "option_money",
+			"sqlExpression": "option_money",
+			"index": 26,
+			"strField": "option_money",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Currency",
+					"textboxSize": 80,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Option Money"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "otp_date",
+			"sqlExpression": "otp_date",
+			"index": 27,
+			"strField": "otp_date",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 11,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "OTP Date"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "option_exercise_date",
+			"sqlExpression": "option_exercise_date",
+			"index": 28,
+			"strField": "option_exercise_date",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 11,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Option Exercise Date"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "est_completion_date",
+			"sqlExpression": "est_completion_date",
+			"index": 29,
+			"strField": "est_completion_date",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 11,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Est Completion Date"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "sp_execution_date",
+			"sqlExpression": "sp_execution_date",
+			"index": 30,
+			"strField": "sp_execution_date",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 11,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "S&P Execution Date"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "TOP",
+			"sqlExpression": "`TOP`",
+			"index": 31,
+			"strField": "TOP",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"textboxSize": 100,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "TOP"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "built_up",
+			"sqlExpression": "built_up",
+			"index": 32,
+			"strField": "built_up",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Number",
+					"textboxSize": 80,
+					"textboxMaxLenth": 5,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Built Up"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "land",
+			"sqlExpression": "land",
+			"index": 33,
+			"strField": "land",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"validateAs": "Number",
+					"textboxSize": 80,
+					"textboxMaxLenth": 5,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "land_size",
+					"lookupDisplayField": "land_size",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "prop_address",
+							"lookupField": "prop_address"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Land"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "tenure",
+			"sqlExpression": "tenure",
+			"index": 34,
+			"strField": "tenure",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 100,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"30 Years Leasehold",
+						"60 Years Leasehold",
+						"99 Years Leasehold",
+						"999 Years Leasehold",
+						"Freehold"
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Tenure"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "condition",
+			"sqlExpression": "`condition`",
+			"index": 35,
+			"strField": "condition",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 100,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"Bare",
+						"Brand New",
+						"Partially Furnished",
+						"Fully Furnished",
+						"Original",
+						"Renovated"
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Condition"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "no_bedrooms",
+			"sqlExpression": "no_bedrooms",
+			"index": 36,
+			"strField": "no_bedrooms",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 80,
+					"textboxMaxLenth": 5,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"Studio",
+						"1",
+						"2",
+						"3",
+						"4",
+						"5",
+						"6",
+						"7",
+						"8",
+						"9",
+						"10"
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "No of Bedrooms"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "no_bathrooms",
+			"sqlExpression": "no_bathrooms",
+			"index": 37,
+			"strField": "no_bathrooms",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 80,
+					"textboxMaxLenth": 5,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"1",
+						"2",
+						"3",
+						"4",
+						"5",
+						"6",
+						"7",
+						"8"
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "No of Bathrooms"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "built_up_unit",
+			"sqlExpression": "built_up_unit",
+			"index": 38,
+			"strField": "built_up_unit",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 80,
+					"textboxMaxLenth": 5,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"Sqf",
+						"Sqm"
+					],
+					"lookupControlType": 3,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Sqf / Sqm"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "land_unit",
+			"sqlExpression": "land_unit",
+			"index": 39,
+			"strField": "land_unit",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 80,
+					"textboxMaxLenth": 5,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"Sqf",
+						"Sqm"
+					],
+					"lookupControlType": 3,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Sqf / Sqm"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "rental_price_type",
+			"sqlExpression": "rental_price_type",
+			"index": 40,
+			"strField": "rental_price_type",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"defaultValue": "\"per month\"",
+					"textboxSize": 100,
+					"textboxMaxLenth": 20,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"lump sum",
+						"per week",
+						"per month",
+						"per year"
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": ""
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "transacted_price",
+			"sqlExpression": "transacted_price",
+			"index": 41,
+			"strField": "transacted_price",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textboxSize": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Transacted Price"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "cdd_result",
+			"sqlExpression": "cdd_result",
+			"index": 42,
+			"strField": "cdd_result",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textboxSize": 250,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "CDD Results"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "sls_cust",
+			"sqlExpression": "sls_cust",
+			"index": 43,
+			"strField": "sls_cust",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Customer"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "sls_result",
+			"sqlExpression": "sls_result",
+			"index": 44,
+			"strField": "sls_result",
+			"type": 201,
+			"viewFormats": [
+				{
+					"format": "Custom",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"customExpression": "if($value=='No record found')\n{\n$v=\"<font color=#16E80C>\".$value.\"</font>\";\n}else\n{\n$v=\"<font color=#FF4500>\".$value.\"</font>\";\n}\n\n$value=$v;",
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "SLS Results"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "pps_cust",
+			"sqlExpression": "pps_cust",
+			"index": 45,
+			"strField": "pps_cust",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Customer"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "pps_result",
+			"sqlExpression": "pps_result",
+			"index": 46,
+			"strField": "pps_result",
+			"type": 201,
+			"viewFormats": [
+				{
+					"format": "Custom",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"customExpression": "if($value=='No record found')\n{\n$v=\"<font color=#16E80C>\".$value.\"</font>\";\n}else\n{\n$v=\"<font color=#FF4500>\".$value.\"</font>\";\n}\n$value=$v;",
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "PPS Results"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "comm_unit",
+			"sqlExpression": "comm_unit",
+			"index": 47,
+			"strField": "comm_unit",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Number",
+					"textboxSize": 30,
+					"textHTML5Input": "1",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "No. of month"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "comm_amt",
+			"sqlExpression": "comm_amt",
+			"index": 48,
+			"strField": "comm_amt",
+			"type": 200,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"textboxSize": 80,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Comm Amt"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "gst_payable",
+			"sqlExpression": "gst_payable",
+			"index": 49,
+			"strField": "gst_payable",
+			"type": 200,
+			"viewFormats": [
+				{
+					"format": "Checkbox",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Checkbox",
+					"validateAs": "Number",
+					"textboxSize": 30,
+					"textHTML5Input": "0",
+					"lookupControlType": 4,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "GST Payable"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "gst_inclusive",
+			"sqlExpression": "gst_inclusive",
+			"index": 50,
+			"strField": "gst_inclusive",
+			"type": 200,
+			"viewFormats": [
+				{
+					"format": "Checkbox",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Checkbox",
+					"validateAs": "Number",
+					"textboxSize": 30,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "GST Inclusive"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "comm_earned",
+			"sqlExpression": "comm_earned",
+			"index": 51,
+			"strField": "comm_earned",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textboxSize": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Commission Earned"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "gst",
+			"sqlExpression": "gst",
+			"index": 52,
+			"strField": "gst",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textboxSize": 42,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "GST"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "comm_gross",
+			"sqlExpression": "comm_gross",
+			"index": 53,
+			"strField": "comm_gross",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textboxSize": 72,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Gross"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "comm_earned_agency",
+			"sqlExpression": "comm_earned_agency",
+			"index": 54,
+			"strField": "comm_earned_agency",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"textboxSize": 52,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Gross Comm To Agency"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "gst_agency",
+			"sqlExpression": "gst_agency",
+			"index": 55,
+			"strField": "gst_agency",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"textboxSize": 42,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "GST"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "comm_gross_agency",
+			"sqlExpression": "comm_gross_agency",
+			"index": 56,
+			"strField": "comm_gross_agency",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"textboxSize": 72,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Total"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "comm_earned_salesperson",
+			"sqlExpression": "comm_earned_salesperson",
+			"index": 57,
+			"strField": "comm_earned_salesperson",
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"textboxSize": 50,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Comm Earned"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "comm_earned_percent_salesperson",
+			"sqlExpression": "comm_earned_percent_salesperson",
+			"index": 58,
+			"strField": "comm_earned_percent_salesperson",
+			"type": 200,
+			"viewFormats": [
+				{
+					"format": "Number",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"textboxSize": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Percentage"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "comm_percent",
+			"sqlExpression": "comm_percent",
+			"index": 59,
+			"strField": "comm_percent",
+			"type": 14,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Number",
+					"textboxSize": 30,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Percentage"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "status",
+			"sqlExpression": "status",
+			"index": 60,
+			"strField": "status",
+			"type": 3,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Number",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Status"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "datesubmit",
+			"sqlExpression": "datesubmit",
+			"index": 61,
+			"strField": "datesubmit",
+			"type": 135,
+			"viewFormats": [
+				{
+					"format": "Datetime",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 13,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Date Submit"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "datereject",
+			"sqlExpression": "datereject",
+			"index": 62,
+			"strField": "datereject",
+			"type": 135,
+			"viewFormats": [
+				{
+					"format": "Datetime",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 13,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Date Reject"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "dateapprove",
+			"sqlExpression": "dateapprove",
+			"index": 63,
+			"strField": "dateapprove",
+			"type": 135,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 13,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Date Approve"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "status_status",
+			"sqlExpression": "status_status",
+			"index": 64,
+			"strField": "status_status",
+			"type": 200,
+			"viewFormats": [
+				{
+					"format": "Custom",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"customExpression": "if ($value==\"Submitted\")\n$color=\"dark grey\";\nelse if ($value==\"Approved\")\n$color=\"green\";\nelse\n$color=\"red\";\n\n$value=\"<font color='$color'>$value</font>\";",
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"defaultValue": "\"Draft\"",
+					"textboxSize": 100,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Status"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "date",
+			"sqlExpression": "`date`",
+			"index": 65,
+			"strField": "date",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"required": true,
+					"defaultValue": "now()",
+					"textboxSize": 120,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 11,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Date"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "salesperson_nric",
+			"sqlExpression": "salesperson_nric",
+			"index": 66,
+			"strField": "salesperson_nric",
+			"type": 201,
+			"separateEditViewFormats": true,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				},
+				{
+					"pageType": "list",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				},
+				{
+					"pageType": "print",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				},
+				{
+					"pageType": "export",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"defaultValue": "$_SESSION[\"nric\"]",
+					"autoUpdateValue": "$_SESSION[\"nric\"]",
+					"textboxSize": 100,
+					"textboxMaxLenth": 15,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				},
+				{
+					"format": "Readonly",
+					"pageType": "register",
+					"defaultValue": "$_SESSION[\"nric\"]",
+					"textboxSize": 100,
+					"textboxMaxLenth": 15,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				},
+				{
+					"format": "Readonly",
+					"pageType": "add",
+					"defaultValue": "$_SESSION[\"nric\"]",
+					"textboxSize": 100,
+					"textboxMaxLenth": 15,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				},
+				{
+					"format": "Readonly",
+					"pageType": "search",
+					"defaultValue": "$_SESSION[\"nric\"]",
+					"textboxSize": 100,
+					"textboxMaxLenth": 15,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Salesperson ID"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "cdd_check_result",
+			"sqlExpression": "cdd_check_result",
+			"index": 67,
+			"strField": "cdd_check_result",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "CDD measure result"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "str_filing_date",
+			"sqlExpression": "str_filing_date",
+			"index": 68,
+			"strField": "str_filing_date",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Str Filing Date"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "remarks",
+			"sqlExpression": "remarks",
+			"index": 69,
+			"strField": "remarks",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"textboxSize": 400,
+					"textboxMaxLenth": 500,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Remarks"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "salesperson_email",
+			"sqlExpression": "salesperson_email",
+			"index": 70,
+			"strField": "salesperson_email",
+			"type": 201,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"defaultValue": "$_SESSION[\"email\"]",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Email"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		}
+	],
+	"warnLeavingEdit": true,
+	"afterEditAction": 2,
+	"afterEditDetails": 14,
+	"afterAddAction": 3,
+	"afterAddDetail": 14,
+	"whereTabs": [
+		{}
+	],
+	"eventHandlers": [
+		{
+			"eventId": "EVENT_BEFORESHOW_VIEW",
+			"pageType": "view",
+			"code": "if ($values[\"cdd_result\"]==\"\")\n{\n$xt->assign(\"details_cdd_measures\",false);\n$xt->assign(\"details_pps_check\",false);\n$xt->assign(\"details_un_sanction_check\",false);\n$xt->assign(\"details_str\",false);\n}\n\nif ($values[\"category\"]==\"SALE\")\n$xt->assign(\"comm_unit\",false);\n\nif ($values[\"category\"]==\"RENTAL\"||$values[\"category\"]==\"ASSIGNMENT\")\n$xt->assign(\"comm_percent\",false);\n\nif ($values[\"category\"]==\"PROPERTY MANAGEMENT\")\n{\n$xt->assign(\"comm_unit\",false);\n$xt->assign(\"comm_percent\",false);\n}\n\n$xt->assign(\"edit_button\", true);\n\t$xt->assign(\"send_button\", true);\n\n\tif( $_SESSION[\"UserID\"] == \"Guest\" )\n\t{\n\t\t\t$xt->assign(\"back_button\", false);\n\t\t\t$xt->assign(\"edit_button\", false);\n\t\t\t$xt->assign(\"send_button\", false);\n\t}\n\n\t$xt->assign(\"editid1_value\", $values['id']);\n\n\t$pdfButtonAttrs = set_pdfButtonAttrs();\n\t$xt->assign(\"pdfbutton_attrs\", $pdfButtonAttrs);\n\n\tif( !postvalue(\"pdf\") )\n\t\t$xt->assign(\"buttons-container\", true);\n\n\tmakeAdditionalPdfPreparations($xt, $pageObject);"
+		},
+		{
+			"eventId": "EVENT_JS_ONLOAD",
+			"pageType": "view",
+			"code": "//hide controls in transaction\nvar ctrlCat = Runner.getControl(pageid, 'category');\nvar ctrlRepresent = Runner.getControl(pageid, 'representing');\nvar ctrlRights = Runner.getControl(pageid, 'marketing_rights');\nvar ctrlSalePrice = Runner.getControl(pageid, 'sale_price');\nvar ctrlValuation = Runner.getControl(pageid, 'valuation_price');\nvar ctrlOption = Runner.getControl(pageid, 'option_money');\nvar ctrlOtpDate = Runner.getControl(pageid, 'otp_date');\nvar ctrlOtpExeDate = Runner.getControl(pageid, 'option_exercise_date');\nvar ctrlEstCompletion = Runner.getControl(pageid, 'est_completion_date');\nvar ctrlSpExeDate = Runner.getControl(pageid, 'sp_execution_date');\nvar ctrlLOI = Runner.getControl(pageid, 'loi_date');\nvar ctrlRental = Runner.getControl(pageid, 'rental_price');\nvar ctrlRentPriceType = Runner.getControl(pageid, 'rental_price_type');\nvar ctrlTADate = Runner.getControl(pageid, 'ta_date');\nvar ctrlLeaseDuration = Runner.getControl(pageid, 'lease_duration_no');\nvar ctrlLeaseDuUnit = Runner.getControl(pageid, 'lease_duration_unit');\nvar ctrlLeaseStart = Runner.getControl(pageid, 'lease_start_date');\nvar ctrlLeaseEnd = Runner.getControl(pageid, 'lease_expiry');\nvar ctrlUnit = Runner.getControl(pageid, 'comm_unit');\nvar ctrlPercent = Runner.getControl(pageid, 'comm_percent');\nvar ctrlAmount = Runner.getControl(pageid, 'comm_amt');\nvar ctrlTransacted = Runner.getControl(pageid, 'transacted_price');\nvar ctrlEarned = Runner.getControl(pageid, 'comm_earned');\nvar ctrlGst = Runner.getControl(pageid, 'gst');\nvar ctrlGross = Runner.getControl(pageid, 'comm_gross');\nvar ctrlGstPayable = Runner.getControl(pageid, 'gst_payable');\nvar ctrlGstInclusive = Runner.getControl(pageid, 'gst_inclusive');\nvar ctrlCommEarnedAgency = Runner.getControl(pageid, 'comm_earned_agency');\nvar ctrlGstAgency = Runner.getControl(pageid, 'gst_agency');\nvar ctrlCommGrossAgency = Runner.getControl(pageid, 'comm_gross_agency');\nvar ctrlSalespersonName = Runner.getControl(pageid, 'salesperson_name');\nvar ctrlCommEarnedSalesperson = Runner.getControl(pageid, 'comm_earned_salesperson');\nvar ctrlCommEarnedPercentSalesperson = Runner.getControl(pageid, 'comm_earned_percent_salesperson');\n\nif(ctrlCat.getValue()=='SALE')\n{\npageObj.showField(\"representing\");\t\t\npageObj.showField(\"marketing_rights\");\npageObj.showField(\"salesperson_name\");\npageObj.showField(\"sale_price\");\n\t\tpageObj.showField(\"valuation_price\");\n\t\tpageObj.showField(\"option_money\");\n\t\tpageObj.showField(\"otp_date\");\n\t\tpageObj.showField(\"option_exercise_date\");\n\t\tpageObj.showField(\"est_completion_date\");\n\t\tpageObj.showField(\"sp_execution_date\");\n\t\tpageObj.showField(\"comm_percent\");\n\n\t\tpageObj.hideField(\"loi_date\");\n\t\tpageObj.hideField(\"rental_price\");\n\t\tpageObj.hideField(\"rental_price_type\");\n\t\tpageObj.hideField(\"ta_date\");\n\t\tpageObj.hideField(\"lease_duration_no\");\n\t\tpageObj.hideField(\"lease_duration_unit\");\n\t\tpageObj.hideField(\"lease_start_date\");\n\t\tpageObj.hideField(\"lease_expiry\");\n\t\tpageObj.hideField(\"comm_unit\");\n\t\t\t\n} \nif (ctrlCat.getValue()== 'RENTAL'||ctrlCat.getValue()== 'ASSIGNMENT')\n{\npageObj.showField(\"representing\");\t\t\npageObj.showField(\"marketing_rights\");\npageObj.showField(\"salesperson_name\");\n\t\tpageObj.hideField(\"sale_price\");\n\t\tpageObj.hideField(\"valuation_price\");\n\t\tpageObj.hideField(\"option_money\");\n\t\tpageObj.hideField(\"otp_date\");\n\t\tpageObj.hideField(\"option_exercise_date\");\n\t\tpageObj.hideField(\"est_completion_date\");\n\t\tpageObj.hideField(\"sp_execution_date\");\n\t\tpageObj.hideField(\"comm_percent\");\n\n\t\tpageObj.showField(\"loi_date\");\n\t\tpageObj.showField(\"rental_price\");\n\t\tpageObj.showField(\"rental_price_type\");\n\t\tpageObj.showField(\"ta_date\");\n\t\tpageObj.showField(\"lease_duration_no\");\n\t\tpageObj.showField(\"lease_duration_unit\");\n\t\tpageObj.showField(\"lease_start_date\");\n\t\tpageObj.showField(\"lease_expiry\");\n\t\tpageObj.showField(\"comm_unit\");\n\t\t\t\t\n}\t\nif (ctrlCat.getValue()== 'PROPERTY MANAGEMENT')\n{\npageObj.showField(\"representing\");\t\t\npageObj.hideField(\"marketing_rights\");\npageObj.showField(\"salesperson_name\");\n\t\tpageObj.hideField(\"marketing_rights\");\n\t\tpageObj.hideField(\"sale_price\");\n\t\tpageObj.hideField(\"valuation_price\");\n\t\tpageObj.hideField(\"option_money\");\n\t\tpageObj.hideField(\"otp_date\");\n\t\tpageObj.hideField(\"option_exercise_date\");\n\t\tpageObj.hideField(\"est_completion_date\");\n\t\tpageObj.hideField(\"sp_execution_date\");\n\t\tpageObj.hideField(\"comm_percent\");\n\n\t\tpageObj.showField(\"loi_date\");\n\t\tpageObj.showField(\"rental_price\");\n\t\tpageObj.showField(\"rental_price_type\");\n\t\tpageObj.showField(\"ta_date\");\n\t\tpageObj.showField(\"lease_duration_no\");\n\t\tpageObj.showField(\"lease_duration_unit\");\n\t\tpageObj.showField(\"lease_start_date\");\n\t\tpageObj.showField(\"lease_expiry\");\n\t\tpageObj.showField(\"comm_unit\");\n\t\t\t\t\n}\t\n\n\n// ===== Scroll to Top ==== \n$(window).scroll(function() {\n    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px\n        $('#return-to-top').fadeIn(200);    // Fade in the arrow\n    } else {\n        $('#return-to-top').fadeOut(200);   // Else fade out the arrow\n    }\n});\n$('#return-to-top').click(function() {      // When arrow is clicked\n    $('body,html').animate({\n        scrollTop : 0                       // Scroll to top of body\n    }, 500);\n});"
+		}
+	],
+	"sortByFields": {
+		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "ID_Tx",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "category",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rental_price",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "salesperson_name",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "commission",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docuserid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "Prop_kind",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cea_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cobroke_comm",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_fee",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cdd_check_result",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cdd_result",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sls_cust",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sls_result",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "pps_cust",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "pps_result",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "representing",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "marketing_rights",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "currency",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "loi_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "ta_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "lease_start_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "lease_duration_no",
+				"type": 200,
+				"size": 5,
+				"scale": 0,
+				"typeName": "varchar(5)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "lease_duration_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "lease_expiry",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sale_price",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "valuation_price",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "option_money",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "otp_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "option_exercise_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "est_completion_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sp_execution_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "TOP",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "built_up",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "land",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tenure",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "condition",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "no_bedrooms",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "no_bathrooms",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "built_up_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "land_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rental_price_type",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "transacted_price",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_amt",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst_payable",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst_inclusive",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_earned",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_gross",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_earned_percent_salesperson",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_earned_agency",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst_agency",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_gross_agency",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_earned_salesperson",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_percent",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "status",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "datesubmit",
+				"type": 135,
+				"size": 0,
+				"scale": 0,
+				"typeName": "datetime",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "datereject",
+				"type": 135,
+				"size": 0,
+				"scale": 0,
+				"typeName": "datetime",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "dateapprove",
+				"type": 135,
+				"size": 0,
+				"scale": 0,
+				"typeName": "datetime",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "status_status",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "salesperson_nric",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "str_filing_date",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remarks",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "salesperson_email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_to_agency",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_nett_salesperson",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_share",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "percent_to_agency",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "client",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_cea",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "management_fee",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "commencement_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "end_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_to_agency1",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sub_category",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "service_commencement",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "service_completion",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "result",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "consultation_fee",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminder_agent",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminder_tenant",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminderdate_agent",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminderdate_tenant",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminder_tenant_email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "client_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "client_id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "client_nric",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rm_rental_rm_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rm_builtup",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rm_builtup_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "namelist_cust",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "namelist_result",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "form_number",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_gst_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tenants",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "alertlist_cust",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "alertlist_result",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cddmeasure_result",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "transactions"
+	},
+	"pages": [
+		{
+			"id": "export",
+			"type": "export",
+			"layoutId": "first",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "export-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "export-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_field",
+								"export_field1",
+								"export_field2",
+								"export_field3",
+								"export_field4",
+								"export_field5",
+								"export_field6",
+								"export_field7",
+								"export_field8",
+								"export_field9"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "export-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"export_export",
+								"export_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"export_header": {
+					"type": "export_header"
+				},
+				"export_export": {
+					"type": "export_export"
+				},
+				"export_cancel": {
+					"type": "export_cancel"
+				},
+				"export_field": {
+					"field": "id",
+					"type": "export_field"
+				},
+				"export_field1": {
+					"field": "date",
+					"type": "export_field"
+				},
+				"export_field2": {
+					"field": "category",
+					"type": "export_field"
+				},
+				"export_field3": {
+					"field": "prop_type",
+					"type": "export_field"
+				},
+				"export_field4": {
+					"field": "Prop_kind",
+					"type": "export_field"
+				},
+				"export_field5": {
+					"field": "prop_name",
+					"type": "export_field"
+				},
+				"export_field6": {
+					"field": "prop_address",
+					"type": "export_field"
+				},
+				"export_field7": {
+					"field": "prop_postal",
+					"type": "export_field"
+				},
+				"export_field8": {
+					"field": "transacted_price",
+					"type": "export_field"
+				},
+				"export_field9": {
+					"field": "comm_earned_salesperson",
+					"type": "export_field"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"exportFormat": 2,
+			"exportDelimiter": ",",
+			"exportSelectDelimiter": false,
+			"exportSelectFields": false
+		},
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "topbar",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"details_found",
+								"page_size",
+								"print_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "topbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"logo",
+								"menu"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search",
+								"list_options",
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "list-vbar",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"breadcrumb"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field8",
+								"simple_grid_field9"
+							]
+						}
+					},
+					"deferredItems": [
+						"grid_checkbox",
+						"grid_checkbox_head"
+					],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"page_size": {
+					"type": "page_size"
+				},
+				"details_found": {
+					"type": "details_found"
+				},
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search"
+				},
+				"pagination": {
+					"type": "pagination"
+				},
+				"grid_checkbox": {
+					"type": "grid_checkbox"
+				},
+				"grid_checkbox_head": {
+					"type": "grid_checkbox_head"
+				},
+				"list_options": {
+					"type": "list_options",
+					"items": [
+						"export_selected",
+						"-2",
+						"advsearch_link",
+						"-1",
+						"export"
+					]
+				},
+				"simple_grid_field9": {
+					"field": "comm_earned_salesperson",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false,
+					"totals": "TOTAL"
+				},
+				"simple_grid_field8": {
+					"field": "transacted_price",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field7": {
+					"field": "prop_name",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field6": {
+					"field": "prop_postal",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field5": {
+					"field": "prop_address",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field4": {
+					"field": "Prop_kind",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field3": {
+					"field": "prop_type",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field2": {
+					"field": "category",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field1": {
+					"field": "date",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field": {
+					"field": "id",
+					"type": "simple_grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"-2": {
+					"type": "-"
+				},
+				"advsearch_link": {
+					"type": "advsearch_link"
+				},
+				"print_panel": {
+					"type": "print_panel",
+					"items": [
+						"print_scope",
+						"print_records",
+						"print_button"
+					]
+				},
+				"print_scope": {
+					"type": "print_scope"
+				},
+				"print_button": {
+					"type": "print_button"
+				},
+				"print_records": {
+					"type": "print_records"
+				},
+				"export": {
+					"type": "export"
+				},
+				"-": {
+					"type": "-"
+				},
+				"export_selected": {
+					"type": "export_selected"
+				},
+				"-1": {
+					"type": "-"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"changepassword_link"
+					]
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": false
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "print",
+			"type": "print",
+			"layoutId": "basic",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "print-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"print_pages"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "print-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "print-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"print_header",
+								"print_subheader"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-vertical-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field8",
+								"simple_grid_field9"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"print_header": {
+					"type": "print_header"
+				},
+				"print_subheader": {
+					"type": "print_subheader"
+				},
+				"print_pages": {
+					"type": "print_pages"
+				},
+				"simple_grid_field": {
+					"field": "id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "date",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "category",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "prop_type",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "Prop_kind",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "prop_address",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "prop_postal",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "prop_name",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "transacted_price",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "comm_earned_salesperson",
+					"type": "simple_grid_field",
+					"totals": "TOTAL"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "search",
+			"type": "search",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "search-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "search-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_search",
+								"search_reset",
+								"search_back_list",
+								"search_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "search-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-search",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_search_field",
+								"integrated_search_field1",
+								"integrated_search_field2",
+								"integrated_search_field3",
+								"integrated_search_field4",
+								"integrated_search_field5",
+								"integrated_search_field6",
+								"integrated_search_field7"
+							]
+						}
+					},
+					"deferredItems": [],
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"search_header": {
+					"type": "search_header"
+				},
+				"search_reset": {
+					"type": "search_reset"
+				},
+				"search_back_list": {
+					"type": "search_back_list"
+				},
+				"search_search": {
+					"type": "search_search"
+				},
+				"search_cancel": {
+					"type": "search_cancel"
+				},
+				"integrated_search_field": {
+					"field": "id",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field1": {
+					"field": "date",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field2": {
+					"field": "category",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field3": {
+					"field": "prop_address",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field4": {
+					"field": "prop_postal",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field5": {
+					"field": "prop_type",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field6": {
+					"field": "prop_name",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field7": {
+					"field": "Prop_kind",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"English": "Agent Comm"
+	}
+}

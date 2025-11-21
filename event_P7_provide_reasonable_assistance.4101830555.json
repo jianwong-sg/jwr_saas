@@ -1,0 +1,4 @@
+{
+	"name": "P7 provide reasonable assistance",
+	"serverCode": "// Put your code here.\necho \"<p style='text-align:justify'>provide reasonable assistance and advice to the Seller throughout the process of \n      sale of the Property.</p>\";"
+}

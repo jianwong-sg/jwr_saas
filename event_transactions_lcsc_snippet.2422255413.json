@@ -1,0 +1,4 @@
+{
+	"name": "transactions_lcsc_snippet",
+	"serverCode": "// Put your code here.\necho \"Your message\";"
+}

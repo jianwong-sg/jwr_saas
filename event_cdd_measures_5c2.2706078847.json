@@ -1,0 +1,4 @@
+{
+	"name": "cdd_measures_5c2",
+	"serverCode": "// Put your code here.\necho '* The links \n      to the list of higher risk countries can be found at the Financial Action \n      Task Force’s (FATF) webpage <A href=\"http://www.fatf-gafi.org/publications/high-riskandnon-cooperativejurisdictions/?hf=10&amp;b=0&amp;s=desc(fatf_releasedate)\" target=\"_blank\"> here \n      </a>';"
+}

@@ -1,0 +1,6 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Cancel",
+	"serverCode": "// code from business-template DocManager\n// delete upload files\ndeletePendingFiles($_SESSION[\"pending_files\"]);\n\n// clear session variable\nunset($_SESSION[\"pending_files\"]);\nunset($_SESSION[\"dublArray\"]);\n// end DocManager code\n\n//The code was commented on October 12 2021 14:08 on applying DocManager business template\n\n//// delete upload files\n//deletePendingFiles($_SESSION[\"pending_files\"]);\n//\n//// clear session variable\n//unset($_SESSION[\"pending_files\"]);\n//\n//",
+	"beforeJsCode": "// code from business-template DocManager\n\nif ( Dropzone && Dropzone.isBrowserSupported() ) {\n\tRunner._dropzone.removeAllFiles();\n\t$('#docman-dropzone').hide();\n\t$('[id^=Save_]').hide();\n\t$('[id^=Cancel_]').hide();\n}\n// end DocManager code\n\n//The code was commented on October 12 2021 14:08 on applying DocManager business template\n\n//\n//if ( Dropzone && Dropzone.isBrowserSupported() ) {\n//\tRunner._dropzone.removeAllFiles();\n//\t$('#docman-dropzone').hide();\n//}\n//"
+}

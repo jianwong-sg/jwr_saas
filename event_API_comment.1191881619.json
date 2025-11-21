@@ -1,0 +1,4 @@
+{
+	"name": "API comment",
+	"serverCode": "echo GetCustomLabel(\"api_comment\");"
+}

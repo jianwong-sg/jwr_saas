@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Edit_form1",
+	"serverCode": "// Put your code here.\n//submit();\n\n//$pageObject->submit(), $recordId);",
+	"beforeJsCode": "swal(\"Edit form will delete all signatures in the form. Proceed to edit?\", {\n buttons: {\n   cancel: \"Nope\",\n   proceed: {\n     text: \"Yes, proceed\",\n     value: \"proceed\",\n\t\t\n   }\n },\n})\n.then((value) => {\nswitch (value) {\n \n  case \"proceed\":\n     swal(\"Form is loading...\");\n     $(\"#editLink56\").click();\n    break;\n \n  default:\n     swal(\"\");\n    break;\n  }\n});\nreturn false;",
+	"afterJsCode": "// Put your code here."
+}

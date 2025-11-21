@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "De_activate_selected1",
+	"serverCode": "if($params['selected'])\n{\n$result[\"selected\"] = $params['selected'];\n$c=0;\nforeach($result[\"selected\"] as $v)\n{\n$sql = \"UPDATE `listings` SET `status`='2' WHERE `listingid`='\".$v.\"'\";\nCustomQuery($sql);\n/////\n\n$c++;\n}\n$result[\"c\"] =$c;\n}",
+	"beforeJsCode": "var atLeastOneIsChecked = $('input[name=\"selection[]\"]:checked').length > 0;\nif(atLeastOneIsChecked)\n{\nvar selected = new Array();\n\n$('input[name=\"selection[]\"]:checked').each(function()\n{\nselected.push($(this).val());\n});\nparams['selected'] = selected;\n}\nelse\n{\nalert('Please select listing to De-activate')\n}",
+	"afterJsCode": "if(result[\"c\"])\n{\nvar message = result[\"c\"] + \" Listing(s) De-activated and moved to 'Past' folder.\";\nalert(message);\nlocalStorage[\"posStorage\"] = $(window).scrollTop(); location.reload(true);\n}"
+}

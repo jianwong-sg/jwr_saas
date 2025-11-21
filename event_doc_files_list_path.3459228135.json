@@ -1,0 +1,4 @@
+{
+	"name": "doc_files_list_path",
+	"serverCode": "echo \"{$search_path}\";"
+}

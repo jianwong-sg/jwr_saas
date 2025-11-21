@@ -1,0 +1,4 @@
+{
+	"name": "selectall_snippet",
+	"serverCode": "echo \"<SPAN class='docman-select-span'><INPUT class='docman-checkbox-css chooseAll1' type='checkbox' {$checkboxheader_attrs}>\".\n                    \"<LABEL class='docman-select-check'>\".\n                      \"&nbsp;&nbsp;&nbsp;Select all\".\n                    \"</LABEL>\".\n                  \"</SPAN>\";"
+}

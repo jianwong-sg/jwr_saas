@@ -1,0 +1,4 @@
+{
+	"name": "cdd_checklist_5g",
+	"serverCode": "// Put your code here.\necho \"Client is willing to purchase or rent the property without inspecting it.\";"
+}

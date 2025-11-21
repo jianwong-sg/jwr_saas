@@ -1,0 +1,1461 @@
+{
+	"sql": "SELECT\nID_Tx,\ncategory,\nprop_address,\nProp_kind,\nlease_expiry,\n`date` AS `date`,\nclient,\nta_date\nFROM jwresour_jwr_saas_db_jwrealty.transactions\nWHERE (category NOT IN ('SALE','JTC LEASE MANAGEMENT'))\nORDER BY `date` DESC",
+	"type": 1,
+	"connId": "Tables",
+	"originalTable": "transactions",
+	"name": "lor4_lease_due1",
+	"shortTableName": "lor4_lease_due1",
+	"searchSuggest": false,
+	"caseSensitiveSearch": "",
+	"highlightSearchResults": false,
+	"tableOwnerIdField": "ID_Tx",
+	"usersOwnerIdField": "user_id",
+	"clickActions": {
+		"row": {
+			"codeData": {
+				"snippet": null
+			},
+			"gridData": {
+				"action": "checkbox",
+				"table": null
+			},
+			"openData": {
+				"how": "goto",
+				"page": "view",
+				"table": null,
+				"url": ""
+			}
+		},
+		"fields": {
+			"Prop_kind": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"TOP": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"Unit_no": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"agency_fee": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"built_up": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"built_up_unit": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"category": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {
+					"action": "checkbox",
+					"table": "parties_involved",
+					"tableGid": 1012154352
+				},
+				"openData": {
+					"how": "goto",
+					"page": "edit",
+					"table": "parties_involved",
+					"url": "",
+					"tableGid": 1012154352
+				}
+			},
+			"cdd_result": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"cea_reg": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"cobroke_comm": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_amt": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_earned": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_earned_agency": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_earned_percent_salesperson": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_earned_salesperson": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_gross": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_gross_agency": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_percent": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_unit": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"commission": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"condition": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"currency": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"docuserid": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"est_completion_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"gst": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"gst_agency": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"gst_inclusive": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"gst_payable": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"id": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"land": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"land_unit": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"lease_duration_no": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"lease_duration_unit": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"lease_expiry": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"lease_start_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"loi_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"marketing_rights": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"no_bathrooms": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"no_bedrooms": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"option_exercise_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"option_money": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"otp_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"pps_cust": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"pps_result": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"prop_address": {
+				"action": "open",
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {
+					"action": "checkbox",
+					"table": null
+				},
+				"openData": {
+					"how": "popup",
+					"page": "view",
+					"table": null,
+					"url": ""
+				}
+			},
+			"prop_name": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"prop_postal": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"prop_type": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"rental_price": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"rental_price_type": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"representing": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"sale_price": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"salesperson_name": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"sls_cust": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"sls_result": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"sp_execution_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"ta_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"tenure": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"transacted_price": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"valuation_price": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			}
+		}
+	},
+	"hideEmptyFieldsOnView": true,
+	"pageSizeRecords": 10,
+	"pageSizeSelectorRecords": [
+		"10",
+		"20",
+		"30",
+		"50",
+		"100",
+		"500",
+		"-1"
+	],
+	"pageSizeSelectorGroups": [
+		"1",
+		"3",
+		"5",
+		"10",
+		"50",
+		"100",
+		"-1"
+	],
+	"chartSettings": {
+		"accumulationAppearance": 1
+	},
+	"detailsBadgeColor": "DB7093",
+	"fields": [
+		{
+			"name": "ID_Tx",
+			"sqlExpression": "ID_Tx",
+			"strField": "ID_Tx",
+			"type": 200,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "ID_Tx",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Tx ID"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": ""
+		},
+		{
+			"name": "category",
+			"sqlExpression": "category",
+			"strField": "category",
+			"googleLikeSearch": false,
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"customExpression": "if ($value==$_SESSION[\"category\"])\n$value=\"\";\nelse\n$_SESSION[\"category\"]=$value;",
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupValues": [
+						"Sale",
+						"Rental",
+						"Assignment"
+					],
+					"lookupTable": "transact_type",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "tx_type",
+					"lookupDisplayField": "tx_type",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"searchOptions": [
+				"Contains",
+				"Equals",
+				"Starts with",
+				"Empty",
+				"NOT Contains",
+				"NOT Equals",
+				"NOT Starts with",
+				"NOT Empty"
+			],
+			"label": {
+				"English": "Lease Type"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": ""
+		},
+		{
+			"name": "prop_address",
+			"sqlExpression": "prop_address",
+			"strField": "prop_address",
+			"googleLikeSearch": false,
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"customExpression": "if ($value==$_SESSION[\"prop_address\"])\n$value=\"\";\nelse\n$_SESSION[\"prop_address\"]=$value;",
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"textboxMaxLenth": 200,
+					"textHTML5Input": "0",
+					"textareaHeight": 50,
+					"lookupType": 2,
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "prop_address",
+					"lookupDisplayField": "prop_address",
+					"lookupAllowAdd": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Property"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": ""
+		},
+		{
+			"name": "Prop_kind",
+			"sqlExpression": "Prop_kind",
+			"strField": "Prop_kind",
+			"googleLikeSearch": false,
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"customExpression": "if ($value==$_SESSION[\"Prop_kind\"])\n$value=\"\";\nelse\n$_SESSION[\"Prop_kind\"]=$value;",
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textboxSize": 250,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "kind",
+					"lookupDisplayField": "kind",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "prop_address",
+							"lookupField": "prop_address"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"searchOptions": [
+				"Contains",
+				"Equals",
+				"Starts with",
+				"Empty",
+				"NOT Contains",
+				"NOT Equals",
+				"NOT Starts with",
+				"NOT Empty"
+			],
+			"label": {
+				"English": "Kind"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": ""
+		},
+		{
+			"name": "lease_expiry",
+			"sqlExpression": "lease_expiry",
+			"strField": "lease_expiry",
+			"googleLikeSearch": false,
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"customExpression": "if ($value==$_SESSION[\"lease_expiry\"])\n$value=\"\";\nelse\n$_SESSION[\"lease_expiry\"]=$value;",
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"textboxSize": 100,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 2,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Between",
+			"label": {
+				"English": "Expiry Date"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": ""
+		},
+		{
+			"name": "date",
+			"sqlExpression": "`date`",
+			"strField": "date",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"textboxSize": 120,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 2,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "date",
+			"label": {
+				"English": "Tx Date"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": ""
+		},
+		{
+			"name": "client",
+			"sqlExpression": "client",
+			"strField": "client",
+			"type": 200,
+			"viewFormats": [
+				{
+					"format": "Custom",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"customExpression": "$arr = explode(\",\",$value);\nfor ($i=0;$i<count($arr);$i++)\n$arr[$i]=\" \".$arr[$i];\n$value = implode(\",\",$arr);",
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textHTML5Input": "0",
+					"lookupSize": 3,
+					"lookupMultiselect": true,
+					"lookupTable": "tx_parties_involved2",
+					"lookupLinkField": "Cust_Name",
+					"lookupDisplayField": "Cust_Name",
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "id",
+							"lookupField": "id_tx"
+						},
+						{
+							"masterField": "representing",
+							"lookupField": "Representing"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "client",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Client"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": ""
+		},
+		{
+			"name": "ta_date",
+			"sqlExpression": "ta_date",
+			"strField": "ta_date",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 11,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "ta_date",
+			"label": {
+				"English": "Ta Date"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": ""
+		}
+	],
+	"warnLeavingEdit": true,
+	"afterEditAction": 0,
+	"afterEditDetails": 14,
+	"afterAddAction": 3,
+	"afterAddDetail": 14,
+	"whereTabs": [
+		{}
+	],
+	"eventHandlers": [
+		{
+			"eventId": "EVENT_BEFORESHOW_VIEW",
+			"pageType": "view",
+			"code": "//hide na fields\n$xt->assign(\"gst_payable_tabfieldblock\",false);\n$xt->assign(\"gst_inclusive_tabfieldblock\",false);\n$xt->assign(\"gst_tabfieldblock\",false);\n$xt->assign(\"comm_gross_tabfieldblock\",false);\n$xt->assign(\"gst_agency_tabfieldblock\",false);\n$xt->assign(\"comm_gross_agency_tabfieldblock\",false);\n$xt->assign(\"details_cobroke_internal_comm\",false);\n$xt->assign(\"details_edit_cobroke_external_comm_link\",false);\n$xt->assign(\"details_edit_external_party_comm_link\",false);\n$xt->assign(\"saveall_cobroke_external_comm_link\",false);\n$xt->assign(\"cancelall_cobroke_external_comm_link\",false);\n$xt->assign(\"saveall_external_party_comm_link\",false);\n$xt->assign(\"cancelall_external_party_comm_link\",false);\n\n//hide details based on cdd results\nif ($values[\"cdd_result\"]==\"\")\n{\n$xt->assign(\"details_cdd_measures\",false);\n$xt->assign(\"details_pps_check\",false);\n$xt->assign(\"details_un_sanction_check\",false);\n$xt->assign(\"details_str\",false);\n}\n//end hide\n\n$xt->assign(\"edit_button\", true);\n$xt->assign(\"send_button\", true);\n$xt->assign(\"buttons-container1\", true);\n\nif( $_SESSION[\"UserID\"] == \"Guest\")\n{\n$xt->assign(\"back_button\", false);\n$xt->assign(\"edit_button\", false);\n$xt->assign(\"send_button\", false);\n}\n//hide edit if status close\nif($values[\"status_status\"]==\"Close\")\n$xt->assign(\"edit_button\", false);\n//end hide\n\n$xt->assign(\"editid1_value\", $values['id']);\n\n//hide fields if empty\nif (!$values[\"loi_date\"])\n$pageObject->hideField(\"loi_date\");\n\nif (!$values[\"prop_name\"])\n$pageObject->hideField(\"prop_name\");\n\nif (!$values[\"tenure\"])\n$pageObject->hideField(\"tenure\");\n\nif (!$values[\"TOP\"])\n$pageObject->hideField(\"TOP\");\n\nif (!$values[\"no_bathrooms\"])\n$pageObject->hideField(\"no_bathrooms\");\n\nif (!$values[\"no_bedrooms\"])\n$pageObject->hideField(\"no_bedrooms\");"
+		},
+		{
+			"eventId": "EVENT_JS_ONLOAD",
+			"pageType": "view",
+			"code": "var ctrlCat = Runner.getControl(pageid, 'category');\nvar ctrlSubCat = Runner.getControl(pageid, 'sub_category');\nvar ctrlRepresent = Runner.getControl(pageid, 'representing');\nvar ctrlRights = Runner.getControl(pageid, 'marketing_rights');\nvar ctrlSalePrice = Runner.getControl(pageid, 'sale_price');\nvar ctrlValuation = Runner.getControl(pageid, 'valuation_price');\nvar ctrlOption = Runner.getControl(pageid, 'option_money');\nvar ctrlOtpDate = Runner.getControl(pageid, 'otp_date');\nvar ctrlOtpExeDate = Runner.getControl(pageid, 'option_exercise_date');\nvar ctrlEstCompletion = Runner.getControl(pageid, 'est_completion_date');\nvar ctrlSpExeDate = Runner.getControl(pageid, 'sp_execution_date');\nvar ctrlLOI = Runner.getControl(pageid, 'loi_date');\nvar ctrlRental = Runner.getControl(pageid, 'rental_price');\nvar ctrlRentPriceType = Runner.getControl(pageid, 'rental_price_type');\nvar ctrlTADate = Runner.getControl(pageid, 'ta_date');\nvar ctrlLeaseDuration = Runner.getControl(pageid, 'lease_duration_no');\nvar ctrlLeaseDuUnit = Runner.getControl(pageid, 'lease_duration_unit');\nvar ctrlLeaseStart = Runner.getControl(pageid, 'lease_start_date');\nvar ctrlLeaseEnd = Runner.getControl(pageid, 'lease_expiry');\nvar ctrlUnit = Runner.getControl(pageid, 'comm_unit');\nvar ctrlPercent = Runner.getControl(pageid, 'comm_percent');\nvar ctrlAmount = Runner.getControl(pageid, 'comm_amt');\nvar ctrlTransacted = Runner.getControl(pageid, 'transacted_price');\nvar ctrlEarned = Runner.getControl(pageid, 'comm_earned');\nvar ctrlGst = Runner.getControl(pageid, 'gst');\nvar ctrlGross = Runner.getControl(pageid, 'comm_gross');\nvar ctrlGstPayable = Runner.getControl(pageid, 'gst_payable');\nvar ctrlGstInclusive = Runner.getControl(pageid, 'gst_inclusive');\nvar ctrlCommEarnedAgency = Runner.getControl(pageid, 'comm_earned_agency');\nvar ctrlGstAgency = Runner.getControl(pageid, 'gst_agency');\nvar ctrlCommGrossAgency = Runner.getControl(pageid, 'comm_gross_agency');\nvar ctrlSalespersonName = Runner.getControl(pageid, 'salesperson_name');\nvar ctrlCommEarnedSalesperson = Runner.getControl(pageid, 'comm_earned_salesperson');\nvar ctrlCommEarnedPercentSalesperson = Runner.getControl(pageid, 'comm_earned_percent_salesperson');\nvar ctrlRemarks = Runner.getControl(pageid, 'remarks');\nvar ctrlManageFee = Runner.getControl(pageid, 'management_fee');\nvar ctrlAgency = Runner.getControl(pageid, 'agency');\nvar ctrlCommenceDate = Runner.getControl(pageid, 'commencement_date');\nvar ctrlEndDate = Runner.getControl(pageid, 'end_date');\nvar ctrlConsultFee = Runner.getControl(pageid, 'consultation_fee');\nvar ctrlServCommence = Runner.getControl(pageid, 'service_commencement');\nvar ctrlServComplete = Runner.getControl(pageid, 'service_completion');\nvar ctrlResult = Runner.getControl(pageid, 'result');\n\nif(ctrlCat.getValue()=='SALE')\n{\npageObj.showField(\"representing\");\t\t\npageObj.showField(\"marketing_rights\");\npageObj.showField(\"salesperson_name\");\npageObj.showField(\"cea_reg\");\npageObj.hideField(\"agency\");\npageObj.hideField(\"agency_cea\");\npageObj.showField(\"sale_price\");\npageObj.showField(\"valuation_price\");\npageObj.showField(\"option_money\");\npageObj.showField(\"otp_date\");\npageObj.showField(\"option_exercise_date\");\npageObj.showField(\"est_completion_date\");\npageObj.showField(\"sp_execution_date\");\npageObj.showField(\"comm_percent\");\n\npageObj.hideField(\"loi_date\");\npageObj.hideField(\"rental_price\");\npageObj.hideField(\"rental_price_type\");\npageObj.hideField(\"ta_date\");\npageObj.hideField(\"lease_duration_no\");\npageObj.hideField(\"lease_duration_unit\");\npageObj.hideField(\"lease_start_date\");\npageObj.hideField(\"lease_expiry\");\npageObj.hideField(\"management_fee\");\npageObj.hideField(\"commencement_date\");\npageObj.hideField(\"end_date\");\npageObj.hideField(\"comm_unit\");\npageObj.hideField(\"sub_category\");\npageObj.hideField(\"consultation_fee\");\npageObj.hideField(\"service_commencement\");\npageObj.hideField(\"service_completion\");\npageObj.hideField(\"result\");\npageObj.hideField(\"reminder_agent\");\npageObj.hideField(\"reminder_tenant\");\npageObj.hideField(\"reminder_tenant_email\");\n} \n/*\nif (ctrlValuation.getValue()=='')\nctrlValuation.setValue('-');\nif (ctrlOption.getValue()=='')\nctrlOption.setValue('-');\nif (ctrlOtpDate.getValue()=='')\nctrlOtpDate.setValue('-');\nif (ctrlOtpExeDate.getValue()=='')\nctrlOtpExeDate.setValue('-');\nif (ctrlEstCompletion.getValue()=='')\nctrlEstCompletion.setValue('-');\nif (ctrlSpExeDate.getValue()=='')\nctrlSpExeDate.setValue('-');\n*/\nif (ctrlCat.getValue()== 'RENTAL'||ctrlCat.getValue()== 'ASSIGNMENT'||ctrlCat.getValue()== 'ROOM RENTAL')\n{\npageObj.showField(\"representing\");\t\t\npageObj.showField(\"marketing_rights\");\npageObj.showField(\"salesperson_name\");\npageObj.showField(\"cea_reg\");\npageObj.hideField(\"agency\");\npageObj.hideField(\"agency_cea\");\npageObj.hideField(\"sale_price\");\npageObj.hideField(\"valuation_price\");\npageObj.hideField(\"option_money\");\npageObj.hideField(\"otp_date\");\npageObj.hideField(\"option_exercise_date\");\npageObj.hideField(\"est_completion_date\");\npageObj.hideField(\"sp_execution_date\");\npageObj.hideField(\"comm_percent\");\n\t\t\t\t\npageObj.showField(\"loi_date\");\npageObj.showField(\"rental_price\");\npageObj.showField(\"rental_price_type\");\npageObj.showField(\"ta_date\");\npageObj.showField(\"lease_duration_no\");\npageObj.showField(\"lease_duration_unit\");\npageObj.showField(\"lease_start_date\");\npageObj.showField(\"lease_expiry\");\npageObj.hideField(\"management_fee\");\npageObj.hideField(\"commencement_date\");\npageObj.hideField(\"end_date\");\npageObj.showField(\"comm_unit\");\npageObj.hideField(\"sub_category\");\npageObj.hideField(\"consultation_fee\");\npageObj.hideField(\"service_commencement\");\npageObj.hideField(\"service_completion\");\npageObj.hideField(\"result\");\npageObj.showField(\"reminder_agent\");\npageObj.showField(\"reminder_tenant\");\npageObj.showField(\"reminder_tenant_email\");\n}\t\n/*\nif (ctrlLOI.getValue()=='')\nctrlLOI.setValue('');\nif (ctrlTADate.getValue()=='')\nctrlTADate.setValue('');\nif (ctrlLeaseDuration.getValue()=='')\nctrlLeaseDuration.setValue('-');\nif (ctrlLeaseStart.getValue()=='')\nctrlLeaseStart.setValue('-');\nif (ctrlLeaseEnd.getValue()=='')\nctrlLeaseEnd.setValue('-');\n*/\nif (ctrlCat.getValue()== 'PROPERTY MANAGEMENT')\n{\npageObj.showField(\"representing\");\t\t\npageObj.hideField(\"marketing_rights\");\npageObj.hideField(\"salesperson_name\");\npageObj.hideField(\"cea_reg\");\npageObj.showField(\"agency\");\npageObj.showField(\"agency_cea\");\npageObj.hideField(\"sale_price\");\npageObj.hideField(\"valuation_price\");\npageObj.hideField(\"option_money\");\npageObj.hideField(\"otp_date\");\npageObj.hideField(\"option_exercise_date\");\npageObj.hideField(\"est_completion_date\");\npageObj.hideField(\"sp_execution_date\");\npageObj.hideField(\"comm_percent\");\npageObj.hideField(\"transacted_price\");\t\npageObj.hideField(\"loi_date\");\npageObj.showField(\"rental_price\");\npageObj.showField(\"rental_price_type\");\npageObj.hideField(\"ta_date\");\npageObj.hideField(\"lease_duration_no\");\npageObj.hideField(\"lease_duration_unit\");\npageObj.hideField(\"lease_start_date\");\npageObj.hideField(\"lease_expiry\");\npageObj.showField(\"management_fee\");\npageObj.showField(\"commencement_date\");\npageObj.showField(\"end_date\");\npageObj.hideField(\"comm_unit\");\npageObj.hideField(\"sub_category\");\npageObj.hideField(\"consultation_fee\");\npageObj.hideField(\"service_commencement\");\npageObj.hideField(\"service_completion\");\npageObj.hideField(\"result\");\npageObj.showField(\"reminder_agent\");\npageObj.showField(\"reminder_tenant\");\npageObj.showField(\"reminder_tenant_email\");\n}\t\n\nif (ctrlCat.getValue()== 'JTC LEASE MANAGEMENT')\n{\npageObj.showField(\"representing\");\t\t\npageObj.hideField(\"marketing_rights\");\npageObj.showField(\"salesperson_name\");\npageObj.hideField(\"cea_reg\");\npageObj.hideField(\"agency\");\npageObj.hideField(\"agency_cea\");\npageObj.hideField(\"sale_price\");\npageObj.hideField(\"valuation_price\");\npageObj.hideField(\"option_money\");\npageObj.hideField(\"otp_date\");\npageObj.hideField(\"option_exercise_date\");\npageObj.hideField(\"est_completion_date\");\npageObj.hideField(\"sp_execution_date\");\npageObj.hideField(\"comm_percent\");\npageObj.hideField(\"transacted_price\");\t\npageObj.hideField(\"loi_date\");\npageObj.hideField(\"rental_price\");\npageObj.hideField(\"rental_price_type\");\npageObj.hideField(\"ta_date\");\npageObj.hideField(\"lease_duration_no\");\npageObj.hideField(\"lease_duration_unit\");\npageObj.hideField(\"lease_start_date\");\npageObj.hideField(\"lease_expiry\");\npageObj.hideField(\"management_fee\");\npageObj.hideField(\"commencement_date\");\npageObj.hideField(\"end_date\");\npageObj.hideField(\"comm_unit\");\npageObj.showField(\"sub_category\");\npageObj.showField(\"consultation_fee\");\npageObj.showField(\"service_commencement\");\npageObj.showField(\"service_completion\");\npageObj.showField(\"result\");\npageObj.hideField(\"reminder_agent\");\npageObj.hideField(\"reminder_tenant\");\npageObj.hideField(\"reminder_tenant_email\");\n}\t\n\n//tenant email required on condition\nvar ctrlReminderTenant = Runner.getControl(pageid, 'reminder_tenant');\nvar ctrlReminderTenantEmail = Runner.getControl(pageid, 'reminder_tenant_email');\n\nif (ctrlReminderTenant.getValue() == \"Yes\") \n{\npageObj.showField(\"reminder_tenant_email\");\n}\nif (ctrlReminderTenant.getValue() == \"No\") \n{\npageObj.hideField(\"reminder_tenant_email\");\n}\n\n//hide controls in property info\nvar ctrlPropType = Runner.getControl(pageid, 'prop_type');\nvar ctrlBuiltUp = Runner.getControl(pageid, 'built_up');\nvar ctrlBuiltUpUnit = Runner.getControl(pageid, 'built_up_unit');\nvar ctrlBedroom = Runner.getControl(pageid, 'no_bedrooms');\nvar ctrlBathroom = Runner.getControl(pageid, 'no_bathrooms');\nvar ctrlLand = Runner.getControl(pageid, 'land');\nvar ctrlLandUnit = Runner.getControl(pageid, 'land_unit');\n\nif(ctrlPropType.getValue()== 'HDB APARTMENT' || ctrlPropType.getValue() == 'APARTMENT / CONDO')\n{\npageObj.showField(\"built_up\");\npageObj.showField(\"built_up_unit\");\npageObj.showField(\"no_bedrooms\");\npageObj.showField(\"no_bathrooms\");\npageObj.hideField(\"land\");\npageObj.hideField(\"land_unit\");\n} \n\nif (ctrlBuiltUp.getValue()=='')\nctrlBuiltUp.setValue('-');\nif (ctrlBedroom.getValue()=='')\nctrlBedroom.setValue('-');\nif (ctrlBathroom.getValue()=='')\nctrlBathroom.setValue('-');\n\nif (ctrlPropType.getValue()== 'LANDED HOUSE')\n{\npageObj.showField(\"built_up\");\npageObj.showField(\"built_up_unit\");\npageObj.showField(\"no_bedrooms\");\npageObj.showField(\"no_bathrooms\");\npageObj.showField(\"land\");\npageObj.showField(\"land_unit\");\n}\t\n\nif (ctrlBuiltUp.getValue()=='')\nctrlBuiltUp.setValue('-');\nif (ctrlBedroom.getValue()=='')\nctrlBedroom.setValue('-');\nif (ctrlBathroom.getValue()=='')\nctrlBathroom.setValue('-');\nif (ctrlLand.getValue()=='')\nctrlLand.setValue('-');\n\nif (ctrlPropType.getValue()== 'INDUSTRIAL')\n{\npageObj.showField(\"built_up\");\npageObj.showField(\"built_up_unit\");\npageObj.hideField(\"no_bedrooms\");\npageObj.hideField(\"no_bathrooms\");\npageObj.showField(\"land\");\npageObj.showField(\"land_unit\");\n}\n\nif (ctrlBuiltUp.getValue()=='')\nctrlBuiltUp.setValue('-');\nif (ctrlLand.getValue()=='')\nctrlLand.setValue('-');\n\nif (ctrlPropType.getValue()== 'OFFICE'||ctrlPropType.getValue() == 'RETAIL')\n{\npageObj.showField(\"built_up\");\npageObj.showField(\"built_up_unit\");\npageObj.hideField(\"no_bedrooms\");\npageObj.showField(\"no_bathrooms\");\npageObj.hideField(\"land\");\npageObj.hideField(\"land_unit\");\n}\n\nif (ctrlBuiltUp.getValue()=='')\nctrlBuiltUp.setValue('-');\nif (ctrlBathroom.getValue()=='')\nctrlBathroom.setValue('-');\n\nif (ctrlPropType.getValue()== 'LAND')\n{\npageObj.hideField(\"built_up\");\npageObj.hideField(\"built_up_unit\");\npageObj.hideField(\"no_bedrooms\");\npageObj.hideField(\"no_bathrooms\");\npageObj.showField(\"land\");\npageObj.showField(\"land_unit\");\n}\n\nif (ctrlLand.getValue()=='')\nctrlLand.setValue('-');\n\n\nif (ctrlRemarks.getValue()== '')\n{\npageObj.hideField(\"remarks\");\t\n}\n\n// ===== Scroll to Top ==== \n$(window).scroll(function() {\n    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px\n        $('#return-to-top').fadeIn(200);    // Fade in the arrow\n    } else {\n        $('#return-to-top').fadeOut(200);   // Else fade out the arrow\n    }\n});\n$('#return-to-top').click(function() {      // When arrow is clicked\n    $('body,html').animate({\n        scrollTop : 0                       // Scroll to top of body\n    }, 500);\n});"
+		},
+		{
+			"eventId": "EVENT_BEFOREQUERY_LIST",
+			"pageType": "list",
+			"code": "// Filter lease expiry in the next 2 months, include only records for LIM CHIN SAN CONTRACTORS PTE LTD,\n// and exclude records that have been renewed with a new expiry date at least 6 months from the current expiry date.\nif ($_REQUEST[\"a\"] != \"search\" && $_REQUEST[\"a\"] != \"advsearch\") {\n    $strWhereClause = whereAdd(\n        $strWhereClause,\n        \"lease_expiry BETWEEN DATE_ADD(NOW(), INTERVAL 0 DAY) \n        AND DATE_ADD(NOW(), INTERVAL 60 DAY)\n        AND client = 'LIM CHIN SAN CONTRACTORS PTE LTD'\n        AND NOT EXISTS (\n            SELECT 1 \n            FROM jwresour_jwr_saas_db_jwrealty.transactions AS sub\n            WHERE sub.prop_address = transactions.prop_address\n            AND sub.lease_expiry >= DATE_ADD(transactions.lease_expiry, INTERVAL 6 MONTH)\n        )\"\n    );\n}"
+		},
+		{
+			"eventId": "EVENT_BEFORESHOW_LIST",
+			"pageType": "list",
+			"code": "/*\n$xt->assign(\"listIcons_column\",false);\n\n$xt->assign(\"container_breadcrumbs\",false);\n$xt->assign(\"container_gridcontrols\",false);\n$xt->assign(\"container_tabs\",false);\n*/\n//$pageObject->hideItem(\"supertop_block\");\n$pageObject->hideItem(\"client_label\");\n$pageObject->hideItem(\"client_field\");\n\n$xt->assign(\"header\",false);\n$xt->assign(\"footer\",false);\n\n$xt->assign(\"supertop_block\",false);"
+		}
+	],
+	"sortByFields": {
+		"sortOrder": []
+	},
+	"pages": [
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "topbar",
+			"disabled": 0,
+			"default": 2,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"custom_button"
+							],
+							"customCSS": "/* Put  your custom CSS code here */\n",
+							"align": "center"
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"text"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "topbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"list_options",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "list-vbar",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-top",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "horizontal-grid",
+					"grid": [
+						{
+							"section": "head",
+							"cells": [
+								{
+									"cell": "headcell_field"
+								},
+								{
+									"cell": "headcell_field1"
+								},
+								{
+									"cell": "headcell_field2"
+								}
+							]
+						},
+						{
+							"section": "body",
+							"cells": [
+								{
+									"cell": "cell_field"
+								},
+								{
+									"cell": "cell_field1"
+								},
+								{
+									"cell": "cell_field2"
+								}
+							]
+						},
+						{
+							"section": "foot",
+							"cells": [
+								{
+									"cell": "footcell_field"
+								},
+								{
+									"cell": "footcell_field1"
+								},
+								{
+									"cell": "footcell_field2"
+								}
+							]
+						}
+					],
+					"cells": {
+						"headcell_field": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label3"
+							],
+							"field": "ID_Tx",
+							"columnName": "field",
+							"width": "100px"
+						},
+						"cell_field": {
+							"model": "cell_field",
+							"items": [
+								"grid_field3"
+							],
+							"field": "ID_Tx",
+							"columnName": "field",
+							"width": "100px"
+						},
+						"footcell_field": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "ID_Tx",
+							"columnName": "field",
+							"width": "100px"
+						},
+						"headcell_field1": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label1"
+							],
+							"field": "prop_address",
+							"columnName": "field",
+							"width": "250px"
+						},
+						"cell_field1": {
+							"model": "cell_field",
+							"items": [
+								"grid_field1"
+							],
+							"field": "prop_address",
+							"columnName": "field",
+							"width": "250px"
+						},
+						"footcell_field1": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "prop_address",
+							"columnName": "field",
+							"width": "250px"
+						},
+						"headcell_field2": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label2"
+							],
+							"field": "lease_expiry",
+							"columnName": "field"
+						},
+						"cell_field2": {
+							"model": "cell_field",
+							"items": [
+								"grid_field2"
+							],
+							"field": "lease_expiry",
+							"columnName": "field"
+						},
+						"footcell_field2": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "lease_expiry",
+							"columnName": "field"
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"pagination": {
+					"type": "pagination"
+				},
+				"grid_field1": {
+					"field": "prop_address",
+					"type": "grid_field",
+					"nowrap": false,
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"grid_field_label1": {
+					"type": "grid_field_label",
+					"field": "prop_address",
+					"clickSort": false
+				},
+				"grid_field2": {
+					"field": "lease_expiry",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"grid_field_label2": {
+					"type": "grid_field_label",
+					"field": "lease_expiry",
+					"clickSort": false
+				},
+				"grid_field3": {
+					"field": "ID_Tx",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"grid_field_label3": {
+					"type": "grid_field_label",
+					"field": "ID_Tx",
+					"clickSort": false,
+					"label": {
+						"field": "ID_Tx",
+						"table": "lor4_lease_due1",
+						"type": 3
+					}
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"changepassword_link"
+					]
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				},
+				"custom_button": {
+					"type": "custom_button",
+					"eventId": "Close",
+					"label": {
+						"type": 0,
+						"text": "Close window"
+					},
+					"eventGid": 3535843008
+				},
+				"list_options": {
+					"type": "list_options",
+					"items": []
+				},
+				"text": {
+					"type": "text",
+					"label": {
+						"text": "Only leases expiring within 2 months are shown.",
+						"type": 0
+					},
+					"editedByRte": false,
+					"italic": true,
+					"font-size": "18px"
+				}
+			},
+			"spreadsheetGrid": false,
+			"version": 14,
+			"pageWidth": "standard",
+			"menuWidth": "compact",
+			"pageAlign": "left",
+			"reorderRows": false,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "search",
+			"type": "search",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "search-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "search-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_search",
+								"search_reset",
+								"search_back_list",
+								"search_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "search-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-search",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_search_field",
+								"integrated_search_field1",
+								"integrated_search_field2",
+								"integrated_search_field3"
+							]
+						}
+					},
+					"deferredItems": [],
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"search_header": {
+					"type": "search_header"
+				},
+				"search_reset": {
+					"type": "search_reset"
+				},
+				"search_back_list": {
+					"type": "search_back_list"
+				},
+				"search_search": {
+					"type": "search_search"
+				},
+				"search_cancel": {
+					"type": "search_cancel"
+				},
+				"integrated_search_field": {
+					"field": "date",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field1": {
+					"field": "client",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field2": {
+					"field": "ID_Tx",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field3": {
+					"field": "ta_date",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"English": "Lor4 Lease Due1"
+	}
+}

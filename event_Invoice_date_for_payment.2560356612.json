@@ -1,0 +1,4 @@
+{
+	"name": "Invoice_date_for_payment",
+	"serverCode": "// Put your code here.\necho \"<span style='padding-left:4px;'><b>\".GetCustomLabel(\"invoice_date\").\"</b></span>\";"
+}

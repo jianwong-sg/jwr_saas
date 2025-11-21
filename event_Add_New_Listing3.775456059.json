@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Add_New_Listing3",
+	"afterJsCode": "location.href=\"listings_draft_add.php\";"
+}

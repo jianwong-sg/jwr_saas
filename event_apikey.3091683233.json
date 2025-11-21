@@ -1,0 +1,4 @@
+{
+	"name": "apikey",
+	"serverCode": "// Put your code here.\necho GetCustomLabel(\"api_key\");"
+}

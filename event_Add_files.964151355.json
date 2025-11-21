@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Add_files",
+	"beforeJsCode": "if ( Dropzone && !Dropzone.isBrowserSupported() ) {\n\t$('input[type=\"file\"]', '.dz-browser-not-supported').trigger('click');\n} else { \n\t$('.dropzone').click();\n}"
+}

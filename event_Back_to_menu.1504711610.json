@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Back_to_menu",
+	"afterJsCode": "// Put your code here.\nlocation.href=\"/menu.php\";"
+}

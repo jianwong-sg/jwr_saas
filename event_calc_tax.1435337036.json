@@ -1,0 +1,4 @@
+{
+	"name": "calc_tax",
+	"serverCode": "// Put your code here.\necho \"<DIV class='calc-tax' style='display:none'></DIV>\";"
+}

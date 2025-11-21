@@ -1,0 +1,4 @@
+{
+	"name": "Signed by interpreter:",
+	"serverCode": "// Put your code here.\necho \"Signed by interpreter:\";"
+}

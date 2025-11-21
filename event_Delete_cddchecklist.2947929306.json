@@ -1,0 +1,6 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Delete_cddchecklist",
+	"serverCode": "// Put your code here.\n//CustomQuery(\"delete from cdd_checklist where id = \".$values['id']);",
+	"beforeJsCode": "// Put your code here.\n$(\"[id^='delete_selected']\").click(function(){\nif (confirm(\"It will also delete the CDD Measures and STR files in record, if any. To proceed with delete, click OK. To quit, click Cancel\")){\nreturn true;\n}else\n{\nreturn false;\n}\n});"
+}

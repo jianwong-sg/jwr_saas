@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "esign_form8",
+	"beforeJsCode": "window.open('form8_edit.php?page=edit_sign&{$editlink}', '_blank');\n\nreturn false;"
+}

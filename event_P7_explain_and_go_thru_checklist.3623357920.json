@@ -1,0 +1,4 @@
+{
+	"name": "P7 explain and go thru checklist",
+	"serverCode": "// Put your code here.\necho \"<p style='text-align:justify'>explain and go through the resale checklist with the Seller of the HDB flat and check \n      with the Seller on whether the renovations made were duly authorised.</p>\";"
+}

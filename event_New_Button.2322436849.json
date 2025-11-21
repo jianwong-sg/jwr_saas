@@ -1,0 +1,6 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "New_Button",
+	"serverCode": "$data = $button->getCurrentRecord();\n$result[\"data\"] = $data;\n$rs = DB::Query(\"select pos, item, price, quantity, total from invoicedetails where id_invoice=\".$data[\"id\"]);\nwhile($details = $rs->fetchAssoc())\n\t$res[$details[\"pos\"]] = $details;\n$result[\"details\"] = my_json_encode($res);",
+	"afterJsCode": "Runner.PDFMaker.makePage(result[\"data\"],result[\"details\"]);"
+}

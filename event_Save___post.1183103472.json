@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Save___post",
+	"beforeJsCode": "var ctrlStatus = Runner.getControl(pageid, 'status'); \nctrlStatus.setValue(\"1\"); \n$(\"#saveButton1\").trigger('click');\nctrlStatus.setValue(\"0\");\nreturn false;"
+}

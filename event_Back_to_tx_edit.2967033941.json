@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Back_to_tx_edit",
+	"serverCode": "// get the value of the current record and pass it to the ClientAfter event\n$result[\"record\"] = $button->getCurrentRecord();\n$result[\"id\"]=$record[\"id\"];",
+	"beforeJsCode": "//location.href = \"transactions_edit.php?editid1='{$editlink}'\";\n//return false;",
+	"afterJsCode": "//if (result.record[\"title\"]=='ESTATE AGENCY AGREEMENT FOR THE SALE OF RESIDENTIAL PROPERTY')\nlocation.href='transactions_edit.php?editid1='+result[\"id\"];"
+}

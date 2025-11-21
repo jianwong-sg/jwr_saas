@@ -1,0 +1,4518 @@
+{
+	"sql": "SELECT\neatuser_id,\nuser_status,\nusername,\nuser_group,\nsignup_date,\npassword,\nemail,\ncompany_dbname,\nactive,\nfull_name,\nbiz_name,\nmobile,\nbank_ac_no,\nbank_name,\ndate_of_birth,\nentry_year,\nhome_address,\nhome_tel,\nnric,\ncut_to_agency,\nsalesperson_share,\nagency,\nagency_cea_reg,\ndestination\nFROM eat_users",
+	"type": 1,
+	"connId": "jwresourjweat1091saasatjwrealt",
+	"originalTable": "eat_users",
+	"name": "eat_users_user",
+	"shortTableName": "eat_users_user",
+	"caseSensitiveSearch": "",
+	"tableOwnerIdField": "username",
+	"usersOwnerIdField": "username",
+	"advancedSecurityType": 1,
+	"pageSizeSelectorRecords": [
+		"10",
+		"20",
+		"30",
+		"50",
+		"100",
+		"500",
+		"-1"
+	],
+	"pageSizeSelectorGroups": [
+		"1",
+		"3",
+		"5",
+		"10",
+		"50",
+		"100",
+		"-1"
+	],
+	"keyFields": [
+		"eatuser_id"
+	],
+	"detailsBadgeColor": "DB7093",
+	"detailsTables": [
+		636150782,
+		1734685260
+	],
+	"fields": [
+		{
+			"name": "eatuser_id",
+			"sqlExpression": "eatuser_id",
+			"strField": "eatuser_id",
+			"type": 3,
+			"autoinc": true,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"validateAs": "Number",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "eatuser_id",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Id"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "user_status",
+			"sqlExpression": "user_status",
+			"strField": "user_status",
+			"type": 200,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"Active",
+						"Non active"
+					],
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "user_status",
+			"label": {
+				"English": "Status"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "username",
+			"sqlExpression": "username",
+			"strField": "username",
+			"type": 201,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "username",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "CEA Reg."
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": "CEA Reg No."
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "user_group",
+			"sqlExpression": "user_group",
+			"strField": "user_group",
+			"type": 200,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"account admin",
+						"user"
+					],
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "user_group",
+			"label": {
+				"English": "User Group"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "signup_date",
+			"sqlExpression": "signup_date",
+			"strField": "signup_date",
+			"type": 135,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 2,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "signup_date",
+			"label": {
+				"English": "Signup Date"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "password",
+			"sqlExpression": "password",
+			"strField": "password",
+			"type": 201,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "password",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Password"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "email",
+			"sqlExpression": "email",
+			"strField": "email",
+			"type": 201,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"validateAs": "Email",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "email",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Email"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "company_dbname",
+			"sqlExpression": "company_dbname",
+			"strField": "company_dbname",
+			"type": 200,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "company_dbname",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Company Dbname"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "active",
+			"sqlExpression": "active",
+			"strField": "active",
+			"type": 3,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Number",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "active",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Active"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "full_name",
+			"sqlExpression": "full_name",
+			"strField": "full_name",
+			"type": 200,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "full_name",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Full Name"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "biz_name",
+			"sqlExpression": "biz_name",
+			"strField": "biz_name",
+			"type": 200,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "biz_name",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Biz Name"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "mobile",
+			"sqlExpression": "mobile",
+			"strField": "mobile",
+			"type": 201,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"validateAs": "Number",
+					"denyDuplicate": true,
+					"textboxMaxLenth": 50,
+					"textInsertNull": true,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "mobile",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Mobile"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "bank_ac_no",
+			"sqlExpression": "bank_ac_no",
+			"strField": "bank_ac_no",
+			"type": 200,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "bank_ac_no",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Bank Ac No"
+			},
+			"tooltip": {
+				"English": "Only digit, e.g 1234567"
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "bank_name",
+			"sqlExpression": "bank_name",
+			"strField": "bank_name",
+			"type": 200,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "bank_name",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Bank Name"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "date_of_birth",
+			"sqlExpression": "date_of_birth",
+			"strField": "date_of_birth",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"required": true,
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 2,
+					"dateFirstYearFactor": 70,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "date_of_birth",
+			"label": {
+				"English": "Date Of Birth"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "entry_year",
+			"sqlExpression": "entry_year",
+			"strField": "entry_year",
+			"type": 200,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"validateAs": "Number",
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "entry_year",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Entry Year"
+			},
+			"tooltip": {
+				"English": "Year joining the industry, e.g 2000"
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "home_address",
+			"sqlExpression": "home_address",
+			"strField": "home_address",
+			"type": 200,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"textboxMaxLenth": 100,
+					"textHTML5Input": "0",
+					"textareaHeight": 60,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "home_address",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Home Address"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "home_tel",
+			"sqlExpression": "home_tel",
+			"strField": "home_tel",
+			"type": 200,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"textboxMaxLenth": 15,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "home_tel",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Home Tel"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "nric",
+			"sqlExpression": "nric",
+			"strField": "nric",
+			"type": 200,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "nric",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "NRIC/FIN"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "cut_to_agency",
+			"sqlExpression": "cut_to_agency",
+			"strField": "cut_to_agency",
+			"type": 200,
+			"viewFormats": [
+				{
+					"format": "Custom",
+					"customExpression": "$value=$value.\"%\";",
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "cut_to_agency",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Cut To Agency"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "salesperson_share",
+			"sqlExpression": "salesperson_share",
+			"strField": "salesperson_share",
+			"type": 200,
+			"viewFormats": [
+				{
+					"format": "Custom",
+					"customExpression": "$value=$value.\"%\";",
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "salesperson_share",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Salesperson Share"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "agency",
+			"sqlExpression": "agency",
+			"strField": "agency",
+			"type": 200,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "agency",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Agency"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "agency_cea_reg",
+			"sqlExpression": "agency_cea_reg",
+			"strField": "agency_cea_reg",
+			"type": 201,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "agency_cea_reg",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Agency CEA Reg"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		},
+		{
+			"name": "destination",
+			"sqlExpression": "destination",
+			"strField": "destination",
+			"type": 200,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "destination",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Destination"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "eat_users"
+		}
+	],
+	"warnLeavingEdit": true,
+	"afterEditAction": 0,
+	"afterEditDetails": 11,
+	"afterAddDetail": 149,
+	"eventHandlers": [
+		{
+			"eventId": "EVENT_BEFOREADD",
+			"pageType": "add",
+			"code": "$values[\"full_name\"]=strtoupper($values[\"full_name\"]);\n$values[\"biz_name\"]=strtoupper($values[\"biz_name\"]);\n$values[\"email\"]=strtoupper($values[\"email\"]);\n$values[\"bank_name\"]=strtoupper($values[\"bank_name\"]);\n$values[\"home_address\"]=strtoupper($values[\"home_address\"]);\n$values[\"nric\"]=strtoupper($values[\"nric\"]);\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets.\n\nreturn true;"
+		},
+		{
+			"eventId": "EVENT_BEFOREEDIT",
+			"pageType": "edit",
+			"code": "$values[\"full_name\"]=strtoupper($values[\"full_name\"]);\n$values[\"biz_name\"]=strtoupper($values[\"biz_name\"]);\n$values[\"email\"]=strtoupper($values[\"email\"]);\n$values[\"bank_name\"]=strtoupper($values[\"bank_name\"]);\n$values[\"home_address\"]=strtoupper($values[\"home_address\"]);\n$values[\"nric\"]=strtoupper($values[\"nric\"]);\n$values[\"username\"]=strtoupper($values[\"username\"]);\n$values[\"destination\"]=strtoupper($values[\"destination\"]);\n\n\n\nreturn true;"
+		},
+		{
+			"eventId": "EVENT_JS_ONLOAD",
+			"pageType": "edit",
+			"code": "var ctrlAgentShare = Runner.getControl(pageid, 'salesperson_share');\nvar ctrlAgencyShare = Runner.getControl(pageid, 'cut_to_agency');\nfunction func() \n{\nctrlAgentShare.setValue(100 - parseFloat(ctrlAgencyShare.getValue()));\n}\nctrlAgencyShare.on('keyup', func);\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
+		},
+		{
+			"eventId": "EVENT_BEFORESHOW_EDIT",
+			"pageType": "edit",
+			"code": "if($_SESSION[\"GroupID\"]!=\"account admin\") {\n$pageObject->hideItem(\"user_group\");\n$pageObject->hideItem(\"user_status\");\n}\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
+		},
+		{
+			"eventId": "EVENT_BEFORESHOW_VIEW",
+			"pageType": "view",
+			"code": "if($_SESSION[\"GroupID\"]!=\"account admin\") {\n$pageObject->hideItem(\"user_group\");\n$pageObject->hideItem(\"user_status\");\n}\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
+		}
+	],
+	"sortByFields": {
+		"sortOrder": []
+	},
+	"pages": [
+		{
+			"id": "add",
+			"type": "add",
+			"layoutId": "nomenu",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "add-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "add-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_save",
+								"add_reset",
+								"add_back_list",
+								"add_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "add-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								},
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c4"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c5",
+									"colspan": 3
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field19",
+								"integrated_edit_field21",
+								"integrated_edit_field20",
+								"integrated_edit_field8",
+								"integrated_edit_field7",
+								"integrated_edit_field11",
+								"integrated_edit_field10",
+								"integrated_edit_field3"
+							]
+						},
+						"c": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field4",
+								"integrated_edit_field2",
+								"integrated_edit_field1",
+								"integrated_edit_field5",
+								"integrated_edit_field9"
+							]
+						},
+						"c4": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field13",
+								"integrated_edit_field18",
+								"integrated_edit_field17",
+								"integrated_edit_field",
+								"integrated_edit_field6"
+							]
+						},
+						"c5": {
+							"model": "c3",
+							"items": [
+								"details_preview2"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 3,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"add_header": {
+					"type": "add_header"
+				},
+				"add_back_list": {
+					"type": "add_back_list"
+				},
+				"add_cancel": {
+					"type": "add_cancel"
+				},
+				"add_message": {
+					"type": "add_message"
+				},
+				"add_save": {
+					"type": "add_save"
+				},
+				"add_reset": {
+					"type": "add_reset"
+				},
+				"integrated_edit_field": {
+					"field": "active",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "50px"
+				},
+				"integrated_edit_field1": {
+					"field": "bank_ac_no",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field6": {
+					"field": "company_dbname",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px"
+				},
+				"integrated_edit_field7": {
+					"field": "email",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px"
+				},
+				"integrated_edit_field8": {
+					"field": "mobile",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px"
+				},
+				"integrated_edit_field11": {
+					"field": "password",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px"
+				},
+				"integrated_edit_field13": {
+					"field": "signup_date",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px"
+				},
+				"integrated_edit_field17": {
+					"field": "user_group",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px"
+				},
+				"integrated_edit_field18": {
+					"field": "user_status",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px"
+				},
+				"integrated_edit_field19": {
+					"field": "username",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px"
+				},
+				"integrated_edit_field20": {
+					"field": "biz_name",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px"
+				},
+				"integrated_edit_field21": {
+					"field": "full_name",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px"
+				},
+				"integrated_edit_field2": {
+					"field": "bank_name",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field3": {
+					"field": "date_of_birth",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "entry_year",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "home_address",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field9": {
+					"field": "home_tel",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field10": {
+					"field": "nric",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"details_preview2": {
+					"type": "details_preview",
+					"table": 636150782,
+					"items": [],
+					"popup": false
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "edit",
+			"type": "edit",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "edit-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "edit-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_save",
+								"edit_back_list",
+								"edit_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "edit-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								},
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c4",
+									"rowspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c5",
+									"colspan": 3
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field19",
+								"integrated_edit_field21",
+								"integrated_edit_field20",
+								"integrated_edit_field14",
+								"integrated_edit_field8",
+								"integrated_edit_field7",
+								"integrated_edit_field10",
+								"integrated_edit_field3"
+							]
+						},
+						"c": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field4",
+								"integrated_edit_field9",
+								"integrated_edit_field5",
+								"integrated_edit_field2",
+								"integrated_edit_field1",
+								"integrated_edit_field12",
+								"integrated_edit_field22"
+							]
+						},
+						"c4": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field13",
+								"integrated_edit_field15",
+								"integrated_edit_field11",
+								"user_status",
+								"user_group",
+								"integrated_edit_field16",
+								"integrated_edit_field17"
+							]
+						},
+						"c5": {
+							"model": "c3",
+							"items": [
+								"details_preview2",
+								"details_preview"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 3,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"edit_header": {
+					"type": "edit_header"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"edit_reset",
+						"edit_view"
+					]
+				},
+				"edit_reset": {
+					"type": "edit_reset"
+				},
+				"edit_message": {
+					"type": "edit_message"
+				},
+				"edit_save": {
+					"type": "edit_save"
+				},
+				"edit_back_list": {
+					"type": "edit_back_list"
+				},
+				"edit_close": {
+					"type": "edit_close"
+				},
+				"edit_view": {
+					"type": "edit_view"
+				},
+				"integrated_edit_field13": {
+					"field": "signup_date",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px"
+				},
+				"integrated_edit_field4": {
+					"field": "entry_year",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"integrated_edit_field1": {
+					"field": "bank_ac_no",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"integrated_edit_field21": {
+					"field": "full_name",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px"
+				},
+				"integrated_edit_field19": {
+					"field": "username",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px",
+					"updateOnEdit": false
+				},
+				"integrated_edit_field9": {
+					"field": "home_tel",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"integrated_edit_field5": {
+					"field": "home_address",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"updateOnEdit": false,
+					"width": "250px"
+				},
+				"integrated_edit_field2": {
+					"field": "bank_name",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"integrated_edit_field3": {
+					"field": "date_of_birth",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px",
+					"updateOnEdit": false
+				},
+				"integrated_edit_field10": {
+					"field": "nric",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px",
+					"label": {
+						"field": "nric",
+						"table": "eat_users",
+						"type": 3
+					}
+				},
+				"integrated_edit_field7": {
+					"field": "email",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "250px"
+				},
+				"integrated_edit_field8": {
+					"field": "mobile",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px",
+					"updateOnEdit": false
+				},
+				"integrated_edit_field20": {
+					"field": "biz_name",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px"
+				},
+				"details_preview2": {
+					"type": "details_preview",
+					"table": 636150782,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_preview": {
+					"type": "details_preview",
+					"table": 1734685260,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"integrated_edit_field12": {
+					"field": "cut_to_agency",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "100px",
+					"updateOnEdit": false
+				},
+				"integrated_edit_field22": {
+					"field": "salesperson_share",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "100px",
+					"updateOnEdit": false
+				},
+				"integrated_edit_field11": {
+					"field": "agency_cea_reg",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"updateOnEdit": false,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"integrated_edit_field14": {
+					"field": "destination",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"updateOnEdit": false,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"integrated_edit_field15": {
+					"field": "agency",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"user_status": {
+					"field": "user_status",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"user_group": {
+					"field": "user_group",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"integrated_edit_field16": {
+					"field": "company_dbname",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field17": {
+					"field": "active",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "100px"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "export",
+			"type": "export",
+			"layoutId": "first",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "export-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "export-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_field",
+								"export_field6",
+								"export_field7",
+								"export_field11",
+								"export_field13",
+								"export_field17",
+								"export_field19",
+								"export_field20",
+								"export_field21",
+								"export_field22",
+								"export_field8",
+								"export_field1",
+								"export_field2",
+								"export_field3",
+								"export_field4",
+								"export_field5",
+								"export_field9",
+								"export_field10",
+								"export_field14",
+								"export_field24",
+								"export_field12",
+								"export_field15",
+								"export_field16"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "export-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"export_export",
+								"export_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"export_header": {
+					"type": "export_header"
+				},
+				"export_export": {
+					"type": "export_export"
+				},
+				"export_cancel": {
+					"type": "export_cancel"
+				},
+				"export_field": {
+					"field": "active",
+					"type": "export_field"
+				},
+				"export_field1": {
+					"field": "bank_ac_no",
+					"type": "export_field"
+				},
+				"export_field6": {
+					"field": "company_dbname",
+					"type": "export_field"
+				},
+				"export_field7": {
+					"field": "email",
+					"type": "export_field"
+				},
+				"export_field8": {
+					"field": "mobile",
+					"type": "export_field"
+				},
+				"export_field11": {
+					"field": "password",
+					"type": "export_field"
+				},
+				"export_field13": {
+					"field": "signup_date",
+					"type": "export_field"
+				},
+				"export_field17": {
+					"field": "user_group",
+					"type": "export_field"
+				},
+				"export_field19": {
+					"field": "user_status",
+					"type": "export_field"
+				},
+				"export_field20": {
+					"field": "username",
+					"type": "export_field"
+				},
+				"export_field21": {
+					"field": "biz_name",
+					"type": "export_field"
+				},
+				"export_field22": {
+					"field": "full_name",
+					"type": "export_field"
+				},
+				"export_field2": {
+					"field": "bank_name",
+					"type": "export_field"
+				},
+				"export_field3": {
+					"field": "date_of_birth",
+					"type": "export_field"
+				},
+				"export_field4": {
+					"field": "entry_year",
+					"type": "export_field"
+				},
+				"export_field5": {
+					"field": "home_address",
+					"type": "export_field"
+				},
+				"export_field9": {
+					"field": "home_tel",
+					"type": "export_field"
+				},
+				"export_field10": {
+					"field": "nric",
+					"type": "export_field"
+				},
+				"export_field14": {
+					"field": "cut_to_agency",
+					"type": "export_field"
+				},
+				"export_field24": {
+					"field": "salesperson_share",
+					"type": "export_field"
+				},
+				"export_field12": {
+					"field": "agency",
+					"type": "export_field"
+				},
+				"export_field15": {
+					"field": "agency_cea_reg",
+					"type": "export_field"
+				},
+				"export_field16": {
+					"field": "destination",
+					"type": "export_field"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"exportFormat": 2,
+			"exportDelimiter": ",",
+			"exportSelectDelimiter": false,
+			"exportSelectFields": false
+		},
+		{
+			"id": "import",
+			"type": "import",
+			"layoutId": "first",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "import-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "import-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_field",
+								"import_field6",
+								"import_field7",
+								"import_field11",
+								"import_field13",
+								"import_field17",
+								"import_field19",
+								"import_field20",
+								"import_field21",
+								"import_field22",
+								"import_field8",
+								"import_field1",
+								"import_field2",
+								"import_field3",
+								"import_field4",
+								"import_field5",
+								"import_field9",
+								"import_field10",
+								"import_field14",
+								"import_field24",
+								"import_field12",
+								"import_field15",
+								"import_field16"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"import_header": {
+					"type": "import_header"
+				},
+				"import_field": {
+					"field": "active",
+					"type": "import_field"
+				},
+				"import_field1": {
+					"field": "bank_ac_no",
+					"type": "import_field"
+				},
+				"import_field6": {
+					"field": "company_dbname",
+					"type": "import_field"
+				},
+				"import_field7": {
+					"field": "email",
+					"type": "import_field"
+				},
+				"import_field8": {
+					"field": "mobile",
+					"type": "import_field"
+				},
+				"import_field11": {
+					"field": "password",
+					"type": "import_field"
+				},
+				"import_field13": {
+					"field": "signup_date",
+					"type": "import_field"
+				},
+				"import_field17": {
+					"field": "user_group",
+					"type": "import_field"
+				},
+				"import_field19": {
+					"field": "user_status",
+					"type": "import_field"
+				},
+				"import_field20": {
+					"field": "username",
+					"type": "import_field"
+				},
+				"import_field21": {
+					"field": "biz_name",
+					"type": "import_field"
+				},
+				"import_field22": {
+					"field": "full_name",
+					"type": "import_field"
+				},
+				"import_field2": {
+					"field": "bank_name",
+					"type": "import_field"
+				},
+				"import_field3": {
+					"field": "date_of_birth",
+					"type": "import_field"
+				},
+				"import_field4": {
+					"field": "entry_year",
+					"type": "import_field"
+				},
+				"import_field5": {
+					"field": "home_address",
+					"type": "import_field"
+				},
+				"import_field9": {
+					"field": "home_tel",
+					"type": "import_field"
+				},
+				"import_field10": {
+					"field": "nric",
+					"type": "import_field"
+				},
+				"import_field14": {
+					"field": "cut_to_agency",
+					"type": "import_field"
+				},
+				"import_field24": {
+					"field": "salesperson_share",
+					"type": "import_field"
+				},
+				"import_field12": {
+					"field": "agency",
+					"type": "import_field"
+				},
+				"import_field15": {
+					"field": "agency_cea_reg",
+					"type": "import_field"
+				},
+				"import_field16": {
+					"field": "destination",
+					"type": "import_field"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "topbar",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"delete"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"details_found",
+								"page_size",
+								"print_details"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "topbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"logo",
+								"menu"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search",
+								"list_options",
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "list-vbar",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"breadcrumb"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "horizontal-grid",
+					"grid": [
+						{
+							"section": "head",
+							"cells": [
+								{
+									"cell": "headcell_icons"
+								},
+								{
+									"cell": "headcell_checkbox"
+								},
+								{
+									"cell": "headcell_details"
+								},
+								{
+									"cell": "headcell_field2"
+								},
+								{
+									"cell": "headcell_field3"
+								},
+								{
+									"cell": "headcell_field4"
+								},
+								{
+									"cell": "headcell_field"
+								}
+							]
+						},
+						{
+							"section": "body",
+							"cells": [
+								{
+									"cell": "cell_icons"
+								},
+								{
+									"cell": "cell_checkbox"
+								},
+								{
+									"cell": "cell_details"
+								},
+								{
+									"cell": "cell_field2"
+								},
+								{
+									"cell": "cell_field3"
+								},
+								{
+									"cell": "cell_field4"
+								},
+								{
+									"cell": "cell_field"
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_dpreview",
+									"colspan": 7
+								}
+							],
+							"section": "body"
+						},
+						{
+							"section": "foot",
+							"cells": [
+								{
+									"cell": "footcell_icons"
+								},
+								{
+									"cell": "footcell_checkbox"
+								},
+								{
+									"cell": "footcell_details"
+								},
+								{
+									"cell": "footcell_field2"
+								},
+								{
+									"cell": "footcell_field3"
+								},
+								{
+									"cell": "footcell_field4"
+								},
+								{
+									"cell": "footcell_field"
+								}
+							]
+						}
+					],
+					"cells": {
+						"headcell_field2": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field7"
+							],
+							"field": "username",
+							"columnName": "field"
+						},
+						"cell_field2": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field3"
+							],
+							"field": "username",
+							"columnName": "field"
+						},
+						"footcell_field2": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "username",
+							"columnName": "field"
+						},
+						"headcell_field3": {
+							"model": "headcell_field",
+							"items": [
+								"text"
+							],
+							"field": "full_name",
+							"columnName": "field"
+						},
+						"cell_field3": {
+							"model": "cell_field",
+							"items": [
+								"grid_field6",
+								"grid_field"
+							],
+							"field": "full_name",
+							"columnName": "field",
+							"orientation": "vertical"
+						},
+						"footcell_field3": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "full_name",
+							"columnName": "field"
+						},
+						"headcell_checkbox": {
+							"model": "headcell_checkbox",
+							"items": [
+								"grid_checkbox_head"
+							],
+							"columnName": "checkbox",
+							"field": ""
+						},
+						"cell_checkbox": {
+							"model": "cell_checkbox",
+							"items": [
+								"grid_checkbox"
+							],
+							"columnName": "checkbox",
+							"field": ""
+						},
+						"footcell_checkbox": {
+							"model": "footcell_checkbox",
+							"items": [],
+							"columnName": "checkbox",
+							"field": ""
+						},
+						"headcell_icons": {
+							"model": "headcell_icons",
+							"items": [],
+							"columnName": "list-icons",
+							"field": ""
+						},
+						"cell_icons": {
+							"model": "cell_icons",
+							"items": [
+								"grid_edit",
+								"grid_view"
+							],
+							"columnName": "list-icons",
+							"field": ""
+						},
+						"footcell_icons": {
+							"model": "footcell_icons",
+							"items": [],
+							"columnName": "list-icons",
+							"field": ""
+						},
+						"headcell_field4": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field6",
+								"snippet",
+								"grid_field_label2"
+							],
+							"field": "email",
+							"columnName": "field"
+						},
+						"cell_field4": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field2",
+								"grid_field2"
+							],
+							"field": "email",
+							"columnName": "field",
+							"orientation": "vertical"
+						},
+						"footcell_field4": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "email",
+							"columnName": "field"
+						},
+						"cell_dpreview": {
+							"model": "cell_dpreview",
+							"items": [
+								"details_preview",
+								"details_preview2"
+							],
+							"columnName": "field",
+							"field": "cut_to_agency"
+						},
+						"headcell_details": {
+							"model": "headcell_details",
+							"items": [],
+							"columnName": "details",
+							"field": ""
+						},
+						"cell_details": {
+							"model": "cell_details",
+							"items": [
+								"grid_details_link",
+								"grid_details_link2"
+							],
+							"columnName": "details",
+							"field": ""
+						},
+						"footcell_details": {
+							"model": "footcell_details",
+							"items": [],
+							"columnName": "details",
+							"field": ""
+						},
+						"headcell_field": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label"
+							],
+							"field": "cut_to_agency",
+							"columnName": "field"
+						},
+						"cell_field": {
+							"model": "cell_field",
+							"items": [
+								"grid_field1"
+							],
+							"field": "cut_to_agency",
+							"columnName": "field"
+						},
+						"footcell_field": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "cut_to_agency",
+							"columnName": "field"
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"page_size": {
+					"type": "page_size"
+				},
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search"
+				},
+				"pagination": {
+					"type": "pagination"
+				},
+				"grid_checkbox": {
+					"type": "grid_checkbox"
+				},
+				"grid_checkbox_head": {
+					"type": "grid_checkbox_head"
+				},
+				"details_found": {
+					"type": "details_found"
+				},
+				"list_options": {
+					"type": "list_options",
+					"items": [
+						"delete_selected",
+						"-5",
+						"advsearch_link"
+					]
+				},
+				"grid_field": {
+					"field": "biz_name",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field7": {
+					"type": "grid_field_label",
+					"field": "username",
+					"clickSort": false
+				},
+				"simple_grid_field6": {
+					"type": "grid_field_label",
+					"field": "email",
+					"clickSort": false
+				},
+				"simple_grid_field3": {
+					"field": "username",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field2": {
+					"field": "email",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"changepassword_link"
+					]
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": false
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"grid_edit": {
+					"type": "grid_edit",
+					"popup": true
+				},
+				"grid_view": {
+					"type": "grid_view",
+					"popup": true
+				},
+				"-": {
+					"type": "-"
+				},
+				"-1": {
+					"type": "-"
+				},
+				"-2": {
+					"type": "-"
+				},
+				"advsearch_link": {
+					"type": "advsearch_link"
+				},
+				"-3": {
+					"type": "-"
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				},
+				"print_details": {
+					"type": "print_details",
+					"tables": {
+						"636150782": true,
+						"1734685260": true
+					}
+				},
+				"grid_field2": {
+					"field": "mobile",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"grid_field_label2": {
+					"type": "grid_field_label",
+					"field": "mobile",
+					"clickSort": false
+				},
+				"grid_field6": {
+					"field": "full_name",
+					"type": "grid_field",
+					"inlineEdit": false,
+					"inlineAdd": false
+				},
+				"text": {
+					"type": "text",
+					"label": {
+						"text": "Name",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"snippet": {
+					"type": "snippet",
+					"eventId": "Slash_mark",
+					"label": {
+						"text": "Slash mark",
+						"type": 0
+					},
+					"eventGid": 2825503296
+				},
+				"details_preview2": {
+					"type": "details_preview",
+					"table": 636150782,
+					"items": [],
+					"popup": false,
+					"hideEmptyPreview": false,
+					"proceedLink": false,
+					"pageId": "list"
+				},
+				"grid_details_link2": {
+					"type": "grid_details_link",
+					"table": 636150782,
+					"badge": false,
+					"showCount": true,
+					"hideIfNone": false,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  padding-left:20px;\n}\n",
+					"icon": {
+						"glyph": "bookmark"
+					}
+				},
+				"details_preview": {
+					"type": "details_preview",
+					"table": 1734685260,
+					"items": [],
+					"popup": false,
+					"hideEmptyPreview": false,
+					"proceedLink": false,
+					"pageId": "list"
+				},
+				"grid_details_link": {
+					"type": "grid_details_link",
+					"table": 1734685260,
+					"badge": false,
+					"showCount": true,
+					"hideIfNone": false,
+					"icon": {
+						"glyph": "file"
+					},
+					"color": "#ddb37a"
+				},
+				"grid_field1": {
+					"field": "cut_to_agency",
+					"type": "grid_field",
+					"inlineEdit": false,
+					"inlineAdd": false
+				},
+				"grid_field_label": {
+					"type": "grid_field_label",
+					"field": "cut_to_agency",
+					"clickSort": false
+				},
+				"-4": {
+					"type": "-"
+				},
+				"delete": {
+					"type": "delete"
+				},
+				"delete_selected": {
+					"type": "delete_selected"
+				},
+				"-5": {
+					"type": "-"
+				}
+			},
+			"spreadsheetGrid": false,
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "masterlist",
+			"type": "masterlist",
+			"layoutId": "masterlist",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "empty-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "empty-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "masterlist-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"back_master",
+								"masterlist_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "horizontal-grid",
+					"grid": [
+						{
+							"section": "head",
+							"cells": [
+								{
+									"cell": "headcell_field"
+								},
+								{
+									"cell": "headcell_field1"
+								},
+								{
+									"cell": "headcell_field2"
+								},
+								{
+									"cell": "headcell_field4"
+								},
+								{
+									"cell": "headcell_field5"
+								},
+								{
+									"cell": "headcell_field9"
+								},
+								{
+									"cell": "headcell_field3"
+								},
+								{
+									"cell": "headcell_field6"
+								},
+								{
+									"cell": "headcell_field7"
+								}
+							]
+						},
+						{
+							"section": "body",
+							"cells": [
+								{
+									"cell": "cell_field"
+								},
+								{
+									"cell": "cell_field1"
+								},
+								{
+									"cell": "cell_field2"
+								},
+								{
+									"cell": "cell_field4"
+								},
+								{
+									"cell": "cell_field5"
+								},
+								{
+									"cell": "cell_field9"
+								},
+								{
+									"cell": "cell_field3"
+								},
+								{
+									"cell": "cell_field6"
+								},
+								{
+									"cell": "cell_field7"
+								}
+							]
+						},
+						{
+							"section": "foot",
+							"cells": [
+								{
+									"cell": "footcell_field"
+								},
+								{
+									"cell": "footcell_field1"
+								},
+								{
+									"cell": "footcell_field2"
+								},
+								{
+									"cell": "footcell_field4"
+								},
+								{
+									"cell": "footcell_field5"
+								},
+								{
+									"cell": "footcell_field9"
+								},
+								{
+									"cell": "footcell_field3"
+								},
+								{
+									"cell": "footcell_field6"
+								},
+								{
+									"cell": "footcell_field7"
+								}
+							]
+						}
+					],
+					"cells": {
+						"headcell_field": {
+							"model": "headcell_field",
+							"items": [
+								"text"
+							],
+							"field": "full_name",
+							"columnName": "field"
+						},
+						"cell_field": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field9",
+								"simple_grid_field6"
+							],
+							"field": "full_name",
+							"orientation": "vertical",
+							"columnName": "field"
+						},
+						"footcell_field": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "full_name",
+							"columnName": "field"
+						},
+						"headcell_field1": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field23"
+							],
+							"field": "username",
+							"columnName": "field"
+						},
+						"cell_field1": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field22"
+							],
+							"field": "username",
+							"columnName": "field"
+						},
+						"footcell_field1": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "username",
+							"columnName": "field"
+						},
+						"headcell_field2": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field12"
+							],
+							"field": "mobile",
+							"columnName": "field"
+						},
+						"cell_field2": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field10"
+							],
+							"field": "mobile",
+							"columnName": "field"
+						},
+						"footcell_field2": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "mobile",
+							"columnName": "field"
+						},
+						"headcell_field4": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label"
+							],
+							"field": "email",
+							"columnName": "field"
+						},
+						"cell_field4": {
+							"model": "cell_field",
+							"items": [
+								"grid_field"
+							],
+							"field": "email",
+							"columnName": "field"
+						},
+						"footcell_field4": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "email",
+							"columnName": "field"
+						},
+						"headcell_field5": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label2"
+							],
+							"field": "cut_to_agency",
+							"columnName": "field"
+						},
+						"cell_field5": {
+							"model": "cell_field",
+							"items": [
+								"grid_field2"
+							],
+							"field": "cut_to_agency",
+							"columnName": "field"
+						},
+						"footcell_field5": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "cut_to_agency",
+							"columnName": "field"
+						},
+						"headcell_field9": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label6"
+							],
+							"field": "salesperson_share",
+							"columnName": "field"
+						},
+						"cell_field9": {
+							"model": "cell_field",
+							"items": [
+								"grid_field6"
+							],
+							"field": "salesperson_share",
+							"columnName": "field"
+						},
+						"footcell_field9": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "salesperson_share",
+							"columnName": "field"
+						},
+						"headcell_field3": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label1"
+							],
+							"field": "agency",
+							"columnName": "field"
+						},
+						"cell_field3": {
+							"model": "cell_field",
+							"items": [
+								"grid_field1"
+							],
+							"field": "agency",
+							"columnName": "field"
+						},
+						"footcell_field3": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "agency",
+							"columnName": "field"
+						},
+						"headcell_field6": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label3"
+							],
+							"field": "agency_cea_reg",
+							"columnName": "field"
+						},
+						"cell_field6": {
+							"model": "cell_field",
+							"items": [
+								"grid_field3"
+							],
+							"field": "agency_cea_reg",
+							"columnName": "field"
+						},
+						"footcell_field6": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "agency_cea_reg",
+							"columnName": "field"
+						},
+						"headcell_field7": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label4"
+							],
+							"field": "destination",
+							"columnName": "field"
+						},
+						"cell_field7": {
+							"model": "cell_field",
+							"items": [
+								"grid_field4"
+							],
+							"field": "destination",
+							"columnName": "field"
+						},
+						"footcell_field7": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "destination",
+							"columnName": "field"
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"masterlist_header": {
+					"type": "masterlist_header"
+				},
+				"back_master": {
+					"type": "back_master"
+				},
+				"simple_grid_field6": {
+					"field": "biz_name",
+					"type": "grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "full_name",
+					"type": "grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "mobile",
+					"type": "grid_field"
+				},
+				"simple_grid_field22": {
+					"field": "username",
+					"type": "grid_field"
+				},
+				"simple_grid_field12": {
+					"type": "grid_field_label",
+					"field": "mobile"
+				},
+				"simple_grid_field23": {
+					"type": "grid_field_label",
+					"field": "username"
+				},
+				"text": {
+					"type": "text",
+					"label": {
+						"text": "Name",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"grid_field": {
+					"field": "email",
+					"type": "grid_field"
+				},
+				"grid_field_label": {
+					"type": "grid_field_label",
+					"field": "email"
+				},
+				"grid_field2": {
+					"field": "cut_to_agency",
+					"type": "grid_field"
+				},
+				"grid_field_label2": {
+					"type": "grid_field_label",
+					"field": "cut_to_agency"
+				},
+				"grid_field6": {
+					"field": "salesperson_share",
+					"type": "grid_field"
+				},
+				"grid_field_label6": {
+					"type": "grid_field_label",
+					"field": "salesperson_share"
+				},
+				"grid_field1": {
+					"field": "agency",
+					"type": "grid_field"
+				},
+				"grid_field_label1": {
+					"type": "grid_field_label",
+					"field": "agency"
+				},
+				"grid_field3": {
+					"field": "agency_cea_reg",
+					"type": "grid_field"
+				},
+				"grid_field_label3": {
+					"type": "grid_field_label",
+					"field": "agency_cea_reg"
+				},
+				"grid_field4": {
+					"field": "destination",
+					"type": "grid_field"
+				},
+				"grid_field_label4": {
+					"type": "grid_field_label",
+					"field": "destination"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "print",
+			"type": "print",
+			"layoutId": "basic",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "print-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"print_pages"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "print-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "print-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"print_header",
+								"print_subheader"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "horizontal-grid",
+					"grid": [
+						{
+							"section": "head",
+							"cells": [
+								{
+									"cell": "headcell_field"
+								},
+								{
+									"cell": "headcell_field6"
+								},
+								{
+									"cell": "headcell_field7"
+								},
+								{
+									"cell": "headcell_field8"
+								},
+								{
+									"cell": "headcell_field9"
+								},
+								{
+									"cell": "headcell_field10"
+								},
+								{
+									"cell": "headcell_field12"
+								},
+								{
+									"cell": "headcell_field13"
+								},
+								{
+									"cell": "headcell_field14"
+								},
+								{
+									"cell": "headcell_field15"
+								}
+							]
+						},
+						{
+							"section": "body",
+							"cells": [
+								{
+									"cell": "cell_field"
+								},
+								{
+									"cell": "cell_field6"
+								},
+								{
+									"cell": "cell_field7"
+								},
+								{
+									"cell": "cell_field8"
+								},
+								{
+									"cell": "cell_field9"
+								},
+								{
+									"cell": "cell_field10"
+								},
+								{
+									"cell": "cell_field12"
+								},
+								{
+									"cell": "cell_field13"
+								},
+								{
+									"cell": "cell_field14"
+								},
+								{
+									"cell": "cell_field15"
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "cell_dpreview",
+									"colspan": 10
+								}
+							],
+							"section": "body"
+						},
+						{
+							"section": "foot",
+							"cells": [
+								{
+									"cell": "footcell_field"
+								},
+								{
+									"cell": "footcell_field6"
+								},
+								{
+									"cell": "footcell_field7"
+								},
+								{
+									"cell": "footcell_field8"
+								},
+								{
+									"cell": "footcell_field9"
+								},
+								{
+									"cell": "footcell_field10"
+								},
+								{
+									"cell": "footcell_field12"
+								},
+								{
+									"cell": "footcell_field13"
+								},
+								{
+									"cell": "footcell_field14"
+								},
+								{
+									"cell": "footcell_field15"
+								}
+							]
+						}
+					],
+					"cells": {
+						"headcell_field": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field8"
+							],
+							"field": "active",
+							"columnName": "field"
+						},
+						"cell_field": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field"
+							],
+							"field": "active",
+							"columnName": "field"
+						},
+						"footcell_field": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "active",
+							"columnName": "field"
+						},
+						"headcell_field6": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field16"
+							],
+							"field": "company_dbname",
+							"columnName": "field"
+						},
+						"cell_field6": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field6"
+							],
+							"field": "company_dbname",
+							"columnName": "field"
+						},
+						"footcell_field6": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "company_dbname",
+							"columnName": "field"
+						},
+						"headcell_field7": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field23"
+							],
+							"field": "email",
+							"columnName": "field"
+						},
+						"cell_field7": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field7"
+							],
+							"field": "email",
+							"columnName": "field"
+						},
+						"footcell_field7": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "email",
+							"columnName": "field"
+						},
+						"headcell_field8": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field24"
+							],
+							"field": "password",
+							"columnName": "field"
+						},
+						"cell_field8": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field11"
+							],
+							"field": "password",
+							"columnName": "field"
+						},
+						"footcell_field8": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "password",
+							"columnName": "field"
+						},
+						"headcell_field9": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field25"
+							],
+							"field": "signup_date",
+							"columnName": "field"
+						},
+						"cell_field9": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field13"
+							],
+							"field": "signup_date",
+							"columnName": "field"
+						},
+						"footcell_field9": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "signup_date",
+							"columnName": "field"
+						},
+						"headcell_field10": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field26"
+							],
+							"field": "user_group",
+							"columnName": "field"
+						},
+						"cell_field10": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field17"
+							],
+							"field": "user_group",
+							"columnName": "field"
+						},
+						"footcell_field10": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "user_group",
+							"columnName": "field"
+						},
+						"headcell_field12": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field28"
+							],
+							"field": "user_status",
+							"columnName": "field"
+						},
+						"cell_field12": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field19"
+							],
+							"field": "user_status",
+							"columnName": "field"
+						},
+						"footcell_field12": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "user_status",
+							"columnName": "field"
+						},
+						"headcell_field13": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field29"
+							],
+							"field": "username",
+							"columnName": "field"
+						},
+						"cell_field13": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field20"
+							],
+							"field": "username",
+							"columnName": "field"
+						},
+						"footcell_field13": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "username",
+							"columnName": "field"
+						},
+						"headcell_field14": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field30"
+							],
+							"field": "biz_name",
+							"columnName": "field"
+						},
+						"cell_field14": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field21"
+							],
+							"field": "biz_name",
+							"columnName": "field"
+						},
+						"footcell_field14": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "biz_name",
+							"columnName": "field"
+						},
+						"headcell_field15": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field31"
+							],
+							"field": "full_name",
+							"columnName": "field"
+						},
+						"cell_field15": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field22"
+							],
+							"field": "full_name",
+							"columnName": "field"
+						},
+						"footcell_field15": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "full_name",
+							"columnName": "field"
+						},
+						"cell_dpreview": {
+							"model": "cell_dpreview",
+							"items": [
+								"details_preview2",
+								"details_preview"
+							],
+							"columnName": "field",
+							"field": "full_name"
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"print_header": {
+					"type": "print_header"
+				},
+				"print_subheader": {
+					"type": "print_subheader"
+				},
+				"print_pages": {
+					"type": "print_pages"
+				},
+				"simple_grid_field": {
+					"field": "active",
+					"type": "grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "company_dbname",
+					"type": "grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "email",
+					"type": "grid_field"
+				},
+				"simple_grid_field8": {
+					"type": "grid_field_label",
+					"field": "active"
+				},
+				"simple_grid_field11": {
+					"field": "password",
+					"type": "grid_field"
+				},
+				"simple_grid_field13": {
+					"field": "signup_date",
+					"type": "grid_field"
+				},
+				"simple_grid_field16": {
+					"type": "grid_field_label",
+					"field": "company_dbname"
+				},
+				"simple_grid_field17": {
+					"field": "user_group",
+					"type": "grid_field"
+				},
+				"simple_grid_field19": {
+					"field": "user_status",
+					"type": "grid_field"
+				},
+				"simple_grid_field20": {
+					"field": "username",
+					"type": "grid_field"
+				},
+				"simple_grid_field21": {
+					"field": "biz_name",
+					"type": "grid_field"
+				},
+				"simple_grid_field22": {
+					"field": "full_name",
+					"type": "grid_field"
+				},
+				"simple_grid_field23": {
+					"type": "grid_field_label",
+					"field": "email"
+				},
+				"simple_grid_field24": {
+					"type": "grid_field_label",
+					"field": "password"
+				},
+				"simple_grid_field25": {
+					"type": "grid_field_label",
+					"field": "signup_date"
+				},
+				"simple_grid_field26": {
+					"type": "grid_field_label",
+					"field": "user_group"
+				},
+				"simple_grid_field28": {
+					"type": "grid_field_label",
+					"field": "user_status"
+				},
+				"simple_grid_field29": {
+					"type": "grid_field_label",
+					"field": "username"
+				},
+				"simple_grid_field30": {
+					"type": "grid_field_label",
+					"field": "biz_name"
+				},
+				"simple_grid_field31": {
+					"type": "grid_field_label",
+					"field": "full_name"
+				},
+				"details_preview2": {
+					"type": "details_preview",
+					"table": 636150782,
+					"items": [],
+					"popup": false
+				},
+				"details_preview": {
+					"type": "details_preview",
+					"table": 1734685260,
+					"items": [],
+					"popup": false
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "search",
+			"type": "search",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "search-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "search-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_search",
+								"search_reset",
+								"search_back_list",
+								"search_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "search-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-search",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_search_field",
+								"integrated_search_field6",
+								"integrated_search_field7",
+								"integrated_search_field11",
+								"integrated_search_field13",
+								"integrated_search_field17",
+								"integrated_search_field19",
+								"integrated_search_field20",
+								"integrated_search_field21",
+								"integrated_search_field22",
+								"integrated_search_field8",
+								"integrated_search_field1",
+								"integrated_search_field2",
+								"integrated_search_field3",
+								"integrated_search_field4",
+								"integrated_search_field5",
+								"integrated_search_field9",
+								"integrated_search_field10",
+								"integrated_search_field14",
+								"integrated_search_field24",
+								"integrated_search_field12",
+								"integrated_search_field15",
+								"integrated_search_field16"
+							]
+						}
+					},
+					"deferredItems": [],
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"search_header": {
+					"type": "search_header"
+				},
+				"search_reset": {
+					"type": "search_reset"
+				},
+				"search_back_list": {
+					"type": "search_back_list"
+				},
+				"search_search": {
+					"type": "search_search"
+				},
+				"search_cancel": {
+					"type": "search_cancel"
+				},
+				"integrated_search_field": {
+					"field": "active",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field1": {
+					"field": "bank_ac_no",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field6": {
+					"field": "company_dbname",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field7": {
+					"field": "email",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field8": {
+					"field": "mobile",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field11": {
+					"field": "password",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field13": {
+					"field": "signup_date",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field17": {
+					"field": "user_group",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field19": {
+					"field": "user_status",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field20": {
+					"field": "username",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field21": {
+					"field": "biz_name",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field22": {
+					"field": "full_name",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field2": {
+					"field": "bank_name",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field3": {
+					"field": "date_of_birth",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field4": {
+					"field": "entry_year",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field5": {
+					"field": "home_address",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field9": {
+					"field": "home_tel",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field10": {
+					"field": "nric",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field14": {
+					"field": "cut_to_agency",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field24": {
+					"field": "salesperson_share",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field12": {
+					"field": "agency",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field15": {
+					"field": "agency_cea_reg",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field16": {
+					"field": "destination",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "view",
+			"type": "view",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "view-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "view-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_back_list",
+								"view_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "view-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3",
+									"rowspan": 1
+								},
+								{
+									"cell": "c",
+									"rowspan": 1
+								},
+								{
+									"cell": "c4",
+									"rowspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c5",
+									"colspan": 3
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field19",
+								"integrated_edit_field",
+								"integrated_edit_field21",
+								"integrated_edit_field20",
+								"integrated_edit_field14",
+								"integrated_edit_field8",
+								"integrated_edit_field7",
+								"integrated_edit_field10",
+								"integrated_edit_field3"
+							]
+						},
+						"c": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field4",
+								"integrated_edit_field9",
+								"integrated_edit_field5",
+								"integrated_edit_field2",
+								"integrated_edit_field1",
+								"integrated_edit_field12",
+								"integrated_edit_field22"
+							]
+						},
+						"c4": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field13",
+								"integrated_edit_field15",
+								"integrated_edit_field11",
+								"user_status",
+								"user_group",
+								"integrated_edit_field16",
+								"integrated_edit_field17"
+							]
+						},
+						"c5": {
+							"model": "c3",
+							"items": [
+								"details_preview2",
+								"details_preview"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 3,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"view_header": {
+					"type": "view_header"
+				},
+				"view_back_list": {
+					"type": "view_back_list"
+				},
+				"view_close": {
+					"type": "view_close"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"view_edit"
+					]
+				},
+				"view_edit": {
+					"type": "view_edit"
+				},
+				"integrated_edit_field1": {
+					"field": "bank_ac_no",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"integrated_edit_field7": {
+					"field": "email",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"integrated_edit_field8": {
+					"field": "mobile",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px",
+					"updateOnEdit": false
+				},
+				"integrated_edit_field11": {
+					"field": "agency_cea_reg",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"updateOnEdit": false,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"integrated_edit_field13": {
+					"field": "signup_date",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px"
+				},
+				"integrated_edit_field19": {
+					"field": "username",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px",
+					"updateOnEdit": false
+				},
+				"integrated_edit_field20": {
+					"field": "biz_name",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px"
+				},
+				"integrated_edit_field21": {
+					"field": "full_name",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"width": "200px"
+				},
+				"integrated_edit_field2": {
+					"field": "bank_name",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"integrated_edit_field3": {
+					"field": "date_of_birth",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px",
+					"updateOnEdit": false
+				},
+				"integrated_edit_field4": {
+					"field": "entry_year",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"integrated_edit_field5": {
+					"field": "home_address",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"updateOnEdit": false,
+					"width": "200px"
+				},
+				"integrated_edit_field9": {
+					"field": "home_tel",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"integrated_edit_field10": {
+					"field": "nric",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px",
+					"label": {
+						"field": "nric",
+						"table": "eat_users",
+						"type": 3
+					}
+				},
+				"details_preview2": {
+					"type": "details_preview",
+					"table": 636150782,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_preview": {
+					"type": "details_preview",
+					"table": 1734685260,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"integrated_edit_field14": {
+					"field": "destination",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"updateOnEdit": false,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"integrated_edit_field12": {
+					"field": "cut_to_agency",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px",
+					"updateOnEdit": false
+				},
+				"integrated_edit_field15": {
+					"field": "agency",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px"
+				},
+				"integrated_edit_field22": {
+					"field": "salesperson_share",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"joined": true,
+					"separated": false,
+					"width": "200px",
+					"updateOnEdit": false
+				},
+				"user_group": {
+					"field": "user_group",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"user_status": {
+					"field": "user_status",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field16": {
+					"field": "company_dbname",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field17": {
+					"field": "active",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field": {
+					"field": "password",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"English": "User Info"
+	}
+}

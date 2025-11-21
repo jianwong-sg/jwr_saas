@@ -1,0 +1,4 @@
+{
+	"name": "Stripe Settings",
+	"serverCode": "// Put your code here.\necho GetCustomLabel(\"stripe_settings\");"
+}

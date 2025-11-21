@@ -1,0 +1,4 @@
+{
+	"name": "Breadcrumbs1",
+	"serverCode": "// Put your code here.\nif ($_GET[\"qs\"]==\"\") {\n\t\t$str = getBreadcrumbs();\n\t\tif (strlen($str)>0) {\n\t\t\techo \"<div class='docman-breadcrumbs'>\";\n\t\t\techo $str;\n\t\t\techo \"</div>\";\n\t}\n}"
+}

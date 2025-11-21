@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Print_view",
+	"beforeJsCode": "window.print();\ndelete_cookie(\"invoicePrint\"); \nreturn false;"
+}

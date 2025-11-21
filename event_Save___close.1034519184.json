@@ -1,0 +1,6 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Save___close",
+	"beforeJsCode": "/*\npageObj.on('beforeSave', function(formObj, fieldControlsArr, pageObj){\n  formObj.baseParams['goedit'] = \"1\";\n});\n*/\n$(\"#saveButton1\").click();",
+	"afterJsCode": "self.close();"
+}

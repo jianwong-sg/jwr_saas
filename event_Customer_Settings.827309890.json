@@ -1,0 +1,4 @@
+{
+	"name": "Customer Settings",
+	"serverCode": "// Put your code here.\necho \"<span style='font-size:16px'><b>\".GetCustomLabel(\"seller_settings\").\"</b></span>\";"
+}

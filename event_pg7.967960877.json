@@ -1,0 +1,4 @@
+{
+	"name": "pg7",
+	"serverCode": "// Put your code here.\necho '<div>Page 7</div>';"
+}

@@ -1,0 +1,4 @@
+{
+	"name": "Click date view details",
+	"serverCode": "// Put your code here.\necho \"<span style='font-size:120%;'><i>To view detail of Transaction, click on the Transaction.<i></span>\";"
+}

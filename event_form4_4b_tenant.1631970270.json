@@ -1,0 +1,4 @@
+{
+	"name": "form4_4b-tenant",
+	"serverCode": "// Put your code here.\necho \"<p style='text-aligh:justify'>The Tenant shall have no obligation to pay any commission to the Estate Agent \nif the lease of the Property falls through without fault on the part of the Tenant.</p>\";"
+}

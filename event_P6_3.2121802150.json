@@ -1,0 +1,4 @@
+{
+	"name": "P6.3",
+	"serverCode": "// Put your code here.\necho \"<p style='text-align:justify'>If there is no NRIC No., please write another number such as FIN, passport or \n      company incorporation/registration No., as the case may be.</p>\n      \";"
+}

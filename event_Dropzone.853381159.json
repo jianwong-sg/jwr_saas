@@ -1,0 +1,4 @@
+{
+	"name": "Dropzone",
+	"serverCode": "// Put your code here.\necho '<div id=\"dropzone\">'.\n\t\t\t\t'<div class=\"fallback\">'.\n\t\t\t\t\t'<div id=\"tempUploadFileName\"></div>'.\n\t\t\t\t\t'<form encType=\"multipart/form-data\" method=\"post\">'.\n\t\t\t\t\t\t'<input name=\"file\" type=\"file\"></input>'.\n\t\t\t\t\t'<form>'.\n\t\t\t\t'</div>'.\n\t\t'</div>';"
+}

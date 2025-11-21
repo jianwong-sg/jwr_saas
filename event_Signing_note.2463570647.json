@@ -1,0 +1,4 @@
+{
+	"name": "Signing note",
+	"serverCode": "echo \"<i><u>Note</U></i>: &nbsp;&nbsp;The parties are to initial every page of this \nAgreement including the Schedules and any attachments. By e-initial here the party \nconcerned initials all pages in this Agreement.\";"
+}

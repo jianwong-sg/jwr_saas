@@ -1,0 +1,6 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Save___view_form4",
+	"beforeJsCode": "$(\"#saveButton1\").click();\nreturn false;",
+	"afterJsCode": "// Put your code here.\nwindow.open('form4_edit.php?page=view&{$editlink}');"
+}

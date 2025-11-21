@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "create_pdf_filename",
+	"serverCode": "// Put your code here.\n$result[\"txt\"] = $params[\"txt\"].\" world!\";",
+	"beforeJsCode": "var params = {\n table: pageObj.pageTable,\n page: pageObj.pageName,\n pageType: pageObj.pageType,\n keys: pageObj.keys,\n filename: \"Invoice_\"+Runner.getControl(pageObj.id,\"invoice_number\").getValue() + \".pdf\"\n}\nRunner.PDF.download( params );\nreturn false;",
+	"afterJsCode": "// Put your code here.\nvar message = result[\"txt\"] + \" !!!\";\najax.setMessage(message);"
+}

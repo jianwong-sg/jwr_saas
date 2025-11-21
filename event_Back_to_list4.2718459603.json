@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Back_to_list4",
+	"afterJsCode": "location.href=\"transactions_list.php?#\";"
+}

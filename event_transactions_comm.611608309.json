@@ -1,0 +1,4 @@
+{
+	"name": "transactions_comm",
+	"serverCode": "// Put your code here.\necho '<a href=\"..#comm\">\n          <div><I class=\"fa fa-usd right-space\">\n          </I>\n          Commission\n        </div></a>';"
+}

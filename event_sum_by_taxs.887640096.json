@@ -1,0 +1,4 @@
+{
+	"name": "sum_by_taxs",
+	"serverCode": "if($_SESSION[\"template_scheme\"] == 2){\n\techo \"<div class='sum_by_taxs'><table></table></div>\";\n}"
+}

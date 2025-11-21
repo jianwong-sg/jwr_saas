@@ -1,0 +1,6 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Form_save___close",
+	"beforeJsCode": "$(\"#saveButton1\").click();",
+	"afterJsCode": "window.close();\n\nif (window.opener) {\nwindow.opener.location.reload();\n}"
+}

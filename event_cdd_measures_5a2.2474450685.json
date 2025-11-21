@@ -1,0 +1,4 @@
+{
+	"name": "cdd_measures_5a2",
+	"serverCode": "// Put your code here.\necho \"* Complex \n      transactions could include attempts to disguise the BO involved in the \n      transaction, or unnecessarily complex transaction structure possibly \n      designed to obscure the true nature of the transaction, or multiple \n      intermediaries used for the transaction. Unusually large transactions \n      could include transaction priced at more than the usual or expected amount \n      for a similar typical transaction.\";"
+}

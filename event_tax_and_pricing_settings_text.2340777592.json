@@ -1,0 +1,4 @@
+{
+	"name": "tax_and_pricing_settings_text",
+	"serverCode": "//echo \"<span style='font-size:16px'><b>\".GetCustomLabel(\"invoice_API\").\"</b></span>\";\necho \"<span style='font-size:16px'><b>\".\"Tax and pricing settings\".\"</b></span>\";;"
+}

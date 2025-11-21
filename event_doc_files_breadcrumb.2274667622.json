@@ -1,0 +1,4 @@
+{
+	"name": "doc_files_breadcrumb",
+	"serverCode": "if ($_GET[\"qs\"]==\"\") {\n\t$str = getBreadcrumbsByID($_SESSION[\"current_folder\"]);\n\tif (postvalue(\"hash\") && getFileNameFromURL()==\"doc_files_list.php\" && $_SESSION[\"UserID\"]==\"Guest\"){\n\t\t$_SESSION[\"hash_for_delete\"] = postvalue(\"hash\");\n\t\t$rs = CustomQuery(\"select * from \".AddTableWrappers(\"doc_files\").\" where \".AddFieldWrappers(\"hash\").\"='\". postvalue(\"hash\") .\"'\");\n\t\t$data = db_fetch_array($rs);\n\t\tif($data[\"file_type\"]==\"file\")\n\t\t\t$str=\"\";\n\t}\n\t\tif (strlen($str)>0) {\n\t\t\techo \"<div class='docman-breadcrumbs'>\";\n\t\t\techo $str;\n\t\t\techo \"</div>\";\n\t}\n}"
+}

@@ -1,0 +1,4078 @@
+{
+	"orderInfo": [
+		{
+			"index": 1,
+			"asc": true,
+			"field": "id"
+		}
+	],
+	"sql": "SELECT\nid,\nid_tx,\nname,\naddress,\npostal,\nnric,\nmobile,\ntel,\nemail,\ndoc_upload,\noffice_tel,\nremarks,\ndoc_name,\ncus_type,\ntrade,\ncontact_person,\ndestination,\ncontact_email,\nbiz_email,\nlast_updated,\ncontact_person_id,\ncontact_person_cell,\nsalutation,\nid_type,\ncountry_incorporation,\n`role`,\ncategory,\ntel_type,\nbilling_address,\nbilling_postal,\nreg_date,\nregistration_no,\ncustid,\ntx_address\nFROM parties_involved\nWHERE (`role` ='SELLER')\nORDER BY id",
+	"type": 1,
+	"connId": "Tables",
+	"originalTable": "parties_involved",
+	"name": "parties_involved_seller",
+	"shortTableName": "parties_involved_seller",
+	"caseSensitiveSearch": "",
+	"tableOwnerIdField": "id",
+	"usersOwnerIdField": "user_id",
+	"clickActions": {
+		"row": {
+			"codeData": {
+				"snippet": null
+			},
+			"gridData": {
+				"action": "checkbox",
+				"table": null
+			},
+			"openData": {
+				"how": "goto",
+				"page": "view",
+				"table": null,
+				"url": ""
+			}
+		},
+		"fields": {
+			"address": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {
+					"action": "checkbox",
+					"table": null
+				},
+				"openData": {
+					"how": "popup",
+					"page": "view",
+					"table": null,
+					"url": ""
+				}
+			},
+			"biz_email": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"contact_email": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"contact_person": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"contact_person_cell": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"contact_person_id": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"country_incorporation": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"cus_type": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"destination": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"doc_name": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"doc_upload": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"email": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"id": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"id_tx": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"id_type": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"last_updated": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"mobile": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"name": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {
+					"action": "checkbox",
+					"table": null
+				},
+				"openData": {
+					"how": "popup",
+					"page": "view",
+					"table": null,
+					"url": ""
+				}
+			},
+			"nric": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"office_tel": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"postal": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"remarks": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"salutation": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"status": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"tel": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"trade": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			}
+		}
+	},
+	"hideEmptyFieldsOnView": true,
+	"pageSizeSelectorRecords": [
+		"10",
+		"20",
+		"30",
+		"50",
+		"100",
+		"500",
+		"-1"
+	],
+	"pageSizeSelectorGroups": [
+		"1",
+		"3",
+		"5",
+		"10",
+		"50",
+		"100",
+		"-1"
+	],
+	"keyFields": [
+		"id"
+	],
+	"detailsBadgeColor": "D2691E",
+	"fields": [
+		{
+			"name": "id",
+			"sqlExpression": "id",
+			"strField": "id",
+			"type": 3,
+			"autoinc": true,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"validateAs": "Number",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Id"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "id_tx",
+			"sqlExpression": "id_tx",
+			"strField": "id_tx",
+			"type": 3,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"validateAs": "Number",
+					"textboxSize": 30,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Id Txn"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "name",
+			"sqlExpression": "name",
+			"strField": "name",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 100,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "name",
+					"lookupDisplayField": "name",
+					"lookupOrderBy": "name",
+					"lookupAllowAdd": true,
+					"lookupWhere": "cus_type!='SALESPERSON'",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Name"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "address",
+			"sqlExpression": "address",
+			"strField": "address",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxMaxLenth": 200,
+					"textHTML5Input": "0",
+					"textareaHeight": 60,
+					"lookupType": 2,
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "address",
+					"lookupDisplayField": "address",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Mailing Address"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "postal",
+			"sqlExpression": "postal",
+			"strField": "postal",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 60,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "postal",
+					"lookupDisplayField": "postal",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Postal Code"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "nric",
+			"sqlExpression": "nric",
+			"strField": "nric",
+			"type": 201,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 100,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "nric",
+					"lookupDisplayField": "nric",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Identification"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": "NRIC/FIN/Passport"
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "mobile",
+			"sqlExpression": "mobile",
+			"strField": "mobile",
+			"type": 201,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 150,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "mobile",
+					"lookupDisplayField": "mobile",
+					"lookupOrderBy": "name",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Mobile"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": "Mobile #"
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "tel",
+			"sqlExpression": "tel",
+			"strField": "tel",
+			"type": 201,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 150,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "tel",
+					"lookupDisplayField": "tel",
+					"lookupOrderBy": "name",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Tel"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "email",
+			"sqlExpression": "email",
+			"strField": "email",
+			"type": 201,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 150,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "email",
+					"lookupDisplayField": "email",
+					"lookupOrderBy": "name",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Email"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "doc_upload",
+			"sqlExpression": "doc_upload",
+			"strField": "doc_upload",
+			"type": 201,
+			"viewFormats": [
+				{
+					"format": "File-based Image",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"imageShowThumbnail": true,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "doc_upload",
+					"lookupDisplayField": "doc_upload",
+					"lookupAllowAdd": true,
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileResize": true,
+					"fileResizeSize": 450,
+					"fileCreateThumbnail": true,
+					"fileThumbnailSize": 150,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Supporting Docs"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "office_tel",
+			"sqlExpression": "office_tel",
+			"strField": "office_tel",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 150,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "office_tel",
+					"lookupDisplayField": "office_tel",
+					"lookupOrderBy": "name",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Office Tel"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": "Phone #"
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "remarks",
+			"sqlExpression": "remarks",
+			"strField": "remarks",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 250,
+					"textboxMaxLenth": 500,
+					"textHTML5Input": "0",
+					"textareaHeight": 60,
+					"lookupType": 2,
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "remarks",
+					"lookupDisplayField": "remarks",
+					"lookupOrderBy": "name",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Remarks"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "doc_name",
+			"sqlExpression": "doc_name",
+			"strField": "doc_name",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"textboxSize": 100,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Doc Name"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "cus_type",
+			"sqlExpression": "cus_type",
+			"strField": "cus_type",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 100,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "cus_type",
+					"lookupDisplayField": "cus_type",
+					"lookupOrderBy": "name",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Customer Type"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "trade",
+			"sqlExpression": "trade",
+			"strField": "trade",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxMaxLenth": 500,
+					"textHTML5Input": "0",
+					"textareaHeight": 50,
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "trade",
+					"lookupDisplayField": "trade",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Trade"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "contact_person",
+			"sqlExpression": "contact_person",
+			"strField": "contact_person",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "contact_person",
+					"lookupDisplayField": "contact_person",
+					"lookupOrderBy": "name",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Contact Person"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "destination",
+			"sqlExpression": "destination",
+			"strField": "destination",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 100,
+					"textboxMaxLenth": 15,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "destination",
+					"lookupDisplayField": "destination",
+					"lookupOrderBy": "name",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Destination"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "contact_email",
+			"sqlExpression": "contact_email",
+			"strField": "contact_email",
+			"type": 201,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 150,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "contact_email",
+					"lookupDisplayField": "contact_email",
+					"lookupOrderBy": "name",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Contact Email"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "biz_email",
+			"sqlExpression": "biz_email",
+			"strField": "biz_email",
+			"type": 201,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "biz_email",
+					"lookupDisplayField": "biz_email",
+					"lookupOrderBy": "name",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Biz Email"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "last_updated",
+			"sqlExpression": "last_updated",
+			"strField": "last_updated",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 13,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Last Updated"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "contact_person_id",
+			"sqlExpression": "contact_person_id",
+			"strField": "contact_person_id",
+			"type": 201,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 100,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "contact_person_id",
+					"lookupDisplayField": "contact_person_id",
+					"lookupOrderBy": "name",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Contact Person ID"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "contact_person_cell",
+			"sqlExpression": "contact_person_cell",
+			"strField": "contact_person_cell",
+			"type": 201,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 150,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "contact_person_contact",
+					"lookupDisplayField": "contact_person_contact",
+					"lookupOrderBy": "name",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Contact Person Mobile"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": "Mobile #"
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "salutation",
+			"sqlExpression": "salutation",
+			"strField": "salutation",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 60,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "salutation",
+					"lookupDisplayField": "salutation",
+					"lookupOrderBy": "salutation",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Salutation"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "id_type",
+			"sqlExpression": "id_type",
+			"strField": "id_type",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 60,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "id_type",
+					"lookupDisplayField": "id_type",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "ID Type"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "country_incorporation",
+			"sqlExpression": "country_incorporation",
+			"strField": "country_incorporation",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 100,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "country_incorporation",
+					"lookupDisplayField": "country_incorporation",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Country of Incorporation"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "role",
+			"sqlExpression": "`role`",
+			"strField": "role",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxSize": 150,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "transact_party",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "tx_party",
+					"lookupDisplayField": "tx_party",
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "category",
+							"lookupField": "tx_type"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Role"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "category",
+			"sqlExpression": "category",
+			"strField": "category",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"defaultValue": "$_SESSION[\"category\"]",
+					"autoUpdateValue": "$_SESSION[\"category\"]",
+					"textboxSize": 100,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "transact_type",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "tx_type",
+					"lookupDisplayField": "tx_type",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Category"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "tel_type",
+			"sqlExpression": "tel_type",
+			"strField": "tel_type",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 100,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupValues": [
+						"Home",
+						"Office",
+						"Mobile",
+						"",
+						""
+					],
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "tel_type",
+					"lookupDisplayField": "tel_type",
+					"lookupOrderBy": "name",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Type of Contact"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "billing_address",
+			"sqlExpression": "billing_address",
+			"strField": "billing_address",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"textboxSize": 350,
+					"textboxMaxLenth": 200,
+					"textHTML5Input": "0",
+					"textareaHeight": 60,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Billing Address"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "billing_postal",
+			"sqlExpression": "billing_postal",
+			"strField": "billing_postal",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"textboxSize": 60,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Postal Code"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": "only digit"
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "reg_date",
+			"sqlExpression": "reg_date",
+			"strField": "reg_date",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "registration_date",
+					"lookupDisplayField": "registration_date",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 13,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Reg Date"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "registration_no",
+			"sqlExpression": "registration_no",
+			"strField": "registration_no",
+			"type": 201,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 120,
+					"textboxMaxLenth": 15,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "registration_no",
+					"lookupDisplayField": "registration_no",
+					"lookupOrderBy": "name",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Registration No"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "custid",
+			"sqlExpression": "custid",
+			"strField": "custid",
+			"type": 3,
+			"viewFormats": [
+				{
+					"videoRewindEnabled": false,
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"validateAs": "Number",
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "id",
+					"lookupDisplayField": "id",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "name",
+							"lookupField": "name"
+						}
+					],
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "custid",
+			"label": {
+				"English": "Custid"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		},
+		{
+			"name": "tx_address",
+			"sqlExpression": "tx_address",
+			"strField": "tx_address",
+			"type": 200,
+			"viewFormats": [
+				{
+					"numberFractionalDigits": 0,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"defaultValue": "$_SESSION[\"prop_address\"]",
+					"autoUpdateValue": "$_SESSION[\"prop_address\"]",
+					"textboxMaxLenth": 100,
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "tx_address",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Txn Prop Address"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "parties_involved"
+		}
+	],
+	"afterEditDetails": 153,
+	"afterAddDetail": 153,
+	"eventHandlers": [
+		{
+			"eventId": "EVENT_BEFORESHOW_VIEW",
+			"pageType": "view",
+			"code": "if ($values[\"cus_type\"]==\"INDIVIDUAL\")\n{\n//$pageObject->showItem(\"personal_info\");\n$pageObject->hideItem(\"entity_section\");\n}\n\nif ($values[\"cus_type\"]==\"ENTITY\")\n{\n$pageObject->showItem(\"entity_section\");\n$pageObject->hideItem(\"nric\");\n$pageObject->hideItem(\"id_type\");\n$pageObject->hideItem(\"tel\");\n$pageObject->hideItem(\"tel_type\");\n$pageObject->hideItem(\"mobile\");\n$pageObject->hideItem(\"email\");\n$pageObject->hideItem(\"email_type\");\n}\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
+		},
+		{
+			"eventId": "EVENT_AFTERDELETE",
+			"pageType": "list",
+			"code": "CustomQuery(\"update transactions set client='',cdd_result='',sls_cust='',sls_result='',pps_cust='',\npps_result='',cdd_check_result='' where id='\".$deleted_values[\"id_tx\"].\"' \");\n\nCustomQuery(\"delete from cdd_checklist where id_cddlist =\".$deleted_values[\"id_tx\"]);\n\nCustomQuery(\"delete from parties_involved where id_tx='\".$deleted_values[\"id_tx\"].\"' && role='\".$deleted_values[\"role\"].\"'\");\n\n\n\n?>\n<script>\nparent.location.reload();\n</script>\n<?php"
+		}
+	],
+	"sortByFields": {
+		"sortOrder": []
+	},
+	"pages": [
+		{
+			"id": "add",
+			"type": "add",
+			"layoutId": "nomenu",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "add-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "add-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_save",
+								"add_reset",
+								"add_back_list",
+								"add_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "add-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c4",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c5"
+								},
+								{
+									"cell": "c6"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field26",
+								"integrated_edit_field1",
+								"salutation",
+								"nric",
+								"id_type",
+								"mobile",
+								"integrated_edit_field7",
+								"integrated_edit_field6",
+								"integrated_edit_field27",
+								"integrated_edit_field19"
+							]
+						},
+						"c": {
+							"model": "c3",
+							"items": [
+								"custid",
+								"cus_type",
+								"integrated_edit_field25",
+								"address",
+								"billing_address",
+								"integrated_edit_field30",
+								"text",
+								"custom_button",
+								"remarks"
+							]
+						},
+						"c4": {
+							"model": "c3",
+							"items": [
+								"entity_section"
+							]
+						},
+						"c5": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field2"
+							]
+						},
+						"c6": {
+							"model": "c3",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 2,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field32",
+								"integrated_edit_field31",
+								"integrated_edit_field24",
+								"integrated_edit_field14",
+								"integrated_edit_field10",
+								"integrated_edit_field18"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field15",
+								"integrated_edit_field",
+								"integrated_edit_field21",
+								"integrated_edit_field17",
+								"integrated_edit_field16"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 2,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"add_header": {
+					"type": "add_header"
+				},
+				"add_back_list": {
+					"type": "add_back_list"
+				},
+				"add_cancel": {
+					"type": "add_cancel"
+				},
+				"add_message": {
+					"type": "add_message"
+				},
+				"add_save": {
+					"type": "add_save"
+				},
+				"add_reset": {
+					"type": "add_reset"
+				},
+				"integrated_edit_field1": {
+					"field": "name",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field6": {
+					"field": "tel",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field7": {
+					"field": "email",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field10": {
+					"field": "office_tel",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field14": {
+					"field": "trade",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field15": {
+					"field": "contact_person",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field16": {
+					"field": "destination",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field17": {
+					"field": "contact_email",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field18": {
+					"field": "biz_email",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field19": {
+					"field": "last_updated",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"integrated_edit_field21": {
+					"field": "contact_person_cell",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field24": {
+					"field": "country_incorporation",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field25": {
+					"field": "role",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field26": {
+					"field": "category",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field27": {
+					"field": "tel_type",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field30": {
+					"field": "billing_postal",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field31": {
+					"field": "reg_date",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field32": {
+					"field": "registration_no",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field": {
+					"field": "contact_person_id",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"custom_button": {
+					"type": "custom_button",
+					"eventId": "Find_Address3",
+					"label": {
+						"text": "Find Address",
+						"type": 0
+					},
+					"eventGid": 3147171715
+				},
+				"text": {
+					"type": "text",
+					"label": {
+						"text": "<DIV><INPUT id=\"check\" type=\"checkbox\">&nbsp;<EM>Check this box if Billing Address same as Mailing Address.</EM></DIV>",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"entity_section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Entity Info"
+					},
+					"location": "section",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"custid": {
+					"field": "custid",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"cus_type": {
+					"field": "cus_type",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"address": {
+					"field": "address",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"billing_address": {
+					"field": "billing_address",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"remarks": {
+					"field": "remarks",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"salutation": {
+					"field": "salutation",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"nric": {
+					"field": "nric",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"id_type": {
+					"field": "id_type",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"mobile": {
+					"field": "mobile",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field2": {
+					"field": "tx_address",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"label": {
+						"field": "tx_address",
+						"table": "parties_involved",
+						"type": 3
+					}
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "edit",
+			"type": "edit",
+			"layoutId": "nomenu",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "edit-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "edit-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_save",
+								"edit_back_list",
+								"edit_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "edit-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c4",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c5"
+								},
+								{
+									"cell": "c6"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field26",
+								"integrated_edit_field1",
+								"integrated_edit_field22",
+								"integrated_edit_field4",
+								"integrated_edit_field23",
+								"integrated_edit_field5",
+								"integrated_edit_field7",
+								"integrated_edit_field6",
+								"integrated_edit_field27",
+								"integrated_edit_field19"
+							]
+						},
+						"c": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field33",
+								"integrated_edit_field13",
+								"integrated_edit_field25",
+								"integrated_edit_field2",
+								"integrated_edit_field29",
+								"integrated_edit_field30",
+								"text",
+								"custom_button",
+								"integrated_edit_field11"
+							]
+						},
+						"c4": {
+							"model": "c3",
+							"items": [
+								"entity_section"
+							]
+						},
+						"c5": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field3"
+							]
+						},
+						"c6": {
+							"model": "c3",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 2,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field32",
+								"integrated_edit_field31",
+								"integrated_edit_field24",
+								"integrated_edit_field14",
+								"integrated_edit_field10",
+								"integrated_edit_field18"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field15",
+								"integrated_edit_field",
+								"integrated_edit_field21",
+								"integrated_edit_field17",
+								"integrated_edit_field16"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 2,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"edit_header": {
+					"type": "edit_header"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"edit_reset"
+					]
+				},
+				"edit_reset": {
+					"type": "edit_reset"
+				},
+				"edit_message": {
+					"type": "edit_message"
+				},
+				"edit_save": {
+					"type": "edit_save"
+				},
+				"edit_back_list": {
+					"type": "edit_back_list"
+				},
+				"edit_close": {
+					"type": "edit_close"
+				},
+				"integrated_edit_field1": {
+					"field": "name",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field2": {
+					"field": "address",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"updateOnEdit": false,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field4": {
+					"field": "nric",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field5": {
+					"field": "mobile",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field6": {
+					"field": "tel",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field7": {
+					"field": "email",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field10": {
+					"field": "office_tel",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field11": {
+					"field": "remarks",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"updateOnEdit": false,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field13": {
+					"field": "cus_type",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field14": {
+					"field": "trade",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field15": {
+					"field": "contact_person",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field16": {
+					"field": "destination",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field17": {
+					"field": "contact_email",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field18": {
+					"field": "biz_email",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field19": {
+					"field": "last_updated",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"integrated_edit_field21": {
+					"field": "contact_person_cell",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field22": {
+					"field": "salutation",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field23": {
+					"field": "id_type",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field24": {
+					"field": "country_incorporation",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field25": {
+					"field": "role",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field26": {
+					"field": "category",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field27": {
+					"field": "tel_type",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field29": {
+					"field": "billing_address",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field30": {
+					"field": "billing_postal",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field31": {
+					"field": "reg_date",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field32": {
+					"field": "registration_no",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"integrated_edit_field33": {
+					"field": "custid",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"text": {
+					"type": "text",
+					"label": {
+						"text": "<DIV><INPUT id=\"check\" type=\"checkbox\">&nbsp;<EM>Check this box if Billing Address same as Mailing Address.</EM></DIV>",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"custom_button": {
+					"type": "custom_button",
+					"eventId": "Find_Address3",
+					"label": {
+						"text": "Find Address",
+						"type": 0
+					},
+					"eventGid": 3147171715
+				},
+				"integrated_edit_field": {
+					"field": "contact_person_id",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  pointer-events:none;\n}\n"
+				},
+				"entity_section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Entity Info"
+					},
+					"location": "section",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field3": {
+					"field": "tx_address",
+					"type": "integrated_edit_field",
+					"orientation": 0,
+					"updateOnEdit": false
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "topbar",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"delete"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"details_found",
+								"page_size"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "topbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"logo",
+								"menu"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search",
+								"list_options",
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "list-vbar",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_panel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"breadcrumb"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "horizontal-grid",
+					"grid": [
+						{
+							"section": "head",
+							"cells": [
+								{
+									"cell": "headcell_checkbox"
+								},
+								{
+									"cell": "headcell_field7"
+								},
+								{
+									"cell": "headcell_field4"
+								},
+								{
+									"cell": "headcell_field"
+								},
+								{
+									"cell": "headcell_field1"
+								}
+							]
+						},
+						{
+							"section": "body",
+							"cells": [
+								{
+									"cell": "cell_checkbox"
+								},
+								{
+									"cell": "headcell_field8"
+								},
+								{
+									"cell": "headcell_field5"
+								},
+								{
+									"cell": "cell_field"
+								},
+								{
+									"cell": "cell_field1"
+								}
+							]
+						},
+						{
+							"section": "foot",
+							"cells": [
+								{
+									"cell": "footcell_checkbox"
+								},
+								{
+									"cell": "headcell_field9"
+								},
+								{
+									"cell": "headcell_field6"
+								},
+								{
+									"cell": "footcell_field"
+								},
+								{
+									"cell": "footcell_field1"
+								}
+							]
+						}
+					],
+					"cells": {
+						"headcell_field": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field2"
+							],
+							"field": "name",
+							"width": "60%",
+							"columnName": "field"
+						},
+						"cell_field": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field"
+							],
+							"field": "name",
+							"width": "60%",
+							"columnName": "field"
+						},
+						"footcell_field": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "name",
+							"width": "60%",
+							"columnName": "field"
+						},
+						"headcell_field1": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field3"
+							],
+							"field": "role",
+							"width": "40%",
+							"columnName": "field"
+						},
+						"cell_field1": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field1"
+							],
+							"field": "role",
+							"width": "40%",
+							"columnName": "field"
+						},
+						"footcell_field1": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "role",
+							"width": "40%",
+							"columnName": "field"
+						},
+						"headcell_checkbox": {
+							"model": "headcell_checkbox",
+							"items": [
+								"grid_checkbox_head"
+							],
+							"columnName": "checkbox",
+							"field": ""
+						},
+						"cell_checkbox": {
+							"model": "cell_checkbox",
+							"items": [
+								"grid_checkbox"
+							],
+							"columnName": "checkbox",
+							"field": ""
+						},
+						"footcell_checkbox": {
+							"model": "footcell_checkbox",
+							"items": [],
+							"columnName": "checkbox",
+							"field": ""
+						},
+						"headcell_field4": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label1"
+							],
+							"columnName": "field",
+							"field": "category"
+						},
+						"headcell_field5": {
+							"model": "cell_field",
+							"items": [
+								"grid_field1"
+							],
+							"columnName": "field",
+							"field": "category"
+						},
+						"headcell_field6": {
+							"model": "footcell_field",
+							"items": [],
+							"columnName": "field",
+							"field": "category"
+						},
+						"headcell_field7": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label"
+							],
+							"columnName": "field",
+							"field": "id_tx"
+						},
+						"headcell_field8": {
+							"model": "cell_field",
+							"items": [
+								"grid_field"
+							],
+							"columnName": "field",
+							"field": "id_tx"
+						},
+						"headcell_field9": {
+							"model": "footcell_field",
+							"items": [],
+							"columnName": "field",
+							"field": "id_tx"
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"page_size": {
+					"type": "page_size"
+				},
+				"details_found": {
+					"type": "details_found"
+				},
+				"breadcrumb": {
+					"type": "breadcrumb"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search"
+				},
+				"pagination": {
+					"type": "pagination"
+				},
+				"grid_checkbox": {
+					"type": "grid_checkbox"
+				},
+				"grid_checkbox_head": {
+					"type": "grid_checkbox_head"
+				},
+				"search_panel": {
+					"type": "search_panel",
+					"items": [
+						"search_panel_field26",
+						"search_panel_field",
+						"search_panel_field25",
+						"search_panel_field24",
+						"search_panel_field23",
+						"search_panel_field21",
+						"search_panel_field15",
+						"search_panel_field13",
+						"search_panel_field5",
+						"search_panel_field4",
+						"search_panel_field1"
+					],
+					"_flexiblePanel": true
+				},
+				"list_options": {
+					"type": "list_options",
+					"items": [
+						"delete_selected",
+						"-1",
+						"advsearch_link",
+						"-",
+						"show_search_panel",
+						"hide_search_panel"
+					]
+				},
+				"show_search_panel": {
+					"type": "show_search_panel"
+				},
+				"hide_search_panel": {
+					"type": "hide_search_panel"
+				},
+				"search_panel_field1": {
+					"field": "name",
+					"type": "search_panel_field"
+				},
+				"search_panel_field4": {
+					"field": "nric",
+					"type": "search_panel_field"
+				},
+				"search_panel_field5": {
+					"field": "mobile",
+					"type": "search_panel_field"
+				},
+				"search_panel_field13": {
+					"field": "cus_type",
+					"type": "search_panel_field"
+				},
+				"search_panel_field15": {
+					"field": "contact_person",
+					"type": "search_panel_field"
+				},
+				"search_panel_field21": {
+					"field": "contact_person_cell",
+					"type": "search_panel_field"
+				},
+				"search_panel_field23": {
+					"field": "id_type",
+					"type": "search_panel_field"
+				},
+				"search_panel_field24": {
+					"field": "country_incorporation",
+					"type": "search_panel_field"
+				},
+				"search_panel_field25": {
+					"field": "role",
+					"type": "search_panel_field"
+				},
+				"search_panel_field26": {
+					"field": "category",
+					"type": "search_panel_field"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"adminarea_link"
+					]
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": false
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"simple_grid_field": {
+					"field": "name",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field1": {
+					"field": "role",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field2": {
+					"type": "grid_field_label",
+					"field": "name"
+				},
+				"simple_grid_field3": {
+					"type": "grid_field_label",
+					"field": "role"
+				},
+				"delete": {
+					"type": "delete"
+				},
+				"delete_selected": {
+					"type": "delete_selected"
+				},
+				"-": {
+					"type": "-"
+				},
+				"adminarea_link": {
+					"type": "adminarea_link"
+				},
+				"grid_field": {
+					"field": "id_tx",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"grid_field_label": {
+					"type": "grid_field_label",
+					"field": "id_tx"
+				},
+				"grid_field1": {
+					"field": "category",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"grid_field_label1": {
+					"type": "grid_field_label",
+					"field": "category"
+				},
+				"search_panel_field": {
+					"field": "tx_address",
+					"type": "search_panel_field",
+					"required": false,
+					"alwaysOnPanel": false
+				},
+				"advsearch_link": {
+					"type": "advsearch_link"
+				},
+				"-1": {
+					"type": "-"
+				}
+			},
+			"spreadsheetGrid": false,
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "search",
+			"type": "search",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "search-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "search-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_search",
+								"search_reset",
+								"search_back_list",
+								"search_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "search-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-search",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_search_field"
+							]
+						}
+					},
+					"deferredItems": [],
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"search_header": {
+					"type": "search_header"
+				},
+				"search_reset": {
+					"type": "search_reset"
+				},
+				"search_back_list": {
+					"type": "search_back_list"
+				},
+				"search_search": {
+					"type": "search_search"
+				},
+				"search_cancel": {
+					"type": "search_cancel"
+				},
+				"integrated_search_field": {
+					"field": "tx_address",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "view",
+			"type": "view",
+			"layoutId": "nomenu",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "view-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "view-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_back_list",
+								"view_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "view-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c4",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c5"
+								},
+								{
+									"cell": "c6"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field26",
+								"integrated_edit_field1",
+								"integrated_edit_field22",
+								"integrated_edit_field4",
+								"integrated_edit_field23",
+								"integrated_edit_field5",
+								"integrated_edit_field7",
+								"integrated_edit_field6",
+								"integrated_edit_field27",
+								"integrated_edit_field19"
+							]
+						},
+						"c": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field33",
+								"integrated_edit_field13",
+								"integrated_edit_field25",
+								"integrated_edit_field2",
+								"integrated_edit_field29",
+								"integrated_edit_field30",
+								"integrated_edit_field11"
+							]
+						},
+						"c4": {
+							"model": "c3",
+							"items": [
+								"entity_section"
+							]
+						},
+						"c5": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field3"
+							]
+						},
+						"c6": {
+							"model": "c3",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 2,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field32",
+								"integrated_edit_field31",
+								"integrated_edit_field24",
+								"integrated_edit_field14",
+								"integrated_edit_field10",
+								"integrated_edit_field18"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field15",
+								"integrated_edit_field",
+								"integrated_edit_field21",
+								"integrated_edit_field17",
+								"integrated_edit_field16"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 2,
+					"inlineLabels": false,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"view_header": {
+					"type": "view_header"
+				},
+				"view_back_list": {
+					"type": "view_back_list"
+				},
+				"view_close": {
+					"type": "view_close"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": []
+				},
+				"integrated_edit_field1": {
+					"field": "name",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field2": {
+					"field": "address",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field4": {
+					"field": "nric",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field5": {
+					"field": "mobile",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field6": {
+					"field": "tel",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field7": {
+					"field": "email",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field10": {
+					"field": "office_tel",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field11": {
+					"field": "remarks",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field13": {
+					"field": "cus_type",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field14": {
+					"field": "trade",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field15": {
+					"field": "contact_person",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field16": {
+					"field": "destination",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field17": {
+					"field": "contact_email",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field18": {
+					"field": "biz_email",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field19": {
+					"field": "last_updated",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field21": {
+					"field": "contact_person_cell",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field22": {
+					"field": "salutation",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field23": {
+					"field": "id_type",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field24": {
+					"field": "country_incorporation",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field25": {
+					"field": "role",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field26": {
+					"field": "category",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field27": {
+					"field": "tel_type",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field29": {
+					"field": "billing_address",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field30": {
+					"field": "billing_postal",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field31": {
+					"field": "reg_date",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field32": {
+					"field": "registration_no",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field33": {
+					"field": "custid",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field": {
+					"field": "contact_person_id",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"entity_section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Entity Info"
+					},
+					"location": "section",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field3": {
+					"field": "tx_address",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"English": "Parties Involved Seller"
+	}
+}

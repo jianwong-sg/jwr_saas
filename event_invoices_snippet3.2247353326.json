@@ -1,0 +1,4 @@
+{
+	"name": "invoices_snippet3",
+	"serverCode": "// Put your code here.\necho GetCustomLabel(\"invoice_date_for_payment\");"
+}

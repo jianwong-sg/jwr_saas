@@ -1,0 +1,4 @@
+{
+	"name": "cdd_measures_4b1",
+	"serverCode": "// Put your code here.\necho \"If the client or BO is a PEP, is the client or BO a foreign PEP, a family member* or close associate* of a foreign PEP?\";"
+}

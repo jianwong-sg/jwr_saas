@@ -1,0 +1,4 @@
+{
+	"name": "cdd_measures_2a1",
+	"serverCode": "// Put your code here.\necho \"In the screening of the client or BO against the UN Sanction Lists, is there any full name match or partial name match where the nationality and age range matched*?\";"
+}

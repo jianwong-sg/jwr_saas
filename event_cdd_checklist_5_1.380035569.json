@@ -1,0 +1,4 @@
+{
+	"name": "cdd_checklist_5.1",
+	"serverCode": "// Put your code here.\necho \"Determine if \n      there is suspicion of ML/FT activity for this property transaction by \n      answering the list of suspicious ML/FT indicators \n      below.\";"
+}

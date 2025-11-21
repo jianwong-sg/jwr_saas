@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Edit3",
+	"serverCode": "$record=$button->getCurrentRecord();\n$result[\"id\"]=$record[\"id\"];",
+	"beforeJsCode": "if (confirm(\"WARNING!!! Edit Form will DELETE all the signatures in the Form. To proceed with Edit, click OK. Or, click Cancel to abort.\"))\n{return true;}\nelse\n{return false;}",
+	"afterJsCode": "location.href=\"form2_edit.php?editid1=\"+result[\"id\"];"
+}

@@ -1,0 +1,4 @@
+{
+	"name": "Stripe Label Button",
+	"serverCode": "echo \"{total} - payment total<br>{cur} - currency symbol\";"
+}

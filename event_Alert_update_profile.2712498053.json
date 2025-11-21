@@ -1,0 +1,4 @@
+{
+	"name": "Alert_update_profile",
+	"serverCode": "if ($_SESSION[\"mobile_alert\"]) {\necho \"Your profile is incomplete! Go to My Profile in Settings to update it.\";\n$_SESSION[\"mobile_alert\"]=false;\n}"
+}

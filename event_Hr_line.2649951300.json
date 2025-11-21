@@ -1,0 +1,4 @@
+{
+	"name": "Hr line",
+	"serverCode": "// Put your code here.\necho '<hr style=\"border:1px solid #f00\">';"
+}

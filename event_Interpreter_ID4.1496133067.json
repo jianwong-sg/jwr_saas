@@ -1,0 +1,4 @@
+{
+	"name": "Interpreter ID4",
+	"serverCode": "// Put your code here.\necho \"Interpreter's NRIC No.<sup>(4)</sup>:\";"
+}

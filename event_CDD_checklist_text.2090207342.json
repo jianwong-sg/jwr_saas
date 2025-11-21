@@ -1,0 +1,4 @@
+{
+	"name": "CDD checklist text",
+	"serverCode": "// Put your code here.\necho \"<span style='font-size:18px;' class='form-text-grey'>The Client's name should appear in the selection list. If the Client's name is not listed, cancel the check, return to Transaction, and add the client in 'Parties Involved.'.\n<br>To include multiple Client's name in the check, holding on the Ctrl key while selecting the name.</span>\";"
+}

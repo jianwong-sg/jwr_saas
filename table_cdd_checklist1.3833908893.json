@@ -1,0 +1,8915 @@
+{
+	"orderInfo": [
+		{
+			"index": 4,
+			"field": "id_cddlist",
+			"expr": "id_cddlist",
+			"asc": false
+		}
+	],
+	"sql": "SELECT\n\tid,\n\tchecked_by,\n\tcdd_checklist_customer,\n\tid_cddlist,\n\tlist01,\n\tremark01,\n\tlist02,\n\tremark02,\n\tlist03,\n\tremark03,\n\tlist04,\n\tremark04,\n\tlist05,\n\tremark05,\n\tlist06,\n\tremark06,\n\tlist07,\n\tremark07,\n\tlist08,\n\tremark08,\n\tlist09,\n\tremark09,\n\tlist10,\n\tremark10,\n\tlist11,\n\tremark11,\n\tlist12,\n\tremark12,\n\tlist13,\n\tremark13,\n\tlist14,\n\tremark14,\n\tresults,\n\tresults2,\n\tresults3,\n\tchecked_date,\n\tchecked_by_cea,\n\trepresenting,\n\tcdd_checklist_custype\nFROM\n\tcdd_checklist\nORDER BY\n\tid_cddlist DESC\n",
+	"type": 1,
+	"connId": "Tables",
+	"originalTable": "cdd_checklist",
+	"name": "cdd_checklist1",
+	"shortTableName": "cdd_checklist1",
+	"dbType": 0,
+	"caseSensitiveSearch": "",
+	"tableOwnerIdField": "checked_by_cea",
+	"usersOwnerIdField": "active",
+	"listAjax": true,
+	"clickActions": {
+		"row": {
+			"codeData": {
+				"snippet": null
+			},
+			"gridData": {
+				"action": "checkbox",
+				"table": null
+			},
+			"openData": {
+				"how": "goto",
+				"page": "view",
+				"table": null,
+				"url": ""
+			}
+		},
+		"fields": {
+			"cdd_checklist_customer": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"checked_by": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"checked_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"id": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {
+					"action": "checkbox",
+					"table": null
+				},
+				"openData": {
+					"how": "goto",
+					"page": "view",
+					"table": null,
+					"url": ""
+				}
+			},
+			"id_cddlist": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {
+					"action": "checkbox",
+					"table": null
+				},
+				"openData": {
+					"how": "new",
+					"page": "view",
+					"table": null,
+					"url": ""
+				}
+			},
+			"list01": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"list02": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"list03": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"list04": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"list05": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"list06": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"list07": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"list08": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"list09": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"list10": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"list11": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"list12": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"list13": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"list14": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"remark01": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"remark02": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"remark03": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"remark04": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"remark05": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"remark06": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"remark07": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"remark08": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"remark09": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"remark10": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"remark11": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"remark12": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"remark13": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"remark14": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"results": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"results2": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"results3": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			}
+		}
+	},
+	"pageSizeSelectorRecords": [
+		"10",
+		"20",
+		"30",
+		"50",
+		"100",
+		"500",
+		"-1"
+	],
+	"pageSizeSelectorGroups": [
+		"1",
+		"3",
+		"5",
+		"10",
+		"50",
+		"100",
+		"-1"
+	],
+	"keyFields": [
+		"id"
+	],
+	"masterTables": [
+		{
+			"table": 1190436127,
+			"detailsKeys": [
+				"id_cddlist"
+			],
+			"masterKeys": [
+				"id"
+			]
+		},
+		{
+			"table": 3936885324,
+			"detailsKeys": [
+				"id_cddlist"
+			],
+			"masterKeys": [
+				"id"
+			]
+		}
+	],
+	"detailsBadgeColor": "2f4f4f",
+	"fields": [
+		{
+			"name": "id",
+			"sqlExpression": "id",
+			"index": 1,
+			"strField": "id",
+			"type": 3,
+			"autoinc": true,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"validateAs": "Number",
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Id"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "checked_by",
+			"sqlExpression": "checked_by",
+			"index": 2,
+			"strField": "checked_by",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"defaultValue": "$_SESSION[\"FullName\"]",
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Checked by"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "cdd_checklist_customer",
+			"sqlExpression": "cdd_checklist_customer",
+			"index": 3,
+			"strField": "cdd_checklist_customer",
+			"type": 200,
+			"viewFormats": [
+				{
+					"format": "Custom",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"customExpression": "$arr = explode(\",\",$value);\nfor ($i=0;$i<count($arr);$i++)\n$arr[$i]=\" \".$arr[$i];\n$value = implode(\",\",$arr);",
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxSize": 280,
+					"textHTML5Input": "0",
+					"lookupMultiselect": true,
+					"lookupType": 2,
+					"lookupTable": "parties_involved",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "name",
+					"lookupDisplayField": "name",
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "id_cddlist",
+							"lookupField": "id_tx"
+						},
+						{
+							"masterField": "representing",
+							"lookupField": "role"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Customer name"
+			},
+			"tooltip": {
+				"English": "Select the Client's name in the dropdown list you wish to perform CDD. The selected name will be scanned against the UN Sanction, Panama Papers and Name list for any name matched after the CDD check."
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "id_cddlist",
+			"sqlExpression": "id_cddlist",
+			"index": 4,
+			"strField": "id_cddlist",
+			"type": 3,
+			"separateEditViewFormats": true,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				},
+				{
+					"pageType": "list",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"defaultValue": "$_SESSION[\"id\"]",
+					"autoUpdateValue": "$_SESSION[\"id\"]",
+					"validateAs": "Number",
+					"textboxSize": 80,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				},
+				{
+					"pageType": "register",
+					"defaultValue": "$_SESSION[\"id\"]",
+					"validateAs": "Number",
+					"textboxSize": 80,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				},
+				{
+					"pageType": "add",
+					"defaultValue": "$_SESSION[\"id\"]",
+					"validateAs": "Number",
+					"textboxSize": 80,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Txn ID"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "list01",
+			"sqlExpression": "list01",
+			"index": 5,
+			"strField": "list01",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"No",
+						"Yes"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "list01"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "remark01",
+			"sqlExpression": "remark01",
+			"index": 6,
+			"strField": "remark01",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"textareaHeight": 40,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Remarks"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "list02",
+			"sqlExpression": "list02",
+			"index": 7,
+			"strField": "list02",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"No",
+						"Yes"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "list02"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "remark02",
+			"sqlExpression": "remark02",
+			"index": 8,
+			"strField": "remark02",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"textareaHeight": 40,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Remarks"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "list03",
+			"sqlExpression": "list03",
+			"index": 9,
+			"strField": "list03",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"No",
+						"Yes"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "list03"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "remark03",
+			"sqlExpression": "remark03",
+			"index": 10,
+			"strField": "remark03",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"textareaHeight": 40,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Remarks"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "list04",
+			"sqlExpression": "list04",
+			"index": 11,
+			"strField": "list04",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"No",
+						"Yes"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "list04"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "remark04",
+			"sqlExpression": "remark04",
+			"index": 12,
+			"strField": "remark04",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"textareaHeight": 40,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Remarks"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "list05",
+			"sqlExpression": "list05",
+			"index": 13,
+			"strField": "list05",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"No",
+						"Yes"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "list05"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "remark05",
+			"sqlExpression": "remark05",
+			"index": 14,
+			"strField": "remark05",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"textareaHeight": 40,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Remarks"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "list06",
+			"sqlExpression": "list06",
+			"index": 15,
+			"strField": "list06",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"No",
+						"Yes"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "list06"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "remark06",
+			"sqlExpression": "remark06",
+			"index": 16,
+			"strField": "remark06",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"textareaHeight": 40,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Remarks"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "list07",
+			"sqlExpression": "list07",
+			"index": 17,
+			"strField": "list07",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"No",
+						"Yes"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "list07"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "remark07",
+			"sqlExpression": "remark07",
+			"index": 18,
+			"strField": "remark07",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"textareaHeight": 40,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Remarks"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "list08",
+			"sqlExpression": "list08",
+			"index": 19,
+			"strField": "list08",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"No",
+						"Yes"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "list08"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "remark08",
+			"sqlExpression": "remark08",
+			"index": 20,
+			"strField": "remark08",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"textareaHeight": 40,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Remarks"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "list09",
+			"sqlExpression": "list09",
+			"index": 21,
+			"strField": "list09",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"No",
+						"Yes"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "list09"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "remark09",
+			"sqlExpression": "remark09",
+			"index": 22,
+			"strField": "remark09",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"textareaHeight": 40,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Remarks"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "list10",
+			"sqlExpression": "list10",
+			"index": 23,
+			"strField": "list10",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"No",
+						"Yes"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "list10"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "remark10",
+			"sqlExpression": "remark10",
+			"index": 24,
+			"strField": "remark10",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"textareaHeight": 40,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Remarks"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "list11",
+			"sqlExpression": "list11",
+			"index": 25,
+			"strField": "list11",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"No",
+						"Yes"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "list11"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "remark11",
+			"sqlExpression": "remark11",
+			"index": 26,
+			"strField": "remark11",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"textareaHeight": 40,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Remarks"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "list12",
+			"sqlExpression": "list12",
+			"index": 27,
+			"strField": "list12",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"No",
+						"Yes"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "list12"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "remark12",
+			"sqlExpression": "remark12",
+			"index": 28,
+			"strField": "remark12",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"textareaHeight": 40,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Remarks"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "list13",
+			"sqlExpression": "list13",
+			"index": 29,
+			"strField": "list13",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"No",
+						"Yes"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "list13"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "remark13",
+			"sqlExpression": "remark13",
+			"index": 30,
+			"strField": "remark13",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"textareaHeight": 40,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Remarks"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "list14",
+			"sqlExpression": "list14",
+			"index": 31,
+			"strField": "list14",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"No",
+						"Yes"
+					],
+					"lookupControlType": 4,
+					"lookupHorizontal": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "list14"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "remark14",
+			"sqlExpression": "remark14",
+			"index": 32,
+			"strField": "remark14",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Text area",
+					"textboxMaxLenth": 500,
+					"textHTML5Input": "0",
+					"textareaHeight": 40,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Remarks"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "results",
+			"sqlExpression": "results",
+			"index": 33,
+			"strField": "results",
+			"type": 201,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"customExpression": "$color=\"green\";\n$value=\"<font color='$color'>$value</font>\";",
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxMaxLenth": 200,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Customer particulas check"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "results2",
+			"sqlExpression": "results2",
+			"index": 34,
+			"strField": "results2",
+			"type": 201,
+			"viewFormats": [
+				{
+					"format": "Custom",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"customExpression": "$color=\"#FF4500\";\n$value=\"<font color='$color'>$value</font>\";",
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Results2"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "results3",
+			"sqlExpression": "results3",
+			"index": 35,
+			"strField": "results3",
+			"type": 201,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textboxMaxLenth": 100,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Results3"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "checked_date",
+			"sqlExpression": "checked_date",
+			"index": 36,
+			"strField": "checked_date",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"required": true,
+					"defaultValue": "now()",
+					"textboxSize": 100,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 5,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Checked on"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "checked_by_cea",
+			"sqlExpression": "checked_by_cea",
+			"index": 37,
+			"strField": "checked_by_cea",
+			"type": 201,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"defaultValue": "$_SESSION[\"UserID\"]",
+					"textboxSize": 100,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Checked By Cea"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "representing",
+			"sqlExpression": "representing",
+			"index": 38,
+			"strField": "representing",
+			"type": 200,
+			"separateEditViewFormats": true,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				},
+				{
+					"pageType": "list",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"defaultValue": "$_SESSION[\"representing\"]",
+					"autoUpdateValue": "$_SESSION[\"representing\"]",
+					"textboxSize": 100,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				},
+				{
+					"pageType": "register",
+					"defaultValue": "$_SESSION[\"representing\"]",
+					"textboxSize": 100,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				},
+				{
+					"format": "Readonly",
+					"pageType": "add",
+					"defaultValue": "$_SESSION[\"representing\"]",
+					"textboxSize": 100,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Representing"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		},
+		{
+			"name": "cdd_checklist_custype",
+			"sqlExpression": "cdd_checklist_custype",
+			"index": 39,
+			"strField": "cdd_checklist_custype",
+			"type": 200,
+			"viewFormats": [
+				{
+					"videoRewindEnabled": false,
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"defaultValue": "$_SESSION[\"cust_type\"]",
+					"autoUpdateValue": "$_SESSION[\"cust_type\"]",
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupTable": "invcustomers",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "cus_type",
+					"lookupDisplayField": "cus_type",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "cdd_checklist_customer",
+							"lookupField": "name"
+						}
+					],
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "cdd_checklist_custype",
+			"label": {
+				"English": "Cdd Checklist Custype"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "cdd_checklist"
+		}
+	],
+	"warnLeavingEdit": true,
+	"afterEditDetails": 153,
+	"afterAddDetail": 153,
+	"eventHandlers": [
+		{
+			"eventId": "EVENT_JS_ONLOAD",
+			"pageType": "view",
+			"code": "\n\n// ===== Scroll to Top ==== \n$(window).scroll(function() {\n    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px\n        $('#return-to-top').fadeIn(200);    // Fade in the arrow\n    } else {\n        $('#return-to-top').fadeOut(200);   // Else fade out the arrow\n    }\n});\n$('#return-to-top').click(function() {      // When arrow is clicked\n    $('body,html').animate({\n        scrollTop : 0                       // Scroll to top of body\n    }, 500);\n});"
+		}
+	],
+	"sortByFields": {
+		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_cddlist",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "checked_by",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "list01",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remark01",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "list02",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remark02",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "list03",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remark03",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "list04",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remark04",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "list05",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remark05",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "list06",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remark06",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "list07",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remark07",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "list08",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remark08",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "list09",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remark09",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "list10",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remark10",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "list11",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remark11",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "list12",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remark12",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "list13",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remark13",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cdd_checklist_customer",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "list14",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remark14",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "results",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "results2",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "results3",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "checked_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "checked_by_cea",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cdd_checklist_customer_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "representing",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cdd_checklist_customer_nric",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cdd_checklist_cust_biz_reg",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cdd_checklist_custype",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "cdd_checklist"
+	},
+	"pages": [
+		{
+			"id": "add",
+			"type": "add",
+			"layoutId": "nomenu",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "add-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "add-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_save",
+								"add_reset",
+								"add_back_list",
+								"add_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "add-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2",
+									"colspan": 2
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c38"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c39"
+								},
+								{
+									"cell": "c40"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c42"
+								},
+								{
+									"cell": "c41"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c43"
+								},
+								{
+									"cell": "c44"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c45"
+								},
+								{
+									"cell": "c46"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c48"
+								},
+								{
+									"cell": "c47"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c49"
+								},
+								{
+									"cell": "c50"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c51"
+								},
+								{
+									"cell": "c52"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c54"
+								},
+								{
+									"cell": "c53"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c55"
+								},
+								{
+									"cell": "c56"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c58"
+								},
+								{
+									"cell": "c57"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c59"
+								},
+								{
+									"cell": "c60"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c62"
+								},
+								{
+									"cell": "c61"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c64"
+								},
+								{
+									"cell": "c63"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c65"
+								},
+								{
+									"cell": "c66"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field3",
+								"edit_field",
+								"integrated_edit_field37",
+								"edit_field_label3",
+								"integrated_edit_field2",
+								"edit_field_tooltip",
+								"integrated_edit_field36",
+								"integrated_edit_field1",
+								"integrated_edit_field44",
+								"integrated_edit_field35"
+							],
+							"field": "id_cddlist",
+							"useFullWidth": true
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"text"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c38": {
+							"model": "c3",
+							"items": [
+								"snippet3",
+								"snippet4",
+								"integrated_edit_field30",
+								"edit_field_label",
+								"integrated_edit_field31"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							},
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c39": {
+							"model": "c1",
+							"items": [
+								"text1"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c40": {
+							"model": "c3",
+							"items": [
+								"snippet",
+								"snippet1",
+								"integrated_edit_field4",
+								"integrated_edit_field48",
+								"integrated_edit_field5"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c41": {
+							"model": "c3",
+							"items": [
+								"snippet2",
+								"snippet5",
+								"integrated_edit_field6",
+								"edit_field_label1",
+								"integrated_edit_field7"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c42": {
+							"model": "c1",
+							"items": [
+								"text2"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c43": {
+							"model": "c1",
+							"items": [
+								"text3"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c44": {
+							"model": "c3",
+							"items": [
+								"snippet6",
+								"integrated_edit_field8",
+								"integrated_edit_field56",
+								"integrated_edit_field9"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c45": {
+							"model": "c1",
+							"items": [
+								"text4"
+							],
+							"field": "representing",
+							"width": "5%",
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c46": {
+							"model": "c1",
+							"items": [
+								"snippet7"
+							],
+							"field": "representing",
+							"width": "95%"
+						},
+						"c47": {
+							"model": "c3",
+							"items": [
+								"snippet8",
+								"integrated_edit_field10",
+								"integrated_edit_field60",
+								"integrated_edit_field11"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							},
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c48": {
+							"model": "c1",
+							"items": [
+								"text5"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c49": {
+							"model": "c1",
+							"items": [
+								"text6"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c50": {
+							"model": "c3",
+							"items": [
+								"snippet9",
+								"integrated_edit_field12",
+								"integrated_edit_field64",
+								"integrated_edit_field13"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c51": {
+							"model": "c1",
+							"items": [
+								"text7"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c52": {
+							"model": "c3",
+							"items": [
+								"snippet10",
+								"integrated_edit_field14",
+								"integrated_edit_field68",
+								"integrated_edit_field15"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c53": {
+							"model": "c3",
+							"items": [
+								"snippet11",
+								"integrated_edit_field16",
+								"integrated_edit_field72",
+								"integrated_edit_field17"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c54": {
+							"model": "c1",
+							"items": [
+								"text8"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c55": {
+							"model": "c1",
+							"items": [
+								"text9"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c56": {
+							"model": "c3",
+							"items": [
+								"snippet12",
+								"integrated_edit_field18",
+								"integrated_edit_field76",
+								"integrated_edit_field19"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c57": {
+							"model": "c3",
+							"items": [
+								"snippet13",
+								"integrated_edit_field20",
+								"edit_field_label2",
+								"integrated_edit_field21"
+							],
+							"field": "representing",
+							"width": "95%"
+						},
+						"c58": {
+							"model": "c1",
+							"items": [
+								"text10"
+							],
+							"field": "representing",
+							"width": "5%",
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c59": {
+							"model": "c1",
+							"items": [
+								"text11"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c60": {
+							"model": "c3",
+							"items": [
+								"snippet14",
+								"integrated_edit_field22",
+								"integrated_edit_field84",
+								"integrated_edit_field23"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c61": {
+							"model": "c3",
+							"items": [
+								"snippet15",
+								"integrated_edit_field24",
+								"integrated_edit_field88",
+								"integrated_edit_field25"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c62": {
+							"model": "c1",
+							"items": [
+								"text12"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c63": {
+							"model": "c3",
+							"items": [
+								"snippet16",
+								"integrated_edit_field26",
+								"integrated_edit_field92",
+								"integrated_edit_field27"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c64": {
+							"model": "c1",
+							"items": [
+								"text13"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c65": {
+							"model": "c1",
+							"items": [
+								"text14"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c66": {
+							"model": "c3",
+							"items": [
+								"snippet17",
+								"integrated_edit_field28",
+								"integrated_edit_field96",
+								"integrated_edit_field29"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom"
+								}
+							]
+						},
+						"c2": {
+							"model": "c1",
+							"items": [
+								"snippet18"
+							],
+							"field": "id_cddlist",
+							"useFullWidth": true,
+							"padding": {
+								"left": "20px"
+							}
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": true
+				}
+			},
+			"items": {
+				"add_header": {
+					"type": "add_header",
+					"title": {
+						"page": "add",
+						"table": "cdd_checklist",
+						"type": 7
+					}
+				},
+				"add_back_list": {
+					"type": "add_back_list"
+				},
+				"add_cancel": {
+					"type": "add_cancel"
+				},
+				"add_message": {
+					"type": "add_message"
+				},
+				"add_save": {
+					"type": "add_save",
+					"label": {
+						"type": 0,
+						"text": "Completed checklist. Save"
+					},
+					"buttonStyle": "success"
+				},
+				"add_reset": {
+					"type": "add_reset"
+				},
+				"integrated_edit_field1": {
+					"field": "checked_by",
+					"type": "edit_field",
+					"width": "300px",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"integrated_edit_field2": {
+					"field": "cdd_checklist_customer",
+					"type": "edit_field",
+					"width": "300px",
+					"joined": false,
+					"separated": true,
+					"orientation": 0
+				},
+				"integrated_edit_field3": {
+					"field": "id_cddlist",
+					"type": "edit_field",
+					"width": "100px",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"integrated_edit_field4": {
+					"field": "list01",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list01",
+						"table": "cdd_checklist",
+						"type": 3
+					},
+					"customCSS": "/* Put  your custom CSS code here */\n\n\n"
+				},
+				"integrated_edit_field5": {
+					"field": "remark01",
+					"type": "edit_field",
+					"width": "550px"
+				},
+				"integrated_edit_field6": {
+					"field": "list02",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list02",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field7": {
+					"field": "remark02",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"width": "550px"
+				},
+				"integrated_edit_field8": {
+					"field": "list03",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list03",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field9": {
+					"field": "remark03",
+					"type": "edit_field"
+				},
+				"integrated_edit_field10": {
+					"field": "list04",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list04",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field11": {
+					"field": "remark04",
+					"type": "edit_field"
+				},
+				"integrated_edit_field12": {
+					"field": "list05",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list05",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field13": {
+					"field": "remark05",
+					"type": "edit_field"
+				},
+				"integrated_edit_field14": {
+					"field": "list06",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list06",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field15": {
+					"field": "remark06",
+					"type": "edit_field"
+				},
+				"integrated_edit_field16": {
+					"field": "list07",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list07",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field17": {
+					"field": "remark07",
+					"type": "edit_field"
+				},
+				"integrated_edit_field18": {
+					"field": "list08",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list08",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field19": {
+					"field": "remark08",
+					"type": "edit_field"
+				},
+				"integrated_edit_field20": {
+					"field": "list09",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list09",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field21": {
+					"field": "remark09",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0
+				},
+				"integrated_edit_field22": {
+					"field": "list10",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list10",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field23": {
+					"field": "remark10",
+					"type": "edit_field"
+				},
+				"integrated_edit_field24": {
+					"field": "list11",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list11",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field25": {
+					"field": "remark11",
+					"type": "edit_field"
+				},
+				"integrated_edit_field26": {
+					"field": "list12",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list12",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field27": {
+					"field": "remark12",
+					"type": "edit_field"
+				},
+				"integrated_edit_field28": {
+					"field": "list13",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list13",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field29": {
+					"field": "remark13",
+					"type": "edit_field"
+				},
+				"integrated_edit_field30": {
+					"field": "list14",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list14",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field31": {
+					"field": "remark14",
+					"type": "edit_field",
+					"width": "550px"
+				},
+				"integrated_edit_field35": {
+					"field": "checked_date",
+					"type": "edit_field",
+					"width": "350px"
+				},
+				"integrated_edit_field37": {
+					"field": "representing",
+					"type": "integrated_edit_field",
+					"width": "200px",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n",
+					"joined": true,
+					"separated": false,
+					"orientation": 0
+				},
+				"text": {
+					"type": "text",
+					"label": {
+						"text": "1",
+						"type": 0
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "10px"
+					}
+				},
+				"snippet": {
+					"eventId": "cdd_checklist_2_1",
+					"label": {
+						"text": "cdd_checklist_2.1",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 334100340
+				},
+				"snippet1": {
+					"eventId": "cdd_checklist_2_2",
+					"label": {
+						"text": "cdd_checklist_2.2",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 2329978574
+				},
+				"snippet2": {
+					"eventId": "cdd_checklist_3_1",
+					"label": {
+						"text": "cdd_checklist_3.1",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 304848195
+				},
+				"edit_field_label": {
+					"type": "edit_field_label",
+					"field": "remark14"
+				},
+				"integrated_edit_field": {
+					"type": "edit_field_label",
+					"field": "id_cddlist",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"integrated_edit_field36": {
+					"type": "edit_field_label",
+					"field": "checked_by",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"integrated_edit_field44": {
+					"type": "edit_field_label",
+					"field": "checked_date"
+				},
+				"integrated_edit_field48": {
+					"type": "edit_field_label",
+					"field": "remark01"
+				},
+				"integrated_edit_field56": {
+					"type": "edit_field_label",
+					"field": "remark03"
+				},
+				"integrated_edit_field60": {
+					"type": "edit_field_label",
+					"field": "remark04"
+				},
+				"integrated_edit_field64": {
+					"type": "edit_field_label",
+					"field": "remark05"
+				},
+				"integrated_edit_field68": {
+					"type": "edit_field_label",
+					"field": "remark06"
+				},
+				"integrated_edit_field72": {
+					"type": "edit_field_label",
+					"field": "remark07"
+				},
+				"integrated_edit_field76": {
+					"type": "edit_field_label",
+					"field": "remark08"
+				},
+				"integrated_edit_field84": {
+					"type": "edit_field_label",
+					"field": "remark10"
+				},
+				"integrated_edit_field88": {
+					"type": "edit_field_label",
+					"field": "remark11"
+				},
+				"integrated_edit_field92": {
+					"type": "edit_field_label",
+					"field": "remark12"
+				},
+				"integrated_edit_field96": {
+					"type": "edit_field_label",
+					"field": "remark13"
+				},
+				"snippet3": {
+					"type": "snippet",
+					"eventId": "cdd_checklist_1_1",
+					"label": {
+						"text": "cdd_checklist_1.1",
+						"type": 0
+					},
+					"eventGid": 296700205
+				},
+				"snippet4": {
+					"type": "snippet",
+					"eventId": "cdd_checklist_1_2",
+					"label": {
+						"text": "cdd_checklist_1.2",
+						"type": 0
+					},
+					"eventGid": 2292586647
+				},
+				"snippet5": {
+					"eventId": "cdd_checklist_3_2",
+					"label": {
+						"text": "cdd_checklist_3.2",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 2334313721
+				},
+				"text1": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "2"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "10px"
+					}
+				},
+				"text2": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "3"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "10px"
+					}
+				},
+				"edit_field_label1": {
+					"type": "edit_field_label",
+					"field": "remark02",
+					"separated": true
+				},
+				"edit_field_label2": {
+					"type": "edit_field_label",
+					"field": "remark09",
+					"separated": true
+				},
+				"text3": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "4"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "10px"
+					}
+				},
+				"snippet6": {
+					"eventId": "cdd_checklist_4_1",
+					"label": {
+						"text": "cdd_checklist_4.1",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 392465350
+				},
+				"text4": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "5"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "10px"
+					}
+				},
+				"snippet7": {
+					"eventId": "cdd_checklist_5_1",
+					"label": {
+						"text": "cdd_checklist_5.1",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 380035569
+				},
+				"text5": {
+					"type": "text",
+					"label": {
+						"text": "a)",
+						"type": 0
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet8": {
+					"eventId": "cdd_checklist_5a",
+					"label": {
+						"text": "cdd_checklist_5a",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 589797577
+				},
+				"text6": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "b)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet9": {
+					"eventId": "cdd_checklist_5b",
+					"label": {
+						"text": "cdd_checklist_5b",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 3123628403
+				},
+				"text7": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "c)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet10": {
+					"eventId": "cdd_checklist_5c",
+					"label": {
+						"text": "cdd_checklist_5c",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 3442080229
+				},
+				"text8": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "d)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet11": {
+					"eventId": "cdd_checklist_5d",
+					"label": {
+						"text": "cdd_checklist_5d",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 1397582918
+				},
+				"text9": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "e)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet12": {
+					"eventId": "cdd_checklist_5e",
+					"label": {
+						"text": "cdd_checklist_5e",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 608853200
+				},
+				"text10": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "f)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet13": {
+					"eventId": "cdd_checklist_5f",
+					"label": {
+						"text": "cdd_checklist_5f",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 3175288170
+				},
+				"text11": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "g)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet14": {
+					"eventId": "cdd_checklist_5g",
+					"label": {
+						"text": "cdd_checklist_5g",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 3393469948
+				},
+				"text12": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "h)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet15": {
+					"eventId": "cdd_checklist_5h",
+					"label": {
+						"text": "cdd_checklist_5h",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 1526407277
+				},
+				"text13": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "i)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet16": {
+					"eventId": "cdd_checklist_5i",
+					"label": {
+						"text": "cdd_checklist_5i",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 771494139
+				},
+				"text14": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "j)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet17": {
+					"eventId": "cdd_checklist_5j",
+					"label": {
+						"text": "cdd_checklist_5j",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 3035971905
+				},
+				"edit_field": {
+					"field": "cdd_checklist_custype",
+					"type": "edit_field",
+					"width": "150px",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"snippet18": {
+					"eventId": "CDD_checklist_text",
+					"label": {
+						"text": "CDD checklist text",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 2090207342
+				},
+				"edit_field_label3": {
+					"type": "edit_field_label",
+					"field": "cdd_checklist_customer",
+					"separated": true
+				},
+				"edit_field_tooltip": {
+					"type": "edit_field_tooltip",
+					"field": "cdd_checklist_customer",
+					"separated": true,
+					"tooltip": {
+						"field": "cdd_checklist_customer",
+						"table": null,
+						"type": 4
+					}
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "edit",
+			"type": "edit",
+			"layoutId": "nomenu",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "edit-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_message"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "edit-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_save",
+								"edit_back_list",
+								"edit_close"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "edit-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2",
+									"colspan": 2
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c38"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c39"
+								},
+								{
+									"cell": "c40"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c42"
+								},
+								{
+									"cell": "c41"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c43"
+								},
+								{
+									"cell": "c44"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c45"
+								},
+								{
+									"cell": "c46"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c48"
+								},
+								{
+									"cell": "c47"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c49"
+								},
+								{
+									"cell": "c50"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c51"
+								},
+								{
+									"cell": "c52"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c54"
+								},
+								{
+									"cell": "c53"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c55"
+								},
+								{
+									"cell": "c56"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c58"
+								},
+								{
+									"cell": "c57"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c59"
+								},
+								{
+									"cell": "c60"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c62"
+								},
+								{
+									"cell": "c61"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c64"
+								},
+								{
+									"cell": "c63"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c65"
+								},
+								{
+									"cell": "c66"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c3",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field3",
+								"integrated_edit_field37",
+								"edit_field",
+								"edit_field_label3",
+								"integrated_edit_field2",
+								"edit_field_tooltip",
+								"integrated_edit_field36",
+								"integrated_edit_field1",
+								"integrated_edit_field44",
+								"integrated_edit_field35"
+							],
+							"field": "id_cddlist",
+							"useFullWidth": true
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"text"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c38": {
+							"model": "c3",
+							"items": [
+								"snippet3",
+								"snippet4",
+								"integrated_edit_field30",
+								"edit_field_label",
+								"integrated_edit_field31"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							},
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c39": {
+							"model": "c1",
+							"items": [
+								"text1"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c40": {
+							"model": "c3",
+							"items": [
+								"snippet",
+								"snippet1",
+								"integrated_edit_field4",
+								"integrated_edit_field48",
+								"integrated_edit_field5"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c41": {
+							"model": "c3",
+							"items": [
+								"snippet2",
+								"snippet5",
+								"integrated_edit_field6",
+								"edit_field_label1",
+								"integrated_edit_field7"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c42": {
+							"model": "c1",
+							"items": [
+								"text2"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c43": {
+							"model": "c1",
+							"items": [
+								"text3"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c44": {
+							"model": "c3",
+							"items": [
+								"snippet6",
+								"integrated_edit_field8",
+								"integrated_edit_field56",
+								"integrated_edit_field9"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c45": {
+							"model": "c1",
+							"items": [
+								"text4"
+							],
+							"field": "representing",
+							"width": "5%",
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c46": {
+							"model": "c1",
+							"items": [
+								"snippet7"
+							],
+							"field": "representing",
+							"width": "95%"
+						},
+						"c47": {
+							"model": "c3",
+							"items": [
+								"snippet8",
+								"integrated_edit_field10",
+								"integrated_edit_field60",
+								"integrated_edit_field11"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							},
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c48": {
+							"model": "c1",
+							"items": [
+								"text5"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c49": {
+							"model": "c1",
+							"items": [
+								"text6"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c50": {
+							"model": "c3",
+							"items": [
+								"snippet9",
+								"integrated_edit_field12",
+								"integrated_edit_field64",
+								"integrated_edit_field13"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c51": {
+							"model": "c1",
+							"items": [
+								"text7"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c52": {
+							"model": "c3",
+							"items": [
+								"snippet10",
+								"integrated_edit_field14",
+								"integrated_edit_field68",
+								"integrated_edit_field15"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c53": {
+							"model": "c3",
+							"items": [
+								"snippet11",
+								"integrated_edit_field16",
+								"integrated_edit_field72",
+								"integrated_edit_field17"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c54": {
+							"model": "c1",
+							"items": [
+								"text8"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c55": {
+							"model": "c1",
+							"items": [
+								"text9"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c56": {
+							"model": "c3",
+							"items": [
+								"snippet12",
+								"integrated_edit_field18",
+								"integrated_edit_field76",
+								"integrated_edit_field19"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c57": {
+							"model": "c3",
+							"items": [
+								"snippet13",
+								"integrated_edit_field20",
+								"edit_field_label2",
+								"integrated_edit_field21"
+							],
+							"field": "representing",
+							"width": "95%"
+						},
+						"c58": {
+							"model": "c1",
+							"items": [
+								"text10"
+							],
+							"field": "representing",
+							"width": "5%",
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c59": {
+							"model": "c1",
+							"items": [
+								"text11"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c60": {
+							"model": "c3",
+							"items": [
+								"snippet14",
+								"integrated_edit_field22",
+								"integrated_edit_field84",
+								"integrated_edit_field23"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c61": {
+							"model": "c3",
+							"items": [
+								"snippet15",
+								"integrated_edit_field24",
+								"integrated_edit_field88",
+								"integrated_edit_field25"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c62": {
+							"model": "c1",
+							"items": [
+								"text12"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c63": {
+							"model": "c3",
+							"items": [
+								"snippet16",
+								"integrated_edit_field26",
+								"integrated_edit_field92",
+								"integrated_edit_field27"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c64": {
+							"model": "c1",
+							"items": [
+								"text13"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c65": {
+							"model": "c1",
+							"items": [
+								"text14"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c66": {
+							"model": "c3",
+							"items": [
+								"snippet17",
+								"integrated_edit_field28",
+								"integrated_edit_field96",
+								"integrated_edit_field29"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom"
+								}
+							]
+						},
+						"c2": {
+							"model": "c3",
+							"items": [
+								"snippet18"
+							],
+							"field": "id_cddlist",
+							"useFullWidth": true
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": true
+				}
+			},
+			"items": {
+				"edit_header": {
+					"type": "edit_header"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"edit_reset",
+						"edit_view"
+					]
+				},
+				"edit_reset": {
+					"type": "edit_reset"
+				},
+				"edit_message": {
+					"type": "edit_message"
+				},
+				"edit_save": {
+					"type": "edit_save",
+					"label": {
+						"type": 0,
+						"text": "Checklist updated. Save"
+					},
+					"buttonStyle": "success"
+				},
+				"edit_back_list": {
+					"type": "edit_back_list"
+				},
+				"edit_close": {
+					"type": "edit_close"
+				},
+				"edit_view": {
+					"type": "edit_view"
+				},
+				"integrated_edit_field56": {
+					"type": "edit_field_label",
+					"field": "remark03"
+				},
+				"integrated_edit_field8": {
+					"field": "list03",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list03",
+						"table": "cdd_checklist",
+						"type": 3
+					},
+					"updateOnEdit": false
+				},
+				"snippet6": {
+					"eventId": "cdd_checklist_4_1",
+					"label": {
+						"text": "cdd_checklist_4.1",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 392465350
+				},
+				"text3": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "4"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "10px"
+					}
+				},
+				"text2": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "3"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "10px"
+					}
+				},
+				"integrated_edit_field7": {
+					"field": "remark02",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"width": "550px"
+				},
+				"edit_field_label1": {
+					"type": "edit_field_label",
+					"field": "remark02",
+					"separated": true
+				},
+				"integrated_edit_field6": {
+					"field": "list02",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list02",
+						"table": "cdd_checklist",
+						"type": 3
+					},
+					"updateOnEdit": false
+				},
+				"snippet5": {
+					"eventId": "cdd_checklist_3_2",
+					"label": {
+						"text": "cdd_checklist_3.2",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 2334313721
+				},
+				"snippet2": {
+					"eventId": "cdd_checklist_3_1",
+					"label": {
+						"text": "cdd_checklist_3.1",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 304848195
+				},
+				"integrated_edit_field5": {
+					"field": "remark01",
+					"type": "edit_field",
+					"width": "550px"
+				},
+				"integrated_edit_field48": {
+					"type": "edit_field_label",
+					"field": "remark01"
+				},
+				"integrated_edit_field4": {
+					"field": "list01",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list01",
+						"table": "cdd_checklist",
+						"type": 3
+					},
+					"customCSS": "/* Put  your custom CSS code here */\n\n\n",
+					"updateOnEdit": false
+				},
+				"snippet1": {
+					"eventId": "cdd_checklist_2_2",
+					"label": {
+						"text": "cdd_checklist_2.2",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 2329978574
+				},
+				"snippet": {
+					"eventId": "cdd_checklist_2_1",
+					"label": {
+						"text": "cdd_checklist_2.1",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 334100340
+				},
+				"text1": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "2"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "10px"
+					}
+				},
+				"integrated_edit_field31": {
+					"field": "remark14",
+					"type": "edit_field",
+					"width": "550px"
+				},
+				"edit_field_label": {
+					"type": "edit_field_label",
+					"field": "remark14"
+				},
+				"integrated_edit_field30": {
+					"field": "list14",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list14",
+						"table": "cdd_checklist",
+						"type": 3
+					},
+					"updateOnEdit": false
+				},
+				"snippet4": {
+					"type": "snippet",
+					"eventId": "cdd_checklist_1_2",
+					"label": {
+						"text": "cdd_checklist_1.2",
+						"type": 0
+					},
+					"eventGid": 2292586647
+				},
+				"snippet3": {
+					"type": "snippet",
+					"eventId": "cdd_checklist_1_1",
+					"label": {
+						"text": "cdd_checklist_1.1",
+						"type": 0
+					},
+					"eventGid": 296700205
+				},
+				"text": {
+					"type": "text",
+					"label": {
+						"text": "1",
+						"type": 0
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "10px"
+					}
+				},
+				"integrated_edit_field35": {
+					"field": "checked_date",
+					"type": "edit_field",
+					"width": "200px",
+					"updateOnEdit": false
+				},
+				"integrated_edit_field44": {
+					"type": "edit_field_label",
+					"field": "checked_date"
+				},
+				"integrated_edit_field1": {
+					"field": "checked_by",
+					"type": "edit_field",
+					"width": "300px",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"integrated_edit_field36": {
+					"type": "edit_field_label",
+					"field": "checked_by",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"integrated_edit_field2": {
+					"field": "cdd_checklist_customer",
+					"type": "edit_field",
+					"width": "300px",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"updateOnEdit": false
+				},
+				"integrated_edit_field37": {
+					"field": "representing",
+					"type": "integrated_edit_field",
+					"width": "200px",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n",
+					"joined": true,
+					"separated": false,
+					"orientation": 0
+				},
+				"integrated_edit_field3": {
+					"field": "id_cddlist",
+					"type": "edit_field",
+					"width": "100px",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"integrated_edit_field": {
+					"type": "edit_field_label",
+					"field": "id_cddlist",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"integrated_edit_field9": {
+					"field": "remark03",
+					"type": "edit_field"
+				},
+				"text4": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "5"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "10px"
+					}
+				},
+				"snippet7": {
+					"eventId": "cdd_checklist_5_1",
+					"label": {
+						"text": "cdd_checklist_5.1",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 380035569
+				},
+				"snippet8": {
+					"eventId": "cdd_checklist_5a",
+					"label": {
+						"text": "cdd_checklist_5a",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 589797577
+				},
+				"integrated_edit_field10": {
+					"field": "list04",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list04",
+						"table": "cdd_checklist",
+						"type": 3
+					},
+					"updateOnEdit": false
+				},
+				"integrated_edit_field60": {
+					"type": "edit_field_label",
+					"field": "remark04"
+				},
+				"integrated_edit_field11": {
+					"field": "remark04",
+					"type": "edit_field"
+				},
+				"text5": {
+					"type": "text",
+					"label": {
+						"text": "a)",
+						"type": 0
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"text6": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "b)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet9": {
+					"eventId": "cdd_checklist_5b",
+					"label": {
+						"text": "cdd_checklist_5b",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 3123628403
+				},
+				"integrated_edit_field12": {
+					"field": "list05",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list05",
+						"table": "cdd_checklist",
+						"type": 3
+					},
+					"updateOnEdit": false
+				},
+				"integrated_edit_field64": {
+					"type": "edit_field_label",
+					"field": "remark05"
+				},
+				"integrated_edit_field13": {
+					"field": "remark05",
+					"type": "edit_field"
+				},
+				"text7": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "c)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet10": {
+					"eventId": "cdd_checklist_5c",
+					"label": {
+						"text": "cdd_checklist_5c",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 3442080229
+				},
+				"integrated_edit_field14": {
+					"field": "list06",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list06",
+						"table": "cdd_checklist",
+						"type": 3
+					},
+					"updateOnEdit": false
+				},
+				"integrated_edit_field68": {
+					"type": "edit_field_label",
+					"field": "remark06"
+				},
+				"integrated_edit_field15": {
+					"field": "remark06",
+					"type": "edit_field"
+				},
+				"snippet11": {
+					"eventId": "cdd_checklist_5d",
+					"label": {
+						"text": "cdd_checklist_5d",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 1397582918
+				},
+				"integrated_edit_field16": {
+					"field": "list07",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"updateOnEdit": false
+				},
+				"integrated_edit_field72": {
+					"type": "edit_field_label",
+					"field": "remark07"
+				},
+				"integrated_edit_field17": {
+					"field": "remark07",
+					"type": "edit_field"
+				},
+				"text8": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "d)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"text9": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "e)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet12": {
+					"eventId": "cdd_checklist_5e",
+					"label": {
+						"text": "cdd_checklist_5e",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 608853200
+				},
+				"integrated_edit_field18": {
+					"field": "list08",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list08",
+						"table": "cdd_checklist",
+						"type": 3
+					},
+					"updateOnEdit": false
+				},
+				"integrated_edit_field76": {
+					"type": "edit_field_label",
+					"field": "remark08"
+				},
+				"integrated_edit_field19": {
+					"field": "remark08",
+					"type": "edit_field"
+				},
+				"snippet13": {
+					"eventId": "cdd_checklist_5f",
+					"label": {
+						"text": "cdd_checklist_5f",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 3175288170
+				},
+				"integrated_edit_field20": {
+					"field": "list09",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list09",
+						"table": "cdd_checklist",
+						"type": 3
+					},
+					"updateOnEdit": false
+				},
+				"edit_field_label2": {
+					"type": "edit_field_label",
+					"field": "remark09",
+					"separated": true
+				},
+				"integrated_edit_field21": {
+					"field": "remark09",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0
+				},
+				"text10": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "f)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"text11": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "g)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet14": {
+					"eventId": "cdd_checklist_5g",
+					"label": {
+						"text": "cdd_checklist_5g",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 3393469948
+				},
+				"integrated_edit_field22": {
+					"field": "list10",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list10",
+						"table": "cdd_checklist",
+						"type": 3
+					},
+					"updateOnEdit": false
+				},
+				"integrated_edit_field84": {
+					"type": "edit_field_label",
+					"field": "remark10"
+				},
+				"integrated_edit_field23": {
+					"field": "remark10",
+					"type": "edit_field"
+				},
+				"snippet15": {
+					"eventId": "cdd_checklist_5h",
+					"label": {
+						"text": "cdd_checklist_5h",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 1526407277
+				},
+				"integrated_edit_field24": {
+					"field": "list11",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list11",
+						"table": "cdd_checklist",
+						"type": 3
+					},
+					"updateOnEdit": false
+				},
+				"integrated_edit_field88": {
+					"type": "edit_field_label",
+					"field": "remark11"
+				},
+				"integrated_edit_field25": {
+					"field": "remark11",
+					"type": "edit_field"
+				},
+				"text12": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "h)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet16": {
+					"eventId": "cdd_checklist_5i",
+					"label": {
+						"text": "cdd_checklist_5i",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 771494139
+				},
+				"integrated_edit_field26": {
+					"field": "list12",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list12",
+						"table": "cdd_checklist",
+						"type": 3
+					},
+					"updateOnEdit": false
+				},
+				"integrated_edit_field92": {
+					"type": "edit_field_label",
+					"field": "remark12"
+				},
+				"integrated_edit_field27": {
+					"field": "remark12",
+					"type": "edit_field"
+				},
+				"text13": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "i)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"text14": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "j)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet17": {
+					"eventId": "cdd_checklist_5j",
+					"label": {
+						"text": "cdd_checklist_5j",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 3035971905
+				},
+				"integrated_edit_field28": {
+					"field": "list13",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list13",
+						"table": "cdd_checklist",
+						"type": 3
+					},
+					"updateOnEdit": false
+				},
+				"integrated_edit_field96": {
+					"type": "edit_field_label",
+					"field": "remark13"
+				},
+				"integrated_edit_field29": {
+					"field": "remark13",
+					"type": "edit_field"
+				},
+				"edit_field": {
+					"field": "cdd_checklist_custype",
+					"type": "edit_field",
+					"updateOnEdit": false,
+					"width": "150px",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"edit_field_label3": {
+					"type": "edit_field_label",
+					"field": "cdd_checklist_customer",
+					"separated": true
+				},
+				"edit_field_tooltip": {
+					"type": "edit_field_tooltip",
+					"field": "cdd_checklist_customer",
+					"separated": true,
+					"tooltip": {
+						"field": "cdd_checklist_customer",
+						"table": null,
+						"type": 4
+					}
+				},
+				"snippet18": {
+					"type": "snippet",
+					"eventId": "CDD_checklist_text",
+					"label": {
+						"text": "CDD checklist text",
+						"type": 0
+					},
+					"eventGid": 2090207342
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "export",
+			"type": "export",
+			"layoutId": "first",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "export-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "export-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_field",
+								"export_field1",
+								"export_field2",
+								"export_field3",
+								"export_field4",
+								"export_field5",
+								"export_field6",
+								"export_field7",
+								"export_field8",
+								"export_field9",
+								"export_field10",
+								"export_field11",
+								"export_field12",
+								"export_field13",
+								"export_field14",
+								"export_field15",
+								"export_field16",
+								"export_field17",
+								"export_field18",
+								"export_field19",
+								"export_field20",
+								"export_field21",
+								"export_field22",
+								"export_field23",
+								"export_field24",
+								"export_field25",
+								"export_field26",
+								"export_field27",
+								"export_field28",
+								"export_field29",
+								"export_field30",
+								"export_field31",
+								"export_field32",
+								"export_field33",
+								"export_field34",
+								"export_field35",
+								"export_field36",
+								"export_field37",
+								"export_field39"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "export-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"export_export",
+								"export_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"export_header": {
+					"type": "export_header"
+				},
+				"export_export": {
+					"type": "export_export"
+				},
+				"export_cancel": {
+					"type": "export_cancel"
+				},
+				"export_field": {
+					"field": "id",
+					"type": "export_field"
+				},
+				"export_field1": {
+					"field": "checked_by",
+					"type": "export_field"
+				},
+				"export_field2": {
+					"field": "cdd_checklist_customer",
+					"type": "export_field"
+				},
+				"export_field3": {
+					"field": "id_cddlist",
+					"type": "export_field"
+				},
+				"export_field4": {
+					"field": "list01",
+					"type": "export_field"
+				},
+				"export_field5": {
+					"field": "remark01",
+					"type": "export_field"
+				},
+				"export_field6": {
+					"field": "list02",
+					"type": "export_field"
+				},
+				"export_field7": {
+					"field": "remark02",
+					"type": "export_field"
+				},
+				"export_field8": {
+					"field": "list03",
+					"type": "export_field"
+				},
+				"export_field9": {
+					"field": "remark03",
+					"type": "export_field"
+				},
+				"export_field10": {
+					"field": "list04",
+					"type": "export_field"
+				},
+				"export_field11": {
+					"field": "remark04",
+					"type": "export_field"
+				},
+				"export_field12": {
+					"field": "list05",
+					"type": "export_field"
+				},
+				"export_field13": {
+					"field": "remark05",
+					"type": "export_field"
+				},
+				"export_field14": {
+					"field": "list06",
+					"type": "export_field"
+				},
+				"export_field15": {
+					"field": "remark06",
+					"type": "export_field"
+				},
+				"export_field16": {
+					"field": "list07",
+					"type": "export_field"
+				},
+				"export_field17": {
+					"field": "remark07",
+					"type": "export_field"
+				},
+				"export_field18": {
+					"field": "list08",
+					"type": "export_field"
+				},
+				"export_field19": {
+					"field": "remark08",
+					"type": "export_field"
+				},
+				"export_field20": {
+					"field": "list09",
+					"type": "export_field"
+				},
+				"export_field21": {
+					"field": "remark09",
+					"type": "export_field"
+				},
+				"export_field22": {
+					"field": "list10",
+					"type": "export_field"
+				},
+				"export_field23": {
+					"field": "remark10",
+					"type": "export_field"
+				},
+				"export_field24": {
+					"field": "list11",
+					"type": "export_field"
+				},
+				"export_field25": {
+					"field": "remark11",
+					"type": "export_field"
+				},
+				"export_field26": {
+					"field": "list12",
+					"type": "export_field"
+				},
+				"export_field27": {
+					"field": "remark12",
+					"type": "export_field"
+				},
+				"export_field28": {
+					"field": "list13",
+					"type": "export_field"
+				},
+				"export_field29": {
+					"field": "remark13",
+					"type": "export_field"
+				},
+				"export_field30": {
+					"field": "list14",
+					"type": "export_field"
+				},
+				"export_field31": {
+					"field": "remark14",
+					"type": "export_field"
+				},
+				"export_field32": {
+					"field": "results",
+					"type": "export_field"
+				},
+				"export_field33": {
+					"field": "results2",
+					"type": "export_field"
+				},
+				"export_field34": {
+					"field": "results3",
+					"type": "export_field"
+				},
+				"export_field35": {
+					"field": "checked_date",
+					"type": "export_field"
+				},
+				"export_field36": {
+					"field": "checked_by_cea",
+					"type": "export_field"
+				},
+				"export_field37": {
+					"field": "representing",
+					"type": "export_field"
+				},
+				"export_field39": {
+					"field": "cdd_checklist_custype",
+					"type": "export_field"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"exportFormat": 2,
+			"exportDelimiter": ",",
+			"exportSelectDelimiter": true,
+			"exportSelectFields": true
+		},
+		{
+			"id": "import",
+			"type": "import",
+			"layoutId": "first",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "import-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "import-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_field",
+								"import_field1",
+								"import_field2",
+								"import_field3",
+								"import_field4",
+								"import_field5",
+								"import_field6",
+								"import_field7",
+								"import_field8",
+								"import_field9",
+								"import_field10",
+								"import_field11",
+								"import_field12",
+								"import_field13",
+								"import_field14",
+								"import_field15",
+								"import_field16",
+								"import_field17",
+								"import_field18",
+								"import_field19",
+								"import_field20",
+								"import_field21",
+								"import_field22",
+								"import_field23",
+								"import_field24",
+								"import_field25",
+								"import_field26",
+								"import_field27",
+								"import_field28",
+								"import_field29",
+								"import_field30",
+								"import_field31",
+								"import_field32",
+								"import_field33",
+								"import_field34",
+								"import_field35",
+								"import_field36",
+								"import_field37",
+								"import_field39"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"import_header": {
+					"type": "import_header"
+				},
+				"import_field": {
+					"field": "id",
+					"type": "import_field"
+				},
+				"import_field1": {
+					"field": "checked_by",
+					"type": "import_field"
+				},
+				"import_field2": {
+					"field": "cdd_checklist_customer",
+					"type": "import_field"
+				},
+				"import_field3": {
+					"field": "id_cddlist",
+					"type": "import_field"
+				},
+				"import_field4": {
+					"field": "list01",
+					"type": "import_field"
+				},
+				"import_field5": {
+					"field": "remark01",
+					"type": "import_field"
+				},
+				"import_field6": {
+					"field": "list02",
+					"type": "import_field"
+				},
+				"import_field7": {
+					"field": "remark02",
+					"type": "import_field"
+				},
+				"import_field8": {
+					"field": "list03",
+					"type": "import_field"
+				},
+				"import_field9": {
+					"field": "remark03",
+					"type": "import_field"
+				},
+				"import_field10": {
+					"field": "list04",
+					"type": "import_field"
+				},
+				"import_field11": {
+					"field": "remark04",
+					"type": "import_field"
+				},
+				"import_field12": {
+					"field": "list05",
+					"type": "import_field"
+				},
+				"import_field13": {
+					"field": "remark05",
+					"type": "import_field"
+				},
+				"import_field14": {
+					"field": "list06",
+					"type": "import_field"
+				},
+				"import_field15": {
+					"field": "remark06",
+					"type": "import_field"
+				},
+				"import_field16": {
+					"field": "list07",
+					"type": "import_field"
+				},
+				"import_field17": {
+					"field": "remark07",
+					"type": "import_field"
+				},
+				"import_field18": {
+					"field": "list08",
+					"type": "import_field"
+				},
+				"import_field19": {
+					"field": "remark08",
+					"type": "import_field"
+				},
+				"import_field20": {
+					"field": "list09",
+					"type": "import_field"
+				},
+				"import_field21": {
+					"field": "remark09",
+					"type": "import_field"
+				},
+				"import_field22": {
+					"field": "list10",
+					"type": "import_field"
+				},
+				"import_field23": {
+					"field": "remark10",
+					"type": "import_field"
+				},
+				"import_field24": {
+					"field": "list11",
+					"type": "import_field"
+				},
+				"import_field25": {
+					"field": "remark11",
+					"type": "import_field"
+				},
+				"import_field26": {
+					"field": "list12",
+					"type": "import_field"
+				},
+				"import_field27": {
+					"field": "remark12",
+					"type": "import_field"
+				},
+				"import_field28": {
+					"field": "list13",
+					"type": "import_field"
+				},
+				"import_field29": {
+					"field": "remark13",
+					"type": "import_field"
+				},
+				"import_field30": {
+					"field": "list14",
+					"type": "import_field"
+				},
+				"import_field31": {
+					"field": "remark14",
+					"type": "import_field"
+				},
+				"import_field32": {
+					"field": "results",
+					"type": "import_field"
+				},
+				"import_field33": {
+					"field": "results2",
+					"type": "import_field"
+				},
+				"import_field34": {
+					"field": "results3",
+					"type": "import_field"
+				},
+				"import_field35": {
+					"field": "checked_date",
+					"type": "import_field"
+				},
+				"import_field36": {
+					"field": "checked_by_cea",
+					"type": "import_field"
+				},
+				"import_field37": {
+					"field": "representing",
+					"type": "import_field"
+				},
+				"import_field39": {
+					"field": "cdd_checklist_custype",
+					"type": "import_field"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "topbar",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"details_found",
+								"page_size"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "topbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"logo",
+								"menu"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"simple_search",
+								"list_options",
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "list-vbar",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "horizontal-grid",
+					"grid": [
+						{
+							"section": "head",
+							"cells": [
+								{
+									"cell": "headcell_icons"
+								},
+								{
+									"cell": "headcell_field"
+								},
+								{
+									"cell": "headcell_field1"
+								},
+								{
+									"cell": "headcell_field2"
+								},
+								{
+									"cell": "headcell_field3"
+								}
+							]
+						},
+						{
+							"section": "body",
+							"cells": [
+								{
+									"cell": "cell_icons"
+								},
+								{
+									"cell": "cell_field"
+								},
+								{
+									"cell": "cell_field1"
+								},
+								{
+									"cell": "cell_field2"
+								},
+								{
+									"cell": "cell_field3"
+								}
+							]
+						},
+						{
+							"section": "foot",
+							"cells": [
+								{
+									"cell": "footcell_icons"
+								},
+								{
+									"cell": "footcell_field"
+								},
+								{
+									"cell": "footcell_field1"
+								},
+								{
+									"cell": "footcell_field2"
+								},
+								{
+									"cell": "footcell_field3"
+								}
+							]
+						}
+					],
+					"cells": {
+						"headcell_field": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field10"
+							],
+							"field": "checked_date",
+							"columnName": "field"
+						},
+						"cell_field": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field4"
+							],
+							"field": "checked_date",
+							"columnName": "field"
+						},
+						"footcell_field": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "checked_date",
+							"columnName": "field"
+						},
+						"headcell_field1": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field7"
+							],
+							"field": "cdd_checklist_customer",
+							"columnName": "field"
+						},
+						"cell_field1": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field1"
+							],
+							"field": "cdd_checklist_customer",
+							"orientation": "vertical",
+							"columnName": "field"
+						},
+						"footcell_field1": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "cdd_checklist_customer",
+							"columnName": "field"
+						},
+						"headcell_field2": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field8"
+							],
+							"field": "results",
+							"columnName": "field"
+						},
+						"cell_field2": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field2",
+								"result2"
+							],
+							"field": "results",
+							"orientation": "vertical",
+							"columnName": "field"
+						},
+						"footcell_field2": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "results",
+							"columnName": "field"
+						},
+						"headcell_icons": {
+							"model": "headcell_icons",
+							"items": [],
+							"columnName": "view",
+							"field": ""
+						},
+						"cell_icons": {
+							"model": "cell_icons",
+							"items": [
+								"grid_view"
+							],
+							"columnName": "view",
+							"field": ""
+						},
+						"footcell_icons": {
+							"model": "footcell_icons",
+							"items": [],
+							"columnName": "view",
+							"field": ""
+						},
+						"headcell_field3": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label"
+							],
+							"field": "checked_by",
+							"columnName": "field"
+						},
+						"cell_field3": {
+							"model": "cell_field",
+							"items": [
+								"grid_field"
+							],
+							"field": "checked_by",
+							"columnName": "field"
+						},
+						"footcell_field3": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "checked_by",
+							"columnName": "field"
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"page_size": {
+					"type": "page_size"
+				},
+				"details_found": {
+					"type": "details_found"
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"menu": {
+					"type": "menu"
+				},
+				"simple_search": {
+					"type": "simple_search"
+				},
+				"pagination": {
+					"type": "pagination"
+				},
+				"list_options": {
+					"type": "list_options",
+					"items": [
+						"advsearch_link"
+					]
+				},
+				"simple_grid_field10": {
+					"type": "grid_field_label",
+					"field": "checked_date",
+					"clickSort": false,
+					"label": {
+						"field": "checked_date",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"simple_grid_field8": {
+					"type": "grid_field_label",
+					"field": "results",
+					"clickSort": false,
+					"label": {
+						"field": "results",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"simple_grid_field7": {
+					"type": "grid_field_label",
+					"field": "cdd_checklist_customer",
+					"clickSort": false,
+					"label": {
+						"field": "cdd_checklist_customer",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"changepassword_link"
+					]
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": false
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"grid_view": {
+					"type": "grid_view",
+					"popup": true
+				},
+				"-": {
+					"type": "-"
+				},
+				"simple_grid_field1": {
+					"field": "cdd_checklist_customer",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field2": {
+					"field": "results",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field4": {
+					"field": "checked_date",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"advsearch_link": {
+					"type": "advsearch_link"
+				},
+				"-1": {
+					"type": "-"
+				},
+				"result2": {
+					"field": "results2",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"-2": {
+					"type": "-"
+				},
+				"-3": {
+					"type": "-"
+				},
+				"grid_field": {
+					"field": "checked_by",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"grid_field_label": {
+					"type": "grid_field_label",
+					"field": "checked_by",
+					"clickSort": false,
+					"label": {
+						"field": "checked_by",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				}
+			},
+			"spreadsheetGrid": false,
+			"version": 14,
+			"reorderRows": false,
+			"reorderRowsField": "",
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {
+				"English": ""
+			}
+		},
+		{
+			"id": "print",
+			"type": "print",
+			"layoutId": "basic",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "print-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"print_pages"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "print-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "print-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"print_header",
+								"print_subheader"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"print_header": {
+					"type": "print_header"
+				},
+				"print_subheader": {
+					"type": "print_subheader"
+				},
+				"print_pages": {
+					"type": "print_pages"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "search",
+			"type": "search",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "search-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "search-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_search",
+								"search_reset",
+								"search_back_list",
+								"search_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "search-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-search",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_search_field"
+							]
+						}
+					},
+					"deferredItems": [],
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"search_header": {
+					"type": "search_header"
+				},
+				"search_reset": {
+					"type": "search_reset"
+				},
+				"search_back_list": {
+					"type": "search_back_list"
+				},
+				"search_search": {
+					"type": "search_search"
+				},
+				"search_cancel": {
+					"type": "search_cancel"
+				},
+				"integrated_search_field": {
+					"field": "cdd_checklist_custype",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "view",
+			"type": "view",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "view-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "view-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_back_list",
+								"view_close",
+								"snippet18"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "view-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c38"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c39"
+								},
+								{
+									"cell": "c40"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c42"
+								},
+								{
+									"cell": "c41"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c43"
+								},
+								{
+									"cell": "c44"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c45"
+								},
+								{
+									"cell": "c46"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c48"
+								},
+								{
+									"cell": "c47"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c49"
+								},
+								{
+									"cell": "c50"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c51"
+								},
+								{
+									"cell": "c52"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c54"
+								},
+								{
+									"cell": "c53"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c55"
+								},
+								{
+									"cell": "c56"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c58"
+								},
+								{
+									"cell": "c57"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c59"
+								},
+								{
+									"cell": "c60"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c62"
+								},
+								{
+									"cell": "c61"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c64"
+								},
+								{
+									"cell": "c63"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c65"
+								},
+								{
+									"cell": "c66"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field",
+								"integrated_edit_field3",
+								"integrated_edit_field39",
+								"integrated_edit_field37",
+								"integrated_edit_field33",
+								"integrated_edit_field2",
+								"integrated_edit_field36",
+								"integrated_edit_field1",
+								"integrated_edit_field44",
+								"integrated_edit_field35"
+							],
+							"field": "id_cddlist",
+							"useFullWidth": true
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"text"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c38": {
+							"model": "c3",
+							"items": [
+								"snippet3",
+								"snippet4",
+								"integrated_edit_field30",
+								"edit_field_label",
+								"integrated_edit_field31"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							},
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c39": {
+							"model": "c1",
+							"items": [
+								"text1"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c40": {
+							"model": "c3",
+							"items": [
+								"snippet",
+								"snippet1",
+								"integrated_edit_field4",
+								"integrated_edit_field48",
+								"integrated_edit_field5"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							},
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c41": {
+							"model": "c3",
+							"items": [
+								"snippet2",
+								"snippet5",
+								"integrated_edit_field6",
+								"edit_field_label1",
+								"integrated_edit_field7"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "8px"
+							}
+						},
+						"c42": {
+							"model": "c1",
+							"items": [
+								"text2"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c43": {
+							"model": "c1",
+							"items": [
+								"text3"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c44": {
+							"model": "c3",
+							"items": [
+								"snippet6",
+								"integrated_edit_field8",
+								"integrated_edit_field56",
+								"integrated_edit_field9"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							},
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c45": {
+							"model": "c1",
+							"items": [
+								"text4"
+							],
+							"field": "representing",
+							"width": "5%",
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c46": {
+							"model": "c1",
+							"items": [
+								"snippet7"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							}
+						},
+						"c47": {
+							"model": "c3",
+							"items": [
+								"snippet8",
+								"integrated_edit_field10",
+								"integrated_edit_field60",
+								"integrated_edit_field11"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							},
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c48": {
+							"model": "c1",
+							"items": [
+								"text5"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c49": {
+							"model": "c1",
+							"items": [
+								"text6"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c50": {
+							"model": "c3",
+							"items": [
+								"snippet9",
+								"integrated_edit_field12",
+								"integrated_edit_field64",
+								"integrated_edit_field13"
+							],
+							"field": "representing",
+							"width": "95%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "8px"
+							}
+						},
+						"c51": {
+							"model": "c1",
+							"items": [
+								"text7"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c52": {
+							"model": "c3",
+							"items": [
+								"snippet10",
+								"integrated_edit_field14",
+								"integrated_edit_field68",
+								"integrated_edit_field15"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							},
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c53": {
+							"model": "c3",
+							"items": [
+								"snippet11",
+								"integrated_edit_field16",
+								"integrated_edit_field72",
+								"integrated_edit_field17"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							},
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c54": {
+							"model": "c1",
+							"items": [
+								"text8"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c55": {
+							"model": "c1",
+							"items": [
+								"text9"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c56": {
+							"model": "c3",
+							"items": [
+								"snippet12",
+								"integrated_edit_field18",
+								"integrated_edit_field76",
+								"integrated_edit_field19"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							},
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c57": {
+							"model": "c3",
+							"items": [
+								"snippet13",
+								"integrated_edit_field20",
+								"edit_field_label2",
+								"integrated_edit_field21"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							}
+						},
+						"c58": {
+							"model": "c1",
+							"items": [
+								"text10"
+							],
+							"field": "representing",
+							"width": "5%",
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c59": {
+							"model": "c1",
+							"items": [
+								"text11"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c60": {
+							"model": "c3",
+							"items": [
+								"snippet14",
+								"integrated_edit_field22",
+								"integrated_edit_field84",
+								"integrated_edit_field23"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							},
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c61": {
+							"model": "c3",
+							"items": [
+								"snippet15",
+								"integrated_edit_field24",
+								"integrated_edit_field88",
+								"integrated_edit_field25"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							},
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c62": {
+							"model": "c1",
+							"items": [
+								"text12"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c63": {
+							"model": "c3",
+							"items": [
+								"snippet16",
+								"integrated_edit_field26",
+								"integrated_edit_field92",
+								"integrated_edit_field27"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							},
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							]
+						},
+						"c64": {
+							"model": "c1",
+							"items": [
+								"text13"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c65": {
+							"model": "c1",
+							"items": [
+								"text14"
+							],
+							"field": "representing",
+							"width": "5%",
+							"border": [
+								{
+									"side": "bottom"
+								}
+							],
+							"padding": {
+								"top": "5px"
+							}
+						},
+						"c66": {
+							"model": "c3",
+							"items": [
+								"snippet17",
+								"integrated_edit_field28",
+								"integrated_edit_field96",
+								"integrated_edit_field29"
+							],
+							"field": "representing",
+							"width": "95%",
+							"padding": {
+								"top": "8px"
+							},
+							"border": [
+								{
+									"side": "bottom"
+								}
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": true
+				}
+			},
+			"items": {
+				"view_header": {
+					"type": "view_header"
+				},
+				"view_back_list": {
+					"type": "view_back_list"
+				},
+				"view_close": {
+					"type": "view_close"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": []
+				},
+				"integrated_edit_field56": {
+					"type": "edit_field_label",
+					"field": "remark03"
+				},
+				"integrated_edit_field8": {
+					"field": "list03",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list03",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"snippet6": {
+					"eventId": "cdd_checklist_4_1",
+					"label": {
+						"text": "cdd_checklist_4.1",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 392465350
+				},
+				"text3": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "4"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "10px"
+					}
+				},
+				"text2": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "3"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "10px"
+					}
+				},
+				"integrated_edit_field7": {
+					"field": "remark02",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"width": "550px"
+				},
+				"edit_field_label1": {
+					"type": "edit_field_label",
+					"field": "remark02",
+					"separated": true
+				},
+				"integrated_edit_field6": {
+					"field": "list02",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list02",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"snippet5": {
+					"eventId": "cdd_checklist_3_2",
+					"label": {
+						"text": "cdd_checklist_3.2",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 2334313721
+				},
+				"snippet2": {
+					"eventId": "cdd_checklist_3_1",
+					"label": {
+						"text": "cdd_checklist_3.1",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 304848195
+				},
+				"integrated_edit_field5": {
+					"field": "remark01",
+					"type": "edit_field",
+					"width": "550px"
+				},
+				"integrated_edit_field48": {
+					"type": "edit_field_label",
+					"field": "remark01"
+				},
+				"integrated_edit_field4": {
+					"field": "list01",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list01",
+						"table": "cdd_checklist",
+						"type": 3
+					},
+					"customCSS": "/* Put  your custom CSS code here */\n\n\n"
+				},
+				"snippet1": {
+					"eventId": "cdd_checklist_2_2",
+					"label": {
+						"text": "cdd_checklist_2.2",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 2329978574
+				},
+				"snippet": {
+					"eventId": "cdd_checklist_2_1",
+					"label": {
+						"text": "cdd_checklist_2.1",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 334100340
+				},
+				"text1": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "2"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "10px"
+					}
+				},
+				"integrated_edit_field31": {
+					"field": "remark14",
+					"type": "edit_field",
+					"width": "550px"
+				},
+				"edit_field_label": {
+					"type": "edit_field_label",
+					"field": "remark14"
+				},
+				"integrated_edit_field30": {
+					"field": "list14",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list14",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"snippet4": {
+					"type": "snippet",
+					"eventId": "cdd_checklist_1_2",
+					"label": {
+						"text": "cdd_checklist_1.2",
+						"type": 0
+					},
+					"eventGid": 2292586647
+				},
+				"snippet3": {
+					"type": "snippet",
+					"eventId": "cdd_checklist_1_1",
+					"label": {
+						"text": "cdd_checklist_1.1",
+						"type": 0
+					},
+					"eventGid": 296700205
+				},
+				"text": {
+					"type": "text",
+					"label": {
+						"text": "1",
+						"type": 0
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "10px"
+					}
+				},
+				"integrated_edit_field35": {
+					"field": "checked_date",
+					"type": "edit_field",
+					"width": "200px"
+				},
+				"integrated_edit_field44": {
+					"type": "edit_field_label",
+					"field": "checked_date"
+				},
+				"integrated_edit_field1": {
+					"field": "checked_by",
+					"type": "edit_field",
+					"width": "300px"
+				},
+				"integrated_edit_field36": {
+					"type": "edit_field_label",
+					"field": "checked_by"
+				},
+				"integrated_edit_field2": {
+					"field": "cdd_checklist_customer",
+					"type": "edit_field",
+					"width": "300px"
+				},
+				"integrated_edit_field33": {
+					"type": "edit_field_label",
+					"field": "cdd_checklist_customer"
+				},
+				"integrated_edit_field37": {
+					"field": "representing",
+					"type": "edit_field",
+					"width": "200px",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"integrated_edit_field39": {
+					"type": "edit_field_label",
+					"field": "representing",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"integrated_edit_field3": {
+					"field": "id_cddlist",
+					"type": "edit_field",
+					"width": "100px",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"integrated_edit_field": {
+					"type": "edit_field_label",
+					"field": "id_cddlist",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"integrated_edit_field9": {
+					"field": "remark03",
+					"type": "edit_field"
+				},
+				"text4": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "5"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "10px"
+					}
+				},
+				"snippet7": {
+					"eventId": "cdd_checklist_5_1",
+					"label": {
+						"text": "cdd_checklist_5.1",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 380035569
+				},
+				"snippet8": {
+					"eventId": "cdd_checklist_5a",
+					"label": {
+						"text": "cdd_checklist_5a",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 589797577
+				},
+				"integrated_edit_field10": {
+					"field": "list04",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list04",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field60": {
+					"type": "edit_field_label",
+					"field": "remark04"
+				},
+				"integrated_edit_field11": {
+					"field": "remark04",
+					"type": "edit_field"
+				},
+				"text5": {
+					"type": "text",
+					"label": {
+						"text": "a)",
+						"type": 0
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"text6": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "b)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet9": {
+					"eventId": "cdd_checklist_5b",
+					"label": {
+						"text": "cdd_checklist_5b",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 3123628403
+				},
+				"integrated_edit_field12": {
+					"field": "list05",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list05",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field64": {
+					"type": "edit_field_label",
+					"field": "remark05"
+				},
+				"integrated_edit_field13": {
+					"field": "remark05",
+					"type": "edit_field"
+				},
+				"text7": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "c)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet10": {
+					"eventId": "cdd_checklist_5c",
+					"label": {
+						"text": "cdd_checklist_5c",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 3442080229
+				},
+				"integrated_edit_field14": {
+					"field": "list06",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list06",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field68": {
+					"type": "edit_field_label",
+					"field": "remark06"
+				},
+				"integrated_edit_field15": {
+					"field": "remark06",
+					"type": "edit_field"
+				},
+				"snippet11": {
+					"eventId": "cdd_checklist_5d",
+					"label": {
+						"text": "cdd_checklist_5d",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 1397582918
+				},
+				"integrated_edit_field16": {
+					"field": "list07",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0
+				},
+				"integrated_edit_field72": {
+					"type": "edit_field_label",
+					"field": "remark07"
+				},
+				"integrated_edit_field17": {
+					"field": "remark07",
+					"type": "edit_field"
+				},
+				"text8": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "d)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"text9": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "e)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet12": {
+					"eventId": "cdd_checklist_5e",
+					"label": {
+						"text": "cdd_checklist_5e",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 608853200
+				},
+				"integrated_edit_field18": {
+					"field": "list08",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list08",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field76": {
+					"type": "edit_field_label",
+					"field": "remark08"
+				},
+				"integrated_edit_field19": {
+					"field": "remark08",
+					"type": "edit_field"
+				},
+				"snippet13": {
+					"eventId": "cdd_checklist_5f",
+					"label": {
+						"text": "cdd_checklist_5f",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 3175288170
+				},
+				"integrated_edit_field20": {
+					"field": "list09",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list09",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"edit_field_label2": {
+					"type": "edit_field_label",
+					"field": "remark09",
+					"separated": true
+				},
+				"integrated_edit_field21": {
+					"field": "remark09",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0
+				},
+				"text10": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "f)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"text11": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "g)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet14": {
+					"eventId": "cdd_checklist_5g",
+					"label": {
+						"text": "cdd_checklist_5g",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 3393469948
+				},
+				"integrated_edit_field22": {
+					"field": "list10",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list10",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field84": {
+					"type": "edit_field_label",
+					"field": "remark10"
+				},
+				"integrated_edit_field23": {
+					"field": "remark10",
+					"type": "edit_field"
+				},
+				"snippet15": {
+					"eventId": "cdd_checklist_5h",
+					"label": {
+						"text": "cdd_checklist_5h",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 1526407277
+				},
+				"integrated_edit_field24": {
+					"field": "list11",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list11",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field88": {
+					"type": "edit_field_label",
+					"field": "remark11"
+				},
+				"integrated_edit_field25": {
+					"field": "remark11",
+					"type": "edit_field"
+				},
+				"text12": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "h)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet16": {
+					"eventId": "cdd_checklist_5i",
+					"label": {
+						"text": "cdd_checklist_5i",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 771494139
+				},
+				"integrated_edit_field26": {
+					"field": "list12",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list12",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field92": {
+					"type": "edit_field_label",
+					"field": "remark12"
+				},
+				"integrated_edit_field27": {
+					"field": "remark12",
+					"type": "edit_field"
+				},
+				"text13": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "i)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"text14": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "j)"
+					},
+					"editedByRte": false,
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"snippet17": {
+					"eventId": "cdd_checklist_5j",
+					"label": {
+						"text": "cdd_checklist_5j",
+						"type": 0
+					},
+					"type": "snippet",
+					"padding": {
+						"top": "12px"
+					},
+					"eventGid": 3035971905
+				},
+				"integrated_edit_field28": {
+					"field": "list13",
+					"type": "edit_field",
+					"joined": false,
+					"separated": true,
+					"orientation": 0,
+					"label": {
+						"field": "list13",
+						"table": "cdd_checklist",
+						"type": 3
+					}
+				},
+				"integrated_edit_field96": {
+					"type": "edit_field_label",
+					"field": "remark13"
+				},
+				"integrated_edit_field29": {
+					"field": "remark13",
+					"type": "edit_field"
+				},
+				"snippet18": {
+					"type": "snippet",
+					"eventId": "Return_to_top_form",
+					"label": {
+						"text": "Return to top-form",
+						"type": 0
+					},
+					"eventGid": 1354647837
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"English": "CDD checklist"
+	}
+}

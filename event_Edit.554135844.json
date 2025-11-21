@@ -1,0 +1,7 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Edit",
+	"serverCode": "// code from business-template Invoice\n// Put your code here.\n$result[\"txt\"] = $params[\"txt\"].\" world!\";\n\n// end Invoice code\n\n//The code was commented on September 15 2022 20:42 on applying Invoice business template\n\n//$record=$button->getCurrentRecord();\n//$result[\"id\"]=$record[\"id\"];",
+	"beforeJsCode": "// code from business-template Invoice\n// Put your code here.\nparams[\"txt\"] = \"Hello\";\nctrl.setMessage(\"Sending request to server...\");\n // Uncomment the following line to prevent execution of \"Server\" and \"Client After\" events.\n // return false;\n// end Invoice code\n\n//The code was commented on September 15 2022 20:42 on applying Invoice business template\n\n//if (confirm(\"WARNING!!! Edit Form will DELETE all the signatures in the Form. To proceed with Edit, click OK. Or, click Cancel to abort.\"))\n//{return true;}\n//else\n//{return false;}",
+	"afterJsCode": "// code from business-template Invoice\n// Put your code here.\nvar message = result[\"txt\"] + \" !!!\";\nctrl.setMessage(message);\n\n// end Invoice code\n\n//The code was commented on September 15 2022 20:42 on applying Invoice business template\n\n//location.href=\"form1_edit.php?editid1=\"+result[\"id\"];"
+}

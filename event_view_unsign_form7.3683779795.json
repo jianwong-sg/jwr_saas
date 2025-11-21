@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "view_unsign_form7",
+	"beforeJsCode": "window.open('form7_view.php?page=view_print&{$editlink}', '_blank');"
+}

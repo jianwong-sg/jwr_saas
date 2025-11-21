@@ -1,0 +1,4 @@
+{
+	"name": "cdd_measures_1.a1",
+	"serverCode": "// Put your code here.\necho \"* BO is the \n      person who has ultimate interest in the property transaction, and who has \n      control over the client. If the BO is a company, take reasonable measures \n      to understand the ownership and control structure of the company to \n      identify the individual behind the company.\n      \";"
+}

@@ -1,0 +1,4 @@
+{
+	"name": "snippet",
+	"serverCode": "if($_SESSION['terms'] != \"\")\n\techo \"<b>\".GetCustomLabel(\"terms_label\").\"</b>\";"
+}

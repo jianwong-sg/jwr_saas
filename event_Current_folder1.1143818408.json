@@ -1,0 +1,4 @@
+{
+	"name": "Current_folder1",
+	"serverCode": "// Put your code here.\nif ($_GET[\"qs\"]==\"\" && !$_SESSION[\"single_file\"]) {\n\t\techo \"<div class='docman-current-folder'>\";\n\t\tif (count($_SESSION[\"path\"]))\n\t\t\techo $_SESSION[\"path\"][$_SESSION[\"current_folder\"]]->name;\n\t\telse\n\t\t\techo ROOT_FOLDER;\n\t\techo \"</div>\";\n}"
+}

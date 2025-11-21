@@ -1,0 +1,4 @@
+{
+	"name": "CDD fore text",
+	"serverCode": "// Put your code here.\necho \"<div class='form-text'>Customer Due Diligence (CDD) is mandatory for every \nproperty transaction. Please answer all questions in the checklist to determine \nif further action is required. Once the checklist is completed, the system will \nautomatically scan the customer's name against the UN Sanction list, Panama \nPapers, local Name list and Alert list. The results of these checks will be \ndisplayed below.</div>\";"
+}

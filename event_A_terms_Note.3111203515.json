@@ -1,0 +1,4 @@
+{
+	"name": "A terms Note",
+	"serverCode": "// Put your code here.\necho \"<p style='text-align:justify'><i>Note:</i>&ensp;\n      The printed terms prescribed in this form of Agreement cannot be deleted \n      or varied. If the parties wish at any time to agree to or add on any other \n      terms, they must be in writing, dated, inserted as Additional Terms below \n      and initialed by the parties. If the space below is insufficient, the \n      Additional Terms are to be written/printed in black ink on a separate \n      sheet of paper which must be <strong>pink</strong> in color and in a font <strong>not smaller</strong> than \n      the font of the above terms.</p>\n      \";"
+}

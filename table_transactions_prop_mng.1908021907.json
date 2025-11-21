@@ -1,0 +1,8876 @@
+{
+	"orderInfo": [
+		{
+			"index": 1,
+			"asc": false,
+			"field": "id"
+		},
+		{
+			"index": 15,
+			"asc": false,
+			"field": "`date`"
+		}
+	],
+	"sql": "SELECT\nid,\ncategory,\nprop_type,\nProp_kind,\nrental_price,\nprop_name,\nprop_address,\ncea_reg,\nconcat(lease_duration_no, ' ', lease_duration_unit) AS lease_duration,\nland,\ntenure,\nno_bedrooms,\nno_bathrooms,\nconcat(rental_price, ' ', rental_price_type) AS rental,\n`date`,\nbuilt_up,\nbuilt_up_unit,\nland_unit\nFROM transactions\nORDER BY `date` DESC, id DESC",
+	"type": 1,
+	"connId": "Tables",
+	"originalTable": "transactions",
+	"name": "transactions_prop_mng",
+	"shortTableName": "transactions_prop_mng",
+	"searchSuggest": false,
+	"caseSensitiveSearch": "",
+	"highlightSearchResults": false,
+	"tableOwnerIdField": "cea_reg",
+	"usersOwnerIdField": "user_id",
+	"listAjax": true,
+	"clickActions": {
+		"row": {
+			"action": "open",
+			"codeData": {
+				"snippet": null
+			},
+			"gridData": {
+				"action": "checkbox",
+				"table": null
+			},
+			"openData": {
+				"how": "popup",
+				"page": "view",
+				"table": null,
+				"url": ""
+			}
+		},
+		"fields": {
+			"Prop_kind": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"TOP": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"Unit_no": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"agency_fee": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"built_up": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"built_up_unit": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"category": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {
+					"action": "checkbox",
+					"table": "parties_involved",
+					"tableGid": 1012154352
+				},
+				"openData": {
+					"how": "goto",
+					"page": "edit",
+					"table": "parties_involved",
+					"url": "",
+					"tableGid": 1012154352
+				}
+			},
+			"cdd_result": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"cea_reg": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"cobroke_comm": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_amt": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_earned": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_earned_agency": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_earned_percent_salesperson": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_earned_salesperson": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_gross": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_gross_agency": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_percent": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"comm_unit": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"commission": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"condition": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"currency": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"date": {
+				"action": "open",
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {
+					"action": "checkbox",
+					"table": null
+				},
+				"openData": {
+					"how": "popup",
+					"page": "view",
+					"table": null,
+					"url": ""
+				}
+			},
+			"docuserid": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"est_completion_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"gst": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"gst_agency": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"gst_inclusive": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"gst_payable": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"id": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"land": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"land_unit": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"lease_duration_no": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"lease_duration_unit": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"lease_expiry": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"lease_start_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"loi_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"marketing_rights": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"no_bathrooms": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"no_bedrooms": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"option_exercise_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"option_money": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"otp_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"pps_cust": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"pps_result": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"prop_address": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {
+					"action": "checkbox",
+					"table": null
+				},
+				"openData": {
+					"how": "goto",
+					"page": "view",
+					"table": null,
+					"url": ""
+				}
+			},
+			"prop_name": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"prop_postal": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"prop_type": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"rental_price": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"rental_price_type": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"representing": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"sale_price": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"salesperson_name": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"sls_cust": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"sls_result": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"sp_execution_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"ta_date": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"tenure": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"transacted_price": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			},
+			"valuation_price": {
+				"codeData": {
+					"snippet": null
+				},
+				"gridData": {},
+				"openData": {}
+			}
+		}
+	},
+	"hideEmptyFieldsOnView": true,
+	"pageSizeRecords": 5,
+	"pageSizeSelectorRecords": [
+		"5",
+		"10",
+		"20",
+		"30",
+		"50",
+		"100",
+		"-1"
+	],
+	"pageSizeSelectorGroups": [
+		"1",
+		"3",
+		"5",
+		"10",
+		"50",
+		"100",
+		"-1"
+	],
+	"chartSettings": {
+		"accumulationAppearance": 1
+	},
+	"keyFields": [
+		"id"
+	],
+	"detailsBadgeColor": "B22222",
+	"fields": [
+		{
+			"name": "id",
+			"sqlExpression": "id",
+			"strField": "id",
+			"googleLikeSearch": false,
+			"type": 3,
+			"autoinc": true,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"required": true,
+					"validateAs": "Number",
+					"textboxSize": 100,
+					"textHTML5Input": "1",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"allSearchOptionsSelected": true,
+			"label": {
+				"English": "Txn ID"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "category",
+			"sqlExpression": "category",
+			"strField": "category",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupValues": [
+						"Sale",
+						"Rental",
+						"Assignment"
+					],
+					"lookupTable": "transact_type",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "tx_type",
+					"lookupDisplayField": "tx_type",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"searchOptions": [
+				"Contains",
+				"Equals",
+				"Starts with",
+				"Empty",
+				"NOT Contains",
+				"NOT Equals",
+				"NOT Starts with",
+				"NOT Empty"
+			],
+			"label": {
+				"English": "Txn Type"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "prop_type",
+			"sqlExpression": "prop_type",
+			"strField": "prop_type",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "types",
+					"lookupDisplayField": "types",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "prop_address",
+							"lookupField": "prop_address"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"searchOptions": [
+				"Contains",
+				"Equals",
+				"Starts with",
+				"Empty",
+				"NOT Contains",
+				"NOT Equals",
+				"NOT Starts with",
+				"NOT Empty"
+			],
+			"label": {
+				"English": "Prop Type"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "Prop_kind",
+			"sqlExpression": "Prop_kind",
+			"strField": "Prop_kind",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 250,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "kind",
+					"lookupDisplayField": "kind",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "prop_address",
+							"lookupField": "prop_address"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"searchOptions": [
+				"Contains",
+				"Equals",
+				"Starts with",
+				"Empty",
+				"NOT Contains",
+				"NOT Equals",
+				"NOT Starts with",
+				"NOT Empty"
+			],
+			"label": {
+				"English": "Prop Kind"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "rental_price",
+			"sqlExpression": "rental_price",
+			"strField": "rental_price",
+			"googleLikeSearch": false,
+			"type": 14,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"textboxSize": 150,
+					"textboxMaxLenth": 20,
+					"textHTML5Input": "1",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Rental"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "prop_name",
+			"sqlExpression": "prop_name",
+			"strField": "prop_name",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 120,
+					"textboxMaxLenth": 50,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "prop_name",
+					"lookupDisplayField": "prop_name",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "prop_address",
+							"lookupField": "prop_address"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Name of Development"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "prop_address",
+			"sqlExpression": "prop_address",
+			"strField": "prop_address",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"required": true,
+					"textboxMaxLenth": 200,
+					"textHTML5Input": "0",
+					"textareaHeight": 50,
+					"lookupType": 2,
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "prop_address",
+					"lookupDisplayField": "prop_address",
+					"lookupAllowAdd": true,
+					"lookupAutofillFields": [
+						{
+							"masterField": "tenure",
+							"lookupField": "tenure"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Address"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "cea_reg",
+			"sqlExpression": "cea_reg",
+			"strField": "cea_reg",
+			"googleLikeSearch": false,
+			"type": 201,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"customExpression": "$value=\"CEA: \".$value;",
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Readonly",
+					"defaultValue": "$_SESSION[\"cea_reg\"]",
+					"autoUpdateValue": "$_SESSION[\"cea_reg\"]",
+					"textboxSize": 100,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupLinkField": "cea_reg",
+					"lookupDisplayField": "cea_reg",
+					"lookupControlType": 1,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "salesperson_name",
+							"lookupField": "full_name"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"uploadFolder": "",
+			"codeUploadFolderLang": "",
+			"allSearchOptionsSelected": true,
+			"label": {
+				"English": "Salesperson CEA Reg"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "lease_duration",
+			"sqlExpression": "concat(lease_duration_no, ' ', lease_duration_unit)",
+			"strField": "lease_duration",
+			"type": 200,
+			"viewFormats": [
+				{
+					"videoRewindEnabled": false,
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"validateRegexMessage": {
+						"text": "",
+						"type": 0
+					},
+					"denyDuplicateMessage": {
+						"text": "",
+						"type": 0
+					},
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Lease Duration"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": ""
+		},
+		{
+			"name": "land",
+			"sqlExpression": "land",
+			"strField": "land",
+			"googleLikeSearch": false,
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"validateAs": "Number",
+					"textboxSize": 80,
+					"textboxMaxLenth": 5,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "land_size",
+					"lookupDisplayField": "land_size",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "prop_address",
+							"lookupField": "prop_address"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Land"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "tenure",
+			"sqlExpression": "tenure",
+			"strField": "tenure",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 100,
+					"textboxMaxLenth": 10,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"FreeHold",
+						"20-yrs LeaseHold",
+						"30-yrs LeaseHold",
+						"60-yrs LeaseHold",
+						"99-yrs LeaseHold",
+						"999-yrs LeaseHold",
+						"9999-yrs LeaseHold"
+					],
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupDisplayField": "tenure",
+					"lookupCustomDisplay": true,
+					"lookupFreeInput": true,
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "Tenure"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "no_bedrooms",
+			"sqlExpression": "no_bedrooms",
+			"strField": "no_bedrooms",
+			"googleLikeSearch": false,
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 80,
+					"textboxMaxLenth": 5,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"Studio",
+						"1",
+						"2",
+						"3",
+						"4",
+						"5",
+						"6",
+						"7",
+						"8",
+						"9",
+						"10"
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "No of Bedrooms"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "no_bathrooms",
+			"sqlExpression": "no_bathrooms",
+			"strField": "no_bathrooms",
+			"googleLikeSearch": false,
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 80,
+					"textboxMaxLenth": 5,
+					"textHTML5Input": "0",
+					"lookupType": 0,
+					"lookupValues": [
+						"1",
+						"2",
+						"3",
+						"4",
+						"5",
+						"6",
+						"7",
+						"8"
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"label": {
+				"English": "No of Bathrooms"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "rental",
+			"sqlExpression": "concat(rental_price, ' ', rental_price_type)",
+			"strField": "rental",
+			"type": 200,
+			"viewFormats": [
+				{
+					"format": "Currency",
+					"videoRewindEnabled": false,
+					"numberFractionalDigits": 0
+				}
+			],
+			"editFormats": [
+				{
+					"textHTML5Input": "0",
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Rental"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": ""
+		},
+		{
+			"name": "date",
+			"sqlExpression": "`date`",
+			"strField": "date",
+			"type": 7,
+			"viewFormats": [
+				{
+					"format": "Short Date",
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Date",
+					"required": true,
+					"defaultValue": "now()",
+					"textboxSize": 120,
+					"textHTML5Input": "0",
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateEditType": 2,
+					"dateFirstYearFactor": 30,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"defaultSearchOption": "Between",
+			"label": {
+				"English": "Date"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "built_up",
+			"sqlExpression": "built_up",
+			"strField": "built_up",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"validateAs": "Number",
+					"textboxSize": 80,
+					"textboxMaxLenth": 5,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "builtup",
+					"lookupDisplayField": "builtup",
+					"lookupControlType": 1,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "prop_address",
+							"lookupField": "prop_address"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 5,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "built_up",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Built Up"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "built_up_unit",
+			"sqlExpression": "built_up_unit",
+			"strField": "built_up_unit",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 80,
+					"textboxMaxLenth": 5,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupValues": [
+						"Sqf",
+						"Sqm"
+					],
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "builtup_unit",
+					"lookupDisplayField": "builtup_unit",
+					"lookupControlType": 1,
+					"lookupHorizontal": true,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "prop_address",
+							"lookupField": "prop_address"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 5,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "built_up_unit",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Built Up Unit"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		},
+		{
+			"name": "land_unit",
+			"sqlExpression": "land_unit",
+			"strField": "land_unit",
+			"type": 200,
+			"viewFormats": [
+				{
+					"imageWidth": 457,
+					"imageHeight": 0,
+					"imageThumbWidth": 72,
+					"imageThumbHeight": 72,
+					"videoRewindEnabled": false,
+					"textShowFirst": false
+				}
+			],
+			"editFormats": [
+				{
+					"format": "Lookup wizard",
+					"textboxSize": 80,
+					"textboxMaxLenth": 5,
+					"textHTML5Input": "0",
+					"lookupType": 2,
+					"lookupValues": [
+						"Sqf",
+						"Sqm"
+					],
+					"lookupTable": "properties",
+					"lookupTableConnection": "Tables",
+					"lookupLinkField": "land_size_unit",
+					"lookupDisplayField": "land_size_unit",
+					"lookupControlType": 1,
+					"lookupHorizontal": true,
+					"lookupFreeInput": true,
+					"lookupDependent": true,
+					"lookupDependentFields": [
+						{
+							"masterField": "prop_address",
+							"lookupField": "prop_address"
+						}
+					],
+					"fileThumbnailSize": 150,
+					"fileMaxNumber": 1,
+					"fileThumbnailField": "th",
+					"dateFirstYearFactor": 5,
+					"dateLastYearFactor": 1,
+					"timeConvention": 1
+				}
+			],
+			"filterFormat": {
+				"format": "Values list"
+			},
+			"sourceSingle": "land_unit",
+			"defaultSearchOption": "Contains",
+			"label": {
+				"English": "Land Unit"
+			},
+			"tooltip": {
+				"English": ""
+			},
+			"placeholder": {
+				"English": ""
+			},
+			"tableName": "transactions"
+		}
+	],
+	"warnLeavingEdit": true,
+	"afterEditAction": 2,
+	"afterEditDetails": 14,
+	"afterAddAction": 3,
+	"afterAddDetail": 14,
+	"whereTabs": [
+		{}
+	],
+	"eventHandlers": [
+		{
+			"eventId": "EVENT_BEFORESHOW_VIEW",
+			"pageType": "view",
+			"code": "//hide cdd check result\nif($values['sls_result']==\"\")\n{\n$pageObject->hideItem(\"text1\");\n$pageObject->hideItem(\"integrated_edit_field47\");\n$pageObject->hideItem(\"integrated_edit_field48\");\n$pageObject->hideItem(\"integrated_edit_field49\");\n$pageObject->hideItem(\"integrated_edit_field50\");\n}\n\n//hide details based on cdd results\nif ($values[\"cdd_result\"]==\"\")\n{\n$xt->assign(\"details_cdd_measures\",false);\n$xt->assign(\"details_pps_check\",false);\n$xt->assign(\"details_un_sanction_check\",false);\n$xt->assign(\"details_str\",false);\n}\n//end hide\n\n$xt->assign(\"edit_button\", true);\n$xt->assign(\"send_button\", true);\n$xt->assign(\"buttons-container1\", true);\n\nif( $_SESSION[\"UserID\"] == \"Guest\")\n{\n$xt->assign(\"back_button\", false);\n$xt->assign(\"edit_button\", false);\n$xt->assign(\"send_button\", false);\n}\n//hide edit if status close\nif($values[\"status_status\"]==\"Complete\")\n$xt->assign(\"edit_button\", false);\n//end hide\n\n$xt->assign(\"editid1_value\", $values['id']);\n\n\nif (!$values[\"land\"])\n$pageObject->hideField(\"land_unit\");\n\nif (!$values[\"built_up\"])\n$pageObject->hideField(\"built_up_unit\");"
+		},
+		{
+			"eventId": "EVENT_JS_ONLOAD",
+			"pageType": "view",
+			"code": "var ctrlCat = Runner.getControl(pageid, 'category');\n//var ctrlSubCat = Runner.getControl(pageid, 'sub_category');\nvar ctrlRepresent = Runner.getControl(pageid, 'representing');\nvar ctrlMarketing = Runner.getControl(pageid, 'marketing_rights');\nvar ctrlSalePrice = Runner.getControl(pageid, 'sale_price');\nvar ctrlValuation = Runner.getControl(pageid, 'valuation_price');\nvar ctrlOption = Runner.getControl(pageid, 'option_money');\nvar ctrlOtpDate = Runner.getControl(pageid, 'otp_date');\nvar ctrlOtpExeDate = Runner.getControl(pageid, 'option_exercise_date');\nvar ctrlEstCompletion = Runner.getControl(pageid, 'est_completion_date');\nvar ctrlSpExeDate = Runner.getControl(pageid, 'sp_execution_date');\nvar ctrlLOI = Runner.getControl(pageid, 'loi_date');\nvar ctrlRental = Runner.getControl(pageid, 'rental_price');\nvar ctrlRentPriceType = Runner.getControl(pageid, 'rental_price_type');\nvar ctrlTADate = Runner.getControl(pageid, 'ta_date');\nvar ctrlLeaseDuration = Runner.getControl(pageid, 'lease_duration_no');\nvar ctrlLeaseDuUnit = Runner.getControl(pageid, 'lease_duration_unit');\nvar ctrlLeaseStart = Runner.getControl(pageid, 'lease_start_date');\nvar ctrlLeaseEnd = Runner.getControl(pageid, 'lease_expiry');\nvar ctrlUnit = Runner.getControl(pageid, 'comm_unit');\nvar ctrlPercent = Runner.getControl(pageid, 'comm_percent');\nvar ctrlAmount = Runner.getControl(pageid, 'comm_amt');\nvar ctrlTransacted = Runner.getControl(pageid, 'transacted_price');\nvar ctrlEarned = Runner.getControl(pageid, 'comm_earned');\nvar ctrlGst = Runner.getControl(pageid, 'gst');\nvar ctrlGross = Runner.getControl(pageid, 'comm_gross');\nvar ctrlGstPayable = Runner.getControl(pageid, 'gst_payable');\nvar ctrlGstInclusive = Runner.getControl(pageid, 'gst_inclusive');\nvar ctrlCommEarnedAgency = Runner.getControl(pageid, 'comm_earned_agency');\nvar ctrlGstAgency = Runner.getControl(pageid, 'gst_agency');\nvar ctrlCommGrossAgency = Runner.getControl(pageid, 'comm_gross_agency');\nvar ctrlSalespersonName = Runner.getControl(pageid, 'salesperson_name');\nvar ctrlCommEarnedSalesperson = Runner.getControl(pageid, 'comm_earned_salesperson');\nvar ctrlCommEarnedPercentSalesperson = Runner.getControl(pageid, 'comm_earned_percent_salesperson');\nvar ctrlRemarks = Runner.getControl(pageid, 'remarks');\nvar ctrlManageFee = Runner.getControl(pageid, 'management_fee');\nvar ctrlAgency = Runner.getControl(pageid, 'agency');\n//var ctrlCommenceDate = Runner.getControl(pageid, 'commencement_date');\n//var ctrlEndDate = Runner.getControl(pageid, 'end_date');\nvar ctrlConsultFee = Runner.getControl(pageid, 'consultation_fee');\nvar ctrlServCommence = Runner.getControl(pageid, 'service_commencement');\nvar ctrlServComplete = Runner.getControl(pageid, 'service_completion');\nvar ctrlResult = Runner.getControl(pageid, 'result');\n\nif(ctrlCat.getValue()=='SALE')\n{\npageObj.toggleItem(\"sale_info_section\", true );\npageObj.toggleItem(\"rental_info_section\", false );\npageObj.toggleItem(\"jtc_lease_info_section\", false ); \npageObj.toggleItem(\"gross_mag_fee_label\", false );\npageObj.toggleItem(\"mag_amt\", false ); \npageObj.toggleItem(\"net_mag_fee_label\", false ); \npageObj.toggleItem(\"net_mag_fee\", false ); \n\npageObj.showField(\"comm_percent\");\n} \n\nif (ctrlCat.getValue()== 'RENTAL'||ctrlCat.getValue()== 'ASSIGNMENT'||ctrlCat.getValue() == 'ROOM RENTAL')\n{\npageObj.toggleItem(\"sale_info_section\", false );\npageObj.toggleItem(\"rental_info_section\", true );\npageObj.toggleItem(\"jtc_lease_info_section\", false ); \npageObj.toggleItem(\"gross_mag_fee_label\", false );\npageObj.toggleItem(\"mag_amt\", false ); \npageObj.toggleItem(\"net_mag_fee_label\", false ); \npageObj.toggleItem(\"net_mag_fee\", false ); \n\npageObj.hideField(\"agency\");\npageObj.hideField(\"agency_cea\");\npageObj.hideField(\"management_fee\");\npageObj.hideField(\"comm_percent\");\n}\t\n\nif (ctrlCat.getValue()== 'PROPERTY MANAGEMENT')\n{\npageObj.toggleItem(\"sale_info_section\", false );\npageObj.toggleItem(\"rental_info_section\", true );\npageObj.toggleItem(\"jtc_lease_info_section\", false ); \npageObj.toggleItem(\"comm_to_agent_section\", false ); \npageObj.toggleItem(\"comm_label\", false ); \npageObj.toggleItem(\"comm_amt\", false ); \n//pageObj.toggleItem(\"gross_comm_label\", false ); \n\npageObj.hideField(\"salesperson_name\");\npageObj.hideField(\"cea_reg\");\npageObj.hideField(\"salesperson_email\");\npageObj.hideField(\"marketing_rights\");\npageObj.hideField(\"ta_date\");\npageObj.hideField(\"loi_date\");\npageObj.toggleItem(\"lease_duration\", false ); \n//pageObj.hideField(\"lease_duration_no\");\n//pageObj.hideField(\"lease_duration_unit\");\npageObj.hideField(\"comm_percent\");\npageObj.hideField(\"comm_unit\");\npageObj.hideField(\"transacted_price\");\n}\t\nif (ctrlCat.getValue()== 'JTC LEASE MANAGEMENT')\n{\npageObj.toggleItem(\"sale_info_section\", false );\npageObj.toggleItem(\"rental_info_section\", false );\npageObj.toggleItem(\"jtc_lease_info_section\", true ); \npageObj.toggleItem(\"gross_mag_fee_label\", false );\npageObj.toggleItem(\"mag_amt\", false ); \npageObj.toggleItem(\"net_mag_fee_label\", false ); \npageObj.toggleItem(\"net_mag_fee\", false ); \n\npageObj.hideField(\"comm_percent\");\npageObj.hideField(\"transacted_price\");\npageObj.hideField(\"comm_unit\");\n}\t\n\n//tenant email required on condition\nvar ctrlReminderTenant = Runner.getControl(pageid, 'reminder_tenant');\nvar ctrlReminderTenantEmail = Runner.getControl(pageid, 'reminder_tenant_email');\n\nif (ctrlReminderTenant.getValue() == \"Yes\") \n{\npageObj.showField(\"reminder_tenant_email\");\n}\nif (ctrlReminderTenant.getValue() == \"No\") \n{\npageObj.hideField(\"reminder_tenant_email\");\n}\n\n//hide controls in property info\nvar ctrlPropType = Runner.getControl(pageid, 'prop_type');\nvar ctrlBuiltUp = Runner.getControl(pageid, 'builtup');\nvar ctrlBedroom = Runner.getControl(pageid, 'no_bedrooms');\nvar ctrlBathroom = Runner.getControl(pageid, 'no_bathrooms');\nvar ctrlLand = Runner.getControl(pageid, 'landland');\n\n\nif(ctrlPropType.getValue()== 'HDB APARTMENT' || ctrlPropType.getValue() == 'APARTMENT / CONDO')\n{\npageObj.showField(\"builtup\");\npageObj.showField(\"no_bedrooms\");\npageObj.showField(\"no_bathrooms\");\npageObj.hideField(\"landland\");\npageObj.toggleItem(\"landland\", false );\n} \n\nif (ctrlBuiltUp.getValue()=='')\nctrlBuiltUp.setValue('-');\nif (ctrlBedroom.getValue()=='')\nctrlBedroom.setValue('-');\nif (ctrlBathroom.getValue()=='')\nctrlBathroom.setValue('-');\n\nif (ctrlPropType.getValue()== 'LANDED HOUSE')\n{\npageObj.showField(\"builtup\");\npageObj.showField(\"no_bedrooms\");\npageObj.showField(\"no_bathrooms\");\npageObj.showField(\"landland\");\n\n}\t\n\nif (ctrlBuiltUp.getValue()=='')\nctrlBuiltUp.setValue('-');\nif (ctrlBedroom.getValue()=='')\nctrlBedroom.setValue('-');\nif (ctrlBathroom.getValue()=='')\nctrlBathroom.setValue('-');\nif (ctrlLand.getValue()=='')\nctrlLand.setValue('-');\n\nif (ctrlPropType.getValue()== 'INDUSTRIAL')\n{\npageObj.showField(\"builtup\");\npageObj.hideField(\"no_bedrooms\");\npageObj.hideField(\"no_bathrooms\");\npageObj.showField(\"landland\");\n\n}\n\nif (ctrlBuiltUp.getValue()=='')\nctrlBuiltUp.setValue('-');\nif (ctrlLand.getValue()=='')\nctrlLand.setValue('-');\n\nif (ctrlPropType.getValue()== 'OFFICE'||ctrlPropType.getValue() == 'RETAIL')\n{\npageObj.showField(\"builtup\");\npageObj.hideField(\"no_bedrooms\");\npageObj.showField(\"no_bathrooms\");\npageObj.hideField(\"landland\");\npageObj.toggleItem(\"landland\", false );\n}\n\nif (ctrlBuiltUp.getValue()=='')\nctrlBuiltUp.setValue('-');\nif (ctrlBathroom.getValue()=='')\nctrlBathroom.setValue('-');\n\nif (ctrlPropType.getValue()== 'LAND')\n{\npageObj.hideField(\"builtup\");\npageObj.hideField(\"no_bedrooms\");\npageObj.hideField(\"no_bathrooms\");\npageObj.showField(\"landland\");\n\n}\n\nif (ctrlLand.getValue()=='')\nctrlLand.setValue('-');\n\n\nif (ctrlRemarks.getValue()== '')\n{\npageObj.hideField(\"remarks\");\t\n}\n\n//hide CDD and prescribed form section\npageObj.toggleItem(\"cdd_section\", false ); \npageObj.toggleItem(\"details_form1\", false ); \npageObj.toggleItem(\"details_form2\", false ); \npageObj.toggleItem(\"details_form3\", false ); \npageObj.toggleItem(\"details_form4\", false ); \npageObj.toggleItem(\"details_form5\", false ); \npageObj.toggleItem(\"details_form6\", false ); \npageObj.toggleItem(\"details_form7\", false ); \npageObj.toggleItem(\"details_form8\", false ); \n\n// ===== Scroll to Top ==== \n$(window).scroll(function() {\n    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px\n        $('#return-to-top').fadeIn(200);    // Fade in the arrow\n    } else {\n        $('#return-to-top').fadeOut(200);   // Else fade out the arrow\n    }\n});\n$('#return-to-top').click(function() {      // When arrow is clicked\n    $('body,html').animate({\n        scrollTop : 0                       // Scroll to top of body\n    }, 500);\n});"
+		},
+		{
+			"eventId": "EVENT_JS_ONLOAD",
+			"pageType": "list",
+			"code": "//retain scroll position after reload\n/*\ndocument.addEventListener(\"DOMContentLoaded\", function (event) {\n        var scrollpos = sessionStorage.getItem('scrollpos');\n        if (scrollpos) {\n            window.scrollTo(0, scrollpos);\n            sessionStorage.removeItem('scrollpos');\n        }\n    });\n\n    window.addEventListener(\"beforeunload\", function (e) {\n        sessionStorage.setItem('scrollpos', window.scrollY);\n    });\n*/\n// Place event code here.\n// Use \"Add Action\" button to add code snippets.    \n\n// ===== Scroll to Top ==== \n$(window).scroll(function() {\nif ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px\n$('#return-to-top').fadeIn(200);    // Fade in the arrow\n} else {\n$('#return-to-top').fadeOut(200);   // Else fade out the arrow\n}\n});\n$('#return-to-top').click(function() {      // When arrow is clicked\n$('body,html').animate({\nscrollTop : 0                       // Scroll to top of body\n}, 500);\n});\n//reload without losing scroll position\nwindow.addEventListener('load', function () {\n      if (window.location.hash) {\n        var elements = document.querySelectorAll(window.location.hash);\n        if (elements[0]) {\n          elements[0].scrollIntoView({\n            behavior: 'smooth', // smooth scroll\n            block: 'start'\n          });\n        }\n      }\n    })"
+		},
+		{
+			"eventId": "EVENT_BEFOREQUERY_LIST",
+			"pageType": "list",
+			"code": "if (@$_REQUEST[\"a\"]!=\"search\" && @$_REQUEST[\"a\"]!=\"advsearch\" && @$_REQUEST[\"a\"]!=\"showall\")\n$strWhereClause = whereAdd($strWhereClause,\"category='PROPERTY MANAGEMENT'\");\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
+		}
+	],
+	"sortByFields": {
+		"sortOrder": []
+	},
+	"pages": [
+		{
+			"id": "add",
+			"type": "add",
+			"layoutId": "nomenu",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "add-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_message",
+								"add_save1",
+								"add_back_list1",
+								"add_reset1"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "add-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_save",
+								"add_reset",
+								"add_back_list",
+								"add_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "add-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"add_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c8"
+								},
+								{
+									"cell": "c9"
+								},
+								{
+									"cell": "c10"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c5"
+								},
+								{
+									"cell": "c6"
+								},
+								{
+									"cell": "c7"
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 3
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c3",
+									"colspan": 3
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"tx_info_section",
+								"prop_info_section"
+							],
+							"field": null
+						},
+						"c5": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field51"
+							],
+							"field": "status_status"
+						},
+						"c6": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field2"
+							],
+							"field": "status_status"
+						},
+						"c7": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field52"
+							],
+							"field": "status_status"
+						},
+						"c8": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field49"
+							],
+							"field": "status_status"
+						},
+						"c9": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field1"
+							],
+							"field": "status_status"
+						},
+						"c10": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field50"
+							],
+							"field": "status_status"
+						},
+						"c3": {
+							"model": "c1",
+							"items": [
+								"snippet"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c13"
+								},
+								{
+									"cell": "c14"
+								},
+								{
+									"cell": "c15"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c37",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2",
+									"colspan": 3
+								}
+							]
+						}
+					],
+					"cells": {
+						"c13": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field55"
+							],
+							"field": "cea_reg"
+						},
+						"c14": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field4"
+							],
+							"field": "cea_reg"
+						},
+						"c15": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field56"
+							],
+							"field": "cea_reg"
+						},
+						"c37": {
+							"model": "c2",
+							"items": [
+								"rental_info_section"
+							],
+							"field": "rental_price",
+							"align": "left"
+						},
+						"c": {
+							"model": "c2",
+							"items": [
+								"sale_info_section"
+							],
+							"field": "rental_price"
+						},
+						"c1": {
+							"model": "c2",
+							"items": [
+								"management_info_section"
+							],
+							"field": "rental_price"
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"jtc_lease_info_section"
+							],
+							"field": "rental_price"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section1": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c4"
+								},
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c5"
+								},
+								{
+									"cell": "c3"
+								},
+								{
+									"cell": "c6"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c7"
+								},
+								{
+									"cell": "c8"
+								},
+								{
+									"cell": "c9"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c10"
+								},
+								{
+									"cell": "c11"
+								},
+								{
+									"cell": "c12"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c13"
+								},
+								{
+									"cell": "c14"
+								},
+								{
+									"cell": "c15"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c25"
+								},
+								{
+									"cell": "c26"
+								},
+								{
+									"cell": "c27"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c28"
+								},
+								{
+									"cell": "c29"
+								},
+								{
+									"cell": "c30"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c34"
+								},
+								{
+									"cell": "c35"
+								},
+								{
+									"cell": "c36"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c4": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field71"
+							],
+							"field": "prop_address"
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field34"
+							],
+							"field": "prop_address"
+						},
+						"c": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field72"
+							],
+							"field": "prop_address"
+						},
+						"c5": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field95"
+							],
+							"field": "prop_type"
+						},
+						"c3": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field35"
+							],
+							"field": "prop_type"
+						},
+						"c6": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field96"
+							],
+							"field": "prop_type"
+						},
+						"c7": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field115"
+							],
+							"field": "Prop_kind"
+						},
+						"c8": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field36"
+							],
+							"field": "Prop_kind"
+						},
+						"c9": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field116"
+							],
+							"field": "Prop_kind"
+						},
+						"c10": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field117"
+							],
+							"field": "prop_name"
+						},
+						"c11": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field37"
+							],
+							"field": "prop_name"
+						},
+						"c12": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field118"
+							],
+							"field": "prop_name"
+						},
+						"c13": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field119"
+							],
+							"field": "land"
+						},
+						"c14": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field38"
+							],
+							"field": "land"
+						},
+						"c15": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field120"
+							],
+							"field": "land"
+						},
+						"c25": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field127"
+							],
+							"field": "no_bedrooms"
+						},
+						"c26": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field42"
+							],
+							"field": "no_bedrooms"
+						},
+						"c27": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field128"
+							],
+							"field": "no_bedrooms"
+						},
+						"c28": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field129"
+							],
+							"field": "no_bathrooms"
+						},
+						"c29": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field43"
+							],
+							"field": "no_bathrooms"
+						},
+						"c30": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field130"
+							],
+							"field": "no_bathrooms"
+						},
+						"c34": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field133"
+							],
+							"field": "tenure"
+						},
+						"c35": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field45"
+							],
+							"field": "tenure"
+						},
+						"c36": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field134"
+							],
+							"field": "tenure"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section2": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c4"
+								},
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c4": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field69"
+							],
+							"field": "rental_price"
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field11"
+							],
+							"field": "rental_price"
+						},
+						"c": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field122"
+							],
+							"field": "rental_price"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section3": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c26"
+								},
+								{
+									"cell": "c27"
+								},
+								{
+									"cell": "c28"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c26": {
+							"model": "c4",
+							"items": [],
+							"field": "sale_price"
+						},
+						"c27": {
+							"model": "c2",
+							"items": [],
+							"field": "sale_price"
+						},
+						"c28": {
+							"model": "c2",
+							"items": [],
+							"field": "sale_price"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section4": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c15"
+								},
+								{
+									"cell": "c16"
+								},
+								{
+									"cell": "c17"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c15": {
+							"model": "c4",
+							"items": [],
+							"field": "management_fee"
+						},
+						"c16": {
+							"model": "c2",
+							"items": [],
+							"field": "management_fee"
+						},
+						"c17": {
+							"model": "c2",
+							"items": [],
+							"field": "management_fee"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section5": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c7"
+								},
+								{
+									"cell": "c8"
+								},
+								{
+									"cell": "c9"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c7": {
+							"model": "c4",
+							"items": [],
+							"field": "service_completion"
+						},
+						"c8": {
+							"model": "c2",
+							"items": [],
+							"field": "service_completion"
+						},
+						"c9": {
+							"model": "c2",
+							"items": [],
+							"field": "service_completion"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				}
+			},
+			"items": {
+				"add_header": {
+					"type": "add_header"
+				},
+				"add_back_list": {
+					"type": "add_back_list"
+				},
+				"add_cancel": {
+					"type": "add_cancel"
+				},
+				"add_message": {
+					"type": "add_message"
+				},
+				"add_save": {
+					"type": "add_save",
+					"label": {
+						"type": 0,
+						"text": "Save & proceed to add Parties Involved"
+					},
+					"buttonStyle": "success"
+				},
+				"add_reset": {
+					"type": "add_reset"
+				},
+				"integrated_edit_field1": {
+					"field": "date",
+					"type": "edit_field"
+				},
+				"integrated_edit_field2": {
+					"field": "category",
+					"type": "edit_field"
+				},
+				"integrated_edit_field4": {
+					"field": "cea_reg",
+					"type": "edit_field"
+				},
+				"integrated_edit_field11": {
+					"field": "rental_price",
+					"type": "edit_field",
+					"width": "200px"
+				},
+				"integrated_edit_field34": {
+					"field": "prop_address",
+					"type": "edit_field"
+				},
+				"integrated_edit_field35": {
+					"field": "prop_type",
+					"type": "edit_field"
+				},
+				"integrated_edit_field36": {
+					"field": "Prop_kind",
+					"type": "edit_field"
+				},
+				"integrated_edit_field37": {
+					"field": "prop_name",
+					"type": "edit_field"
+				},
+				"integrated_edit_field38": {
+					"field": "land",
+					"type": "edit_field",
+					"width": "200px"
+				},
+				"integrated_edit_field42": {
+					"field": "no_bedrooms",
+					"type": "edit_field"
+				},
+				"integrated_edit_field43": {
+					"field": "no_bathrooms",
+					"type": "edit_field"
+				},
+				"integrated_edit_field45": {
+					"field": "tenure",
+					"type": "edit_field"
+				},
+				"add_save1": {
+					"type": "add_save",
+					"label": {
+						"type": 0,
+						"text": "Save & proceed to add Parties Involved"
+					},
+					"buttonStyle": "success"
+				},
+				"add_back_list1": {
+					"type": "add_back_list"
+				},
+				"add_reset1": {
+					"type": "add_reset"
+				},
+				"prop_info_section": {
+					"type": "section",
+					"title": {
+						"text": "Property Info",
+						"type": 0
+					},
+					"initiallyClosed": false,
+					"location": "section1",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"tx_info_section": {
+					"type": "section",
+					"title": {
+						"text": "Transaction Info",
+						"type": 0
+					},
+					"initiallyClosed": false,
+					"location": "section",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field49": {
+					"type": "edit_field_label",
+					"field": "date"
+				},
+				"integrated_edit_field50": {
+					"type": "edit_field_tooltip",
+					"field": "date"
+				},
+				"integrated_edit_field51": {
+					"type": "edit_field_label",
+					"field": "category"
+				},
+				"integrated_edit_field52": {
+					"type": "edit_field_tooltip",
+					"field": "category"
+				},
+				"integrated_edit_field55": {
+					"type": "edit_field_label",
+					"field": "cea_reg",
+					"label": {
+						"field": "cea_reg",
+						"table": "transactions",
+						"type": 3
+					}
+				},
+				"integrated_edit_field56": {
+					"type": "edit_field_tooltip",
+					"field": "cea_reg"
+				},
+				"integrated_edit_field69": {
+					"type": "edit_field_label",
+					"field": "rental_price"
+				},
+				"integrated_edit_field71": {
+					"type": "edit_field_label",
+					"field": "prop_address"
+				},
+				"integrated_edit_field72": {
+					"type": "edit_field_tooltip",
+					"field": "prop_address"
+				},
+				"integrated_edit_field95": {
+					"type": "edit_field_label",
+					"field": "prop_type"
+				},
+				"integrated_edit_field96": {
+					"type": "edit_field_tooltip",
+					"field": "prop_type"
+				},
+				"integrated_edit_field115": {
+					"type": "edit_field_label",
+					"field": "Prop_kind"
+				},
+				"integrated_edit_field116": {
+					"type": "edit_field_tooltip",
+					"field": "Prop_kind"
+				},
+				"integrated_edit_field117": {
+					"type": "edit_field_label",
+					"field": "prop_name"
+				},
+				"integrated_edit_field118": {
+					"type": "edit_field_tooltip",
+					"field": "prop_name"
+				},
+				"integrated_edit_field119": {
+					"type": "edit_field_label",
+					"field": "land"
+				},
+				"integrated_edit_field120": {
+					"type": "edit_field_tooltip",
+					"field": "land"
+				},
+				"integrated_edit_field122": {
+					"type": "edit_field_tooltip",
+					"field": "rental_price"
+				},
+				"integrated_edit_field127": {
+					"type": "edit_field_label",
+					"field": "no_bedrooms"
+				},
+				"integrated_edit_field128": {
+					"type": "edit_field_tooltip",
+					"field": "no_bedrooms"
+				},
+				"integrated_edit_field129": {
+					"type": "edit_field_label",
+					"field": "no_bathrooms"
+				},
+				"integrated_edit_field130": {
+					"type": "edit_field_tooltip",
+					"field": "no_bathrooms"
+				},
+				"integrated_edit_field133": {
+					"type": "edit_field_label",
+					"field": "tenure"
+				},
+				"integrated_edit_field134": {
+					"type": "edit_field_tooltip",
+					"field": "tenure"
+				},
+				"rental_info_section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Rental Description"
+					},
+					"location": "section2",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"sale_info_section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Sales Description"
+					},
+					"location": "section3",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"management_info_section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Agency Info"
+					},
+					"location": "section4",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"jtc_lease_info_section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": "Service Description"
+					},
+					"location": "section5",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"snippet": {
+					"type": "snippet",
+					"eventId": "Return_to_top",
+					"label": {
+						"text": "Return to top",
+						"type": 0
+					},
+					"eventGid": 2520389350
+				}
+			},
+			"version": 14,
+			"pageAlign": "left",
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "edit",
+			"type": "edit",
+			"layoutId": "leftbar",
+			"disabled": 1,
+			"default": 4,
+			"forms": {
+				"above-grid": {
+					"modelId": "edit-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_message"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"edit_save1",
+								"edit_back_list1",
+								"edit_close1",
+								"edit_view1"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "edit-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_save",
+								"edit_back_list",
+								"edit_close",
+								"snippet"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "leftbar-top-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"expand_menu_button",
+								"collapse_button"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "leftbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c0"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c0": {
+							"model": "c0",
+							"items": [
+								"logo"
+							]
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"side_nav_snippet"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "edit-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c11",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c17"
+								},
+								{
+									"cell": "c18"
+								},
+								{
+									"cell": "c19"
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "c4"
+								},
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c12",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 3
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c21",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c9",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c22",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c23",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c7",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c24",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c25",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c26",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c3",
+									"colspan": 3
+								}
+							]
+						}
+					],
+					"cells": {
+						"c4": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field75"
+							],
+							"field": "status_status",
+							"width": "30%"
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field2"
+							],
+							"field": "status_status",
+							"width": "30%"
+						},
+						"c": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field76"
+							],
+							"field": "status_status",
+							"width": "40%"
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"tx_section"
+							],
+							"field": null
+						},
+						"c11": {
+							"model": "c4",
+							"items": [
+								"text"
+							],
+							"align": "left"
+						},
+						"c17": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field73"
+							],
+							"field": "status_status",
+							"width": "30%"
+						},
+						"c18": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field1"
+							],
+							"field": "status_status",
+							"width": "30%"
+						},
+						"c19": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field74"
+							],
+							"field": "status_status",
+							"width": "40%"
+						},
+						"c3": {
+							"model": "c1",
+							"items": [
+								"comm_section"
+							],
+							"field": null
+						},
+						"c7": {
+							"model": "c1",
+							"items": [
+								"cdd_section"
+							],
+							"field": null
+						},
+						"c9": {
+							"model": "c1",
+							"items": [
+								"prop_section"
+							],
+							"field": null
+						},
+						"c12": {
+							"model": "c4",
+							"items": [
+								"text1"
+							],
+							"align": "left"
+						},
+						"c21": {
+							"model": "c1",
+							"items": [
+								"text2"
+							]
+						},
+						"c22": {
+							"model": "c1",
+							"items": [
+								"text3",
+								"details_preview_pt_involved"
+							],
+							"field": null,
+							"useFullWidth": true
+						},
+						"c23": {
+							"model": "c1",
+							"items": [
+								"text4"
+							],
+							"useFullWidth": true
+						},
+						"c24": {
+							"model": "c1",
+							"items": [
+								"text6",
+								"details_form1",
+								"details_form2",
+								"details_form3",
+								"details_form4",
+								"details_form5",
+								"details_form6",
+								"details_form7",
+								"details_form8"
+							],
+							"field": null,
+							"useFullWidth": true
+						},
+						"c25": {
+							"model": "c1",
+							"items": [
+								"text7",
+								"details_preview5"
+							],
+							"field": null,
+							"useFullWidth": true
+						},
+						"c26": {
+							"model": "c1",
+							"items": [
+								"text8"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c13"
+								},
+								{
+									"cell": "c14"
+								},
+								{
+									"cell": "c15"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c104",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2",
+									"colspan": 3
+								}
+							]
+						}
+					],
+					"cells": {
+						"c13": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field79"
+							],
+							"field": "cea_reg",
+							"width": "30%"
+						},
+						"c14": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field3"
+							],
+							"field": "cea_reg",
+							"width": "30%"
+						},
+						"c15": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field80"
+							],
+							"field": "cea_reg",
+							"width": "40%"
+						},
+						"c104": {
+							"model": "c4",
+							"items": [
+								"rental_info_section"
+							],
+							"field": "currency",
+							"align": "left"
+						},
+						"c": {
+							"model": "c4",
+							"items": [
+								"sale_info_section"
+							],
+							"field": "currency",
+							"align": "left"
+						},
+						"c2": {
+							"model": "c4",
+							"items": [
+								"jtc_lease_info_section"
+							],
+							"field": "currency",
+							"align": "left"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section7": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c27"
+								},
+								{
+									"cell": "c32"
+								},
+								{
+									"cell": "c35"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c27": {
+							"model": "c4",
+							"items": [
+								"edit_field_label1"
+							],
+							"field": "rental_price",
+							"width": "30%"
+						},
+						"c32": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field10"
+							],
+							"field": "rental_price",
+							"width": "30%"
+						},
+						"c35": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field129"
+							],
+							"field": "rental_price",
+							"width": "40%"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section8": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c19"
+								},
+								{
+									"cell": "c20"
+								},
+								{
+									"cell": "c21"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c19": {
+							"model": "c4",
+							"items": [],
+							"field": "sale_price",
+							"width": "30%"
+						},
+						"c20": {
+							"model": "c2",
+							"items": [],
+							"field": "sale_price",
+							"width": "30%"
+						},
+						"c21": {
+							"model": "c2",
+							"items": [],
+							"field": "sale_price",
+							"width": "40%"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section10": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c10"
+								},
+								{
+									"cell": "c11"
+								},
+								{
+									"cell": "c12"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c10": {
+							"model": "c4",
+							"items": [],
+							"field": "service_commencement",
+							"width": "30%"
+						},
+						"c11": {
+							"model": "c2",
+							"items": [],
+							"field": "service_commencement",
+							"width": "30%"
+						},
+						"c12": {
+							"model": "c2",
+							"items": [],
+							"field": "service_commencement",
+							"width": "40%"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section6": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c10",
+									"colspan": 1
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c55",
+									"colspan": 1
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "c19",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c11",
+									"colspan": 1
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c31",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c41",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c45",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c60",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c19": {
+							"model": "c4",
+							"items": [
+								"gross_fee_label"
+							],
+							"field": "comm_earned",
+							"customCSS": "/* Put  your custom CSS code here */\n\n",
+							"align": "left",
+							"orientation": "horizontal"
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"details_preview2"
+							],
+							"field": null,
+							"useFullWidth": true
+						},
+						"c31": {
+							"model": "c1",
+							"items": [
+								"details_preview6"
+							],
+							"field": null,
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"useFullWidth": true
+						},
+						"c41": {
+							"model": "c1",
+							"items": [
+								"details_preview3"
+							],
+							"field": null,
+							"useFullWidth": true
+						},
+						"c45": {
+							"model": "c4",
+							"items": [
+								"net_mag_fee"
+							],
+							"field": "comm_earned_salesperson",
+							"customCSS": "/* Put  your custom CSS code here */\n\n\n",
+							"align": "left",
+							"orientation": "horizontal"
+						},
+						"c60": {
+							"model": "c4",
+							"items": [
+								"comm_to_agent_section"
+							],
+							"field": "comm_nett_salesperson",
+							"align": "left"
+						},
+						"c55": {
+							"model": "c4",
+							"items": [
+								"mag_fee_label"
+							],
+							"field": "comm_unit",
+							"customCSS": "/* Put  your custom CSS code here */\n\n\n",
+							"orientation": "horizontal",
+							"align": "left"
+						},
+						"c10": {
+							"model": "c4",
+							"items": [
+								"text10"
+							],
+							"field": "transacted_price",
+							"useFullWidth": true,
+							"align": "left"
+						},
+						"c11": {
+							"model": "c1",
+							"items": [
+								"text11"
+							],
+							"field": null,
+							"useFullWidth": true
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section3": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c4",
+									"colspan": 1
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c8",
+									"colspan": 1
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2",
+									"colspan": 1
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 1
+								}
+							]
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"check_cdd_text"
+							],
+							"useFullWidth": true,
+							"align": "left"
+						},
+						"c4": {
+							"model": "c3",
+							"items": [
+								"details_preview_cdd"
+							],
+							"useFullWidth": true,
+							"customCSS": "/* Put  your custom CSS code here */\n\n"
+						},
+						"c1": {
+							"model": "c3",
+							"items": [
+								"str"
+							]
+						},
+						"c2": {
+							"model": "c3",
+							"items": [
+								"cdd_measure"
+							]
+						},
+						"c8": {
+							"model": "c3",
+							"items": [
+								"check_result_text"
+							],
+							"useFullWidth": true,
+							"align": "left",
+							"customCSS": "/* Put  your custom CSS code here */\n\n"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section1": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c4"
+								},
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c5"
+								},
+								{
+									"cell": "c3"
+								},
+								{
+									"cell": "c6"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c7"
+								},
+								{
+									"cell": "c8"
+								},
+								{
+									"cell": "c9"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c10"
+								},
+								{
+									"cell": "c11"
+								},
+								{
+									"cell": "c12"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c13"
+								},
+								{
+									"cell": "c14"
+								},
+								{
+									"cell": "c15"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c25"
+								},
+								{
+									"cell": "c26"
+								},
+								{
+									"cell": "c27"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c28"
+								},
+								{
+									"cell": "c29"
+								},
+								{
+									"cell": "c30"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c34"
+								},
+								{
+									"cell": "c35"
+								},
+								{
+									"cell": "c36"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c4": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field133"
+							],
+							"field": "prop_address",
+							"width": "30%"
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field34"
+							],
+							"field": "prop_address",
+							"width": "30%"
+						},
+						"c": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field134"
+							],
+							"field": "prop_address",
+							"width": "40%"
+						},
+						"c5": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field135"
+							],
+							"field": "prop_type",
+							"width": "30%"
+						},
+						"c3": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field35"
+							],
+							"field": "prop_type",
+							"width": "30%"
+						},
+						"c6": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field136"
+							],
+							"field": "prop_type",
+							"width": "40%"
+						},
+						"c7": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field137"
+							],
+							"field": "Prop_kind",
+							"width": "30%"
+						},
+						"c8": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field36"
+							],
+							"field": "Prop_kind",
+							"width": "30%"
+						},
+						"c9": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field138"
+							],
+							"field": "Prop_kind",
+							"width": "40%"
+						},
+						"c10": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field139"
+							],
+							"field": "prop_name",
+							"width": "30%"
+						},
+						"c11": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field37"
+							],
+							"field": "prop_name",
+							"width": "30%"
+						},
+						"c12": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field140"
+							],
+							"field": "prop_name",
+							"width": "40%"
+						},
+						"c13": {
+							"model": "c4",
+							"items": [
+								"edit_field_label4"
+							],
+							"field": "land",
+							"width": "30%"
+						},
+						"c14": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field38"
+							],
+							"field": "land",
+							"width": "30%"
+						},
+						"c15": {
+							"model": "c2",
+							"items": [],
+							"width": "40%"
+						},
+						"c25": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field141"
+							],
+							"field": "no_bedrooms",
+							"width": "30%"
+						},
+						"c26": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field42"
+							],
+							"field": "no_bedrooms",
+							"width": "30%"
+						},
+						"c27": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field142"
+							],
+							"field": "no_bedrooms",
+							"width": "40%"
+						},
+						"c28": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field143"
+							],
+							"field": "no_bathrooms",
+							"width": "30%"
+						},
+						"c29": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field43"
+							],
+							"field": "no_bathrooms",
+							"width": "30%"
+						},
+						"c30": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field144"
+							],
+							"field": "no_bathrooms",
+							"width": "40%"
+						},
+						"c34": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field147"
+							],
+							"field": "tenure",
+							"width": "30%"
+						},
+						"c35": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field45"
+							],
+							"field": "tenure",
+							"width": "30%"
+						},
+						"c36": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field148"
+							],
+							"field": "tenure",
+							"width": "40%"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section2": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c9",
+									"colspan": 1
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"text5"
+							],
+							"useFullWidth": true
+						},
+						"c9": {
+							"model": "c1",
+							"items": [
+								"text12"
+							],
+							"useFullWidth": true
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 3,
+					"inlineLabels": true,
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"edit_header": {
+					"type": "edit_header"
+				},
+				"edit_message": {
+					"type": "edit_message"
+				},
+				"edit_back_list1": {
+					"type": "edit_back_list"
+				},
+				"edit_save1": {
+					"type": "edit_save",
+					"label": {
+						"type": 0,
+						"text": "Save & view"
+					}
+				},
+				"edit_close1": {
+					"type": "edit_close"
+				},
+				"edit_view1": {
+					"type": "edit_view"
+				},
+				"edit_save": {
+					"type": "edit_save",
+					"label": {
+						"type": 0,
+						"text": "Save & view record"
+					}
+				},
+				"edit_back_list": {
+					"type": "edit_back_list",
+					"customCSS": "/* Put  your custom CSS code here */\n\n\n"
+				},
+				"edit_close": {
+					"type": "edit_close"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"edit_reset",
+						"edit_view"
+					],
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+				},
+				"edit_reset": {
+					"type": "edit_reset"
+				},
+				"edit_view": {
+					"type": "edit_view"
+				},
+				"integrated_edit_field75": {
+					"type": "edit_field_label",
+					"field": "category"
+				},
+				"integrated_edit_field2": {
+					"field": "category",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"width": "350px"
+				},
+				"integrated_edit_field76": {
+					"type": "edit_field_tooltip",
+					"field": "category"
+				},
+				"tx_section": {
+					"type": "section",
+					"title": {
+						"text": "Transaction Info",
+						"type": 0
+					},
+					"initiallyClosed": true,
+					"location": "section",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field79": {
+					"type": "edit_field_label",
+					"field": "cea_reg"
+				},
+				"integrated_edit_field3": {
+					"field": "cea_reg",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"label": {
+						"field": "cea_reg",
+						"table": "transactions",
+						"type": 3
+					}
+				},
+				"integrated_edit_field80": {
+					"type": "edit_field_tooltip",
+					"field": "cea_reg"
+				},
+				"text1": {
+					"type": "text",
+					"label": {
+						"text": "<div id=\"transaction_info\"></div>",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"rental_info_section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": ""
+					},
+					"location": "section7",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field10": {
+					"field": "rental_price",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"width": "200px"
+				},
+				"integrated_edit_field129": {
+					"type": "edit_field_tooltip",
+					"field": "rental_price"
+				},
+				"sale_info_section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": ""
+					},
+					"location": "section8",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"jtc_lease_info_section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": ""
+					},
+					"location": "section10",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"text": {
+					"type": "text",
+					"label": {
+						"text": "<head><SCRIPT src=\"common.js\" type=\"text/javascript\">\n    </SCRIPT></head>",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"integrated_edit_field73": {
+					"type": "edit_field_label",
+					"field": "date"
+				},
+				"integrated_edit_field1": {
+					"field": "date",
+					"type": "edit_field",
+					"updateOnEdit": true
+				},
+				"integrated_edit_field74": {
+					"type": "edit_field_tooltip",
+					"field": "date"
+				},
+				"comm_section": {
+					"type": "section",
+					"title": {
+						"text": "Commission",
+						"type": 0
+					},
+					"initiallyClosed": false,
+					"location": "section6",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"details_preview2": {
+					"type": "details_preview",
+					"table": 1032892372,
+					"items": [],
+					"popup": false,
+					"pageId": "list",
+					"caption": {
+						"page": "list",
+						"table": "cobroke_external_comm",
+						"type": 7
+					},
+					"padding": {
+						"top": "10px"
+					}
+				},
+				"details_preview6": {
+					"type": "details_preview",
+					"table": 2907786722,
+					"items": [],
+					"popup": false,
+					"pageId": "list",
+					"caption": {
+						"page": "list",
+						"table": "external_party_comm",
+						"type": 7
+					}
+				},
+				"details_preview3": {
+					"type": "details_preview",
+					"table": 1141857843,
+					"items": [],
+					"popup": false,
+					"pageId": "list",
+					"caption": {
+						"page": "list",
+						"table": "cobroke_internal_comm",
+						"type": 7
+					}
+				},
+				"text12": {
+					"type": "text",
+					"label": {
+						"text": "Commission To Salesperson",
+						"type": 0
+					},
+					"editedByRte": false,
+					"underline": true,
+					"italic": true
+				},
+				"text10": {
+					"type": "text",
+					"label": {
+						"text": "Gross Commission Receivable",
+						"type": 0
+					},
+					"editedByRte": false,
+					"underline": true,
+					"italic": true
+				},
+				"text11": {
+					"type": "text",
+					"label": {
+						"text": "Commission Payout",
+						"type": 0
+					},
+					"editedByRte": false,
+					"underline": true,
+					"italic": true
+				},
+				"text5": {
+					"type": "text",
+					"label": {
+						"text": "Commission To Agency",
+						"type": 0
+					},
+					"editedByRte": false,
+					"underline": true,
+					"italic": true
+				},
+				"text8": {
+					"type": "text",
+					"label": {
+						"text": "<div id=\"comm\"></div>",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"details_preview5": {
+					"type": "details_preview",
+					"table": 2514156467,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"text6": {
+					"type": "text",
+					"label": {
+						"text": "<div id=\"cea_forms\"></div>",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"cdd_section": {
+					"type": "section",
+					"title": {
+						"text": "Customer Due Diligence (CDD)",
+						"type": 0
+					},
+					"initiallyClosed": false,
+					"location": "section3",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"text4": {
+					"type": "text",
+					"label": {
+						"text": "<div id=\"cdd\"></div>",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"check_cdd_text": {
+					"type": "text",
+					"label": {
+						"text": "It is mandatory to conduct Customer Due Diligence (CDD) for every property transaction. Answer all questions in the Checklist provided here to establish the needs for further actions. A check of Customer's name against the UN Sanction list and the Panama Papers in record will be carried out by system after completion of the Checklist. Results of check will be reflected in below:",
+						"type": 0
+					},
+					"editedByRte": false,
+					"color": "#f97575",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"text3": {
+					"type": "text",
+					"label": {
+						"text": "<div id=\"party_involved\"></div>",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"prop_section": {
+					"type": "section",
+					"title": {
+						"text": "Property Info",
+						"type": 0
+					},
+					"initiallyClosed": true,
+					"location": "section1",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field133": {
+					"type": "edit_field_label",
+					"field": "prop_address"
+				},
+				"integrated_edit_field34": {
+					"field": "prop_address",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"width": "500px"
+				},
+				"integrated_edit_field134": {
+					"type": "edit_field_tooltip",
+					"field": "prop_address"
+				},
+				"integrated_edit_field135": {
+					"type": "edit_field_label",
+					"field": "prop_type"
+				},
+				"integrated_edit_field35": {
+					"field": "prop_type",
+					"type": "edit_field",
+					"updateOnEdit": true
+				},
+				"integrated_edit_field136": {
+					"type": "edit_field_tooltip",
+					"field": "prop_type"
+				},
+				"integrated_edit_field137": {
+					"type": "edit_field_label",
+					"field": "Prop_kind"
+				},
+				"integrated_edit_field36": {
+					"field": "Prop_kind",
+					"type": "edit_field",
+					"updateOnEdit": true
+				},
+				"integrated_edit_field138": {
+					"type": "edit_field_tooltip",
+					"field": "Prop_kind"
+				},
+				"integrated_edit_field139": {
+					"type": "edit_field_label",
+					"field": "prop_name"
+				},
+				"integrated_edit_field37": {
+					"field": "prop_name",
+					"type": "edit_field",
+					"updateOnEdit": true
+				},
+				"integrated_edit_field140": {
+					"type": "edit_field_tooltip",
+					"field": "prop_name"
+				},
+				"edit_field_label4": {
+					"type": "edit_field_label",
+					"field": "land"
+				},
+				"integrated_edit_field38": {
+					"field": "land",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"width": "200px"
+				},
+				"integrated_edit_field141": {
+					"type": "edit_field_label",
+					"field": "no_bedrooms"
+				},
+				"integrated_edit_field42": {
+					"field": "no_bedrooms",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"width": "200px"
+				},
+				"integrated_edit_field142": {
+					"type": "edit_field_tooltip",
+					"field": "no_bedrooms"
+				},
+				"integrated_edit_field143": {
+					"type": "edit_field_label",
+					"field": "no_bathrooms"
+				},
+				"integrated_edit_field43": {
+					"field": "no_bathrooms",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"width": "200px"
+				},
+				"integrated_edit_field144": {
+					"type": "edit_field_tooltip",
+					"field": "no_bathrooms"
+				},
+				"integrated_edit_field147": {
+					"type": "edit_field_label",
+					"field": "tenure"
+				},
+				"integrated_edit_field45": {
+					"field": "tenure",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"width": "200px"
+				},
+				"integrated_edit_field148": {
+					"type": "edit_field_tooltip",
+					"field": "tenure"
+				},
+				"text2": {
+					"type": "text",
+					"label": {
+						"text": "<div id=\"property_info\"></div>",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"logo": {
+					"type": "logo"
+				},
+				"expand_menu_button": {
+					"type": "expand_menu_button"
+				},
+				"collapse_button": {
+					"type": "collapse_button"
+				},
+				"edit_field_label1": {
+					"type": "edit_field_label",
+					"field": "rental_price"
+				},
+				"check_result_text": {
+					"type": "text",
+					"label": {
+						"text": "UN sanction and Panama Papers check results",
+						"type": 0
+					},
+					"editedByRte": false,
+					"italic": true,
+					"underline": true,
+					"customCSS": "/* Put  your custom CSS code here */\n\n\n",
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"cdd_measure": {
+					"type": "details_preview",
+					"table": 2220586172,
+					"items": [],
+					"popup": false,
+					"pageId": "list",
+					"padding": {
+						"top": "10px"
+					}
+				},
+				"str": {
+					"type": "details_preview",
+					"table": 1554949113,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"side_nav_snippet": {
+					"eventId": "transactions_side_nav",
+					"label": {
+						"text": "transactions_side_nav",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 3074801425
+				},
+				"snippet": {
+					"eventId": "Return_to_top",
+					"label": {
+						"text": "Return to top",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 2520389350
+				},
+				"details_form2": {
+					"type": "details_preview",
+					"table": 4242828017,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_form1": {
+					"type": "details_preview",
+					"table": 1710046027,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_form3": {
+					"type": "details_preview",
+					"table": 2346932839,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_form4": {
+					"type": "details_preview",
+					"table": 361222084,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_form5": {
+					"type": "details_preview",
+					"table": 1652621138,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_form6": {
+					"type": "details_preview",
+					"table": 4220104424,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_form7": {
+					"type": "details_preview",
+					"table": 2358156926,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_form8": {
+					"type": "details_preview",
+					"table": 473007087,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_preview_cdd": {
+					"type": "details_preview",
+					"table": 2238441115,
+					"items": [],
+					"popup": false,
+					"pageId": "list",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  margin-bottom:-30px !important;\n}\n"
+				},
+				"details_preview_pt_involved": {
+					"type": "details_preview",
+					"table": 1012154352,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"gross_fee_label": {
+					"type": "text",
+					"label": {
+						"text": "Gross Fee",
+						"type": 0
+					},
+					"editedByRte": false,
+					"bold": true,
+					"padding": {
+						"top": "10px",
+						"right": "20px"
+					}
+				},
+				"mag_fee_label": {
+					"type": "text",
+					"label": {
+						"text": "Management Fee",
+						"type": 0
+					},
+					"editedByRte": false,
+					"bold": true,
+					"padding": {
+						"top": "10px"
+					}
+				},
+				"net_mag_fee": {
+					"type": "text",
+					"label": {
+						"text": "Nett Management Fee",
+						"type": 0
+					},
+					"editedByRte": false,
+					"bold": true,
+					"padding": {
+						"top": "10px"
+					}
+				},
+				"comm_to_agent_section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": ""
+					},
+					"location": "section2",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"text7": {
+					"type": "text",
+					"label": {
+						"text": "<div id=\"docs_upload\"></div>",
+						"type": 0
+					},
+					"editedByRte": false
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "edit1",
+			"type": "edit",
+			"layoutId": "nomenu",
+			"disabled": 1,
+			"default": 3,
+			"forms": {
+				"above-grid": {
+					"modelId": "edit-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_message"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"edit_save1",
+								"edit_back_list1",
+								"edit_close1",
+								"edit_view1"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "edit-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_save",
+								"edit_back_list",
+								"edit_close",
+								"snippet"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "edit-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"edit_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c11",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c17"
+								},
+								{
+									"cell": "c18"
+								},
+								{
+									"cell": "c19"
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "c4"
+								},
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c12",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 3
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c21",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c9",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c22",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c23",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c7",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c24",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c25",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c26",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c3",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c10",
+									"colspan": 3
+								}
+							]
+						}
+					],
+					"cells": {
+						"c4": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field75"
+							],
+							"field": "status_status",
+							"width": "30%"
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field2"
+							],
+							"field": "status_status",
+							"width": "30%"
+						},
+						"c": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field76"
+							],
+							"field": "status_status",
+							"width": "40%"
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"tx_section"
+							],
+							"field": null
+						},
+						"c11": {
+							"model": "c4",
+							"items": [
+								"text"
+							],
+							"field": "status_status",
+							"align": "left"
+						},
+						"c17": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field73"
+							],
+							"field": "status_status",
+							"width": "30%"
+						},
+						"c18": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field1"
+							],
+							"field": "status_status",
+							"width": "30%"
+						},
+						"c19": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field74"
+							],
+							"field": "status_status",
+							"width": "40%"
+						},
+						"c3": {
+							"model": "c1",
+							"items": [
+								"comm_section"
+							],
+							"field": null
+						},
+						"c7": {
+							"model": "c1",
+							"items": [
+								"cdd_section"
+							],
+							"field": null
+						},
+						"c9": {
+							"model": "c1",
+							"items": [
+								"prop_section"
+							],
+							"field": null
+						},
+						"c10": {
+							"model": "c1",
+							"items": []
+						},
+						"c12": {
+							"model": "c4",
+							"items": [
+								"text1"
+							],
+							"field": "status_status",
+							"align": "left"
+						},
+						"c21": {
+							"model": "c1",
+							"items": [
+								"text2"
+							],
+							"field": null
+						},
+						"c22": {
+							"model": "c1",
+							"items": [
+								"text3",
+								"details_preview_pt_involved"
+							],
+							"field": null,
+							"useFullWidth": true
+						},
+						"c23": {
+							"model": "c1",
+							"items": [
+								"text4"
+							],
+							"field": null,
+							"useFullWidth": true
+						},
+						"c24": {
+							"model": "c1",
+							"items": [
+								"text6",
+								"details_form1",
+								"details_form2",
+								"details_form3",
+								"details_form4",
+								"details_form5",
+								"details_form6",
+								"details_form7",
+								"details_form8"
+							],
+							"field": null,
+							"useFullWidth": true
+						},
+						"c25": {
+							"model": "c1",
+							"items": [
+								"text8",
+								"details_preview5"
+							],
+							"field": null,
+							"useFullWidth": true
+						},
+						"c26": {
+							"model": "c1",
+							"items": [
+								"text9"
+							],
+							"field": null
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c13"
+								},
+								{
+									"cell": "c14"
+								},
+								{
+									"cell": "c15"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c104",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c",
+									"colspan": 3
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2",
+									"colspan": 3
+								}
+							]
+						}
+					],
+					"cells": {
+						"c13": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field79"
+							],
+							"field": "cea_reg",
+							"width": "30%"
+						},
+						"c14": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field3"
+							],
+							"field": "cea_reg",
+							"width": "30%"
+						},
+						"c15": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field80"
+							],
+							"field": "cea_reg",
+							"width": "40%"
+						},
+						"c104": {
+							"model": "c4",
+							"items": [
+								"rental_info_section"
+							],
+							"field": "currency",
+							"align": "left"
+						},
+						"c": {
+							"model": "c4",
+							"items": [
+								"sale_info_section"
+							],
+							"field": "currency",
+							"align": "left"
+						},
+						"c2": {
+							"model": "c4",
+							"items": [
+								"jtc_lease_info_section"
+							],
+							"field": "currency",
+							"align": "left"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section7": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c27"
+								},
+								{
+									"cell": "c32"
+								},
+								{
+									"cell": "c35"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c27": {
+							"model": "c4",
+							"items": [
+								"edit_field_label1"
+							],
+							"field": "rental_price",
+							"width": "30%"
+						},
+						"c32": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field10"
+							],
+							"field": "rental_price",
+							"width": "30%"
+						},
+						"c35": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field129"
+							],
+							"field": "rental_price",
+							"width": "40%"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section8": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c19"
+								},
+								{
+									"cell": "c20"
+								},
+								{
+									"cell": "c21"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c19": {
+							"model": "c4",
+							"items": [],
+							"field": "sale_price",
+							"width": "30%"
+						},
+						"c20": {
+							"model": "c2",
+							"items": [],
+							"field": "sale_price",
+							"width": "30%"
+						},
+						"c21": {
+							"model": "c2",
+							"items": [],
+							"field": "sale_price",
+							"width": "40%"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section10": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c10"
+								},
+								{
+									"cell": "c11"
+								},
+								{
+									"cell": "c12"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c10": {
+							"model": "c4",
+							"items": [],
+							"field": "service_commencement",
+							"width": "30%"
+						},
+						"c11": {
+							"model": "c2",
+							"items": [],
+							"field": "service_commencement",
+							"width": "30%"
+						},
+						"c12": {
+							"model": "c2",
+							"items": [],
+							"field": "service_commencement",
+							"width": "40%"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section6": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c10",
+									"colspan": 1
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c55",
+									"colspan": 1
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "c19",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c11",
+									"colspan": 1
+								}
+							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c31",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c41",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c45",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c60",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c19": {
+							"model": "c4",
+							"items": [
+								"gross_fee_label"
+							],
+							"field": "comm_earned",
+							"customCSS": "/* Put  your custom CSS code here */\n\n",
+							"align": "left",
+							"orientation": "horizontal"
+						},
+						"c1": {
+							"model": "c1",
+							"items": [
+								"details_preview2"
+							],
+							"field": null,
+							"useFullWidth": true
+						},
+						"c31": {
+							"model": "c1",
+							"items": [
+								"details_preview6"
+							],
+							"field": null,
+							"border": [
+								{
+									"side": "bottom",
+									"width": "1px",
+									"color": "#b7b7b7"
+								}
+							],
+							"useFullWidth": true
+						},
+						"c41": {
+							"model": "c1",
+							"items": [
+								"details_preview3"
+							],
+							"field": null,
+							"useFullWidth": true
+						},
+						"c45": {
+							"model": "c4",
+							"items": [
+								"net_mag_fee"
+							],
+							"field": "comm_earned_salesperson",
+							"customCSS": "/* Put  your custom CSS code here */\n\n\n",
+							"align": "left",
+							"orientation": "horizontal"
+						},
+						"c60": {
+							"model": "c4",
+							"items": [
+								"comm_to_agent_section"
+							],
+							"field": "comm_nett_salesperson",
+							"align": "left"
+						},
+						"c55": {
+							"model": "c4",
+							"items": [
+								"mag_fee_label"
+							],
+							"field": "comm_unit",
+							"customCSS": "/* Put  your custom CSS code here */\n\n\n",
+							"orientation": "horizontal",
+							"align": "left"
+						},
+						"c10": {
+							"model": "c4",
+							"items": [
+								"text10"
+							],
+							"field": "transacted_price",
+							"useFullWidth": true,
+							"align": "left"
+						},
+						"c11": {
+							"model": "c1",
+							"items": [
+								"text11"
+							],
+							"field": null,
+							"useFullWidth": true
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				},
+				"section2": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c9",
+									"colspan": 1
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"text5"
+							],
+							"useFullWidth": true
+						},
+						"c9": {
+							"model": "c1",
+							"items": [
+								"text12"
+							],
+							"useFullWidth": true
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 3,
+					"inlineLabels": true,
+					"separateLabels": false
+				},
+				"section3": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c4",
+									"colspan": 1
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c8",
+									"colspan": 1
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2",
+									"colspan": 1
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 1
+								}
+							]
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"check_cdd_text"
+							],
+							"useFullWidth": true,
+							"align": "left"
+						},
+						"c4": {
+							"model": "c3",
+							"items": [
+								"details_preview_cdd"
+							],
+							"useFullWidth": true,
+							"customCSS": "/* Put  your custom CSS code here */\n\n"
+						},
+						"c1": {
+							"model": "c3",
+							"items": [
+								"str"
+							]
+						},
+						"c2": {
+							"model": "c3",
+							"items": [
+								"cdd_measure"
+							]
+						},
+						"c8": {
+							"model": "c3",
+							"items": [
+								"check_result_text"
+							],
+							"useFullWidth": true,
+							"align": "left",
+							"customCSS": "/* Put  your custom CSS code here */\n\n"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section1": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c4"
+								},
+								{
+									"cell": "c2"
+								},
+								{
+									"cell": "c"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c5"
+								},
+								{
+									"cell": "c3"
+								},
+								{
+									"cell": "c6"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c7"
+								},
+								{
+									"cell": "c8"
+								},
+								{
+									"cell": "c9"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c10"
+								},
+								{
+									"cell": "c11"
+								},
+								{
+									"cell": "c12"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c13"
+								},
+								{
+									"cell": "c14"
+								},
+								{
+									"cell": "c15"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c25"
+								},
+								{
+									"cell": "c26"
+								},
+								{
+									"cell": "c27"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c28"
+								},
+								{
+									"cell": "c29"
+								},
+								{
+									"cell": "c30"
+								}
+							],
+							"section": ""
+						},
+						{
+							"cells": [
+								{
+									"cell": "c34"
+								},
+								{
+									"cell": "c35"
+								},
+								{
+									"cell": "c36"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c4": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field133"
+							],
+							"field": "prop_address",
+							"width": "30%"
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field34"
+							],
+							"field": "prop_address",
+							"width": "30%"
+						},
+						"c": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field134"
+							],
+							"field": "prop_address",
+							"width": "40%"
+						},
+						"c5": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field135"
+							],
+							"field": "prop_type",
+							"width": "30%"
+						},
+						"c3": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field35"
+							],
+							"field": "prop_type",
+							"width": "30%"
+						},
+						"c6": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field136"
+							],
+							"field": "prop_type",
+							"width": "40%"
+						},
+						"c7": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field137"
+							],
+							"field": "Prop_kind",
+							"width": "30%"
+						},
+						"c8": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field36"
+							],
+							"field": "Prop_kind",
+							"width": "30%"
+						},
+						"c9": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field138"
+							],
+							"field": "Prop_kind",
+							"width": "40%"
+						},
+						"c10": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field139"
+							],
+							"field": "prop_name",
+							"width": "30%"
+						},
+						"c11": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field37"
+							],
+							"field": "prop_name",
+							"width": "30%"
+						},
+						"c12": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field140"
+							],
+							"field": "prop_name",
+							"width": "40%"
+						},
+						"c13": {
+							"model": "c4",
+							"items": [
+								"edit_field_label4"
+							],
+							"field": "land",
+							"width": "30%"
+						},
+						"c14": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field38"
+							],
+							"field": "land",
+							"width": "30%"
+						},
+						"c15": {
+							"model": "c2",
+							"items": [],
+							"width": "40%"
+						},
+						"c25": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field141"
+							],
+							"field": "no_bedrooms",
+							"width": "30%"
+						},
+						"c26": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field42"
+							],
+							"field": "no_bedrooms",
+							"width": "30%"
+						},
+						"c27": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field142"
+							],
+							"field": "no_bedrooms",
+							"width": "40%"
+						},
+						"c28": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field143"
+							],
+							"field": "no_bathrooms",
+							"width": "30%"
+						},
+						"c29": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field43"
+							],
+							"field": "no_bathrooms",
+							"width": "30%"
+						},
+						"c30": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field144"
+							],
+							"field": "no_bathrooms",
+							"width": "40%"
+						},
+						"c34": {
+							"model": "c4",
+							"items": [
+								"integrated_edit_field147"
+							],
+							"field": "tenure",
+							"width": "30%"
+						},
+						"c35": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field45"
+							],
+							"field": "tenure",
+							"width": "30%"
+						},
+						"c36": {
+							"model": "c2",
+							"items": [
+								"integrated_edit_field148"
+							],
+							"field": "tenure",
+							"width": "40%"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": true
+				}
+			},
+			"items": {
+				"edit_header": {
+					"type": "edit_header"
+				},
+				"edit_message": {
+					"type": "edit_message"
+				},
+				"edit_save1": {
+					"type": "edit_save",
+					"label": {
+						"type": 0,
+						"text": "Save & view"
+					}
+				},
+				"edit_back_list1": {
+					"type": "edit_back_list"
+				},
+				"edit_close1": {
+					"type": "edit_close"
+				},
+				"edit_view1": {
+					"type": "edit_view"
+				},
+				"edit_save": {
+					"type": "edit_save",
+					"label": {
+						"type": 0,
+						"text": "Save & view"
+					}
+				},
+				"edit_back_list": {
+					"type": "edit_back_list"
+				},
+				"edit_close": {
+					"type": "edit_close"
+				},
+				"snippet": {
+					"eventId": "Return_to_top",
+					"label": {
+						"text": "Return to top",
+						"type": 0
+					},
+					"type": "snippet",
+					"eventGid": 2520389350
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [
+						"edit_reset",
+						"edit_view"
+					]
+				},
+				"edit_reset": {
+					"type": "edit_reset"
+				},
+				"edit_view": {
+					"type": "edit_view"
+				},
+				"integrated_edit_field75": {
+					"type": "edit_field_label",
+					"field": "category"
+				},
+				"integrated_edit_field2": {
+					"field": "category",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"width": "350px"
+				},
+				"integrated_edit_field76": {
+					"type": "edit_field_tooltip",
+					"field": "category"
+				},
+				"tx_section": {
+					"type": "section",
+					"title": {
+						"text": "Transaction Info",
+						"type": 0
+					},
+					"initiallyClosed": false,
+					"location": "section",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field79": {
+					"type": "edit_field_label",
+					"field": "cea_reg"
+				},
+				"integrated_edit_field3": {
+					"field": "cea_reg",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"label": {
+						"field": "cea_reg",
+						"table": "transactions",
+						"type": 3
+					}
+				},
+				"integrated_edit_field80": {
+					"type": "edit_field_tooltip",
+					"field": "cea_reg"
+				},
+				"rental_info_section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": ""
+					},
+					"location": "section7",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"edit_field_label1": {
+					"type": "edit_field_label",
+					"field": "rental_price"
+				},
+				"integrated_edit_field10": {
+					"field": "rental_price",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"width": "200px"
+				},
+				"integrated_edit_field129": {
+					"type": "edit_field_tooltip",
+					"field": "rental_price"
+				},
+				"sale_info_section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": ""
+					},
+					"location": "section8",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"jtc_lease_info_section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": ""
+					},
+					"location": "section10",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"text": {
+					"type": "text",
+					"label": {
+						"text": "<head><SCRIPT src=\"common.js\" type=\"text/javascript\">\n    </SCRIPT></head>",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"integrated_edit_field73": {
+					"type": "edit_field_label",
+					"field": "date"
+				},
+				"integrated_edit_field1": {
+					"field": "date",
+					"type": "edit_field",
+					"updateOnEdit": true
+				},
+				"integrated_edit_field74": {
+					"type": "edit_field_tooltip",
+					"field": "date"
+				},
+				"comm_section": {
+					"type": "section",
+					"title": {
+						"text": "Commission",
+						"type": 0
+					},
+					"initiallyClosed": false,
+					"location": "section6",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"gross_fee_label": {
+					"type": "text",
+					"label": {
+						"text": "Gross Fee",
+						"type": 0
+					},
+					"editedByRte": false,
+					"bold": true,
+					"padding": {
+						"top": "10px",
+						"right": "20px"
+					}
+				},
+				"details_preview2": {
+					"type": "details_preview",
+					"table": 1032892372,
+					"items": [],
+					"popup": false,
+					"pageId": "list",
+					"caption": {
+						"page": "list",
+						"table": "cobroke_external_comm",
+						"type": 7
+					},
+					"padding": {
+						"top": "10px"
+					}
+				},
+				"details_preview6": {
+					"type": "details_preview",
+					"table": 2907786722,
+					"items": [],
+					"popup": false,
+					"pageId": "list",
+					"caption": {
+						"page": "list",
+						"table": "external_party_comm",
+						"type": 7
+					}
+				},
+				"details_preview3": {
+					"type": "details_preview",
+					"table": 1141857843,
+					"items": [],
+					"popup": false,
+					"pageId": "list",
+					"caption": {
+						"page": "list",
+						"table": "cobroke_internal_comm",
+						"type": 7
+					}
+				},
+				"net_mag_fee": {
+					"type": "text",
+					"label": {
+						"text": "Nett Management Fee",
+						"type": 0
+					},
+					"editedByRte": false,
+					"bold": true,
+					"padding": {
+						"top": "10px"
+					}
+				},
+				"comm_to_agent_section": {
+					"type": "section",
+					"title": {
+						"type": 0,
+						"text": ""
+					},
+					"location": "section2",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"text5": {
+					"type": "text",
+					"label": {
+						"text": "Commission To Agency",
+						"type": 0
+					},
+					"editedByRte": false,
+					"underline": true,
+					"italic": true
+				},
+				"text12": {
+					"type": "text",
+					"label": {
+						"text": "Commission To Salesperson",
+						"type": 0
+					},
+					"editedByRte": false,
+					"underline": true,
+					"italic": true
+				},
+				"mag_fee_label": {
+					"type": "text",
+					"label": {
+						"text": "Management Fee",
+						"type": 0
+					},
+					"editedByRte": false,
+					"bold": true,
+					"padding": {
+						"top": "10px"
+					}
+				},
+				"text10": {
+					"type": "text",
+					"label": {
+						"text": "Gross Commission Receivable",
+						"type": 0
+					},
+					"editedByRte": false,
+					"underline": true,
+					"italic": true
+				},
+				"text11": {
+					"type": "text",
+					"label": {
+						"text": "Commission Payout",
+						"type": 0
+					},
+					"editedByRte": false,
+					"underline": true,
+					"italic": true
+				},
+				"cdd_section": {
+					"type": "section",
+					"title": {
+						"text": "Customer Due Diligence (CDD)",
+						"type": 0
+					},
+					"initiallyClosed": false,
+					"location": "section3",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"check_cdd_text": {
+					"type": "text",
+					"label": {
+						"text": "It is mandatory to conduct Customer Due Diligence (CDD) for every property transaction. Answer all questions in the Checklist provided here to establish the needs for further actions. A check of Customer's name against the UN Sanction list and the Panama Papers in record will be carried out by system after completion of the Checklist. Results of check will be reflected in below:",
+						"type": 0
+					},
+					"editedByRte": false,
+					"color": "#f97575",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+				},
+				"details_preview_cdd": {
+					"type": "details_preview",
+					"table": 2238441115,
+					"items": [],
+					"popup": false,
+					"pageId": "list",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  margin-bottom:-30px !important;\n}\n"
+				},
+				"str": {
+					"type": "details_preview",
+					"table": 1554949113,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"cdd_measure": {
+					"type": "details_preview",
+					"table": 2220586172,
+					"items": [],
+					"popup": false,
+					"pageId": "list",
+					"padding": {
+						"top": "10px"
+					}
+				},
+				"check_result_text": {
+					"type": "text",
+					"label": {
+						"text": "UN sanction and Panama Papers check results",
+						"type": 0
+					},
+					"editedByRte": false,
+					"italic": true,
+					"underline": true,
+					"customCSS": "/* Put  your custom CSS code here */\n\n\n",
+					"padding": {
+						"left": "15px"
+					}
+				},
+				"prop_section": {
+					"type": "section",
+					"title": {
+						"text": "Property Info",
+						"type": 0
+					},
+					"initiallyClosed": false,
+					"location": "section1",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field133": {
+					"type": "edit_field_label",
+					"field": "prop_address"
+				},
+				"integrated_edit_field34": {
+					"field": "prop_address",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"width": "500px"
+				},
+				"integrated_edit_field134": {
+					"type": "edit_field_tooltip",
+					"field": "prop_address"
+				},
+				"integrated_edit_field135": {
+					"type": "edit_field_label",
+					"field": "prop_type"
+				},
+				"integrated_edit_field35": {
+					"field": "prop_type",
+					"type": "edit_field",
+					"updateOnEdit": true
+				},
+				"integrated_edit_field136": {
+					"type": "edit_field_tooltip",
+					"field": "prop_type"
+				},
+				"integrated_edit_field137": {
+					"type": "edit_field_label",
+					"field": "Prop_kind"
+				},
+				"integrated_edit_field36": {
+					"field": "Prop_kind",
+					"type": "edit_field",
+					"updateOnEdit": true
+				},
+				"integrated_edit_field138": {
+					"type": "edit_field_tooltip",
+					"field": "Prop_kind"
+				},
+				"integrated_edit_field139": {
+					"type": "edit_field_label",
+					"field": "prop_name"
+				},
+				"integrated_edit_field37": {
+					"field": "prop_name",
+					"type": "edit_field",
+					"updateOnEdit": true
+				},
+				"integrated_edit_field140": {
+					"type": "edit_field_tooltip",
+					"field": "prop_name"
+				},
+				"edit_field_label4": {
+					"type": "edit_field_label",
+					"field": "land"
+				},
+				"integrated_edit_field38": {
+					"field": "land",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"width": "200px"
+				},
+				"integrated_edit_field141": {
+					"type": "edit_field_label",
+					"field": "no_bedrooms"
+				},
+				"integrated_edit_field42": {
+					"field": "no_bedrooms",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"width": "200px"
+				},
+				"integrated_edit_field142": {
+					"type": "edit_field_tooltip",
+					"field": "no_bedrooms"
+				},
+				"integrated_edit_field143": {
+					"type": "edit_field_label",
+					"field": "no_bathrooms"
+				},
+				"integrated_edit_field43": {
+					"field": "no_bathrooms",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"width": "200px"
+				},
+				"integrated_edit_field144": {
+					"type": "edit_field_tooltip",
+					"field": "no_bathrooms"
+				},
+				"integrated_edit_field147": {
+					"type": "edit_field_label",
+					"field": "tenure"
+				},
+				"integrated_edit_field45": {
+					"field": "tenure",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"width": "200px"
+				},
+				"integrated_edit_field148": {
+					"type": "edit_field_tooltip",
+					"field": "tenure"
+				},
+				"text1": {
+					"type": "text",
+					"label": {
+						"text": "<div id=\"transaction_info\"></div>",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"text2": {
+					"type": "text",
+					"label": {
+						"text": "<div id=\"property_info\"></div>",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"text3": {
+					"type": "text",
+					"label": {
+						"text": "<div id=\"party_involved\"></div>",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"details_preview_pt_involved": {
+					"type": "details_preview",
+					"table": 1012154352,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"text4": {
+					"type": "text",
+					"label": {
+						"text": "<div id=\"cdd\"></div>",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"text6": {
+					"type": "text",
+					"label": {
+						"text": "<div id=\"cea_forms\"></div>",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"details_form1": {
+					"type": "details_preview",
+					"table": 1710046027,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_form2": {
+					"type": "details_preview",
+					"table": 4242828017,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_form3": {
+					"type": "details_preview",
+					"table": 2346932839,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_form4": {
+					"type": "details_preview",
+					"table": 361222084,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_form5": {
+					"type": "details_preview",
+					"table": 1652621138,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_form6": {
+					"type": "details_preview",
+					"table": 4220104424,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_form7": {
+					"type": "details_preview",
+					"table": 2358156926,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"details_form8": {
+					"type": "details_preview",
+					"table": 473007087,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"text8": {
+					"type": "text",
+					"label": {
+						"text": "<div id=\"docs_upload\"></div>",
+						"type": 0
+					},
+					"editedByRte": false
+				},
+				"details_preview5": {
+					"type": "details_preview",
+					"table": 2514156467,
+					"items": [],
+					"popup": false,
+					"pageId": "list"
+				},
+				"text9": {
+					"type": "text",
+					"label": {
+						"text": "<div id=\"comm\"></div>",
+						"type": 0
+					},
+					"editedByRte": false
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "export",
+			"type": "export",
+			"layoutId": "first",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "export-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "export-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"export_field14",
+								"export_field15",
+								"export_field17",
+								"export_field21",
+								"export_field36",
+								"export_field37",
+								"export_field38",
+								"export_field39",
+								"export_field40",
+								"export_field44",
+								"export_field45",
+								"export_field47",
+								"export_field70",
+								"export_field71"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"footer": {
+					"modelId": "export-footer",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"export_export",
+								"export_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"export_header": {
+					"type": "export_header"
+				},
+				"export_export": {
+					"type": "export_export"
+				},
+				"export_cancel": {
+					"type": "export_cancel"
+				},
+				"export_field14": {
+					"field": "date",
+					"type": "export_field"
+				},
+				"export_field15": {
+					"field": "category",
+					"type": "export_field"
+				},
+				"export_field17": {
+					"field": "cea_reg",
+					"type": "export_field"
+				},
+				"export_field21": {
+					"field": "rental_price",
+					"type": "export_field"
+				},
+				"export_field36": {
+					"field": "prop_address",
+					"type": "export_field"
+				},
+				"export_field37": {
+					"field": "prop_type",
+					"type": "export_field"
+				},
+				"export_field38": {
+					"field": "Prop_kind",
+					"type": "export_field"
+				},
+				"export_field39": {
+					"field": "prop_name",
+					"type": "export_field"
+				},
+				"export_field40": {
+					"field": "land",
+					"type": "export_field"
+				},
+				"export_field44": {
+					"field": "no_bedrooms",
+					"type": "export_field"
+				},
+				"export_field45": {
+					"field": "no_bathrooms",
+					"type": "export_field"
+				},
+				"export_field47": {
+					"field": "tenure",
+					"type": "export_field"
+				},
+				"export_field70": {
+					"field": "rental",
+					"type": "export_field"
+				},
+				"export_field71": {
+					"field": "lease_duration",
+					"type": "export_field"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {},
+			"exportFormat": 2,
+			"exportDelimiter": ",",
+			"exportSelectDelimiter": false,
+			"exportSelectFields": false
+		},
+		{
+			"id": "import",
+			"type": "import",
+			"layoutId": "first",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"supertop": {
+					"modelId": "panel-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "import-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "import-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"import_field",
+								"import_field1",
+								"import_field2",
+								"import_field3",
+								"import_field5",
+								"import_field6",
+								"import_field7",
+								"import_field26",
+								"import_field27",
+								"import_field29",
+								"import_field30",
+								"import_field52",
+								"import_field70",
+								"import_field71"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"import_header": {
+					"type": "import_header"
+				},
+				"import_field": {
+					"field": "category",
+					"type": "import_field"
+				},
+				"import_field1": {
+					"field": "prop_type",
+					"type": "import_field"
+				},
+				"import_field2": {
+					"field": "Prop_kind",
+					"type": "import_field"
+				},
+				"import_field3": {
+					"field": "rental_price",
+					"type": "import_field"
+				},
+				"import_field5": {
+					"field": "prop_name",
+					"type": "import_field"
+				},
+				"import_field6": {
+					"field": "prop_address",
+					"type": "import_field"
+				},
+				"import_field7": {
+					"field": "cea_reg",
+					"type": "import_field"
+				},
+				"import_field26": {
+					"field": "land",
+					"type": "import_field"
+				},
+				"import_field27": {
+					"field": "tenure",
+					"type": "import_field"
+				},
+				"import_field29": {
+					"field": "no_bedrooms",
+					"type": "import_field"
+				},
+				"import_field30": {
+					"field": "no_bathrooms",
+					"type": "import_field"
+				},
+				"import_field52": {
+					"field": "date",
+					"type": "import_field"
+				},
+				"import_field70": {
+					"field": "rental",
+					"type": "import_field"
+				},
+				"import_field71": {
+					"field": "lease_duration",
+					"type": "import_field"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "list",
+			"type": "list",
+			"layoutId": "topbar",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "list-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c3"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"custom_button1",
+								"text",
+								"custom_button3",
+								"custom_button2",
+								"custom_button"
+							],
+							"align": "left"
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"details_found",
+								"page_size"
+							]
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"snippet1"
+							],
+							"align": "left"
+						},
+						"c3": {
+							"model": "c2",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "list-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"pagination"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"supertop": {
+					"modelId": "topbar-menu",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"logo",
+								"menu"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"list_options",
+								"loginform_login",
+								"username_button"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"left": {
+					"modelId": "list-vbar",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "list-top",
+					"grid": [],
+					"cells": {},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "horizontal-grid",
+					"grid": [
+						{
+							"section": "head",
+							"cells": [
+								{
+									"cell": "headcell_icons"
+								},
+								{
+									"cell": "headcell_field1"
+								},
+								{
+									"cell": "headcell_field4"
+								},
+								{
+									"cell": "headcell_field"
+								},
+								{
+									"cell": "headcell_field5"
+								},
+								{
+									"cell": "headcell_field8"
+								}
+							]
+						},
+						{
+							"section": "body",
+							"cells": [
+								{
+									"cell": "cell_icons"
+								},
+								{
+									"cell": "cell_field1"
+								},
+								{
+									"cell": "cell_field4"
+								},
+								{
+									"cell": "cell_field"
+								},
+								{
+									"cell": "cell_field5"
+								},
+								{
+									"cell": "cell_field8"
+								}
+							]
+						},
+						{
+							"section": "foot",
+							"cells": [
+								{
+									"cell": "footcell_icons"
+								},
+								{
+									"cell": "footcell_field1"
+								},
+								{
+									"cell": "footcell_field4"
+								},
+								{
+									"cell": "footcell_field"
+								},
+								{
+									"cell": "footcell_field5"
+								},
+								{
+									"cell": "footcell_field8"
+								}
+							]
+						}
+					],
+					"cells": {
+						"headcell_field1": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field11"
+							],
+							"field": "date",
+							"columnName": "field"
+						},
+						"cell_field1": {
+							"model": "cell_field",
+							"items": [
+								"tx_date"
+							],
+							"field": "date",
+							"columnName": "field"
+						},
+						"footcell_field1": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "date",
+							"columnName": "field"
+						},
+						"headcell_field4": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field14"
+							],
+							"field": "category",
+							"columnName": "field"
+						},
+						"cell_field4": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field4"
+							],
+							"field": "category",
+							"columnName": "field"
+						},
+						"footcell_field4": {
+							"model": "footcell_field",
+							"items": [
+								"snippet"
+							],
+							"field": "category",
+							"columnName": "field"
+						},
+						"headcell_field8": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label5"
+							],
+							"field": "no_bedrooms",
+							"columnName": "field"
+						},
+						"cell_field8": {
+							"model": "cell_field",
+							"items": [
+								"grid_field5"
+							],
+							"field": "no_bedrooms",
+							"columnName": "field"
+						},
+						"footcell_field8": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "no_bedrooms",
+							"columnName": "field"
+						},
+						"headcell_icons": {
+							"model": "headcell_icons",
+							"items": [],
+							"columnName": "view",
+							"field": ""
+						},
+						"cell_icons": {
+							"model": "cell_icons",
+							"items": [
+								"grid_view"
+							],
+							"columnName": "view",
+							"field": ""
+						},
+						"footcell_icons": {
+							"model": "footcell_icons",
+							"items": [],
+							"columnName": "view",
+							"field": ""
+						},
+						"headcell_field": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label"
+							],
+							"field": "prop_type",
+							"columnName": "field"
+						},
+						"cell_field": {
+							"model": "cell_field",
+							"items": [
+								"grid_field1",
+								"grid_field2"
+							],
+							"field": "prop_type",
+							"columnName": "field",
+							"orientation": "vertical"
+						},
+						"footcell_field": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "prop_type",
+							"columnName": "field"
+						},
+						"headcell_field5": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label3"
+							],
+							"field": "prop_name",
+							"columnName": "field"
+						},
+						"cell_field5": {
+							"model": "cell_field",
+							"items": [
+								"grid_field3"
+							],
+							"field": "prop_name",
+							"columnName": "field"
+						},
+						"footcell_field5": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "prop_name",
+							"columnName": "field"
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"custom_button": {
+					"type": "custom_button",
+					"eventId": "View_Sales",
+					"label": {
+						"type": 0,
+						"text": "Sale"
+					},
+					"buttonSize": "xtra-small",
+					"buttonStyle": "",
+					"background": "#455a64",
+					"eventGid": 2269051779
+				},
+				"details_found": {
+					"type": "details_found"
+				},
+				"page_size": {
+					"type": "page_size"
+				},
+				"pagination": {
+					"type": "pagination"
+				},
+				"simple_grid_field11": {
+					"type": "grid_field_label",
+					"field": "date",
+					"clickSort": true
+				},
+				"tx_date": {
+					"field": "date",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"simple_grid_field14": {
+					"type": "grid_field_label",
+					"field": "category",
+					"clickSort": true
+				},
+				"simple_grid_field4": {
+					"field": "category",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"snippet": {
+					"type": "snippet",
+					"eventId": "Return_to_top",
+					"label": {
+						"text": "Return to top",
+						"type": 0
+					},
+					"eventGid": 2520389350
+				},
+				"grid_field_label5": {
+					"type": "grid_field_label",
+					"field": "no_bedrooms"
+				},
+				"grid_field5": {
+					"field": "no_bedrooms",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"grid_view": {
+					"type": "grid_view",
+					"popup": true,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+				},
+				"grid_field_label": {
+					"type": "grid_field_label",
+					"field": "prop_type"
+				},
+				"grid_field1": {
+					"field": "prop_type",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"grid_field2": {
+					"field": "Prop_kind",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"grid_field_label3": {
+					"type": "grid_field_label",
+					"field": "prop_name"
+				},
+				"grid_field3": {
+					"field": "prop_name",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": false
+				},
+				"advsearch_link": {
+					"type": "advsearch_link"
+				},
+				"userinfo_link": {
+					"type": "userinfo_link"
+				},
+				"logout_link": {
+					"type": "logout_link"
+				},
+				"logo": {
+					"type": "logo",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+				},
+				"menu": {
+					"type": "menu",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+				},
+				"list_options": {
+					"type": "list_options",
+					"items": [
+						"advsearch_link",
+						"-",
+						"-3",
+						"-2",
+						"-1"
+					],
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+				},
+				"-": {
+					"type": "-"
+				},
+				"-1": {
+					"type": "-"
+				},
+				"-2": {
+					"type": "-"
+				},
+				"-3": {
+					"type": "-"
+				},
+				"username_button": {
+					"type": "username_button",
+					"items": [
+						"userinfo_link",
+						"logout_link",
+						"changepassword_link"
+					],
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+				},
+				"loginform_login": {
+					"type": "loginform_login",
+					"popup": false,
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+				},
+				"text": {
+					"type": "text",
+					"label": {
+						"type": 0,
+						"text": "Property Mgmt"
+					},
+					"editedByRte": false,
+					"font-size": "18px",
+					"padding": {
+						"left": "5px",
+						"right": "5px"
+					}
+				},
+				"snippet1": {
+					"type": "snippet",
+					"eventId": "Click_date_view_details",
+					"label": {
+						"text": "Click date view details",
+						"type": 0
+					},
+					"color": "#b7b7b7",
+					"padding": {
+						"left": "30px"
+					},
+					"eventGid": 2518140145
+				},
+				"custom_button3": {
+					"type": "custom_button",
+					"eventId": "View_Rentals",
+					"label": {
+						"type": 0,
+						"text": "Rental"
+					},
+					"buttonSize": "xtra-small",
+					"buttonStyle": "",
+					"background": "#ef6c00",
+					"eventGid": 3413978326
+				},
+				"custom_button1": {
+					"type": "custom_button",
+					"eventId": "View_JTC_Lease",
+					"label": {
+						"type": 0,
+						"text": "JTC Lease Mgmt"
+					},
+					"buttonSize": "xtra-small",
+					"background": "#64b5f6",
+					"eventGid": 1529652504
+				},
+				"custom_button2": {
+					"type": "custom_button",
+					"eventId": "New_Button1",
+					"label": {
+						"type": 0,
+						"text": "Room Rental"
+					},
+					"background": "#ffd54f",
+					"buttonSize": "xtra-small",
+					"eventGid": 1240219823
+				},
+				"changepassword_link": {
+					"type": "changepassword_link"
+				}
+			},
+			"spreadsheetGrid": false,
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "masterlist",
+			"type": "masterlist",
+			"layoutId": "masterlist",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "empty-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "empty-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "masterlist-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"back_master",
+								"masterlist_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field9",
+								"simple_grid_field22",
+								"simple_grid_field32",
+								"simple_grid_field33",
+								"simple_grid_field35",
+								"simple_grid_field36",
+								"simple_grid_field42",
+								"simple_grid_field68",
+								"simple_grid_field5",
+								"simple_grid_field8",
+								"simple_grid_field10"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"masterlist_header": {
+					"type": "masterlist_header"
+				},
+				"back_master": {
+					"type": "back_master"
+				},
+				"simple_grid_field": {
+					"field": "id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "category",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "prop_type",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "Prop_kind",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "rental_price",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "prop_name",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "prop_address",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "cea_reg",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field22": {
+					"field": "lease_duration",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field32": {
+					"field": "land",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field33": {
+					"field": "tenure",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field35": {
+					"field": "no_bedrooms",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field36": {
+					"field": "no_bathrooms",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field42": {
+					"field": "rental",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field68": {
+					"field": "date",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "built_up",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "built_up_unit",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "land_unit",
+					"type": "simple_grid_field"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "masterprint",
+			"type": "masterprint",
+			"layoutId": "masterprint",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "empty-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "empty-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "masterlist-top",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"masterprint_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"simple_grid_field",
+								"simple_grid_field1",
+								"simple_grid_field2",
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field9",
+								"simple_grid_field22",
+								"simple_grid_field32",
+								"simple_grid_field33",
+								"simple_grid_field35",
+								"simple_grid_field36",
+								"simple_grid_field42",
+								"simple_grid_field68",
+								"simple_grid_field5",
+								"simple_grid_field8",
+								"simple_grid_field10"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"masterprint_header": {
+					"type": "masterprint_header"
+				},
+				"simple_grid_field": {
+					"field": "id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field1": {
+					"field": "category",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field2": {
+					"field": "prop_type",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field3": {
+					"field": "Prop_kind",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "rental_price",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "prop_name",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "prop_address",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "cea_reg",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field22": {
+					"field": "lease_duration",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field32": {
+					"field": "land",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field33": {
+					"field": "tenure",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field35": {
+					"field": "no_bedrooms",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field36": {
+					"field": "no_bathrooms",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field42": {
+					"field": "rental",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field68": {
+					"field": "date",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "built_up",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "built_up_unit",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "land_unit",
+					"type": "simple_grid_field"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "print",
+			"type": "print",
+			"layoutId": "basic",
+			"disabled": 1,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "print-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"print_pages"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "print-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "print-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c2": {
+							"model": "c2",
+							"items": [
+								"print_header",
+								"print_subheader"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "horizontal-grid",
+					"grid": [
+						{
+							"section": "head",
+							"cells": [
+								{
+									"cell": "headcell_field"
+								},
+								{
+									"cell": "headcell_field1"
+								},
+								{
+									"cell": "headcell_field3"
+								},
+								{
+									"cell": "headcell_field5"
+								},
+								{
+									"cell": "headcell_field6"
+								},
+								{
+									"cell": "headcell_field17"
+								},
+								{
+									"cell": "headcell_field18"
+								}
+							]
+						},
+						{
+							"section": "body",
+							"cells": [
+								{
+									"cell": "cell_field"
+								},
+								{
+									"cell": "cell_field1"
+								},
+								{
+									"cell": "cell_field3"
+								},
+								{
+									"cell": "cell_field5"
+								},
+								{
+									"cell": "cell_field6"
+								},
+								{
+									"cell": "cell_field11"
+								},
+								{
+									"cell": "cell_field12"
+								}
+							]
+						},
+						{
+							"section": "foot",
+							"cells": [
+								{
+									"cell": "footcell_field"
+								},
+								{
+									"cell": "footcell_field1"
+								},
+								{
+									"cell": "footcell_field3"
+								},
+								{
+									"cell": "footcell_field5"
+								},
+								{
+									"cell": "footcell_field6"
+								},
+								{
+									"cell": "footcell_field11"
+								},
+								{
+									"cell": "footcell_field12"
+								}
+							]
+						}
+					],
+					"cells": {
+						"headcell_field": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field79"
+							],
+							"field": "date",
+							"columnName": "field"
+						},
+						"cell_field": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field11"
+							],
+							"field": "date",
+							"columnName": "field"
+						},
+						"footcell_field": {
+							"model": "footcell_field",
+							"items": [
+								"grid_field_totals"
+							],
+							"field": "date",
+							"columnName": "field"
+						},
+						"headcell_field1": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field82"
+							],
+							"field": "category",
+							"columnName": "field"
+						},
+						"cell_field1": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field14"
+							],
+							"field": "category",
+							"columnName": "field"
+						},
+						"footcell_field1": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "category",
+							"columnName": "field"
+						},
+						"headcell_field3": {
+							"model": "headcell_field",
+							"items": [],
+							"field": "cea_reg",
+							"columnName": "field"
+						},
+						"cell_field3": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field12"
+							],
+							"field": "cea_reg",
+							"orientation": "vertical",
+							"columnName": "field",
+							"align": "left"
+						},
+						"footcell_field3": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "cea_reg",
+							"columnName": "field"
+						},
+						"headcell_field5": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field83"
+							],
+							"field": "prop_type",
+							"columnName": "field"
+						},
+						"cell_field5": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field15"
+							],
+							"field": "prop_type",
+							"columnName": "field"
+						},
+						"footcell_field5": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "prop_type",
+							"columnName": "field"
+						},
+						"headcell_field6": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field89"
+							],
+							"field": "prop_address",
+							"columnName": "field"
+						},
+						"cell_field6": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field21"
+							],
+							"field": "prop_address",
+							"columnName": "field"
+						},
+						"footcell_field6": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "prop_address",
+							"columnName": "field"
+						},
+						"headcell_field17": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label3"
+							],
+							"field": "rental",
+							"columnName": "field"
+						},
+						"cell_field11": {
+							"model": "cell_field",
+							"items": [
+								"grid_field3"
+							],
+							"field": "rental",
+							"columnName": "field"
+						},
+						"footcell_field11": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "rental",
+							"columnName": "field"
+						},
+						"headcell_field18": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label4"
+							],
+							"field": "lease_duration",
+							"columnName": "field"
+						},
+						"cell_field12": {
+							"model": "cell_field",
+							"items": [
+								"grid_field4"
+							],
+							"field": "lease_duration",
+							"columnName": "field"
+						},
+						"footcell_field12": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "lease_duration",
+							"columnName": "field"
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				}
+			},
+			"items": {
+				"print_header": {
+					"type": "print_header"
+				},
+				"print_subheader": {
+					"type": "print_subheader"
+				},
+				"print_pages": {
+					"type": "print_pages"
+				},
+				"simple_grid_field11": {
+					"field": "date",
+					"type": "grid_field"
+				},
+				"simple_grid_field12": {
+					"field": "cea_reg",
+					"type": "grid_field",
+					"padding": {
+						"left": "10px"
+					}
+				},
+				"simple_grid_field14": {
+					"field": "category",
+					"type": "grid_field"
+				},
+				"simple_grid_field15": {
+					"field": "prop_type",
+					"type": "grid_field"
+				},
+				"simple_grid_field21": {
+					"field": "prop_address",
+					"type": "grid_field"
+				},
+				"simple_grid_field79": {
+					"type": "grid_field_label",
+					"field": "date"
+				},
+				"simple_grid_field82": {
+					"type": "grid_field_label",
+					"field": "category"
+				},
+				"simple_grid_field83": {
+					"type": "grid_field_label",
+					"field": "prop_type"
+				},
+				"simple_grid_field89": {
+					"type": "grid_field_label",
+					"field": "prop_address"
+				},
+				"grid_field3": {
+					"field": "rental",
+					"type": "grid_field"
+				},
+				"grid_field_label3": {
+					"type": "grid_field_label",
+					"field": "rental"
+				},
+				"grid_field4": {
+					"field": "lease_duration",
+					"type": "grid_field"
+				},
+				"grid_field_label4": {
+					"type": "grid_field_label",
+					"field": "lease_duration"
+				},
+				"grid_field_totals": {
+					"type": "grid_field_totals",
+					"field": "date",
+					"totals": "COUNT"
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "search",
+			"type": "search",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 0,
+			"forms": {
+				"above-grid": {
+					"modelId": "search-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": []
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "search-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_search",
+								"search_reset",
+								"search_back_list",
+								"search_cancel"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "search-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"search_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-search",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c3": {
+							"model": "c3",
+							"items": [
+								"integrated_search_field",
+								"integrated_search_field1",
+								"integrated_search_field2"
+							]
+						}
+					},
+					"deferredItems": [],
+					"separateLabels": false
+				}
+			},
+			"items": {
+				"search_header": {
+					"type": "search_header"
+				},
+				"search_reset": {
+					"type": "search_reset"
+				},
+				"search_back_list": {
+					"type": "search_back_list"
+				},
+				"search_search": {
+					"type": "search_search"
+				},
+				"search_cancel": {
+					"type": "search_cancel"
+				},
+				"integrated_search_field": {
+					"field": "built_up",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field1": {
+					"field": "built_up_unit",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				},
+				"integrated_search_field2": {
+					"field": "land_unit",
+					"type": "integrated_search_field",
+					"orientation": 0,
+					"required": false
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		},
+		{
+			"id": "view",
+			"type": "view",
+			"layoutId": "nomenu",
+			"disabled": 0,
+			"default": 2,
+			"forms": {
+				"above-grid": {
+					"modelId": "view-above-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"colspan": 2
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_back_list1",
+								"custom_button2"
+							],
+							"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"below-grid": {
+					"modelId": "view-below-grid",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								},
+								{
+									"cell": "c2"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_back_list",
+								"view_close",
+								"custom_button1"
+							]
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"hamburger"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"top": {
+					"modelId": "view-header",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							],
+							"section": ""
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"view_header"
+							]
+						}
+					},
+					"deferredItems": [],
+					"recsPerRow": 1
+				},
+				"grid": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c5"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c6"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c4"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c7"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c4": {
+							"model": "c3",
+							"items": [
+								"tx_section",
+								"prop_section"
+							]
+						},
+						"c5": {
+							"model": "c2",
+							"items": [
+								"edit_field_label1",
+								"integrated_edit_field1"
+							],
+							"customCSS": "/* Put  your custom CSS code here */\n\n\n"
+						},
+						"c6": {
+							"model": "c2",
+							"items": [
+								"edit_field_label2",
+								"integrated_edit_field2"
+							],
+							"customCSS": "/* Put  your custom CSS code here */\n\n\n"
+						},
+						"c7": {
+							"model": "c3",
+							"items": [
+								"snippet"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 1,
+					"inlineLabels": true,
+					"separateLabels": false
+				},
+				"section": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c4",
+									"colspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c4": {
+							"model": "c2",
+							"items": [
+								"edit_field_label4",
+								"integrated_edit_field10"
+							]
+						},
+						"c": {
+							"model": "c2",
+							"items": [
+								"edit_field_label5",
+								"lease_duration"
+							]
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 3,
+					"inlineLabels": false,
+					"separateLabels": false
+				},
+				"section1": {
+					"modelId": "simple-edit",
+					"grid": [
+						{
+							"cells": [
+								{
+									"cell": "c1",
+									"rowspan": 2
+								},
+								{
+									"cell": "c",
+									"rowspan": 2
+								},
+								{
+									"cell": "c2",
+									"rowspan": 1
+								}
+							],
+							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c3"
+								}
+							]
+						}
+					],
+					"cells": {
+						"c1": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field35",
+								"integrated_edit_field36",
+								"integrated_edit_field37"
+							],
+							"field": "prop_type"
+						},
+						"c": {
+							"model": "c1",
+							"items": [
+								"integrated_edit_field42",
+								"integrated_edit_field43",
+								"integrated_edit_field45"
+							],
+							"field": "no_bedrooms"
+						},
+						"c2": {
+							"model": "c2",
+							"items": [
+								"edit_field_label",
+								"integrated_edit_field",
+								"integrated_edit_field4"
+							],
+							"field": "builtup",
+							"customCSS": "/* Put  your custom CSS code here */\n\n\n",
+							"orientation": "horizontal"
+						},
+						"c3": {
+							"model": "c2",
+							"items": [
+								"edit_field_label3",
+								"integrated_edit_field6",
+								"integrated_edit_field5"
+							],
+							"field": "builtup",
+							"customCSS": "/* Put  your custom CSS code here */\n\n\n",
+							"orientation": "horizontal"
+						}
+					},
+					"deferredItems": [],
+					"columnCount": 3,
+					"inlineLabels": false,
+					"separateLabels": true
+				}
+			},
+			"items": {
+				"view_header": {
+					"type": "view_header",
+					"title": {
+						"page": "view1",
+						"table": "transactions_pub",
+						"type": 7
+					}
+				},
+				"view_back_list": {
+					"type": "view_back_list",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n display:none;\n}\n"
+				},
+				"view_close": {
+					"type": "view_close"
+				},
+				"hamburger": {
+					"type": "hamburger",
+					"items": [],
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+				},
+				"tx_section": {
+					"type": "section",
+					"title": {
+						"text": "Transaction Info",
+						"type": 0
+					},
+					"initiallyClosed": false,
+					"location": "section",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field2": {
+					"field": "category",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"orientation": 1,
+					"joined": false,
+					"separated": true
+				},
+				"integrated_edit_field1": {
+					"field": "date",
+					"type": "edit_field",
+					"updateOnEdit": true,
+					"orientation": 1,
+					"joined": false,
+					"separated": true
+				},
+				"prop_section": {
+					"type": "section",
+					"title": {
+						"text": "Property Info",
+						"type": 0
+					},
+					"initiallyClosed": false,
+					"location": "section1",
+					"bsStyle": "default",
+					"panelType": 3
+				},
+				"integrated_edit_field35": {
+					"field": "prop_type",
+					"type": "integrated_edit_field",
+					"updateOnEdit": true,
+					"joined": true,
+					"separated": false,
+					"orientation": 0
+				},
+				"integrated_edit_field36": {
+					"field": "Prop_kind",
+					"type": "integrated_edit_field",
+					"updateOnEdit": true,
+					"joined": true,
+					"separated": false,
+					"orientation": 0
+				},
+				"integrated_edit_field37": {
+					"field": "prop_name",
+					"type": "integrated_edit_field",
+					"updateOnEdit": true,
+					"joined": true,
+					"separated": false,
+					"orientation": 0
+				},
+				"integrated_edit_field42": {
+					"field": "no_bedrooms",
+					"type": "integrated_edit_field",
+					"updateOnEdit": true,
+					"joined": true,
+					"separated": false,
+					"orientation": 0
+				},
+				"integrated_edit_field43": {
+					"field": "no_bathrooms",
+					"type": "integrated_edit_field",
+					"updateOnEdit": true,
+					"joined": true,
+					"separated": false,
+					"orientation": 0
+				},
+				"integrated_edit_field45": {
+					"field": "tenure",
+					"type": "integrated_edit_field",
+					"updateOnEdit": true,
+					"joined": true,
+					"separated": false,
+					"orientation": 0
+				},
+				"custom_button1": {
+					"eventId": "Print_page",
+					"label": {
+						"type": 0,
+						"text": "Print"
+					},
+					"type": "custom_button",
+					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n display:none;\n}\n",
+					"eventGid": 2404972468
+				},
+				"custom_button2": {
+					"type": "custom_button",
+					"eventId": "Print_page",
+					"label": {
+						"type": 0,
+						"text": "Print"
+					},
+					"eventGid": 2404972468
+				},
+				"view_back_list1": {
+					"type": "view_back_list"
+				},
+				"edit_field_label1": {
+					"type": "edit_field_label",
+					"field": "date",
+					"separated": true
+				},
+				"edit_field_label2": {
+					"type": "edit_field_label",
+					"field": "category",
+					"separated": true
+				},
+				"snippet": {
+					"type": "snippet",
+					"eventId": "Return_to_top",
+					"label": {
+						"text": "Return to top",
+						"type": 0
+					},
+					"eventGid": 2520389350
+				},
+				"lease_duration": {
+					"field": "lease_duration",
+					"type": "edit_field",
+					"orientation": 1,
+					"joined": false,
+					"separated": true
+				},
+				"integrated_edit_field10": {
+					"field": "rental_price",
+					"type": "edit_field",
+					"orientation": 1,
+					"label": {
+						"field": "rental_price",
+						"table": "transactions",
+						"type": 3
+					},
+					"joined": false,
+					"separated": true
+				},
+				"integrated_edit_field": {
+					"field": "built_up",
+					"type": "edit_field",
+					"orientation": 1,
+					"joined": false,
+					"separated": true
+				},
+				"integrated_edit_field4": {
+					"field": "built_up_unit",
+					"type": "edit_field",
+					"orientation": 1,
+					"joined": false,
+					"separated": true
+				},
+				"integrated_edit_field5": {
+					"field": "land_unit",
+					"type": "edit_field",
+					"orientation": 1,
+					"joined": false,
+					"separated": true
+				},
+				"integrated_edit_field6": {
+					"field": "land",
+					"type": "edit_field",
+					"orientation": 1,
+					"joined": false,
+					"separated": true
+				},
+				"edit_field_label": {
+					"type": "edit_field_label",
+					"field": "built_up",
+					"separated": true
+				},
+				"edit_field_label3": {
+					"type": "edit_field_label",
+					"field": "land",
+					"separated": true
+				},
+				"edit_field_label4": {
+					"type": "edit_field_label",
+					"field": "rental_price",
+					"separated": true
+				},
+				"edit_field_label5": {
+					"type": "edit_field_label",
+					"field": "lease_duration",
+					"separated": true
+				}
+			},
+			"version": 14,
+			"imageItem": {
+				"type": "page_image"
+			},
+			"imageBgColor": "#f2f2f2",
+			"controlsBgColor": "white",
+			"imagePosition": "right",
+			"listTotals": 1,
+			"title": {}
+		}
+	],
+	"geoCoding": {
+		"enabled": false,
+		"latField": "",
+		"lonField": "",
+		"addressFields": []
+	},
+	"caption": {
+		"English": "Transactions - Prop Mng"
+	}
+}

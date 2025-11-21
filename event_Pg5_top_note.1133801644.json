@@ -1,0 +1,4 @@
+{
+	"name": "Pg5 top note",
+	"serverCode": "// Put your code here.\necho \"<p style='text-align:justify'><i><u>Note</U></i>:&emsp;The parties are to initial every page of this Agreement \n      including the Schedules and any attachments.</p>\";"
+}

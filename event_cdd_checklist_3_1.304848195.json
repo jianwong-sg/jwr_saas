@@ -1,0 +1,4 @@
+{
+	"name": "cdd_checklist_3.1",
+	"serverCode": "// Put your code here.\necho \"Is physical cash* used for the property purchase in this property transaction?\";"
+}

@@ -1,0 +1,5 @@
+{
+	"type": "EVENT_BUTTON",
+	"name": "Convert_to_word",
+	"beforeJsCode": "onclick=\"ConvertNumberToWords(this.value)\""
+}
