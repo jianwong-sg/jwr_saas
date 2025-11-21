@@ -11453,15 +11453,6 @@
 							"section": "",
 							"cells": [
 								{
-									"cell": "c57",
-									"colspan": 3
-								}
-							]
-						},
-						{
-							"section": "",
-							"cells": [
-								{
 									"cell": "c31",
 									"colspan": 3
 								}
@@ -11939,11 +11930,6 @@
 								"details_preview6"
 							],
 							"field": null,
-							"useFullWidth": true
-						},
-						"c57": {
-							"model": "c1",
-							"items": [],
 							"useFullWidth": true
 						},
 						"c60": {
