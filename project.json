@@ -3567,17 +3567,17 @@
 							"restrictedPages": {}
 						},
 						"cpd_trainings_user": {
-							"mask": "",
+							"mask": "AEDSPI",
 							"table": "cpd_trainings_user",
 							"restrictedPages": {
-								"add": true,
-								"edit": true,
-								"export": true,
-								"import": true,
-								"list": true,
-								"print": true,
-								"search": true,
-								"view": true
+								"add": false,
+								"edit": false,
+								"export": false,
+								"import": false,
+								"list": false,
+								"print": false,
+								"search": false,
+								"view": false
 							}
 						},
 						"cpd_types": {
@@ -9310,38 +9310,6 @@
 								}
 							},
 							{
-								"id": "90",
-								"parent": "83",
-								"data": {
-									"name": {
-										"text": "My CPD Records",
-										"type": 0
-									},
-									"href": "mypage.htm",
-									"pageId": "list",
-									"itemType": 2,
-									"linkType": 0,
-									"pageType": "list",
-									"table": 2805621270
-								}
-							},
-							{
-								"id": "108",
-								"parent": "83",
-								"data": {
-									"name": {
-										"text": "CPD Portal login",
-										"type": 0
-									},
-									"href": "https://www.cea.gov.sg/Apps/Cpd/cpdsys.aspx",
-									"itemType": 2,
-									"linkType": 1,
-									"openType": 1,
-									"pageType": "",
-									"table": null
-								}
-							},
-							{
 								"id": "91",
 								"parent": "83",
 								"data": {
@@ -9588,6 +9556,51 @@
 							"iconName": "high-priority.png",
 							"pageType": "",
 							"table": null
+						}
+					},
+					{
+						"id": "134",
+						"parent": "0",
+						"children": [
+							{
+								"id": "135",
+								"parent": "134",
+								"data": {
+									"name": {
+										"table": "cpd_trainings_user",
+										"type": 6
+									},
+									"pageId": "list",
+									"itemType": 2,
+									"linkType": 0,
+									"table": 2805621270,
+									"pageType": "list"
+								}
+							},
+							{
+								"id": "108",
+								"parent": "134",
+								"data": {
+									"name": {
+										"text": "CPD Portal login",
+										"type": 0
+									},
+									"href": "https://eservices.cea.gov.sg/cpdportal",
+									"itemType": 2,
+									"linkType": 1,
+									"openType": 1,
+									"pageType": "",
+									"table": null
+								}
+							}
+						],
+						"data": {
+							"name": {
+								"text": "My CPD",
+								"type": 0
+							},
+							"iconType": 1,
+							"iconName": "application_cascade.png"
 						}
 					},
 					{

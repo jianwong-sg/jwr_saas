@@ -2951,6 +2951,9 @@
 									"cell": "headcell_field2"
 								},
 								{
+									"cell": "cell_field6"
+								},
+								{
 									"cell": "headcell_field3"
 								},
 								{
@@ -2980,6 +2983,9 @@
 									"cell": "cell_field2"
 								},
 								{
+									"cell": "cell_field7"
+								},
+								{
 									"cell": "cell_field3"
 								},
 								{
@@ -2992,18 +2998,6 @@
 									"cell": "cell_field12"
 								}
 							]
-						},
-						{
-							"cells": [
-								{
-									"cell": "cell_dpreview",
-									"colspan": 7
-								},
-								{
-									"cell": "cell_field13"
-								}
-							],
-							"section": "body"
 						},
 						{
 							"section": "foot",
@@ -3019,6 +3013,9 @@
 								},
 								{
 									"cell": "footcell_field2"
+								},
+								{
+									"cell": "cell_field8"
 								},
 								{
 									"cell": "footcell_field3"
@@ -3151,15 +3148,6 @@
 							"field": "email",
 							"columnName": "field"
 						},
-						"cell_dpreview": {
-							"model": "cell_dpreview",
-							"items": [
-								"details_preview",
-								"details_preview2"
-							],
-							"columnName": "field",
-							"field": "cut_to_agency"
-						},
 						"headcell_details": {
 							"model": "headcell_details",
 							"items": [],
@@ -3222,17 +3210,33 @@
 							"columnName": "field",
 							"field": "user_status"
 						},
-						"cell_field13": {
-							"model": "cell_dpreview",
-							"items": [],
-							"columnName": "field",
-							"field": "user_status"
-						},
 						"cell_field14": {
 							"model": "footcell_field",
 							"items": [],
 							"columnName": "field",
 							"field": "user_status"
+						},
+						"cell_field6": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label"
+							],
+							"columnName": "field",
+							"field": "password"
+						},
+						"cell_field7": {
+							"model": "cell_field",
+							"items": [
+								"grid_field4"
+							],
+							"columnName": "field",
+							"field": "password"
+						},
+						"cell_field8": {
+							"model": "footcell_field",
+							"items": [],
+							"columnName": "field",
+							"field": "password"
 						}
 					},
 					"deferredItems": [],
@@ -3431,15 +3435,6 @@
 					},
 					"eventGid": 2825503296
 				},
-				"details_preview2": {
-					"type": "details_preview",
-					"table": 636150782,
-					"items": [],
-					"popup": false,
-					"hideEmptyPreview": false,
-					"proceedLink": false,
-					"pageId": "list"
-				},
 				"grid_details_link2": {
 					"type": "grid_details_link",
 					"table": 636150782,
@@ -3450,15 +3445,6 @@
 					"icon": {
 						"glyph": "bookmark"
 					}
-				},
-				"details_preview": {
-					"type": "details_preview",
-					"table": 1734685260,
-					"items": [],
-					"popup": false,
-					"hideEmptyPreview": false,
-					"proceedLink": false,
-					"pageId": "list"
 				},
 				"grid_details_link": {
 					"type": "grid_details_link",
@@ -3481,6 +3467,14 @@
 					"type": "grid_field_label",
 					"field": "cut_to_agency",
 					"clickSort": false
+				},
+				"grid_field4": {
+					"field": "password",
+					"type": "grid_field"
+				},
+				"grid_field_label": {
+					"type": "grid_field_label",
+					"field": "password"
 				}
 			},
 			"spreadsheetGrid": false,

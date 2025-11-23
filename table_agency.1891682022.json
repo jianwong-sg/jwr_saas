@@ -399,7 +399,7 @@
 				{}
 			],
 			"label": {
-				"English": "Gst Reg"
+				"English": "GST Reg"
 			},
 			"tableName": "agency"
 		}
@@ -422,12 +422,12 @@
 		{
 			"eventId": "EVENT_AFTERADD",
 			"pageType": "add",
-			"code": "global $conn;\n $sql = \"UPDATE jwresour_jwr_saas.eat_users SET agency_gst_reg = '\".$values['gst_reg'].\"' WHERE agency = '\".$values['agency_name'].\"'\";\n CustomQuery($sql);\n\n\n"
+			"code": "/*\n$key = '$jw6857r707';\n\nglobal $conn;\n $sql = \"UPDATE jwresour_jwr_saas.eat_users SET agency_gst_reg = HEX(AES_ENCRYPT('\".$values['gst_reg'].\"', '\".$key.\"'))\n WHERE agency = '\".$values['agency_name'].\"'\";\n CustomQuery($sql);\n*/\n\nglobal $conn;\n $sql = \"UPDATE jwresour_jwr_saas.eat_users SET agency_gst_reg = '\".$values['gst_reg'].\"' WHERE agency = '\".$values['agency_name'].\"'\";\n CustomQuery($sql);"
 		},
 		{
 			"eventId": "EVENT_AFTEREDIT",
 			"pageType": "edit",
-			"code": "global $conn;\n $sql = \"UPDATE jwresour_jwr_saas.eat_users SET agency_gst_reg = '\".$values['gst_reg'].\"' WHERE agency = '\".$values['agency_name'].\"'\";\n CustomQuery($sql);\n\n\n"
+			"code": "global $conn;\n $sql = \"UPDATE jwresour_jwr_saas.eat_users SET agency_gst_reg = '\".$values['gst_reg'].\"' WHERE agency = '\".$values['agency_name'].\"'\";\n CustomQuery($sql);\n \n/* \n$sql = \"UPDATE jwresour_jwr_saas.eat_users SET agency_gst_reg = HEX(AES_ENCRYPT('\".$values['gst_reg'].\"', '\".$key.\"'))\n WHERE agency = '\".$values['agency_name'].\"'\";\n CustomQuery($sql);\n*/\n\n"
 		}
 	],
 	"sortByFields": {
@@ -2244,7 +2244,12 @@
 				},
 				"grid_field_label5": {
 					"type": "grid_field_label",
-					"field": "gst_reg"
+					"field": "gst_reg",
+					"label": {
+						"field": "gst_reg",
+						"table": "agency",
+						"type": 3
+					}
 				},
 				"search_panel": {
 					"type": "search_panel",
