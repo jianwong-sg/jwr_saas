@@ -3901,18 +3901,19 @@
 			"type": 14,
 			"viewFormats": [
 				{
-					"format": "Currency",
+					"format": "Custom",
 					"imageWidth": 457,
 					"imageHeight": 0,
 					"imageThumbWidth": 72,
 					"imageThumbHeight": 72,
+					"customExpression": "$value=$value.\"%\";",
 					"videoRewindEnabled": false,
+					"numberFractionalDigits": 0,
 					"textShowFirst": false
 				}
 			],
 			"editFormats": [
 				{
-					"format": "Readonly",
 					"textboxSize": 42,
 					"textHTML5Input": "0",
 					"fileThumbnailSize": 150,
@@ -3928,7 +3929,7 @@
 			},
 			"defaultSearchOption": "Contains",
 			"label": {
-				"English": "GST"
+				"English": "GST Rate (%)"
 			},
 			"tooltip": {
 				"English": ""
@@ -4263,7 +4264,7 @@
 			},
 			"defaultSearchOption": "Contains",
 			"label": {
-				"English": "Comm Percent"
+				"English": "Comm (%)"
 			},
 			"tooltip": {
 				"English": ""
@@ -6324,6 +6325,9 @@
 			],
 			"editFormats": [
 				{
+					"format": "Readonly",
+					"defaultValue": "$_SESSION[\"GstReg\"]",
+					"autoUpdateValue": "$_SESSION[\"GstReg\"]",
 					"validateRegexMessage": {
 						"text": "",
 						"type": 0
@@ -6347,7 +6351,7 @@
 			"sourceSingle": "agency_gst_reg",
 			"defaultSearchOption": "Contains",
 			"label": {
-				"English": "Agency Gst Reg"
+				"English": "GST Reg"
 			},
 			"tooltip": {
 				"English": ""
@@ -6424,12 +6428,12 @@
 		{
 			"eventId": "EVENT_JS_ONLOAD",
 			"pageType": "add",
-			"code": "// Initial page setup\npageObj.toggleItem(\"tx_info_section\", false);\npageObj.toggleItem(\"prop_info_section\", false);\n$(\"[data-fieldname='status_status']\").hide();\n\n// --- 1. Control Initialization (Grouped) ---\n// Group all controls into a single object for a cleaner structure.\nvar ctrls = {\n    // Transaction/Price/Date Controls\n    category: Runner.getControl(pageid, 'category'),\n    representing: Runner.getControl(pageid, 'representing'),\n    marketing_rights: Runner.getControl(pageid, 'marketing_rights'),\n    sale_price: Runner.getControl(pageid, 'sale_price'),\n    rental_price: Runner.getControl(pageid, 'rental_price'),\n    rental_price_type: Runner.getControl(pageid, 'rental_price_type'),\n    lease_duration_no: Runner.getControl(pageid, 'lease_duration_no'),\n    lease_duration_unit: Runner.getControl(pageid, 'lease_duration_unit'),\n    lease_start_date: Runner.getControl(pageid, 'lease_start_date'),\n    lease_expiry: Runner.getControl(pageid, 'lease_expiry'),\n    management_fee: Runner.getControl(pageid, 'management_fee'),\n    agency: Runner.getControl(pageid, 'agency'),\n    \n    // Agent Controls\n    salesperson_name: Runner.getControl(pageid, 'salesperson_name'),\n    salesperson_email: Runner.getControl(pageid, 'salesperson_email'),\n    cea_reg: Runner.getControl(pageid, 'cea_reg'),\n    \n    // Reminder Controls (grouped for the second event)\n    reminder_tenant: Runner.getControl(pageid, 'reminder_tenant'),\n    reminder_tenant_email: Runner.getControl(pageid, 'reminder_tenant_email'),\n\n    // Property Type Controls (grouped for the second event)\n    prop_type: Runner.getControl(pageid, 'prop_type'),\n    built_up: Runner.getControl(pageid, 'built_up'),\n    built_up_unit: Runner.getControl(pageid, 'built_up_unit'),\n    no_bedrooms: Runner.getControl(pageid, 'no_bedrooms'),\n    no_bathrooms: Runner.getControl(pageid, 'no_bathrooms'),\n    land: Runner.getControl(pageid, 'land'),\n    land_unit: Runner.getControl(pageid, 'land_unit'),\n\n    // Additional Date/Field Controls\n    ta_date: Runner.getControl(pageid, 'ta_date'),\n    loi_date: Runner.getControl(pageid, 'loi_date'),\n    // ... add any other controls you need to reference outside the main group ...\n    \n    // Note: If controls are only used once (like valuation_price, etc.),\n    // you can choose to declare them only when needed, but grouping is generally cleaner.\n};\n\n// --- 2. Helper Functions/Constants ---\n\n// Common actions for all transaction types\nvar COMMON_SHOW_FIELDS = [\"salesperson_name\", \"salesperson_email\", \"cea_reg\", \"representing\", \"marketing_rights\", \"currency\"];\nvar COMMON_SAVE_BUTTONS = [\"add_save\", \"add_save1\", \"add_back_list1\", \"add_reset1\"];\n\n/**\n * Executes pageObj.toggleItem for a list of items.\n * @param {string[]} items - Array of item IDs.\n * @param {boolean} state - true (show) or false (hide).\n */\nfunction toggleItems(items, state) {\n    items.forEach(function(item) {\n        pageObj.toggleItem(item, state);\n    });\n}\n\n/**\n * Manages required validation for multiple controls.\n * @param {object[]} controls - Array of control objects (e.g., [ctrls.sale_price, ctrls.agency]).\n * @param {boolean} isRequired - true to add 'IsRequired', false to remove.\n */\nfunction manageValidations(controls, isRequired) {\n    var method = isRequired ? 'addValidation' : 'removeValidation';\n    controls.forEach(function(ctrl) {\n        // Ensure the control exists before calling the method\n        if (ctrl && typeof ctrl[method] === 'function') {\n            ctrl[method]('IsRequired');\n        }\n    });\n}\n\n// All section items for easier toggling\nvar ALL_SECTIONS = [\n    \"tx_info_section\", \"prop_info_section\", \"agency_info_section\", \n    \"rental_info_section\", \"sale_info_section\", \"jtc_lease_info_section\", \n    \"room_rental_info_section\"\n];\n\n// --- 3. Category Change Event (Optimized) ---\n\nctrls.category.on('change', function(e) {\n    var category = this.getValue();\n    \n    // Hide all sections by default\n    toggleItems(ALL_SECTIONS, false);\n    \n    // Clear all common agent/price validations before applying new ones\n    manageValidations([\n        ctrls.sale_price, \n        ctrls.rental_price, \n        ctrls.salesperson_name, \n        ctrls.agency, \n        ctrls.rental_price_type, \n        ctrls.lease_start_date, \n        ctrls.lease_expiry, \n        ctrls.lease_duration_no, \n        ctrls.lease_duration_unit,\n        ctrls.marketing_rights\n    ], false);\n    \n    // If a category is selected, show common sections/buttons\n    if (category !== '') {\n        pageObj.toggleItem(\"tx_info_section\", true);\n        pageObj.toggleItem(\"prop_info_section\", true);\n        toggleItems(COMMON_SAVE_BUTTONS, true);\n    }\n    \n    // Define the specific logic for each category\n    switch (category) {\n        case 'SALE':\n            pageObj.toggleItem(\"sale_info_section\", true);\n            pageObj.showField(\"reminder_tenant\"); // Show by default, then hide if needed\n            pageObj.showField(\"reminder_tenant_email\"); // Show by default, then hide if needed\n            \n            COMMON_SHOW_FIELDS.forEach(function(field) { pageObj.showField(field); });\n            \n            manageValidations([ctrls.sale_price, ctrls.salesperson_name], true);\n            pageObj.hideField(\"reminder_tenant_email\"); // Specifically hide for SALE\n            break;\n\n        case 'RENTAL':\n        case 'ASSIGNMENT':\n            pageObj.toggleItem(\"rental_info_section\", true);\n            \n            COMMON_SHOW_FIELDS.forEach(function(field) { pageObj.showField(field); });\n            pageObj.showField(\"reminder_tenant\");\n            pageObj.hideField(\"reminder_tenant_email\"); \n            \n            manageValidations([\n                ctrls.rental_price, \n                ctrls.salesperson_name,\n                ctrls.rental_price_type, \n                ctrls.lease_start_date, \n                ctrls.lease_expiry, \n                ctrls.lease_duration_no, \n                ctrls.lease_duration_unit\n            ], true);\n            break;\n\n        case 'ROOM RENTAL':\n            pageObj.toggleItem(\"rental_info_section\", true);\n            pageObj.toggleItem(\"room_rental_info_section\", true);\n            \n            COMMON_SHOW_FIELDS.forEach(function(field) { pageObj.showField(field); });\n            pageObj.showField(\"reminder_tenant\");\n            pageObj.hideField(\"reminder_tenant_email\"); \n\n            manageValidations([\n                ctrls.rental_price, \n                ctrls.rental_price_type, \n                ctrls.lease_start_date, \n                ctrls.lease_expiry, \n                ctrls.lease_duration_no, \n                ctrls.lease_duration_unit\n                // Note: AgentName validation is commented out in your original logic, kept that way here.\n            ], true);\n            break;\n\n        case 'PROPERTY MANAGEMENT':\n            pageObj.toggleItem(\"agency_info_section\", true);\n            pageObj.toggleItem(\"rental_info_section\", true);\n            \n            // Hide/Show fields for Management\n            [\"salesperson_name\", \"cea_reg\", \"salesperson_email\", \"marketing_rights\", \"ta_date\", \"loi_date\", \"comm_percent\", \"comm_unit\", \"transacted_price\"].forEach(function(field) { pageObj.hideField(field); });\n            pageObj.showField(\"representing\");\n            pageObj.showField(\"lease_duration_no\");\n            pageObj.showField(\"lease_duration_unit\");\n            pageObj.showField(\"reminder_tenant\");\n            pageObj.hideField(\"reminder_tenant_email\"); \n            \n            manageValidations([\n                ctrls.agency, \n                ctrls.rental_price,\t\n                ctrls.lease_start_date,\t\t\n                ctrls.lease_expiry,\n                ctrls.lease_duration_no,\n                ctrls.lease_duration_unit,\n                //ctrls.management_fee // If you uncomment IsRequired, uncomment this too\n            ], true);\n            ctrls.marketing_rights.removeValidation('IsRequired'); // Explicitly remove\n            break;\n\n        case 'JTC LEASE MANAGEMENT':\n            pageObj.toggleItem(\"jtc_lease_info_section\", true);\n\n            // Show common agent fields\n            [\"salesperson_name\", \"salesperson_email\", \"cea_reg\", \"representing\", \"currency\"].forEach(function(field) { pageObj.showField(field); });\n            pageObj.hideField(\"marketing_rights\");\n            \n            manageValidations([ctrls.salesperson_name], true);\n            break;\n            \n        // default case (empty/unrecognized) handled by the initial clear and check\n    }\n});\n\n\n// --- 4. Reminder Tenant Change Event (Simplified) ---\n\nctrls.reminder_tenant.on('change', function(e) {\n    var isYes = this.getValue() == \"Yes\";\n    var method = isYes ? 'addValidation' : 'removeValidation';\n    var action = isYes ? 'showField' : 'hideField';\n\n    ctrls.reminder_tenant_email[method]('IsRequired');\n    pageObj[action](\"reminder_tenant_email\");\n});\n\n\n// --- 5. Property Type Change Event (Optimized) ---\n\n// Define configurations for each property type\nvar PROPERTY_CONFIG = {\n    'HDB APARTMENT': {\n        show: [\"built_up\", \"built_up_unit\", \"no_bedrooms\", \"no_bathrooms\"],\n        hide: [\"land\", \"land_unit\"]\n    },\n    'APARTMENT / CONDO': {\n        show: [\"built_up\", \"built_up_unit\", \"no_bedrooms\", \"no_bathrooms\"],\n        hide: [\"land\", \"land_unit\"]\n    },\n    'LANDED HOUSE': {\n        show: [\"built_up\", \"built_up_unit\", \"no_bedrooms\", \"no_bathrooms\", \"land\", \"land_unit\"],\n        hide: []\n    },\n    'INDUSTRIAL': {\n        show: [\"built_up\", \"built_up_unit\", \"land\", \"land_unit\"],\n        hide: [\"no_bedrooms\", \"no_bathrooms\"]\n    },\n    'OFFICE': {\n        show: [\"built_up\", \"built_up_unit\", \"no_bathrooms\"],\n        hide: [\"no_bedrooms\", \"land\", \"land_unit\"]\n    },\n    'RETAIL': {\n        show: [\"built_up\", \"built_up_unit\", \"no_bathrooms\"],\n        hide: [\"no_bedrooms\", \"land\", \"land_unit\"]\n    },\n    'LAND': {\n        show: [\"land\", \"land_unit\"],\n        hide: [\"built_up\", \"built_up_unit\", \"no_bedrooms\", \"no_bathrooms\"]\n    }\n};\n\n// All property-related fields for clearing\nvar ALL_PROP_FIELDS = [\n    \"built_up\", \"built_up_unit\", \"no_bedrooms\", \"no_bathrooms\", \"land\", \"land_unit\"\n];\n\nctrls.prop_type.on('change', function(e) {\n    var type = this.getValue();\n    var config = PROPERTY_CONFIG[type];\n\n    // Reset visibility for all property fields\n    ALL_PROP_FIELDS.forEach(function(field) {\n        pageObj.hideField(field);\n    });\n\n    if (config) {\n        // Show fields based on the configuration\n        config.show.forEach(function(field) {\n            pageObj.showField(field);\n        });\n        // (No need for hide loop as ALL_PROP_FIELDS handles the reset)\n    }\n});\n\n$(document).ready(function () {\n    // ===== Scroll to Top ==== \n    $(window).scroll(function () {\n        if ($(this).scrollTop() >= 1000) { // If page is scrolled more than 1000px\n            $('#return-to-top').fadeIn(200); // Fade in the arrow\n        } else {\n            $('#return-to-top').fadeOut(200); // Else fade out the arrow\n        }\n    });\n\n    $('#return-to-top').click(function () { // When arrow is clicked\n        $('html, body').animate({\n            scrollTop: 0\n        }, 500);\n    });\n});\n"
+			"code": "function showLeaseError(message) {\n    var msgDiv = document.getElementById(\"leaseErrorMsg\");\n    msgDiv.innerText = message;\n    msgDiv.style.display = \"block\";\n}\n\nfunction hideLeaseError() {\n    var msgDiv = document.getElementById(\"leaseErrorMsg\");\n    msgDiv.innerText = \"\";\n    msgDiv.style.display = \"none\";\n}\n\nfunction calculateLeaseDuration() {\n    var startVal = Runner.getControl(pageid, 'lease_start_date').getValue();\n    var endVal = Runner.getControl(pageid, 'lease_expiry').getValue();\n\n    if (startVal && endVal) {\n        var startDate = new Date(startVal);\n        var endDate = new Date(endVal);\n\n        if (endDate < startDate) {\n            showLeaseError(\"🚫 Lease expiry date cannot be earlier than lease start date.\");\n            Runner.getControl(pageid, 'lease_duration_no').setValue(\"\");\n            return;\n        } else {\n            hideLeaseError();\n        }\n\n        var years = endDate.getFullYear() - startDate.getFullYear();\n        var months = endDate.getMonth() - startDate.getMonth();\n        var totalMonths = years * 12 + months;\n\n        if (endDate.getDate() >= startDate.getDate()) {\n            totalMonths += 1;\n        }\n\n        Runner.getControl(pageid, 'lease_duration_no').setValue(totalMonths.toString());\n    }\n}\n\n// Get the date controls\nvar leaseStartCtrl = Runner.getControl(pageid, 'lease_start_date');\nvar leaseEndCtrl = Runner.getControl(pageid, 'lease_expiry');\n\n// Trigger calculation on date change\nleaseStartCtrl.on('change', calculateLeaseDuration);\nleaseEndCtrl.on('change', calculateLeaseDuration);\n\n\n// Initial page setup\npageObj.toggleItem(\"tx_info_section\", false);\npageObj.toggleItem(\"prop_info_section\", false);\n$(\"[data-fieldname='status_status']\").hide();\n\n// --- 1. Control Initialization (Grouped) ---\n// Group all controls into a single object for a cleaner structure.\nvar ctrls = {\n    // Transaction/Price/Date Controls\n    category: Runner.getControl(pageid, 'category'),\n    representing: Runner.getControl(pageid, 'representing'),\n    marketing_rights: Runner.getControl(pageid, 'marketing_rights'),\n    sale_price: Runner.getControl(pageid, 'sale_price'),\n    rental_price: Runner.getControl(pageid, 'rental_price'),\n    rental_price_type: Runner.getControl(pageid, 'rental_price_type'),\n    lease_duration_no: Runner.getControl(pageid, 'lease_duration_no'),\n    lease_duration_unit: Runner.getControl(pageid, 'lease_duration_unit'),\n    lease_start_date: Runner.getControl(pageid, 'lease_start_date'),\n    lease_expiry: Runner.getControl(pageid, 'lease_expiry'),\n    management_fee: Runner.getControl(pageid, 'management_fee'),\n    agency: Runner.getControl(pageid, 'agency'),\n    \n    // Agent Controls\n    salesperson_name: Runner.getControl(pageid, 'salesperson_name'),\n    salesperson_email: Runner.getControl(pageid, 'salesperson_email'),\n    cea_reg: Runner.getControl(pageid, 'cea_reg'),\n    \n    // Reminder Controls (grouped for the second event)\n    reminder_tenant: Runner.getControl(pageid, 'reminder_tenant'),\n    reminder_tenant_email: Runner.getControl(pageid, 'reminder_tenant_email'),\n\n    // Property Type Controls (grouped for the second event)\n    prop_type: Runner.getControl(pageid, 'prop_type'),\n    built_up: Runner.getControl(pageid, 'built_up'),\n    built_up_unit: Runner.getControl(pageid, 'built_up_unit'),\n    no_bedrooms: Runner.getControl(pageid, 'no_bedrooms'),\n    no_bathrooms: Runner.getControl(pageid, 'no_bathrooms'),\n    land: Runner.getControl(pageid, 'land'),\n    land_unit: Runner.getControl(pageid, 'land_unit'),\n\n    // Additional Date/Field Controls\n    ta_date: Runner.getControl(pageid, 'ta_date'),\n    loi_date: Runner.getControl(pageid, 'loi_date'),\n    // ... add any other controls you need to reference outside the main group ...\n    \n    // Note: If controls are only used once (like valuation_price, etc.),\n    // you can choose to declare them only when needed, but grouping is generally cleaner.\n};\n\n// --- 2. Helper Functions/Constants ---\n\n// Common actions for all transaction types\nvar COMMON_SHOW_FIELDS = [\"salesperson_name\", \"salesperson_email\", \"cea_reg\", \"representing\", \"marketing_rights\", \"currency\"];\nvar COMMON_SAVE_BUTTONS = [\"add_save\", \"add_save1\", \"add_back_list1\", \"add_reset1\"];\n\n\nfunction toggleItems(items, state) {\n    items.forEach(function(item) {\n        pageObj.toggleItem(item, state);\n    });\n}\n\n\nfunction manageValidations(controls, isRequired) {\n    var method = isRequired ? 'addValidation' : 'removeValidation';\n    controls.forEach(function(ctrl) {\n        // Ensure the control exists before calling the method\n        if (ctrl && typeof ctrl[method] === 'function') {\n            ctrl[method]('IsRequired');\n        }\n    });\n}\n\n// All section items for easier toggling\nvar ALL_SECTIONS = [\n    \"tx_info_section\", \"prop_info_section\", \"agency_info_section\", \n    \"rental_info_section\", \"sale_info_section\", \"jtc_lease_info_section\", \n    \"room_rental_info_section\"\n];\n\n// --- 3. Category Change Event (Optimized) ---\n\nctrls.category.on('change', function(e) {\n    var category = this.getValue();\n    \n    // Hide all sections by default\n    toggleItems(ALL_SECTIONS, false);\n    \n    // Clear all common agent/price validations before applying new ones\n    manageValidations([\n        ctrls.sale_price, \n        ctrls.rental_price, \n        ctrls.salesperson_name, \n        ctrls.agency, \n        ctrls.rental_price_type, \n        ctrls.lease_start_date, \n        ctrls.lease_expiry, \n        ctrls.lease_duration_no, \n        ctrls.lease_duration_unit,\n        ctrls.marketing_rights\n    ], false);\n    \n    // If a category is selected, show common sections/buttons\n    if (category !== '') {\n        pageObj.toggleItem(\"tx_info_section\", true);\n        pageObj.toggleItem(\"prop_info_section\", true);\n        toggleItems(COMMON_SAVE_BUTTONS, true);\n    }\n    \n    // Define the specific logic for each category\n    switch (category) {\n        case 'SALE':\n            pageObj.toggleItem(\"sale_info_section\", true);\n            pageObj.showField(\"reminder_tenant\"); // Show by default, then hide if needed\n            pageObj.showField(\"reminder_tenant_email\"); // Show by default, then hide if needed\n            \n            COMMON_SHOW_FIELDS.forEach(function(field) { pageObj.showField(field); });\n            \n            manageValidations([ctrls.sale_price, ctrls.salesperson_name], true);\n            pageObj.hideField(\"reminder_tenant_email\"); // Specifically hide for SALE\n            break;\n\n        case 'RENTAL':\n        case 'ASSIGNMENT':\n            pageObj.toggleItem(\"rental_info_section\", true);\n            \n            COMMON_SHOW_FIELDS.forEach(function(field) { pageObj.showField(field); });\n            pageObj.showField(\"reminder_tenant\");\n            pageObj.hideField(\"reminder_tenant_email\"); \n            \n            manageValidations([\n                ctrls.rental_price, \n                ctrls.salesperson_name,\n                ctrls.rental_price_type, \n                ctrls.lease_start_date, \n                ctrls.lease_expiry, \n                ctrls.lease_duration_no, \n                ctrls.lease_duration_unit\n            ], true);\n            break;\n\n        case 'ROOM RENTAL':\n            pageObj.toggleItem(\"rental_info_section\", true);\n            pageObj.toggleItem(\"room_rental_info_section\", true);\n            \n            COMMON_SHOW_FIELDS.forEach(function(field) { pageObj.showField(field); });\n            pageObj.showField(\"reminder_tenant\");\n            pageObj.hideField(\"reminder_tenant_email\"); \n\n            manageValidations([\n                ctrls.rental_price, \n                ctrls.rental_price_type, \n                ctrls.lease_start_date, \n                ctrls.lease_expiry, \n                ctrls.lease_duration_no, \n                ctrls.lease_duration_unit\n                // Note: AgentName validation is commented out in your original logic, kept that way here.\n            ], true);\n            break;\n\n        case 'PROPERTY MANAGEMENT':\n            pageObj.toggleItem(\"agency_info_section\", true);\n            pageObj.toggleItem(\"rental_info_section\", true);\n            \n            // Hide/Show fields for Management\n            [\"salesperson_name\", \"cea_reg\", \"salesperson_email\", \"marketing_rights\", \"ta_date\", \"loi_date\", \"comm_percent\", \"comm_unit\", \"transacted_price\"].forEach(function(field) { pageObj.hideField(field); });\n            pageObj.showField(\"representing\");\n            pageObj.showField(\"lease_duration_no\");\n            pageObj.showField(\"lease_duration_unit\");\n            pageObj.showField(\"reminder_tenant\");\n            pageObj.hideField(\"reminder_tenant_email\"); \n            \n            manageValidations([\n                ctrls.agency, \n                ctrls.rental_price,\t\n                ctrls.lease_start_date,\t\t\n                ctrls.lease_expiry,\n                ctrls.lease_duration_no,\n                ctrls.lease_duration_unit,\n                //ctrls.management_fee // If you uncomment IsRequired, uncomment this too\n            ], true);\n            ctrls.marketing_rights.removeValidation('IsRequired'); // Explicitly remove\n            break;\n\n        case 'JTC LEASE MANAGEMENT':\n            pageObj.toggleItem(\"jtc_lease_info_section\", true);\n\n            // Show common agent fields\n            [\"salesperson_name\", \"salesperson_email\", \"cea_reg\", \"representing\", \"currency\"].forEach(function(field) { pageObj.showField(field); });\n            pageObj.hideField(\"marketing_rights\");\n            \n            manageValidations([ctrls.salesperson_name], true);\n            break;\n            \n        // default case (empty/unrecognized) handled by the initial clear and check\n    }\n});\n\n\n// --- 4. Reminder Tenant Change Event (Simplified) ---\n\nctrls.reminder_tenant.on('change', function(e) {\n    var isYes = this.getValue() == \"Yes\";\n    var method = isYes ? 'addValidation' : 'removeValidation';\n    var action = isYes ? 'showField' : 'hideField';\n\n    ctrls.reminder_tenant_email[method]('IsRequired');\n    pageObj[action](\"reminder_tenant_email\");\n});\n\n\n// --- 5. Property Type Change Event (Optimized) ---\n\n// Define configurations for each property type\nvar PROPERTY_CONFIG = {\n    'HDB APARTMENT': {\n        show: [\"built_up\", \"built_up_unit\", \"no_bedrooms\", \"no_bathrooms\"],\n        hide: [\"land\", \"land_unit\"]\n    },\n    'APARTMENT / CONDO': {\n        show: [\"built_up\", \"built_up_unit\", \"no_bedrooms\", \"no_bathrooms\"],\n        hide: [\"land\", \"land_unit\"]\n    },\n    'LANDED HOUSE': {\n        show: [\"built_up\", \"built_up_unit\", \"no_bedrooms\", \"no_bathrooms\", \"land\", \"land_unit\"],\n        hide: []\n    },\n    'INDUSTRIAL': {\n        show: [\"built_up\", \"built_up_unit\", \"land\", \"land_unit\"],\n        hide: [\"no_bedrooms\", \"no_bathrooms\"]\n    },\n    'OFFICE': {\n        show: [\"built_up\", \"built_up_unit\", \"no_bathrooms\"],\n        hide: [\"no_bedrooms\", \"land\", \"land_unit\"]\n    },\n    'RETAIL': {\n        show: [\"built_up\", \"built_up_unit\", \"no_bathrooms\"],\n        hide: [\"no_bedrooms\", \"land\", \"land_unit\"]\n    },\n    'LAND': {\n        show: [\"land\", \"land_unit\"],\n        hide: [\"built_up\", \"built_up_unit\", \"no_bedrooms\", \"no_bathrooms\"]\n    }\n};\n\n// All property-related fields for clearing\nvar ALL_PROP_FIELDS = [\n    \"built_up\", \"built_up_unit\", \"no_bedrooms\", \"no_bathrooms\", \"land\", \"land_unit\"\n];\n\nctrls.prop_type.on('change', function(e) {\n    var type = this.getValue();\n    var config = PROPERTY_CONFIG[type];\n\n    // Reset visibility for all property fields\n    ALL_PROP_FIELDS.forEach(function(field) {\n        pageObj.hideField(field);\n    });\n\n    if (config) {\n        // Show fields based on the configuration\n        config.show.forEach(function(field) {\n            pageObj.showField(field);\n        });\n        // (No need for hide loop as ALL_PROP_FIELDS handles the reset)\n    }\n});\n\n$(document).ready(function () {\n    // ===== Scroll to Top ==== \n    $(window).scroll(function () {\n        if ($(this).scrollTop() >= 1000) { // If page is scrolled more than 1000px\n            $('#return-to-top').fadeIn(200); // Fade in the arrow\n        } else {\n            $('#return-to-top').fadeOut(200); // Else fade out the arrow\n        }\n    });\n\n    $('#return-to-top').click(function () { // When arrow is clicked\n        $('html, body').animate({\n            scrollTop: 0\n        }, 500);\n    });\n});\n"
 		},
 		{
 			"eventId": "EVENT_JS_ONLOAD",
 			"pageType": "edit",
-			"code": "ctrlCDDResult = Runner.getControl(pageid, \"cdd_result\");\r\nctrlCheckResult = Runner.getControl(pageid, \"cdd_check_result\");\r\nctrlMeasureResult = Runner.getControl(pageid, \"cddmeasure_result\");\r\n\r\nif (ctrlCheckResult.getValue() === '' && ctrlCDDResult.getValue() === 'Conduct of CDD Measures is NECESSARY' && ctrlMeasureResult.getValue() === '') {\r\n    Swal.fire({\r\n        title: 'CDD Measure Required!',\r\n        text: 'You are required to perform CDD measures.',\r\n        icon: 'warning',\r\n        confirmButtonText: 'OK',\r\n        confirmButtonColor: '#3085d6'\r\n    }).then((result) => {\r\n        if (result.isConfirmed) {\r\n            const targetSection = document.getElementById(\"cdd_measure_section\");\r\n            if (targetSection) {\r\n                // Delay to let SweetAlert fully close before scrolling\r\n                setTimeout(() => {\r\n                    targetSection.scrollIntoView({ behavior: \"smooth\", block: \"start\" });\r\n                }, 300); // adjust delay if needed\r\n            }\r\n        }\r\n    });\r\n}\r\n\r\n// Sweet alert for STR\r\n// Check if gridRow37 exists first\r\nif (!document.getElementById(\"gridRow37\")) {\r\n    // Sweet alert for STR\r\n    if (ctrlMeasureResult.getValue() === 'Suspicious Transaction Report Required') {\r\n        Swal.fire({\r\n            title: 'Suspicious Transaction Report (STR) Required!',\r\n            text: 'You are required to Lodge STR of the subject client',\r\n            icon: 'warning',\r\n            confirmButtonText: 'OK',\r\n            confirmButtonColor: '#3085d6'\r\n        }).then((result) => {\r\n            if (result.isConfirmed) {\r\n                const targetSection = document.getElementById(\"str_section\");\r\n                if (targetSection) {\r\n                    // Delay to let SweetAlert fully close before scrolling\r\n                    setTimeout(() => {\r\n                        targetSection.scrollIntoView({ behavior: \"smooth\", block: \"center\" });\r\n                    }, 300);\r\n                }\r\n            }\r\n        });\r\n    }\r\n}\r\n\r\n\r\n// show or hide CDD check and Delete buttons\r\n$(document).ready(function () {\r\n    function updateButtonVisibility() {\r\n        // Check if the \"No data yet\" message is visible (either notfound_message3 or notfound_message2)\r\n        var hasNoDataMessage3 = $(\"[name='notfound_message3']\").length > 0 && $(\"[name='notfound_message3']\").is(\":visible\");\r\n        var hasNoDataMessage2 = $(\"[name='notfound_message2']\").length > 0 && $(\"[name='notfound_message2']\").is(\":visible\");\r\n        // Check if the grid has records\r\n        var hasRecords = $(\"#detailPreview3\").find('table > tbody > tr').length > 0;\r\n\r\n        if (hasNoDataMessage2) {\r\n            // Hide both buttons when notfound_message2 is displayed\r\n            $(\"#addButton3\").hide();\r\n            $(\"[id^='Delete_cdd_item_']\").hide();\r\n        } else if (hasNoDataMessage3) {\r\n            $(\"#addButton3\").show(); // Show the Add button\r\n            $(\"[id^='Delete_cdd_item_']\").hide(); // Hide Delete buttons\r\n        } else if (hasRecords) {\r\n            $(\"#addButton3\").hide(); // Hide the Add button\r\n            $(\"[id^='Delete_cdd_item_']\").show(); // Show Delete buttons\r\n        } else {\r\n            // Fallback: No records and no message\r\n            $(\"#addButton3\").show(); \r\n            $(\"[id^='Delete_cdd_item_']\").hide();\r\n        }\r\n    }\r\n\r\n    // Initial visibility update on document ready\r\n    updateButtonVisibility();\r\n    \r\n    // You might also want to set up an observer if the content changes dynamically\r\n    // For example, if using PHPRunner's AJAX calls:\r\n    $(document).ajaxComplete(function() {\r\n        updateButtonVisibility();\r\n    });\r\n});\r\n\r\n\r\n// show or hide CDD measure questionnaires\r\n$(document).ready(function() {\r\n    // Check if the row with id \"gridRow32\" exists and is visible\r\n    if ($(\"#gridRow32\").length > 0) {\r\n        // Hide the button if the row exists\r\n        $(\"#addButton4\").hide();\r\n    } else {\r\n        // Show the button if the row does not exist\r\n        $(\"#addButton4\").show();\r\n    }\r\n});\r\n\r\n// show or hide str button\r\n$(document).ready(function() {\r\n    // Check if the row with id \"gridRow37\" exists and is visible\r\n    if ($(\"#gridRow37\").length > 0) {\r\n        // Hide the button if the row exists\r\n        $(\"#addButton5\").hide();\r\n    } else {\r\n        // Show the button if the row does not exist\r\n        $(\"#addButton5\").show();\r\n    }\r\n});\r\n\r\n\r\nfunction showLeaseError(message) {\r\n    var msgDiv = document.getElementById(\"leaseErrorMsg\");\r\n    msgDiv.innerText = message;\r\n    msgDiv.style.display = \"block\";\r\n}\r\n\r\nfunction hideLeaseError() {\r\n    var msgDiv = document.getElementById(\"leaseErrorMsg\");\r\n    msgDiv.innerText = \"\";\r\n    msgDiv.style.display = \"none\";\r\n}\r\n\r\nfunction calculateLeaseDuration() {\r\n    var startVal = Runner.getControl(pageid, 'lease_start_date').getValue();\r\n    var endVal = Runner.getControl(pageid, 'lease_expiry').getValue();\r\n\r\n    if (startVal && endVal) {\r\n        var startDate = new Date(startVal);\r\n        var endDate = new Date(endVal);\r\n\r\n        if (endDate < startDate) {\r\n            showLeaseError(\"🚫 Lease expiry date cannot be earlier than lease start date.\");\r\n            Runner.getControl(pageid, 'lease_duration_no').setValue(\"\");\r\n            return;\r\n        } else {\r\n            hideLeaseError();\r\n        }\r\n\r\n        var years = endDate.getFullYear() - startDate.getFullYear();\r\n        var months = endDate.getMonth() - startDate.getMonth();\r\n        var totalMonths = years * 12 + months;\r\n\r\n        if (endDate.getDate() >= startDate.getDate()) {\r\n            totalMonths += 1;\r\n        }\r\n\r\n        Runner.getControl(pageid, 'lease_duration_no').setValue(totalMonths.toString());\r\n    }\r\n}\r\n\r\n// Get the date controls\r\nvar leaseStartCtrl = Runner.getControl(pageid, 'lease_start_date');\r\nvar leaseEndCtrl = Runner.getControl(pageid, 'lease_expiry');\r\n\r\n// Controls (single declarations)\r\nvar ctrlCat = Runner.getControl(pageid, 'category');\r\nvar ctrlRepresent = Runner.getControl(pageid, 'representing');\r\nvar ctrlMarketing = Runner.getControl(pageid, 'marketing_rights');\r\nvar ctrlSalePrice = Runner.getControl(pageid, 'sale_price');\r\nvar ctrlValuation = Runner.getControl(pageid, 'valuation_price');\r\nvar ctrlOption = Runner.getControl(pageid, 'option_money');\r\nvar ctrlOtpDate = Runner.getControl(pageid, 'otp_date');\r\nvar ctrlOtpExeDate = Runner.getControl(pageid, 'option_exercise_date');\r\nvar ctrlEstCompletion = Runner.getControl(pageid, 'est_completion_date');\r\nvar ctrlSpExeDate = Runner.getControl(pageid, 'sp_execution_date');\r\nvar ctrlLOI = Runner.getControl(pageid, 'loi_date');\r\nvar ctrlRental = Runner.getControl(pageid, 'rental_price');\r\nvar ctrlRentPriceType = Runner.getControl(pageid, 'rental_price_type');\r\nvar ctrlTADate = Runner.getControl(pageid, 'ta_date');\r\nvar ctrlLeaseDuration = Runner.getControl(pageid, 'lease_duration_no');\r\nvar ctrlLeaseDuUnit = Runner.getControl(pageid, 'lease_duration_unit');\r\nvar ctrlLeaseStart = Runner.getControl(pageid, 'lease_start_date');\r\nvar ctrlLeaseEnd = Runner.getControl(pageid, 'lease_expiry');\r\nvar ctrlUnit = Runner.getControl(pageid, 'comm_unit');\r\nvar ctrlPercent = Runner.getControl(pageid, 'comm_percent');\r\nvar ctrlAmount = Runner.getControl(pageid, 'comm_amt');\r\nvar ctrlTransacted = Runner.getControl(pageid, 'transacted_price');\r\nvar ctrlEarned = Runner.getControl(pageid, 'comm_earned');\r\nvar ctrlGst = Runner.getControl(pageid, 'gst');\r\nvar ctrlGross = Runner.getControl(pageid, 'comm_gross');\r\nvar ctrlGstPayable = Runner.getControl(pageid, 'gst_payable');\r\nvar ctrlGstInclusive = Runner.getControl(pageid, 'gst_inclusive');\r\nvar ctrlCommEarnedAgency = Runner.getControl(pageid, 'comm_earned_agency');\r\nvar ctrlGstAgency = Runner.getControl(pageid, 'gst_agency');\r\nvar ctrlCommGrossAgency = Runner.getControl(pageid, 'comm_gross_agency');\r\nvar ctrlAgentName = Runner.getControl(pageid, 'salesperson_name');\r\nvar ctrlAgentCea = Runner.getControl(pageid, 'cea_reg');\r\nvar ctrlCommEarnedSalesperson = Runner.getControl(pageid, 'comm_earned_salesperson');\r\nvar ctrlCommEarnedPercentSalesperson = Runner.getControl(pageid, 'comm_earned_percent_salesperson');\r\nvar ctrlCommToAgency = Runner.getControl(pageid, 'comm_to_agency');\r\nvar ctrlCommToAgency1 = Runner.getControl(pageid, 'comm_to_agency1');\r\nvar ctrlCommNettSalesperson = Runner.getControl(pageid, 'comm_nett_salesperson');\r\nvar ctrlManageFee = Runner.getControl(pageid, 'management_fee');\r\nvar ctrlAgency = Runner.getControl(pageid, 'agency');\r\nvar ctrlAgencyCea = Runner.getControl(pageid, 'agency_cea');\r\nvar ctrlConsultFee = Runner.getControl(pageid, 'consultation_fee');\r\nvar ctrlServCommence = Runner.getControl(pageid, 'service_commencement');\r\nvar ctrlServComplete = Runner.getControl(pageid, 'service_completion');\r\nvar ctrlResult = Runner.getControl(pageid, 'result');\r\nvar ctrlRemindAgent = Runner.getControl(pageid, 'reminder_agent');\r\nvar ctrlRemindTenant = Runner.getControl(pageid, 'reminder_tenant');\r\nvar ctrlReminderTenantEmail = Runner.getControl(pageid, 'reminder_tenant_email');\r\nvar ctrlRmBuiltUnit = Runner.getControl(pageid, 'rm_builtup_unit');\r\nvar ctrlFormNumber = Runner.getControl(pageid, 'form_number');\r\nvar ctrlSubCat = Runner.getControl && Runner.getControl(pageid, 'sub_category'); // safe-get if exists\r\n\r\n// Helper utilities\r\nfunction applyFieldAction(list, action) {\r\n  if (!list || !list.length) return;\r\n  list.forEach(function(name) {\r\n    if (action === 'show') pageObj.showField(name);\r\n    else if (action === 'hide') pageObj.hideField(name);\r\n    else if (action === 'reset') {\r\n      var c = Runner.getControl(pageid, name);\r\n      if (c && typeof c.setValue === 'function') c.setValue('');\r\n    }\r\n  });\r\n}\r\nfunction applyToggle(list, visible) {\r\n  if (!list || !list.length) return;\r\n  list.forEach(function(name) { pageObj.toggleItem(name, visible); });\r\n}\r\nfunction setValidations(validations) {\r\n  if (!validations) return;\r\n  validations.forEach(function(v) {\r\n    var ctrl = Runner.getControl(pageid, v.name);\r\n    if (!ctrl) return;\r\n    if (v.action === 'add') ctrl.addValidation('IsRequired');\r\n    if (v.action === 'remove') ctrl.removeValidation && ctrl.removeValidation('IsRequired');\r\n  });\r\n}\r\nfunction resetControls(names) { applyFieldAction(names, 'reset'); }\r\n\r\n// Data-driven category configuration\r\nvar categoryConfig = {\r\n  'SALE': {\r\n    toggleOn: [\"tx_info_section\",\"prop_info_section\",\"sale_info_section\",\"comm_to_agent_section\",\"add_save\",\"add_save1\",\"add_back_list1\",\"add_reset1\",\"gross_comm_label\"],\r\n    toggleOff: [\"agency_info_section\",\"rental_info_section\",\"jtc_lease_info_section\",\"room_rental_info_section\",\"gross_fee_label\",\"net_mag_fee_label\",\"comm_earned_label\"],\r\n    show: [\"salesperson_name\",\"salesperson_email\",\"cea_reg\",\"representing\",\"marketing_rights\",\"currency\",\"comm_percent\",\"no_bedrooms\",\"no_bathrooms\",\"transacted_price\"],\r\n    hide: [\"comm_unit\",\"comm_earned\",\"management_fee\"],\r\n    validations: [{name:'sale_price', action:'add'}, {name:'salesperson_name', action:'add'}],\r\n    reset: ['transacted_price','representing','marketing_rights','sale_price','valuation_price','option_money','otp_date','option_exercise_date','est_completion_date','sp_execution_date','comm_percent','comm_amt','comm_earned','comm_gross','comm_earned_agency','comm_earned_salesperson','comm_earned_percent_salesperson','comm_to_agency','comm_to_agency1','comm_nett_salesperson']\r\n  },\r\n  'RENTAL': {\r\n    toggleOn: [\"tx_info_section\",\"prop_info_section\",\"rental_info_section\",\"comm_to_agent_section\",\"gross_comm_label\",\"add_save\",\"add_save1\",\"add_back_list1\",\"add_reset1\"],\r\n    toggleOff: [\"agency_info_section\",\"sale_info_section\",\"jtc_lease_info_section\",\"room_rental_info_section\",\"gross_fee_label\",\"net_mag_fee_label\",\"comm_earned_label\"],\r\n    show: [\"salesperson_name\",\"salesperson_email\",\"cea_reg\",\"representing\",\"marketing_rights\",\"currency\",\"ta_date\",\"loi_date\",\"lease_duration_no\",\"lease_duration_unit\",\"reminder_tenant\",\"comm_unit\",\"no_bedrooms\",\"no_bathrooms\",\"transacted_price\"],\r\n    hide: [\"reminder_tenant_email\",\"comm_percent\",\"comm_earned\",\"management_fee\"],\r\n    validations: [{name:'rental_price', action:'add'}, {name:'rental_price_type', action:'add'}, {name:'lease_start_date', action:'add'}, {name:'lease_expiry', action:'add'}, {name:'lease_duration_no', action:'add'}, {name:'lease_duration_unit', action:'add'}],\r\n    reset: ['transacted_price','representing','marketing_rights','loi_date','rental_price','ta_date','lease_duration_no','lease_start_date','lease_expiry','comm_unit','comm_percent','comm_amt','comm_earned','comm_gross','comm_earned_agency','comm_earned_salesperson','comm_earned_percent_salesperson','comm_to_agency','comm_to_agency1','comm_nett_salesperson']\r\n  },\r\n  'ASSIGNMENT': null,\r\n  'ROOM RENTAL': {\r\n    toggleOn: [\"tx_info_section\",\"prop_info_section\",\"rental_info_section\",\"room_rental_info_section\",\"comm_to_agent_section\",\"gross_comm_label\"],\r\n    toggleOff: [\"agency_info_section\",\"sale_info_section\",\"jtc_lease_info_section\",\"gross_fee_label\",\"net_mag_fee_label\",\"comm_earned_label\"],\r\n    show: [\"salesperson_name\",\"salesperson_email\",\"cea_reg\",\"representing\",\"marketing_rights\",\"currency\",\"ta_date\",\"loi_date\",\"lease_duration_no\",\"lease_duration_unit\",\"reminder_tenant\",\"comm_unit\",\"no_bedrooms\",\"no_bathrooms\",\"rm_rental_rm_type\",\"rm_builtup\",\"rm_builtup_unit\",\"transacted_price\"],\r\n    hide: [\"reminder_tenant_email\",\"comm_percent\",\"comm_earned\",\"management_fee\"],\r\n    validations: [{name:'rental_price', action:'add'}, {name:'rental_price_type', action:'add'}, {name:'lease_start_date', action:'add'}, {name:'lease_expiry', action:'add'}, {name:'lease_duration_no', action:'add'}, {name:'lease_duration_unit', action:'add'}, {name:'rm_builtup_unit', action:'add'}],\r\n    reset: ['transacted_price','representing','marketing_rights','loi_date','rental_price','ta_date','lease_duration_no','lease_start_date','lease_expiry','comm_unit','comm_percent','comm_amt','comm_earned','comm_gross','comm_earned_agency','comm_earned_salesperson','comm_earned_percent_salesperson','comm_to_agency','comm_to_agency1','comm_nett_salesperson']\r\n  },\r\n  'PROPERTY MANAGEMENT': {\r\n    toggleOn: [\"tx_info_section\",\"prop_info_section\",\"agency_info_section\",\"rental_info_section\",\"net_mag_fee_label\"],\r\n    toggleOff: [\"sale_info_section\",\"jtc_lease_info_section\",\"room_rental_info_section\",\"comm_to_agent_section\",\"details_preview2\",\"details_preview6\",\"details_preview3\",\"cea_prescribed_form_section\",\"comm_label\",\"comm_earned_label\",\"gross_comm_label\",\"gross_fee_label\",\"text10\",\"text11\"],\r\n    show: [\"representing\",\"currency\",\"lease_duration_no\",\"lease_duration_unit\",\"reminder_tenant\",\"no_bedrooms\",\"no_bathrooms\",\"management_fee\"],\r\n    hide: [\"salesperson_name\",\"salesperson_email\",\"cea_reg\",\"marketing_rights\",\"ta_date\",\"loi_date\",\"reminder_tenant_email\",\"comm_percent\",\"comm_unit\",\"transacted_price\",\"comm_earned\",\"comm_amt\",\"comm_earned_agency\",\"comm_earned_salesperson\"],\r\n    validations: [{name:'agency', action:'add'}, {name:'rental_price', action:'add'}, {name:'lease_start_date', action:'add'}, {name:'lease_expiry', action:'add'}, {name:'lease_duration_no', action:'add'}, {name:'lease_duration_unit', action:'add'}, {name:'marketing_rights', action:'remove'}],\r\n    reset: ['transacted_price','representing','rental_price','management_fee','lease_start_date','lease_expiry','comm_unit','comm_percent','comm_amt','comm_earned','comm_gross','comm_earned_agency','comm_earned_salesperson','comm_earned_percent_salesperson','comm_to_agency','comm_to_agency1','comm_nett_salesperson']\r\n  },\r\n  'JTC LEASE MANAGEMENT': {\r\n    toggleOn: [\"tx_info_section\",\"prop_info_section\",\"jtc_lease_info_section\",\"gross_fee_label\"],\r\n    toggleOff: [\"agency_info_section\",\"rental_info_section\",\"sale_info_section\",\"room_rental_info_section\",\"comm_label\",\"comm_earned_label\",\"gross_comm_label\",\"net_mag_fee_label\"],\r\n    show: [\"salesperson_name\",\"salesperson_email\",\"cea_reg\",\"representing\",\"currency\",\"comm_earned\"],\r\n    hide: [\"marketing_rights\",\"comm_percent\",\"comm_unit\",\"transacted_price\",\"comm_amt\",\"comm_earned_salesperson\",\"management_fee\"],\r\n    validations: [{name:'salesperson_name', action:'add'}, {name:'marketing_rights', action:'remove'}],\r\n    reset: ['transacted_price','representing','comm_unit','comm_percent','comm_amt','comm_earned','comm_gross','comm_earned_agency','comm_earned_salesperson','comm_earned_percent_salesperson','comm_to_agency','comm_to_agency1','comm_nett_salesperson','sub_category','consultation_fee','service_commencement','service_completion']\r\n  }\r\n};\r\ncategoryConfig['ASSIGNMENT'] = categoryConfig['RENTAL'];\r\n\r\n// track previous category so we only reset on an actual user change\r\nvar prevCategory = typeof ctrlCat.getValue === 'function' ? ctrlCat.getValue() : null;\r\n\r\nfunction applyCategory(cat, options) {\r\n  options = options || {};\r\n  var cfg = categoryConfig[cat];\r\n  if (!cfg) return;\r\n\r\n  if (cfg.toggleOn) applyToggle(cfg.toggleOn, true);\r\n  if (cfg.toggleOff) applyToggle(cfg.toggleOff, false);\r\n  if (cfg.show) applyFieldAction(cfg.show, 'show');\r\n  if (cfg.hide) applyFieldAction(cfg.hide, 'hide');\r\n  if (cfg.validations) setValidations(cfg.validations);\r\n\r\n  if (cfg.reset && (options.forceReset || (prevCategory !== null && prevCategory !== undefined && prevCategory !== '' && prevCategory !== cat))) {\r\n    resetControls(cfg.reset);\r\n  }\r\n\r\n  applyTenantEmailRequirement(ctrlRemindTenant.getValue && ctrlRemindTenant.getValue());\r\n  prevCategory = cat;\r\n}\r\n\r\n// Initialize by applying current category but do not reset on init\r\napplyCategory(ctrlCat.getValue && ctrlCat.getValue(), { forceReset: false });\r\n\r\nif (ctrlCat && typeof ctrlCat.on === 'function') {\r\n  ctrlCat.on('change', function () {\r\n    var newCat = this.getValue();\r\n    applyCategory(newCat, { forceReset: true });\r\n  });\r\n}\r\n\r\n// Tenant email conditional logic (integrated)\r\nfunction applyTenantEmailRequirement(reminderValue) {\r\n  if (reminderValue === 'Yes') {\r\n    ctrlReminderTenantEmail.addValidation('IsRequired');\r\n    pageObj.showField('reminder_tenant_email');\r\n  } else {\r\n    ctrlReminderTenantEmail.removeValidation && ctrlReminderTenantEmail.removeValidation('IsRequired');\r\n    pageObj.hideField('reminder_tenant_email');\r\n  }\r\n}\r\nif (ctrlRemindTenant && typeof ctrlRemindTenant.on === 'function') {\r\n  ctrlRemindTenant.on('change', function () {\r\n    var val = this.getValue();\r\n    if (val === 'Yes') {\r\n      ctrlReminderTenantEmail.addValidation('IsRequired');\r\n      pageObj.showField('reminder_tenant_email');\r\n      ctrlReminderTenantEmail.setValue('');\r\n    } else {\r\n      ctrlReminderTenantEmail.removeValidation && ctrlReminderTenantEmail.removeValidation('IsRequired');\r\n      pageObj.hideField('reminder_tenant_email');\r\n    }\r\n  });\r\n}\r\n\r\n// Initialize by applying current category and tenant-email state\r\napplyCategory(ctrlCat.getValue && ctrlCat.getValue());\r\n\r\nif (ctrlCat && typeof ctrlCat.on === 'function') {\r\n  ctrlCat.on('change', function () { applyCategory(this.getValue()); });\r\n}\r\n\r\n// Calculator helpers (integer-based)\r\nfunction toNumber(v) {\r\n  var n = (v === '' || v === null || typeof v === 'undefined') ? 0 : +v;\r\n  return isFinite(n) ? n : NaN;\r\n}\r\n\r\n// currencyView: integer currency display (no decimals)\r\nfunction currencyView(data) {\r\n  data = (data || 0) * 1;\r\n  if (!data) return '$0';\r\n  return '$' + (Math.round(data)).toLocaleString('en-IN');\r\n}\r\n\r\n// round to nearest integer\r\nfunction customRound(data) {\r\n  return Math.round(data);\r\n}\r\n/*\r\n// round down to nearest integer\r\nfunction roundDownInt(v) {\r\n  return Math.floor(v);\r\n}\r\n\r\n// round up to nearest integer\r\nfunction roundUpInt(v) {\r\n  return Math.ceil(v);\r\n}\r\n*/\r\n\r\n// Round up to nearest 100\r\nfunction roundUpToHundred(v) {\r\n  return Math.ceil(v / 100) * 100;\r\n}\r\n\r\n// Round down to nearest 100\r\nfunction roundDownToHundred(v) {\r\n  return Math.floor(v / 100) * 100;\r\n}\r\n\r\n// When consultation fee changes\r\nif (ctrlConsultFee && typeof ctrlConsultFee.on === 'function') {\r\n  ctrlConsultFee.on('keyup', function () {\r\n    var consultfee = toNumber(ctrlConsultFee.getValue());\r\n    if (isNaN(consultfee)) {\r\n      ctrlAmount.setValue('');\r\n      return;\r\n    }\r\n    var amount = Math.round(consultfee);\r\n    ctrlAmount.setValue(amount);\r\n    showTotalGrossCommission();\r\n  });\r\n}\r\n\r\n// Unit => amount\r\nif (ctrlUnit && typeof ctrlUnit.on === 'function') {\r\n  ctrlUnit.on('keyup', function () {\r\n    var unit = toNumber(ctrlUnit.getValue());\r\n    if (isNaN(unit)) {\r\n      ctrlAmount.setValue('');\r\n      return;\r\n    }\r\n    var transacted = toNumber(ctrlTransacted.getValue());\r\n    var amount = Math.round(transacted * unit);\r\n    ctrlAmount.setValue(amount);\r\n    showTotalGrossCommission();\r\n  });\r\n}\r\n\r\n// Amount => unit & percent\r\nif (ctrlAmount && typeof ctrlAmount.on === 'function') {\r\n  ctrlAmount.on('keyup', function () {\r\n    var amount = toNumber(ctrlAmount.getValue());\r\n    if (isNaN(amount)) {\r\n      ctrlUnit.setValue('');\r\n      ctrlPercent.setValue('');\r\n      return;\r\n    }\r\n    var transacted = toNumber(ctrlTransacted.getValue());\r\n    if (transacted) {\r\n      var unit = amount / transacted;\r\n      ctrlUnit.setValue(unit.toFixed(2));\r\n      var percent = (amount / transacted) * 100;\r\n      ctrlPercent.setValue(percent.toFixed(2));\r\n    } else {\r\n      ctrlUnit.setValue('');\r\n      ctrlPercent.setValue('');\r\n    }\r\n    showTotalGrossCommission();\r\n  });\r\n}\r\n\r\n// Percent => amount\r\nif (ctrlPercent && typeof ctrlPercent.on === 'function') {\r\n  ctrlPercent.on('keyup', function () {\r\n    var percent = toNumber(ctrlPercent.getValue());\r\n    if (isNaN(percent)) {\r\n      ctrlAmount.setValue('');\r\n      return;\r\n    }\r\n    var transacted = toNumber(ctrlTransacted.getValue());\r\n    var amount = Math.round(transacted * percent / 100);\r\n    ctrlAmount.setValue(amount);\r\n    showTotalGrossCommission();\r\n  });\r\n}\r\n\r\n// GST controls\r\nif (ctrlGstInclusive && typeof ctrlGstInclusive.on === 'function') {\r\n  ctrlGstInclusive.on('change', function () {\r\n    if (ctrlGstInclusive.getValue() == 'on') ctrlGstPayable.setValue('on');\r\n    showTotalGrossCommission();\r\n  });\r\n}\r\nif (ctrlGstPayable && typeof ctrlGstPayable.on === 'function') {\r\n  ctrlGstPayable.on('change', function () {\r\n    if (ctrlGstPayable.getValue() == '') ctrlGstInclusive.setValue('');\r\n    showTotalGrossCommission();\r\n  });\r\n}\r\n\r\n// Commission calculation (integer-based)\r\nfunction showTotalGrossCommission() {\r\n  var amount = toNumber(ctrlAmount.getValue());\r\n  if (isNaN(amount)) amount = 0;\r\n  var earned, gst, gross;\r\n\r\n  var gstPayableOn = ctrlGstPayable.getValue() == 'on';\r\n  var gstInclusive = ctrlGstInclusive.getValue() == 'on';\r\n\r\n  if (gstPayableOn && !gstInclusive) {\r\n    earned = amount;\r\n    gst = customRound(amount * 9 / 100);\r\n    gross = amount + gst;\r\n  } else if (gstPayableOn && gstInclusive) {\r\n    earned = customRound(amount / 109 * 100);\r\n    gst = amount - earned;\r\n    gross = amount;\r\n  } else {\r\n    earned = amount;\r\n    gst = 0;\r\n    gross = amount;\r\n  }\r\n\r\n  // store integer values\r\n  earned = customRound(earned);\r\n  gst = customRound(gst);\r\n  gross = customRound(gross);\r\n\r\n  ctrlEarned.setValue(earned);\r\n  ctrlGst.setValue(gst);\r\n  ctrlGross.setValue(gross);\r\n\r\n  $('#readonly_value_comm_earned_1').text(currencyView(earned));\r\n  $('#readonly_value_gst_1').text(currencyView(gst));\r\n  $('#readonly_value_comm_gross_1').text(currencyView(gross));\r\n\r\n  if (typeof refreshTableData === 'function') refreshTableData();\r\n  if (typeof refreshExternalCoBroker === 'function') refreshExternalCoBroker();\r\n  if (typeof refreshInternalCoBroker === 'function') refreshInternalCoBroker();\r\n}\r\n\r\n// Controls (single declarations)\r\nvar ctrlPropType = Runner.getControl(pageid, 'prop_type');\r\nvar ctrlBuiltUp = Runner.getControl(pageid, 'built_up');\r\nvar ctrlBuiltUpUnit = Runner.getControl(pageid, 'built_up_unit');\r\nvar ctrlBedroom = Runner.getControl(pageid, 'no_bedrooms');\r\nvar ctrlBathroom = Runner.getControl(pageid, 'no_bathrooms');\r\nvar ctrlLand = Runner.getControl(pageid, 'land');\r\nvar ctrlLandUnit = Runner.getControl(pageid, 'land_unit');\r\n\r\n// Commission-related controls (used for resets)\r\nvar ctrlCommUnit = ctrlUnit;\r\nvar ctrlCommPercent = ctrlPercent;\r\nvar ctrlCommAmount = ctrlAmount;\r\nvar ctrlCommEarned = ctrlEarned;\r\nvar ctrlCommGross = ctrlGross;\r\nvar ctrlCommEarnedAgencyCtrl = ctrlCommEarnedAgency;\r\nvar ctrlCommEarnedSalespersonCtrl = ctrlCommEarnedSalesperson;\r\nvar ctrlCommEarnedPercentSalespersonCtrl = ctrlCommEarnedPercentSalesperson;\r\nvar ctrlCommToAgencyCtrl = ctrlCommToAgency;\r\nvar ctrlCommToAgency1Ctrl = ctrlCommToAgency1;\r\nvar ctrlCommNettSalespersonCtrl = ctrlCommNettSalesperson;\r\n\r\n// Transacted / price controls\r\nvar ctrlTransacted = Runner.getControl(pageid, 'transacted_price');\r\nvar ctrlSalePrice = Runner.getControl(pageid, 'sale_price');\r\nvar ctrlRental = Runner.getControl(pageid, 'rental_price');\r\nvar ctrlManageFee = Runner.getControl(pageid, 'management_fee');\r\n\r\n// Helper utilities\r\nfunction showFields(list) { (list||[]).forEach(function(n){ pageObj.showField(n); }); }\r\nfunction hideFields(list) { (list||[]).forEach(function(n){ pageObj.hideField(n); }); }\r\nfunction resetCommissionFields() {\r\n  var list = ['comm_unit','comm_percent','comm_amt','comm_earned','comm_gross','comm_earned_agency','comm_earned_salesperson','comm_earned_percent_salesperson','comm_to_agency','comm_to_agency1','comm_nett_salesperson'];\r\n  list.forEach(function(name){\r\n    var c = Runner.getControl(pageid, name);\r\n    if (c && typeof c.setValue === 'function') c.setValue('');\r\n  });\r\n}\r\n\r\n// Data-driven property-type rules\r\nvar propRules = {\r\n  'HDB APARTMENT': { show: ['built_up','built_up_unit','no_bedrooms','no_bathrooms'], hide: ['land','land_unit','rm'] },\r\n  'APARTMENT / CONDO': { show: ['built_up','built_up_unit','no_bedrooms','no_bathrooms'], hide: ['land','land_unit','rm'] },\r\n  'LANDED HOUSE': { show: ['built_up','built_up_unit','no_bedrooms','no_bathrooms','land','land_unit'], hide: [] },\r\n  'INDUSTRIAL': { show: ['built_up','built_up_unit','land','land_unit'], hide: ['no_bedrooms','no_bathrooms','rm'] },\r\n  'OFFICE': { show: ['built_up','built_up_unit','no_bathrooms'], hide: ['no_bedrooms','land','land_unit','rm'] },\r\n  'RETAIL': { show: ['built_up','built_up_unit','no_bathrooms'], hide: ['no_bedrooms','land','land_unit','rm'] },\r\n  'LAND': { show: ['land','land_unit'], hide: ['built_up','built_up_unit','no_bedrooms','no_bathrooms','rm'] }\r\n};\r\n\r\nfunction applyPropTypeRule(type) {\r\n  var rule = propRules[type] || { show: [], hide: ['built_up','built_up_unit','no_bedrooms','no_bathrooms','land','land_unit','rm'] };\r\n  var allFields = ['built_up','built_up_unit','no_bedrooms','no_bathrooms','land','land_unit','rm'];\r\n  hideFields(allFields);\r\n  showFields(rule.show);\r\n  hideFields(rule.hide);\r\n}\r\n\r\napplyPropTypeRule(ctrlPropType.getValue && ctrlPropType.getValue());\r\n\r\nif (ctrlPropType && typeof ctrlPropType.on === 'function') {\r\n  ctrlPropType.on('change', function () {\r\n    var val = this.getValue();\r\n    applyPropTypeRule(val);\r\n    resetCommissionFields();\r\n  });\r\n}\r\n\r\n// Utility: numeric-check helper used by price bindings\r\nfunction isNumeric(v) {\r\n  if (v === null || v === undefined || v === '') return false;\r\n  return !isNaN(+v);\r\n}\r\n\r\n// Update transacted price on change of rental or sale\r\nif (ctrlRental && typeof ctrlRental.on === 'function') {\r\n  ctrlRental.on('keyup', function () {\r\n    var rental = ctrlRental.getValue();\r\n    if (!isNumeric(rental)) {\r\n      if (ctrlSalePrice) ctrlSalePrice.setValue('');\r\n      if (ctrlManageFee) ctrlManageFee.setValue('');\r\n      return;\r\n    }\r\n    if (ctrlTransacted && typeof ctrlTransacted.setValue === 'function') ctrlTransacted.setValue(Number(rental));\r\n  });\r\n}\r\n\r\nif (ctrlSalePrice && typeof ctrlSalePrice.on === 'function') {\r\n  ctrlSalePrice.on('keyup', function () {\r\n    var saleprice = ctrlSalePrice.getValue();\r\n    if (!isNumeric(saleprice)) {\r\n      if (ctrlRental) ctrlRental.setValue('');\r\n      if (ctrlManageFee) ctrlManageFee.setValue('');\r\n      return;\r\n    }\r\n    if (ctrlTransacted && typeof ctrlTransacted.setValue === 'function') ctrlTransacted.setValue(Number(saleprice));\r\n  });\r\n}\r\n\r\n/* --------------------------\r\n   Integrated commission helpers\r\n   -------------------------- */\r\n\r\n// refreshTableData triggers recalcs on detail rows\r\nfunction refreshTableData() {\r\n/*\r\n    var externals = $(\"div#detailPreview15\").find('tbody').find('tr').not(':first');\r\n    for (var i = 0; i < externals.length; i++) {\r\n        var input = externals.eq(i).find('td').eq(3).find('input').eq(1);\r\n        if (input && input.length) input.keyup();\r\n    }\r\n*/\r\n\r\n    $(\"a[id^=value_comm_]\").each(function() {\r\n        var input = $(this); // Co broke External\r\n        input.keyup();\r\n    });\r\n\r\n/*\r\n    var partyExternals = $(\"div#detailPreview17\").find('tbody').find('tr').not(':first');\r\n    for (var j = 0; j < partyExternals.length; j++) {\r\n        var input2 = partyExternals.eq(j).find('td').eq(3).find('input').eq(1);\r\n        if (input2 && input2.length) input2.keyup();\r\n    }\r\n*/\r\n\r\n$(\"a[id^=value_comm_tp_]\").each(function() {\r\n        var input = $(this); // External party\r\n        input.keyup();\r\n    });\r\n    \r\n/*\r\n    var internals = $(\"div#detailPreview16\").find('tbody').find('tr').not(':first');\t\r\n    for (var k = 0; k < internals.length; k++) {\r\n        var input3 = internals.eq(k).find('td').eq(3).find('input').eq(1);\r\n        if (input3 && input3.length) input3.keyup();\r\n    }\r\n*/\r\n\r\n$(\"a[id^=value_comm_earned_inter_]\").each(function() {\r\n        var input = $(this); // Co broke Internal\r\n        input.keyup();\r\n    });\r\n}\r\n\r\n// refreshExternalCoBroker calculates agency earned/gst/gross (integer)\r\nfunction refreshExternalCoBroker() {\r\n    var amount = ($('#value_comm_amt_1').val() || 0) * 1;\r\n    var earned, gst, gross;\r\n\r\n    if ($('#value_gst_payable_1').prop('checked') && !$('#value_gst_inclusive_1').prop('checked')) {\r\n        earned = amount;\r\n        gst = customRound(amount * 9 / 100);\r\n        gross = amount + gst;\r\n    } else if ($('#value_gst_payable_1').prop('checked') && $('#value_gst_inclusive_1').prop('checked')) {\r\n        earned = customRound(amount / 109 * 100);\r\n        gst = amount - earned;\r\n        gross = amount;\r\n    } else {\r\n        earned = amount;\r\n        gst = 0;\r\n        gross = amount;\r\n    }\r\n\r\n    earned = customRound(earned);\r\n    gst = customRound(gst);\r\n    gross = customRound(gross);\r\n\r\n    var externals = $(\"div#detailPreview15\").find('tbody').find('tr').not(':first');\r\n    var totalComm = 0;\r\n    var totalGst = ($('#value_gst_1').val() || 0) * 1;\r\n\r\n    for (var i = 0; i < externals.length; i++) {\r\n        var commVal = externals.eq(i).find('td').eq(3).find('input').eq(0).val();\r\n        totalComm += (commVal || 0) * 1;\r\n\r\n        var gstVal = externals.eq(i).find('td').eq(5).find('input').eq(0).val();\r\n        totalGst -= (gstVal || 0) * 1;\r\n    }\r\n\r\n    var partyExternals = $(\"div#detailPreview17\").find('tbody').find('tr').not(':first');\r\n    for (var j = 0; j < partyExternals.length; j++) {\r\n        var commVal2 = partyExternals.eq(j).find('td').eq(3).find('input').eq(0).val();\r\n        if (typeof commVal2 !== 'undefined') {\r\n            totalComm += (commVal2 || 0) * 1;\r\n            var gstVal2 = partyExternals.eq(j).find('td').eq(5).find('input').eq(0).val();\r\n            totalGst -= (gstVal2 || 0) * 1;\r\n        }\r\n    }\r\n\r\n    $('#value_comm_earned_agency_1').val(customRound(earned - totalComm));\r\n    $('#value_gst_agency_1').val(customRound(totalGst));\r\n    $('#value_comm_gross_agency_1').val(customRound(earned - totalComm + totalGst));\r\n}\r\n\r\n// refreshInternalCoBroker distributes agency to salesperson/internal shares (integer)\r\nfunction refreshInternalCoBroker() {\r\n    var amount = ($('#value_comm_amt_1').val() || 0) * 1;\r\n    var earned;\r\n\r\n    if ($('#value_gst_payable_1').prop('checked') && !$('#value_gst_inclusive_1').prop('checked')) {\r\n        earned = amount;\r\n    } else if ($('#value_gst_payable_1').prop('checked') && $('#value_gst_inclusive_1').prop('checked')) {\r\n        earned = customRound(amount / 109 * 100);\r\n    } else {\r\n        earned = amount;\r\n    }\r\n\r\n    earned = customRound(earned);\r\n\r\n    var totalComm = ($('#value_comm_earned_agency_1').val() || 0) * 1;\r\n    var internals = $(\"div#detailPreview16\").find('tbody').find('tr').not(':first');\t\r\n    var totalInternalEarned = 0;\r\n\r\n    for (var i = 0; i < internals.length; i++) {\r\n        var internalPercent = internals.eq(i).find('td').eq(4).find('input').eq(0).val();\r\n        internalPercent = (internalPercent || 0) * 1;\r\n        var internalEarned = customRound(earned * internalPercent / 100);\r\n        totalInternalEarned += internalEarned * 1;\r\n    }\r\n\r\n    var agencyShare = ($('#value_agency_share_1').val() || 0) * 1;\r\n    var salesEarned = totalComm - totalInternalEarned;\r\n    var salesPercent = earned ? customRound((salesEarned / earned) * 100) : 0;\r\n\r\n    // compute raw agency share then apply integer rounding rules\r\n    var agencyCommRaw = (salesEarned * agencyShare) / 100;\r\n    var agencyComm = roundDownInt(agencyCommRaw);\r\n    var salesCommNett = roundUpInt(salesEarned - agencyComm);\r\n/*\r\n    $('#value_comm_earned_salesperson_1').val(customRound(salesEarned));\r\n    $('#value_comm_earned_percent_salesperson_1').val(customRound(salesPercent));\r\n    $('#value_comm_to_agency_1').val(agencyComm);\r\n    $('#value_comm_to_agency1_1').val(agencyComm);\r\n    $('#value_comm_nett_salesperson_1').val(salesCommNett);\r\n*/\r\n// salesperson earned: round UP to nearest 100\r\n$('#value_comm_earned_salesperson_1').val(roundUpToHundred(salesEarned));\r\n\r\n// salesperson percent: keep nearest integer\r\n$('#value_comm_earned_percent_salesperson_1').val(customRound(salesPercent));\r\n\r\n// agency commission: round DOWN to nearest 100\r\n$('#value_comm_to_agency_1').val(roundDownToHundred(agencyComm));\r\n$('#value_comm_to_agency1_1').val(roundDownToHundred(agencyComm));\r\n\r\n// salesperson nett: round UP to nearest 100\r\n$('#value_comm_nett_salesperson_1').val(roundUpToHundred(salesCommNett));\r\n\r\n}\r\n\r\n/* --------------------------\r\n   End integrated commission helpers\r\n   -------------------------- */\r\n/*\r\n// expose functions to global scope to maintain compatibility\r\nwindow.refreshTableData = refreshTableData;\r\nwindow.refreshExternalCoBroker = refreshExternalCoBroker;\r\nwindow.refreshInternalCoBroker = refreshInternalCoBroker;\r\nwindow.customRound = customRound;\r\nwindow.currencyView = currencyView;\r\nwindow.roundDownInt = roundDownInt;\r\nwindow.roundUpInt = roundUpInt;\r\n*/\r\n\r\n$(document).ready(function () {\r\n    // ===== Scroll to Top ==== \r\n    $(window).scroll(function () {\r\n        if ($(this).scrollTop() >= 1000) { // If page is scrolled more than 1000px\r\n            $('#return-to-top').fadeIn(200); // Fade in the arrow\r\n        } else {\r\n            $('#return-to-top').fadeOut(200); // Else fade out the arrow\r\n        }\r\n    });\r\n\r\n    $('#return-to-top').click(function () { // When arrow is clicked\r\n        $('html, body').animate({\r\n            scrollTop: 0\r\n        }, 500);\r\n    });\r\n});\r\n\r\n\r\n//reload without losing scroll position\r\nwindow.addEventListener('load', function () {\r\n      if (window.location.hash) {\r\n        var elements = document.querySelectorAll(window.location.hash);\r\n        if (elements[0]) {\r\n          elements[0].scrollIntoView({\r\n            behavior: 'smooth', // smooth scroll\r\n            block: 'start'\r\n          });\r\n        }\r\n      }\r\n    })"
+			"code": "ctrlCDDResult = Runner.getControl(pageid, \"cdd_result\");\r\nctrlCheckResult = Runner.getControl(pageid, \"cdd_check_result\");\r\nctrlMeasureResult = Runner.getControl(pageid, \"cddmeasure_result\");\r\n\r\nif (ctrlCheckResult.getValue() === '' && ctrlCDDResult.getValue() === 'Conduct of CDD Measures is NECESSARY' && ctrlMeasureResult.getValue() === '') {\r\n    Swal.fire({\r\n        title: 'CDD Measure Required!',\r\n        text: 'You are required to perform CDD measures.',\r\n        icon: 'warning',\r\n        confirmButtonText: 'OK',\r\n        confirmButtonColor: '#3085d6'\r\n    }).then((result) => {\r\n        if (result.isConfirmed) {\r\n            const targetSection = document.getElementById(\"cdd_measure_section\");\r\n            if (targetSection) {\r\n                // Delay to let SweetAlert fully close before scrolling\r\n                setTimeout(() => {\r\n                    targetSection.scrollIntoView({ behavior: \"smooth\", block: \"start\" });\r\n                }, 300); // adjust delay if needed\r\n            }\r\n        }\r\n    });\r\n}\r\n\r\n// Sweet alert for STR\r\n// Check if gridRow37 exists first\r\nif (!document.getElementById(\"gridRow37\")) {\r\n    // Sweet alert for STR\r\n    if (ctrlMeasureResult.getValue() === 'Suspicious Transaction Report Required') {\r\n        Swal.fire({\r\n            title: 'Suspicious Transaction Report (STR) Required!',\r\n            text: 'You are required to Lodge STR of the subject client',\r\n            icon: 'warning',\r\n            confirmButtonText: 'OK',\r\n            confirmButtonColor: '#3085d6'\r\n        }).then((result) => {\r\n            if (result.isConfirmed) {\r\n                const targetSection = document.getElementById(\"str_section\");\r\n                if (targetSection) {\r\n                    // Delay to let SweetAlert fully close before scrolling\r\n                    setTimeout(() => {\r\n                        targetSection.scrollIntoView({ behavior: \"smooth\", block: \"center\" });\r\n                    }, 300);\r\n                }\r\n            }\r\n        });\r\n    }\r\n}\r\n\r\n\r\n// show or hide CDD check and Delete buttons\r\n$(document).ready(function () {\r\n    function updateButtonVisibility() {\r\n        // Check if the \"No data yet\" message is visible (either notfound_message3 or notfound_message2)\r\n        var hasNoDataMessage3 = $(\"[name='notfound_message3']\").length > 0 && $(\"[name='notfound_message3']\").is(\":visible\");\r\n        var hasNoDataMessage2 = $(\"[name='notfound_message2']\").length > 0 && $(\"[name='notfound_message2']\").is(\":visible\");\r\n        // Check if the grid has records\r\n        var hasRecords = $(\"#detailPreview3\").find('table > tbody > tr').length > 0;\r\n\r\n        if (hasNoDataMessage2) {\r\n            // Hide both buttons when notfound_message2 is displayed\r\n            $(\"#addButton3\").hide();\r\n            $(\"[id^='Delete_cdd_item_']\").hide();\r\n        } else if (hasNoDataMessage3) {\r\n            $(\"#addButton3\").show(); // Show the Add button\r\n            $(\"[id^='Delete_cdd_item_']\").hide(); // Hide Delete buttons\r\n        } else if (hasRecords) {\r\n            $(\"#addButton3\").hide(); // Hide the Add button\r\n            $(\"[id^='Delete_cdd_item_']\").show(); // Show Delete buttons\r\n        } else {\r\n            // Fallback: No records and no message\r\n            $(\"#addButton3\").show(); \r\n            $(\"[id^='Delete_cdd_item_']\").hide();\r\n        }\r\n    }\r\n\r\n    // Initial visibility update on document ready\r\n    updateButtonVisibility();\r\n    \r\n    // You might also want to set up an observer if the content changes dynamically\r\n    // For example, if using PHPRunner's AJAX calls:\r\n    $(document).ajaxComplete(function() {\r\n        updateButtonVisibility();\r\n    });\r\n});\r\n\r\n\r\n// show or hide CDD measure questionnaires\r\n$(document).ready(function() {\r\n    // Check if the row with id \"gridRow32\" exists and is visible\r\n    if ($(\"#gridRow32\").length > 0) {\r\n        // Hide the button if the row exists\r\n        $(\"#addButton4\").hide();\r\n    } else {\r\n        // Show the button if the row does not exist\r\n        $(\"#addButton4\").show();\r\n    }\r\n});\r\n\r\n// show or hide str button\r\n$(document).ready(function() {\r\n    // Check if the row with id \"gridRow37\" exists and is visible\r\n    if ($(\"#gridRow37\").length > 0) {\r\n        // Hide the button if the row exists\r\n        $(\"#addButton5\").hide();\r\n    } else {\r\n        // Show the button if the row does not exist\r\n        $(\"#addButton5\").show();\r\n    }\r\n});\r\n\r\n\r\nfunction showLeaseError(message) {\r\n    var msgDiv = document.getElementById(\"leaseErrorMsg\");\r\n    msgDiv.innerText = message;\r\n    msgDiv.style.display = \"block\";\r\n}\r\n\r\nfunction hideLeaseError() {\r\n    var msgDiv = document.getElementById(\"leaseErrorMsg\");\r\n    msgDiv.innerText = \"\";\r\n    msgDiv.style.display = \"none\";\r\n}\r\n\r\nfunction calculateLeaseDuration() {\r\n    var startVal = Runner.getControl(pageid, 'lease_start_date').getValue();\r\n    var endVal = Runner.getControl(pageid, 'lease_expiry').getValue();\r\n\r\n    if (startVal && endVal) {\r\n        var startDate = new Date(startVal);\r\n        var endDate = new Date(endVal);\r\n\r\n        if (endDate < startDate) {\r\n            showLeaseError(\"🚫 Lease expiry date cannot be earlier than lease start date.\");\r\n            Runner.getControl(pageid, 'lease_duration_no').setValue(\"\");\r\n            return;\r\n        } else {\r\n            hideLeaseError();\r\n        }\r\n\r\n        var years = endDate.getFullYear() - startDate.getFullYear();\r\n        var months = endDate.getMonth() - startDate.getMonth();\r\n        var totalMonths = years * 12 + months;\r\n\r\n        if (endDate.getDate() >= startDate.getDate()) {\r\n            totalMonths += 1;\r\n        }\r\n\r\n        Runner.getControl(pageid, 'lease_duration_no').setValue(totalMonths.toString());\r\n    }\r\n}\r\n\r\n// Get the date controls\r\nvar leaseStartCtrl = Runner.getControl(pageid, 'lease_start_date');\r\nvar leaseEndCtrl = Runner.getControl(pageid, 'lease_expiry');\r\n\r\n// Trigger calculation on date change\r\nleaseStartCtrl.on('change', calculateLeaseDuration);\r\nleaseEndCtrl.on('change', calculateLeaseDuration);\r\n\r\n// Controls (single declarations)\r\nvar ctrlCat = Runner.getControl(pageid, 'category');\r\nvar ctrlRepresent = Runner.getControl(pageid, 'representing');\r\nvar ctrlMarketing = Runner.getControl(pageid, 'marketing_rights');\r\nvar ctrlSalePrice = Runner.getControl(pageid, 'sale_price');\r\nvar ctrlValuation = Runner.getControl(pageid, 'valuation_price');\r\nvar ctrlOption = Runner.getControl(pageid, 'option_money');\r\nvar ctrlOtpDate = Runner.getControl(pageid, 'otp_date');\r\nvar ctrlOtpExeDate = Runner.getControl(pageid, 'option_exercise_date');\r\nvar ctrlEstCompletion = Runner.getControl(pageid, 'est_completion_date');\r\nvar ctrlSpExeDate = Runner.getControl(pageid, 'sp_execution_date');\r\nvar ctrlLOI = Runner.getControl(pageid, 'loi_date');\r\nvar ctrlRental = Runner.getControl(pageid, 'rental_price');\r\nvar ctrlRentPriceType = Runner.getControl(pageid, 'rental_price_type');\r\nvar ctrlTADate = Runner.getControl(pageid, 'ta_date');\r\nvar ctrlLeaseDuration = Runner.getControl(pageid, 'lease_duration_no');\r\nvar ctrlLeaseDuUnit = Runner.getControl(pageid, 'lease_duration_unit');\r\nvar ctrlLeaseStart = Runner.getControl(pageid, 'lease_start_date');\r\nvar ctrlLeaseEnd = Runner.getControl(pageid, 'lease_expiry');\r\nvar ctrlUnit = Runner.getControl(pageid, 'comm_unit');\r\nvar ctrlPercent = Runner.getControl(pageid, 'comm_percent');\r\nvar ctrlAmount = Runner.getControl(pageid, 'comm_amt');\r\nvar ctrlTransacted = Runner.getControl(pageid, 'transacted_price');\r\nvar ctrlEarned = Runner.getControl(pageid, 'comm_earned');\r\nvar ctrlGst = Runner.getControl(pageid, 'gst');\r\nvar ctrlGross = Runner.getControl(pageid, 'comm_gross');\r\nvar ctrlGstPayable = Runner.getControl(pageid, 'gst_payable');\r\nvar ctrlGstInclusive = Runner.getControl(pageid, 'gst_inclusive');\r\nvar ctrlCommEarnedAgency = Runner.getControl(pageid, 'comm_earned_agency');\r\nvar ctrlGstAgency = Runner.getControl(pageid, 'gst_agency');\r\nvar ctrlCommGrossAgency = Runner.getControl(pageid, 'comm_gross_agency');\r\nvar ctrlAgentName = Runner.getControl(pageid, 'salesperson_name');\r\nvar ctrlAgentCea = Runner.getControl(pageid, 'cea_reg');\r\nvar ctrlCommEarnedSalesperson = Runner.getControl(pageid, 'comm_earned_salesperson');\r\nvar ctrlCommEarnedPercentSalesperson = Runner.getControl(pageid, 'comm_earned_percent_salesperson');\r\nvar ctrlCommToAgency = Runner.getControl(pageid, 'comm_to_agency');\r\nvar ctrlCommToAgency1 = Runner.getControl(pageid, 'comm_to_agency1');\r\nvar ctrlCommNettSalesperson = Runner.getControl(pageid, 'comm_nett_salesperson');\r\nvar ctrlManageFee = Runner.getControl(pageid, 'management_fee');\r\nvar ctrlAgency = Runner.getControl(pageid, 'agency');\r\nvar ctrlAgencyCea = Runner.getControl(pageid, 'agency_cea');\r\nvar ctrlConsultFee = Runner.getControl(pageid, 'consultation_fee');\r\nvar ctrlServCommence = Runner.getControl(pageid, 'service_commencement');\r\nvar ctrlServComplete = Runner.getControl(pageid, 'service_completion');\r\nvar ctrlResult = Runner.getControl(pageid, 'result');\r\nvar ctrlRemindAgent = Runner.getControl(pageid, 'reminder_agent');\r\nvar ctrlRemindTenant = Runner.getControl(pageid, 'reminder_tenant');\r\nvar ctrlReminderTenantEmail = Runner.getControl(pageid, 'reminder_tenant_email');\r\nvar ctrlRmBuiltUnit = Runner.getControl(pageid, 'rm_builtup_unit');\r\nvar ctrlFormNumber = Runner.getControl(pageid, 'form_number');\r\nvar ctrlSubCat = Runner.getControl && Runner.getControl(pageid, 'sub_category'); // safe-get if exists\r\n\r\n// Helper utilities\r\nfunction applyFieldAction(list, action) {\r\n  if (!list || !list.length) return;\r\n  list.forEach(function(name) {\r\n    if (action === 'show') pageObj.showField(name);\r\n    else if (action === 'hide') pageObj.hideField(name);\r\n    else if (action === 'reset') {\r\n      var c = Runner.getControl(pageid, name);\r\n      if (c && typeof c.setValue === 'function') c.setValue('');\r\n    }\r\n  });\r\n}\r\nfunction applyToggle(list, visible) {\r\n  if (!list || !list.length) return;\r\n  list.forEach(function(name) { pageObj.toggleItem(name, visible); });\r\n}\r\nfunction setValidations(validations) {\r\n  if (!validations) return;\r\n  validations.forEach(function(v) {\r\n    var ctrl = Runner.getControl(pageid, v.name);\r\n    if (!ctrl) return;\r\n    if (v.action === 'add') ctrl.addValidation('IsRequired');\r\n    if (v.action === 'remove') ctrl.removeValidation && ctrl.removeValidation('IsRequired');\r\n  });\r\n}\r\nfunction resetControls(names) { applyFieldAction(names, 'reset'); }\r\n\r\n// Data-driven category configuration\r\nvar categoryConfig = {\r\n  'SALE': {\r\n    toggleOn: [\"tx_info_section\",\"prop_info_section\",\"sale_info_section\",\"comm_to_agent_section\",\"add_save\",\"add_save1\",\"add_back_list1\",\"add_reset1\",\"gross_comm_label\"],\r\n    toggleOff: [\"agency_info_section\",\"rental_info_section\",\"jtc_lease_info_section\",\"room_rental_info_section\",\"gross_fee_label\",\"net_mag_fee_label\",\"comm_earned_label\"],\r\n    show: [\"salesperson_name\",\"salesperson_email\",\"cea_reg\",\"representing\",\"marketing_rights\",\"currency\",\"comm_percent\",\"no_bedrooms\",\"no_bathrooms\",\"transacted_price\"],\r\n    hide: [\"comm_unit\",\"comm_earned\",\"management_fee\"],\r\n    validations: [{name:'sale_price', action:'add'}, {name:'salesperson_name', action:'add'}],\r\n    reset: ['transacted_price','representing','marketing_rights','sale_price','valuation_price','option_money','otp_date','option_exercise_date','est_completion_date','sp_execution_date','comm_percent','comm_amt','comm_earned','comm_gross','comm_earned_agency','comm_earned_salesperson','comm_earned_percent_salesperson','comm_to_agency','comm_to_agency1','comm_nett_salesperson']\r\n  },\r\n  'RENTAL': {\r\n    toggleOn: [\"tx_info_section\",\"prop_info_section\",\"rental_info_section\",\"comm_to_agent_section\",\"gross_comm_label\",\"add_save\",\"add_save1\",\"add_back_list1\",\"add_reset1\"],\r\n    toggleOff: [\"agency_info_section\",\"sale_info_section\",\"jtc_lease_info_section\",\"room_rental_info_section\",\"gross_fee_label\",\"net_mag_fee_label\",\"comm_earned_label\"],\r\n    show: [\"salesperson_name\",\"salesperson_email\",\"cea_reg\",\"representing\",\"marketing_rights\",\"currency\",\"ta_date\",\"loi_date\",\"lease_duration_no\",\"lease_duration_unit\",\"reminder_tenant\",\"comm_unit\",\"no_bedrooms\",\"no_bathrooms\",\"transacted_price\"],\r\n    hide: [\"reminder_tenant_email\",\"comm_percent\",\"comm_earned\",\"management_fee\"],\r\n    validations: [{name:'rental_price', action:'add'}, {name:'rental_price_type', action:'add'}, {name:'lease_start_date', action:'add'}, {name:'lease_expiry', action:'add'}, {name:'lease_duration_no', action:'add'}, {name:'lease_duration_unit', action:'add'}],\r\n    reset: ['transacted_price','representing','marketing_rights','loi_date','rental_price','ta_date','lease_duration_no','lease_start_date','lease_expiry','comm_unit','comm_percent','comm_amt','comm_earned','comm_gross','comm_earned_agency','comm_earned_salesperson','comm_earned_percent_salesperson','comm_to_agency','comm_to_agency1','comm_nett_salesperson']\r\n  },\r\n  'ASSIGNMENT': null,\r\n  'ROOM RENTAL': {\r\n    toggleOn: [\"tx_info_section\",\"prop_info_section\",\"rental_info_section\",\"room_rental_info_section\",\"comm_to_agent_section\",\"gross_comm_label\"],\r\n    toggleOff: [\"agency_info_section\",\"sale_info_section\",\"jtc_lease_info_section\",\"gross_fee_label\",\"net_mag_fee_label\",\"comm_earned_label\"],\r\n    show: [\"salesperson_name\",\"salesperson_email\",\"cea_reg\",\"representing\",\"marketing_rights\",\"currency\",\"ta_date\",\"loi_date\",\"lease_duration_no\",\"lease_duration_unit\",\"reminder_tenant\",\"comm_unit\",\"no_bedrooms\",\"no_bathrooms\",\"rm_rental_rm_type\",\"rm_builtup\",\"rm_builtup_unit\",\"transacted_price\"],\r\n    hide: [\"reminder_tenant_email\",\"comm_percent\",\"comm_earned\",\"management_fee\"],\r\n    validations: [{name:'rental_price', action:'add'}, {name:'rental_price_type', action:'add'}, {name:'lease_start_date', action:'add'}, {name:'lease_expiry', action:'add'}, {name:'lease_duration_no', action:'add'}, {name:'lease_duration_unit', action:'add'}, {name:'rm_builtup_unit', action:'add'}],\r\n    reset: ['transacted_price','representing','marketing_rights','loi_date','rental_price','ta_date','lease_duration_no','lease_start_date','lease_expiry','comm_unit','comm_percent','comm_amt','comm_earned','comm_gross','comm_earned_agency','comm_earned_salesperson','comm_earned_percent_salesperson','comm_to_agency','comm_to_agency1','comm_nett_salesperson']\r\n  },\r\n  'PROPERTY MANAGEMENT': {\r\n    toggleOn: [\"tx_info_section\",\"prop_info_section\",\"agency_info_section\",\"rental_info_section\",\"net_mag_fee_label\"],\r\n    toggleOff: [\"sale_info_section\",\"jtc_lease_info_section\",\"room_rental_info_section\",\"comm_to_agent_section\",\"details_preview2\",\"details_preview6\",\"details_preview3\",\"cea_prescribed_form_section\",\"comm_label\",\"comm_earned_label\",\"gross_comm_label\",\"gross_fee_label\",\"text10\",\"text11\"],\r\n    show: [\"representing\",\"currency\",\"lease_duration_no\",\"lease_duration_unit\",\"reminder_tenant\",\"no_bedrooms\",\"no_bathrooms\",\"management_fee\"],\r\n    hide: [\"salesperson_name\",\"salesperson_email\",\"cea_reg\",\"marketing_rights\",\"ta_date\",\"loi_date\",\"reminder_tenant_email\",\"comm_percent\",\"comm_unit\",\"transacted_price\",\"comm_earned\",\"comm_amt\",\"comm_earned_agency\",\"comm_earned_salesperson\"],\r\n    validations: [{name:'agency', action:'add'}, {name:'rental_price', action:'add'}, {name:'lease_start_date', action:'add'}, {name:'lease_expiry', action:'add'}, {name:'lease_duration_no', action:'add'}, {name:'lease_duration_unit', action:'add'}, {name:'marketing_rights', action:'remove'}],\r\n    reset: ['transacted_price','representing','rental_price','management_fee','lease_start_date','lease_expiry','comm_unit','comm_percent','comm_amt','comm_earned','comm_gross','comm_earned_agency','comm_earned_salesperson','comm_earned_percent_salesperson','comm_to_agency','comm_to_agency1','comm_nett_salesperson']\r\n  },\r\n  'JTC LEASE MANAGEMENT': {\r\n    toggleOn: [\"tx_info_section\",\"prop_info_section\",\"jtc_lease_info_section\",\"gross_fee_label\"],\r\n    toggleOff: [\"agency_info_section\",\"rental_info_section\",\"sale_info_section\",\"room_rental_info_section\",\"comm_label\",\"comm_earned_label\",\"gross_comm_label\",\"net_mag_fee_label\"],\r\n    show: [\"salesperson_name\",\"salesperson_email\",\"cea_reg\",\"representing\",\"currency\",\"comm_earned\"],\r\n    hide: [\"marketing_rights\",\"comm_percent\",\"comm_unit\",\"transacted_price\",\"comm_amt\",\"comm_earned_salesperson\",\"management_fee\"],\r\n    validations: [{name:'salesperson_name', action:'add'}, {name:'marketing_rights', action:'remove'}],\r\n    reset: ['transacted_price','representing','comm_unit','comm_percent','comm_amt','comm_earned','comm_gross','comm_earned_agency','comm_earned_salesperson','comm_earned_percent_salesperson','comm_to_agency','comm_to_agency1','comm_nett_salesperson','sub_category','consultation_fee','service_commencement','service_completion']\r\n  }\r\n};\r\ncategoryConfig['ASSIGNMENT'] = categoryConfig['RENTAL'];\r\n\r\n// track previous category so we only reset on an actual user change\r\nvar prevCategory = typeof ctrlCat.getValue === 'function' ? ctrlCat.getValue() : null;\r\n\r\nfunction applyCategory(cat, options) {\r\n  options = options || {};\r\n  var cfg = categoryConfig[cat];\r\n  if (!cfg) return;\r\n\r\n  if (cfg.toggleOn) applyToggle(cfg.toggleOn, true);\r\n  if (cfg.toggleOff) applyToggle(cfg.toggleOff, false);\r\n  if (cfg.show) applyFieldAction(cfg.show, 'show');\r\n  if (cfg.hide) applyFieldAction(cfg.hide, 'hide');\r\n  if (cfg.validations) setValidations(cfg.validations);\r\n\r\n  if (cfg.reset && (options.forceReset || (prevCategory !== null && prevCategory !== undefined && prevCategory !== '' && prevCategory !== cat))) {\r\n    resetControls(cfg.reset);\r\n  }\r\n\r\n  applyTenantEmailRequirement(ctrlRemindTenant.getValue && ctrlRemindTenant.getValue());\r\n  prevCategory = cat;\r\n}\r\n\r\n// Initialize by applying current category but do not reset on init\r\napplyCategory(ctrlCat.getValue && ctrlCat.getValue(), { forceReset: false });\r\n\r\nif (ctrlCat && typeof ctrlCat.on === 'function') {\r\n  ctrlCat.on('change', function () {\r\n    var newCat = this.getValue();\r\n    applyCategory(newCat, { forceReset: true });\r\n  });\r\n}\r\n\r\n// Tenant email conditional logic (integrated)\r\nfunction applyTenantEmailRequirement(reminderValue) {\r\n  if (reminderValue === 'Yes') {\r\n    ctrlReminderTenantEmail.addValidation('IsRequired');\r\n    pageObj.showField('reminder_tenant_email');\r\n  } else {\r\n    ctrlReminderTenantEmail.removeValidation && ctrlReminderTenantEmail.removeValidation('IsRequired');\r\n    pageObj.hideField('reminder_tenant_email');\r\n  }\r\n}\r\nif (ctrlRemindTenant && typeof ctrlRemindTenant.on === 'function') {\r\n  ctrlRemindTenant.on('change', function () {\r\n    var val = this.getValue();\r\n    if (val === 'Yes') {\r\n      ctrlReminderTenantEmail.addValidation('IsRequired');\r\n      pageObj.showField('reminder_tenant_email');\r\n      ctrlReminderTenantEmail.setValue('');\r\n    } else {\r\n      ctrlReminderTenantEmail.removeValidation && ctrlReminderTenantEmail.removeValidation('IsRequired');\r\n      pageObj.hideField('reminder_tenant_email');\r\n    }\r\n  });\r\n}\r\n\r\n// Initialize by applying current category and tenant-email state\r\napplyCategory(ctrlCat.getValue && ctrlCat.getValue());\r\n\r\nif (ctrlCat && typeof ctrlCat.on === 'function') {\r\n  ctrlCat.on('change', function () { applyCategory(this.getValue()); });\r\n}\r\n\r\n// Calculator helpers (integer-based)\r\nfunction toNumber(v) {\r\n  var n = (v === '' || v === null || typeof v === 'undefined') ? 0 : +v;\r\n  return isFinite(n) ? n : NaN;\r\n}\r\n\r\n// currencyView: integer currency display (no decimals)\r\nfunction currencyView(data) {\r\n  data = (data || 0) * 1;\r\n  if (!data) return '$0';\r\n  return '$' + (Math.round(data)).toLocaleString('en-IN');\r\n}\r\n\r\n// round to nearest integer\r\nfunction customRound(data) {\r\n  return Math.round(data);\r\n}\r\n\r\n// Round up to nearest 100 (robust against negatives and NaN)\r\nfunction roundUpToHundred(v) {\r\n  v = +v || 0;\r\n  return (v >= 0) ? Math.ceil(v / 100) * 100 : Math.floor(v / 100) * 100;\r\n}\r\n\r\n// Round down to nearest 100 (robust against negatives and NaN)\r\nfunction roundDownToHundred(v) {\r\n  v = +v || 0;\r\n  return (v >= 0) ? Math.floor(v / 100) * 100 : Math.ceil(v / 100) * 100;\r\n}\r\n\r\n// When consultation fee changes\r\nif (ctrlConsultFee && typeof ctrlConsultFee.on === 'function') {\r\n  ctrlConsultFee.on('keyup', function () {\r\n    var consultfee = toNumber(ctrlConsultFee.getValue());\r\n    if (isNaN(consultfee)) {\r\n      ctrlAmount.setValue('');\r\n      return;\r\n    }\r\n    var amount = Math.round(consultfee);\r\n    ctrlAmount.setValue(amount);\r\n    showTotalGrossCommission();\r\n  });\r\n}\r\n\r\n// Unit => amount\r\nif (ctrlUnit && typeof ctrlUnit.on === 'function') {\r\n  ctrlUnit.on('keyup', function () {\r\n    var unit = toNumber(ctrlUnit.getValue());\r\n    if (isNaN(unit)) {\r\n      ctrlAmount.setValue('');\r\n      return;\r\n    }\r\n    var transacted = toNumber(ctrlTransacted.getValue());\r\n    var amount = Math.round(transacted * unit);\r\n    ctrlAmount.setValue(amount);\r\n    showTotalGrossCommission();\r\n  });\r\n}\r\n\r\n// Amount => unit & percent\r\nif (ctrlAmount && typeof ctrlAmount.on === 'function') {\r\n  ctrlAmount.on('keyup', function () {\r\n    var amount = toNumber(ctrlAmount.getValue());\r\n    if (isNaN(amount)) {\r\n      ctrlUnit.setValue('');\r\n      ctrlPercent.setValue('');\r\n      return;\r\n    }\r\n    var transacted = toNumber(ctrlTransacted.getValue());\r\n    if (transacted) {\r\n      var unit = amount / transacted;\r\n      ctrlUnit.setValue(unit.toFixed(2));\r\n      var percent = (amount / transacted) * 100;\r\n      ctrlPercent.setValue(percent.toFixed(2));\r\n    } else {\r\n      ctrlUnit.setValue('');\r\n      ctrlPercent.setValue('');\r\n    }\r\n    showTotalGrossCommission();\r\n  });\r\n}\r\n\r\n// Percent => amount\r\nif (ctrlPercent && typeof ctrlPercent.on === 'function') {\r\n  ctrlPercent.on('keyup', function () {\r\n    var percent = toNumber(ctrlPercent.getValue());\r\n    if (isNaN(percent)) {\r\n      ctrlAmount.setValue('');\r\n      return;\r\n    }\r\n    var transacted = toNumber(ctrlTransacted.getValue());\r\n    var amount = Math.round(transacted * percent / 100);\r\n    ctrlAmount.setValue(amount);\r\n    showTotalGrossCommission();\r\n  });\r\n}\r\n\r\n// GST controls\r\nif (ctrlGstInclusive && typeof ctrlGstInclusive.on === 'function') {\r\n  ctrlGstInclusive.on('change', function () {\r\n    if (ctrlGstInclusive.getValue() == 'on') ctrlGstPayable.setValue('on');\r\n    showTotalGrossCommission();\r\n  });\r\n}\r\nif (ctrlGstPayable && typeof ctrlGstPayable.on === 'function') {\r\n  ctrlGstPayable.on('change', function () {\r\n    if (ctrlGstPayable.getValue() == '') {\r\n      // Unchecked: clear GST Inclusive and GST percentage\r\n      ctrlGstInclusive.setValue('');\r\n      ctrlGst.setValue('');   // <-- clear GST field\r\n    }\r\n    showTotalGrossCommission();\r\n  });\r\n}\r\n\r\n\r\nfunction showTotalGrossCommission() {\r\n  var amount = toNumber(ctrlAmount.getValue());\r\n  if (isNaN(amount)) amount = 0;\r\n\r\n  var earned, gstAmount, gross;\r\n\r\n  var gstPayableOn = ctrlGstPayable.getValue() == 'on';\r\n  var gstInclusive = ctrlGstInclusive.getValue() == 'on';\r\n\r\n  // Read GST percentage directly from user input\r\n  var gstPercent = toNumber(ctrlGst.getValue());\r\n  if (isNaN(gstPercent)) gstPercent = 0;\r\n\r\n  if (gstPayableOn && !gstInclusive) {\r\n    // GST is deducted from commission\r\n    gstAmount = amount * gstPercent / 100;\r\n    earned = amount - gstAmount;\r\n    gross = earned;\r\n  } else if (gstPayableOn && gstInclusive) {\r\n    // Commission amount already includes GST\r\n    gstAmount = amount * gstPercent / (100 + gstPercent);\r\n    earned = amount - gstAmount;\r\n    gross = amount;\r\n  } else {\r\n    // No GST payable\r\n    earned = amount;\r\n    gstAmount = 0;\r\n    gross = amount;\r\n  }\r\n\r\n  // Round values\r\n  earned = customRound(earned);\r\n  gstAmount = customRound(gstAmount);\r\n  gross = customRound(gross);\r\n\r\n  // Update controls (do NOT overwrite GST percentage field)\r\n  ctrlEarned.setValue(earned);\r\n  ctrlGross.setValue(gross);\r\n\r\n  // Show computed GST amount in read-only label\r\n  $('#readonly_value_comm_earned_1').text(currencyView(earned));\r\n  $('#readonly_value_gst_1').text(currencyView(gstAmount));\r\n  $('#readonly_value_comm_gross_1').text(currencyView(gross));\r\n\r\n  if (typeof refreshTableData === 'function') refreshTableData();\r\n  if (typeof refreshExternalCoBroker === 'function') refreshExternalCoBroker();\r\n  if (typeof refreshInternalCoBroker === 'function') refreshInternalCoBroker();\r\n}\r\n\r\n// Trigger recalculation when GST percentage changes\r\nif (ctrlGst && typeof ctrlGst.on === 'function') {\r\n  ctrlGst.on('change', showTotalGrossCommission);\r\n  ctrlGst.on('keyup', showTotalGrossCommission);\r\n}\r\n\r\n\r\n// Controls (single declarations)\r\nvar ctrlPropType = Runner.getControl(pageid, 'prop_type');\r\nvar ctrlBuiltUp = Runner.getControl(pageid, 'built_up');\r\nvar ctrlBuiltUpUnit = Runner.getControl(pageid, 'built_up_unit');\r\nvar ctrlBedroom = Runner.getControl(pageid, 'no_bedrooms');\r\nvar ctrlBathroom = Runner.getControl(pageid, 'no_bathrooms');\r\nvar ctrlLand = Runner.getControl(pageid, 'land');\r\nvar ctrlLandUnit = Runner.getControl(pageid, 'land_unit');\r\n\r\n// Commission-related controls (used for resets)\r\nvar ctrlCommUnit = ctrlUnit;\r\nvar ctrlCommPercent = ctrlPercent;\r\nvar ctrlCommAmount = ctrlAmount;\r\nvar ctrlCommEarned = ctrlEarned;\r\nvar ctrlCommGross = ctrlGross;\r\nvar ctrlCommEarnedAgencyCtrl = ctrlCommEarnedAgency;\r\nvar ctrlCommEarnedSalespersonCtrl = ctrlCommEarnedSalesperson;\r\nvar ctrlCommEarnedPercentSalespersonCtrl = ctrlCommEarnedPercentSalesperson;\r\nvar ctrlCommToAgencyCtrl = ctrlCommToAgency;\r\nvar ctrlCommToAgency1Ctrl = ctrlCommToAgency1;\r\nvar ctrlCommNettSalespersonCtrl = ctrlCommNettSalesperson;\r\n\r\n// Transacted / price controls\r\nvar ctrlTransacted = Runner.getControl(pageid, 'transacted_price');\r\nvar ctrlSalePrice = Runner.getControl(pageid, 'sale_price');\r\nvar ctrlRental = Runner.getControl(pageid, 'rental_price');\r\nvar ctrlManageFee = Runner.getControl(pageid, 'management_fee');\r\n\r\n// Helper utilities\r\nfunction showFields(list) { (list||[]).forEach(function(n){ pageObj.showField(n); }); }\r\nfunction hideFields(list) { (list||[]).forEach(function(n){ pageObj.hideField(n); }); }\r\nfunction resetCommissionFields() {\r\n  var list = ['comm_unit','comm_percent','comm_amt','comm_earned','comm_gross','comm_earned_agency','comm_earned_salesperson','comm_earned_percent_salesperson','comm_to_agency','comm_to_agency1','comm_nett_salesperson'];\r\n  list.forEach(function(name){\r\n    var c = Runner.getControl(pageid, name);\r\n    if (c && typeof c.setValue === 'function') c.setValue('');\r\n  });\r\n}\r\n\r\n// Data-driven property-type rules\r\nvar propRules = {\r\n  'HDB APARTMENT': { show: ['built_up','built_up_unit','no_bedrooms','no_bathrooms'], hide: ['land','land_unit','rm'] },\r\n  'APARTMENT / CONDO': { show: ['built_up','built_up_unit','no_bedrooms','no_bathrooms'], hide: ['land','land_unit','rm'] },\r\n  'LANDED HOUSE': { show: ['built_up','built_up_unit','no_bedrooms','no_bathrooms','land','land_unit'], hide: [] },\r\n  'INDUSTRIAL': { show: ['built_up','built_up_unit','land','land_unit'], hide: ['no_bedrooms','no_bathrooms','rm'] },\r\n  'OFFICE': { show: ['built_up','built_up_unit','no_bathrooms'], hide: ['no_bedrooms','land','land_unit','rm'] },\r\n  'RETAIL': { show: ['built_up','built_up_unit','no_bathrooms'], hide: ['no_bedrooms','land','land_unit','rm'] },\r\n  'LAND': { show: ['land','land_unit'], hide: ['built_up','built_up_unit','no_bedrooms','no_bathrooms','rm'] }\r\n};\r\n\r\nfunction applyPropTypeRule(type) {\r\n  var rule = propRules[type] || { show: [], hide: ['built_up','built_up_unit','no_bedrooms','no_bathrooms','land','land_unit','rm'] };\r\n  var allFields = ['built_up','built_up_unit','no_bedrooms','no_bathrooms','land','land_unit','rm'];\r\n  hideFields(allFields);\r\n  showFields(rule.show);\r\n  hideFields(rule.hide);\r\n}\r\n\r\napplyPropTypeRule(ctrlPropType.getValue && ctrlPropType.getValue());\r\n\r\nif (ctrlPropType && typeof ctrlPropType.on === 'function') {\r\n  ctrlPropType.on('change', function () {\r\n    var val = this.getValue();\r\n    applyPropTypeRule(val);\r\n    resetCommissionFields();\r\n  });\r\n}\r\n\r\n// Utility: numeric-check helper used by price bindings\r\nfunction isNumeric(v) {\r\n  if (v === null || v === undefined || v === '') return false;\r\n  return !isNaN(+v);\r\n}\r\n\r\n// Update transacted price on change of rental or sale\r\nif (ctrlRental && typeof ctrlRental.on === 'function') {\r\n  ctrlRental.on('keyup', function () {\r\n    var rental = ctrlRental.getValue();\r\n    if (!isNumeric(rental)) {\r\n      if (ctrlSalePrice) ctrlSalePrice.setValue('');\r\n      if (ctrlManageFee) ctrlManageFee.setValue('');\r\n      return;\r\n    }\r\n    if (ctrlTransacted && typeof ctrlTransacted.setValue === 'function') ctrlTransacted.setValue(Number(rental));\r\n  });\r\n}\r\n\r\nif (ctrlSalePrice && typeof ctrlSalePrice.on === 'function') {\r\n  ctrlSalePrice.on('keyup', function () {\r\n    var saleprice = ctrlSalePrice.getValue();\r\n    if (!isNumeric(saleprice)) {\r\n      if (ctrlRental) ctrlRental.setValue('');\r\n      if (ctrlManageFee) ctrlManageFee.setValue('');\r\n      return;\r\n    }\r\n    if (ctrlTransacted && typeof ctrlTransacted.setValue === 'function') ctrlTransacted.setValue(Number(saleprice));\r\n  });\r\n}\r\n\r\n/* --------------------------\r\n   Integrated commission helpers\r\n   -------------------------- */\r\n\r\n// refreshTableData triggers recalcs on detail rows\r\nfunction refreshTableData() {\r\n// Co broker external comm\r\n    $(\"a[id^=value_comm_]\").each(function() {\r\n        var input = $(this); // Co broke External\r\n        input.keyup();\r\n    });\r\n\r\n// External party comm\r\n$(\"a[id^=value_comm_tp_]\").each(function() {\r\n        var input = $(this); // External party\r\n        input.keyup();\r\n    });\r\n    \r\n// Co broke internal comm\r\n$(\"a[id^=value_comm_earned_inter_]\").each(function() {\r\n        var input = $(this); // Co broke Internal\r\n        input.keyup();\r\n    });\r\n}\r\n\r\n// refreshExternalCoBroker calculates agency earned/gst/gross (integer)\r\nfunction refreshExternalCoBroker() {\r\n    var amount = ($('#value_comm_amt_1').val() || 0) * 1;\r\n    var earned, gst, gross;\r\n\r\n    if ($('#value_gst_payable_1').prop('checked') && !$('#value_gst_inclusive_1').prop('checked')) {\r\n        earned = amount;\r\n        gst = customRound(amount * 9 / 100);\r\n        gross = amount + gst;\r\n    } else if ($('#value_gst_payable_1').prop('checked') && $('#value_gst_inclusive_1').prop('checked')) {\r\n        earned = customRound(amount / 109 * 100);\r\n        gst = amount - earned;\r\n        gross = amount;\r\n    } else {\r\n        earned = amount;\r\n        gst = 0;\r\n        gross = amount;\r\n    }\r\n\r\n    earned = customRound(earned);\r\n    gst = customRound(gst);\r\n    gross = customRound(gross);\r\n\r\n    var externals = $(\"div#detailPreview15\").find('tbody').find('tr').not(':first');\r\n    var totalComm = 0;\r\n    var totalGst = ($('#value_gst_1').val() || 0) * 1;\r\n\r\n    for (var i = 0; i < externals.length; i++) {\r\n        var commVal = externals.eq(i).find('td').eq(3).find('input').eq(0).val();\r\n        totalComm += (commVal || 0) * 1;\r\n\r\n        var gstVal = externals.eq(i).find('td').eq(5).find('input').eq(0).val();\r\n        totalGst -= (gstVal || 0) * 1;\r\n    }\r\n\r\n    var partyExternals = $(\"div#detailPreview17\").find('tbody').find('tr').not(':first');\r\n    for (var j = 0; j < partyExternals.length; j++) {\r\n        var commVal2 = partyExternals.eq(j).find('td').eq(3).find('input').eq(0).val();\r\n        if (typeof commVal2 !== 'undefined') {\r\n            totalComm += (commVal2 || 0) * 1;\r\n            var gstVal2 = partyExternals.eq(j).find('td').eq(5).find('input').eq(0).val();\r\n            totalGst -= (gstVal2 || 0) * 1;\r\n        }\r\n    }\r\n\r\n    $('#value_comm_earned_agency_1').val(customRound(earned - totalComm));\r\n    $('#value_gst_agency_1').val(customRound(totalGst));\r\n    $('#value_comm_gross_agency_1').val(customRound(earned - totalComm + totalGst));\r\n}\r\n\r\n// refreshInternalCoBroker distributes agency to salesperson/internal shares (integer)\r\nfunction refreshInternalCoBroker() {\r\n    var amount = ($('#value_comm_amt_1').val() || 0) * 1;\r\n    var earned;\r\n\r\n    if ($('#value_gst_payable_1').prop('checked') && !$('#value_gst_inclusive_1').prop('checked')) {\r\n        earned = amount;\r\n    } else if ($('#value_gst_payable_1').prop('checked') && $('#value_gst_inclusive_1').prop('checked')) {\r\n        earned = customRound(amount / 109 * 100);\r\n    } else {\r\n        earned = amount;\r\n    }\r\n\r\n    earned = customRound(earned);\r\n\r\n    var totalComm = ($('#value_comm_earned_agency_1').val() || 0) * 1;\r\n    var internals = $(\"div#detailPreview16\").find('tbody').find('tr').not(':first');\t\r\n    var totalInternalEarned = 0;\r\n\r\n    for (var i = 0; i < internals.length; i++) {\r\n        var internalPercent = internals.eq(i).find('td').eq(4).find('input').eq(0).val();\r\n        internalPercent = (internalPercent || 0) * 1;\r\n        var internalEarned = customRound(earned * internalPercent / 100);\r\n        totalInternalEarned += internalEarned * 1;\r\n    }\r\n\r\n    var agencyShare = ($('#value_agency_share_1').val() || 0) * 1;\r\n    var salesEarned = totalComm - totalInternalEarned;\r\n    var salesPercent = earned ? customRound((salesEarned / earned) * 100) : 0;\r\n\r\n    // compute raw agency share then apply integer rounding rules\r\n    var agencyCommRaw = (salesEarned * agencyShare) / 100;\r\n    var agencyComm = roundDownInt(agencyCommRaw);\r\n    var salesCommNett = roundUpInt(salesEarned - agencyComm);\r\n\r\n// salesperson earned: round UP to nearest 100\r\n$('#value_comm_earned_salesperson_1').val(roundUpToHundred(salesEarned));\r\n\r\n// salesperson percent: keep nearest integer\r\n$('#value_comm_earned_percent_salesperson_1').val(customRound(salesPercent));\r\n\r\n// agency commission: round DOWN to nearest 100\r\n$('#value_comm_to_agency_1').val(roundDownToHundred(agencyComm));\r\n$('#value_comm_to_agency1_1').val(roundDownToHundred(agencyComm));\r\n\r\n// salesperson nett: round UP to nearest 100\r\n$('#value_comm_nett_salesperson_1').val(roundUpToHundred(salesCommNett));\r\n\r\n}\r\n\r\n/* --------------------------\r\n   End integrated commission helpers\r\n   -------------------------- */\r\n\r\n$(document).ready(function () {\r\n    // ===== Scroll to Top ==== \r\n    $(window).scroll(function () {\r\n        if ($(this).scrollTop() >= 1000) { // If page is scrolled more than 1000px\r\n            $('#return-to-top').fadeIn(200); // Fade in the arrow\r\n        } else {\r\n            $('#return-to-top').fadeOut(200); // Else fade out the arrow\r\n        }\r\n    });\r\n\r\n    $('#return-to-top').click(function () { // When arrow is clicked\r\n        $('html, body').animate({\r\n            scrollTop: 0\r\n        }, 500);\r\n    });\r\n});\r\n\r\n\r\n//reload without losing scroll position\r\nwindow.addEventListener('load', function () {\r\n      if (window.location.hash) {\r\n        var elements = document.querySelectorAll(window.location.hash);\r\n        if (elements[0]) {\r\n          elements[0].scrollIntoView({\r\n            behavior: 'smooth', // smooth scroll\r\n            block: 'start'\r\n          });\r\n        }\r\n      }\r\n    })"
 		},
 		{
 			"eventId": "EVENT_BEFOREEDIT",
@@ -6489,7 +6493,7 @@
 		{
 			"eventId": "EVENT_BEFOREPROCESS_ADD",
 			"pageType": "add",
-			"code": "$key='$jw6857r707';\n\nglobal $strWhereClause,\n$strTableName,$conn;\n$str = \"SELECT cast(AES_DECRYPT(unhex(agency_cea_reg), '\".$key.\"') as char) AS agency_cea_reg \nFROM agency WHERE agency_name='\".$_SESSION[\"Agency\"].\"'\";\n$rs = db_query($str,$conn);\n$data = db_fetch_array($rs);\nif ($data[\"UserID\"]==$_SESSION[\"UserID\"])\necho \"\";\n$_SESSION[\"AgencyAddress\"] = $data[\"agency_address\"];\n$_SESSION[\"AgencyCEA\"] = $data[\"agency_cea_reg\"];\n$_SESSION[\"AgencyTel\"] = $data[\"agency_tel\"];\n$_SESSION[\"AgencyEmail\"] = $data[\"agency_email\"];"
+			"code": "/*\n$key='$jw6857r707';\n\nglobal $strWhereClause,\n$strTableName,$conn;\n$str = \"SELECT cast(AES_DECRYPT(unhex(agency_cea_reg), '\".$key.\"') as char) AS agency_cea_reg \nFROM agency WHERE agency_name='\".$_SESSION[\"Agency\"].\"'\";\n$rs = db_query($str,$conn);\n$data = db_fetch_array($rs);\nif ($data[\"UserID\"]==$_SESSION[\"UserID\"])\necho \"\";\n$_SESSION[\"AgencyAddress\"] = $data[\"agency_address\"];\n$_SESSION[\"AgencyCEA\"] = $data[\"agency_cea_reg\"];\n$_SESSION[\"AgencyTel\"] = $data[\"agency_tel\"];\n$_SESSION[\"AgencyEmail\"] = $data[\"agency_email\"];\n*/\n\nglobal $strWhereClause,\n$strTableName,$conn;\n$str = \"select *\nFROM jwresour_jwr_saas.eat_users WHERE agency='\".$_SESSION[\"Agency\"].\"'\";\n$rs = db_query($str,$conn);\n$data = db_fetch_array($rs);\nif ($data[\"agency\"]==$_SESSION[\"Agency\"])\necho \"\";\n$_SESSION[\"GstReg\"] = $data[\"agency_gst_reg\"];"
 		}
 	],
 	"sortByFields": {
@@ -7842,6 +7846,20 @@
 									"colspan": 3
 								}
 							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "c11"
+								},
+								{
+									"cell": "c12"
+								},
+								{
+									"cell": "c13"
+								}
+							],
+							"section": ""
 						}
 					],
 					"cells": {
@@ -7916,7 +7934,8 @@
 						},
 						"c3": {
 							"model": "c1",
-							"items": []
+							"items": [],
+							"field": "agency_gst_reg"
 						},
 						"c17": {
 							"model": "c4",
@@ -7936,6 +7955,20 @@
 							"model": "c2",
 							"items": [],
 							"field": "status_status"
+						},
+						"c11": {
+							"model": "c4",
+							"items": []
+						},
+						"c12": {
+							"model": "c2",
+							"items": [],
+							"field": "agency_gst_reg"
+						},
+						"c13": {
+							"model": "c2",
+							"items": [],
+							"field": "agency_gst_reg"
 						}
 					},
 					"deferredItems": [],
@@ -9249,6 +9282,20 @@
 									"cell": "c17"
 								}
 							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c"
+								},
+								{
+									"cell": "c18"
+								},
+								{
+									"cell": "c19"
+								}
+							]
 						}
 					],
 					"cells": {
@@ -9291,6 +9338,27 @@
 							"model": "c2",
 							"items": [
 								"edit_field_tooltip"
+							],
+							"field": "management_fee"
+						},
+						"c": {
+							"model": "c4",
+							"items": [
+								"edit_field_label7"
+							],
+							"field": "management_fee"
+						},
+						"c18": {
+							"model": "c2",
+							"items": [
+								"edit_field6"
+							],
+							"field": "management_fee"
+						},
+						"c19": {
+							"model": "c2",
+							"items": [
+								"edit_field_tooltip5"
 							],
 							"field": "management_fee"
 						}
@@ -10338,6 +10406,27 @@
 				"edit_field_label6": {
 					"type": "edit_field_label",
 					"field": "prop_id"
+				},
+				"edit_field6": {
+					"field": "agency_gst_reg",
+					"type": "edit_field",
+					"orientation": 0,
+					"padding": {
+						"top": "12px"
+					}
+				},
+				"edit_field_label7": {
+					"type": "edit_field_label",
+					"field": "agency_gst_reg",
+					"label": {
+						"field": "agency_gst_reg",
+						"table": "transactions",
+						"type": 3
+					}
+				},
+				"edit_field_tooltip5": {
+					"type": "edit_field_tooltip",
+					"field": "agency_gst_reg"
 				}
 			},
 			"version": 14,
@@ -11362,24 +11451,8 @@
 									"cell": "c13"
 								},
 								{
-									"cell": "c14"
-								},
-								{
-									"cell": "c15"
-								}
-							],
-							"section": ""
-						},
-						{
-							"cells": [
-								{
-									"cell": "c16"
-								},
-								{
-									"cell": "c17"
-								},
-								{
-									"cell": "c18"
+									"cell": "c15",
+									"colspan": 2
 								}
 							],
 							"section": ""
@@ -11648,39 +11721,14 @@
 						},
 						"c13": {
 							"model": "c4",
-							"items": [
-								"integrated_edit_field156"
-							],
-							"field": "gst_payable"
-						},
-						"c14": {
-							"model": "c2",
-							"items": [
-								"integrated_edit_field55"
-							],
-							"field": "gst_payable"
+							"items": []
 						},
 						"c15": {
 							"model": "c2",
-							"items": []
-						},
-						"c16": {
-							"model": "c4",
 							"items": [
-								"integrated_edit_field158"
-							],
-							"field": "gst_inclusive"
-						},
-						"c17": {
-							"model": "c2",
-							"items": [
+								"integrated_edit_field55",
 								"integrated_edit_field56"
-							],
-							"field": "gst_inclusive"
-						},
-						"c18": {
-							"model": "c2",
-							"items": []
+							]
 						},
 						"c19": {
 							"model": "c4",
@@ -12871,6 +12919,20 @@
 									"cell": "c20"
 								}
 							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c21"
+								},
+								{
+									"cell": "c22"
+								},
+								{
+									"cell": "c23"
+								}
+							]
 						}
 					],
 					"cells": {
@@ -12913,6 +12975,27 @@
 							"model": "c2",
 							"items": [
 								"edit_field_tooltip3"
+							],
+							"field": "agency"
+						},
+						"c21": {
+							"model": "c4",
+							"items": [
+								"edit_field_label7"
+							],
+							"field": "agency"
+						},
+						"c22": {
+							"model": "c2",
+							"items": [
+								"edit_field1"
+							],
+							"field": "agency"
+						},
+						"c23": {
+							"model": "c2",
+							"items": [
+								"edit_field_tooltip4"
 							],
 							"field": "agency"
 						}
@@ -14020,7 +14103,12 @@
 				},
 				"integrated_edit_field152": {
 					"type": "edit_field_label",
-					"field": "comm_percent"
+					"field": "comm_percent",
+					"label": {
+						"field": "comm_percent",
+						"table": "transactions",
+						"type": 3
+					}
 				},
 				"integrated_edit_field53": {
 					"field": "comm_percent",
@@ -14034,27 +14122,23 @@
 					"updateOnEdit": false,
 					"width": "200px"
 				},
-				"integrated_edit_field156": {
-					"type": "edit_field_label",
-					"field": "gst_payable",
-					"customCSS": "/* Put  your custom CSS code here */\n\n"
-				},
 				"integrated_edit_field55": {
 					"field": "gst_payable",
-					"type": "edit_field",
+					"type": "integrated_edit_field",
 					"updateOnEdit": false,
-					"customCSS": "/* Put  your custom CSS code here */\n\n"
-				},
-				"integrated_edit_field158": {
-					"type": "edit_field_label",
-					"field": "gst_inclusive",
-					"customCSS": "/* Put  your custom CSS code here */\n\n"
+					"customCSS": "/* Put  your custom CSS code here */\n\n",
+					"joined": true,
+					"separated": false,
+					"orientation": 1
 				},
 				"integrated_edit_field56": {
 					"field": "gst_inclusive",
-					"type": "edit_field",
+					"type": "integrated_edit_field",
 					"updateOnEdit": false,
-					"customCSS": "/* Put  your custom CSS code here */\n\n"
+					"customCSS": "/* Put  your custom CSS code here */\n\n",
+					"joined": true,
+					"separated": false,
+					"orientation": 1
 				},
 				"integrated_edit_field57": {
 					"field": "comm_earned",
@@ -14065,7 +14149,12 @@
 				"integrated_edit_field162": {
 					"type": "edit_field_label",
 					"field": "gst",
-					"customCSS": "/* Put  your custom CSS code here */\n\n"
+					"customCSS": "/* Put  your custom CSS code here */\n\n",
+					"label": {
+						"field": "gst",
+						"table": "transactions",
+						"type": 3
+					}
 				},
 				"integrated_edit_field58": {
 					"field": "gst",
@@ -14801,13 +14890,17 @@
 					"field": "agency",
 					"type": "edit_field",
 					"updateOnEdit": false,
-					"width": "320px"
+					"padding": {
+						"top": "12px"
+					}
 				},
 				"agency_cea": {
 					"field": "agency_cea",
 					"type": "edit_field",
 					"updateOnEdit": false,
-					"width": "320px"
+					"padding": {
+						"top": "12px"
+					}
 				},
 				"edit_field_label": {
 					"type": "edit_field_label",
@@ -15425,6 +15518,22 @@
 					"padding": {
 						"top": "12px"
 					}
+				},
+				"edit_field1": {
+					"field": "agency_gst_reg",
+					"type": "edit_field",
+					"orientation": 0,
+					"padding": {
+						"top": "12px"
+					}
+				},
+				"edit_field_label7": {
+					"type": "edit_field_label",
+					"field": "agency_gst_reg"
+				},
+				"edit_field_tooltip4": {
+					"type": "edit_field_tooltip",
+					"field": "agency_gst_reg"
 				}
 			},
 			"version": 14,
@@ -19888,14 +19997,6 @@
 									"cell": "c10"
 								}
 							]
-						},
-						{
-							"section": "",
-							"cells": [
-								{
-									"cell": "c7"
-								}
-							]
 						}
 					],
 					"cells": {
@@ -19938,10 +20039,6 @@
 							],
 							"customCSS": "/* Put  your custom CSS code here */\n",
 							"align": "left"
-						},
-						"c7": {
-							"model": "c3",
-							"items": []
 						},
 						"c8": {
 							"model": "c3",
@@ -20393,22 +20490,15 @@
 							"cells": [
 								{
 									"cell": "c9",
-									"rowspan": 2
+									"rowspan": 1
 								},
 								{
 									"cell": "c1",
-									"rowspan": 2
+									"rowspan": 1
 								},
 								{
-									"cell": "c10"
-								}
-							]
-						},
-						{
-							"section": "",
-							"cells": [
-								{
-									"cell": "c12"
+									"cell": "c10",
+									"rowspan": 1
 								}
 							]
 						},
@@ -20458,13 +20548,8 @@
 							"section": "",
 							"cells": [
 								{
-									"cell": "c16"
-								},
-								{
-									"cell": "c17"
-								},
-								{
-									"cell": "c18"
+									"cell": "c18",
+									"colspan": 3
 								}
 							]
 						}
@@ -20510,7 +20595,6 @@
 						"c9": {
 							"model": "c3",
 							"items": [
-								"integrated_edit_field55",
 								"integrated_edit_field58"
 							],
 							"customCSS": "/* Put  your custom CSS code here */\n\n"
@@ -20518,52 +20602,28 @@
 						"c1": {
 							"model": "c3",
 							"items": [
-								"integrated_edit_field56",
-								"integrated_edit_field59"
+								"integrated_edit_field55",
+								"integrated_edit_field56"
 							],
 							"customCSS": "/* Put  your custom CSS code here */\n\n\n"
 						},
 						"c10": {
 							"model": "c3",
-							"items": [],
+							"items": [
+								"integrated_edit_field59"
+							],
 							"customCSS": "/* Put  your custom CSS code here */\n\n\n",
 							"orientation": "horizontal"
-						},
-						"c16": {
-							"model": "c3",
-							"items": [
-								"integrated_edit_field62"
-							],
-							"border": [
-								{
-									"side": "bottom"
-								}
-							],
-							"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
-						},
-						"c17": {
-							"model": "c3",
-							"items": [
-								"integrated_edit_field60"
-							],
-							"border": [
-								{
-									"side": "bottom"
-								}
-							],
-							"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
 						},
 						"c18": {
 							"model": "c3",
 							"items": [
+								"integrated_edit_field62",
+								"integrated_edit_field60",
 								"integrated_edit_field61"
 							],
-							"border": [
-								{
-									"side": "bottom"
-								}
-							],
-							"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n"
+							"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none;\n}\n",
+							"orientation": "horizontal"
 						},
 						"c21": {
 							"model": "c3",
@@ -20583,11 +20643,6 @@
 								"integrated_edit_field65"
 							],
 							"useFullWidth": true
-						},
-						"c12": {
-							"model": "c3",
-							"items": [],
-							"customCSS": "/* Put  your custom CSS code here */\n\n\n"
 						},
 						"c13": {
 							"model": "c3",

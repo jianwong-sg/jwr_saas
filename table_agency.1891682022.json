@@ -1,9 +1,10 @@
 {
-	"sql": "SELECT\nid,\nagency_name,\nagency_address,\nagency_cea_reg,\nagency_tel,\nurl,\nagency_email,\nfax\nFROM agency",
+	"sql": "SELECT\n\tid,\n\tagency_name,\n\tagency_address,\n\tagency_cea_reg,\n\tagency_tel,\n\turl,\n\tagency_email,\n\tfax,\n\tgst_reg\nFROM\n\tagency\n",
 	"connId": "Tables",
 	"originalTable": "agency",
 	"name": "agency",
 	"shortTableName": "agency",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "active",
@@ -36,6 +37,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -87,6 +89,7 @@
 		{
 			"name": "agency_name",
 			"sqlExpression": "agency_name",
+			"index": 2,
 			"strField": "agency_name",
 			"type": 200,
 			"viewFormats": [
@@ -126,6 +129,7 @@
 		{
 			"name": "agency_address",
 			"sqlExpression": "agency_address",
+			"index": 3,
 			"strField": "agency_address",
 			"type": 200,
 			"viewFormats": [
@@ -135,6 +139,7 @@
 			],
 			"editFormats": [
 				{
+					"format": "Text area",
 					"validateRegexMessage": {
 						"text": "",
 						"type": 0
@@ -145,6 +150,7 @@
 					},
 					"textboxMaxLenth": 200,
 					"textHTML5Input": "0",
+					"textareaHeight": 80,
 					"fileMaxNumber": 1,
 					"fileThumbnailField": "th",
 					"dateFirstYearFactor": 30,
@@ -171,6 +177,7 @@
 		{
 			"name": "agency_cea_reg",
 			"sqlExpression": "agency_cea_reg",
+			"index": 4,
 			"strField": "agency_cea_reg",
 			"type": 201,
 			"viewFormats": [
@@ -210,6 +217,7 @@
 		{
 			"name": "agency_tel",
 			"sqlExpression": "agency_tel",
+			"index": 5,
 			"strField": "agency_tel",
 			"type": 200,
 			"viewFormats": [
@@ -255,6 +263,7 @@
 		{
 			"name": "url",
 			"sqlExpression": "url",
+			"index": 6,
 			"strField": "url",
 			"type": 200,
 			"viewFormats": [
@@ -298,6 +307,7 @@
 		{
 			"name": "agency_email",
 			"sqlExpression": "agency_email",
+			"index": 7,
 			"strField": "agency_email",
 			"type": 201,
 			"viewFormats": [
@@ -336,6 +346,7 @@
 		{
 			"name": "fax",
 			"sqlExpression": "fax",
+			"index": 8,
 			"strField": "fax",
 			"type": 200,
 			"viewFormats": [
@@ -374,6 +385,23 @@
 				"English": ""
 			},
 			"tableName": "agency"
+		},
+		{
+			"name": "gst_reg",
+			"sqlExpression": "gst_reg",
+			"index": 9,
+			"strField": "gst_reg",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Gst Reg"
+			},
+			"tableName": "agency"
 		}
 	],
 	"afterEditAction": 0,
@@ -384,16 +412,147 @@
 		{
 			"eventId": "EVENT_BEFOREADD",
 			"pageType": "add",
-			"code": "$values[\"agency_address\"]=strtoupper($values[\"agency_address\"]);\n//$values[\"agency_cea_reg\"]=strtoupper($values[\"agency_cea_reg\"]);\n$values[\"url\"]=strtoupper($values[\"url\"]);\n$values[\"agency_email\"]=strtoupper($values[\"agency_email\"]);\n//$values[\"agency_name\"]=strtoupper($values[\"agency_name\"]);\n\nreturn true;"
+			"code": "$values[\"agency_address\"]=strtoupper($values[\"agency_address\"]);\n//$values[\"agency_cea_reg\"]=strtoupper($values[\"agency_cea_reg\"]);\n$values[\"url\"]=strtoupper($values[\"url\"]);\n$values[\"agency_email\"]=strtoupper($values[\"agency_email\"]);\n$values[\"gst_reg\"]=strtoupper($values[\"gst_reg\"]);\n\nreturn true;"
 		},
 		{
 			"eventId": "EVENT_BEFOREEDIT",
 			"pageType": "edit",
-			"code": "$values[\"agency_address\"]=strtoupper($values[\"agency_address\"]);\n//$values[\"agency_cea_reg\"]=strtoupper($values[\"agency_cea_reg\"]);\n$values[\"url\"]=strtoupper($values[\"url\"]);\n$values[\"agency_email\"]=strtoupper($values[\"agency_email\"]);\n//$values[\"agency_name\"]=strtoupper($values[\"agency_name\"]);\n\n\nreturn true;"
+			"code": "$values[\"agency_address\"]=strtoupper($values[\"agency_address\"]);\n//$values[\"agency_cea_reg\"]=strtoupper($values[\"agency_cea_reg\"]);\n$values[\"url\"]=strtoupper($values[\"url\"]);\n$values[\"agency_email\"]=strtoupper($values[\"agency_email\"]);\n$values[\"gst_reg\"]=strtoupper($values[\"gst_reg\"]);\n\n\nreturn true;"
+		},
+		{
+			"eventId": "EVENT_AFTERADD",
+			"pageType": "add",
+			"code": "global $conn;\n $sql = \"UPDATE jwresour_jwr_saas.eat_users SET agency_gst_reg = '\".$values['gst_reg'].\"' WHERE agency = '\".$values['agency_name'].\"'\";\n CustomQuery($sql);\n\n\n"
+		},
+		{
+			"eventId": "EVENT_AFTEREDIT",
+			"pageType": "edit",
+			"code": "global $conn;\n $sql = \"UPDATE jwresour_jwr_saas.eat_users SET agency_gst_reg = '\".$values['gst_reg'].\"' WHERE agency = '\".$values['agency_name'].\"'\";\n CustomQuery($sql);\n\n\n"
 		}
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_cea_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "longtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_tel",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "url",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "longtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "fax",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "postal",
+				"type": 200,
+				"size": 8,
+				"scale": 0,
+				"typeName": "varchar(8)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "longtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "agency"
 	},
 	"pages": [
 		{
@@ -485,6 +644,54 @@
 								}
 							],
 							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c4"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c5"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c6"
+								}
+							]
 						}
 					],
 					"cells": {
@@ -492,12 +699,55 @@
 							"model": "c3",
 							"items": [
 								"integrated_edit_field",
-								"integrated_edit_field2",
+								"integrated_edit_field2"
+							]
+						},
+						"c": {
+							"model": "c3",
+							"items": [
+								"edit_field_label1",
 								"integrated_edit_field1",
+								"edit_field_tooltip1"
+							]
+						},
+						"c4": {
+							"model": "c3",
+							"items": [
+								"edit_field_label",
+								"integrated_edit_field7",
+								"edit_field_tooltip"
+							]
+						},
+						"c1": {
+							"model": "c3",
+							"items": [
+								"edit_field_label2",
 								"integrated_edit_field5",
+								"edit_field_tooltip2"
+							]
+						},
+						"c2": {
+							"model": "c3",
+							"items": [
+								"edit_field_label3",
 								"integrated_edit_field3",
+								"edit_field_tooltip3"
+							]
+						},
+						"c5": {
+							"model": "c3",
+							"items": [
+								"edit_field_label4",
 								"integrated_edit_field6",
-								"integrated_edit_field4"
+								"edit_field_tooltip4"
+							]
+						},
+						"c6": {
+							"model": "c3",
+							"items": [
+								"edit_field_label5",
+								"integrated_edit_field4",
+								"edit_field_tooltip5"
 							]
 						}
 					},
@@ -533,8 +783,11 @@
 				},
 				"integrated_edit_field1": {
 					"field": "agency_address",
-					"type": "integrated_edit_field",
-					"orientation": 0
+					"type": "edit_field",
+					"orientation": 0,
+					"joined": false,
+					"separated": true,
+					"width": "300px"
 				},
 				"integrated_edit_field2": {
 					"field": "agency_cea_reg",
@@ -543,23 +796,103 @@
 				},
 				"integrated_edit_field3": {
 					"field": "fax",
-					"type": "integrated_edit_field",
-					"orientation": 0
+					"type": "edit_field",
+					"orientation": 0,
+					"joined": false,
+					"separated": true,
+					"width": "200px"
 				},
 				"integrated_edit_field4": {
 					"field": "url",
-					"type": "integrated_edit_field",
-					"orientation": 0
+					"type": "edit_field",
+					"orientation": 0,
+					"joined": false,
+					"separated": true,
+					"width": "300px"
 				},
 				"integrated_edit_field5": {
 					"field": "agency_tel",
-					"type": "integrated_edit_field",
-					"orientation": 0
+					"type": "edit_field",
+					"orientation": 0,
+					"joined": false,
+					"separated": true,
+					"width": "200px"
 				},
 				"integrated_edit_field6": {
 					"field": "agency_email",
-					"type": "integrated_edit_field",
-					"orientation": 0
+					"type": "edit_field",
+					"orientation": 0,
+					"joined": false,
+					"separated": true,
+					"width": "300px"
+				},
+				"integrated_edit_field7": {
+					"field": "gst_reg",
+					"type": "edit_field",
+					"orientation": 0,
+					"joined": false,
+					"separated": true,
+					"width": "200px"
+				},
+				"edit_field_label": {
+					"type": "edit_field_label",
+					"field": "gst_reg",
+					"separated": true
+				},
+				"edit_field_tooltip": {
+					"type": "edit_field_tooltip",
+					"field": "gst_reg",
+					"separated": true
+				},
+				"edit_field_label1": {
+					"type": "edit_field_label",
+					"field": "agency_address",
+					"separated": true
+				},
+				"edit_field_tooltip1": {
+					"type": "edit_field_tooltip",
+					"field": "agency_address",
+					"separated": true
+				},
+				"edit_field_label2": {
+					"type": "edit_field_label",
+					"field": "agency_tel",
+					"separated": true
+				},
+				"edit_field_tooltip2": {
+					"type": "edit_field_tooltip",
+					"field": "agency_tel",
+					"separated": true
+				},
+				"edit_field_label3": {
+					"type": "edit_field_label",
+					"field": "fax",
+					"separated": true
+				},
+				"edit_field_tooltip3": {
+					"type": "edit_field_tooltip",
+					"field": "fax",
+					"separated": true
+				},
+				"edit_field_label4": {
+					"type": "edit_field_label",
+					"field": "agency_email",
+					"separated": true
+				},
+				"edit_field_tooltip4": {
+					"type": "edit_field_tooltip",
+					"field": "agency_email",
+					"separated": true
+				},
+				"edit_field_label5": {
+					"type": "edit_field_label",
+					"field": "url",
+					"separated": true
+				},
+				"edit_field_tooltip5": {
+					"type": "edit_field_tooltip",
+					"field": "url",
+					"separated": true
 				}
 			},
 			"version": 14,
@@ -671,6 +1004,54 @@
 								}
 							],
 							"section": ""
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c4"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c1"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c2"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c5"
+								}
+							]
+						},
+						{
+							"section": "",
+							"cells": [
+								{
+									"cell": "c6"
+								}
+							]
 						}
 					],
 					"cells": {
@@ -678,12 +1059,55 @@
 							"model": "c3",
 							"items": [
 								"integrated_edit_field",
-								"integrated_edit_field2",
+								"integrated_edit_field2"
+							]
+						},
+						"c": {
+							"model": "c3",
+							"items": [
+								"edit_field_label1",
 								"integrated_edit_field1",
+								"edit_field_tooltip1"
+							]
+						},
+						"c4": {
+							"model": "c3",
+							"items": [
+								"edit_field_label",
+								"integrated_edit_field7",
+								"edit_field_tooltip"
+							]
+						},
+						"c1": {
+							"model": "c3",
+							"items": [
+								"edit_field_label2",
 								"integrated_edit_field5",
+								"edit_field_tooltip2"
+							]
+						},
+						"c2": {
+							"model": "c3",
+							"items": [
+								"edit_field_label3",
 								"integrated_edit_field3",
+								"edit_field_tooltip3"
+							]
+						},
+						"c5": {
+							"model": "c3",
+							"items": [
+								"edit_field_label4",
 								"integrated_edit_field6",
-								"integrated_edit_field4"
+								"edit_field_tooltip4"
+							]
+						},
+						"c6": {
+							"model": "c3",
+							"items": [
+								"edit_field_label5",
+								"integrated_edit_field4",
+								"edit_field_tooltip5"
 							]
 						}
 					},
@@ -731,41 +1155,120 @@
 				"integrated_edit_field": {
 					"field": "agency_name",
 					"type": "integrated_edit_field",
-					"orientation": 0,
-					"updateOnEdit": false
-				},
-				"integrated_edit_field1": {
-					"field": "agency_address",
-					"type": "integrated_edit_field",
 					"orientation": 0
 				},
 				"integrated_edit_field2": {
 					"field": "agency_cea_reg",
 					"type": "integrated_edit_field",
-					"orientation": 0,
-					"updateOnEdit": false
-				},
-				"integrated_edit_field3": {
-					"field": "fax",
-					"type": "integrated_edit_field",
 					"orientation": 0
 				},
-				"integrated_edit_field4": {
-					"field": "url",
-					"type": "integrated_edit_field",
+				"edit_field_label1": {
+					"type": "edit_field_label",
+					"field": "agency_address",
+					"separated": true
+				},
+				"integrated_edit_field1": {
+					"field": "agency_address",
+					"type": "edit_field",
 					"orientation": 0,
-					"updateOnEdit": false
+					"joined": false,
+					"separated": true,
+					"width": "300px"
+				},
+				"edit_field_tooltip1": {
+					"type": "edit_field_tooltip",
+					"field": "agency_address",
+					"separated": true
+				},
+				"edit_field_label": {
+					"type": "edit_field_label",
+					"field": "gst_reg",
+					"separated": true
+				},
+				"integrated_edit_field7": {
+					"field": "gst_reg",
+					"type": "edit_field",
+					"orientation": 0,
+					"joined": false,
+					"separated": true,
+					"width": "200px"
+				},
+				"edit_field_tooltip": {
+					"type": "edit_field_tooltip",
+					"field": "gst_reg",
+					"separated": true
+				},
+				"edit_field_label2": {
+					"type": "edit_field_label",
+					"field": "agency_tel",
+					"separated": true
 				},
 				"integrated_edit_field5": {
 					"field": "agency_tel",
-					"type": "integrated_edit_field",
-					"orientation": 0
+					"type": "edit_field",
+					"orientation": 0,
+					"joined": false,
+					"separated": true,
+					"width": "200px"
+				},
+				"edit_field_tooltip2": {
+					"type": "edit_field_tooltip",
+					"field": "agency_tel",
+					"separated": true
+				},
+				"edit_field_label3": {
+					"type": "edit_field_label",
+					"field": "fax",
+					"separated": true
+				},
+				"integrated_edit_field3": {
+					"field": "fax",
+					"type": "edit_field",
+					"orientation": 0,
+					"joined": false,
+					"separated": true,
+					"width": "200px"
+				},
+				"edit_field_tooltip3": {
+					"type": "edit_field_tooltip",
+					"field": "fax",
+					"separated": true
+				},
+				"edit_field_label4": {
+					"type": "edit_field_label",
+					"field": "agency_email",
+					"separated": true
 				},
 				"integrated_edit_field6": {
 					"field": "agency_email",
-					"type": "integrated_edit_field",
+					"type": "edit_field",
 					"orientation": 0,
-					"updateOnEdit": false
+					"joined": false,
+					"separated": true,
+					"width": "300px"
+				},
+				"edit_field_tooltip4": {
+					"type": "edit_field_tooltip",
+					"field": "agency_email",
+					"separated": true
+				},
+				"edit_field_label5": {
+					"type": "edit_field_label",
+					"field": "url",
+					"separated": true
+				},
+				"integrated_edit_field4": {
+					"field": "url",
+					"type": "edit_field",
+					"orientation": 0,
+					"joined": false,
+					"separated": true,
+					"width": "300px"
+				},
+				"edit_field_tooltip5": {
+					"type": "edit_field_tooltip",
+					"field": "url",
+					"separated": true
 				}
 			},
 			"version": 14,
@@ -852,7 +1355,8 @@
 								"export_field2",
 								"export_field3",
 								"export_field4",
-								"export_field6"
+								"export_field6",
+								"export_field8"
 							]
 						}
 					},
@@ -931,6 +1435,10 @@
 				},
 				"export_field7": {
 					"field": "fax",
+					"type": "export_field"
+				},
+				"export_field8": {
+					"field": "gst_reg",
 					"type": "export_field"
 				}
 			},
@@ -1022,7 +1530,8 @@
 								"import_field2",
 								"import_field3",
 								"import_field4",
-								"import_field6"
+								"import_field6",
+								"import_field8"
 							]
 						}
 					},
@@ -1064,6 +1573,10 @@
 				},
 				"import_field7": {
 					"field": "fax",
+					"type": "import_field"
+				},
+				"import_field8": {
+					"field": "gst_reg",
 					"type": "import_field"
 				}
 			},
@@ -1192,7 +1705,9 @@
 					"cells": {
 						"c1": {
 							"model": "c1",
-							"items": []
+							"items": [
+								"search_panel"
+							]
 						}
 					},
 					"deferredItems": [],
@@ -1240,6 +1755,9 @@
 									"cell": "headcell_field1"
 								},
 								{
+									"cell": "headcell_field5"
+								},
+								{
 									"cell": "headcell_field2"
 								},
 								{
@@ -1247,9 +1765,6 @@
 								},
 								{
 									"cell": "headcell_field6"
-								},
-								{
-									"cell": "headcell_field10"
 								},
 								{
 									"cell": "headcell_field7"
@@ -1272,6 +1787,9 @@
 									"cell": "cell_field1"
 								},
 								{
+									"cell": "headcell_field13"
+								},
+								{
 									"cell": "cell_field2"
 								},
 								{
@@ -1279,9 +1797,6 @@
 								},
 								{
 									"cell": "cell_field6"
-								},
-								{
-									"cell": "headcell_field11"
 								},
 								{
 									"cell": "headcell_field8"
@@ -1304,6 +1819,9 @@
 									"cell": "footcell_field1"
 								},
 								{
+									"cell": "headcell_field14"
+								},
+								{
 									"cell": "footcell_field2"
 								},
 								{
@@ -1311,9 +1829,6 @@
 								},
 								{
 									"cell": "footcell_field6"
-								},
-								{
-									"cell": "headcell_field12"
 								},
 								{
 									"cell": "headcell_field9"
@@ -1391,7 +1906,9 @@
 						"headcell_field3": {
 							"model": "headcell_field",
 							"items": [
-								"grid_field_label3"
+								"grid_field_label3",
+								"text",
+								"simple_grid_field11"
 							],
 							"field": "agency_tel",
 							"columnName": "field"
@@ -1399,10 +1916,12 @@
 						"cell_field3": {
 							"model": "cell_field",
 							"items": [
-								"grid_field3"
+								"grid_field3",
+								"simple_grid_field4"
 							],
 							"field": "agency_tel",
-							"columnName": "field"
+							"columnName": "field",
+							"orientation": "vertical"
 						},
 						"footcell_field3": {
 							"model": "footcell_field",
@@ -1497,27 +2016,21 @@
 							"columnName": "field",
 							"field": "url"
 						},
-						"headcell_field10": {
+						"headcell_field5": {
 							"model": "headcell_field",
 							"items": [
-								"simple_grid_field11"
-							],
-							"columnName": "field",
-							"field": "fax"
+								"grid_field_label5"
+							]
 						},
-						"headcell_field11": {
+						"headcell_field13": {
 							"model": "cell_field",
 							"items": [
-								"simple_grid_field4"
-							],
-							"columnName": "field",
-							"field": "fax"
+								"grid_field5"
+							]
 						},
-						"headcell_field12": {
+						"headcell_field14": {
 							"model": "footcell_field",
-							"items": [],
-							"columnName": "field",
-							"field": "fax"
+							"items": []
 						}
 					},
 					"deferredItems": [],
@@ -1559,6 +2072,8 @@
 						"delete_selected",
 						"-3",
 						"advsearch_link",
+						"show_search_panel",
+						"hide_search_panel",
 						"-1",
 						"export",
 						"-2",
@@ -1722,6 +2237,38 @@
 						"table": "agency",
 						"type": 3
 					}
+				},
+				"grid_field5": {
+					"field": "gst_reg",
+					"type": "grid_field"
+				},
+				"grid_field_label5": {
+					"type": "grid_field_label",
+					"field": "gst_reg"
+				},
+				"search_panel": {
+					"type": "search_panel",
+					"items": [
+						"search_panel_field"
+					]
+				},
+				"show_search_panel": {
+					"type": "show_search_panel"
+				},
+				"hide_search_panel": {
+					"type": "hide_search_panel"
+				},
+				"search_panel_field": {
+					"field": "gst_reg",
+					"type": "search_panel_field"
+				},
+				"text": {
+					"type": "text",
+					"label": {
+						"text": "/",
+						"type": 0
+					},
+					"editedByRte": false
 				}
 			},
 			"spreadsheetGrid": false,
@@ -1833,7 +2380,8 @@
 								"integrated_search_field1",
 								"integrated_search_field2",
 								"integrated_search_field3",
-								"integrated_search_field4"
+								"integrated_search_field4",
+								"integrated_search_field5"
 							]
 						}
 					},
@@ -1886,6 +2434,11 @@
 					"type": "integrated_search_field",
 					"orientation": 0,
 					"required": false
+				},
+				"integrated_search_field5": {
+					"field": "gst_reg",
+					"type": "integrated_search_field",
+					"orientation": 0
 				}
 			},
 			"version": 14,
@@ -2003,6 +2556,7 @@
 							"items": [
 								"integrated_edit_field",
 								"integrated_edit_field2",
+								"integrated_edit_field7",
 								"integrated_edit_field1",
 								"integrated_edit_field5",
 								"integrated_edit_field3",
@@ -2074,6 +2628,11 @@
 				},
 				"integrated_edit_field6": {
 					"field": "agency_email",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field7": {
+					"field": "gst_reg",
 					"type": "integrated_edit_field",
 					"orientation": 0
 				}

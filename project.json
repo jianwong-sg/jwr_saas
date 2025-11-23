@@ -17,8 +17,8 @@
 				"gid": 26535567
 			},
 			{
-				"x": 204,
-				"y": 6,
+				"x": 29,
+				"y": 858,
 				"width": 120,
 				"height": 122,
 				"gid": 1891682022
@@ -7714,6 +7714,12 @@
 			"636150782": [
 				"cea_reg"
 			],
+			"796408747": [
+				"cea_reg"
+			],
+			"928607749": [
+				"cea_reg"
+			],
 			"979702493": [
 				"cea_reg"
 			],
@@ -7746,6 +7752,12 @@
 				"reg_no",
 				"email",
 				"mobil"
+			],
+			"1190436127": [
+				"cea_reg",
+				"agency_cea",
+				"client_nric",
+				"agency_gst_reg"
 			],
 			"1285162242": [
 				"agency_cea_reg"
@@ -7795,7 +7807,8 @@
 				"mobile",
 				"bank_ac_no",
 				"nric",
-				"agency_cea_reg"
+				"agency_cea_reg",
+				"agency_gst_reg"
 			],
 			"1734685260": [
 				"cea_reg"
@@ -7804,6 +7817,9 @@
 				"cea_reg",
 				"salesperson_nric",
 				"salesperson_email"
+			],
+			"1764992275": [
+				"cea_reg"
 			],
 			"1777550071": [
 				"agency_cea",
@@ -7822,7 +7838,11 @@
 			],
 			"1891682022": [
 				"agency_cea_reg",
-				"agency_email"
+				"agency_email",
+				"gst_reg"
+			],
+			"1908021907": [
+				"cea_reg"
 			],
 			"2109437251": [
 				"email",
@@ -7945,7 +7965,8 @@
 				"mobile",
 				"nric",
 				"bank_ac_no",
-				"agency_cea_reg"
+				"agency_cea_reg",
+				"agency_gst_reg"
 			],
 			"3753305054": [
 				"customer_nric"
@@ -7957,6 +7978,15 @@
 				"client_nric",
 				"agency_cea",
 				"agency_gst_reg"
+			],
+			"4213521339": [
+				"contact_email",
+				"contact_person_id",
+				"contact_person_cell",
+				"biz_email",
+				"nric",
+				"mobile",
+				"cea_reg"
 			],
 			"4220104424": [
 				"salesperson_cea",

@@ -7,7 +7,7 @@
 			"asc": false
 		}
 	],
-	"sql": "SELECT\n\teatuser_id,\n\tusername,\n\tpassword,\n\tuser_status,\n\temail,\n\tfull_name,\n\tbiz_name,\n\tmobile,\n\tnric,\n\tuser_group,\n\tsignup_date,\n\tcompany_dbname,\n\tactive,\n\tbank_ac_no,\n\tbank_name,\n\tdate_of_birth,\n\tentry_year,\n\thome_address,\n\thome_tel,\n\tagency,\n\tcut_to_agency,\n\tsalesperson_share,\n\tapikey,\n\tagency_cea_reg,\n\tdestination\nFROM\n\teat_users\nORDER BY\n\teatuser_id DESC\n",
+	"sql": "SELECT\n\teatuser_id,\n\tusername,\n\tpassword,\n\tuser_status,\n\temail,\n\tfull_name,\n\tbiz_name,\n\tmobile,\n\tnric,\n\tuser_group,\n\tsignup_date,\n\tcompany_dbname,\n\tactive,\n\tbank_ac_no,\n\tbank_name,\n\tdate_of_birth,\n\tentry_year,\n\thome_address,\n\thome_tel,\n\tagency,\n\tcut_to_agency,\n\tsalesperson_share,\n\tapikey,\n\tagency_cea_reg,\n\tdestination,\n\tagency_gst_reg\nFROM\n\teat_users\nORDER BY\n\teatuser_id DESC\n",
 	"connId": "jwresourjweat1091saasatjwrealt",
 	"originalTable": "eat_users",
 	"name": "eat_users",
@@ -1093,6 +1093,25 @@
 				"English": ""
 			},
 			"tableName": "eat_users"
+		},
+		{
+			"name": "agency_gst_reg",
+			"sqlExpression": "agency_gst_reg",
+			"index": 26,
+			"strField": "agency_gst_reg",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Text area"
+				}
+			],
+			"label": {
+				"English": "Agency Gst Reg"
+			},
+			"tableName": "eat_users"
 		}
 	],
 	"warnLeavingEdit": true,
@@ -1131,6 +1150,7 @@
 			"code": "$key = '$jw6857r707';\n\nglobal $conn;\n$strSQLExists = \"SELECT * FROM jwresour_aml11.users WHERE `username`='\".$values['username'].\"'\";\n$rsExists = db_query($strSQLExists,$conn);\n$data=db_fetch_array($rsExists); \nif($data)\n{ \n// if record exists do something \nCustomQuery(\"UPDATE jwresour_aml11.users SET `password`=HEX(AES_ENCRYPT('\".$values['password'].\"', '\".$key.\"'))\nWHERE `username` = HEX(AES_ENCRYPT('\".$values['username'].\"', '\".$key.\"'))\");\n}\nelse{\n$sql = \"INSERT INTO jwresour_aml11.users (username, password, name_user) values\n(HEX(AES_ENCRYPT('\".$values['username'].\"', '\".$key.\"')), HEX(AES_ENCRYPT('\".$values['password'].\"', '\".$key.\"')), \n('\".strtoupper($values[\"full_name\"]).\"'))\";\nCustomQuery($sql); \n}\n\n"
 		}
 	],
+	"strOrderBy": "ORDER BY\n\teatuser_id DESC",
 	"sortByFields": {
 		"sortOrder": []
 	},
@@ -1474,6 +1494,17 @@
 				"size": 50,
 				"scale": 0,
 				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_gst_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "longtext",
 				"nullable": true,
 				"autoinc": false,
 				"defaultValueSQL": null,
@@ -2076,7 +2107,8 @@
 					"field": "signup_date",
 					"type": "integrated_edit_field",
 					"orientation": 0,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field4": {
 					"field": "entry_year",
@@ -2084,7 +2116,8 @@
 					"orientation": 0,
 					"joined": true,
 					"separated": false,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field1": {
 					"field": "bank_ac_no",
@@ -2092,13 +2125,15 @@
 					"orientation": 0,
 					"joined": true,
 					"separated": false,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field21": {
 					"field": "full_name",
 					"type": "integrated_edit_field",
 					"orientation": 0,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field19": {
 					"field": "username",
@@ -2111,7 +2146,8 @@
 					"field": "company_dbname",
 					"type": "integrated_edit_field",
 					"orientation": 0,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field9": {
 					"field": "home_tel",
@@ -2119,7 +2155,8 @@
 					"orientation": 0,
 					"joined": true,
 					"separated": false,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field5": {
 					"field": "home_address",
@@ -2136,7 +2173,8 @@
 					"orientation": 0,
 					"joined": true,
 					"separated": false,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field": {
 					"field": "active",
@@ -2144,7 +2182,8 @@
 					"orientation": 0,
 					"joined": true,
 					"separated": false,
-					"width": "100px"
+					"width": "100px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field18": {
 					"field": "user_status",
@@ -2175,7 +2214,8 @@
 						"field": "nric",
 						"table": "eat_users",
 						"type": 3
-					}
+					},
+					"updateOnEdit": false
 				},
 				"integrated_edit_field7": {
 					"field": "email",
@@ -2183,7 +2223,8 @@
 					"orientation": 0,
 					"joined": true,
 					"separated": false,
-					"width": "250px"
+					"width": "250px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field8": {
 					"field": "mobile",
@@ -2196,7 +2237,8 @@
 					"field": "biz_name",
 					"type": "integrated_edit_field",
 					"orientation": 0,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"details_preview2": {
 					"type": "details_preview",
@@ -2254,7 +2296,8 @@
 					"orientation": 0,
 					"joined": true,
 					"separated": false,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"user_group": {
 					"field": "user_group",
@@ -2366,7 +2409,8 @@
 								"export_field25",
 								"export_field14",
 								"export_field16",
-								"export_field18"
+								"export_field18",
+								"export_field23"
 							]
 						}
 					},
@@ -2510,6 +2554,10 @@
 				"export_field16": {
 					"field": "destination",
 					"type": "export_field"
+				},
+				"export_field23": {
+					"field": "agency_gst_reg",
+					"type": "export_field"
 				}
 			},
 			"version": 14,
@@ -2616,7 +2664,8 @@
 								"import_field25",
 								"import_field14",
 								"import_field16",
-								"import_field18"
+								"import_field18",
+								"import_field23"
 							]
 						}
 					},
@@ -2722,6 +2771,10 @@
 				},
 				"import_field16": {
 					"field": "destination",
+					"type": "import_field"
+				},
+				"import_field23": {
+					"field": "agency_gst_reg",
 					"type": "import_field"
 				}
 			},
@@ -5153,7 +5206,8 @@
 								"integrated_search_field25",
 								"integrated_search_field14",
 								"integrated_search_field16",
-								"integrated_search_field18"
+								"integrated_search_field18",
+								"integrated_search_field23"
 							]
 						}
 					},
@@ -5320,6 +5374,11 @@
 					"type": "integrated_search_field",
 					"orientation": 0,
 					"required": false
+				},
+				"integrated_search_field23": {
+					"field": "agency_gst_reg",
+					"type": "integrated_search_field",
+					"orientation": 0
 				}
 			},
 			"version": 14,

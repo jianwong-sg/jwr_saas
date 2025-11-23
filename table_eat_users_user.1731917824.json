@@ -1,10 +1,11 @@
 {
-	"sql": "SELECT\neatuser_id,\nuser_status,\nusername,\nuser_group,\nsignup_date,\npassword,\nemail,\ncompany_dbname,\nactive,\nfull_name,\nbiz_name,\nmobile,\nbank_ac_no,\nbank_name,\ndate_of_birth,\nentry_year,\nhome_address,\nhome_tel,\nnric,\ncut_to_agency,\nsalesperson_share,\nagency,\nagency_cea_reg,\ndestination\nFROM eat_users",
+	"sql": "SELECT\n\teatuser_id,\n\tuser_status,\n\tusername,\n\tuser_group,\n\tsignup_date,\n\tpassword,\n\temail,\n\tcompany_dbname,\n\tactive,\n\tfull_name,\n\tbiz_name,\n\tmobile,\n\tbank_ac_no,\n\tbank_name,\n\tdate_of_birth,\n\tentry_year,\n\thome_address,\n\thome_tel,\n\tnric,\n\tcut_to_agency,\n\tsalesperson_share,\n\tagency,\n\tagency_cea_reg,\n\tdestination,\n\tagency_gst_reg\nFROM\n\teat_users\n",
 	"type": 1,
 	"connId": "jwresourjweat1091saasatjwrealt",
 	"originalTable": "eat_users",
 	"name": "eat_users_user",
 	"shortTableName": "eat_users_user",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "username",
 	"usersOwnerIdField": "username",
@@ -39,6 +40,7 @@
 		{
 			"name": "eatuser_id",
 			"sqlExpression": "eatuser_id",
+			"index": 1,
 			"strField": "eatuser_id",
 			"type": 3,
 			"autoinc": true,
@@ -86,6 +88,7 @@
 		{
 			"name": "user_status",
 			"sqlExpression": "user_status",
+			"index": 2,
 			"strField": "user_status",
 			"type": 200,
 			"viewFormats": [
@@ -128,6 +131,7 @@
 		{
 			"name": "username",
 			"sqlExpression": "username",
+			"index": 3,
 			"strField": "username",
 			"type": 201,
 			"viewFormats": [
@@ -166,6 +170,7 @@
 		{
 			"name": "user_group",
 			"sqlExpression": "user_group",
+			"index": 4,
 			"strField": "user_group",
 			"type": 200,
 			"viewFormats": [
@@ -209,6 +214,7 @@
 		{
 			"name": "signup_date",
 			"sqlExpression": "signup_date",
+			"index": 5,
 			"strField": "signup_date",
 			"type": 135,
 			"viewFormats": [
@@ -251,6 +257,7 @@
 		{
 			"name": "password",
 			"sqlExpression": "password",
+			"index": 6,
 			"strField": "password",
 			"type": 201,
 			"viewFormats": [
@@ -296,6 +303,7 @@
 		{
 			"name": "email",
 			"sqlExpression": "email",
+			"index": 7,
 			"strField": "email",
 			"type": 201,
 			"viewFormats": [
@@ -335,6 +343,7 @@
 		{
 			"name": "company_dbname",
 			"sqlExpression": "company_dbname",
+			"index": 8,
 			"strField": "company_dbname",
 			"type": 200,
 			"viewFormats": [
@@ -373,6 +382,7 @@
 		{
 			"name": "active",
 			"sqlExpression": "active",
+			"index": 9,
 			"strField": "active",
 			"type": 3,
 			"viewFormats": [
@@ -418,6 +428,7 @@
 		{
 			"name": "full_name",
 			"sqlExpression": "full_name",
+			"index": 10,
 			"strField": "full_name",
 			"type": 200,
 			"viewFormats": [
@@ -456,6 +467,7 @@
 		{
 			"name": "biz_name",
 			"sqlExpression": "biz_name",
+			"index": 11,
 			"strField": "biz_name",
 			"type": 200,
 			"viewFormats": [
@@ -494,6 +506,7 @@
 		{
 			"name": "mobile",
 			"sqlExpression": "mobile",
+			"index": 12,
 			"strField": "mobile",
 			"type": 201,
 			"viewFormats": [
@@ -535,6 +548,7 @@
 		{
 			"name": "bank_ac_no",
 			"sqlExpression": "bank_ac_no",
+			"index": 13,
 			"strField": "bank_ac_no",
 			"type": 200,
 			"viewFormats": [
@@ -580,6 +594,7 @@
 		{
 			"name": "bank_name",
 			"sqlExpression": "bank_name",
+			"index": 14,
 			"strField": "bank_name",
 			"type": 200,
 			"viewFormats": [
@@ -625,6 +640,7 @@
 		{
 			"name": "date_of_birth",
 			"sqlExpression": "date_of_birth",
+			"index": 15,
 			"strField": "date_of_birth",
 			"type": 7,
 			"viewFormats": [
@@ -668,6 +684,7 @@
 		{
 			"name": "entry_year",
 			"sqlExpression": "entry_year",
+			"index": 16,
 			"strField": "entry_year",
 			"type": 200,
 			"viewFormats": [
@@ -706,6 +723,7 @@
 		{
 			"name": "home_address",
 			"sqlExpression": "home_address",
+			"index": 17,
 			"strField": "home_address",
 			"type": 200,
 			"viewFormats": [
@@ -745,6 +763,7 @@
 		{
 			"name": "home_tel",
 			"sqlExpression": "home_tel",
+			"index": 18,
 			"strField": "home_tel",
 			"type": 200,
 			"viewFormats": [
@@ -782,6 +801,7 @@
 		{
 			"name": "nric",
 			"sqlExpression": "nric",
+			"index": 19,
 			"strField": "nric",
 			"type": 200,
 			"viewFormats": [
@@ -820,6 +840,7 @@
 		{
 			"name": "cut_to_agency",
 			"sqlExpression": "cut_to_agency",
+			"index": 20,
 			"strField": "cut_to_agency",
 			"type": 200,
 			"viewFormats": [
@@ -859,6 +880,7 @@
 		{
 			"name": "salesperson_share",
 			"sqlExpression": "salesperson_share",
+			"index": 21,
 			"strField": "salesperson_share",
 			"type": 200,
 			"viewFormats": [
@@ -899,6 +921,7 @@
 		{
 			"name": "agency",
 			"sqlExpression": "agency",
+			"index": 22,
 			"strField": "agency",
 			"type": 200,
 			"viewFormats": [
@@ -937,6 +960,7 @@
 		{
 			"name": "agency_cea_reg",
 			"sqlExpression": "agency_cea_reg",
+			"index": 23,
 			"strField": "agency_cea_reg",
 			"type": 201,
 			"viewFormats": [
@@ -975,6 +999,7 @@
 		{
 			"name": "destination",
 			"sqlExpression": "destination",
+			"index": 24,
 			"strField": "destination",
 			"type": 200,
 			"viewFormats": [
@@ -1009,6 +1034,25 @@
 				"English": ""
 			},
 			"tableName": "eat_users"
+		},
+		{
+			"name": "agency_gst_reg",
+			"sqlExpression": "agency_gst_reg",
+			"index": 25,
+			"strField": "agency_gst_reg",
+			"type": 201,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{
+					"format": "Text area"
+				}
+			],
+			"label": {
+				"English": "Agency Gst Reg"
+			},
+			"tableName": "eat_users"
 		}
 	],
 	"warnLeavingEdit": true,
@@ -1019,7 +1063,7 @@
 		{
 			"eventId": "EVENT_BEFOREADD",
 			"pageType": "add",
-			"code": "$values[\"full_name\"]=strtoupper($values[\"full_name\"]);\n$values[\"biz_name\"]=strtoupper($values[\"biz_name\"]);\n$values[\"email\"]=strtoupper($values[\"email\"]);\n$values[\"bank_name\"]=strtoupper($values[\"bank_name\"]);\n$values[\"home_address\"]=strtoupper($values[\"home_address\"]);\n$values[\"nric\"]=strtoupper($values[\"nric\"]);\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets.\n\nreturn true;"
+			"code": "$values[\"full_name\"]=strtoupper($values[\"full_name\"]);\n$values[\"biz_name\"]=strtoupper($values[\"biz_name\"]);\n$values[\"email\"]=strtoupper($values[\"email\"]);\n$values[\"bank_name\"]=strtoupper($values[\"bank_name\"]);\n$values[\"home_address\"]=strtoupper($values[\"home_address\"]);\n$values[\"nric\"]=strtoupper($values[\"nric\"]);\n$values[\"username\"]=strtoupper($values[\"username\"]);\n$values[\"destination\"]=strtoupper($values[\"destination\"]);\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets.\n\nreturn true;"
 		},
 		{
 			"eventId": "EVENT_BEFOREEDIT",
@@ -1040,10 +1084,378 @@
 			"eventId": "EVENT_BEFORESHOW_VIEW",
 			"pageType": "view",
 			"code": "if($_SESSION[\"GroupID\"]!=\"account admin\") {\n$pageObject->hideItem(\"user_group\");\n$pageObject->hideItem(\"user_status\");\n}\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
+		},
+		{
+			"eventId": "EVENT_AFTEREDIT",
+			"pageType": "edit",
+			"code": "$key = '$jw6857r707';\r\n\r\nglobal $conn;\r\n$strSQLExists = \"SELECT * FROM jwresour_aml11.users WHERE `username`='\".$values['username'].\"'\";\r\n$rsExists = db_query($strSQLExists,$conn);\r\n$data=db_fetch_array($rsExists); \r\nif($data)\r\n{ \r\n// if record exists do something \r\nCustomQuery(\"UPDATE jwresour_aml11.users SET `password`=HEX(AES_ENCRYPT('\".$values['password'].\"', '\".$key.\"'))\r\nWHERE `username` = HEX(AES_ENCRYPT('\".$values['username'].\"', '\".$key.\"'))\");\r\n}\r\nelse{\r\n$sql = \"INSERT INTO jwresour_aml11.users (username, password, name_user) values\r\n(HEX(AES_ENCRYPT('\".$values['username'].\"', '\".$key.\"')), HEX(AES_ENCRYPT('\".$values['password'].\"', '\".$key.\"')), \r\n('\".strtoupper($values[\"full_name\"]).\"'))\";\r\nCustomQuery($sql); \r\n}"
 		}
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "eatuser_id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "user_status",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "username",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "password",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "user_group",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tmp_password",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "subscription_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "subscription_plan",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "signup_date",
+				"type": 135,
+				"size": 0,
+				"scale": 0,
+				"typeName": "datetime",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "registration_source",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "invname",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "company_dbname",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "active",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "full_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "biz_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "expiry_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "mobile",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "nric",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "date_of_birth",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "home_address",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "home_tel",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "entry_year",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "bank_name",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "bank_ac_no",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cut_to_agency",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "salesperson_share",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "apikey",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_cea_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "destination",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_gst_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "longtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"eatuser_id"
+		],
+		"uniqueFields": [],
+		"name": "eat_users"
 	},
 	"pages": [
 		{
@@ -1536,7 +1948,8 @@
 					"field": "signup_date",
 					"type": "integrated_edit_field",
 					"orientation": 0,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field4": {
 					"field": "entry_year",
@@ -1544,7 +1957,8 @@
 					"orientation": 0,
 					"joined": true,
 					"separated": false,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field1": {
 					"field": "bank_ac_no",
@@ -1552,13 +1966,15 @@
 					"orientation": 0,
 					"joined": true,
 					"separated": false,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field21": {
 					"field": "full_name",
 					"type": "integrated_edit_field",
 					"orientation": 0,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field19": {
 					"field": "username",
@@ -1573,7 +1989,8 @@
 					"orientation": 0,
 					"joined": true,
 					"separated": false,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field5": {
 					"field": "home_address",
@@ -1590,7 +2007,8 @@
 					"orientation": 0,
 					"joined": true,
 					"separated": false,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field3": {
 					"field": "date_of_birth",
@@ -1612,7 +2030,8 @@
 						"field": "nric",
 						"table": "eat_users",
 						"type": 3
-					}
+					},
+					"updateOnEdit": false
 				},
 				"integrated_edit_field7": {
 					"field": "email",
@@ -1620,7 +2039,8 @@
 					"orientation": 0,
 					"joined": true,
 					"separated": false,
-					"width": "250px"
+					"width": "250px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field8": {
 					"field": "mobile",
@@ -1633,7 +2053,8 @@
 					"field": "biz_name",
 					"type": "integrated_edit_field",
 					"orientation": 0,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"details_preview2": {
 					"type": "details_preview",
@@ -1691,7 +2112,8 @@
 					"orientation": 0,
 					"joined": true,
 					"separated": false,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"user_status": {
 					"field": "user_status",
@@ -1699,7 +2121,8 @@
 					"orientation": 0,
 					"joined": true,
 					"separated": false,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"user_group": {
 					"field": "user_group",
@@ -1707,12 +2130,14 @@
 					"orientation": 0,
 					"joined": true,
 					"separated": false,
-					"width": "200px"
+					"width": "200px",
+					"updateOnEdit": false
 				},
 				"integrated_edit_field16": {
 					"field": "company_dbname",
 					"type": "integrated_edit_field",
-					"orientation": 0
+					"orientation": 0,
+					"updateOnEdit": false
 				},
 				"integrated_edit_field17": {
 					"field": "active",
@@ -1720,7 +2145,8 @@
 					"orientation": 0,
 					"joined": true,
 					"separated": false,
-					"width": "100px"
+					"width": "100px",
+					"updateOnEdit": false
 				}
 			},
 			"version": 14,
@@ -3948,7 +4374,8 @@
 								"integrated_search_field24",
 								"integrated_search_field12",
 								"integrated_search_field15",
-								"integrated_search_field16"
+								"integrated_search_field16",
+								"integrated_search_field18"
 							]
 						}
 					},
@@ -4109,6 +4536,11 @@
 					"type": "integrated_search_field",
 					"orientation": 0,
 					"required": false
+				},
+				"integrated_search_field18": {
+					"field": "agency_gst_reg",
+					"type": "integrated_search_field",
+					"orientation": 0
 				}
 			},
 			"version": 14,

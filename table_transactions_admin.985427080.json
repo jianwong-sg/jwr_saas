@@ -3319,11 +3319,12 @@
 			"type": 14,
 			"viewFormats": [
 				{
-					"format": "Currency",
+					"format": "Custom",
 					"imageWidth": 457,
 					"imageHeight": 0,
 					"imageThumbWidth": 72,
 					"imageThumbHeight": 72,
+					"customExpression": "$value=$value.\"%\";",
 					"videoRewindEnabled": false,
 					"textShowFirst": false
 				}
@@ -5686,6 +5687,8 @@
 			"type": 201,
 			"viewFormats": [
 				{
+					"format": "Custom",
+					"customExpression": "$value=$value.\"%\";",
 					"numberFractionalDigits": 0
 				}
 			],
@@ -5714,7 +5717,7 @@
 			"sourceSingle": "agency_gst_reg",
 			"defaultSearchOption": "Contains",
 			"label": {
-				"English": "Agency Gst Reg"
+				"English": "GST Reg"
 			},
 			"tooltip": {
 				"English": ""
@@ -19963,6 +19966,14 @@
 									"cell": "c7"
 								}
 							]
+						},
+						{
+							"cells": [
+								{
+									"cell": "c15"
+								}
+							],
+							"section": ""
 						}
 					],
 					"cells": {
@@ -20074,6 +20085,10 @@
 								"details_form8"
 							],
 							"pageBreak": ""
+						},
+						"c15": {
+							"model": "c3",
+							"items": []
 						}
 					},
 					"deferredItems": [],
@@ -20588,7 +20603,6 @@
 						"c9": {
 							"model": "c3",
 							"items": [
-								"integrated_edit_field55",
 								"integrated_edit_field58"
 							],
 							"customCSS": "/* Put  your custom CSS code here */\n\n"
@@ -20596,14 +20610,16 @@
 						"c1": {
 							"model": "c3",
 							"items": [
-								"integrated_edit_field56",
-								"integrated_edit_field59"
+								"integrated_edit_field55",
+								"integrated_edit_field56"
 							],
 							"customCSS": "/* Put  your custom CSS code here */\n\n\n"
 						},
 						"c10": {
 							"model": "c3",
-							"items": [],
+							"items": [
+								"integrated_edit_field59"
+							],
 							"customCSS": "/* Put  your custom CSS code here */\n\n\n",
 							"orientation": "horizontal"
 						},
@@ -21034,7 +21050,10 @@
 						},
 						"c4": {
 							"model": "c3",
-							"items": []
+							"items": [
+								"edit_field_label15",
+								"integrated_edit_field54"
+							]
 						}
 					},
 					"deferredItems": [],
@@ -22263,6 +22282,23 @@
 					"items": [],
 					"popup": false,
 					"pageId": "ext_pty_comm"
+				},
+				"integrated_edit_field54": {
+					"field": "agency_gst_reg",
+					"type": "edit_field",
+					"orientation": 0,
+					"joined": false,
+					"separated": true
+				},
+				"edit_field_label15": {
+					"type": "edit_field_label",
+					"field": "agency_gst_reg",
+					"separated": true,
+					"label": {
+						"field": "agency_gst_reg",
+						"table": "transactions-admin",
+						"type": 3
+					}
 				}
 			},
 			"version": 14,

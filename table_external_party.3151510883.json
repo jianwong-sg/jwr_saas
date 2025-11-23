@@ -809,7 +809,7 @@
 			"type": 14,
 			"viewFormats": [
 				{
-					"format": "Number",
+					"format": "Checkbox",
 					"imageWidth": 457,
 					"imageHeight": 0,
 					"imageThumbWidth": 72,
@@ -819,6 +819,7 @@
 			],
 			"editFormats": [
 				{
+					"format": "Checkbox",
 					"validateAs": "Number",
 					"validateRegexMessage": {
 						"text": "",
@@ -859,6 +860,7 @@
 			"type": 3,
 			"viewFormats": [
 				{
+					"format": "Currency",
 					"imageWidth": 457,
 					"imageHeight": 0,
 					"imageThumbWidth": 72,
@@ -868,6 +870,7 @@
 			],
 			"editFormats": [
 				{
+					"format": "Readonly",
 					"validateAs": "Number",
 					"validateRegexMessage": {
 						"text": "",
@@ -1758,6 +1761,15 @@
 								},
 								{
 									"cell": "headcell_field2"
+								},
+								{
+									"cell": "headcell_field3"
+								},
+								{
+									"cell": "headcell_field4"
+								},
+								{
+									"cell": "headcell_field5"
 								}
 							]
 						},
@@ -1778,6 +1790,15 @@
 								},
 								{
 									"cell": "cell_field2"
+								},
+								{
+									"cell": "cell_field3"
+								},
+								{
+									"cell": "cell_field4"
+								},
+								{
+									"cell": "cell_field5"
 								}
 							]
 						},
@@ -1798,6 +1819,15 @@
 								},
 								{
 									"cell": "footcell_field2"
+								},
+								{
+									"cell": "footcell_field3"
+								},
+								{
+									"cell": "footcell_field4"
+								},
+								{
+									"cell": "footcell_field5"
 								}
 							]
 						}
@@ -1910,6 +1940,63 @@
 							"items": [],
 							"columnName": "view",
 							"field": ""
+						},
+						"headcell_field3": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label"
+							],
+							"field": "gst"
+						},
+						"cell_field3": {
+							"model": "cell_field",
+							"items": [
+								"grid_field"
+							],
+							"field": "gst"
+						},
+						"footcell_field3": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "gst"
+						},
+						"headcell_field4": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label1"
+							],
+							"field": "gst_include"
+						},
+						"cell_field4": {
+							"model": "cell_field",
+							"items": [
+								"grid_field1"
+							],
+							"field": "gst_include"
+						},
+						"footcell_field4": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "gst_include"
+						},
+						"headcell_field5": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label2"
+							],
+							"field": "gross_tp"
+						},
+						"cell_field5": {
+							"model": "cell_field",
+							"items": [
+								"grid_field2"
+							],
+							"field": "gross_tp"
+						},
+						"footcell_field5": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "gross_tp"
 						}
 					},
 					"deferredItems": [],
@@ -2059,6 +2146,30 @@
 					"type": "grid_field_label",
 					"field": "name_ext_party",
 					"clickSort": false
+				},
+				"grid_field": {
+					"field": "gst",
+					"type": "grid_field"
+				},
+				"grid_field_label": {
+					"type": "grid_field_label",
+					"field": "gst"
+				},
+				"grid_field1": {
+					"field": "gst_include",
+					"type": "grid_field"
+				},
+				"grid_field_label1": {
+					"type": "grid_field_label",
+					"field": "gst_include"
+				},
+				"grid_field2": {
+					"field": "gross_tp",
+					"type": "grid_field"
+				},
+				"grid_field_label2": {
+					"type": "grid_field_label",
+					"field": "gross_tp"
 				}
 			},
 			"spreadsheetGrid": false,

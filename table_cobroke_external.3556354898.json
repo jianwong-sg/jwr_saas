@@ -3223,6 +3223,9 @@
 							"cells": [
 								{
 									"cell": "c3"
+								},
+								{
+									"cell": "c"
 								}
 							],
 							"section": ""
@@ -3233,22 +3236,29 @@
 							"model": "c3",
 							"items": [
 								"integrated_edit_field2",
-								"integrated_edit_field",
 								"integrated_edit_field1",
-								"integrated_edit_field3",
 								"integrated_edit_field4",
-								"integrated_edit_field5",
 								"integrated_edit_field7",
-								"integrated_edit_field6",
 								"integrated_edit_field8",
+								"integrated_edit_field",
+								"integrated_edit_field3",
+								"integrated_edit_field5",
+								"integrated_edit_field6"
+							]
+						},
+						"c": {
+							"model": "c3",
+							"items": [
 								"integrated_edit_field13",
+								"integrated_edit_field9",
+								"integrated_edit_field10",
 								"integrated_edit_field14",
 								"integrated_edit_field15"
 							]
 						}
 					},
 					"deferredItems": [],
-					"columnCount": 1,
+					"columnCount": 2,
 					"inlineLabels": false,
 					"separateLabels": false
 				}
@@ -3272,6 +3282,11 @@
 				},
 				"prev": {
 					"type": "prev"
+				},
+				"integrated_edit_field2": {
+					"field": "username",
+					"type": "integrated_edit_field",
+					"orientation": 0
 				},
 				"integrated_edit_field": {
 					"field": "category",
@@ -3298,13 +3313,13 @@
 					"type": "integrated_edit_field",
 					"orientation": 0
 				},
-				"integrated_edit_field6": {
-					"field": "email",
+				"integrated_edit_field7": {
+					"field": "mobile",
 					"type": "integrated_edit_field",
 					"orientation": 0
 				},
-				"integrated_edit_field7": {
-					"field": "mobile",
+				"integrated_edit_field6": {
+					"field": "email",
 					"type": "integrated_edit_field",
 					"orientation": 0
 				},
@@ -3318,6 +3333,16 @@
 					"type": "integrated_edit_field",
 					"orientation": 0
 				},
+				"integrated_edit_field9": {
+					"field": "gst",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
+				"integrated_edit_field10": {
+					"field": "gst_include",
+					"type": "integrated_edit_field",
+					"orientation": 0
+				},
 				"integrated_edit_field14": {
 					"field": "comm_percent",
 					"type": "integrated_edit_field",
@@ -3325,11 +3350,6 @@
 				},
 				"integrated_edit_field15": {
 					"field": "gross",
-					"type": "integrated_edit_field",
-					"orientation": 0
-				},
-				"integrated_edit_field2": {
-					"field": "username",
 					"type": "integrated_edit_field",
 					"orientation": 0
 				}

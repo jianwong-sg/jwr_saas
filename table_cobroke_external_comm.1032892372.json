@@ -906,6 +906,7 @@
 			],
 			"editFormats": [
 				{
+					"format": "Readonly",
 					"validateAs": "Number",
 					"validateRegexMessage": {
 						"text": "",
@@ -946,7 +947,7 @@
 			"type": 14,
 			"viewFormats": [
 				{
-					"format": "Number",
+					"format": "Currency",
 					"imageWidth": 457,
 					"imageHeight": 0,
 					"imageThumbWidth": 72,
@@ -957,7 +958,6 @@
 			],
 			"editFormats": [
 				{
-					"validateAs": "Number",
 					"validateRegexMessage": {
 						"text": "",
 						"type": 0
@@ -980,7 +980,7 @@
 			},
 			"defaultSearchOption": "Contains",
 			"label": {
-				"English": "Gst"
+				"English": "GST Amt"
 			},
 			"tooltip": {
 				"English": ""
@@ -997,7 +997,7 @@
 			"type": 14,
 			"viewFormats": [
 				{
-					"format": "Number",
+					"format": "Checkbox",
 					"imageWidth": 457,
 					"imageHeight": 0,
 					"imageThumbWidth": 72,
@@ -1008,7 +1008,7 @@
 			],
 			"editFormats": [
 				{
-					"validateAs": "Number",
+					"format": "Checkbox",
 					"validateRegexMessage": {
 						"text": "",
 						"type": 0
@@ -1059,7 +1059,7 @@
 			],
 			"editFormats": [
 				{
-					"validateAs": "Number",
+					"format": "Readonly",
 					"textHTML5Input": "0",
 					"fileThumbnailSize": 150,
 					"fileMaxNumber": 1,
@@ -1471,7 +1471,16 @@
 									"cell": "headcell_field1"
 								},
 								{
-									"cell": "headcell_field7"
+									"cell": "headcell_field2"
+								},
+								{
+									"cell": "headcell_field3"
+								},
+								{
+									"cell": "headcell_field4"
+								},
+								{
+									"cell": "cell_field5"
 								}
 							]
 						},
@@ -1491,7 +1500,16 @@
 									"cell": "cell_field1"
 								},
 								{
-									"cell": "cell_field7"
+									"cell": "cell_field2"
+								},
+								{
+									"cell": "cell_field3"
+								},
+								{
+									"cell": "cell_field4"
+								},
+								{
+									"cell": "cell_field6"
 								}
 							]
 						},
@@ -1511,7 +1529,16 @@
 									"cell": "footcell_field1"
 								},
 								{
-									"cell": "footcell_field7"
+									"cell": "footcell_field2"
+								},
+								{
+									"cell": "footcell_field3"
+								},
+								{
+									"cell": "footcell_field4"
+								},
+								{
+									"cell": "cell_field8"
 								}
 							]
 						}
@@ -1562,29 +1589,6 @@
 							"field": "comm",
 							"columnName": "field"
 						},
-						"headcell_field7": {
-							"model": "headcell_field",
-							"items": [
-								"simple_grid_field16"
-							],
-							"field": "comm_percent",
-							"columnName": "field",
-							"align": "center"
-						},
-						"cell_field7": {
-							"model": "cell_field",
-							"items": [
-								"simple_grid_field7"
-							],
-							"field": "comm_percent",
-							"columnName": "field"
-						},
-						"footcell_field7": {
-							"model": "footcell_field",
-							"items": [],
-							"field": "comm_percent",
-							"columnName": "field"
-						},
 						"headcell_checkbox": {
 							"model": "headcell_checkbox",
 							"items": [
@@ -1628,6 +1632,79 @@
 							"items": [],
 							"columnName": "inline-edit",
 							"field": ""
+						},
+						"headcell_field2": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label"
+							],
+							"field": "gst"
+						},
+						"cell_field2": {
+							"model": "cell_field",
+							"items": [
+								"grid_field"
+							],
+							"field": "gst"
+						},
+						"footcell_field2": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "gst"
+						},
+						"headcell_field3": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label1"
+							],
+							"field": "gst_include"
+						},
+						"cell_field3": {
+							"model": "cell_field",
+							"items": [
+								"grid_field1"
+							],
+							"field": "gst_include"
+						},
+						"footcell_field3": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "gst_include"
+						},
+						"headcell_field4": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label2"
+							],
+							"field": "gross"
+						},
+						"cell_field4": {
+							"model": "cell_field",
+							"items": [
+								"grid_field2"
+							],
+							"field": "gross"
+						},
+						"footcell_field4": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "gross"
+						},
+						"cell_field5": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field16"
+							]
+						},
+						"cell_field6": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field7"
+							]
+						},
+						"cell_field8": {
+							"model": "footcell_field",
+							"items": []
 						}
 					},
 					"deferredItems": [],
@@ -1793,6 +1870,35 @@
 				"inline_cancel_all": {
 					"type": "inline_cancel_all",
 					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
+				},
+				"grid_field": {
+					"field": "gst",
+					"type": "grid_field"
+				},
+				"grid_field_label": {
+					"type": "grid_field_label",
+					"field": "gst",
+					"label": {
+						"field": "gst",
+						"table": "cobroke_external_comm",
+						"type": 3
+					}
+				},
+				"grid_field1": {
+					"field": "gst_include",
+					"type": "grid_field"
+				},
+				"grid_field_label1": {
+					"type": "grid_field_label",
+					"field": "gst_include"
+				},
+				"grid_field2": {
+					"field": "gross",
+					"type": "grid_field"
+				},
+				"grid_field_label2": {
+					"type": "grid_field_label",
+					"field": "gross"
 				}
 			},
 			"spreadsheetGrid": false,
@@ -2595,7 +2701,16 @@
 									"cell": "headcell_field1"
 								},
 								{
-									"cell": "headcell_field7"
+									"cell": "headcell_field2"
+								},
+								{
+									"cell": "headcell_field3"
+								},
+								{
+									"cell": "headcell_field4"
+								},
+								{
+									"cell": "cell_field5"
 								}
 							]
 						},
@@ -2615,7 +2730,16 @@
 									"cell": "cell_field1"
 								},
 								{
-									"cell": "cell_field7"
+									"cell": "cell_field2"
+								},
+								{
+									"cell": "cell_field3"
+								},
+								{
+									"cell": "cell_field4"
+								},
+								{
+									"cell": "cell_field6"
 								}
 							]
 						},
@@ -2635,7 +2759,16 @@
 									"cell": "footcell_field1"
 								},
 								{
-									"cell": "footcell_field7"
+									"cell": "footcell_field2"
+								},
+								{
+									"cell": "footcell_field3"
+								},
+								{
+									"cell": "footcell_field4"
+								},
+								{
+									"cell": "cell_field8"
 								}
 							]
 						}
@@ -2669,7 +2802,8 @@
 								"simple_grid_field17"
 							],
 							"field": "comm",
-							"columnName": "field"
+							"columnName": "field",
+							"align": "center"
 						},
 						"cell_field1": {
 							"model": "cell_field",
@@ -2683,28 +2817,6 @@
 							"model": "footcell_field",
 							"items": [],
 							"field": "comm",
-							"columnName": "field"
-						},
-						"headcell_field7": {
-							"model": "headcell_field",
-							"items": [
-								"simple_grid_field16"
-							],
-							"field": "comm_percent",
-							"columnName": "field"
-						},
-						"cell_field7": {
-							"model": "cell_field",
-							"items": [
-								"simple_grid_field7"
-							],
-							"field": "comm_percent",
-							"columnName": "field"
-						},
-						"footcell_field7": {
-							"model": "footcell_field",
-							"items": [],
-							"field": "comm_percent",
 							"columnName": "field"
 						},
 						"headcell_checkbox": {
@@ -2750,6 +2862,79 @@
 							"items": [],
 							"columnName": "inline-edit",
 							"field": ""
+						},
+						"headcell_field2": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label"
+							],
+							"field": "gst"
+						},
+						"cell_field2": {
+							"model": "cell_field",
+							"items": [
+								"grid_field"
+							],
+							"field": "gst"
+						},
+						"footcell_field2": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "gst"
+						},
+						"headcell_field3": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label1"
+							],
+							"field": "gst_include"
+						},
+						"cell_field3": {
+							"model": "cell_field",
+							"items": [
+								"grid_field1"
+							],
+							"field": "gst_include"
+						},
+						"footcell_field3": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "gst_include"
+						},
+						"headcell_field4": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label2"
+							],
+							"field": "gross"
+						},
+						"cell_field4": {
+							"model": "cell_field",
+							"items": [
+								"grid_field2"
+							],
+							"field": "gross"
+						},
+						"footcell_field4": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "gross"
+						},
+						"cell_field5": {
+							"model": "headcell_field",
+							"items": [
+								"simple_grid_field16"
+							]
+						},
+						"cell_field6": {
+							"model": "cell_field",
+							"items": [
+								"simple_grid_field7"
+							]
+						},
+						"cell_field8": {
+							"model": "footcell_field",
+							"items": []
 						}
 					},
 					"deferredItems": [],
@@ -2777,12 +2962,6 @@
 				},
 				"pagination": {
 					"type": "pagination"
-				},
-				"grid_checkbox": {
-					"type": "grid_checkbox"
-				},
-				"grid_checkbox_head": {
-					"type": "grid_checkbox_head"
 				},
 				"list_options": {
 					"type": "list_options",
@@ -2815,24 +2994,6 @@
 				"-1": {
 					"type": "-"
 				},
-				"simple_grid_field": {
-					"field": "name_cobroke_ext",
-					"type": "grid_field",
-					"inlineAdd": false,
-					"inlineEdit": true
-				},
-				"simple_grid_field7": {
-					"field": "comm_percent",
-					"type": "grid_field",
-					"inlineAdd": false,
-					"inlineEdit": true
-				},
-				"simple_grid_field8": {
-					"field": "comm",
-					"type": "grid_field",
-					"inlineAdd": false,
-					"inlineEdit": true
-				},
 				"username_button": {
 					"type": "username_button",
 					"items": [
@@ -2851,26 +3012,6 @@
 				"logout_link": {
 					"type": "logout_link"
 				},
-				"simple_grid_field9": {
-					"type": "grid_field_label",
-					"field": "name_cobroke_ext",
-					"clickSort": false
-				},
-				"simple_grid_field16": {
-					"type": "grid_field_label",
-					"field": "comm_percent",
-					"clickSort": false,
-					"label": {
-						"field": "comm_percent",
-						"table": "cobroke_external",
-						"type": 3
-					}
-				},
-				"simple_grid_field17": {
-					"type": "grid_field_label",
-					"field": "comm",
-					"clickSort": false
-				},
 				"-2": {
 					"type": "-"
 				},
@@ -2879,6 +3020,36 @@
 				},
 				"changepassword_link": {
 					"type": "changepassword_link"
+				},
+				"simple_grid_field9": {
+					"type": "grid_field_label",
+					"field": "name_cobroke_ext",
+					"clickSort": false
+				},
+				"simple_grid_field": {
+					"field": "name_cobroke_ext",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": true,
+					"width": "400px"
+				},
+				"simple_grid_field17": {
+					"type": "grid_field_label",
+					"field": "comm",
+					"clickSort": false
+				},
+				"simple_grid_field8": {
+					"field": "comm",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": true,
+					"width": "150px"
+				},
+				"grid_checkbox_head": {
+					"type": "grid_checkbox_head"
+				},
+				"grid_checkbox": {
+					"type": "grid_checkbox"
 				},
 				"grid_inline_edit": {
 					"type": "grid_inline_edit",
@@ -2891,7 +3062,8 @@
 						"text": "Edit comm"
 					},
 					"icon": {
-						"glyph": ""
+						"glyph": "",
+						"style": 0
 					}
 				},
 				"grid_inline_save": {
@@ -2899,6 +3071,51 @@
 				},
 				"grid_inline_cancel": {
 					"type": "grid_inline_cancel"
+				},
+				"grid_field_label": {
+					"type": "grid_field_label",
+					"field": "gst",
+					"label": {
+						"field": "gst",
+						"table": "cobroke_external_comm",
+						"type": 3
+					}
+				},
+				"grid_field": {
+					"field": "gst",
+					"type": "grid_field"
+				},
+				"grid_field_label1": {
+					"type": "grid_field_label",
+					"field": "gst_include"
+				},
+				"grid_field1": {
+					"field": "gst_include",
+					"type": "grid_field"
+				},
+				"grid_field_label2": {
+					"type": "grid_field_label",
+					"field": "gross"
+				},
+				"grid_field2": {
+					"field": "gross",
+					"type": "grid_field"
+				},
+				"simple_grid_field16": {
+					"type": "grid_field_label",
+					"field": "comm_percent",
+					"clickSort": false,
+					"label": {
+						"field": "comm_percent",
+						"table": "cobroke_external",
+						"type": 3
+					}
+				},
+				"simple_grid_field7": {
+					"field": "comm_percent",
+					"type": "grid_field",
+					"inlineAdd": false,
+					"inlineEdit": true
 				}
 			},
 			"spreadsheetGrid": false,
