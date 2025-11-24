@@ -9252,7 +9252,7 @@
 							},
 							"pageId": "list",
 							"iconType": 1,
-							"iconName": "gear.png",
+							"iconName": "Pinion.png",
 							"pageType": "list",
 							"table": null
 						}
@@ -9365,7 +9365,7 @@
 							},
 							"pageId": "list",
 							"iconType": 1,
-							"iconName": "gear.png",
+							"iconName": "screwdriver.png",
 							"pageType": "list",
 							"table": null
 						}
@@ -9448,7 +9448,7 @@
 							},
 							"pageId": "list",
 							"iconType": 1,
-							"iconName": "coins.png",
+							"iconName": "Euro.png",
 							"pageType": "list",
 							"table": null
 						}
@@ -9553,7 +9553,7 @@
 								"type": 0
 							},
 							"iconType": 1,
-							"iconName": "high-priority.png",
+							"iconName": "netvibes.png",
 							"pageType": "",
 							"table": null
 						}
@@ -9616,7 +9616,7 @@
 							"itemType": 2,
 							"linkType": 0,
 							"iconType": 1,
-							"iconName": "department.png",
+							"iconName": "Home.png",
 							"pageType": "list",
 							"table": 2277716423
 						}
@@ -9634,7 +9634,7 @@
 							"itemType": 2,
 							"linkType": 0,
 							"iconType": 1,
-							"iconName": "people-working-together.png",
+							"iconName": "People.png",
 							"pageType": "list",
 							"table": 3011609240
 						}
@@ -9652,7 +9652,7 @@
 							"itemType": 2,
 							"linkType": 0,
 							"iconType": 1,
-							"iconName": "general-ledger.png",
+							"iconName": "application_view_tile.png",
 							"pageType": "list",
 							"table": 3936885324
 						}
@@ -9701,7 +9701,7 @@
 							},
 							"pageId": "list",
 							"iconType": 1,
-							"iconName": "commercial-development-management.png",
+							"iconName": "Expand.png",
 							"pageType": "list",
 							"table": null
 						}
