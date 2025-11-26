@@ -2,16 +2,18 @@
 	"orderInfo": [
 		{
 			"index": 2,
-			"asc": false,
-			"field": "id_tx"
+			"field": "id_tx",
+			"expr": "id_tx",
+			"asc": false
 		}
 	],
-	"sql": "SELECT\nid,\nid_tx,\nrepresenting,\nname_cobroke_int,\nreg_no,\nemail,\nmobil,\ncategory,\ncomm_earned_inter,\ncomm_percent_inter,\nprop_address\nFROM cobroke_internal\nORDER BY id_tx DESC",
+	"sql": "SELECT\n\tid,\n\tid_tx,\n\trepresenting,\n\tname_cobroke_int,\n\treg_no,\n\temail,\n\tmobil,\n\tcategory,\n\tcomm_earned_inter,\n\tcomm_percent_inter,\n\tprop_address\nFROM\n\tcobroke_internal\nORDER BY\n\tid_tx DESC\n",
 	"type": 1,
 	"connId": "Tables",
 	"originalTable": "cobroke_internal",
 	"name": "cobroke_internal_comm",
 	"shortTableName": "cobroke_internal_comm",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "username",
@@ -62,6 +64,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -113,6 +116,7 @@
 		{
 			"name": "id_tx",
 			"sqlExpression": "id_tx",
+			"index": 2,
 			"strField": "id_tx",
 			"type": 3,
 			"viewFormats": [
@@ -162,6 +166,7 @@
 		{
 			"name": "representing",
 			"sqlExpression": "representing",
+			"index": 3,
 			"strField": "representing",
 			"type": 200,
 			"viewFormats": [
@@ -217,6 +222,7 @@
 		{
 			"name": "name_cobroke_int",
 			"sqlExpression": "name_cobroke_int",
+			"index": 4,
 			"strField": "name_cobroke_int",
 			"type": 200,
 			"viewFormats": [
@@ -266,6 +272,7 @@
 		{
 			"name": "reg_no",
 			"sqlExpression": "reg_no",
+			"index": 5,
 			"strField": "reg_no",
 			"type": 200,
 			"viewFormats": [
@@ -321,6 +328,7 @@
 		{
 			"name": "email",
 			"sqlExpression": "email",
+			"index": 6,
 			"strField": "email",
 			"type": 200,
 			"viewFormats": [
@@ -376,6 +384,7 @@
 		{
 			"name": "mobil",
 			"sqlExpression": "mobil",
+			"index": 7,
 			"strField": "mobil",
 			"type": 200,
 			"viewFormats": [
@@ -431,6 +440,7 @@
 		{
 			"name": "category",
 			"sqlExpression": "category",
+			"index": 8,
 			"strField": "category",
 			"type": 200,
 			"viewFormats": [
@@ -475,6 +485,7 @@
 		{
 			"name": "comm_earned_inter",
 			"sqlExpression": "comm_earned_inter",
+			"index": 9,
 			"strField": "comm_earned_inter",
 			"type": 14,
 			"viewFormats": [
@@ -517,6 +528,7 @@
 		{
 			"name": "comm_percent_inter",
 			"sqlExpression": "comm_percent_inter",
+			"index": 10,
 			"strField": "comm_percent_inter",
 			"type": 14,
 			"viewFormats": [
@@ -566,6 +578,7 @@
 		{
 			"name": "prop_address",
 			"sqlExpression": "prop_address",
+			"index": 11,
 			"strField": "prop_address",
 			"type": 200,
 			"viewFormats": [
@@ -642,8 +655,196 @@
 			"code": "$data = $pageObject->getMasterRecord();\n{\n        $_SESSION[\"category\"] = $data[\"category\"];\n        $_SESSION[\"prop_address\"] = $data[\"prop_address\"];\n        $_SESSION[\"prop_name\"] = $data[\"prop_name\"];\n}\n\n\n"
 		}
 	],
+	"strOrderBy": "ORDER BY\n\tid_tx DESC",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_tx",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "representing",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "name_cobroke_int",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reg_no",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "email",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "mobil",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "category",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_earned_inter",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_percent_inter",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docuser_cea",
+				"type": 200,
+				"size": 11,
+				"scale": 0,
+				"typeName": "varchar(11)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "name_agent",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "username",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "cobroke_internal"
 	},
 	"pages": [
 		{

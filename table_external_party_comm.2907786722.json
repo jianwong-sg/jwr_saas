@@ -2,16 +2,18 @@
 	"orderInfo": [
 		{
 			"index": 2,
-			"asc": false,
-			"field": "id_extparty"
+			"field": "id_extparty",
+			"expr": "id_extparty",
+			"asc": false
 		}
 	],
-	"sql": "SELECT\nid,\nid_extparty,\ncategory,\n`role`,\nname_ext_party,\nidentification,\nmobile,\nemail,\naddress,\npostal,\nprop_address,\nprop_postal,\ncomm_tp,\ncomm_percent_tp,\ngst,\ngst_include,\ngross_tp\nFROM external_party\nORDER BY id_extparty DESC",
+	"sql": "SELECT\n\tid,\n\tid_extparty,\n\tcategory,\n\t`role`,\n\tname_ext_party,\n\tidentification,\n\tmobile,\n\temail,\n\taddress,\n\tpostal,\n\tprop_address,\n\tprop_postal,\n\tcomm_tp,\n\tcomm_percent_tp,\n\tgst,\n\tgross_tp\nFROM\n\texternal_party\nORDER BY\n\tid_extparty DESC\n",
 	"type": 1,
 	"connId": "Tables",
 	"originalTable": "external_party",
 	"name": "external_party_comm",
 	"shortTableName": "external_party_comm",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "username",
@@ -62,6 +64,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -113,6 +116,7 @@
 		{
 			"name": "id_extparty",
 			"sqlExpression": "id_extparty",
+			"index": 2,
 			"strField": "id_extparty",
 			"type": 3,
 			"viewFormats": [
@@ -162,6 +166,7 @@
 		{
 			"name": "category",
 			"sqlExpression": "category",
+			"index": 3,
 			"strField": "category",
 			"type": 200,
 			"viewFormats": [
@@ -205,6 +210,7 @@
 		{
 			"name": "role",
 			"sqlExpression": "`role`",
+			"index": 4,
 			"strField": "role",
 			"type": 200,
 			"viewFormats": [
@@ -258,6 +264,7 @@
 		{
 			"name": "name_ext_party",
 			"sqlExpression": "name_ext_party",
+			"index": 5,
 			"strField": "name_ext_party",
 			"type": 200,
 			"viewFormats": [
@@ -306,6 +313,7 @@
 		{
 			"name": "identification",
 			"sqlExpression": "identification",
+			"index": 6,
 			"strField": "identification",
 			"type": 200,
 			"viewFormats": [
@@ -361,6 +369,7 @@
 		{
 			"name": "mobile",
 			"sqlExpression": "mobile",
+			"index": 7,
 			"strField": "mobile",
 			"type": 200,
 			"viewFormats": [
@@ -417,6 +426,7 @@
 		{
 			"name": "email",
 			"sqlExpression": "email",
+			"index": 8,
 			"strField": "email",
 			"type": 200,
 			"viewFormats": [
@@ -473,6 +483,7 @@
 		{
 			"name": "address",
 			"sqlExpression": "address",
+			"index": 9,
 			"strField": "address",
 			"type": 200,
 			"viewFormats": [
@@ -528,6 +539,7 @@
 		{
 			"name": "postal",
 			"sqlExpression": "postal",
+			"index": 10,
 			"strField": "postal",
 			"type": 200,
 			"viewFormats": [
@@ -583,6 +595,7 @@
 		{
 			"name": "prop_address",
 			"sqlExpression": "prop_address",
+			"index": 11,
 			"strField": "prop_address",
 			"type": 200,
 			"viewFormats": [
@@ -626,6 +639,7 @@
 		{
 			"name": "prop_postal",
 			"sqlExpression": "prop_postal",
+			"index": 12,
 			"strField": "prop_postal",
 			"type": 200,
 			"viewFormats": [
@@ -669,6 +683,7 @@
 		{
 			"name": "comm_tp",
 			"sqlExpression": "comm_tp",
+			"index": 13,
 			"strField": "comm_tp",
 			"type": 14,
 			"viewFormats": [
@@ -718,6 +733,7 @@
 		{
 			"name": "comm_percent_tp",
 			"sqlExpression": "comm_percent_tp",
+			"index": 14,
 			"strField": "comm_percent_tp",
 			"type": 14,
 			"viewFormats": [
@@ -768,6 +784,7 @@
 		{
 			"name": "gst",
 			"sqlExpression": "gst",
+			"index": 15,
 			"strField": "gst",
 			"type": 14,
 			"viewFormats": [
@@ -816,59 +833,9 @@
 			"tableName": "external_party"
 		},
 		{
-			"name": "gst_include",
-			"sqlExpression": "gst_include",
-			"strField": "gst_include",
-			"type": 14,
-			"viewFormats": [
-				{
-					"format": "Checkbox",
-					"imageWidth": 457,
-					"imageHeight": 0,
-					"imageThumbWidth": 72,
-					"imageThumbHeight": 72,
-					"videoRewindEnabled": false
-				}
-			],
-			"editFormats": [
-				{
-					"format": "Checkbox",
-					"validateAs": "Number",
-					"validateRegexMessage": {
-						"text": "",
-						"type": 0
-					},
-					"denyDuplicateMessage": {
-						"text": "",
-						"type": 0
-					},
-					"textHTML5Input": "0",
-					"fileThumbnailSize": 150,
-					"fileMaxNumber": 1,
-					"fileThumbnailField": "th",
-					"dateFirstYearFactor": 30,
-					"dateLastYearFactor": 1,
-					"timeConvention": 1
-				}
-			],
-			"filterFormat": {
-				"format": "Values list"
-			},
-			"defaultSearchOption": "Contains",
-			"label": {
-				"English": "GST Inclusive"
-			},
-			"tooltip": {
-				"English": ""
-			},
-			"placeholder": {
-				"English": ""
-			},
-			"tableName": "external_party"
-		},
-		{
 			"name": "gross_tp",
 			"sqlExpression": "gross_tp",
+			"index": 16,
 			"strField": "gross_tp",
 			"type": 3,
 			"viewFormats": [
@@ -953,8 +920,240 @@
 			"code": "\n$data = $pageObject->getMasterRecord();\n{\n        $_SESSION[\"category\"] = $data[\"category\"];\n        $_SESSION[\"prop_address\"] = $data[\"prop_address\"];\n        \n}\n\n"
 		}
 	],
+	"strOrderBy": "ORDER BY\n\tid_extparty DESC",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_extparty",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "category",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "role",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "name_ext_party",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "identification",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "mobile",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "email",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_tp",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_percent_tp",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst_include",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gross_tp",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docuser_cea",
+				"type": 200,
+				"size": 11,
+				"scale": 0,
+				"typeName": "varchar(11)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "name_agent",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "username",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "external_party"
 	},
 	"pages": [
 		{
@@ -1425,7 +1624,6 @@
 								"export_field12",
 								"export_field13",
 								"export_field14",
-								"export_field15",
 								"export_field16"
 							]
 						}
@@ -1533,10 +1731,6 @@
 				},
 				"export_field14": {
 					"field": "gst",
-					"type": "export_field"
-				},
-				"export_field15": {
-					"field": "gst_include",
 					"type": "export_field"
 				},
 				"export_field16": {
@@ -1729,9 +1923,6 @@
 									"cell": "headcell_field3"
 								},
 								{
-									"cell": "headcell_field4"
-								},
-								{
 									"cell": "headcell_field5"
 								}
 							]
@@ -1758,9 +1949,6 @@
 									"cell": "cell_field3"
 								},
 								{
-									"cell": "cell_field4"
-								},
-								{
 									"cell": "cell_field5"
 								}
 							]
@@ -1785,9 +1973,6 @@
 								},
 								{
 									"cell": "footcell_field3"
-								},
-								{
-									"cell": "footcell_field4"
 								},
 								{
 									"cell": "footcell_field5"
@@ -1926,25 +2111,6 @@
 							"model": "footcell_field",
 							"items": [],
 							"field": "gst"
-						},
-						"headcell_field4": {
-							"model": "headcell_field",
-							"items": [
-								"grid_field_label1"
-							],
-							"field": "gst_include"
-						},
-						"cell_field4": {
-							"model": "cell_field",
-							"items": [
-								"grid_field1"
-							],
-							"field": "gst_include"
-						},
-						"footcell_field4": {
-							"model": "footcell_field",
-							"items": [],
-							"field": "gst_include"
 						},
 						"headcell_field5": {
 							"model": "headcell_field",
@@ -2132,7 +2298,9 @@
 				},
 				"grid_field": {
 					"field": "gst",
-					"type": "grid_field"
+					"type": "grid_field",
+					"inlineEdit": true,
+					"inlineAdd": false
 				},
 				"grid_field_label": {
 					"type": "grid_field_label",
@@ -2143,22 +2311,11 @@
 						"type": 3
 					}
 				},
-				"grid_field1": {
-					"field": "gst_include",
-					"type": "grid_field"
-				},
-				"grid_field_label1": {
-					"type": "grid_field_label",
-					"field": "gst_include",
-					"label": {
-						"field": "gst_include",
-						"table": "external_party_comm",
-						"type": 3
-					}
-				},
 				"grid_field2": {
 					"field": "gross_tp",
-					"type": "grid_field"
+					"type": "grid_field",
+					"inlineEdit": true,
+					"inlineAdd": false
 				},
 				"grid_field_label2": {
 					"type": "grid_field_label",
@@ -2258,7 +2415,6 @@
 								"import_field12",
 								"import_field13",
 								"import_field14",
-								"import_field15",
 								"import_field16"
 							]
 						}
@@ -2329,10 +2485,6 @@
 				},
 				"import_field14": {
 					"field": "gst",
-					"type": "import_field"
-				},
-				"import_field15": {
-					"field": "gst_include",
 					"type": "import_field"
 				},
 				"import_field16": {
@@ -3116,8 +3268,7 @@
 								"simple_grid_field8",
 								"simple_grid_field9",
 								"simple_grid_field11",
-								"simple_grid_field13",
-								"simple_grid_field14"
+								"simple_grid_field13"
 							]
 						}
 					},
@@ -3183,10 +3334,6 @@
 				},
 				"simple_grid_field13": {
 					"field": "gst",
-					"type": "simple_grid_field"
-				},
-				"simple_grid_field14": {
-					"field": "gst_include",
 					"type": "simple_grid_field"
 				}
 			},
@@ -3309,8 +3456,7 @@
 								"integrated_search_field12",
 								"integrated_search_field13",
 								"integrated_search_field14",
-								"integrated_search_field15",
-								"integrated_search_field16"
+								"integrated_search_field15"
 							]
 						}
 					},
@@ -3426,12 +3572,6 @@
 				},
 				"integrated_search_field15": {
 					"field": "gst",
-					"type": "integrated_search_field",
-					"orientation": 0,
-					"required": false
-				},
-				"integrated_search_field16": {
-					"field": "gst_include",
 					"type": "integrated_search_field",
 					"orientation": 0,
 					"required": false
@@ -3567,7 +3707,6 @@
 							"model": "c3",
 							"items": [
 								"integrated_edit_field13",
-								"integrated_edit_field14",
 								"integrated_edit_field",
 								"integrated_edit_field1",
 								"integrated_edit_field2"
@@ -3657,11 +3796,6 @@
 				},
 				"integrated_edit_field13": {
 					"field": "gst",
-					"type": "integrated_edit_field",
-					"orientation": 0
-				},
-				"integrated_edit_field14": {
-					"field": "gst_include",
 					"type": "integrated_edit_field",
 					"orientation": 0
 				}
