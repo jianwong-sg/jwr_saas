@@ -886,7 +886,7 @@
 				{}
 			],
 			"label": {
-				"English": "Comm Percent Ext"
+				"English": "Comm (%)"
 			},
 			"tableName": "cobroke_external"
 		},
@@ -2227,9 +2227,6 @@
 									"cell": "headcell_field"
 								},
 								{
-									"cell": "headcell_field1"
-								},
-								{
 									"cell": "headcell_field2"
 								},
 								{
@@ -2266,9 +2263,6 @@
 								},
 								{
 									"cell": "cell_field"
-								},
-								{
-									"cell": "cell_field1"
 								},
 								{
 									"cell": "cell_field2"
@@ -2309,9 +2303,6 @@
 									"cell": "footcell_field"
 								},
 								{
-									"cell": "footcell_field1"
-								},
-								{
 									"cell": "footcell_field2"
 								},
 								{
@@ -2342,7 +2333,9 @@
 						"headcell_field": {
 							"model": "headcell_field",
 							"items": [
-								"simple_grid_field9"
+								"simple_grid_field9",
+								"text",
+								"simple_grid_field10"
 							],
 							"field": "name_cobroke_ext",
 							"columnName": "field"
@@ -2350,37 +2343,17 @@
 						"cell_field": {
 							"model": "cell_field",
 							"items": [
-								"simple_grid_field"
+								"simple_grid_field",
+								"simple_grid_field1"
 							],
 							"field": "name_cobroke_ext",
-							"columnName": "field"
+							"columnName": "field",
+							"orientation": "vertical"
 						},
 						"footcell_field": {
 							"model": "footcell_field",
 							"items": [],
 							"field": "name_cobroke_ext",
-							"columnName": "field"
-						},
-						"headcell_field1": {
-							"model": "headcell_field",
-							"items": [
-								"simple_grid_field10"
-							],
-							"field": "reg_no",
-							"columnName": "field"
-						},
-						"cell_field1": {
-							"model": "cell_field",
-							"items": [
-								"simple_grid_field1"
-							],
-							"field": "reg_no",
-							"columnName": "field"
-						},
-						"footcell_field1": {
-							"model": "footcell_field",
-							"items": [],
-							"field": "reg_no",
 							"columnName": "field"
 						},
 						"headcell_field2": {
@@ -2516,14 +2489,14 @@
 						"headcell_field5": {
 							"model": "headcell_field",
 							"items": [
-								"grid_field_label"
+								"grid_field_label3"
 							],
 							"field": "comm_percent_ext"
 						},
 						"cell_field5": {
 							"model": "cell_field",
 							"items": [
-								"grid_field"
+								"grid_field3"
 							],
 							"field": "comm_percent_ext"
 						},
@@ -2573,14 +2546,14 @@
 						"headcell_field9": {
 							"model": "headcell_field",
 							"items": [
-								"grid_field_label3"
+								"grid_field_label"
 							],
 							"field": "comm_ext"
 						},
 						"cell_field9": {
 							"model": "cell_field",
 							"items": [
-								"grid_field3"
+								"grid_field"
 							],
 							"field": "comm_ext"
 						},
@@ -2774,7 +2747,12 @@
 				},
 				"grid_field_label": {
 					"type": "grid_field_label",
-					"field": "comm_percent_ext"
+					"field": "comm_percent_ext",
+					"label": {
+						"field": "comm_percent_ext",
+						"table": "cobroke_external",
+						"type": 3
+					}
 				},
 				"grid_field1": {
 					"field": "gst_ext",
@@ -2805,6 +2783,14 @@
 				"grid_field_label3": {
 					"type": "grid_field_label",
 					"field": "comm_ext"
+				},
+				"text": {
+					"type": "text",
+					"label": {
+						"text": "/",
+						"type": 0
+					},
+					"editedByRte": false
 				}
 			},
 			"spreadsheetGrid": false,
@@ -3396,23 +3382,23 @@
 							"model": "c3",
 							"items": [
 								"integrated_edit_field2",
+								"integrated_edit_field3",
+								"integrated_edit_field",
 								"integrated_edit_field1",
 								"integrated_edit_field4",
 								"integrated_edit_field7",
-								"integrated_edit_field8",
-								"integrated_edit_field",
-								"integrated_edit_field3",
-								"integrated_edit_field5",
 								"integrated_edit_field6"
 							]
 						},
 						"c": {
 							"model": "c3",
 							"items": [
+								"integrated_edit_field8",
+								"integrated_edit_field5",
 								"integrated_edit_field9",
+								"integrated_edit_field12",
 								"integrated_edit_field10",
-								"integrated_edit_field11",
-								"integrated_edit_field12"
+								"integrated_edit_field11"
 							]
 						}
 					},

@@ -471,7 +471,6 @@
 			],
 			"editFormats": [
 				{
-					"validateAs": "Number",
 					"textboxSize": 80,
 					"textHTML5Input": "0",
 					"fileThumbnailSize": 150,
@@ -505,6 +504,7 @@
 			"type": 14,
 			"viewFormats": [
 				{
+					"format": "Percent",
 					"imageWidth": 457,
 					"imageHeight": 0,
 					"imageThumbWidth": 72,

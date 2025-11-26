@@ -7,7 +7,7 @@
 			"asc": false
 		}
 	],
-	"sql": "SELECT\n\tid,\n\tid_tx,\n\trepresenting,\n\tname_cobroke_ext,\n\treg_no,\n\temail,\n\tmobile,\n\tagency_name,\n\tlicense_no,\n\tcountry,\n\taddress,\n\tpostal,\n\tcategory,\n\tprop_address,\n\tprop_postal,\n\tcomm_ext,\n\tcomm_percent_ext,\n\tgst_ext,\n\tcomm_ext,\n\tcomm_percent_ext,\n\tgst_ext,\n\tgross_ext\nFROM\n\tcobroke_external\nORDER BY\n\tid_tx DESC\n",
+	"sql": "SELECT\n\tid,\n\tid_tx,\n\trepresenting,\n\tname_cobroke_ext,\n\treg_no,\n\temail,\n\tmobile,\n\tagency_name,\n\tlicense_no,\n\tcountry,\n\taddress,\n\tpostal,\n\tcategory,\n\tprop_address,\n\tprop_postal,\n\tcomm_percent_ext,\n\tgst_ext,\n\tcomm_ext,\n\tgross_ext\nFROM\n\tcobroke_external\nORDER BY\n\tid_tx DESC\n",
 	"type": 1,
 	"connId": "Tables",
 	"originalTable": "cobroke_external",
@@ -865,16 +865,18 @@
 		{
 			"name": "comm_ext",
 			"sqlExpression": "comm_ext",
-			"index": 16,
+			"index": 18,
 			"strField": "comm_ext",
 			"type": 14,
 			"viewFormats": [
 				{
-					"format": "Number"
+					"format": "Currency"
 				}
 			],
 			"editFormats": [
-				{}
+				{
+					"validateAs": "Number"
+				}
 			],
 			"label": {
 				"English": "Comm"
@@ -884,12 +886,12 @@
 		{
 			"name": "comm_percent_ext",
 			"sqlExpression": "comm_percent_ext",
-			"index": 17,
+			"index": 16,
 			"strField": "comm_percent_ext",
 			"type": 14,
 			"viewFormats": [
 				{
-					"format": "Number"
+					"format": "Percent"
 				}
 			],
 			"editFormats": [
@@ -903,12 +905,12 @@
 		{
 			"name": "gst_ext",
 			"sqlExpression": "gst_ext",
-			"index": 18,
+			"index": 17,
 			"strField": "gst_ext",
 			"type": 14,
 			"viewFormats": [
 				{
-					"format": "Number"
+					"format": "Currency"
 				}
 			],
 			"editFormats": [
@@ -922,7 +924,7 @@
 		{
 			"name": "gross_ext",
 			"sqlExpression": "gross_ext",
-			"index": 22,
+			"index": 19,
 			"strField": "gross_ext",
 			"type": 14,
 			"viewFormats": [
@@ -1594,18 +1596,6 @@
 								},
 								{
 									"cell": "headcell_field3"
-								},
-								{
-									"cell": "headcell_field4"
-								},
-								{
-									"cell": "headcell_field5"
-								},
-								{
-									"cell": "headcell_field6"
-								},
-								{
-									"cell": "headcell_field7"
 								}
 							]
 						},
@@ -1629,18 +1619,6 @@
 								},
 								{
 									"cell": "cell_field3"
-								},
-								{
-									"cell": "cell_field4"
-								},
-								{
-									"cell": "cell_field5"
-								},
-								{
-									"cell": "cell_field6"
-								},
-								{
-									"cell": "cell_field7"
 								}
 							]
 						},
@@ -1664,18 +1642,6 @@
 								},
 								{
 									"cell": "footcell_field3"
-								},
-								{
-									"cell": "footcell_field4"
-								},
-								{
-									"cell": "footcell_field5"
-								},
-								{
-									"cell": "footcell_field6"
-								},
-								{
-									"cell": "footcell_field7"
 								}
 							]
 						}
@@ -1803,82 +1769,6 @@
 							"model": "footcell_field",
 							"items": [],
 							"field": "gst_ext"
-						},
-						"headcell_field4": {
-							"model": "headcell_field",
-							"items": [
-								"grid_field_label3"
-							],
-							"field": "comm_ext"
-						},
-						"cell_field4": {
-							"model": "cell_field",
-							"items": [
-								"grid_field3"
-							],
-							"field": "comm_ext"
-						},
-						"footcell_field4": {
-							"model": "footcell_field",
-							"items": [],
-							"field": "comm_ext"
-						},
-						"headcell_field5": {
-							"model": "headcell_field",
-							"items": [
-								"grid_field_label4"
-							],
-							"field": "comm_percent_ext"
-						},
-						"cell_field5": {
-							"model": "cell_field",
-							"items": [
-								"grid_field4"
-							],
-							"field": "comm_percent_ext"
-						},
-						"footcell_field5": {
-							"model": "footcell_field",
-							"items": [],
-							"field": "comm_percent_ext"
-						},
-						"headcell_field6": {
-							"model": "headcell_field",
-							"items": [
-								"grid_field_label5"
-							],
-							"field": "gst_ext"
-						},
-						"cell_field6": {
-							"model": "cell_field",
-							"items": [
-								"grid_field5"
-							],
-							"field": "gst_ext"
-						},
-						"footcell_field6": {
-							"model": "footcell_field",
-							"items": [],
-							"field": "gst_ext"
-						},
-						"headcell_field7": {
-							"model": "headcell_field",
-							"items": [
-								"grid_field_label6"
-							],
-							"field": "gross_ext"
-						},
-						"cell_field7": {
-							"model": "cell_field",
-							"items": [
-								"grid_field6"
-							],
-							"field": "gross_ext"
-						},
-						"footcell_field7": {
-							"model": "footcell_field",
-							"items": [],
-							"field": "gross_ext"
 						}
 					},
 					"deferredItems": [],
@@ -2046,46 +1936,6 @@
 				"grid_field_label2": {
 					"type": "grid_field_label",
 					"field": "gst_ext"
-				},
-				"grid_field3": {
-					"field": "comm_ext",
-					"type": "grid_field",
-					"inlineEdit": true,
-					"inlineAdd": false
-				},
-				"grid_field_label3": {
-					"type": "grid_field_label",
-					"field": "comm_ext"
-				},
-				"grid_field4": {
-					"field": "comm_percent_ext",
-					"type": "grid_field",
-					"inlineEdit": true,
-					"inlineAdd": false
-				},
-				"grid_field_label4": {
-					"type": "grid_field_label",
-					"field": "comm_percent_ext"
-				},
-				"grid_field5": {
-					"field": "gst_ext",
-					"type": "grid_field",
-					"inlineEdit": true,
-					"inlineAdd": false
-				},
-				"grid_field_label5": {
-					"type": "grid_field_label",
-					"field": "gst_ext"
-				},
-				"grid_field6": {
-					"field": "gross_ext",
-					"type": "grid_field",
-					"inlineEdit": true,
-					"inlineAdd": false
-				},
-				"grid_field_label6": {
-					"type": "grid_field_label",
-					"field": "gross_ext"
 				}
 			},
 			"spreadsheetGrid": false,
