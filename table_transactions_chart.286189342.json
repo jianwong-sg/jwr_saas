@@ -1384,6 +1384,28 @@
 				"autoinc": false,
 				"defaultValueSQL": null,
 				"defaultValue": ""
+			},
+			{
+				"name": "cddmeasure_result",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst_rate",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
 			}
 		],
 		"primaryKeys": [

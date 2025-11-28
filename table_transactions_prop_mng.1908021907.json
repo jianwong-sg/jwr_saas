@@ -1,22 +1,25 @@
 {
 	"orderInfo": [
 		{
-			"index": 1,
-			"asc": false,
-			"field": "id"
+			"index": 15,
+			"field": "date",
+			"expr": "`date`",
+			"asc": false
 		},
 		{
-			"index": 15,
-			"asc": false,
-			"field": "`date`"
+			"index": 1,
+			"field": "id",
+			"expr": "id",
+			"asc": false
 		}
 	],
-	"sql": "SELECT\nid,\ncategory,\nprop_type,\nProp_kind,\nrental_price,\nprop_name,\nprop_address,\ncea_reg,\nconcat(lease_duration_no, ' ', lease_duration_unit) AS lease_duration,\nland,\ntenure,\nno_bedrooms,\nno_bathrooms,\nconcat(rental_price, ' ', rental_price_type) AS rental,\n`date`,\nbuilt_up,\nbuilt_up_unit,\nland_unit\nFROM transactions\nORDER BY `date` DESC, id DESC",
+	"sql": "SELECT\n\tid,\n\tcategory,\n\tprop_type,\n\tProp_kind,\n\trental_price,\n\tprop_name,\n\tprop_address,\n\tcea_reg,\n\tconcat(lease_duration_no, ' ', lease_duration_unit) AS lease_duration,\n\tland,\n\ttenure,\n\tno_bedrooms,\n\tno_bathrooms,\n\tconcat(rental_price, ' ', rental_price_type) AS rental,\n\t`date`,\n\tbuilt_up,\n\tbuilt_up_unit,\n\tland_unit\nFROM\n\ttransactions\nORDER BY\n\t`date` DESC,\n\tid DESC\n",
 	"type": 1,
 	"connId": "Tables",
 	"originalTable": "transactions",
 	"name": "transactions_prop_mng",
 	"shortTableName": "transactions_prop_mng",
+	"dbType": 0,
 	"searchSuggest": false,
 	"caseSensitiveSearch": "",
 	"highlightSearchResults": false,
@@ -528,6 +531,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -575,6 +579,7 @@
 		{
 			"name": "category",
 			"sqlExpression": "category",
+			"index": 2,
 			"strField": "category",
 			"type": 200,
 			"viewFormats": [
@@ -639,6 +644,7 @@
 		{
 			"name": "prop_type",
 			"sqlExpression": "prop_type",
+			"index": 3,
 			"strField": "prop_type",
 			"type": 200,
 			"viewFormats": [
@@ -705,6 +711,7 @@
 		{
 			"name": "Prop_kind",
 			"sqlExpression": "Prop_kind",
+			"index": 4,
 			"strField": "Prop_kind",
 			"type": 200,
 			"viewFormats": [
@@ -771,6 +778,7 @@
 		{
 			"name": "rental_price",
 			"sqlExpression": "rental_price",
+			"index": 5,
 			"strField": "rental_price",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -816,6 +824,7 @@
 		{
 			"name": "prop_name",
 			"sqlExpression": "prop_name",
+			"index": 6,
 			"strField": "prop_name",
 			"type": 200,
 			"viewFormats": [
@@ -873,6 +882,7 @@
 		{
 			"name": "prop_address",
 			"sqlExpression": "prop_address",
+			"index": 7,
 			"strField": "prop_address",
 			"type": 200,
 			"viewFormats": [
@@ -929,6 +939,7 @@
 		{
 			"name": "cea_reg",
 			"sqlExpression": "cea_reg",
+			"index": 8,
 			"strField": "cea_reg",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -989,6 +1000,7 @@
 		{
 			"name": "lease_duration",
 			"sqlExpression": "concat(lease_duration_no, ' ', lease_duration_unit)",
+			"index": 9,
 			"strField": "lease_duration",
 			"type": 200,
 			"viewFormats": [
@@ -1033,6 +1045,7 @@
 		{
 			"name": "land",
 			"sqlExpression": "land",
+			"index": 10,
 			"strField": "land",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -1092,6 +1105,7 @@
 		{
 			"name": "tenure",
 			"sqlExpression": "tenure",
+			"index": 11,
 			"strField": "tenure",
 			"type": 200,
 			"viewFormats": [
@@ -1150,6 +1164,7 @@
 		{
 			"name": "no_bedrooms",
 			"sqlExpression": "no_bedrooms",
+			"index": 12,
 			"strField": "no_bedrooms",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -1208,6 +1223,7 @@
 		{
 			"name": "no_bathrooms",
 			"sqlExpression": "no_bathrooms",
+			"index": 13,
 			"strField": "no_bathrooms",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -1263,6 +1279,7 @@
 		{
 			"name": "rental",
 			"sqlExpression": "concat(rental_price, ' ', rental_price_type)",
+			"index": 14,
 			"strField": "rental",
 			"type": 200,
 			"viewFormats": [
@@ -1300,6 +1317,7 @@
 		{
 			"name": "date",
 			"sqlExpression": "`date`",
+			"index": 15,
 			"strField": "date",
 			"type": 7,
 			"viewFormats": [
@@ -1347,6 +1365,7 @@
 		{
 			"name": "built_up",
 			"sqlExpression": "built_up",
+			"index": 16,
 			"strField": "built_up",
 			"type": 200,
 			"viewFormats": [
@@ -1407,6 +1426,7 @@
 		{
 			"name": "built_up_unit",
 			"sqlExpression": "built_up_unit",
+			"index": 17,
 			"strField": "built_up_unit",
 			"type": 200,
 			"viewFormats": [
@@ -1471,6 +1491,7 @@
 		{
 			"name": "land_unit",
 			"sqlExpression": "land_unit",
+			"index": 18,
 			"strField": "land_unit",
 			"type": 200,
 			"viewFormats": [
@@ -1563,8 +1584,1208 @@
 			"code": "if (@$_REQUEST[\"a\"]!=\"search\" && @$_REQUEST[\"a\"]!=\"advsearch\" && @$_REQUEST[\"a\"]!=\"showall\")\n$strWhereClause = whereAdd($strWhereClause,\"category='PROPERTY MANAGEMENT'\");\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
 		}
 	],
+	"strOrderBy": "ORDER BY\n\t`date` DESC,\n\tid DESC",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "ID_Tx",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "category",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rental_price",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "salesperson_name",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "commission",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docuserid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "Prop_kind",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cea_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cobroke_comm",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_fee",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cdd_check_result",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cdd_result",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sls_cust",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sls_result",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "pps_cust",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "pps_result",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "representing",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "marketing_rights",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "currency",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "loi_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "ta_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "lease_start_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "lease_duration_no",
+				"type": 200,
+				"size": 5,
+				"scale": 0,
+				"typeName": "varchar(5)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "lease_duration_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "lease_expiry",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sale_price",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "valuation_price",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "option_money",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "otp_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "option_exercise_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "est_completion_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sp_execution_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "TOP",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "built_up",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "land",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tenure",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "condition",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "no_bedrooms",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "no_bathrooms",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "built_up_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "land_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rental_price_type",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "transacted_price",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_amt",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst_payable",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst_inclusive",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_earned",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_gross",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_earned_percent_salesperson",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_earned_agency",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst_agency",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_gross_agency",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_earned_salesperson",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_percent",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "status",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "datesubmit",
+				"type": 135,
+				"size": 0,
+				"scale": 0,
+				"typeName": "datetime",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "datereject",
+				"type": 135,
+				"size": 0,
+				"scale": 0,
+				"typeName": "datetime",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "dateapprove",
+				"type": 135,
+				"size": 0,
+				"scale": 0,
+				"typeName": "datetime",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "status_status",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "salesperson_nric",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "str_filing_date",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remarks",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "salesperson_email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_to_agency",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_nett_salesperson",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_share",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "percent_to_agency",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "client",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_cea",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "management_fee",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "commencement_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "end_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_to_agency1",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sub_category",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "service_commencement",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "service_completion",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "result",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "consultation_fee",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminder_agent",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminder_tenant",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminderdate_agent",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminderdate_tenant",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminder_tenant_email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "client_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "client_id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "client_nric",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rm_rental_rm_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rm_builtup",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rm_builtup_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "namelist_cust",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "namelist_result",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "form_number",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_gst_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tenants",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "alertlist_cust",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "alertlist_result",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cddmeasure_result",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst_rate",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "transactions"
 	},
 	"pages": [
 		{

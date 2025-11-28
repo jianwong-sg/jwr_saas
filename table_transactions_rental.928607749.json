@@ -1584,6 +1584,7 @@
 			"code": "if (@$_REQUEST[\"a\"]!=\"search\" && @$_REQUEST[\"a\"]!=\"advsearch\" && @$_REQUEST[\"a\"]!=\"showall\")\n$strWhereClause = whereAdd($strWhereClause,\"category='RENTAL'\");\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
 		}
 	],
+	"strOrderBy": "ORDER BY `date` DESC, id DESC",
 	"sortByFields": {
 		"sortOrder": []
 	},
@@ -2763,6 +2764,17 @@
 				"size": 50,
 				"scale": 0,
 				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst_rate",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
 				"nullable": true,
 				"autoinc": false,
 				"defaultValueSQL": null,

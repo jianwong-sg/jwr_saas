@@ -1,10 +1,25 @@
 {
-	"sql": "SELECT\nid,\ncategory,\nprop_type,\nprop_type AS type_of_property,\nProp_kind,\nrental_price,\nsalesperson_name,\nprop_name,\nprop_address,\ndocuserid,\ncast(AES_DECRYPT(unhex(cea_reg), '$jw6857r707') as char) AS cea_reg,\ncobroke_comm,\nagency_fee,\ncommission,\nsale_price,\nrepresenting,\nmarketing_rights,\ncurrency,\nloi_date,\nta_date,\nlease_start_date,\nlease_duration_no,\nlease_duration_unit,\nconcat(lease_duration_no, '   ', lease_duration_unit) AS lease_duration,\nlease_expiry,\nvaluation_price,\noption_money,\notp_date,\noption_exercise_date,\nest_completion_date,\nsp_execution_date,\n`TOP`,\nbuilt_up,\nland,\ntenure,\n`condition`,\nno_bedrooms,\nno_bathrooms,\nbuilt_up_unit,\nconcat(built_up, ' ', built_up_unit) AS builtup,\nland_unit,\nconcat(land, ' ', land_unit) AS landland,\nrental_price_type,\nconcat('$', rental_price, '   ', rental_price_type) AS rental,\ntransacted_price,\ncdd_result,\ncdd_check_result,\nsls_cust,\nsls_result,\npps_cust,\npps_result,\ncomm_unit,\ncomm_amt,\ngst_payable,\ngst_inclusive,\ncomm_earned,\ngst,\ncomm_gross,\ncomm_earned_agency,\ngst_agency,\ncomm_gross_agency,\ncomm_earned_salesperson,\ncomm_earned_percent_salesperson,\ncomm_percent,\nstatus,\ndatesubmit,\ndatereject,\ndateapprove,\nstatus_status,\nstatus_status AS tx_status,\n`date`,\nsalesperson_nric,\nstr_filing_date,\nremarks,\ncast(AES_DECRYPT(unhex(salesperson_email), '$jw6857r707') as char) AS salesperson_email,\ncomm_to_agency,\ncomm_nett_salesperson,\nagency_share,\npercent_to_agency,\nclient,\nclient_type,\nclient_id,\nclient_nric,\nagency,\ncast(AES_DECRYPT(unhex(agency_cea), '$jw6857r707') as char) AS agency_cea,\nmanagement_fee,\ncommencement_date,\nend_date,\ncomm_to_agency1,\nservice_commencement,\nservice_completion,\n`result`,\nconsultation_fee,\nreminder_agent,\nreminder_tenant,\nreminderdate_agent,\nreminderdate_tenant,\nreminder_tenant_email,\nrm_rental_rm_type,\nrm_builtup,\nrm_builtup_unit,\nconcat(rm_builtup, ' ', rm_builtup_unit) AS rm_size,\nnamelist_result,\nform_number,\nID_Tx,\ntenants,\nagency_gst_reg,\nnamelist_cust,\nalertlist_cust,\nalertlist_result\nFROM jwresour_jwr_saas_db_jwrealty.transactions\nWHERE (client ='LIM CHIN SAN CONTRACTORS PTE LTD')\nGROUP BY id, client\nORDER BY `date` DESC, ID_Tx DESC",
+	"orderInfo": [
+		{
+			"index": 71,
+			"field": "date",
+			"expr": "`date`",
+			"asc": false
+		},
+		{
+			"index": 105,
+			"field": "ID_Tx",
+			"expr": "ID_Tx",
+			"asc": false
+		}
+	],
+	"sql": "SELECT\n\tid,\n\tcategory,\n\tprop_type,\n\tprop_type AS type_of_property,\n\tProp_kind,\n\trental_price,\n\tsalesperson_name,\n\tprop_name,\n\tprop_address,\n\tdocuserid,\n\tcast(AES_DECRYPT(unhex(cea_reg), '$jw6857r707') as char) AS cea_reg,\n\tcobroke_comm,\n\tagency_fee,\n\tcommission,\n\tsale_price,\n\trepresenting,\n\tmarketing_rights,\n\tcurrency,\n\tloi_date,\n\tta_date,\n\tlease_start_date,\n\tlease_duration_no,\n\tlease_duration_unit,\n\tconcat(lease_duration_no, '   ', lease_duration_unit) AS lease_duration,\n\tlease_expiry,\n\tvaluation_price,\n\toption_money,\n\totp_date,\n\toption_exercise_date,\n\test_completion_date,\n\tsp_execution_date,\n\t`TOP`,\n\tbuilt_up,\n\tland,\n\ttenure,\n\t`condition`,\n\tno_bedrooms,\n\tno_bathrooms,\n\tbuilt_up_unit,\n\tconcat(built_up, ' ', built_up_unit) AS builtup,\n\tland_unit,\n\tconcat(land, ' ', land_unit) AS landland,\n\trental_price_type,\n\tconcat('$', rental_price, '   ', rental_price_type) AS rental,\n\ttransacted_price,\n\tcdd_result,\n\tcdd_check_result,\n\tsls_cust,\n\tsls_result,\n\tpps_cust,\n\tpps_result,\n\tcomm_unit,\n\tcomm_amt,\n\tgst_payable,\n\tgst_inclusive,\n\tcomm_earned,\n\tgst,\n\tcomm_gross,\n\tcomm_earned_agency,\n\tgst_agency,\n\tcomm_gross_agency,\n\tcomm_earned_salesperson,\n\tcomm_earned_percent_salesperson,\n\tcomm_percent,\n\tstatus,\n\tdatesubmit,\n\tdatereject,\n\tdateapprove,\n\tstatus_status,\n\tstatus_status AS tx_status,\n\t`date`,\n\tsalesperson_nric,\n\tstr_filing_date,\n\tremarks,\n\tcast(AES_DECRYPT(unhex(salesperson_email), '$jw6857r707') as char) AS salesperson_email,\n\tcomm_to_agency,\n\tcomm_nett_salesperson,\n\tagency_share,\n\tpercent_to_agency,\n\tclient,\n\tclient_type,\n\tclient_id,\n\tclient_nric,\n\tagency,\n\tcast(AES_DECRYPT(unhex(agency_cea), '$jw6857r707') as char) AS agency_cea,\n\tmanagement_fee,\n\tcommencement_date,\n\tend_date,\n\tcomm_to_agency1,\n\tservice_commencement,\n\tservice_completion,\n\t`result`,\n\tconsultation_fee,\n\treminder_agent,\n\treminder_tenant,\n\treminderdate_agent,\n\treminderdate_tenant,\n\treminder_tenant_email,\n\trm_rental_rm_type,\n\trm_builtup,\n\trm_builtup_unit,\n\tconcat(rm_builtup, ' ', rm_builtup_unit) AS rm_size,\n\tnamelist_result,\n\tform_number,\n\tID_Tx,\n\ttenants,\n\tagency_gst_reg,\n\tnamelist_cust,\n\talertlist_cust,\n\talertlist_result,\n\tgst_rate\nFROM\n\tjwresour_jwr_saas_db_jwrealty.transactions\nWHERE\nclient ='LIM CHIN SAN CONTRACTORS PTE LTD'\nGROUP BY\n\tid,\n\tcast(AES_DECRYPT(unhex(cea_reg), '$jw6857r707') as char),\n\tconcat(lease_duration_no, '   ', lease_duration_unit),\n\tconcat(built_up, ' ', built_up_unit),\n\tconcat(land, ' ', land_unit),\n\tconcat('$', rental_price, '   ', rental_price_type),\n\tcast(AES_DECRYPT(unhex(salesperson_email), '$jw6857r707') as char),\n\tclient,\n\tcast(AES_DECRYPT(unhex(agency_cea), '$jw6857r707') as char),\n\tconcat(rm_builtup, ' ', rm_builtup_unit)\nORDER BY\n\t`date` DESC,\n\tID_Tx DESC\n",
 	"type": 1,
 	"connId": "Tables",
 	"originalTable": "transactions",
 	"name": "transactions_lcsc",
 	"shortTableName": "transactions_lcsc",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "cea_reg",
 	"usersOwnerIdField": "active",
@@ -508,6 +523,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -552,11 +568,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "category",
 			"sqlExpression": "category",
+			"index": 2,
 			"strField": "category",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -702,11 +719,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "prop_type",
 			"sqlExpression": "prop_type",
+			"index": 3,
 			"strField": "prop_type",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -761,11 +779,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "type_of_property",
 			"sqlExpression": "prop_type",
+			"index": 4,
 			"strField": "prop_type",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -813,11 +832,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "Prop_kind",
 			"sqlExpression": "Prop_kind",
+			"index": 5,
 			"strField": "Prop_kind",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -880,11 +900,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "rental_price",
 			"sqlExpression": "rental_price",
+			"index": 6,
 			"strField": "rental_price",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -925,11 +946,12 @@
 			"placeholder": {
 				"English": "E.g 2500"
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "salesperson_name",
 			"sqlExpression": "salesperson_name",
+			"index": 7,
 			"strField": "salesperson_name",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -981,11 +1003,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "prop_name",
 			"sqlExpression": "prop_name",
+			"index": 8,
 			"strField": "prop_name",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -1039,11 +1062,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "prop_address",
 			"sqlExpression": "prop_address",
+			"index": 9,
 			"strField": "prop_address",
 			"type": 200,
 			"viewFormats": [
@@ -1091,11 +1115,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "docuserid",
 			"sqlExpression": "docuserid",
+			"index": 10,
 			"strField": "docuserid",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -1146,11 +1171,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "cea_reg",
 			"sqlExpression": "cast(AES_DECRYPT(unhex(cea_reg), '$jw6857r707') as char)",
+			"index": 11,
 			"strField": "cea_reg",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -1211,6 +1237,7 @@
 		{
 			"name": "cobroke_comm",
 			"sqlExpression": "cobroke_comm",
+			"index": 12,
 			"strField": "cobroke_comm",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -1252,11 +1279,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "agency_fee",
 			"sqlExpression": "agency_fee",
+			"index": 13,
 			"strField": "agency_fee",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -1299,11 +1327,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "commission",
 			"sqlExpression": "commission",
+			"index": 14,
 			"strField": "commission",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -1346,11 +1375,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "sale_price",
 			"sqlExpression": "sale_price",
+			"index": 15,
 			"strField": "sale_price",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -1392,11 +1422,12 @@
 			"placeholder": {
 				"English": "E.g 880000"
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "representing",
 			"sqlExpression": "representing",
+			"index": 16,
 			"strField": "representing",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -1457,11 +1488,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "marketing_rights",
 			"sqlExpression": "marketing_rights",
+			"index": 17,
 			"strField": "marketing_rights",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -1508,11 +1540,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "currency",
 			"sqlExpression": "currency",
+			"index": 18,
 			"strField": "currency",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -1559,11 +1592,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "loi_date",
 			"sqlExpression": "loi_date",
+			"index": 19,
 			"strField": "loi_date",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -1603,11 +1637,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "ta_date",
 			"sqlExpression": "ta_date",
+			"index": 20,
 			"strField": "ta_date",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -1651,11 +1686,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "lease_start_date",
 			"sqlExpression": "lease_start_date",
+			"index": 21,
 			"strField": "lease_start_date",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -1696,11 +1732,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "lease_duration_no",
 			"sqlExpression": "lease_duration_no",
+			"index": 22,
 			"strField": "lease_duration_no",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -1741,11 +1778,12 @@
 			"placeholder": {
 				"English": "E.g 12"
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "lease_duration_unit",
 			"sqlExpression": "lease_duration_unit",
+			"index": 23,
 			"strField": "lease_duration_unit",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -1794,11 +1832,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "lease_duration",
 			"sqlExpression": "concat(lease_duration_no, '   ', lease_duration_unit)",
+			"index": 24,
 			"strField": "lease_duration",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -1844,6 +1883,7 @@
 		{
 			"name": "lease_expiry",
 			"sqlExpression": "lease_expiry",
+			"index": 25,
 			"strField": "lease_expiry",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -1885,11 +1925,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "valuation_price",
 			"sqlExpression": "valuation_price",
+			"index": 26,
 			"strField": "valuation_price",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -1931,11 +1972,12 @@
 			"placeholder": {
 				"English": "E.g 800000"
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "option_money",
 			"sqlExpression": "option_money",
+			"index": 27,
 			"strField": "option_money",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -1977,11 +2019,12 @@
 			"placeholder": {
 				"English": "E.g 5000"
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "otp_date",
 			"sqlExpression": "otp_date",
+			"index": 28,
 			"strField": "otp_date",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -2025,11 +2068,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "option_exercise_date",
 			"sqlExpression": "option_exercise_date",
+			"index": 29,
 			"strField": "option_exercise_date",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -2073,11 +2117,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "est_completion_date",
 			"sqlExpression": "est_completion_date",
+			"index": 30,
 			"strField": "est_completion_date",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -2121,11 +2166,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "sp_execution_date",
 			"sqlExpression": "sp_execution_date",
+			"index": 31,
 			"strField": "sp_execution_date",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -2169,11 +2215,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "TOP",
 			"sqlExpression": "`TOP`",
+			"index": 32,
 			"strField": "TOP",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -2227,11 +2274,12 @@
 			"placeholder": {
 				"English": "E.g Jan 2019"
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "built_up",
 			"sqlExpression": "built_up",
+			"index": 33,
 			"strField": "built_up",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -2286,11 +2334,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "land",
 			"sqlExpression": "land",
+			"index": 34,
 			"strField": "land",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -2345,11 +2394,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "tenure",
 			"sqlExpression": "tenure",
+			"index": 35,
 			"strField": "tenure",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -2413,11 +2463,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "condition",
 			"sqlExpression": "`condition`",
+			"index": 36,
 			"strField": "condition",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -2466,11 +2517,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "no_bedrooms",
 			"sqlExpression": "no_bedrooms",
+			"index": 37,
 			"strField": "no_bedrooms",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -2524,11 +2576,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "no_bathrooms",
 			"sqlExpression": "no_bathrooms",
+			"index": 38,
 			"strField": "no_bathrooms",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -2579,11 +2632,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "built_up_unit",
 			"sqlExpression": "built_up_unit",
+			"index": 39,
 			"strField": "built_up_unit",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -2642,11 +2696,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "builtup",
 			"sqlExpression": "concat(built_up, ' ', built_up_unit)",
+			"index": 40,
 			"strField": "builtup",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -2692,6 +2747,7 @@
 		{
 			"name": "land_unit",
 			"sqlExpression": "land_unit",
+			"index": 41,
 			"strField": "land_unit",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -2750,11 +2806,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "landland",
 			"sqlExpression": "concat(land, ' ', land_unit)",
+			"index": 42,
 			"strField": "landland",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -2800,6 +2857,7 @@
 		{
 			"name": "rental_price_type",
 			"sqlExpression": "rental_price_type",
+			"index": 43,
 			"strField": "rental_price_type",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -2850,11 +2908,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "rental",
 			"sqlExpression": "concat('$', rental_price, '   ', rental_price_type)",
+			"index": 44,
 			"strField": "rental",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -2893,6 +2952,7 @@
 		{
 			"name": "transacted_price",
 			"sqlExpression": "transacted_price",
+			"index": 45,
 			"strField": "transacted_price",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -2932,11 +2992,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "cdd_result",
 			"sqlExpression": "cdd_result",
+			"index": 46,
 			"strField": "cdd_result",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -2977,11 +3038,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "cdd_check_result",
 			"sqlExpression": "cdd_check_result",
+			"index": 47,
 			"strField": "cdd_check_result",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -3028,11 +3090,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "sls_cust",
 			"sqlExpression": "sls_cust",
+			"index": 48,
 			"strField": "sls_cust",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -3073,11 +3136,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "sls_result",
 			"sqlExpression": "sls_result",
+			"index": 49,
 			"strField": "sls_result",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -3118,11 +3182,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "pps_cust",
 			"sqlExpression": "pps_cust",
+			"index": 50,
 			"strField": "pps_cust",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -3163,11 +3228,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "pps_result",
 			"sqlExpression": "pps_result",
+			"index": 51,
 			"strField": "pps_result",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -3208,11 +3274,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "comm_unit",
 			"sqlExpression": "comm_unit",
+			"index": 52,
 			"strField": "comm_unit",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -3252,11 +3319,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "comm_amt",
 			"sqlExpression": "comm_amt",
+			"index": 53,
 			"strField": "comm_amt",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -3297,11 +3365,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "gst_payable",
 			"sqlExpression": "gst_payable",
+			"index": 54,
 			"strField": "gst_payable",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -3343,11 +3412,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "gst_inclusive",
 			"sqlExpression": "gst_inclusive",
+			"index": 55,
 			"strField": "gst_inclusive",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -3388,11 +3458,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "comm_earned",
 			"sqlExpression": "comm_earned",
+			"index": 56,
 			"strField": "comm_earned",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -3433,11 +3504,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "gst",
 			"sqlExpression": "gst",
+			"index": 57,
 			"strField": "gst",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -3478,11 +3550,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "comm_gross",
 			"sqlExpression": "comm_gross",
+			"index": 58,
 			"strField": "comm_gross",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -3523,11 +3596,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "comm_earned_agency",
 			"sqlExpression": "comm_earned_agency",
+			"index": 59,
 			"strField": "comm_earned_agency",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -3568,11 +3642,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "gst_agency",
 			"sqlExpression": "gst_agency",
+			"index": 60,
 			"strField": "gst_agency",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -3613,11 +3688,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "comm_gross_agency",
 			"sqlExpression": "comm_gross_agency",
+			"index": 61,
 			"strField": "comm_gross_agency",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -3658,11 +3734,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "comm_earned_salesperson",
 			"sqlExpression": "comm_earned_salesperson",
+			"index": 62,
 			"strField": "comm_earned_salesperson",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -3703,11 +3780,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "comm_earned_percent_salesperson",
 			"sqlExpression": "comm_earned_percent_salesperson",
+			"index": 63,
 			"strField": "comm_earned_percent_salesperson",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -3760,11 +3838,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "comm_percent",
 			"sqlExpression": "comm_percent",
+			"index": 64,
 			"strField": "comm_percent",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -3807,11 +3886,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "status",
 			"sqlExpression": "status",
+			"index": 65,
 			"strField": "status",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -3860,11 +3940,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "datesubmit",
 			"sqlExpression": "datesubmit",
+			"index": 66,
 			"strField": "datesubmit",
 			"googleLikeSearch": false,
 			"type": 135,
@@ -3908,11 +3989,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "datereject",
 			"sqlExpression": "datereject",
+			"index": 67,
 			"strField": "datereject",
 			"googleLikeSearch": false,
 			"type": 135,
@@ -3956,11 +4038,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "dateapprove",
 			"sqlExpression": "dateapprove",
+			"index": 68,
 			"strField": "dateapprove",
 			"googleLikeSearch": false,
 			"type": 135,
@@ -4004,11 +4087,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "status_status",
 			"sqlExpression": "status_status",
+			"index": 69,
 			"strField": "status_status",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -4056,11 +4140,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "tx_status",
 			"sqlExpression": "status_status",
+			"index": 70,
 			"strField": "status_status",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -4100,11 +4185,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "date",
 			"sqlExpression": "`date`",
+			"index": 71,
 			"strField": "date",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -4154,11 +4240,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "salesperson_nric",
 			"sqlExpression": "salesperson_nric",
+			"index": 72,
 			"strField": "salesperson_nric",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -4210,11 +4297,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "str_filing_date",
 			"sqlExpression": "str_filing_date",
+			"index": 73,
 			"strField": "str_filing_date",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -4261,11 +4349,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "remarks",
 			"sqlExpression": "remarks",
+			"index": 74,
 			"strField": "remarks",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -4307,11 +4396,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "salesperson_email",
 			"sqlExpression": "cast(AES_DECRYPT(unhex(salesperson_email), '$jw6857r707') as char)",
+			"index": 75,
 			"strField": "salesperson_email",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -4366,6 +4456,7 @@
 		{
 			"name": "comm_to_agency",
 			"sqlExpression": "comm_to_agency",
+			"index": 76,
 			"strField": "comm_to_agency",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -4405,11 +4496,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "comm_nett_salesperson",
 			"sqlExpression": "comm_nett_salesperson",
+			"index": 77,
 			"strField": "comm_nett_salesperson",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -4450,11 +4542,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "agency_share",
 			"sqlExpression": "agency_share",
+			"index": 78,
 			"strField": "agency_share",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -4510,11 +4603,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "percent_to_agency",
 			"sqlExpression": "percent_to_agency",
+			"index": 79,
 			"strField": "percent_to_agency",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -4557,11 +4651,12 @@
 			"placeholder": {
 				"English": "Only digit"
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "client",
 			"sqlExpression": "client",
+			"index": 80,
 			"strField": "client",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -4619,11 +4714,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "client_type",
 			"sqlExpression": "client_type",
+			"index": 81,
 			"strField": "client_type",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -4666,11 +4762,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "client_id",
 			"sqlExpression": "client_id",
+			"index": 82,
 			"strField": "client_id",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -4713,11 +4810,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "client_nric",
 			"sqlExpression": "client_nric",
+			"index": 83,
 			"strField": "client_nric",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -4762,11 +4860,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "agency",
 			"sqlExpression": "agency",
+			"index": 84,
 			"strField": "agency",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -4816,11 +4915,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "agency_cea",
 			"sqlExpression": "cast(AES_DECRYPT(unhex(agency_cea), '$jw6857r707') as char)",
+			"index": 85,
 			"strField": "agency_cea",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -4867,6 +4967,7 @@
 		{
 			"name": "management_fee",
 			"sqlExpression": "management_fee",
+			"index": 86,
 			"strField": "management_fee",
 			"googleLikeSearch": false,
 			"type": 14,
@@ -4906,11 +5007,12 @@
 			"placeholder": {
 				"English": "E.g 2800"
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "commencement_date",
 			"sqlExpression": "commencement_date",
+			"index": 87,
 			"strField": "commencement_date",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -4955,11 +5057,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "end_date",
 			"sqlExpression": "end_date",
+			"index": 88,
 			"strField": "end_date",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -5004,11 +5107,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "comm_to_agency1",
 			"sqlExpression": "comm_to_agency1",
+			"index": 89,
 			"strField": "comm_to_agency1",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -5048,11 +5152,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "service_commencement",
 			"sqlExpression": "service_commencement",
+			"index": 90,
 			"strField": "service_commencement",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -5092,11 +5197,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "service_completion",
 			"sqlExpression": "service_completion",
+			"index": 91,
 			"strField": "service_completion",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -5140,11 +5246,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "result",
 			"sqlExpression": "`result`",
+			"index": 92,
 			"strField": "result",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -5184,11 +5291,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "consultation_fee",
 			"sqlExpression": "consultation_fee",
+			"index": 93,
 			"strField": "consultation_fee",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -5228,11 +5336,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "reminder_agent",
 			"sqlExpression": "reminder_agent",
+			"index": 94,
 			"strField": "reminder_agent",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -5279,11 +5388,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "reminder_tenant",
 			"sqlExpression": "reminder_tenant",
+			"index": 95,
 			"strField": "reminder_tenant",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -5330,11 +5440,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "reminderdate_agent",
 			"sqlExpression": "reminderdate_agent",
+			"index": 96,
 			"strField": "reminderdate_agent",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -5382,11 +5493,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "reminderdate_tenant",
 			"sqlExpression": "reminderdate_tenant",
+			"index": 97,
 			"strField": "reminderdate_tenant",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -5434,11 +5546,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "reminder_tenant_email",
 			"sqlExpression": "reminder_tenant_email",
+			"index": 98,
 			"strField": "reminder_tenant_email",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -5490,11 +5603,12 @@
 			"placeholder": {
 				"English": "Allow multiple selection"
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "rm_rental_rm_type",
 			"sqlExpression": "rm_rental_rm_type",
+			"index": 99,
 			"strField": "rm_rental_rm_type",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -5533,11 +5647,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "rm_builtup",
 			"sqlExpression": "rm_builtup",
+			"index": 100,
 			"strField": "rm_builtup",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -5572,11 +5687,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "rm_builtup_unit",
 			"sqlExpression": "rm_builtup_unit",
+			"index": 101,
 			"strField": "rm_builtup_unit",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -5617,11 +5733,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "rm_size",
 			"sqlExpression": "concat(rm_builtup, ' ', rm_builtup_unit)",
+			"index": 102,
 			"strField": "rm_size",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -5666,6 +5783,7 @@
 		{
 			"name": "namelist_result",
 			"sqlExpression": "namelist_result",
+			"index": 103,
 			"strField": "namelist_result",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -5703,11 +5821,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "form_number",
 			"sqlExpression": "form_number",
+			"index": 104,
 			"strField": "form_number",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -5741,11 +5860,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "ID_Tx",
 			"sqlExpression": "ID_Tx",
+			"index": 105,
 			"strField": "ID_Tx",
 			"type": 200,
 			"viewFormats": [
@@ -5778,11 +5898,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "tenants",
 			"sqlExpression": "tenants",
+			"index": 106,
 			"strField": "tenants",
 			"type": 200,
 			"viewFormats": [
@@ -5815,11 +5936,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "agency_gst_reg",
 			"sqlExpression": "agency_gst_reg",
+			"index": 107,
 			"strField": "agency_gst_reg",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -5861,11 +5983,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "namelist_cust",
 			"sqlExpression": "namelist_cust",
+			"index": 108,
 			"strField": "namelist_cust",
 			"type": 200,
 			"viewFormats": [
@@ -5906,11 +6029,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "alertlist_cust",
 			"sqlExpression": "alertlist_cust",
+			"index": 109,
 			"strField": "alertlist_cust",
 			"type": 200,
 			"viewFormats": [
@@ -5951,11 +6075,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		},
 		{
 			"name": "alertlist_result",
 			"sqlExpression": "alertlist_result",
+			"index": 110,
 			"strField": "alertlist_result",
 			"type": 201,
 			"viewFormats": [
@@ -5995,7 +6120,7 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		}
 	],
 	"warnLeavingEdit": true,
@@ -6038,8 +6163,1208 @@
 			"code": "$pageObject->hideItem(\"doc_upload_section\");\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
 		}
 	],
+	"strOrderBy": "ORDER BY `date` DESC, ID_Tx DESC",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "ID_Tx",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "category",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rental_price",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "salesperson_name",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "commission",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docuserid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "Prop_kind",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cea_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cobroke_comm",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_fee",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cdd_check_result",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cdd_result",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sls_cust",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sls_result",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "pps_cust",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "pps_result",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "representing",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "marketing_rights",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "currency",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "loi_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "ta_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "lease_start_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "lease_duration_no",
+				"type": 200,
+				"size": 5,
+				"scale": 0,
+				"typeName": "varchar(5)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "lease_duration_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "lease_expiry",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sale_price",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "valuation_price",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "option_money",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "otp_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "option_exercise_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "est_completion_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sp_execution_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "TOP",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "built_up",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "land",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tenure",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "condition",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "no_bedrooms",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "no_bathrooms",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "built_up_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "land_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rental_price_type",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "transacted_price",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_amt",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst_payable",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst_inclusive",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_earned",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_gross",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_earned_percent_salesperson",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_earned_agency",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst_agency",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_gross_agency",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_earned_salesperson",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_percent",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "status",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "datesubmit",
+				"type": 135,
+				"size": 0,
+				"scale": 0,
+				"typeName": "datetime",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "datereject",
+				"type": 135,
+				"size": 0,
+				"scale": 0,
+				"typeName": "datetime",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "dateapprove",
+				"type": 135,
+				"size": 0,
+				"scale": 0,
+				"typeName": "datetime",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "status_status",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "salesperson_nric",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "str_filing_date",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remarks",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "salesperson_email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_to_agency",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_nett_salesperson",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_share",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "percent_to_agency",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "client",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_cea",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "management_fee",
+				"type": 14,
+				"size": 16,
+				"scale": 2,
+				"typeName": "decimal(16,2)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "commencement_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "end_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "comm_to_agency1",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sub_category",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "service_commencement",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "service_completion",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "result",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "consultation_fee",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminder_agent",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminder_tenant",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminderdate_agent",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminderdate_tenant",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminder_tenant_email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "client_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "client_id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "client_nric",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rm_rental_rm_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rm_builtup",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rm_builtup_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "namelist_cust",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "namelist_result",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "form_number",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_gst_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tenants",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "alertlist_cust",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "alertlist_result",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cddmeasure_result",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst_rate",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "transactions"
 	},
 	"pages": [
 		{

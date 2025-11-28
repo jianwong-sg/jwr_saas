@@ -1,5 +1,5 @@
 function currencyView(data) {
-    if (data === 0) {
+    if (data == 0) {
         return '$0';
     }
     data = data * 1;
@@ -11,32 +11,34 @@ function customRound(data) {
 }
 
 function refreshTableData() {
-    const externals = $("div#detailPreview15").find('tbody').find('tr').not(':first');
+    let externals = $("div#detailPreview15").find('tbody').find('tr').not(':first');
     for (let i = 0; i < externals.length; i++) {
         externals.eq(i).find('td').eq(3).find('input').eq(1).keyup();
     }
 
-    const partyExternals = $("div#detailPreview17").find('tbody').find('tr').not(':first');
+    let partyExternals = $("div#detailPreview17").find('tbody').find('tr').not(':first');
     for (let i = 0; i < partyExternals.length; i++) {
         partyExternals.eq(i).find('td').eq(3).find('input').eq(1).keyup();
     }
 
-    const internals = $("div#detailPreview16").find('tbody').find('tr').not(':first');	
+    let internals = $("div#detailPreview16").find('tbody').find('tr').not(':first');	
     for (let i = 0; i < internals.length; i++) {
-        internals.eq(i).find('td').eq(3).find('input').eq(1).keyup();
+        internals.eq(i).find('td').eq(3).find('input').eq(0).keyup();
     }
 }
 
+// Updated with dynamic GST rate
 function refreshExternalCoBroker() {
-    const amount = $('#value_comm_amt_1').val() * 1;
-    let earned, gst, gross;
+    var gstrate = parseFloat($("#value_gst_rate_1").val()) || 0;
+    var amount = $('#value_comm_amt_1').val() * 1 || 0;
+    var earned, gst, gross;
 
     if ($('#value_gst_payable_1').prop('checked') && !$('#value_gst_inclusive_1').prop('checked')) {
         earned = amount;
-        gst = customRound(amount * 9 / 100);
+        gst = customRound(amount * gstrate / 100);
         gross = amount + gst;
     } else if ($('#value_gst_payable_1').prop('checked') && $('#value_gst_inclusive_1').prop('checked')) {
-        earned = customRound(amount / 109 * 100);
+        earned = customRound(amount * 100 / (gstrate + 100));
         gst = amount - earned;
         gross = amount;
     } else {
@@ -45,48 +47,47 @@ function refreshExternalCoBroker() {
         gross = amount;
     }
 
-    const externals = $("div#detailPreview15").find('tbody').find('tr').not(':first');
-    let totalComm = 0;
-    let totalGst = $('#value_gst_1').val() * 1;
+    var externals = $("div#detailPreview15").find('tbody').find('tr').not(':first');
+    var totalComm = 0;
+    var totalGst = $('#value_gst_1').val() * 1 || 0;
 
-    for (let i = 0; i < externals.length; i++) {
-        let commVal = externals.eq(i).find('td').eq(3).find('input').eq(0).val();
-        totalComm += commVal * 1;
+    for (var i = 0; i < externals.length; i++) {
+        var comm = externals.eq(i).find('td').eq(3).find('input').eq(0).val() * 1 || 0;
+        totalComm += comm;
 
-        let gstVal = externals.eq(i).find('td').eq(5).find('input').eq(0).val();
-        totalGst -= gstVal * 1;
+        var gstVal = externals.eq(i).find('td').eq(6).find('input').eq(0).val() * 1 || 0;
+        totalGst -= gstVal;
     }
 
-    const partyExternals = $("div#detailPreview17").find('tbody').find('tr').not(':first');
-    for (let i = 0; i < partyExternals.length; i++) {
-        let commVal = partyExternals.eq(i).find('td').eq(3).find('input').eq(0).val();
-        if (commVal !== undefined) {
-            totalComm += commVal * 1;
+    let partyExternals = $("div#detailPreview17").find('tbody').find('tr').not(':first');
+for (let i = 0; i < partyExternals.length; i++) {
+    let comm = partyExternals.eq(i).find('td').eq(3).find('input').eq(0).val() * 1 || 0;
+    totalComm += comm;
 
-            let gstVal = partyExternals.eq(i).find('td').eq(5).find('input').eq(0).val();
-            totalGst -= gstVal * 1;
-        }
-    }
+    let gstVal = partyExternals.eq(i).find('td').eq(6).find('input').eq(0).val() * 1 || 0;
+    totalGst -= gstVal;
+}
 
-    $('#value_comm_earned_agency_1').val(customRound(earned - totalComm));
-    $('#value_gst_agency_1').val(customRound(totalGst));
-    $('#value_comm_gross_agency_1').val(customRound(earned - totalComm + totalGst));
+    $('#value_comm_earned_agency_1').val(customRound(earned - totalComm).toFixed(2));
+    $('#value_gst_agency_1').val(customRound(totalGst).toFixed(2));
+    $('#value_comm_gross_agency_1').val(customRound(earned - totalComm + totalGst).toFixed(2));
 }
 
 function refreshInternalCoBroker() {
+    var gstrate = parseFloat($("#value_gst_rate_1").val()) || 0;
     var amount = $('#value_comm_amt_1').val() * 1;
     var earned;
 
     if ($('#value_gst_payable_1').prop('checked') && !$('#value_gst_inclusive_1').prop('checked')) {
         earned = amount;
     } else if ($('#value_gst_payable_1').prop('checked') && $('#value_gst_inclusive_1').prop('checked')) {
-        earned = customRound(amount / 109 * 100);
+        earned = customRound(amount * 100 / (gstrate + 100));
     } else {
         earned = amount;
     }
 
     var totalComm = $('#value_comm_earned_agency_1').val() * 1;
-    var internals = $("div#detailPreview16").find('tbody').find('tr').not(':first');
+    var internals = $("div#detailPreview16").find('tbody').find('tr').not(':first');	
     var totalInternalEarned = 0;
 
     for (var i = 0; i < internals.length; i++) {
@@ -96,15 +97,16 @@ function refreshInternalCoBroker() {
         totalInternalEarned += internalEarned * 1;
     }
 
-    var agencyShare = $('#value_agency_share_1').val() * 1;
+    var agencyShare = $('#value_agency_share_1').val();
     var salesEarned = totalComm - totalInternalEarned;
-    var salesPercent = (earned ? customRound((salesEarned / earned) * 100) : 0);
+    var salesPercent = customRound((salesEarned / earned) * 100);
     var agencyComm = customRound((salesEarned * agencyShare) / 100);
+    var agencyComm1 = customRound((salesEarned * agencyShare) / 100);
     var salesCommNett = salesEarned - agencyComm;
 
     $('#value_comm_earned_salesperson_1').val(customRound(salesEarned));
     $('#value_comm_earned_percent_salesperson_1').val(customRound(salesPercent));
     $('#value_comm_to_agency_1').val(customRound(agencyComm));
-    $('#value_comm_to_agency1_1').val(customRound(agencyComm));
+    $('#value_comm_to_agency1_1').val(customRound(agencyComm1));
     $('#value_comm_nett_salesperson_1').val(customRound(salesCommNett));
 }

@@ -1585,6 +1585,7 @@
 			"code": "\nif (@$_REQUEST[\"a\"]!=\"search\" && @$_REQUEST[\"a\"]!=\"advsearch\" && @$_REQUEST[\"a\"]!=\"showall\")\n$strWhereClause = whereAdd($strWhereClause,\"category='SALE'\");\n\n/*\n$action = postvalue(\"a\");\n\n    // Only run filter if not in search or show all\n    if ($action != \"search\" && $action != \"advsearch\" && $action != \"showall\") {\n\n        // Build the filter\n        $filter = \"category='SALE'\";\n\n        // Apply filter differently for Guests to bypass security clause conflicts\n        if (!isLogged()) {\n            if (stripos($strSQL, \"WHERE\") !== false) {\n                $strSQL .= \" AND \" . $filter;\n            } else {\n                $strSQL .= \" WHERE \" . $filter;\n            }\n        } else {\n            // For logged in users, normal way\n            $strWhereClause = whereAdd($strWhereClause, $filter);\n        }\n    }\n\n*/\n"
 		}
 	],
+	"strOrderBy": "ORDER BY\n\t`date` DESC,\n\tid DESC",
 	"sortByFields": {
 		"sortOrder": []
 	},
@@ -2749,6 +2750,28 @@
 			},
 			{
 				"name": "prop_id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cddmeasure_result",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gst_rate",
 				"type": 3,
 				"size": 0,
 				"scale": 0,
