@@ -4,6 +4,7 @@
 	"originalTable": "default_pg",
 	"name": "default_pg",
 	"shortTableName": "default_pg",
+	"dbType": 0,
 	"searchSuggest": false,
 	"caseSensitiveSearch": "",
 	"highlightSearchResults": false,
@@ -32,6 +33,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -84,6 +86,7 @@
 		{
 			"name": "page",
 			"sqlExpression": "page",
+			"index": 2,
 			"strField": "page",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -134,6 +137,37 @@
 	"afterAddDetail": 149,
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "page",
+				"type": 200,
+				"size": 1000,
+				"scale": 0,
+				"typeName": "varchar(1000)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [],
+		"uniqueFields": [],
+		"name": "default_pg"
 	},
 	"pages": [
 		{

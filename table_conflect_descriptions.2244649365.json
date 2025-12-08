@@ -4,6 +4,7 @@
 	"originalTable": "conflect_descriptions",
 	"name": "conflect_descriptions",
 	"shortTableName": "conflect_descriptions",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "user_id",
@@ -33,8 +34,9 @@
 		{
 			"name": "descriptions",
 			"sqlExpression": "descriptions",
+			"index": 1,
 			"strField": "descriptions",
-			"type": 200,
+			"type": 201,
 			"viewFormats": [
 				{
 					"numberFractionalDigits": 0,
@@ -77,6 +79,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 2,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -139,6 +142,39 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "descriptions",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "conflect_descriptions"
 	},
 	"pages": [
 		{

@@ -7,7 +7,7 @@
 			"asc": false
 		}
 	],
-	"sql": "SELECT\n\teatuser_id,\n\tusername,\n\tpassword,\n\tuser_status,\n\temail,\n\tfull_name,\n\tbiz_name,\n\tmobile,\n\tnric,\n\tuser_group,\n\tsignup_date,\n\tcompany_dbname,\n\tactive,\n\tbank_ac_no,\n\tbank_name,\n\tdate_of_birth,\n\tentry_year,\n\thome_address,\n\thome_tel,\n\tagency,\n\tcut_to_agency,\n\tsalesperson_share,\n\tapikey,\n\tagency_cea_reg,\n\tdestination,\n\tagency_gst_reg\nFROM\n\teat_users\nORDER BY\n\teatuser_id DESC\n",
+	"sql": "SELECT\n\teatuser_id,\n\tusername,\n    password,\n\tuser_status,\n\temail,\n\tfull_name,\n\tbiz_name,\n\tmobile,\n\tnric,\n\tuser_group,\n\tsignup_date,\n\tcompany_dbname,\n\tactive,\n\tbank_ac_no,\n\tbank_name,\n\tdate_of_birth,\n\tentry_year,\n\thome_address,\n\thome_tel,\n\tagency,\n\tcut_to_agency,\n\tsalesperson_share,\n\tapikey,\n\tagency_cea_reg,\n\tdestination,\n\tagency_gst_reg\nFROM\n\teat_users\nORDER BY\n\teatuser_id DESC\n",
 	"connId": "jwresourjweat1091saasatjwrealt",
 	"originalTable": "eat_users",
 	"name": "eat_users",

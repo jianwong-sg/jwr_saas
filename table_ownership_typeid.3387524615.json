@@ -4,6 +4,7 @@
 	"originalTable": "ownership_typeid",
 	"name": "ownership_typeid",
 	"shortTableName": "ownership_typeid",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "user_id",
@@ -33,6 +34,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -85,6 +87,7 @@
 		{
 			"name": "id_type",
 			"sqlExpression": "id_type",
+			"index": 2,
 			"strField": "id_type",
 			"type": 200,
 			"viewFormats": [
@@ -127,6 +130,7 @@
 		{
 			"name": "ownership_type",
 			"sqlExpression": "ownership_type",
+			"index": 3,
 			"strField": "ownership_type",
 			"type": 200,
 			"viewFormats": [
@@ -189,6 +193,50 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "ownership_type",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_type",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "ownership_typeid"
 	},
 	"pages": [
 		{

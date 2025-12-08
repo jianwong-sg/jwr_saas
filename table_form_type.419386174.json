@@ -4,6 +4,7 @@
 	"originalTable": "form_type",
 	"name": "form_type",
 	"shortTableName": "form_type",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "user_id",
@@ -32,6 +33,7 @@
 		{
 			"name": "form_id",
 			"sqlExpression": "form_id",
+			"index": 1,
 			"strField": "form_id",
 			"type": 3,
 			"viewFormats": [
@@ -82,6 +84,7 @@
 		{
 			"name": "form_title",
 			"sqlExpression": "form_title",
+			"index": 2,
 			"strField": "form_title",
 			"type": 200,
 			"viewFormats": [
@@ -132,6 +135,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 3,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -198,6 +202,50 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "form_title",
+				"type": 200,
+				"size": 300,
+				"scale": 0,
+				"typeName": "varchar(300)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "form_id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "form_type"
 	},
 	"pages": [
 		{

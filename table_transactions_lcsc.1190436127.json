@@ -6121,6 +6121,23 @@
 				"English": ""
 			},
 			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
+		},
+		{
+			"name": "gst_rate",
+			"sqlExpression": "gst_rate",
+			"index": 111,
+			"strField": "gst_rate",
+			"type": 3,
+			"viewFormats": [
+				{}
+			],
+			"editFormats": [
+				{}
+			],
+			"label": {
+				"English": "Gst Rate"
+			},
+			"tableName": "jwresour_jwr_saas_db_jwrealty.transactions"
 		}
 	],
 	"warnLeavingEdit": true,
@@ -6163,7 +6180,7 @@
 			"code": "$pageObject->hideItem(\"doc_upload_section\");\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
 		}
 	],
-	"strOrderBy": "ORDER BY `date` DESC, ID_Tx DESC",
+	"strOrderBy": "ORDER BY\n\t`date` DESC,\n\tID_Tx DESC",
 	"sortByFields": {
 		"sortOrder": []
 	},
@@ -16349,7 +16366,9 @@
 					"cells": {
 						"c1": {
 							"model": "c1",
-							"items": [],
+							"items": [
+								"search_panel"
+							],
 							"customCSS": "/* Put  your custom CSS code here */\n\n\n"
 						}
 					},
@@ -16407,6 +16426,9 @@
 								},
 								{
 									"cell": "headcell_field1"
+								},
+								{
+									"cell": "headcell_field"
 								}
 							]
 						},
@@ -16433,6 +16455,9 @@
 								},
 								{
 									"cell": "cell_field1"
+								},
+								{
+									"cell": "cell_field"
 								}
 							]
 						},
@@ -16459,6 +16484,9 @@
 								},
 								{
 									"cell": "footcell_field1"
+								},
+								{
+									"cell": "footcell_field"
 								}
 							]
 						}
@@ -16620,6 +16648,25 @@
 							"items": [],
 							"columnName": "field",
 							"field": "date"
+						},
+						"headcell_field": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label2"
+							],
+							"field": "gst_rate"
+						},
+						"cell_field": {
+							"model": "cell_field",
+							"items": [
+								"grid_field4"
+							],
+							"field": "gst_rate"
+						},
+						"footcell_field": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "gst_rate"
 						}
 					},
 					"deferredItems": [],
@@ -16815,7 +16862,10 @@
 				},
 				"list_options": {
 					"type": "list_options",
-					"items": []
+					"items": [
+						"show_search_panel",
+						"hide_search_panel"
+					]
 				},
 				"grid_field5": {
 					"field": "date",
@@ -16826,6 +16876,30 @@
 				"grid_field_label3": {
 					"type": "grid_field_label",
 					"field": "date"
+				},
+				"grid_field4": {
+					"field": "gst_rate",
+					"type": "grid_field"
+				},
+				"grid_field_label2": {
+					"type": "grid_field_label",
+					"field": "gst_rate"
+				},
+				"search_panel": {
+					"type": "search_panel",
+					"items": [
+						"search_panel_field"
+					]
+				},
+				"show_search_panel": {
+					"type": "show_search_panel"
+				},
+				"hide_search_panel": {
+					"type": "hide_search_panel"
+				},
+				"search_panel_field": {
+					"field": "gst_rate",
+					"type": "search_panel_field"
 				}
 			},
 			"spreadsheetGrid": false,
@@ -17034,7 +17108,8 @@
 								"simple_grid_field101",
 								"simple_grid_field40",
 								"simple_grid_field98",
-								"simple_grid_field102"
+								"simple_grid_field102",
+								"simple_grid_field103"
 							]
 						}
 					},
@@ -17460,6 +17535,10 @@
 				"simple_grid_field102": {
 					"field": "alertlist_result",
 					"type": "simple_grid_field"
+				},
+				"simple_grid_field103": {
+					"field": "gst_rate",
+					"type": "simple_grid_field"
 				}
 			},
 			"version": 14,
@@ -17662,7 +17741,8 @@
 								"simple_grid_field101",
 								"simple_grid_field40",
 								"simple_grid_field98",
-								"simple_grid_field102"
+								"simple_grid_field102",
+								"simple_grid_field103"
 							]
 						}
 					},
@@ -18085,6 +18165,10 @@
 				"simple_grid_field102": {
 					"field": "alertlist_result",
 					"type": "simple_grid_field"
+				},
+				"simple_grid_field103": {
+					"field": "gst_rate",
+					"type": "simple_grid_field"
 				}
 			},
 			"version": 14,
@@ -18207,6 +18291,9 @@
 								},
 								{
 									"cell": "headcell_field8"
+								},
+								{
+									"cell": "headcell_field3"
 								}
 							]
 						},
@@ -18242,6 +18329,9 @@
 								},
 								{
 									"cell": "cell_field8"
+								},
+								{
+									"cell": "cell_field3"
 								}
 							]
 						},
@@ -18249,7 +18339,7 @@
 							"cells": [
 								{
 									"cell": "cell_dpreview",
-									"colspan": 10
+									"colspan": 11
 								}
 							],
 							"section": "body"
@@ -18286,6 +18376,9 @@
 								},
 								{
 									"cell": "footcell_field8"
+								},
+								{
+									"cell": "footcell_field3"
 								}
 							]
 						}
@@ -18522,6 +18615,25 @@
 							"items": [],
 							"field": "prop_address",
 							"columnName": "field"
+						},
+						"headcell_field3": {
+							"model": "headcell_field",
+							"items": [
+								"grid_field_label1"
+							],
+							"field": "gst_rate"
+						},
+						"cell_field3": {
+							"model": "cell_field",
+							"items": [
+								"grid_field2"
+							],
+							"field": "gst_rate"
+						},
+						"footcell_field3": {
+							"model": "footcell_field",
+							"items": [],
+							"field": "gst_rate"
 						}
 					},
 					"deferredItems": [],
@@ -18629,6 +18741,14 @@
 				"grid_field_label2": {
 					"type": "grid_field_label",
 					"field": "tenants"
+				},
+				"grid_field2": {
+					"field": "gst_rate",
+					"type": "grid_field"
+				},
+				"grid_field_label1": {
+					"type": "grid_field_label",
+					"field": "gst_rate"
 				}
 			},
 			"version": 14,
@@ -18738,7 +18858,8 @@
 							"items": [
 								"integrated_search_field",
 								"integrated_search_field1",
-								"integrated_search_field2"
+								"integrated_search_field2",
+								"integrated_search_field3"
 							]
 						}
 					},
@@ -18779,6 +18900,11 @@
 					"type": "integrated_search_field",
 					"orientation": 0,
 					"required": false
+				},
+				"integrated_search_field3": {
+					"field": "gst_rate",
+					"type": "integrated_search_field",
+					"orientation": 0
 				}
 			},
 			"version": 14,
@@ -18984,7 +19110,8 @@
 						"c7": {
 							"model": "c3",
 							"items": [
-								"snippet1"
+								"snippet1",
+								"integrated_edit_field"
 							]
 						},
 						"c8": {
@@ -19707,6 +19834,11 @@
 					"location": "section2",
 					"bsStyle": "default",
 					"panelType": 3
+				},
+				"integrated_edit_field": {
+					"field": "gst_rate",
+					"type": "integrated_edit_field",
+					"orientation": 1
 				}
 			},
 			"version": 14,

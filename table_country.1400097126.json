@@ -2,8 +2,9 @@
 	"orderInfo": [
 		{
 			"index": 1,
-			"asc": true,
-			"field": "id"
+			"field": "id",
+			"expr": "id",
+			"asc": true
 		}
 	],
 	"sql": "SELECT\nid,\ncountry\nFROM country\nORDER BY id",
@@ -11,6 +12,7 @@
 	"originalTable": "country",
 	"name": "country",
 	"shortTableName": "country",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "user_id",
@@ -40,6 +42,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -91,6 +94,7 @@
 		{
 			"name": "country",
 			"sqlExpression": "country",
+			"index": 2,
 			"strField": "country",
 			"type": 200,
 			"viewFormats": [
@@ -155,8 +159,42 @@
 			"code": "$values[\"country\"]=strtoupper($values[\"country\"]);\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets.\n\nreturn true;"
 		}
 	],
+	"strOrderBy": "ORDER BY id",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "country",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "country"
 	},
 	"pages": [
 		{

@@ -2,21 +2,24 @@
 	"orderInfo": [
 		{
 			"index": 2,
-			"asc": true,
-			"field": "prop_address"
+			"field": "prop_address",
+			"expr": "prop_address",
+			"asc": true
 		},
 		{
-			"index": 16,
-			"asc": true,
-			"field": "title"
+			"index": 15,
+			"field": "title",
+			"expr": "title",
+			"asc": true
 		}
 	],
-	"sql": "SELECT\nid,\nprop_address,\nland_size,\nbuiltup,\ntenure,\nyear_built,\n`TOP`,\ntypes,\nkind,\nhdb_town,\nhdb_scheme,\nagent,\nland_size_unit,\nbuiltup_unit,\nid_rental,\ntitle,\nowner,\ntenant\nFROM properties\nORDER BY prop_address, title",
+	"sql": "SELECT\n\tid,\n\tprop_address,\n\tland_size,\n\tbuiltup,\n\ttenure,\n\tyear_built,\n\t`TOP`,\n\ttypes,\n\tkind,\n\thdb_town,\n\thdb_scheme,\n\tland_size_unit,\n\tbuiltup_unit,\n\tid_rental,\n\ttitle,\n\towner,\n\ttenant\nFROM\n\tproperties\nORDER BY\n\tprop_address,\n\ttitle\n",
 	"type": 1,
 	"connId": "Tables",
 	"originalTable": "properties",
 	"name": "rental_main_properties",
 	"shortTableName": "rental_main_properties",
+	"dbType": 0,
 	"hideFilterUntilSearch": true,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
@@ -66,6 +69,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -120,6 +124,7 @@
 		{
 			"name": "prop_address",
 			"sqlExpression": "prop_address",
+			"index": 2,
 			"strField": "prop_address",
 			"type": 201,
 			"viewFormats": [
@@ -173,6 +178,7 @@
 		{
 			"name": "land_size",
 			"sqlExpression": "land_size",
+			"index": 3,
 			"strField": "land_size",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -231,6 +237,7 @@
 		{
 			"name": "builtup",
 			"sqlExpression": "builtup",
+			"index": 4,
 			"strField": "builtup",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -289,6 +296,7 @@
 		{
 			"name": "tenure",
 			"sqlExpression": "tenure",
+			"index": 5,
 			"strField": "tenure",
 			"type": 200,
 			"viewFormats": [
@@ -362,6 +370,7 @@
 		{
 			"name": "year_built",
 			"sqlExpression": "year_built",
+			"index": 6,
 			"strField": "year_built",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -421,6 +430,7 @@
 		{
 			"name": "TOP",
 			"sqlExpression": "`TOP`",
+			"index": 7,
 			"strField": "TOP",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -479,6 +489,7 @@
 		{
 			"name": "types",
 			"sqlExpression": "types",
+			"index": 8,
 			"strField": "types",
 			"type": 200,
 			"viewFormats": [
@@ -544,6 +555,7 @@
 		{
 			"name": "kind",
 			"sqlExpression": "kind",
+			"index": 9,
 			"strField": "kind",
 			"type": 200,
 			"viewFormats": [
@@ -609,6 +621,7 @@
 		{
 			"name": "hdb_town",
 			"sqlExpression": "hdb_town",
+			"index": 10,
 			"strField": "hdb_town",
 			"type": 200,
 			"viewFormats": [
@@ -675,6 +688,7 @@
 		{
 			"name": "hdb_scheme",
 			"sqlExpression": "hdb_scheme",
+			"index": 11,
 			"strField": "hdb_scheme",
 			"type": 200,
 			"viewFormats": [
@@ -738,50 +752,9 @@
 			"tableName": "properties"
 		},
 		{
-			"name": "agent",
-			"sqlExpression": "agent",
-			"strField": "agent",
-			"type": 200,
-			"viewFormats": [
-				{
-					"imageWidth": 457,
-					"imageHeight": 0,
-					"imageThumbWidth": 72,
-					"imageThumbHeight": 72,
-					"videoRewindEnabled": false
-				}
-			],
-			"editFormats": [
-				{
-					"defaultValue": "$_SESSION[\"FullName\"]",
-					"textboxMaxLenth": 50,
-					"textHTML5Input": "0",
-					"fileThumbnailSize": 150,
-					"fileMaxNumber": 1,
-					"fileThumbnailField": "th",
-					"dateFirstYearFactor": 30,
-					"dateLastYearFactor": 1,
-					"timeConvention": 1
-				}
-			],
-			"filterFormat": {
-				"format": "Values list"
-			},
-			"defaultSearchOption": "Contains",
-			"label": {
-				"English": "Salesperson"
-			},
-			"tooltip": {
-				"English": ""
-			},
-			"placeholder": {
-				"English": ""
-			},
-			"tableName": "properties"
-		},
-		{
 			"name": "land_size_unit",
 			"sqlExpression": "land_size_unit",
+			"index": 12,
 			"strField": "land_size_unit",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -843,6 +816,7 @@
 		{
 			"name": "builtup_unit",
 			"sqlExpression": "builtup_unit",
+			"index": 13,
 			"strField": "builtup_unit",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -904,6 +878,7 @@
 		{
 			"name": "id_rental",
 			"sqlExpression": "id_rental",
+			"index": 14,
 			"strField": "id_rental",
 			"type": 3,
 			"viewFormats": [
@@ -953,6 +928,7 @@
 		{
 			"name": "title",
 			"sqlExpression": "title",
+			"index": 15,
 			"strField": "title",
 			"type": 200,
 			"viewFormats": [
@@ -1002,6 +978,7 @@
 		{
 			"name": "owner",
 			"sqlExpression": "owner",
+			"index": 16,
 			"strField": "owner",
 			"type": 200,
 			"viewFormats": [
@@ -1051,6 +1028,7 @@
 		{
 			"name": "tenant",
 			"sqlExpression": "tenant",
+			"index": 17,
 			"strField": "tenant",
 			"type": 200,
 			"viewFormats": [
@@ -1121,11 +1099,287 @@
 		{
 			"eventId": "EVENT_BEFOREPROCESS_EDIT",
 			"pageType": "edit",
-			"code": "global $strWhereClause,\n$strTableName,$conn;\n$str = \"SELECT *\nFROM eat_users WHERE username='\".$_SESSION[\"UserID\"].\"'\";\n$rs = db_query($str,$conn);\n$data = db_fetch_array($rs);\nif ($data[\"UserID\"]==$_SESSION[\"UserID\"])\necho \"\";\n$_SESSION[\"full_name\"] = $data[\"full_name\"];\n$_SESSION[\"cea_reg\"] = $data[\"username\"];\n$_SESSION[\"nric\"] = $data[\"nric\"];\n$_SESSION[\"email\"] = $data[\"email\"];\n$_SESSION[\"agency\"] = $data[\"agency\"];\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
+			"code": "global $strWhereClause,\n$strTableName,$conn;\n$str = \"SELECT *\nFROM jwresour_jwr_saas.eat_users WHERE username='\".$_SESSION[\"UserID\"].\"'\";\n$rs = db_query($str,$conn);\n$data = db_fetch_array($rs);\nif ($data[\"UserID\"]==$_SESSION[\"UserID\"])\necho \"\";\n$_SESSION[\"full_name\"] = $data[\"full_name\"];\n$_SESSION[\"cea_reg\"] = $data[\"username\"];\n$_SESSION[\"nric\"] = $data[\"nric\"];\n$_SESSION[\"email\"] = $data[\"email\"];\n$_SESSION[\"agency\"] = $data[\"agency\"];\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
 		}
 	],
+	"strOrderBy": "ORDER BY\n\tprop_address,\n\ttitle",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_address",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "land_size",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "builtup",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tenure",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "year_built",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "TOP",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docuserid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "types",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "kind",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "hdb_town",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "hdb_scheme",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cusid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agentid",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "floor_plan",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "photos",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "land_size_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "builtup_unit",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_rental",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "title",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "owner",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tenant",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "properties"
 	},
 	"pages": [
 		{
@@ -1360,20 +1614,6 @@
 								},
 								{
 									"cell": "c39"
-								}
-							],
-							"section": ""
-						},
-						{
-							"cells": [
-								{
-									"cell": "c40"
-								},
-								{
-									"cell": "c41"
-								},
-								{
-									"cell": "c42"
 								}
 							],
 							"section": ""
@@ -1612,27 +1852,6 @@
 								"integrated_edit_field39"
 							],
 							"field": "TOP"
-						},
-						"c40": {
-							"model": "c4",
-							"items": [
-								"integrated_edit_field40"
-							],
-							"field": "agent"
-						},
-						"c41": {
-							"model": "c2",
-							"items": [
-								"integrated_edit_field13"
-							],
-							"field": "agent"
-						},
-						"c42": {
-							"model": "c2",
-							"items": [
-								"integrated_edit_field41"
-							],
-							"field": "agent"
 						}
 					},
 					"deferredItems": [],
@@ -1710,10 +1929,6 @@
 				},
 				"integrated_edit_field12": {
 					"field": "TOP",
-					"type": "edit_field"
-				},
-				"integrated_edit_field13": {
-					"field": "agent",
 					"type": "edit_field"
 				},
 				"integrated_edit_field14": {
@@ -1803,14 +2018,6 @@
 				"integrated_edit_field39": {
 					"type": "edit_field_tooltip",
 					"field": "TOP"
-				},
-				"integrated_edit_field40": {
-					"type": "edit_field_label",
-					"field": "agent"
-				},
-				"integrated_edit_field41": {
-					"type": "edit_field_tooltip",
-					"field": "agent"
 				}
 			},
 			"version": 14,
@@ -2068,20 +2275,6 @@
 								}
 							],
 							"section": ""
-						},
-						{
-							"cells": [
-								{
-									"cell": "c40"
-								},
-								{
-									"cell": "c41"
-								},
-								{
-									"cell": "c42"
-								}
-							],
-							"section": ""
 						}
 					],
 					"cells": {
@@ -2317,27 +2510,6 @@
 								"integrated_edit_field39"
 							],
 							"field": "TOP"
-						},
-						"c40": {
-							"model": "c4",
-							"items": [
-								"integrated_edit_field40"
-							],
-							"field": "agent"
-						},
-						"c41": {
-							"model": "c2",
-							"items": [
-								"integrated_edit_field13"
-							],
-							"field": "agent"
-						},
-						"c42": {
-							"model": "c2",
-							"items": [
-								"integrated_edit_field41"
-							],
-							"field": "agent"
 						}
 					},
 					"deferredItems": [],
@@ -2433,11 +2605,6 @@
 					"field": "TOP",
 					"type": "edit_field"
 				},
-				"integrated_edit_field13": {
-					"field": "agent",
-					"type": "edit_field",
-					"updateOnEdit": false
-				},
 				"integrated_edit_field14": {
 					"type": "edit_field_label",
 					"field": "title"
@@ -2525,14 +2692,6 @@
 				"integrated_edit_field39": {
 					"type": "edit_field_tooltip",
 					"field": "TOP"
-				},
-				"integrated_edit_field40": {
-					"type": "edit_field_label",
-					"field": "agent"
-				},
-				"integrated_edit_field41": {
-					"type": "edit_field_tooltip",
-					"field": "agent"
 				}
 			},
 			"version": 14,
@@ -2625,7 +2784,6 @@
 								"export_field10",
 								"export_field11",
 								"export_field12",
-								"export_field13",
 								"export_field14",
 								"export_field15",
 								"export_field16",
@@ -2728,10 +2886,6 @@
 				},
 				"export_field12": {
 					"field": "TOP",
-					"type": "export_field"
-				},
-				"export_field13": {
-					"field": "agent",
 					"type": "export_field"
 				},
 				"export_field14": {
@@ -2842,7 +2996,6 @@
 								"import_field7",
 								"import_field8",
 								"import_field9",
-								"import_field10",
 								"import_field11",
 								"import_field12",
 								"import_field13",
@@ -2899,10 +3052,6 @@
 				},
 				"import_field9": {
 					"field": "hdb_scheme",
-					"type": "import_field"
-				},
-				"import_field10": {
-					"field": "agent",
 					"type": "import_field"
 				},
 				"import_field11": {
@@ -3134,8 +3283,7 @@
 								"simple_grid_field",
 								"simple_grid_field1",
 								"simple_grid_field2",
-								"simple_grid_field3",
-								"simple_grid_field4"
+								"simple_grid_field3"
 							]
 						}
 					},
@@ -3198,7 +3346,6 @@
 					"type": "print_panel",
 					"items": [
 						"print_scope",
-						"print_details",
 						"print_records",
 						"print_button"
 					]
@@ -3250,12 +3397,6 @@
 					"showCount": true,
 					"hideIfNone": false
 				},
-				"print_details": {
-					"type": "print_details",
-					"tables": {
-						"1652199774": true
-					}
-				},
 				"master_info": {
 					"type": "master_info",
 					"tables": {
@@ -3291,13 +3432,6 @@
 					"type": "simple_grid_field",
 					"inlineAdd": false,
 					"inlineEdit": false
-				},
-				"simple_grid_field4": {
-					"field": "agent",
-					"type": "simple_grid_field",
-					"inlineAdd": false,
-					"inlineEdit": false,
-					"totals": ""
 				},
 				"username_button": {
 					"type": "username_button",
@@ -3424,7 +3558,20 @@
 								"simple_grid_field",
 								"simple_grid_field1",
 								"simple_grid_field2",
-								"simple_grid_field3"
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field8",
+								"simple_grid_field9",
+								"simple_grid_field10",
+								"simple_grid_field11",
+								"simple_grid_field12",
+								"simple_grid_field13",
+								"simple_grid_field14",
+								"simple_grid_field15",
+								"simple_grid_field16"
 							]
 						}
 					},
@@ -3453,6 +3600,58 @@
 				},
 				"simple_grid_field3": {
 					"field": "kind",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "land_size",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "builtup",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "tenure",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "year_built",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "TOP",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "hdb_town",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field11": {
+					"field": "hdb_scheme",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field12": {
+					"field": "land_size_unit",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field13": {
+					"field": "builtup_unit",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field14": {
+					"field": "id_rental",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field15": {
+					"field": "owner",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field16": {
+					"field": "tenant",
 					"type": "simple_grid_field"
 				}
 			},
@@ -3557,7 +3756,20 @@
 								"simple_grid_field",
 								"simple_grid_field1",
 								"simple_grid_field2",
-								"simple_grid_field3"
+								"simple_grid_field3",
+								"simple_grid_field4",
+								"simple_grid_field5",
+								"simple_grid_field6",
+								"simple_grid_field7",
+								"simple_grid_field8",
+								"simple_grid_field9",
+								"simple_grid_field10",
+								"simple_grid_field11",
+								"simple_grid_field12",
+								"simple_grid_field13",
+								"simple_grid_field14",
+								"simple_grid_field15",
+								"simple_grid_field16"
 							]
 						}
 					},
@@ -3583,6 +3795,58 @@
 				},
 				"simple_grid_field3": {
 					"field": "kind",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field4": {
+					"field": "id",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field5": {
+					"field": "land_size",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field6": {
+					"field": "builtup",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field7": {
+					"field": "tenure",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field8": {
+					"field": "year_built",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field9": {
+					"field": "TOP",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field10": {
+					"field": "hdb_town",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field11": {
+					"field": "hdb_scheme",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field12": {
+					"field": "land_size_unit",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field13": {
+					"field": "builtup_unit",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field14": {
+					"field": "id_rental",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field15": {
+					"field": "owner",
+					"type": "simple_grid_field"
+				},
+				"simple_grid_field16": {
+					"field": "tenant",
 					"type": "simple_grid_field"
 				}
 			},
@@ -3695,23 +3959,9 @@
 								}
 							],
 							"section": ""
-						},
-						{
-							"cells": [
-								{
-									"cell": "c2"
-								}
-							],
-							"section": ""
 						}
 					],
 					"cells": {
-						"c2": {
-							"model": "c2",
-							"items": [
-								"details_preview"
-							]
-						},
 						"c1": {
 							"model": "c1",
 							"items": [
@@ -3727,8 +3977,7 @@
 								"simple_grid_field9",
 								"simple_grid_field10",
 								"simple_grid_field11",
-								"simple_grid_field12",
-								"simple_grid_field13"
+								"simple_grid_field12"
 							]
 						}
 					},
@@ -3745,12 +3994,6 @@
 				},
 				"print_pages": {
 					"type": "print_pages"
-				},
-				"details_preview": {
-					"type": "details_preview",
-					"table": 1652199774,
-					"items": [],
-					"popup": false
 				},
 				"master_info": {
 					"type": "master_info",
@@ -3809,11 +4052,6 @@
 				"simple_grid_field12": {
 					"field": "TOP",
 					"type": "simple_grid_field"
-				},
-				"simple_grid_field13": {
-					"field": "agent",
-					"type": "simple_grid_field",
-					"totals": ""
 				}
 			},
 			"version": 14,
@@ -3929,8 +4167,7 @@
 								"integrated_search_field6",
 								"integrated_search_field7",
 								"integrated_search_field8",
-								"integrated_search_field9",
-								"integrated_search_field10"
+								"integrated_search_field9"
 							]
 						}
 					},
@@ -4010,12 +4247,6 @@
 				},
 				"integrated_search_field9": {
 					"field": "tenure",
-					"type": "integrated_search_field",
-					"orientation": 0,
-					"required": false
-				},
-				"integrated_search_field10": {
-					"field": "agent",
 					"type": "integrated_search_field",
 					"orientation": 0,
 					"required": false
@@ -4147,8 +4378,7 @@
 								"integrated_edit_field9",
 								"integrated_edit_field10",
 								"integrated_edit_field11",
-								"integrated_edit_field12",
-								"integrated_edit_field13"
+								"integrated_edit_field12"
 							]
 						}
 					},
@@ -4251,11 +4481,6 @@
 				},
 				"integrated_edit_field12": {
 					"field": "TOP",
-					"type": "integrated_edit_field",
-					"orientation": 0
-				},
-				"integrated_edit_field13": {
-					"field": "agent",
 					"type": "integrated_edit_field",
 					"orientation": 0
 				}

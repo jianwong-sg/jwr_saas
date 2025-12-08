@@ -4,6 +4,7 @@
 	"originalTable": "rental_main_detail_occupier",
 	"name": "rental_main_detail_occupier",
 	"shortTableName": "rental_main_detail_occupier",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "active",
@@ -44,6 +45,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -95,6 +97,7 @@
 		{
 			"name": "id_detail",
 			"sqlExpression": "id_detail",
+			"index": 2,
 			"strField": "id_detail",
 			"type": 3,
 			"viewFormats": [
@@ -144,6 +147,7 @@
 		{
 			"name": "occupier_name",
 			"sqlExpression": "occupier_name",
+			"index": 3,
 			"strField": "occupier_name",
 			"type": 201,
 			"viewFormats": [
@@ -198,6 +202,7 @@
 		{
 			"name": "occupier_id",
 			"sqlExpression": "occupier_id",
+			"index": 4,
 			"strField": "occupier_id",
 			"type": 200,
 			"separateEditViewFormats": true,
@@ -324,6 +329,7 @@
 		{
 			"name": "occupier_occupation",
 			"sqlExpression": "occupier_occupation",
+			"index": 5,
 			"strField": "occupier_occupation",
 			"type": 200,
 			"viewFormats": [
@@ -379,6 +385,7 @@
 		{
 			"name": "file_upload",
 			"sqlExpression": "file_upload",
+			"index": 6,
 			"strField": "file_upload",
 			"type": 201,
 			"viewFormats": [
@@ -438,6 +445,7 @@
 		{
 			"name": "occupier_relationship",
 			"sqlExpression": "occupier_relationship",
+			"index": 7,
 			"strField": "occupier_relationship",
 			"type": 200,
 			"viewFormats": [
@@ -494,6 +502,7 @@
 		{
 			"name": "occupier_nationality",
 			"sqlExpression": "occupier_nationality",
+			"index": 8,
 			"strField": "occupier_nationality",
 			"type": 200,
 			"viewFormats": [
@@ -542,6 +551,7 @@
 		{
 			"name": "occupier_gender",
 			"sqlExpression": "occupier_gender",
+			"index": 9,
 			"strField": "occupier_gender",
 			"type": 200,
 			"viewFormats": [
@@ -602,6 +612,7 @@
 		{
 			"name": "updatedate",
 			"sqlExpression": "updatedate",
+			"index": 10,
 			"strField": "updatedate",
 			"type": 7,
 			"separateEditViewFormats": true,
@@ -714,6 +725,127 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_detail",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "occupier_name",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "occupier_id",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "occupier_occupation",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "occupier_relationship",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "file_upload",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "occupier_nationality",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "occupier_gender",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "updatedate",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "rental_main_detail_occupier"
 	},
 	"pages": [
 		{

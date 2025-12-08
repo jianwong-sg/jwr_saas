@@ -2,8 +2,9 @@
 	"orderInfo": [
 		{
 			"index": 2,
-			"asc": true,
-			"field": "hdb_scheme"
+			"field": "hdb_scheme",
+			"expr": "hdb_scheme",
+			"asc": true
 		}
 	],
 	"sql": "SELECT\nid,\nhdb_scheme\nFROM hdb_scheme\nORDER BY hdb_scheme",
@@ -11,6 +12,7 @@
 	"originalTable": "hdb_scheme",
 	"name": "hdb_scheme",
 	"shortTableName": "hdb_scheme1",
+	"dbType": 0,
 	"searchSuggest": false,
 	"caseSensitiveSearch": "",
 	"highlightSearchResults": false,
@@ -45,6 +47,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -96,6 +99,7 @@
 		{
 			"name": "hdb_scheme",
 			"sqlExpression": "hdb_scheme",
+			"index": 2,
 			"strField": "hdb_scheme",
 			"type": 200,
 			"viewFormats": [
@@ -161,8 +165,42 @@
 			"code": "$values[\"hdb_scheme\"]=strtoupper($values[\"hdb_scheme\"]);\n\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets.\n\nreturn true;"
 		}
 	],
+	"strOrderBy": "ORDER BY hdb_scheme",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "hdb_scheme",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "hdb_scheme"
 	},
 	"pages": [
 		{

@@ -732,8 +732,8 @@
 				"gid": 3522919833
 			},
 			{
-				"x": 791,
-				"y": 1282,
+				"x": 866,
+				"y": 1268,
 				"width": 206,
 				"height": 129,
 				"gid": 3828405108
@@ -8050,12 +8050,12 @@
 	},
 	"ftpLocations": [
 		{
-			"id": "ftploc",
-			"name": "FTP on jwresour@ftp://200.69.20.139:21",
+			"id": "ftploc6",
+			"name": "Jwr_saas_v11",
 			"ftp": {
 				"username": "jwresour",
 				"password": "",
-				"host": "200.69.20.139",
+				"host": "jwresources.sg",
 				"port": 21,
 				"pathname": "/jwrealty.sg/jwr_saas_v11",
 				"passive": true,
@@ -8077,7 +8077,7 @@
 			"url": "https://jwrealty.sg/jwr_saas_v11"
 		}
 	],
-	"lastFtpLocation": "ftploc",
+	"lastFtpLocation": "ftploc6",
 	"compressJs": false,
 	"fullBuild": false,
 	"visualStudioVersion": 10,

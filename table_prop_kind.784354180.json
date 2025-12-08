@@ -4,6 +4,7 @@
 	"originalTable": "prop_kind",
 	"name": "prop_kind",
 	"shortTableName": "prop_kind",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"highlightSearchResults": false,
 	"tableOwnerIdField": "propkindid",
@@ -37,6 +38,7 @@
 		{
 			"name": "property_kind",
 			"sqlExpression": "property_kind",
+			"index": 1,
 			"strField": "property_kind",
 			"type": 200,
 			"viewFormats": [
@@ -86,6 +88,7 @@
 		{
 			"name": "property_type",
 			"sqlExpression": "property_type",
+			"index": 2,
 			"strField": "property_type",
 			"type": 200,
 			"viewFormats": [
@@ -135,6 +138,7 @@
 		{
 			"name": "propkindid",
 			"sqlExpression": "propkindid",
+			"index": 3,
 			"strField": "propkindid",
 			"type": 3,
 			"autoinc": true,
@@ -205,6 +209,50 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "propkindid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "property_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "property_kind",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"propkindid"
+		],
+		"uniqueFields": [],
+		"name": "prop_kind"
 	},
 	"pages": [
 		{

@@ -2,13 +2,15 @@
 	"orderInfo": [
 		{
 			"index": 1,
-			"asc": false,
-			"field": "cpdactivityid"
+			"field": "cpdactivityid",
+			"expr": "cpdactivityid",
+			"asc": false
 		},
 		{
 			"index": 2,
-			"asc": true,
-			"field": "activities"
+			"field": "activities",
+			"expr": "activities",
+			"asc": true
 		}
 	],
 	"sql": "SELECT\ncpdactivityid,\nactivities,\nprovider,\n`type`,\n`hour`\nFROM cpd_activities\nORDER BY cpdactivityid DESC, activities",
@@ -16,6 +18,7 @@
 	"originalTable": "cpd_activities",
 	"name": "cpd_activities",
 	"shortTableName": "cpd_activities",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "cpdactivityid",
 	"usersOwnerIdField": "user_id",
@@ -49,6 +52,7 @@
 		{
 			"name": "cpdactivityid",
 			"sqlExpression": "cpdactivityid",
+			"index": 1,
 			"strField": "cpdactivityid",
 			"type": 3,
 			"autoinc": true,
@@ -100,6 +104,7 @@
 		{
 			"name": "activities",
 			"sqlExpression": "activities",
+			"index": 2,
 			"strField": "activities",
 			"type": 200,
 			"viewFormats": [
@@ -151,6 +156,7 @@
 		{
 			"name": "provider",
 			"sqlExpression": "provider",
+			"index": 3,
 			"strField": "provider",
 			"type": 200,
 			"viewFormats": [
@@ -199,6 +205,7 @@
 		{
 			"name": "type",
 			"sqlExpression": "`type`",
+			"index": 4,
 			"strField": "type",
 			"type": 200,
 			"viewFormats": [
@@ -250,6 +257,7 @@
 		{
 			"name": "hour",
 			"sqlExpression": "`hour`",
+			"index": 5,
 			"strField": "hour",
 			"type": 200,
 			"viewFormats": [
@@ -323,8 +331,75 @@
 			"code": "$str = $values[\"activities\"]; \nfor ($i=0; $i<strlen($str); $i++){ \nif ($i==0) { \n$b = True; \n} \nelse \n$b = (substr($str, $i-1,1) == \" \"); \nif ($b) \n$str = substr($str,0,$i).strtoupper(substr($str, $i,1)).substr($str, $i+1); \n} \n$values[\"activities\"] = $str; \n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets.\n\nreturn true;"
 		}
 	],
+	"strOrderBy": "ORDER BY cpdactivityid DESC, activities",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "cpdactivityid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "activities",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "provider",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "hour",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"cpdactivityid"
+		],
+		"uniqueFields": [],
+		"name": "cpd_activities"
 	},
 	"pages": [
 		{

@@ -5,6 +5,7 @@
 	"originalTable": "cpd_trainings",
 	"name": "cpd_trainings_user",
 	"shortTableName": "cpd_trainings_user",
+	"dbType": 0,
 	"displayLoading": true,
 	"caseSensitiveSearch": "",
 	"highlightSearchResults": false,
@@ -41,6 +42,7 @@
 		{
 			"name": "cpdtrainingid",
 			"sqlExpression": "cpdtrainingid",
+			"index": 1,
 			"strField": "cpdtrainingid",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -89,6 +91,7 @@
 		{
 			"name": "cea_reg",
 			"sqlExpression": "cea_reg",
+			"index": 2,
 			"strField": "cea_reg",
 			"type": 201,
 			"viewFormats": [
@@ -149,6 +152,7 @@
 		{
 			"name": "name",
 			"sqlExpression": "name",
+			"index": 3,
 			"strField": "name",
 			"type": 200,
 			"viewFormats": [
@@ -211,6 +215,7 @@
 		{
 			"name": "cpd_type",
 			"sqlExpression": "cpd_type",
+			"index": 4,
 			"strField": "cpd_type",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -275,6 +280,7 @@
 		{
 			"name": "period",
 			"sqlExpression": "period",
+			"index": 5,
 			"strField": "period",
 			"type": 200,
 			"viewFormats": [
@@ -351,6 +357,7 @@
 		{
 			"name": "provider",
 			"sqlExpression": "provider",
+			"index": 6,
 			"strField": "provider",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -403,6 +410,7 @@
 		{
 			"name": "activity",
 			"sqlExpression": "activity",
+			"index": 7,
 			"strField": "activity",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -462,6 +470,7 @@
 		{
 			"name": "cpd_hour",
 			"sqlExpression": "cpd_hour",
+			"index": 8,
 			"strField": "cpd_hour",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -519,6 +528,7 @@
 		{
 			"name": "startdate",
 			"sqlExpression": "startdate",
+			"index": 9,
 			"strField": "startdate",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -567,6 +577,7 @@
 		{
 			"name": "enddate",
 			"sqlExpression": "enddate",
+			"index": 10,
 			"strField": "enddate",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -615,6 +626,7 @@
 		{
 			"name": "doc_upload",
 			"sqlExpression": "doc_upload",
+			"index": 11,
 			"strField": "doc_upload",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -671,6 +683,7 @@
 		{
 			"name": "docuserid",
 			"sqlExpression": "docuserid",
+			"index": 12,
 			"strField": "docuserid",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -722,6 +735,7 @@
 		{
 			"name": "dateupdated",
 			"sqlExpression": "dateupdated",
+			"index": 13,
 			"strField": "dateupdated",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -769,6 +783,7 @@
 		{
 			"name": "cost",
 			"sqlExpression": "cost",
+			"index": 14,
 			"strField": "cost",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -846,6 +861,182 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "cpdtrainingid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cpd_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "period",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "provider",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "activity",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cpd_hour",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "startdate",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "enddate",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "doc_upload",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docuserid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "dateupdated",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cost",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cea_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cpd_recordid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"cpdtrainingid"
+		],
+		"uniqueFields": [],
+		"name": "cpd_trainings"
 	},
 	"pages": [
 		{

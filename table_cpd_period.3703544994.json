@@ -2,8 +2,9 @@
 	"orderInfo": [
 		{
 			"index": 2,
-			"asc": false,
-			"field": "period"
+			"field": "period",
+			"expr": "period",
+			"asc": false
 		}
 	],
 	"sql": "SELECT\nid,\nperiod\nFROM cpd_period\nORDER BY period DESC",
@@ -11,6 +12,7 @@
 	"originalTable": "cpd_period",
 	"name": "cpd_period",
 	"shortTableName": "cpd_period",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"highlightSearchResults": false,
 	"tableOwnerIdField": "id",
@@ -43,6 +45,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -96,6 +99,7 @@
 		{
 			"name": "period",
 			"sqlExpression": "period",
+			"index": 2,
 			"strField": "period",
 			"type": 200,
 			"viewFormats": [
@@ -145,8 +149,42 @@
 	"afterEditDetails": 149,
 	"afterAddAction": 0,
 	"afterAddDetail": 149,
+	"strOrderBy": "ORDER BY period DESC",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "period",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "cpd_period"
 	},
 	"pages": [
 		{

@@ -4,6 +4,7 @@
 	"originalTable": "represent_type",
 	"name": "represent_type",
 	"shortTableName": "represent_type",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "user_id",
@@ -32,6 +33,7 @@
 		{
 			"name": "categories",
 			"sqlExpression": "categories",
+			"index": 1,
 			"strField": "categories",
 			"type": 200,
 			"viewFormats": [
@@ -76,6 +78,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 2,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -127,6 +130,7 @@
 		{
 			"name": "type",
 			"sqlExpression": "`type`",
+			"index": 3,
 			"strField": "type",
 			"type": 200,
 			"viewFormats": [
@@ -183,6 +187,50 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "categories",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "represent_type"
 	},
 	"pages": [
 		{

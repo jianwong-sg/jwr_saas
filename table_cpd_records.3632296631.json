@@ -2,8 +2,9 @@
 	"orderInfo": [
 		{
 			"index": 2,
-			"asc": false,
-			"field": "cpd_window"
+			"field": "cpd_window",
+			"expr": "cpd_window",
+			"asc": false
 		}
 	],
 	"sql": "SELECT\nid,\ncpd_window,\ncpd_hour\nFROM cpd_records\nORDER BY cpd_window DESC",
@@ -11,6 +12,7 @@
 	"originalTable": "cpd_records",
 	"name": "cpd_records",
 	"shortTableName": "cpd_records",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "username",
@@ -40,6 +42,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -88,6 +91,7 @@
 		{
 			"name": "cpd_window",
 			"sqlExpression": "cpd_window",
+			"index": 2,
 			"strField": "cpd_window",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -133,6 +137,7 @@
 		{
 			"name": "cpd_hour",
 			"sqlExpression": "cpd_hour",
+			"index": 3,
 			"strField": "cpd_hour",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -187,8 +192,75 @@
 			"code": "$rstmp = CustomQuery(\"SELECT sum(cpd_hour) FROM cpd_trainings WHERE cpd_recordid='\".$data[\"id\"].\"'\"); \n$datatmp = db_fetch_array($rstmp); \n$data[\"cpd_hour\"] = $data[\"cpd_hour\"];\n\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
 		}
 	],
+	"strOrderBy": "ORDER BY cpd_window DESC",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cpd_window",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cea_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "salesperson_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cpd_hour",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "cpd_records"
 	},
 	"pages": [
 		{

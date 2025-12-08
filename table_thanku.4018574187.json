@@ -4,6 +4,7 @@
 	"originalTable": "thanku",
 	"name": "thanku",
 	"shortTableName": "thanku",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"usersOwnerIdField": "email",
 	"pageSizeSelectorRecords": [
@@ -35,6 +36,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -91,6 +93,28 @@
 	"afterAddDetail": 149,
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "thanku"
 	},
 	"pages": [
 		{

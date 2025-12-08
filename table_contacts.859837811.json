@@ -2,8 +2,9 @@
 	"orderInfo": [
 		{
 			"index": 2,
-			"asc": true,
-			"field": "name"
+			"field": "name",
+			"expr": "name",
+			"asc": true
 		}
 	],
 	"sql": "SELECT\nid,\nname,\naddress,\nemail,\npostal,\nnric,\nmobile,\ntel,\noffice_tel,\ncontact_person,\ncontact_email,\nbiz_email,\nregistration_date,\ncountry_incorporation,\nnationality,\ncontact_person_contact,\ncontact_person_id,\nid_type\nFROM invcustomers\nORDER BY name",
@@ -12,6 +13,7 @@
 	"originalTable": "invcustomers",
 	"name": "contacts",
 	"shortTableName": "contacts",
+	"dbType": 0,
 	"hideFilterUntilSearch": true,
 	"caseSensitiveSearch": "",
 	"highlightSearchResults": false,
@@ -48,6 +50,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -106,6 +109,7 @@
 		{
 			"name": "name",
 			"sqlExpression": "name",
+			"index": 2,
 			"strField": "name",
 			"type": 200,
 			"viewFormats": [
@@ -223,6 +227,7 @@
 		{
 			"name": "address",
 			"sqlExpression": "address",
+			"index": 3,
 			"strField": "address",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -276,6 +281,7 @@
 		{
 			"name": "email",
 			"sqlExpression": "email",
+			"index": 4,
 			"strField": "email",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -325,6 +331,7 @@
 		{
 			"name": "postal",
 			"sqlExpression": "postal",
+			"index": 5,
 			"strField": "postal",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -381,6 +388,7 @@
 		{
 			"name": "nric",
 			"sqlExpression": "nric",
+			"index": 6,
 			"strField": "nric",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -425,6 +433,7 @@
 		{
 			"name": "mobile",
 			"sqlExpression": "mobile",
+			"index": 7,
 			"strField": "mobile",
 			"type": 201,
 			"viewFormats": [
@@ -469,6 +478,7 @@
 		{
 			"name": "tel",
 			"sqlExpression": "tel",
+			"index": 8,
 			"strField": "tel",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -514,6 +524,7 @@
 		{
 			"name": "office_tel",
 			"sqlExpression": "office_tel",
+			"index": 9,
 			"strField": "office_tel",
 			"type": 200,
 			"viewFormats": [
@@ -558,6 +569,7 @@
 		{
 			"name": "contact_person",
 			"sqlExpression": "contact_person",
+			"index": 10,
 			"strField": "contact_person",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -602,6 +614,7 @@
 		{
 			"name": "contact_email",
 			"sqlExpression": "contact_email",
+			"index": 11,
 			"strField": "contact_email",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -646,6 +659,7 @@
 		{
 			"name": "biz_email",
 			"sqlExpression": "biz_email",
+			"index": 12,
 			"strField": "biz_email",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -690,6 +704,7 @@
 		{
 			"name": "registration_date",
 			"sqlExpression": "registration_date",
+			"index": 13,
 			"strField": "registration_date",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -741,6 +756,7 @@
 		{
 			"name": "country_incorporation",
 			"sqlExpression": "country_incorporation",
+			"index": 14,
 			"strField": "country_incorporation",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -791,6 +807,7 @@
 		{
 			"name": "nationality",
 			"sqlExpression": "nationality",
+			"index": 15,
 			"strField": "nationality",
 			"type": 200,
 			"viewFormats": [
@@ -840,6 +857,7 @@
 		{
 			"name": "contact_person_contact",
 			"sqlExpression": "contact_person_contact",
+			"index": 16,
 			"strField": "contact_person_contact",
 			"type": 201,
 			"viewFormats": [
@@ -889,6 +907,7 @@
 		{
 			"name": "contact_person_id",
 			"sqlExpression": "contact_person_id",
+			"index": 17,
 			"strField": "contact_person_id",
 			"type": 201,
 			"viewFormats": [
@@ -932,6 +951,7 @@
 		{
 			"name": "id_type",
 			"sqlExpression": "id_type",
+			"index": 18,
 			"strField": "id_type",
 			"type": 200,
 			"viewFormats": [
@@ -1004,8 +1024,625 @@
 			"code": "$(\"[data-fieldname='name']\").hide()\n$(\"[data-fieldname='nric']\").hide()\n$(\"[data-fieldname='address']\").hide()\n$(\"[data-fieldname='postal']\").hide()\n$(\"[data-fieldname='tel']\").hide()\n$(\"[data-fieldname='mobile']\").hide()\n$(\"[data-fieldname='email']\").hide()\n$(\"[data-fieldname='trade']\").hide()\n$(\"[data-fieldname='office_tel']\").hide()\n$(\"[data-fieldname='biz_email']\").hide()\n$(\"[data-fieldname='contact_person']\").hide()\n$(\"[data-fieldname='contact_person_id']\").hide()\n$(\"[data-fieldname='destination']\").hide()\n$(\"[data-fieldname='contact_person_cell']\").hide()\n$(\"[data-fieldname='contact_email']\").hide()\n\nvar ctrl = Runner.getControl(pageid, 'cus_type');\nvar ctrlName = Runner.getControl(pageid, 'name');\nvar ctrlNRIC = Runner.getControl(pageid, 'nric');\nvar ctrlAddress = Runner.getControl(pageid, 'address');\nvar ctrlPostal = Runner.getControl(pageid, 'postal');\nvar ctrlTel = Runner.getControl(pageid, 'tel');\nvar ctrlEmail = Runner.getControl(pageid, 'email');\nvar ctrlTrade = Runner.getControl(pageid, 'trade');\nvar ctrlOffTel = Runner.getControl(pageid, 'office_tel');\nvar ctrlBizEmail = Runner.getControl(pageid, 'biz_email');\nvar ctrlContactPerson = Runner.getControl(pageid, 'contact_person');\nvar ctrlDesti = Runner.getControl(pageid, 'destination');\nvar ctrlContactID = Runner.getControl(pageid, 'contact_person_id');\nvar ctrlContactEmail = Runner.getControl(pageid, 'contact_email');\nvar ctrlMobile = Runner.getControl(pageid, 'mobile');\nvar ctrlContactPersonCell = Runner.getControl(pageid, 'contact_person_cell');\n\nctrl.on('change', function(e) {\nif (this.getValue() == 'Corporate')\n{\n$(\"[data-fieldname='name']\").show()\n$(\"[data-fieldname='nric']\").show()\n$(\"[data-fieldname='address']\").show()\n$(\"[data-fieldname='postal']\").show()\n$(\"[data-fieldname='tel']\").hide()\n$(\"[data-fieldname='mobile']\").hide()\n$(\"[data-fieldname='email']\").hide()\n$(\"[data-fieldname='trade']\").show() \n$(\"[data-fieldname='office_tel']\").show()\n$(\"[data-fieldname='biz_email']\").show()\n$(\"[data-fieldname='contact_person']\").show()\n$(\"[data-fieldname='contact_person_id']\").show()\n$(\"[data-fieldname='destination']\").show()\n$(\"[data-fieldname='contact_person_cell']\").show()\n$(\"[data-fieldname='contact_email']\").show()\n\n\nctrlTrade.addValidation('IsRequired');\nctrlOffTel.addValidation('IsRequired');\nctrlBizEmail.addValidation('IsRequired');\nctrlContactPerson.addValidation('IsRequired');\nctrlDesti.addValidation('IsRequired');\nctrlContactID.addValidation('IsRequired');\nctrlContactEmail.addValidation('IsRequired');\nctrlContactPersonCell.addValidation('IsRequired');\n\nctrlTel.removeValidation('IsRequired');\nctrlEmail.removeValidation('IsRequired');\nctrlMobile.removeValidation('IsRequired'); \n\nctrlName.setValue('');\nctrlNRIC.setValue('');\nctrlAddress.setValue('');\nctrlPostal.setValue('');\nctrlTel.setValue('');\nctrlMobile.setValue('');\nctrlEmail.setValue('');\n} \n\nif (this.getValue() == 'Private')\n{\n$(\"[data-fieldname='name']\").show()\n$(\"[data-fieldname='nric']\").show()\n$(\"[data-fieldname='address']\").show()\n$(\"[data-fieldname='postal']\").show()\n$(\"[data-fieldname='tel']\").show()\n$(\"[data-fieldname='mobile']\").show()\n$(\"[data-fieldname='email']\").show()\n$(\"[data-fieldname='trade']\").hide()\n$(\"[data-fieldname='office_tel']\").hide()\n$(\"[data-fieldname='biz_email']\").hide()\n$(\"[data-fieldname='contact_person']\").hide()\n$(\"[data-fieldname='contact_person_id']\").hide()\n$(\"[data-fieldname='destination']\").hide()\n$(\"[data-fieldname='contact_person_cell']\").hide()\n$(\"[data-fieldname='contact_email']\").hide()\n\nctrlTel.addValidation('IsRequired');\nctrlMobile.addValidation('IsRequired');\nctrlEmail.addValidation('IsRequired');\n\nctrlTrade.removeValidation('IsRequired');\nctrlOffTel.removeValidation('IsRequired');\nctrlBizEmail.removeValidation('IsRequired');\nctrlContactPerson.removeValidation('IsRequired');\nctrlDesti.removeValidation('IsRequired');\nctrlContactID.removeValidation('IsRequired');\nctrlContactEmail.removeValidation('IsRequired');\nctrlContactPersonCell.removeValidation('IsRequired');\n\nctrlName.setValue('');\nctrlNRIC.setValue('');\nctrlAddress.setValue('');\nctrlPostal.setValue('');\nctrlTrade.setValue('');\nctrlOffTel.setValue('');\nctrlBizEmail.setValue('');\nctrlContactPerson.setValue('');\nctrlDesti.setValue('');\nctrlContactID.setValue('');\nctrlContactEmail.setValue('');\nctrlContactPersonCell.setValue('');\n} \n\n});\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
 		}
 	],
+	"strOrderBy": "ORDER BY name",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "name",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "address",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "nric",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "mobile",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tel",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "doc_upload",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_property",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docuserid",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "office_tel",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remarks",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "doc_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cus_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "trade",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "contact_person",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "destination",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "contact_email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "biz_email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "last_updated",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "registration_no",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "registration_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "status",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_tx",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gender",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_type",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "country_incorporation",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "license_no",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_address",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "nationality",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "date_of_birth",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "occupation",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "beneficial_owner_indi",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "beneficial_owner_corp",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "contact_person_contact",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "contact_person_id",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "salutation",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "race",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tel_type",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "email_type",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "relationship",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_type1",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "email_emailall",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "date_added",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "owner_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "ownership_kind",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "purchase_at",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "purchase_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sold_at",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sold_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "username",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "billing_address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": false,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "invcustomers"
 	},
 	"pages": [
 		{

@@ -74,10 +74,11 @@ for (let i = 0; i < partyExternals.length; i++) {
 }
 
 function refreshInternalCoBroker() {
-    var gstrate = parseFloat($("#value_gst_rate_1").val()) || 0;
+    
+//    var gstrate = parseFloat($("#value_gst_rate_1").val()) || 0;
     var amount = $('#value_comm_amt_1').val() * 1;
     var earned;
-
+/*
     if ($('#value_gst_payable_1').prop('checked') && !$('#value_gst_inclusive_1').prop('checked')) {
         earned = amount;
     } else if ($('#value_gst_payable_1').prop('checked') && $('#value_gst_inclusive_1').prop('checked')) {
@@ -85,16 +86,26 @@ function refreshInternalCoBroker() {
     } else {
         earned = amount;
     }
-
+*/
     var totalComm = $('#value_comm_earned_agency_1').val() * 1;
     var internals = $("div#detailPreview16").find('tbody').find('tr').not(':first');	
     var totalInternalEarned = 0;
 
     for (var i = 0; i < internals.length; i++) {
+        /*
         var internalPercent = internals.eq(i).find('td').eq(4).find('input').eq(0).val();
         internalPercent = internalPercent * 1;
         var internalEarned = customRound(earned * internalPercent / 100);
         totalInternalEarned += internalEarned * 1;
+        */
+        var input = internals.eq(i).find('td').eq(3).find('input').eq(0);
+/*    if (input.length) {
+        var internalPercent = internalPercent * 1;
+        var internalEarned = customRound(earned * internalPercent / 100);
+        totalInternalEarned += internalEarned * 1;
+    }
+    */
+    totalInternalEarned += input;
     }
 
     var agencyShare = $('#value_agency_share_1').val();

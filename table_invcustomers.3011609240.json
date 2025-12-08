@@ -1723,7 +1723,7 @@
 			"sqlExpression": "license_no",
 			"index": 29,
 			"strField": "license_no",
-			"type": 200,
+			"type": 201,
 			"viewFormats": [
 				{
 					"numberFractionalDigits": 0
@@ -2876,10 +2876,10 @@
 			},
 			{
 				"name": "license_no",
-				"type": 200,
-				"size": 10,
+				"type": 201,
+				"size": 0,
 				"scale": 0,
-				"typeName": "varchar(10)",
+				"typeName": "text",
 				"nullable": true,
 				"autoinc": false,
 				"defaultValueSQL": null,
@@ -3155,7 +3155,7 @@
 				"size": 200,
 				"scale": 0,
 				"typeName": "varchar(200)",
-				"nullable": true,
+				"nullable": false,
 				"autoinc": false,
 				"defaultValueSQL": null,
 				"defaultValue": ""

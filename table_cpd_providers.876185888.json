@@ -2,8 +2,9 @@
 	"orderInfo": [
 		{
 			"index": 2,
-			"asc": true,
-			"field": "provider"
+			"field": "provider",
+			"expr": "provider",
+			"asc": true
 		}
 	],
 	"sql": "SELECT\ncpdproviderid,\nprovider\nFROM cpd_providers\nORDER BY provider",
@@ -11,6 +12,7 @@
 	"originalTable": "cpd_providers",
 	"name": "cpd_providers",
 	"shortTableName": "cpd_providers",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "cpdproviderid",
 	"usersOwnerIdField": "user_id",
@@ -43,6 +45,7 @@
 		{
 			"name": "cpdproviderid",
 			"sqlExpression": "cpdproviderid",
+			"index": 1,
 			"strField": "cpdproviderid",
 			"type": 3,
 			"autoinc": true,
@@ -94,6 +97,7 @@
 		{
 			"name": "provider",
 			"sqlExpression": "provider",
+			"index": 2,
 			"strField": "provider",
 			"type": 200,
 			"viewFormats": [
@@ -151,8 +155,42 @@
 			"code": "$values[\"provider\"]=strtoupper($values[\"provider\"]);\n\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets.\n\nreturn true;"
 		}
 	],
+	"strOrderBy": "ORDER BY provider",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "cpdproviderid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "provider",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"cpdproviderid"
+		],
+		"uniqueFields": [],
+		"name": "cpd_providers"
 	},
 	"pages": [
 		{

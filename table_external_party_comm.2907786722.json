@@ -896,7 +896,7 @@
 		{
 			"eventId": "EVENT_JS_ONLOAD",
 			"pageType": "edit",
-			"code": "// external party comm\r\n\r\n$(document).ready(function() {\r\n\r\n    $(\"#value_comm_percent_tp_\" + pageid).keyup(function() {\r\n        var earned = parseFloat($(\"#value_comm_earned_1\").val()) || 0;\r\n        if (!earned) return;\r\n\r\n        var gstrate = parseFloat($(\"#value_gst_rate_1\").val()) || 0;\r\n        var percent = parseFloat($(this).val()) || 0;\r\n        var comm = customRound(earned * percent / 100);\r\n        var gst = 0;\r\n\r\n        if ($(\"#value_gst_include_\" + pageid).is(':checked')) {\r\n            gst = customRound(comm * gstrate / 100);\r\n        }\r\n\r\n        var gross = customRound(comm + gst);\r\n\r\n        $(\"#value_comm_tp_\" + pageid).val(comm.toFixed(2));\r\n        $(\"#value_gst_\" + pageid).val(gst.toFixed(2));\r\n        $(\"#value_gross_tp_\" + pageid).val(gross.toFixed(2));\r\n\r\n        refreshExternalCoBroker();\r\n        refreshInternalCoBroker();\r\n    });\r\n\r\n    $(\"#value_comm_tp_\" + pageid).keyup(function() {\r\n        var earned = parseFloat($(\"#value_comm_earned_1\").val()) || 0;\r\n        if (!earned) return;\r\n\r\n        var gstrate = parseFloat($(\"#value_gst_rate_1\").val()) || 0;\r\n        var comm = parseFloat($(this).val()) || 0;\r\n        var percent = customRound(comm * 100 / earned);\r\n        var gst = 0;\r\n\r\n        if ($(\"#value_gst_include_\" + pageid).is(':checked')) {\r\n            gst = customRound(comm * gstrate / 100);\r\n        }\r\n\r\n        var gross = customRound(comm + gst);\r\n\r\n        $(\"#value_comm_percent_tp_\" + pageid).val(percent.toFixed(2));\r\n        $(\"#value_gst_\" + pageid).val(gst.toFixed(2));\r\n        $(\"#value_gross_tp_\" + pageid).val(gross.toFixed(2));\r\n\r\n        refreshExternalCoBroker();\r\n        refreshInternalCoBroker();\r\n    });\r\n\r\n    $(\"#value_gross_tp_\" + pageid).keyup(function() {\r\n        var earned = parseFloat($(\"#value_comm_earned_1\").val()) || 0;\r\n        if (!earned) return;\r\n\r\n        var gstrate = parseFloat($(\"#value_gst_rate_1\").val()) || 0;\r\n        var gross = parseFloat($(this).val()) || 0;\r\n        var comm, percent, gst;\r\n\r\n        if ($(\"#value_gst_include_\" + pageid).is(':checked')) {\r\n            comm = customRound(gross * 100 / (gstrate + 100));\r\n            gst = customRound(gross - comm);\r\n            percent = customRound(comm / earned * 100);\r\n        } else {\r\n            comm = gross;\r\n            gst = 0;\r\n            percent = customRound(comm / earned * 100);\r\n        }\r\n\r\n        $(\"#value_comm_tp_\" + pageid).val(comm.toFixed(2));\r\n        $(\"#value_comm_percent_tp_\" + pageid).val(percent.toFixed(2));\r\n        $(\"#value_gst_\" + pageid).val(gst.toFixed(2));\r\n\r\n        refreshExternalCoBroker();\r\n        refreshInternalCoBroker();\r\n    });\r\n\r\n    $(\"#value_gst_include_\" + pageid).change(function() {\r\n        var earned = parseFloat($(\"#value_comm_earned_1\").val()) || 0;\r\n        if (!earned) return;\r\n\r\n        var gstrate = parseFloat($(\"#value_gst_rate_1\").val()) || 0;\r\n        var comm = parseFloat($(\"#value_comm_tp_\" + pageid).val()) || 0;\r\n        var gst = 0;\r\n        var gross = comm;\r\n\r\n        if ($(this).is(':checked')) {\r\n            gst = customRound(comm * gstrate / 100);\r\n            gross = customRound(comm + gst);\r\n            $(\"#value_gst_\" + pageid).val(gst.toFixed(2));\r\n        } else {\r\n            $(\"#value_gst_\" + pageid).val(\"0.00\");\r\n        }\r\n\r\n        $(\"#value_gross_tp_\" + pageid).val(gross.toFixed(2));\r\n\r\n        refreshExternalCoBroker();\r\n        refreshInternalCoBroker();\r\n    });\r\n\r\n    // UI setup\r\n    $('a#saveLink' + pageid).remove();\r\n    $('a#revertLink' + pageid).remove();\r\n    $('input#check7_' + pageid).show();\r\n    $('input#value_gst_' + pageid).prop('readonly', true);\r\n    $('input#value_comm_percent_tp_' + pageid).prop('readonly', true).css('width', '50px');\r\n    $('select#value_name_' + pageid).css('width', '100px');\r\n\r\n    refreshExternalCoBroker();\r\n    refreshInternalCoBroker();\r\n});\r\n\r\n// Total GST\r\nvar ctrlComm = Runner.getControl(pageid, 'comm_tp');\r\nvar ctrlGstTp = Runner.getControl(pageid, 'gst_tp');\r\nvar ctrlGrossTp = Runner.getControl(pageid, 'gross_tp');\r\nvar ctrlGstInclude = Runner.getControl(pageid, 'gst_include');\r\n\r\nfunction func() {\r\nctrlGrossTp.setValue(Number(ctrlComm.getValue()) + Number(ctrlGstTp.getValue()));\r\n}\r\n\r\nctrlGstInclude.on('keyup', func);"
+			"code": "// external party comm\r\n\r\n$(document).ready(function() {\r\n\r\n    $(\"#value_comm_percent_tp_\" + pageid).keyup(function() {\r\n        var earned = parseFloat($(\"#value_comm_earned_1\").val()) || 0;\r\n        if (!earned) return;\r\n\r\n        var gstrate = parseFloat($(\"#value_gst_rate_1\").val()) || 0;\r\n        var percent = parseFloat($(this).val()) || 0;\r\n        var comm = customRound(earned * percent / 100);\r\n        var gst = 0;\r\n\r\n        if ($(\"#value_gst_include_\" + pageid).is(':checked')) {\r\n            gst = customRound(comm * gstrate / 100);\r\n        }\r\n\r\n        var gross = customRound(comm + gst);\r\n\r\n        $(\"#value_comm_tp_\" + pageid).val(comm.toFixed(2));\r\n        $(\"#value_gst_tp_\" + pageid).val(gst.toFixed(2));\r\n        $(\"#value_gross_tp_\" + pageid).val(gross.toFixed(2));\r\n\r\n        refreshExternalCoBroker();\r\n        refreshInternalCoBroker();\r\n    });\r\n\r\n    $(\"#value_comm_tp_\" + pageid).keyup(function() {\r\n        var earned = parseFloat($(\"#value_comm_earned_1\").val()) || 0;\r\n        if (!earned) return;\r\n\r\n        var gstrate = parseFloat($(\"#value_gst_rate_1\").val()) || 0;\r\n        var comm = parseFloat($(this).val()) || 0;\r\n        var percent = customRound(comm * 100 / earned);\r\n        var gst = 0;\r\n\r\n        if ($(\"#value_gst_include_\" + pageid).is(':checked')) {\r\n            gst = customRound(comm * gstrate / 100);\r\n        }\r\n\r\n        var gross = customRound(comm + gst);\r\n\r\n        $(\"#value_comm_percent_tp_\" + pageid).val(percent.toFixed(2));\r\n        $(\"#value_gst_tp_\" + pageid).val(gst.toFixed(2));\r\n        $(\"#value_gross_tp_\" + pageid).val(gross.toFixed(2));\r\n\r\n        refreshExternalCoBroker();\r\n        refreshInternalCoBroker();\r\n    });\r\n\r\n    $(\"#value_gross_tp_\" + pageid).keyup(function() {\r\n        var earned = parseFloat($(\"#value_comm_earned_1\").val()) || 0;\r\n        if (!earned) return;\r\n\r\n        var gstrate = parseFloat($(\"#value_gst_rate_1\").val()) || 0;\r\n        var gross = parseFloat($(this).val()) || 0;\r\n        var comm, percent, gst;\r\n\r\n        if ($(\"#value_gst_include_\" + pageid).is(':checked')) {\r\n            comm = customRound(gross * 100 / (gstrate + 100));\r\n            gst = customRound(gross - comm);\r\n            percent = customRound(comm / earned * 100);\r\n        } else {\r\n            comm = gross;\r\n            gst = 0;\r\n            percent = customRound(comm / earned * 100);\r\n        }\r\n\r\n        $(\"#value_comm_tp_\" + pageid).val(comm.toFixed(2));\r\n        $(\"#value_comm_percent_tp_\" + pageid).val(percent.toFixed(2));\r\n        $(\"#value_gst_tp_\" + pageid).val(gst.toFixed(2));\r\n\r\n        refreshExternalCoBroker();\r\n        refreshInternalCoBroker();\r\n    });\r\n\r\n    $(\"#value_gst_include_\" + pageid).change(function() {\r\n        var earned = parseFloat($(\"#value_comm_earned_1\").val()) || 0;\r\n        if (!earned) return;\r\n\r\n        var gstrate = parseFloat($(\"#value_gst_rate_1\").val()) || 0;\r\n        var comm = parseFloat($(\"#value_comm_tp_\" + pageid).val()) || 0;\r\n        var gst = 0;\r\n        var gross = comm;\r\n\r\n        if ($(this).is(':checked')) {\r\n            gst = customRound(comm * gstrate / 100);\r\n            gross = customRound(comm + gst);\r\n            $(\"#value_gst_tp_\" + pageid).val(gst.toFixed(2));\r\n        } else {\r\n            $(\"#value_gst_tp_\" + pageid).val(\"0.00\");\r\n        }\r\n\r\n        $(\"#value_gross_tp_\" + pageid).val(gross.toFixed(2));\r\n\r\n        refreshExternalCoBroker();\r\n        refreshInternalCoBroker();\r\n    });\r\n\r\n    // UI setup\r\n    $('a#saveLink' + pageid).remove();\r\n    $('a#revertLink' + pageid).remove();\r\n    $('input#check7_' + pageid).show();\r\n    $('input#value_gst_tp_' + pageid).prop('readonly', true);\r\n//    $('input#value_comm_percent_tp_' + pageid).prop('readonly', true).css('width', '50px');\r\n//    $('select#value_name_' + pageid).css('width', '100px');\r\n\r\n    refreshExternalCoBroker();\r\n    refreshInternalCoBroker();\r\n});\r\n\r\n/*\r\n// Total GST\r\nvar ctrlComm = Runner.getControl(pageid, 'comm_tp');\r\nvar ctrlGstTp = Runner.getControl(pageid, 'gst_tp');\r\nvar ctrlGrossTp = Runner.getControl(pageid, 'gross_tp');\r\nvar ctrlGstInclude = Runner.getControl(pageid, 'gst_include');\r\n\r\nfunction func() {\r\nctrlGrossTp.setValue(Number(ctrlComm.getValue()) + Number(ctrlGstTp.getValue()));\r\n}\r\n\r\nctrlGstInclude.on('keyup', func);\r\n*/"
 		},
 		{
 			"eventId": "EVENT_BEFOREPROCESS_ADD",
@@ -1901,16 +1901,10 @@
 									"cell": "headcell_field1"
 								},
 								{
-									"cell": "headcell_field2"
-								},
-								{
 									"cell": "headcell_field6"
 								},
 								{
 									"cell": "headcell_field5"
-								},
-								{
-									"cell": "headcell_field3"
 								}
 							]
 						},
@@ -1930,16 +1924,10 @@
 									"cell": "cell_field1"
 								},
 								{
-									"cell": "cell_field2"
-								},
-								{
 									"cell": "headcell_field7"
 								},
 								{
 									"cell": "cell_field5"
-								},
-								{
-									"cell": "cell_field3"
 								}
 							]
 						},
@@ -1959,16 +1947,10 @@
 									"cell": "footcell_field1"
 								},
 								{
-									"cell": "footcell_field2"
-								},
-								{
 									"cell": "headcell_field8"
 								},
 								{
 									"cell": "footcell_field5"
-								},
-								{
-									"cell": "footcell_field3"
 								}
 							]
 						}
@@ -2017,29 +1999,6 @@
 							"model": "footcell_field",
 							"items": [],
 							"field": "comm_tp",
-							"columnName": "field"
-						},
-						"headcell_field2": {
-							"model": "headcell_field",
-							"items": [
-								"simple_grid_field8"
-							],
-							"field": "comm_percent_tp",
-							"columnName": "field",
-							"align": "center"
-						},
-						"cell_field2": {
-							"model": "cell_field",
-							"items": [
-								"simple_grid_field1"
-							],
-							"field": "comm_percent_tp",
-							"columnName": "field"
-						},
-						"footcell_field2": {
-							"model": "footcell_field",
-							"items": [],
-							"field": "comm_percent_tp",
 							"columnName": "field"
 						},
 						"headcell_checkbox": {
@@ -2104,25 +2063,6 @@
 							"model": "footcell_field",
 							"items": [],
 							"field": "gross_tp"
-						},
-						"headcell_field3": {
-							"model": "headcell_field",
-							"items": [
-								"grid_field_label2"
-							],
-							"field": "gst_tp"
-						},
-						"cell_field3": {
-							"model": "cell_field",
-							"items": [
-								"grid_field2"
-							],
-							"field": "gst_tp"
-						},
-						"footcell_field3": {
-							"model": "footcell_field",
-							"items": [],
-							"field": "gst_tp"
 						},
 						"headcell_field6": {
 							"model": "headcell_field",
@@ -2210,20 +2150,14 @@
 					"type": "grid_field",
 					"inlineAdd": false,
 					"inlineEdit": true,
-					"width": "150px"
-				},
-				"simple_grid_field1": {
-					"field": "comm_percent_tp",
-					"type": "grid_field",
-					"inlineAdd": false,
-					"inlineEdit": true
+					"width": "120px"
 				},
 				"simple_grid_field3": {
 					"field": "name_ext_party",
 					"type": "grid_field",
 					"inlineAdd": false,
 					"inlineEdit": true,
-					"width": "400px"
+					"width": "250px"
 				},
 				"username_button": {
 					"type": "username_button",
@@ -2260,11 +2194,6 @@
 						"table": "external_party",
 						"type": 3
 					},
-					"clickSort": false
-				},
-				"simple_grid_field8": {
-					"type": "grid_field_label",
-					"field": "comm_percent_tp",
 					"clickSort": false
 				},
 				"simple_grid_field10": {
@@ -2305,21 +2234,12 @@
 					"type": "inline_cancel_all",
 					"customCSS": "/* Put  your custom CSS code here */\n\n:host {\n  display:none !important;\n}\n"
 				},
-				"grid_field2": {
-					"field": "gross_tp",
-					"type": "grid_field",
-					"inlineEdit": true,
-					"inlineAdd": false
-				},
-				"grid_field_label2": {
-					"type": "grid_field_label",
-					"field": "gross_tp"
-				},
 				"grid_field": {
 					"field": "gst_tp",
 					"type": "grid_field",
 					"inlineEdit": true,
-					"inlineAdd": false
+					"inlineAdd": false,
+					"width": "100px"
 				},
 				"grid_field_label": {
 					"type": "grid_field_label",

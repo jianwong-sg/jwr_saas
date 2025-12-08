@@ -4,6 +4,7 @@
 	"originalTable": "agent_nametag",
 	"name": "agent_nametag",
 	"shortTableName": "agent_nametag",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "cea_reg",
 	"usersOwnerIdField": "username",
@@ -149,6 +150,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -202,6 +204,7 @@
 		{
 			"name": "docuserid",
 			"sqlExpression": "docuserid",
+			"index": 2,
 			"strField": "docuserid",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -253,6 +256,7 @@
 		{
 			"name": "agency",
 			"sqlExpression": "agency",
+			"index": 3,
 			"strField": "agency",
 			"type": 200,
 			"viewFormats": [
@@ -307,6 +311,7 @@
 		{
 			"name": "agency_cea",
 			"sqlExpression": "agency_cea",
+			"index": 4,
 			"strField": "agency_cea",
 			"type": 201,
 			"viewFormats": [
@@ -362,6 +367,7 @@
 		{
 			"name": "name",
 			"sqlExpression": "name",
+			"index": 5,
 			"strField": "name",
 			"type": 200,
 			"viewFormats": [
@@ -410,6 +416,7 @@
 		{
 			"name": "biz_name",
 			"sqlExpression": "biz_name",
+			"index": 6,
 			"strField": "biz_name",
 			"type": 200,
 			"viewFormats": [
@@ -464,6 +471,7 @@
 		{
 			"name": "cea_reg",
 			"sqlExpression": "cea_reg",
+			"index": 7,
 			"strField": "cea_reg",
 			"type": 201,
 			"viewFormats": [
@@ -518,6 +526,7 @@
 		{
 			"name": "issue_date",
 			"sqlExpression": "issue_date",
+			"index": 8,
 			"strField": "issue_date",
 			"type": 7,
 			"viewFormats": [
@@ -564,6 +573,7 @@
 		{
 			"name": "remarks",
 			"sqlExpression": "remarks",
+			"index": 9,
 			"strField": "remarks",
 			"type": 200,
 			"viewFormats": [
@@ -608,6 +618,7 @@
 		{
 			"name": "image",
 			"sqlExpression": "image",
+			"index": 10,
 			"strField": "image",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -668,6 +679,7 @@
 		{
 			"name": "revoke_date",
 			"sqlExpression": "revoke_date",
+			"index": 11,
 			"strField": "revoke_date",
 			"type": 7,
 			"viewFormats": [
@@ -725,6 +737,7 @@
 		{
 			"name": "signature",
 			"sqlExpression": "signature",
+			"index": 12,
 			"strField": "signature",
 			"type": 200,
 			"viewFormats": [
@@ -768,6 +781,7 @@
 		{
 			"name": "sign_by",
 			"sqlExpression": "sign_by",
+			"index": 13,
 			"strField": "sign_by",
 			"type": 200,
 			"viewFormats": [
@@ -838,6 +852,182 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docuserid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_cea",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "name",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "biz_name",
+				"type": 200,
+				"size": 30,
+				"scale": 0,
+				"typeName": "varchar(30)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cea_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "expiry",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "issue_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remarks",
+				"type": 200,
+				"size": 300,
+				"scale": 0,
+				"typeName": "varchar(300)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "photo",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "image",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "revoke_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "signature",
+				"type": 200,
+				"size": 300,
+				"scale": 0,
+				"typeName": "varchar(300)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sign_by",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "agent_nametag"
 	},
 	"pages": [
 		{

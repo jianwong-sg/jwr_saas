@@ -2,8 +2,9 @@
 	"orderInfo": [
 		{
 			"index": 4,
-			"asc": true,
-			"field": "rental_main_date"
+			"field": "rental_main_date",
+			"expr": "rental_main_date",
+			"asc": true
 		}
 	],
 	"sql": "SELECT\nid,\nid_main,\npos,\nrental_main_date,\ndescriptions,\ndoc_upload,\nimages\nFROM rental_main_journal\nORDER BY rental_main_date",
@@ -11,6 +12,7 @@
 	"originalTable": "rental_main_journal",
 	"name": "rental_main_journal",
 	"shortTableName": "rental_main_journal",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "username",
@@ -51,6 +53,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -102,6 +105,7 @@
 		{
 			"name": "id_main",
 			"sqlExpression": "id_main",
+			"index": 2,
 			"strField": "id_main",
 			"type": 3,
 			"viewFormats": [
@@ -151,6 +155,7 @@
 		{
 			"name": "pos",
 			"sqlExpression": "pos",
+			"index": 3,
 			"strField": "pos",
 			"type": 3,
 			"viewFormats": [
@@ -195,6 +200,7 @@
 		{
 			"name": "rental_main_date",
 			"sqlExpression": "rental_main_date",
+			"index": 4,
 			"strField": "rental_main_date",
 			"type": 7,
 			"viewFormats": [
@@ -240,6 +246,7 @@
 		{
 			"name": "descriptions",
 			"sqlExpression": "descriptions",
+			"index": 5,
 			"strField": "descriptions",
 			"type": 201,
 			"viewFormats": [
@@ -282,6 +289,7 @@
 		{
 			"name": "doc_upload",
 			"sqlExpression": "doc_upload",
+			"index": 6,
 			"strField": "doc_upload",
 			"type": 201,
 			"viewFormats": [
@@ -331,6 +339,7 @@
 		{
 			"name": "images",
 			"sqlExpression": "images",
+			"index": 7,
 			"strField": "images",
 			"type": 201,
 			"viewFormats": [
@@ -390,8 +399,97 @@
 	"afterEditDetails": 153,
 	"afterAddAction": 0,
 	"afterAddDetail": 153,
+	"strOrderBy": "ORDER BY rental_main_date",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_main",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "pos",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rental_main_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "descriptions",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "doc_upload",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "images",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "rental_main_journal"
 	},
 	"pages": [
 		{

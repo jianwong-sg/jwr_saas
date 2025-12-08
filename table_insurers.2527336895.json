@@ -4,6 +4,7 @@
 	"originalTable": "insurers",
 	"name": "insurers",
 	"shortTableName": "insurers",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "docuserid",
 	"usersOwnerIdField": "user_id",
@@ -35,6 +36,7 @@
 		{
 			"name": "address",
 			"sqlExpression": "address",
+			"index": 1,
 			"strField": "address",
 			"type": 200,
 			"viewFormats": [
@@ -78,6 +80,7 @@
 		{
 			"name": "company_name",
 			"sqlExpression": "company_name",
+			"index": 2,
 			"strField": "company_name",
 			"type": 200,
 			"viewFormats": [
@@ -125,6 +128,7 @@
 		{
 			"name": "contact_no",
 			"sqlExpression": "contact_no",
+			"index": 3,
 			"strField": "contact_no",
 			"type": 200,
 			"viewFormats": [
@@ -168,6 +172,7 @@
 		{
 			"name": "contact_person",
 			"sqlExpression": "contact_person",
+			"index": 4,
 			"strField": "contact_person",
 			"type": 200,
 			"viewFormats": [
@@ -210,6 +215,7 @@
 		{
 			"name": "docuserid",
 			"sqlExpression": "docuserid",
+			"index": 5,
 			"strField": "docuserid",
 			"type": 3,
 			"viewFormats": [
@@ -259,6 +265,7 @@
 		{
 			"name": "email",
 			"sqlExpression": "email",
+			"index": 6,
 			"strField": "email",
 			"type": 200,
 			"viewFormats": [
@@ -301,6 +308,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 7,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -352,6 +360,7 @@
 		{
 			"name": "tel",
 			"sqlExpression": "tel",
+			"index": 8,
 			"strField": "tel",
 			"type": 200,
 			"viewFormats": [
@@ -411,6 +420,105 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "company_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tel",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "email",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "contact_person",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "contact_no",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docuserid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "insurers"
 	},
 	"pages": [
 		{

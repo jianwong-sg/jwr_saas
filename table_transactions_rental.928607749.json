@@ -13,7 +13,7 @@
 			"asc": false
 		}
 	],
-	"sql": "SELECT\nid,\ncategory,\nprop_type,\nProp_kind,\nrental_price,\nprop_name,\nprop_address,\ncea_reg,\nconcat(lease_duration_no, ' ', lease_duration_unit) AS lease_duration,\nland,\ntenure,\nno_bedrooms,\nno_bathrooms,\nconcat(rental_price, ' ', rental_price_type) AS rental,\n`date`,\nbuilt_up,\nland_unit,\nbuilt_up_unit\nFROM transactions\nORDER BY `date` DESC, id DESC",
+	"sql": "SELECT\n\tid,\n\tcategory,\n\tprop_type,\n\tProp_kind,\n\trental_price,\n\tprop_name,\n\tprop_address,\n\tcea_reg,\n\tconcat(lease_duration_no, ' ', lease_duration_unit) AS lease_duration,\n\tland,\n\ttenure,\n\tno_bedrooms,\n\tno_bathrooms,\n\tconcat(rental_price, ' ', rental_price_type) AS rental,\n\t`date`,\n\tbuilt_up,\n\tland_unit,\n\tbuilt_up_unit\nFROM\n\ttransactions\nORDER BY\n\t`date` DESC,\n\tid DESC\n",
 	"type": 1,
 	"connId": "Tables",
 	"originalTable": "transactions",
@@ -1584,7 +1584,7 @@
 			"code": "if (@$_REQUEST[\"a\"]!=\"search\" && @$_REQUEST[\"a\"]!=\"advsearch\" && @$_REQUEST[\"a\"]!=\"showall\")\n$strWhereClause = whereAdd($strWhereClause,\"category='RENTAL'\");\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
 		}
 	],
-	"strOrderBy": "ORDER BY `date` DESC, id DESC",
+	"strOrderBy": "ORDER BY\n\t`date` DESC,\n\tid DESC",
 	"sortByFields": {
 		"sortOrder": []
 	},

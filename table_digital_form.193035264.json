@@ -4,6 +4,7 @@
 	"originalTable": "digital_form",
 	"name": "digital_form",
 	"shortTableName": "digital_form",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "user_id",
@@ -107,6 +108,7 @@
 		{
 			"name": "date_added",
 			"sqlExpression": "date_added",
+			"index": 1,
 			"strField": "date_added",
 			"type": 7,
 			"viewFormats": [
@@ -152,6 +154,7 @@
 		{
 			"name": "form",
 			"sqlExpression": "form",
+			"index": 2,
 			"strField": "form",
 			"type": 200,
 			"viewFormats": [
@@ -201,6 +204,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 3,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -246,6 +250,7 @@
 		{
 			"name": "id_tx",
 			"sqlExpression": "id_tx",
+			"index": 4,
 			"strField": "id_tx",
 			"type": 3,
 			"viewFormats": [
@@ -289,6 +294,7 @@
 		{
 			"name": "prop_address_form",
 			"sqlExpression": "prop_address_form",
+			"index": 5,
 			"strField": "prop_address_form",
 			"type": 200,
 			"viewFormats": [
@@ -339,6 +345,7 @@
 		{
 			"name": "prop_postal_form",
 			"sqlExpression": "prop_postal_form",
+			"index": 6,
 			"strField": "prop_postal_form",
 			"type": 200,
 			"viewFormats": [
@@ -438,6 +445,83 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "form",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "date_added",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_tx",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_address_form",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_postal_form",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "digital_form"
 	},
 	"pages": [
 		{

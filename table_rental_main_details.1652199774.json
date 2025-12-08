@@ -4,6 +4,7 @@
 	"originalTable": "rental_main_details",
 	"name": "rental_main_details",
 	"shortTableName": "rental_main_details",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "agent_email",
 	"usersOwnerIdField": "active",
@@ -32,12 +33,10 @@
 		{
 			"table": 3828405108,
 			"detailsKeys": [
-				"id_prop_info",
-				"prop_address"
+				"id_prop_info"
 			],
 			"masterKeys": [
-				"id",
-				"prop_address"
+				"id"
 			]
 		}
 	],
@@ -49,6 +48,7 @@
 		{
 			"name": "agent_email",
 			"sqlExpression": "agent_email",
+			"index": 1,
 			"strField": "agent_email",
 			"type": 200,
 			"viewFormats": [
@@ -91,6 +91,7 @@
 		{
 			"name": "doc_upload",
 			"sqlExpression": "doc_upload",
+			"index": 2,
 			"strField": "doc_upload",
 			"type": 201,
 			"viewFormats": [
@@ -140,6 +141,7 @@
 		{
 			"name": "end_date",
 			"sqlExpression": "end_date",
+			"index": 3,
 			"strField": "end_date",
 			"type": 200,
 			"viewFormats": [
@@ -184,6 +186,7 @@
 		{
 			"name": "expense",
 			"sqlExpression": "expense",
+			"index": 4,
 			"strField": "expense",
 			"type": 200,
 			"viewFormats": [
@@ -227,6 +230,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 5,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -278,6 +282,7 @@
 		{
 			"name": "id_prop_info",
 			"sqlExpression": "id_prop_info",
+			"index": 6,
 			"strField": "id_prop_info",
 			"type": 3,
 			"viewFormats": [
@@ -327,6 +332,7 @@
 		{
 			"name": "id_tx",
 			"sqlExpression": "id_tx",
+			"index": 7,
 			"strField": "id_tx",
 			"type": 3,
 			"viewFormats": [
@@ -376,6 +382,7 @@
 		{
 			"name": "inventory",
 			"sqlExpression": "inventory",
+			"index": 8,
 			"strField": "inventory",
 			"type": 201,
 			"viewFormats": [
@@ -432,6 +439,7 @@
 		{
 			"name": "lease_no",
 			"sqlExpression": "lease_no",
+			"index": 9,
 			"strField": "lease_no",
 			"type": 200,
 			"viewFormats": [
@@ -477,6 +485,7 @@
 		{
 			"name": "prop_address",
 			"sqlExpression": "prop_address",
+			"index": 10,
 			"strField": "prop_address",
 			"type": 200,
 			"viewFormats": [
@@ -525,6 +534,7 @@
 		{
 			"name": "reminder",
 			"sqlExpression": "reminder",
+			"index": 11,
 			"strField": "reminder",
 			"type": 200,
 			"viewFormats": [
@@ -574,6 +584,7 @@
 		{
 			"name": "reminder1_sent",
 			"sqlExpression": "reminder1_sent",
+			"index": 12,
 			"strField": "reminder1_sent",
 			"type": 135,
 			"viewFormats": [
@@ -625,6 +636,7 @@
 		{
 			"name": "reminder2_sent",
 			"sqlExpression": "reminder2_sent",
+			"index": 13,
 			"strField": "reminder2_sent",
 			"type": 135,
 			"viewFormats": [
@@ -676,6 +688,7 @@
 		{
 			"name": "rent_amt",
 			"sqlExpression": "rent_amt",
+			"index": 14,
 			"strField": "rent_amt",
 			"type": 200,
 			"viewFormats": [
@@ -718,6 +731,7 @@
 		{
 			"name": "send_reminder_email",
 			"sqlExpression": "send_reminder_email",
+			"index": 15,
 			"strField": "send_reminder_email",
 			"type": 200,
 			"viewFormats": [
@@ -772,6 +786,7 @@
 		{
 			"name": "start_date",
 			"sqlExpression": "start_date",
+			"index": 16,
 			"strField": "start_date",
 			"type": 200,
 			"viewFormats": [
@@ -816,6 +831,7 @@
 		{
 			"name": "tenant",
 			"sqlExpression": "tenant",
+			"index": 17,
 			"strField": "tenant",
 			"type": 200,
 			"viewFormats": [
@@ -885,6 +901,204 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_prop_info",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_tx",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "start_date",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "end_date",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "rent_amt",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminder",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "send_reminder_email",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "inventory",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "expense",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "doc_upload",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tenant",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminder1_sent",
+				"type": 135,
+				"size": 0,
+				"scale": 0,
+				"typeName": "datetime",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reminder2_sent",
+				"type": 135,
+				"size": 0,
+				"scale": 0,
+				"typeName": "datetime",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agent_email",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "lease_no",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "rental_main_details"
 	},
 	"pages": [
 		{

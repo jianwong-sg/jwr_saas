@@ -2,8 +2,9 @@
 	"orderInfo": [
 		{
 			"index": 1,
-			"asc": false,
-			"field": "id"
+			"field": "id",
+			"expr": "id",
+			"asc": false
 		}
 	],
 	"sql": "SELECT\nid,\nname,\naddress,\nemail,\npostal,\nnric,\nmobile,\ntel,\ndoc_upload,\nid_property,\ndocuserid,\noffice_tel,\nremarks,\ndoc_name,\ncus_type,\ntrade,\ncontact_person,\ndestination,\ncontact_email,\nbiz_email,\nCONCAT_WS('; ', IF(LENGTH(`email`),`email`,NULL), IF(LENGTH(`contact_email`),`contact_email`,NULL), IF(LENGTH(`biz_email`),`biz_email`,NULL)) AS allemails,\nlast_updated,\nregistration_date,\nstatus,\nid_tx,\nid_type,\ncountry_incorporation,\nnationality,\ndate_of_birth,\noccupation,\ncontact_person_contact,\ngender,\ncontact_person_id,\nsalutation,\nrace,\ntel_type,\nemail_type,\nregistration_no,\nCONCAT(Ifnull(nric,\"\"), Ifnull(registration_no,\"\")) AS nric_reg,\nowner_type,\nownership_kind,\npurchase_at,\npurchase_date,\nsold_at,\nsold_date\nFROM invcustomers\nORDER BY id DESC",
@@ -12,6 +13,7 @@
 	"originalTable": "invcustomers",
 	"name": "properties_owner",
 	"shortTableName": "properties_owner",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "username",
@@ -42,6 +44,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -94,6 +97,7 @@
 		{
 			"name": "name",
 			"sqlExpression": "name",
+			"index": 2,
 			"strField": "name",
 			"type": 200,
 			"viewFormats": [
@@ -149,6 +153,7 @@
 		{
 			"name": "address",
 			"sqlExpression": "address",
+			"index": 3,
 			"strField": "address",
 			"type": 201,
 			"viewFormats": [
@@ -204,6 +209,7 @@
 		{
 			"name": "email",
 			"sqlExpression": "email",
+			"index": 4,
 			"strField": "email",
 			"type": 201,
 			"viewFormats": [
@@ -248,6 +254,7 @@
 		{
 			"name": "postal",
 			"sqlExpression": "postal",
+			"index": 5,
 			"strField": "postal",
 			"type": 200,
 			"viewFormats": [
@@ -285,6 +292,7 @@
 		{
 			"name": "nric",
 			"sqlExpression": "nric",
+			"index": 6,
 			"strField": "nric",
 			"type": 201,
 			"viewFormats": [
@@ -339,6 +347,7 @@
 		{
 			"name": "mobile",
 			"sqlExpression": "mobile",
+			"index": 7,
 			"strField": "mobile",
 			"type": 201,
 			"viewFormats": [
@@ -379,6 +388,7 @@
 		{
 			"name": "tel",
 			"sqlExpression": "tel",
+			"index": 8,
 			"strField": "tel",
 			"type": 201,
 			"viewFormats": [
@@ -417,6 +427,7 @@
 		{
 			"name": "doc_upload",
 			"sqlExpression": "doc_upload",
+			"index": 9,
 			"strField": "doc_upload",
 			"type": 200,
 			"viewFormats": [
@@ -469,6 +480,7 @@
 		{
 			"name": "id_property",
 			"sqlExpression": "id_property",
+			"index": 10,
 			"strField": "id_property",
 			"type": 3,
 			"viewFormats": [
@@ -514,6 +526,7 @@
 		{
 			"name": "docuserid",
 			"sqlExpression": "docuserid",
+			"index": 11,
 			"strField": "docuserid",
 			"type": 200,
 			"viewFormats": [
@@ -559,6 +572,7 @@
 		{
 			"name": "office_tel",
 			"sqlExpression": "office_tel",
+			"index": 12,
 			"strField": "office_tel",
 			"type": 200,
 			"viewFormats": [
@@ -597,6 +611,7 @@
 		{
 			"name": "remarks",
 			"sqlExpression": "remarks",
+			"index": 13,
 			"strField": "remarks",
 			"type": 200,
 			"viewFormats": [
@@ -642,6 +657,7 @@
 		{
 			"name": "doc_name",
 			"sqlExpression": "doc_name",
+			"index": 14,
 			"strField": "doc_name",
 			"type": 200,
 			"viewFormats": [
@@ -687,6 +703,7 @@
 		{
 			"name": "cus_type",
 			"sqlExpression": "cus_type",
+			"index": 15,
 			"strField": "cus_type",
 			"type": 200,
 			"viewFormats": [
@@ -730,6 +747,7 @@
 		{
 			"name": "trade",
 			"sqlExpression": "trade",
+			"index": 16,
 			"strField": "trade",
 			"type": 200,
 			"viewFormats": [
@@ -769,6 +787,7 @@
 		{
 			"name": "contact_person",
 			"sqlExpression": "contact_person",
+			"index": 17,
 			"strField": "contact_person",
 			"type": 200,
 			"viewFormats": [
@@ -814,6 +833,7 @@
 		{
 			"name": "destination",
 			"sqlExpression": "destination",
+			"index": 18,
 			"strField": "destination",
 			"type": 200,
 			"viewFormats": [
@@ -859,6 +879,7 @@
 		{
 			"name": "contact_email",
 			"sqlExpression": "contact_email",
+			"index": 19,
 			"strField": "contact_email",
 			"type": 201,
 			"viewFormats": [
@@ -897,6 +918,7 @@
 		{
 			"name": "biz_email",
 			"sqlExpression": "biz_email",
+			"index": 20,
 			"strField": "biz_email",
 			"type": 201,
 			"viewFormats": [
@@ -935,6 +957,7 @@
 		{
 			"name": "allemails",
 			"sqlExpression": "CONCAT_WS('; ', IF(LENGTH(`email`),`email`,NULL), IF(LENGTH(`contact_email`),`contact_email`,NULL), IF(LENGTH(`biz_email`),`biz_email`,NULL))",
+			"index": 21,
 			"strField": "allemails",
 			"type": 201,
 			"viewFormats": [
@@ -979,6 +1002,7 @@
 		{
 			"name": "last_updated",
 			"sqlExpression": "last_updated",
+			"index": 22,
 			"strField": "last_updated",
 			"type": 7,
 			"viewFormats": [
@@ -1025,6 +1049,7 @@
 		{
 			"name": "registration_date",
 			"sqlExpression": "registration_date",
+			"index": 23,
 			"strField": "registration_date",
 			"type": 7,
 			"viewFormats": [
@@ -1067,6 +1092,7 @@
 		{
 			"name": "status",
 			"sqlExpression": "status",
+			"index": 24,
 			"strField": "status",
 			"type": 200,
 			"viewFormats": [
@@ -1112,6 +1138,7 @@
 		{
 			"name": "id_tx",
 			"sqlExpression": "id_tx",
+			"index": 25,
 			"strField": "id_tx",
 			"type": 3,
 			"viewFormats": [
@@ -1157,6 +1184,7 @@
 		{
 			"name": "id_type",
 			"sqlExpression": "id_type",
+			"index": 26,
 			"strField": "id_type",
 			"type": 200,
 			"viewFormats": [
@@ -1206,6 +1234,7 @@
 		{
 			"name": "country_incorporation",
 			"sqlExpression": "country_incorporation",
+			"index": 27,
 			"strField": "country_incorporation",
 			"type": 200,
 			"viewFormats": [
@@ -1250,6 +1279,7 @@
 		{
 			"name": "nationality",
 			"sqlExpression": "nationality",
+			"index": 28,
 			"strField": "nationality",
 			"type": 200,
 			"viewFormats": [
@@ -1295,6 +1325,7 @@
 		{
 			"name": "date_of_birth",
 			"sqlExpression": "date_of_birth",
+			"index": 29,
 			"strField": "date_of_birth",
 			"type": 7,
 			"viewFormats": [
@@ -1337,6 +1368,7 @@
 		{
 			"name": "occupation",
 			"sqlExpression": "occupation",
+			"index": 30,
 			"strField": "occupation",
 			"type": 200,
 			"viewFormats": [
@@ -1374,6 +1406,7 @@
 		{
 			"name": "contact_person_contact",
 			"sqlExpression": "contact_person_contact",
+			"index": 31,
 			"strField": "contact_person_contact",
 			"type": 201,
 			"viewFormats": [
@@ -1419,6 +1452,7 @@
 		{
 			"name": "gender",
 			"sqlExpression": "gender",
+			"index": 32,
 			"strField": "gender",
 			"type": 200,
 			"viewFormats": [
@@ -1462,6 +1496,7 @@
 		{
 			"name": "contact_person_id",
 			"sqlExpression": "contact_person_id",
+			"index": 33,
 			"strField": "contact_person_id",
 			"type": 201,
 			"viewFormats": [
@@ -1507,6 +1542,7 @@
 		{
 			"name": "salutation",
 			"sqlExpression": "salutation",
+			"index": 34,
 			"strField": "salutation",
 			"type": 200,
 			"viewFormats": [
@@ -1557,6 +1593,7 @@
 		{
 			"name": "race",
 			"sqlExpression": "race",
+			"index": 35,
 			"strField": "race",
 			"type": 200,
 			"viewFormats": [
@@ -1599,6 +1636,7 @@
 		{
 			"name": "tel_type",
 			"sqlExpression": "tel_type",
+			"index": 36,
 			"strField": "tel_type",
 			"type": 200,
 			"viewFormats": [
@@ -1643,6 +1681,7 @@
 		{
 			"name": "email_type",
 			"sqlExpression": "email_type",
+			"index": 37,
 			"strField": "email_type",
 			"type": 200,
 			"viewFormats": [
@@ -1687,6 +1726,7 @@
 		{
 			"name": "registration_no",
 			"sqlExpression": "registration_no",
+			"index": 38,
 			"strField": "registration_no",
 			"type": 201,
 			"viewFormats": [
@@ -1724,6 +1764,7 @@
 		{
 			"name": "nric_reg",
 			"sqlExpression": "CONCAT(Ifnull(nric,\"\"), Ifnull(registration_no,\"\"))",
+			"index": 39,
 			"strField": "nric_reg",
 			"type": 201,
 			"viewFormats": [
@@ -1768,6 +1809,7 @@
 		{
 			"name": "owner_type",
 			"sqlExpression": "owner_type",
+			"index": 40,
 			"strField": "owner_type",
 			"type": 200,
 			"viewFormats": [
@@ -1818,6 +1860,7 @@
 		{
 			"name": "ownership_kind",
 			"sqlExpression": "ownership_kind",
+			"index": 41,
 			"strField": "ownership_kind",
 			"type": 200,
 			"viewFormats": [
@@ -1861,6 +1904,7 @@
 		{
 			"name": "purchase_at",
 			"sqlExpression": "purchase_at",
+			"index": 42,
 			"strField": "purchase_at",
 			"type": 200,
 			"viewFormats": [
@@ -1906,6 +1950,7 @@
 		{
 			"name": "purchase_date",
 			"sqlExpression": "purchase_date",
+			"index": 43,
 			"strField": "purchase_date",
 			"type": 7,
 			"viewFormats": [
@@ -1952,6 +1997,7 @@
 		{
 			"name": "sold_at",
 			"sqlExpression": "sold_at",
+			"index": 44,
 			"strField": "sold_at",
 			"type": 200,
 			"viewFormats": [
@@ -1997,6 +2043,7 @@
 		{
 			"name": "sold_date",
 			"sqlExpression": "sold_date",
+			"index": 45,
 			"strField": "sold_date",
 			"type": 7,
 			"viewFormats": [
@@ -2078,8 +2125,625 @@
 			"code": "if($values['owner_type']==\"INDIVIDUAL\")\n{\nCustomQuery(\"UPDATE prop_cust SET country_incorporation='',reg_date='',trade='',\noffice_tel='',biz_email='',contact_person='',contact_person_id='',destination='',\ncontact_person_cell='',contact_email='',remarks='' WHERE id='\".$values[\"id\"].\"'\");\n}\n\nif($values['owner_type']==\"ENTITY\")\n{\nCustomQuery(\"UPDATE prop_cust SET nationality='',gender='',dob='',\noccupation='',tel='',mobile='',email='' WHERE id='\".$values[\"id\"].\"'\");\n}\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
 		}
 	],
+	"strOrderBy": "ORDER BY id DESC",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "name",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "address",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "nric",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "mobile",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tel",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "doc_upload",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_property",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docuserid",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "office_tel",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remarks",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "doc_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cus_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "trade",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "contact_person",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "destination",
+				"type": 200,
+				"size": 20,
+				"scale": 0,
+				"typeName": "varchar(20)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "contact_email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "biz_email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "last_updated",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "registration_no",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "registration_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "status",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_tx",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "gender",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_type",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "country_incorporation",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "license_no",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_address",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency_postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "nationality",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "date_of_birth",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "occupation",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "beneficial_owner_indi",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "beneficial_owner_corp",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "contact_person_contact",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "contact_person_id",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "salutation",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "race",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tel_type",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "email_type",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "relationship",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_type1",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "email_emailall",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "date_added",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "owner_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "ownership_kind",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "purchase_at",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "purchase_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sold_at",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "sold_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "username",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "billing_address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": false,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "invcustomers"
 	},
 	"pages": [
 		{

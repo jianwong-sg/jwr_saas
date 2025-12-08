@@ -5,6 +5,7 @@
 	"originalTable": "awards",
 	"name": "awards-search",
 	"shortTableName": "awards_search",
+	"dbType": 0,
 	"hideDataUntilSearch": true,
 	"caseSensitiveSearch": "",
 	"listAjax": true,
@@ -37,6 +38,7 @@
 		{
 			"name": "agency",
 			"sqlExpression": "agency",
+			"index": 1,
 			"strField": "agency",
 			"type": 200,
 			"viewFormats": [
@@ -83,6 +85,7 @@
 		{
 			"name": "award_type",
 			"sqlExpression": "award_type",
+			"index": 2,
 			"strField": "award_type",
 			"type": 200,
 			"viewFormats": [
@@ -128,6 +131,7 @@
 		{
 			"name": "cea_reg",
 			"sqlExpression": "cea_reg",
+			"index": 3,
 			"strField": "cea_reg",
 			"type": 201,
 			"viewFormats": [
@@ -179,6 +183,7 @@
 		{
 			"name": "dateadded",
 			"sqlExpression": "dateadded",
+			"index": 4,
 			"strField": "dateadded",
 			"googleLikeSearch": false,
 			"type": 7,
@@ -224,6 +229,7 @@
 		{
 			"name": "descriptions",
 			"sqlExpression": "descriptions",
+			"index": 5,
 			"strField": "descriptions",
 			"type": 200,
 			"viewFormats": [
@@ -267,6 +273,7 @@
 		{
 			"name": "doc_upload",
 			"sqlExpression": "doc_upload",
+			"index": 6,
 			"strField": "doc_upload",
 			"googleLikeSearch": false,
 			"type": 201,
@@ -327,6 +334,7 @@
 		{
 			"name": "docuserid",
 			"sqlExpression": "docuserid",
+			"index": 7,
 			"strField": "docuserid",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -377,6 +385,7 @@
 		{
 			"name": "eatuser_id",
 			"sqlExpression": "eatuser_id",
+			"index": 8,
 			"strField": "eatuser_id",
 			"type": 3,
 			"viewFormats": [
@@ -422,6 +431,7 @@
 		{
 			"name": "filename",
 			"sqlExpression": "filename",
+			"index": 9,
 			"strField": "filename",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -472,6 +482,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 10,
 			"strField": "id",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -524,6 +535,7 @@
 		{
 			"name": "name",
 			"sqlExpression": "name",
+			"index": 11,
 			"strField": "name",
 			"type": 200,
 			"viewFormats": [
@@ -566,6 +578,7 @@
 		{
 			"name": "third_party",
 			"sqlExpression": "third_party",
+			"index": 12,
 			"strField": "third_party",
 			"type": 200,
 			"viewFormats": [
@@ -631,6 +644,149 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cea_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "dateadded",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "descriptions",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "doc_upload",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "filename",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agency",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "third_party",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "award_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docuserid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "eatuser_id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "awards"
 	},
 	"pages": [
 		{

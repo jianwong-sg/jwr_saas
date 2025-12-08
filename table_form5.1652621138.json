@@ -4592,6 +4592,7 @@
 			"code": "$xt->assign(\"footer\",false);\n$pageObject->hideItem(\"id\");\n$pageObject->hideItem(\"id_form\");\n$pageObject->hideItem(\"id_tx\");\n$pageObject->hideItem(\"representing\");\n$pageObject->hideItem(\"category\");\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
 		}
 	],
+	"strOrderBy": "ORDER BY id DESC",
 	"sortByFields": {
 		"sortOrder": []
 	},
@@ -5383,9 +5384,9 @@
 			{
 				"name": "estateagent2",
 				"type": 200,
-				"size": 50,
+				"size": 20,
 				"scale": 0,
-				"typeName": "varchar(50)",
+				"typeName": "varchar(20)",
 				"nullable": true,
 				"autoinc": false,
 				"defaultValueSQL": null,

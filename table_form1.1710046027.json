@@ -5174,6 +5174,7 @@
 			"code": "if ($data[\"sign_date1\"]==\"\"&&$data[\"date_sign\"]==\"\") \n{ \n   $pageObject->hideItem(\"view_signed_form1\", $recordId); \n} \n\nif ($data[\"seller1\"]==\"\") \n{ \n   $pageObject->hideItem(\"esign_form1\", $recordId); \n\t $pageObject->hideItem(\"view_unsign_form1\", $recordId); \n}"
 		}
 	],
+	"strOrderBy": "ORDER BY\n\tid DESC",
 	"sortByFields": {
 		"sortOrder": []
 	},
@@ -5965,9 +5966,9 @@
 			{
 				"name": "estateagent2",
 				"type": 200,
-				"size": 50,
+				"size": 20,
 				"scale": 0,
-				"typeName": "varchar(50)",
+				"typeName": "varchar(20)",
 				"nullable": true,
 				"autoinc": false,
 				"defaultValueSQL": null,

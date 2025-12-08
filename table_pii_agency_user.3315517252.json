@@ -5,6 +5,7 @@
 	"originalTable": "pii_agency",
 	"name": "pii_agency_user",
 	"shortTableName": "pii_agency_user",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "username",
@@ -131,6 +132,7 @@
 		{
 			"name": "category",
 			"sqlExpression": "category",
+			"index": 1,
 			"strField": "category",
 			"type": 200,
 			"viewFormats": [
@@ -180,6 +182,7 @@
 		{
 			"name": "docuserid",
 			"sqlExpression": "docuserid",
+			"index": 2,
 			"strField": "docuserid",
 			"type": 3,
 			"viewFormats": [
@@ -229,6 +232,7 @@
 		{
 			"name": "filenames",
 			"sqlExpression": "filenames",
+			"index": 3,
 			"strField": "filenames",
 			"type": 200,
 			"viewFormats": [
@@ -278,6 +282,7 @@
 		{
 			"name": "from_date",
 			"sqlExpression": "from_date",
+			"index": 4,
 			"strField": "from_date",
 			"type": 7,
 			"viewFormats": [
@@ -328,6 +333,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 5,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -379,6 +385,7 @@
 		{
 			"name": "insured",
 			"sqlExpression": "insured",
+			"index": 6,
 			"strField": "insured",
 			"type": 200,
 			"viewFormats": [
@@ -428,6 +435,7 @@
 		{
 			"name": "insurer",
 			"sqlExpression": "insurer",
+			"index": 7,
 			"strField": "insurer",
 			"type": 200,
 			"viewFormats": [
@@ -477,6 +485,7 @@
 		{
 			"name": "policy",
 			"sqlExpression": "policy",
+			"index": 8,
 			"strField": "policy",
 			"type": 201,
 			"viewFormats": [
@@ -526,6 +535,7 @@
 		{
 			"name": "policy_no",
 			"sqlExpression": "policy_no",
+			"index": 9,
 			"strField": "policy_no",
 			"type": 200,
 			"viewFormats": [
@@ -575,6 +585,7 @@
 		{
 			"name": "premium",
 			"sqlExpression": "premium",
+			"index": 10,
 			"strField": "premium",
 			"type": 200,
 			"viewFormats": [
@@ -624,6 +635,7 @@
 		{
 			"name": "to_date",
 			"sqlExpression": "to_date",
+			"index": 11,
 			"strField": "to_date",
 			"type": 7,
 			"viewFormats": [
@@ -677,6 +689,138 @@
 	"afterAddDetail": 149,
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docuserid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "from_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "to_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "category",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "insurer",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "premium",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "policy_no",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "policy",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "filenames",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "insured",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "pii_agency"
 	},
 	"pages": [
 		{

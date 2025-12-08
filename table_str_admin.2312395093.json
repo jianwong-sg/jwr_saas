@@ -2,8 +2,9 @@
 	"orderInfo": [
 		{
 			"index": 52,
-			"asc": false,
-			"field": "filing_date"
+			"field": "filing_date",
+			"expr": "filing_date",
+			"asc": false
 		}
 	],
 	"sql": "SELECT\nid,\nea_name,\nea_address,\nea_contact,\nea_email,\nrelationship_with_subject,\nofficer_name1,\ndesignation1,\nreport_ref,\nofficer_name2,\ndesignation2,\nentity_name,\ncountry_reg,\nreg_no,\nreg_date,\nentity_address,\nentity_foreign_address,\nentity_contact,\nentity_director_name,\nbiz_activity,\nbo_name,\nindi_name,\nindi_id,\nindi_dob,\nindi_nationalty,\nindi_address,\nindi_address_foreign,\nindi_contact,\nindi_occupation,\nindi_employer,\nindi_bank_details,\nindi_bo_name,\nprop_address,\nprop_tenure,\nprop_type,\ntransact_type,\ntransact_price,\nvaluation,\nlease_period,\nlease_period_unit,\ndeposit,\nsalesperson_name,\nsalesperson_nric,\nsuspicious_amount,\nsuspicious_date,\ndescription,\nreason_suspicion,\nother_info,\ndocs_attach,\nid_tx,\ncustomer_type,\nfiling_date,\nrepresnting,\nparty_id\nFROM str\nORDER BY filing_date DESC",
@@ -12,6 +13,7 @@
 	"originalTable": "str",
 	"name": "str-admin",
 	"shortTableName": "str_admin",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "salesperson_nric",
 	"usersOwnerIdField": "nric",
@@ -41,6 +43,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -92,6 +95,7 @@
 		{
 			"name": "ea_name",
 			"sqlExpression": "ea_name",
+			"index": 2,
 			"strField": "ea_name",
 			"type": 200,
 			"viewFormats": [
@@ -135,6 +139,7 @@
 		{
 			"name": "ea_address",
 			"sqlExpression": "ea_address",
+			"index": 3,
 			"strField": "ea_address",
 			"type": 200,
 			"viewFormats": [
@@ -179,8 +184,9 @@
 		{
 			"name": "ea_contact",
 			"sqlExpression": "ea_contact",
+			"index": 4,
 			"strField": "ea_contact",
-			"type": 200,
+			"type": 201,
 			"viewFormats": [
 				{
 					"imageWidth": 457,
@@ -223,8 +229,9 @@
 		{
 			"name": "ea_email",
 			"sqlExpression": "ea_email",
+			"index": 5,
 			"strField": "ea_email",
-			"type": 200,
+			"type": 201,
 			"viewFormats": [
 				{
 					"imageWidth": 457,
@@ -267,6 +274,7 @@
 		{
 			"name": "relationship_with_subject",
 			"sqlExpression": "relationship_with_subject",
+			"index": 6,
 			"strField": "relationship_with_subject",
 			"type": 200,
 			"viewFormats": [
@@ -316,6 +324,7 @@
 		{
 			"name": "officer_name1",
 			"sqlExpression": "officer_name1",
+			"index": 7,
 			"strField": "officer_name1",
 			"type": 200,
 			"viewFormats": [
@@ -359,6 +368,7 @@
 		{
 			"name": "designation1",
 			"sqlExpression": "designation1",
+			"index": 8,
 			"strField": "designation1",
 			"type": 200,
 			"viewFormats": [
@@ -403,6 +413,7 @@
 		{
 			"name": "report_ref",
 			"sqlExpression": "report_ref",
+			"index": 9,
 			"strField": "report_ref",
 			"type": 200,
 			"viewFormats": [
@@ -445,6 +456,7 @@
 		{
 			"name": "officer_name2",
 			"sqlExpression": "officer_name2",
+			"index": 10,
 			"strField": "officer_name2",
 			"type": 200,
 			"viewFormats": [
@@ -487,6 +499,7 @@
 		{
 			"name": "designation2",
 			"sqlExpression": "designation2",
+			"index": 11,
 			"strField": "designation2",
 			"type": 200,
 			"viewFormats": [
@@ -529,6 +542,7 @@
 		{
 			"name": "entity_name",
 			"sqlExpression": "entity_name",
+			"index": 12,
 			"strField": "entity_name",
 			"type": 200,
 			"viewFormats": [
@@ -609,6 +623,7 @@
 		{
 			"name": "country_reg",
 			"sqlExpression": "country_reg",
+			"index": 13,
 			"strField": "country_reg",
 			"type": 200,
 			"viewFormats": [
@@ -664,8 +679,9 @@
 		{
 			"name": "reg_no",
 			"sqlExpression": "reg_no",
+			"index": 14,
 			"strField": "reg_no",
-			"type": 200,
+			"type": 201,
 			"viewFormats": [
 				{
 					"imageWidth": 457,
@@ -719,6 +735,7 @@
 		{
 			"name": "reg_date",
 			"sqlExpression": "reg_date",
+			"index": 15,
 			"strField": "reg_date",
 			"type": 7,
 			"viewFormats": [
@@ -773,6 +790,7 @@
 		{
 			"name": "entity_address",
 			"sqlExpression": "entity_address",
+			"index": 16,
 			"strField": "entity_address",
 			"type": 200,
 			"viewFormats": [
@@ -829,6 +847,7 @@
 		{
 			"name": "entity_foreign_address",
 			"sqlExpression": "entity_foreign_address",
+			"index": 17,
 			"strField": "entity_foreign_address",
 			"type": 200,
 			"viewFormats": [
@@ -872,8 +891,9 @@
 		{
 			"name": "entity_contact",
 			"sqlExpression": "entity_contact",
+			"index": 18,
 			"strField": "entity_contact",
-			"type": 200,
+			"type": 201,
 			"viewFormats": [
 				{
 					"imageWidth": 457,
@@ -928,6 +948,7 @@
 		{
 			"name": "entity_director_name",
 			"sqlExpression": "entity_director_name",
+			"index": 19,
 			"strField": "entity_director_name",
 			"type": 200,
 			"viewFormats": [
@@ -983,6 +1004,7 @@
 		{
 			"name": "biz_activity",
 			"sqlExpression": "biz_activity",
+			"index": 20,
 			"strField": "biz_activity",
 			"type": 200,
 			"viewFormats": [
@@ -1040,6 +1062,7 @@
 		{
 			"name": "bo_name",
 			"sqlExpression": "bo_name",
+			"index": 21,
 			"strField": "bo_name",
 			"type": 200,
 			"viewFormats": [
@@ -1089,6 +1112,7 @@
 		{
 			"name": "indi_name",
 			"sqlExpression": "indi_name",
+			"index": 22,
 			"strField": "indi_name",
 			"type": 200,
 			"viewFormats": [
@@ -1162,6 +1186,7 @@
 		{
 			"name": "indi_id",
 			"sqlExpression": "indi_id",
+			"index": 23,
 			"strField": "indi_id",
 			"type": 200,
 			"viewFormats": [
@@ -1216,6 +1241,7 @@
 		{
 			"name": "indi_dob",
 			"sqlExpression": "indi_dob",
+			"index": 24,
 			"strField": "indi_dob",
 			"type": 7,
 			"viewFormats": [
@@ -1270,6 +1296,7 @@
 		{
 			"name": "indi_nationalty",
 			"sqlExpression": "indi_nationalty",
+			"index": 25,
 			"strField": "indi_nationalty",
 			"type": 200,
 			"viewFormats": [
@@ -1324,6 +1351,7 @@
 		{
 			"name": "indi_address",
 			"sqlExpression": "indi_address",
+			"index": 26,
 			"strField": "indi_address",
 			"type": 200,
 			"viewFormats": [
@@ -1378,6 +1406,7 @@
 		{
 			"name": "indi_address_foreign",
 			"sqlExpression": "indi_address_foreign",
+			"index": 27,
 			"strField": "indi_address_foreign",
 			"type": 200,
 			"viewFormats": [
@@ -1421,8 +1450,9 @@
 		{
 			"name": "indi_contact",
 			"sqlExpression": "indi_contact",
+			"index": 28,
 			"strField": "indi_contact",
-			"type": 200,
+			"type": 201,
 			"viewFormats": [
 				{
 					"imageWidth": 457,
@@ -1476,6 +1506,7 @@
 		{
 			"name": "indi_occupation",
 			"sqlExpression": "indi_occupation",
+			"index": 29,
 			"strField": "indi_occupation",
 			"type": 200,
 			"viewFormats": [
@@ -1530,6 +1561,7 @@
 		{
 			"name": "indi_employer",
 			"sqlExpression": "indi_employer",
+			"index": 30,
 			"strField": "indi_employer",
 			"type": 200,
 			"viewFormats": [
@@ -1573,6 +1605,7 @@
 		{
 			"name": "indi_bank_details",
 			"sqlExpression": "indi_bank_details",
+			"index": 31,
 			"strField": "indi_bank_details",
 			"type": 200,
 			"viewFormats": [
@@ -1616,6 +1649,7 @@
 		{
 			"name": "indi_bo_name",
 			"sqlExpression": "indi_bo_name",
+			"index": 32,
 			"strField": "indi_bo_name",
 			"type": 200,
 			"viewFormats": [
@@ -1665,6 +1699,7 @@
 		{
 			"name": "prop_address",
 			"sqlExpression": "prop_address",
+			"index": 33,
 			"strField": "prop_address",
 			"type": 200,
 			"viewFormats": [
@@ -1713,6 +1748,7 @@
 		{
 			"name": "prop_tenure",
 			"sqlExpression": "prop_tenure",
+			"index": 34,
 			"strField": "prop_tenure",
 			"type": 200,
 			"viewFormats": [
@@ -1760,6 +1796,7 @@
 		{
 			"name": "prop_type",
 			"sqlExpression": "prop_type",
+			"index": 35,
 			"strField": "prop_type",
 			"type": 200,
 			"viewFormats": [
@@ -1811,6 +1848,7 @@
 		{
 			"name": "transact_type",
 			"sqlExpression": "transact_type",
+			"index": 36,
 			"strField": "transact_type",
 			"type": 200,
 			"viewFormats": [
@@ -1858,6 +1896,7 @@
 		{
 			"name": "transact_price",
 			"sqlExpression": "transact_price",
+			"index": 37,
 			"strField": "transact_price",
 			"type": 200,
 			"viewFormats": [
@@ -1902,6 +1941,7 @@
 		{
 			"name": "valuation",
 			"sqlExpression": "valuation",
+			"index": 38,
 			"strField": "valuation",
 			"type": 200,
 			"viewFormats": [
@@ -1946,6 +1986,7 @@
 		{
 			"name": "lease_period",
 			"sqlExpression": "lease_period",
+			"index": 39,
 			"strField": "lease_period",
 			"type": 200,
 			"viewFormats": [
@@ -1993,6 +2034,7 @@
 		{
 			"name": "lease_period_unit",
 			"sqlExpression": "lease_period_unit",
+			"index": 40,
 			"strField": "lease_period_unit",
 			"type": 200,
 			"viewFormats": [
@@ -2039,6 +2081,7 @@
 		{
 			"name": "deposit",
 			"sqlExpression": "deposit",
+			"index": 41,
 			"strField": "deposit",
 			"type": 200,
 			"viewFormats": [
@@ -2082,6 +2125,7 @@
 		{
 			"name": "salesperson_name",
 			"sqlExpression": "salesperson_name",
+			"index": 42,
 			"strField": "salesperson_name",
 			"type": 200,
 			"viewFormats": [
@@ -2128,8 +2172,9 @@
 		{
 			"name": "salesperson_nric",
 			"sqlExpression": "salesperson_nric",
+			"index": 43,
 			"strField": "salesperson_nric",
-			"type": 200,
+			"type": 201,
 			"viewFormats": [
 				{
 					"imageWidth": 457,
@@ -2184,6 +2229,7 @@
 		{
 			"name": "suspicious_amount",
 			"sqlExpression": "suspicious_amount",
+			"index": 44,
 			"strField": "suspicious_amount",
 			"type": 200,
 			"viewFormats": [
@@ -2227,6 +2273,7 @@
 		{
 			"name": "suspicious_date",
 			"sqlExpression": "suspicious_date",
+			"index": 45,
 			"strField": "suspicious_date",
 			"type": 7,
 			"viewFormats": [
@@ -2270,6 +2317,7 @@
 		{
 			"name": "description",
 			"sqlExpression": "description",
+			"index": 46,
 			"strField": "description",
 			"type": 200,
 			"viewFormats": [
@@ -2312,6 +2360,7 @@
 		{
 			"name": "reason_suspicion",
 			"sqlExpression": "reason_suspicion",
+			"index": 47,
 			"strField": "reason_suspicion",
 			"type": 200,
 			"viewFormats": [
@@ -2354,6 +2403,7 @@
 		{
 			"name": "other_info",
 			"sqlExpression": "other_info",
+			"index": 48,
 			"strField": "other_info",
 			"type": 200,
 			"viewFormats": [
@@ -2397,6 +2447,7 @@
 		{
 			"name": "docs_attach",
 			"sqlExpression": "docs_attach",
+			"index": 49,
 			"strField": "docs_attach",
 			"type": 201,
 			"viewFormats": [
@@ -2446,6 +2497,7 @@
 		{
 			"name": "id_tx",
 			"sqlExpression": "id_tx",
+			"index": 50,
 			"strField": "id_tx",
 			"type": 3,
 			"viewFormats": [
@@ -2490,6 +2542,7 @@
 		{
 			"name": "customer_type",
 			"sqlExpression": "customer_type",
+			"index": 51,
 			"strField": "customer_type",
 			"type": 200,
 			"viewFormats": [
@@ -2548,6 +2601,7 @@
 		{
 			"name": "filing_date",
 			"sqlExpression": "filing_date",
+			"index": 52,
 			"strField": "filing_date",
 			"type": 7,
 			"viewFormats": [
@@ -2596,6 +2650,7 @@
 		{
 			"name": "represnting",
 			"sqlExpression": "represnting",
+			"index": 53,
 			"strField": "represnting",
 			"type": 200,
 			"viewFormats": [
@@ -2640,6 +2695,7 @@
 		{
 			"name": "party_id",
 			"sqlExpression": "party_id",
+			"index": 54,
 			"strField": "party_id",
 			"type": 200,
 			"viewFormats": [
@@ -2707,8 +2763,658 @@
 			"code": "if ($values[\"customer_type\"]==\"INDIVIDUAL\")\n{\n$pageObject->hideItem(\"entity_info_section\");\n$pageObject->showItem(\"client_info_section\");\n}\n\nif ($values[\"customer_type\"]==\"ENTITY\")\n{\n$pageObject->showItem(\"entity_info_section\");\n$pageObject->hideItem(\"client_info_section\");\n}\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
 		}
 	],
+	"strOrderBy": "ORDER BY filing_date DESC",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "ea_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "ea_address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "ea_contact",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "ea_email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "relationship_with_subject",
+				"type": 200,
+				"size": 300,
+				"scale": 0,
+				"typeName": "varchar(300)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "officer_name1",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "designation1",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "report_ref",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "officer_name2",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "designation2",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "entity_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "country_reg",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reg_no",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reg_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "entity_address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "entity_foreign_address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "entity_contact",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "entity_director_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "biz_activity",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "bo_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "indi_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "indi_id",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "indi_dob",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "indi_nationalty",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "indi_address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "indi_address_foreign",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "indi_contact",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "indi_occupation",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "indi_employer",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "indi_bank_details",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "indi_bo_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_tenure",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_type",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "transact_type",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "transact_price",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "valuation",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "lease_period",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "deposit",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "salesperson_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "salesperson_nric",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "suspicious_amount",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "suspicious_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "description",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reason_suspicion",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "other_info",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docs_attach",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_tx",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "ea_postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "entity_postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "indi_postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "prop_postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "customer_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "filing_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "represnting",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "party_id",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "lease_period_unit",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "str"
 	},
 	"pages": [
 		{

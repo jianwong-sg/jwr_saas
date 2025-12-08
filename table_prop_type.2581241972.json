@@ -4,6 +4,7 @@
 	"originalTable": "prop_type",
 	"name": "prop_type",
 	"shortTableName": "prop_type",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"highlightSearchResults": false,
 	"tableOwnerIdField": "proptypeid",
@@ -38,6 +39,7 @@
 		{
 			"name": "property_type",
 			"sqlExpression": "property_type",
+			"index": 1,
 			"strField": "property_type",
 			"type": 200,
 			"viewFormats": [
@@ -87,6 +89,7 @@
 		{
 			"name": "proptypeid",
 			"sqlExpression": "proptypeid",
+			"index": 2,
 			"strField": "proptypeid",
 			"type": 3,
 			"autoinc": true,
@@ -157,6 +160,39 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "proptypeid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "property_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"proptypeid"
+		],
+		"uniqueFields": [],
+		"name": "prop_type"
 	},
 	"pages": [
 		{

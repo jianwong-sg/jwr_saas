@@ -517,9 +517,9 @@
 			{
 				"name": "fax",
 				"type": 200,
-				"size": 10,
+				"size": 15,
 				"scale": 0,
-				"typeName": "varchar(10)",
+				"typeName": "varchar(15)",
 				"nullable": true,
 				"autoinc": false,
 				"defaultValueSQL": null,

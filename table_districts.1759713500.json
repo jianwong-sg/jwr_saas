@@ -4,6 +4,7 @@
 	"originalTable": "districts",
 	"name": "districts",
 	"shortTableName": "districts",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "ID",
 	"usersOwnerIdField": "user_id",
@@ -37,6 +38,7 @@
 		{
 			"name": "districts",
 			"sqlExpression": "districts",
+			"index": 1,
 			"strField": "districts",
 			"type": 200,
 			"viewFormats": [
@@ -77,6 +79,7 @@
 		{
 			"name": "ID",
 			"sqlExpression": "ID",
+			"index": 2,
 			"strField": "ID",
 			"type": 3,
 			"autoinc": true,
@@ -144,6 +147,39 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "ID",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "districts",
+				"type": 200,
+				"size": 300,
+				"scale": 0,
+				"typeName": "varchar(300)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"ID"
+		],
+		"uniqueFields": [],
+		"name": "districts"
 	},
 	"pages": [
 		{

@@ -2,8 +2,9 @@
 	"orderInfo": [
 		{
 			"index": 3,
-			"asc": true,
-			"field": "cpd_provider"
+			"field": "cpd_provider",
+			"expr": "cpd_provider",
+			"asc": true
 		}
 	],
 	"sql": "SELECT\ncpdtypeid,\ncpd_type,\ncpd_provider,\ncpd_activity,\ncpd_hr\nFROM cpd_types\nORDER BY cpd_provider",
@@ -11,6 +12,7 @@
 	"originalTable": "cpd_types",
 	"name": "cpd_types",
 	"shortTableName": "cpd_types",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "cpdtypeid",
 	"usersOwnerIdField": "user_id",
@@ -43,6 +45,7 @@
 		{
 			"name": "cpdtypeid",
 			"sqlExpression": "cpdtypeid",
+			"index": 1,
 			"strField": "cpdtypeid",
 			"type": 3,
 			"autoinc": true,
@@ -94,6 +97,7 @@
 		{
 			"name": "cpd_type",
 			"sqlExpression": "cpd_type",
+			"index": 2,
 			"strField": "cpd_type",
 			"type": 200,
 			"viewFormats": [
@@ -143,6 +147,7 @@
 		{
 			"name": "cpd_provider",
 			"sqlExpression": "cpd_provider",
+			"index": 3,
 			"strField": "cpd_provider",
 			"type": 200,
 			"viewFormats": [
@@ -192,6 +197,7 @@
 		{
 			"name": "cpd_activity",
 			"sqlExpression": "cpd_activity",
+			"index": 4,
 			"strField": "cpd_activity",
 			"type": 200,
 			"viewFormats": [
@@ -247,6 +253,7 @@
 		{
 			"name": "cpd_hr",
 			"sqlExpression": "cpd_hr",
+			"index": 5,
 			"strField": "cpd_hr",
 			"type": 200,
 			"viewFormats": [
@@ -313,8 +320,75 @@
 			"code": "header(\"Location: cpd_types_list.php\");\nexit();\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
 		}
 	],
+	"strOrderBy": "ORDER BY cpd_provider",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "cpdtypeid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cpd_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cpd_provider",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cpd_activity",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cpd_hr",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"cpdtypeid"
+		],
+		"uniqueFields": [],
+		"name": "cpd_types"
 	},
 	"pages": [
 		{

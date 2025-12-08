@@ -1230,6 +1230,7 @@
 			"code": "if ($values[\"types\"]==\"HDB APARTMENT\")\n{\n$xt->assign(\"land_size\",false);\n}\n\nif ($values[\"types\"]==\"APARTMENT / CONDO\")\n{\n$xt->assign(\"land_size\",false);\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n}\n\nif ($values[\"types\"]==\"LAND\")\n{\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n$xt->assign(\"prop_name\",false);\n$xt->assign(\"builtup\",false);\n$xt->assign(\"year_built\",false);\n$xt->assign(\"TOP\",false);\n}\n\nif ($values[\"types\"]==\"LANDED HOUSE\")\n{\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n}\n\nif ($values[\"types\"]==\"RETAIL\")\n{\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n$xt->assign(\"land_size\",false);\n}\n\nif ($values[\"types\"]==\"OFFICE\")\n{\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n$xt->assign(\"land_size\",false);\n}\n\nif ($values[\"types\"]==\"INDUSTRIAL\")\n{\n$xt->assign(\"hdb_town\",false);\n$xt->assign(\"hdb_scheme\",false);\n\n}\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets."
 		}
 	],
+	"strOrderBy": "ORDER BY prop_address",
 	"sortByFields": {
 		"sortOrder": []
 	},

@@ -4,6 +4,7 @@
 	"originalTable": "qualifications",
 	"name": "qualifications",
 	"shortTableName": "qualifications",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "cea_reg",
 	"usersOwnerIdField": "username",
@@ -59,6 +60,7 @@
 		{
 			"name": "agent_name",
 			"sqlExpression": "agent_name",
+			"index": 1,
 			"strField": "agent_name",
 			"type": 200,
 			"viewFormats": [
@@ -99,6 +101,7 @@
 		{
 			"name": "cea_reg",
 			"sqlExpression": "cea_reg",
+			"index": 2,
 			"strField": "cea_reg",
 			"type": 201,
 			"viewFormats": [
@@ -139,8 +142,9 @@
 		{
 			"name": "descriptions",
 			"sqlExpression": "descriptions",
+			"index": 3,
 			"strField": "descriptions",
-			"type": 200,
+			"type": 201,
 			"viewFormats": [
 				{
 					"numberFractionalDigits": 0,
@@ -184,6 +188,7 @@
 		{
 			"name": "doc_upload",
 			"sqlExpression": "doc_upload",
+			"index": 4,
 			"strField": "doc_upload",
 			"type": 201,
 			"viewFormats": [
@@ -243,6 +248,7 @@
 		{
 			"name": "eatuser_id",
 			"sqlExpression": "eatuser_id",
+			"index": 5,
 			"strField": "eatuser_id",
 			"type": 3,
 			"viewFormats": [
@@ -288,6 +294,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 6,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -350,6 +357,83 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "descriptions",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cea_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agent_name",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "eatuser_id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "doc_upload",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "qualifications"
 	},
 	"pages": [
 		{

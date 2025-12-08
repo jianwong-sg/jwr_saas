@@ -4,6 +4,7 @@
 	"originalTable": "pii_category",
 	"name": "pii_category",
 	"shortTableName": "pii_category",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "user_id",
@@ -33,6 +34,7 @@
 		{
 			"name": "category",
 			"sqlExpression": "category",
+			"index": 1,
 			"strField": "category",
 			"type": 200,
 			"viewFormats": [
@@ -82,6 +84,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 2,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -136,6 +139,39 @@
 	"afterAddDetail": 149,
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "category",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "pii_category"
 	},
 	"pages": [
 		{

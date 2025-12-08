@@ -2338,6 +2338,7 @@
 			"code": "\n\n// ===== Scroll to Top ==== \n$(window).scroll(function() {\n    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px\n        $('#return-to-top').fadeIn(200);    // Fade in the arrow\n    } else {\n        $('#return-to-top').fadeOut(200);   // Else fade out the arrow\n    }\n});\n$('#return-to-top').click(function() {      // When arrow is clicked\n    $('body,html').animate({\n        scrollTop : 0                       // Scroll to top of body\n    }, 500);\n});"
 		}
 	],
+	"strOrderBy": "ORDER BY\n\tid_cddlist DESC",
 	"sortByFields": {
 		"sortOrder": []
 	},

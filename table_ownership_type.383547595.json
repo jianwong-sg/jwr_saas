@@ -2,8 +2,9 @@
 	"orderInfo": [
 		{
 			"index": 1,
-			"asc": false,
-			"field": "id"
+			"field": "id",
+			"expr": "id",
+			"asc": false
 		}
 	],
 	"sql": "SELECT\nid,\n`type`\nFROM ownership_type\nORDER BY id DESC",
@@ -11,6 +12,7 @@
 	"originalTable": "ownership_type",
 	"name": "ownership_type",
 	"shortTableName": "ownership_type",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "user_id",
@@ -39,6 +41,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -90,6 +93,7 @@
 		{
 			"name": "type",
 			"sqlExpression": "`type`",
+			"index": 2,
 			"strField": "type",
 			"type": 200,
 			"viewFormats": [
@@ -151,8 +155,42 @@
 			"code": "$values[\"type\"]=strtoupper($values[\"type\"]);\n\n// Place event code here.\n// Use \"Add Action\" button to add code snippets.\n\nreturn true;"
 		}
 	],
+	"strOrderBy": "ORDER BY id DESC",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "type",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "ownership_type"
 	},
 	"pages": [
 		{

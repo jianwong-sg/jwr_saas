@@ -13,6 +13,7 @@
 		{
 			"name": "id_myprofile",
 			"sqlExpression": "id_myprofile",
+			"index": 1,
 			"strField": "id_myprofile",
 			"type": 3,
 			"autoinc": true,

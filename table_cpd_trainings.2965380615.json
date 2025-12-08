@@ -4,6 +4,7 @@
 	"originalTable": "cpd_trainings",
 	"name": "cpd_trainings",
 	"shortTableName": "cpd_trainings",
+	"dbType": 0,
 	"displayLoading": true,
 	"caseSensitiveSearch": "",
 	"highlightSearchResults": false,
@@ -39,6 +40,7 @@
 		{
 			"name": "cpdtrainingid",
 			"sqlExpression": "cpdtrainingid",
+			"index": 1,
 			"strField": "cpdtrainingid",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -87,6 +89,7 @@
 		{
 			"name": "cpd_hour",
 			"sqlExpression": "cpd_hour",
+			"index": 2,
 			"strField": "cpd_hour",
 			"type": 200,
 			"viewFormats": [
@@ -144,6 +147,7 @@
 		{
 			"name": "total_hour",
 			"sqlExpression": "SUM(cpd_hour)",
+			"index": 3,
 			"strField": "total_hour",
 			"type": 5,
 			"viewFormats": [
@@ -190,6 +194,7 @@
 		{
 			"name": "provider",
 			"sqlExpression": "provider",
+			"index": 4,
 			"strField": "provider",
 			"type": 200,
 			"viewFormats": [
@@ -241,6 +246,7 @@
 		{
 			"name": "activity",
 			"sqlExpression": "activity",
+			"index": 5,
 			"strField": "activity",
 			"type": 200,
 			"viewFormats": [
@@ -300,6 +306,7 @@
 		{
 			"name": "startdate",
 			"sqlExpression": "startdate",
+			"index": 6,
 			"strField": "startdate",
 			"type": 7,
 			"viewFormats": [
@@ -346,6 +353,7 @@
 		{
 			"name": "enddate",
 			"sqlExpression": "enddate",
+			"index": 7,
 			"strField": "enddate",
 			"type": 7,
 			"viewFormats": [
@@ -392,6 +400,7 @@
 		{
 			"name": "doc_upload",
 			"sqlExpression": "doc_upload",
+			"index": 8,
 			"strField": "doc_upload",
 			"type": 201,
 			"viewFormats": [
@@ -450,6 +459,7 @@
 		{
 			"name": "cost",
 			"sqlExpression": "cost",
+			"index": 9,
 			"strField": "cost",
 			"type": 200,
 			"viewFormats": [
@@ -495,6 +505,7 @@
 		{
 			"name": "cea_reg",
 			"sqlExpression": "cea_reg",
+			"index": 10,
 			"strField": "cea_reg",
 			"type": 201,
 			"viewFormats": [
@@ -552,6 +563,7 @@
 		{
 			"name": "name",
 			"sqlExpression": "name",
+			"index": 11,
 			"strField": "name",
 			"type": 200,
 			"viewFormats": [
@@ -600,6 +612,7 @@
 		{
 			"name": "cpd_recordid",
 			"sqlExpression": "cpd_recordid",
+			"index": 12,
 			"strField": "cpd_recordid",
 			"type": 3,
 			"viewFormats": [
@@ -645,6 +658,7 @@
 		{
 			"name": "period",
 			"sqlExpression": "period",
+			"index": 13,
 			"strField": "period",
 			"type": 200,
 			"viewFormats": [
@@ -718,6 +732,182 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "cpdtrainingid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cpd_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "period",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "provider",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "activity",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cpd_hour",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "startdate",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "enddate",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "doc_upload",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docuserid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "dateupdated",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cost",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cea_reg",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cpd_recordid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"cpdtrainingid"
+		],
+		"uniqueFields": [],
+		"name": "cpd_trainings"
 	},
 	"pages": [
 		{

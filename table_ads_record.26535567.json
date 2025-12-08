@@ -4,6 +4,7 @@
 	"originalTable": "ads_record",
 	"name": "ads_record",
 	"shortTableName": "ads_record",
+	"dbType": 0,
 	"hideFilterUntilSearch": true,
 	"caseSensitiveSearch": "",
 	"highlightSearchResults": false,
@@ -38,6 +39,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -91,8 +93,9 @@
 		{
 			"name": "Paid",
 			"sqlExpression": "Paid",
+			"index": 2,
 			"strField": "Paid",
-			"type": 16,
+			"type": 2,
 			"viewFormats": [
 				{
 					"format": "Checkbox",
@@ -135,6 +138,7 @@
 		{
 			"name": "Amount",
 			"sqlExpression": "Amount",
+			"index": 3,
 			"strField": "Amount",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -181,6 +185,7 @@
 		{
 			"name": "By",
 			"sqlExpression": "`By`",
+			"index": 4,
 			"strField": "By",
 			"type": 200,
 			"viewFormats": [
@@ -228,6 +233,7 @@
 		{
 			"name": "Remarks",
 			"sqlExpression": "Remarks",
+			"index": 5,
 			"strField": "Remarks",
 			"googleLikeSearch": false,
 			"type": 200,
@@ -273,6 +279,7 @@
 		{
 			"name": "docuserid",
 			"sqlExpression": "docuserid",
+			"index": 6,
 			"strField": "docuserid",
 			"googleLikeSearch": false,
 			"type": 3,
@@ -329,6 +336,7 @@
 		{
 			"name": "From_date",
 			"sqlExpression": "From_date",
+			"index": 7,
 			"strField": "From_date",
 			"type": 7,
 			"viewFormats": [
@@ -374,6 +382,7 @@
 		{
 			"name": "To_date",
 			"sqlExpression": "To_date",
+			"index": 8,
 			"strField": "To_date",
 			"type": 7,
 			"viewFormats": [
@@ -419,6 +428,7 @@
 		{
 			"name": "Paid_date",
 			"sqlExpression": "Paid_date",
+			"index": 9,
 			"strField": "Paid_date",
 			"type": 7,
 			"viewFormats": [
@@ -463,6 +473,7 @@
 		{
 			"name": "full_name",
 			"sqlExpression": "full_name",
+			"index": 10,
 			"strField": "full_name",
 			"type": 200,
 			"viewFormats": [
@@ -531,6 +542,127 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "From_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "Paid",
+				"type": 16,
+				"size": 0,
+				"scale": 0,
+				"typeName": "tinyint",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "Amount",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "By",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "To_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "Remarks",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docuserid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "Paid_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "full_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "ads_record"
 	},
 	"pages": [
 		{

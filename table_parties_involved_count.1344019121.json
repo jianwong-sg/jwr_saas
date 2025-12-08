@@ -2,8 +2,9 @@
 	"orderInfo": [
 		{
 			"index": 1,
-			"asc": true,
-			"field": "id"
+			"field": "id",
+			"expr": "id",
+			"asc": true
 		}
 	],
 	"sql": "SELECT\nid,\nid_tx,\nCOUNT(*) AS `RowCount`,\nname,\naddress,\npostal,\nnric,\nmobile,\ntel,\nemail,\ndoc_upload,\noffice_tel,\nremarks,\ndoc_name,\ncus_type,\ntrade,\ncontact_person,\ndestination,\ncontact_email,\nbiz_email,\nlast_updated,\ncontact_person_id,\ncontact_person_cell,\nsalutation,\nid_type,\ncountry_incorporation,\n`role`,\ncategory,\ntel_type,\nbilling_address,\nbilling_postal,\nreg_date,\nregistration_no,\ncustid\nFROM parties_involved\nGROUP BY id_tx\nORDER BY id",
@@ -12,6 +13,7 @@
 	"originalTable": "parties_involved",
 	"name": "parties_involved_count",
 	"shortTableName": "parties_involved_count",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "user_id",
@@ -261,6 +263,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -313,6 +316,7 @@
 		{
 			"name": "id_tx",
 			"sqlExpression": "id_tx",
+			"index": 2,
 			"strField": "id_tx",
 			"type": 3,
 			"viewFormats": [
@@ -357,6 +361,7 @@
 		{
 			"name": "RowCount",
 			"sqlExpression": "COUNT(*)",
+			"index": 3,
 			"strField": "RowCount",
 			"type": 3,
 			"viewFormats": [
@@ -403,6 +408,7 @@
 		{
 			"name": "name",
 			"sqlExpression": "name",
+			"index": 4,
 			"strField": "name",
 			"type": 200,
 			"viewFormats": [
@@ -453,6 +459,7 @@
 		{
 			"name": "address",
 			"sqlExpression": "address",
+			"index": 5,
 			"strField": "address",
 			"type": 200,
 			"viewFormats": [
@@ -508,6 +515,7 @@
 		{
 			"name": "postal",
 			"sqlExpression": "postal",
+			"index": 6,
 			"strField": "postal",
 			"type": 200,
 			"viewFormats": [
@@ -563,6 +571,7 @@
 		{
 			"name": "nric",
 			"sqlExpression": "nric",
+			"index": 7,
 			"strField": "nric",
 			"type": 201,
 			"viewFormats": [
@@ -618,6 +627,7 @@
 		{
 			"name": "mobile",
 			"sqlExpression": "mobile",
+			"index": 8,
 			"strField": "mobile",
 			"type": 201,
 			"viewFormats": [
@@ -674,6 +684,7 @@
 		{
 			"name": "tel",
 			"sqlExpression": "tel",
+			"index": 9,
 			"strField": "tel",
 			"type": 201,
 			"viewFormats": [
@@ -731,6 +742,7 @@
 		{
 			"name": "email",
 			"sqlExpression": "email",
+			"index": 10,
 			"strField": "email",
 			"type": 201,
 			"viewFormats": [
@@ -788,6 +800,7 @@
 		{
 			"name": "doc_upload",
 			"sqlExpression": "doc_upload",
+			"index": 11,
 			"strField": "doc_upload",
 			"type": 201,
 			"viewFormats": [
@@ -851,6 +864,7 @@
 		{
 			"name": "office_tel",
 			"sqlExpression": "office_tel",
+			"index": 12,
 			"strField": "office_tel",
 			"type": 200,
 			"viewFormats": [
@@ -908,6 +922,7 @@
 		{
 			"name": "remarks",
 			"sqlExpression": "remarks",
+			"index": 13,
 			"strField": "remarks",
 			"type": 200,
 			"viewFormats": [
@@ -966,6 +981,7 @@
 		{
 			"name": "doc_name",
 			"sqlExpression": "doc_name",
+			"index": 14,
 			"strField": "doc_name",
 			"type": 200,
 			"viewFormats": [
@@ -1009,6 +1025,7 @@
 		{
 			"name": "cus_type",
 			"sqlExpression": "cus_type",
+			"index": 15,
 			"strField": "cus_type",
 			"type": 200,
 			"viewFormats": [
@@ -1065,6 +1082,7 @@
 		{
 			"name": "trade",
 			"sqlExpression": "trade",
+			"index": 16,
 			"strField": "trade",
 			"type": 200,
 			"viewFormats": [
@@ -1120,6 +1138,7 @@
 		{
 			"name": "contact_person",
 			"sqlExpression": "contact_person",
+			"index": 17,
 			"strField": "contact_person",
 			"type": 200,
 			"viewFormats": [
@@ -1177,6 +1196,7 @@
 		{
 			"name": "destination",
 			"sqlExpression": "destination",
+			"index": 18,
 			"strField": "destination",
 			"type": 200,
 			"viewFormats": [
@@ -1234,6 +1254,7 @@
 		{
 			"name": "contact_email",
 			"sqlExpression": "contact_email",
+			"index": 19,
 			"strField": "contact_email",
 			"type": 201,
 			"viewFormats": [
@@ -1291,6 +1312,7 @@
 		{
 			"name": "biz_email",
 			"sqlExpression": "biz_email",
+			"index": 20,
 			"strField": "biz_email",
 			"type": 201,
 			"viewFormats": [
@@ -1348,6 +1370,7 @@
 		{
 			"name": "last_updated",
 			"sqlExpression": "last_updated",
+			"index": 21,
 			"strField": "last_updated",
 			"type": 7,
 			"viewFormats": [
@@ -1399,6 +1422,7 @@
 		{
 			"name": "contact_person_id",
 			"sqlExpression": "contact_person_id",
+			"index": 22,
 			"strField": "contact_person_id",
 			"type": 201,
 			"viewFormats": [
@@ -1456,6 +1480,7 @@
 		{
 			"name": "contact_person_cell",
 			"sqlExpression": "contact_person_cell",
+			"index": 23,
 			"strField": "contact_person_cell",
 			"type": 201,
 			"viewFormats": [
@@ -1513,6 +1538,7 @@
 		{
 			"name": "salutation",
 			"sqlExpression": "salutation",
+			"index": 24,
 			"strField": "salutation",
 			"type": 200,
 			"viewFormats": [
@@ -1569,6 +1595,7 @@
 		{
 			"name": "id_type",
 			"sqlExpression": "id_type",
+			"index": 25,
 			"strField": "id_type",
 			"type": 200,
 			"viewFormats": [
@@ -1624,6 +1651,7 @@
 		{
 			"name": "country_incorporation",
 			"sqlExpression": "country_incorporation",
+			"index": 26,
 			"strField": "country_incorporation",
 			"type": 200,
 			"viewFormats": [
@@ -1679,6 +1707,7 @@
 		{
 			"name": "role",
 			"sqlExpression": "`role`",
+			"index": 27,
 			"strField": "role",
 			"type": 200,
 			"viewFormats": [
@@ -1734,6 +1763,7 @@
 		{
 			"name": "category",
 			"sqlExpression": "category",
+			"index": 28,
 			"strField": "category",
 			"type": 200,
 			"viewFormats": [
@@ -1784,6 +1814,7 @@
 		{
 			"name": "tel_type",
 			"sqlExpression": "tel_type",
+			"index": 29,
 			"strField": "tel_type",
 			"type": 200,
 			"viewFormats": [
@@ -1848,6 +1879,7 @@
 		{
 			"name": "billing_address",
 			"sqlExpression": "billing_address",
+			"index": 30,
 			"strField": "billing_address",
 			"type": 200,
 			"viewFormats": [
@@ -1893,6 +1925,7 @@
 		{
 			"name": "billing_postal",
 			"sqlExpression": "billing_postal",
+			"index": 31,
 			"strField": "billing_postal",
 			"type": 200,
 			"viewFormats": [
@@ -1936,6 +1969,7 @@
 		{
 			"name": "reg_date",
 			"sqlExpression": "reg_date",
+			"index": 32,
 			"strField": "reg_date",
 			"type": 7,
 			"viewFormats": [
@@ -1996,6 +2030,7 @@
 		{
 			"name": "registration_no",
 			"sqlExpression": "registration_no",
+			"index": 33,
 			"strField": "registration_no",
 			"type": 201,
 			"viewFormats": [
@@ -2053,6 +2088,7 @@
 		{
 			"name": "custid",
 			"sqlExpression": "custid",
+			"index": 34,
 			"strField": "custid",
 			"type": 3,
 			"viewFormats": [
@@ -2160,8 +2196,559 @@
 			"code": "$data = $pageObject->getMasterRecord();\n        $_SESSION[\"category\"] = $data[\"category\"];\n\n\n"
 		}
 	],
+	"strOrderBy": "ORDER BY id",
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "name",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "nric",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "mobile",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tel",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "doc_upload",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_tx",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "office_tel",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "remarks",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "doc_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "cus_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "trade",
+				"type": 200,
+				"size": 500,
+				"scale": 0,
+				"typeName": "varchar(500)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "contact_person",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "destination",
+				"type": 200,
+				"size": 15,
+				"scale": 0,
+				"typeName": "varchar(15)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "contact_email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "biz_email",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "last_updated",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "contact_person_id",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "contact_person_cell",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "salutation",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_type",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "country_incorporation",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "role",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "category",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "mobile_prefix_pi",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "mobile_area_code_pi",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tel_prefix_pi",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tel_area_code_pi",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "off_tel_prefix_pi",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "off_tel_area_code_pi",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "contact_person_cell_prefix_pi",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "contact_person_cell_areacode_pi",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "registration_no",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "text",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "pos_party",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tel_type",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "email_type",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "billing_address",
+				"type": 200,
+				"size": 200,
+				"scale": 0,
+				"typeName": "varchar(200)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "billing_postal",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "main_client",
+				"type": 200,
+				"size": 5,
+				"scale": 0,
+				"typeName": "varchar(5)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_type1",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "reg_date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "custid",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tx_address",
+				"type": 200,
+				"size": 100,
+				"scale": 0,
+				"typeName": "varchar(100)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "representing",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "marketing_rights",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "tx_no",
+				"type": 200,
+				"size": 10,
+				"scale": 0,
+				"typeName": "varchar(10)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "parties_involved"
 	},
 	"pages": [
 		{

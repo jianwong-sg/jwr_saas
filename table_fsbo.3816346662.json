@@ -4,6 +4,7 @@
 	"originalTable": "fsbo",
 	"name": "fsbo",
 	"shortTableName": "fsbo",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "user_id",
@@ -35,6 +36,7 @@
 		{
 			"name": "categories",
 			"sqlExpression": "categories",
+			"index": 1,
 			"strField": "categories",
 			"type": 200,
 			"viewFormats": [
@@ -82,6 +84,7 @@
 		{
 			"name": "date",
 			"sqlExpression": "`date`",
+			"index": 2,
 			"strField": "date",
 			"type": 7,
 			"viewFormats": [
@@ -127,6 +130,7 @@
 		{
 			"name": "fie_name",
 			"sqlExpression": "fie_name",
+			"index": 3,
 			"strField": "fie_name",
 			"type": 200,
 			"viewFormats": [
@@ -176,6 +180,7 @@
 		{
 			"name": "files",
 			"sqlExpression": "files",
+			"index": 4,
 			"strField": "files",
 			"type": 128,
 			"viewFormats": [
@@ -228,6 +233,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 5,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -279,6 +285,7 @@
 		{
 			"name": "type",
 			"sqlExpression": "`type`",
+			"index": 6,
 			"strField": "type",
 			"type": 200,
 			"viewFormats": [
@@ -336,6 +343,83 @@
 	"afterAddDetail": 149,
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "date",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "categories",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "files",
+				"type": 205,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumblob",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "fie_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "fsbo"
 	},
 	"pages": [
 		{

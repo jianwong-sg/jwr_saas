@@ -2365,6 +2365,7 @@
 			"code": "$data = $pageObject->getMasterRecord();\n{\n        $_SESSION[\"category\"] = $data[\"category\"];\n        $_SESSION[\"prop_address\"] = $data[\"prop_address\"];\n        $_SESSION[\"marketing_rights\"] = $data[\"marketing_rights\"];\n        $_SESSION[\"ID_Tx\"] = $data[\"ID_Tx\"];\n        $_SESSION[\"representing\"] = $data[\"representing\"];\n        \n}\n\n"
 		}
 	],
+	"strOrderBy": "ORDER BY\n\tid DESC",
 	"sortByFields": {
 		"sortOrder": []
 	},

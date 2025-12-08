@@ -7724,6 +7724,7 @@
 	"afterEditDetails": 149,
 	"afterAddAction": 0,
 	"afterAddDetail": 149,
+	"strOrderBy": "ORDER BY\n\tid DESC",
 	"sortByFields": {
 		"sortOrder": []
 	},
@@ -8515,9 +8516,9 @@
 			{
 				"name": "estateagent2",
 				"type": 200,
-				"size": 50,
+				"size": 20,
 				"scale": 0,
-				"typeName": "varchar(50)",
+				"typeName": "varchar(20)",
 				"nullable": true,
 				"autoinc": false,
 				"defaultValueSQL": null,

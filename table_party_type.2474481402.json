@@ -4,6 +4,7 @@
 	"originalTable": "party_type",
 	"name": "party_type",
 	"shortTableName": "party_type",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "id",
 	"usersOwnerIdField": "user_id",
@@ -33,6 +34,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 1,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -84,6 +86,7 @@
 		{
 			"name": "party_type",
 			"sqlExpression": "party_type",
+			"index": 2,
 			"strField": "party_type",
 			"type": 200,
 			"viewFormats": [
@@ -126,6 +129,7 @@
 		{
 			"name": "transaction_type",
 			"sqlExpression": "transaction_type",
+			"index": 3,
 			"strField": "transaction_type",
 			"type": 200,
 			"viewFormats": [
@@ -185,6 +189,50 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "transaction_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "party_type",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "party_type"
 	},
 	"pages": [
 		{

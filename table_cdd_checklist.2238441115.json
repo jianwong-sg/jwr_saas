@@ -2307,6 +2307,7 @@
 			"code": "$data = $pageObject->getMasterRecord();\n        $_SESSION[\"representing\"] = $data[\"representing\"];\n\n"
 		}
 	],
+	"strOrderBy": "ORDER BY\n\tid_cddlist DESC",
 	"sortByFields": {
 		"sortOrder": []
 	},

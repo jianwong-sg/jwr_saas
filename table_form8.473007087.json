@@ -5142,6 +5142,7 @@
 			"code": "if($values['conflict']!=\"has\")\n{\nCustomQuery(\"UPDATE forms SET conflict_description='' WHERE id=\".$values['id']);\n}\n\n// Mapping fields for tenants, interpreters, and agent\n$fields = [\n    'sign_tenant1' => 'sign_date1',\n    'sign_tenant2' => 'sign_date2',\n    'sign_tenant3' => 'sign_date3',\n    'sign_tenant4' => 'sign_date4',\n    'sign_interpreter1' => 'interpretdate1',\n    'sign_interpreter2' => 'interpretdate2',\n    'sign_interpreter3' => 'interpretdate3',\n    'sign_interpreter4' => 'interpretdate4',\n    'sign_agent' => 'date_sign'\n];\n\n// Process sign fields\nforeach ($fields as $signField => $dateField) {\n    if ($values[$signField] != $oldvalues[$signField]) {\n        $statusCondition = strpos($signField, 'interpreter') !== false ? 'status = 8 AND ' : '';\n        $idField = strpos($signField, 'interpreter') !== false ? 'id_form' : 'id';\n\n        if (empty($values[$signField])) {\n            $sql = \"UPDATE forms SET $dateField = NULL WHERE $statusCondition $idField = \" . $values[$idField];\n        } else {\n            $decodedString = substr($values[$signField], 1, -1);\n            $obj = json_decode($decodedString);\n\n            if ($obj->size > 1000) {\n                $sql = \"UPDATE forms SET $dateField = NOW() WHERE $statusCondition $idField = \" . $values[$idField];\n            } else {\n                $sql = \"UPDATE forms SET $dateField = NULL WHERE $statusCondition $idField = \" . $values[$idField];\n            }\n        }\n        CustomQuery($sql);\n    }\n}\n\n// Reset tenant fields if empty\n$tenants = ['tenant2', 'tenant3', 'tenant4'];\nforeach ($tenants as $tenant) {\n    if (empty($values[$tenant])) {\n        $index = substr($tenant, -1);\n        CustomQuery(\"UPDATE forms SET \n            sign_tenant$index = NULL, \n            sign_date$index = NULL, \n            interpret$index = NULL, \n            interpreterID$index = NULL, \n            sign_interpreter$index = NULL, \n            interpretdate$index = NULL, \n            tenant{$index}_id = NULL, \n            tenant{$index}_address = NULL \n            WHERE id = \" . $values['id']);\n    }\n}\n\n// Reset interpreter fields if empty\n$interpreters = ['interpret1', 'interpret2', 'interpret3', 'interpret4'];\nforeach ($interpreters as $interpreter) {\n    if (empty($values[$interpreter])) {\n        $index = substr($interpreter, -1);\n        CustomQuery(\"UPDATE forms SET \n            interpreterID$index = NULL, \n            sign_interpreter$index = NULL, \n            interpretdate$index = NULL \n            WHERE id = \" . $values['id']);\n    }\n}"
 		}
 	],
+	"strOrderBy": "ORDER BY id DESC",
 	"sortByFields": {
 		"sortOrder": []
 	},
@@ -5933,9 +5934,9 @@
 			{
 				"name": "estateagent2",
 				"type": 200,
-				"size": 50,
+				"size": 20,
 				"scale": 0,
-				"typeName": "varchar(50)",
+				"typeName": "varchar(20)",
 				"nullable": true,
 				"autoinc": false,
 				"defaultValueSQL": null,

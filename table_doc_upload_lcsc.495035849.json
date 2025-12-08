@@ -5,6 +5,7 @@
 	"originalTable": "doc_upload",
 	"name": "doc_upload_lcsc",
 	"shortTableName": "doc_upload_lcsc",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "date_added",
 	"usersOwnerIdField": "active",
@@ -45,6 +46,7 @@
 		{
 			"name": "date_added",
 			"sqlExpression": "date_added",
+			"index": 1,
 			"strField": "date_added",
 			"type": 7,
 			"viewFormats": [
@@ -84,11 +86,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.doc_upload"
 		},
 		{
 			"name": "doc_name",
 			"sqlExpression": "doc_name",
+			"index": 2,
 			"strField": "doc_name",
 			"type": 200,
 			"viewFormats": [
@@ -130,11 +133,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.doc_upload"
 		},
 		{
 			"name": "docs",
 			"sqlExpression": "docs",
+			"index": 3,
 			"strField": "docs",
 			"type": 201,
 			"viewFormats": [
@@ -188,11 +192,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.doc_upload"
 		},
 		{
 			"name": "ID",
 			"sqlExpression": "ID",
+			"index": 4,
 			"strField": "ID",
 			"type": 3,
 			"autoinc": true,
@@ -236,11 +241,12 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.doc_upload"
 		},
 		{
 			"name": "id_tx",
 			"sqlExpression": "id_tx",
+			"index": 5,
 			"strField": "id_tx",
 			"type": 3,
 			"viewFormats": [
@@ -282,7 +288,7 @@
 			"placeholder": {
 				"English": ""
 			},
-			"tableName": ""
+			"tableName": "jwresour_jwr_saas_db_jwrealty.doc_upload"
 		}
 	],
 	"warnLeavingEdit": true,
@@ -290,6 +296,72 @@
 	"afterAddDetail": 149,
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "ID",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "docs",
+				"type": 201,
+				"size": 0,
+				"scale": 0,
+				"typeName": "mediumtext",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "date_added",
+				"type": 7,
+				"size": 0,
+				"scale": 0,
+				"typeName": "date",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "doc_name",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "id_tx",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"ID"
+		],
+		"uniqueFields": [],
+		"name": "doc_upload"
 	},
 	"pages": [
 		{

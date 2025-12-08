@@ -4,6 +4,7 @@
 	"originalTable": "rental_main",
 	"name": "rental_main",
 	"shortTableName": "rental_main",
+	"dbType": 0,
 	"caseSensitiveSearch": "",
 	"tableOwnerIdField": "agent_cea",
 	"usersOwnerIdField": "username",
@@ -37,6 +38,7 @@
 		{
 			"name": "agent",
 			"sqlExpression": "agent",
+			"index": 1,
 			"strField": "agent",
 			"type": 200,
 			"viewFormats": [
@@ -86,6 +88,7 @@
 		{
 			"name": "agent_cea",
 			"sqlExpression": "agent_cea",
+			"index": 2,
 			"strField": "agent_cea",
 			"type": 200,
 			"viewFormats": [
@@ -128,6 +131,7 @@
 		{
 			"name": "agent_email",
 			"sqlExpression": "agent_email",
+			"index": 3,
 			"strField": "agent_email",
 			"type": 200,
 			"viewFormats": [
@@ -177,6 +181,7 @@
 		{
 			"name": "id",
 			"sqlExpression": "id",
+			"index": 4,
 			"strField": "id",
 			"type": 3,
 			"autoinc": true,
@@ -228,6 +233,7 @@
 		{
 			"name": "title",
 			"sqlExpression": "title",
+			"index": 5,
 			"strField": "title",
 			"type": 200,
 			"viewFormats": [
@@ -297,6 +303,72 @@
 	],
 	"sortByFields": {
 		"sortOrder": []
+	},
+	"dbTableInfo": {
+		"type": 0,
+		"foreignKeys": [],
+		"fields": [
+			{
+				"name": "id",
+				"type": 3,
+				"size": 0,
+				"scale": 0,
+				"typeName": "int",
+				"nullable": false,
+				"autoinc": true,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "title",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agent",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agent_email",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			},
+			{
+				"name": "agent_cea",
+				"type": 200,
+				"size": 50,
+				"scale": 0,
+				"typeName": "varchar(50)",
+				"nullable": true,
+				"autoinc": false,
+				"defaultValueSQL": null,
+				"defaultValue": ""
+			}
+		],
+		"primaryKeys": [
+			"id"
+		],
+		"uniqueFields": [],
+		"name": "rental_main"
 	},
 	"pages": [
 		{
